@@ -1,0 +1,20 @@
+{
+  "date": "2026-11-25",
+  "components": 64,
+  "pins": 512,
+  "no_connects": 3,
+  "max_signal_input_loads": 4,
+  "failures": [],
+  "kicad": "10.0.8",
+  "command": [
+    "/home/gabri/.local/opt/isa1-kicad-10.0.8/squashfs-root/usr/bin/kicad-cli",
+    "sch",
+    "export",
+    "netlist",
+    "--format",
+    "kicadxml",
+    "-o",
+    "/mnt/c/Users/gabri/projetos/isa1/verification/net11/memory_decode.xml",
+    "/mnt/c/Users/gabri/projetos/isa1/hardware/memory_decode/memory_decode.kicad_sch"
+  ]
+}

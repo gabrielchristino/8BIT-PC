@@ -1,3 +1,10 @@
+## 25/11/2026 — NET-11, decodificador de memória
+
+- Novo esquema de 32 CIs, 512 pinos, mapas/bancos preservados e seis selects MMIO exatos.
+- 4.194.305 verificações por modo ideal/com atrasos, dois negativos; integração ideal completa e temporizada reduzida aprovadas.
+- Modelo combinacional: caminho máximo 251 ns; ERC parcial mantém 85 violações.
+- Onze PDFs oficiais de candidatos com URLs/hashes; controladores/periféricos físicos e produção continuam pendentes.
+
 ## 25/11/2026 — NET-10, união global da CPU
 
 - Nova hierarquia KiCad e simulação do XML, com 17 HC125 adicionais para distribuição: 283 CIs, 566 componentes, 4.892 pinos.

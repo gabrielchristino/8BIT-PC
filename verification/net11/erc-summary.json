@@ -1,0 +1,45 @@
+{
+  "date": "2026-11-25",
+  "kicad": "10.0.8",
+  "command": [
+    "/home/gabri/.local/opt/isa1-kicad-10.0.8/squashfs-root/usr/bin/kicad-cli",
+    "sch",
+    "erc",
+    "--format",
+    "json",
+    "--severity-all",
+    "--exit-code-violations",
+    "-o",
+    "/mnt/c/Users/gabri/projetos/isa1/verification/net11/erc.json",
+    "/mnt/c/Users/gabri/projetos/isa1/hardware/memory_decode/memory_decode.kicad_sch"
+  ],
+  "exit": 5,
+  "stdout": "Found 85 violations\nSaved ERC Report to /mnt/c/Users/gabri/projetos/isa1/verification/net11/erc.json\n",
+  "stderr": "",
+  "violation_counts": {
+    "pin_not_driven": 22,
+    "power_pin_not_driven": 2,
+    "isolated_pin_label": 61
+  },
+  "sources": [
+    {
+      "path": "hardware/memory_decode/memory_decode.kicad_sch",
+      "sha256": "73c85efbb2d957f7054ab00a9831633af7e7a3c0141b49cb8a4ee7c0b264b5f1"
+    },
+    {
+      "path": "hardware/memory_decode/memory_packages.kicad_sym",
+      "sha256": "0930b00ba18b060ef0122dc03856b7e3f36830a07c50a168e12993fdc4ccbc6e"
+    },
+    {
+      "path": "hardware/memory_decode/sym-lib-table",
+      "sha256": "c52f47de3453e5290c4b4df13cc458defc33788fd1a1b68ebe20713c462e3133"
+    },
+    {
+      "path": "hardware/memory_decode/memory_decode.kicad_pro",
+      "sha256": "3c0d85eacdba762c08dc8f66f07eb41b9008c3ffc5c9255e665116eb66859f64"
+    }
+  ],
+  "erc_passed": false,
+  "board_release": false,
+  "reason": "Partial decoder has no external sources or output consumers; no waivers inserted"
+}

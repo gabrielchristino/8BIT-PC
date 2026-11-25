@@ -1,3 +1,5 @@
+Atualização NET-11 (25/11/2026): decoder físico de RAM/VRAM/EEPROM e seis endereços MMIO, isolado ideal/com atrasos e integrado à CPU em modelo de sistema. Programa/quadro ideal passaram; ensaio integrado com atrasos é reduzido. Próxima etapa: controlador físico de transações de memória, captura de dados e arbitragem de VRAM; depois raster/saída VGA, MMIO/teclado e alimentação. ERC parcial do decoder tem 85 violações; sem liberação de fabricação.
+
 Atualização NET-10 (25/11/2026): CPU global por pinos em hardware/cpu_global, com distribuição entre blocos e 4.892 pinos conferidos. O ERC tem 56 violações registradas; não há placa liberada. Próximo fechamento: memória/VRAM/MMIO, relógios de vídeo e interfaces elétricas. As listas históricas abaixo não equivalem a módulos físicos concluídos; use os relatórios de cada etapa para distinguir evidências.
 
 # Roadmap de continuidade

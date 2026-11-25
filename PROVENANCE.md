@@ -27,6 +27,9 @@ Os downloads chegaram com nomes temporários; os nomes legíveis acima foram res
 
 ## Transformações e material novo
 
+NET-11 (25/11/2026), base 52bb48901fda92848add95f01097b704472d397e: novo hardware/memory_decode e sim/net11; nenhum arquivo anterior foi sobrescrito. XML KiCad gera o decodificador. O adaptador copia a memória comportamental da RTL-01 e substitui somente a captura de região/endereço; demais periféricos continuam modelos. Runner derivado da NET-10 e hashes em adapter-origin.json. Onze PDFs oficiais novos são preservados sem transformação, com URLs/hashes/status de candidato em references/system-candidates-2026-11-25.json. Manifesto audita os onze snapshots anteriores nos respectivos commits.
+
+
 NET-10 (25/11/2026), base 5020e30394303971c4c0c1852a81d635365b4fee: nova CPU global em hardware/cpu_global, sem alterar os oito bancos de origem. Adicionados 17 buffers HC125; XML exportado e verificado pino a pino. Modelos ideal/com atrasos e falhas intermediárias preservados por suas fontes. KiCad 10.0.8 instalado separadamente, com origem/hash em docs/engineering/KICAD_ENVIRONMENT.md; ERC ainda apresenta 56 violações, sem exceções adicionadas. Manifesto audita os dez snapshots anteriores nos respectivos commits.
 
 

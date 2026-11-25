@@ -1,5 +1,9 @@
 # Decisões recuperadas e registro da migração
 
+## ADR E14 — Separar decodificação de endereço e pulso de acesso
+
+Decisão nova de 25/11/2026: implementar o mapa de memória/MMIO em portas HC e buffers, mantendo 96 KiB físicos, overlay e bancos. Selects são qualificados por SAFE/ACCESS e comparações MMIO exatas. A alternativa de ligar decodificação diretamente a WE foi rejeitada por hazards e falta de retenção/commit; o controlador de acesso continua uma etapa própria. Não muda a ISA válida ou o mapa posterior. Escritas em EEPROM continuam ignoradas pelo modelo, sem programação física prometida. Aceitação do decoder: todos os endereços/bancos/habilitações em cenários ideal/com atrasos, negativos e integração ideal completa com CPU. O ensaio temporizado integrado é reduzido, não aprovação completa. Fabricar exige backend físico, TTL/CMOS, conflitos OE/WE, clock/CDC, cargas globais e ERC/DRC do sistema. Evidência em docs/engineering/NET11.md.
+
 ## ADR E13 — Unificar pinos e distribuir cargas antes dos periféricos
 
 Decisão nova de 25/11/2026. Construir uma nova hierarquia KiCad a partir dos oito bancos preservados e gerar a CPU do XML exportado. Usar a saída física SAFE_CORE e distribuir sinais com HC125 quando ultrapassarem quatro entradas. A alternativa de ligar somente módulos HDL esconderia cargas entre blocos; otimizar a contagem de CIs antes da equivalência dificultaria localizar regressões. Impacto: nenhum opcode, flag, mapa ou convenção de pilha válido muda; acrescentam-se 17 CIs de distribuição, sem alegar otimização. Aceitação digital: correspondência de 4.892 pinos, ausência de drivers conflitantes/entradas flutuantes internas, negativos detectados e regressões completas ideal/com atrasos, incluindo quadro. ERC com 56 violações e ausência de memória/periféricos físicos impedem liberação da placa; quatro entradas por net não substituem análise capacitiva/temporal. Evidência em docs/engineering/NET10.md.

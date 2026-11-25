@@ -6,7 +6,7 @@ Projeto de computador pessoal com CPU própria de lógica discreta, endereçamen
 
 ## Começar
 
-**Desenvolvimento atual:** [NET-10 — CPU unificada por pinos](docs/engineering/NET10.md). O esquema global reúne oito bancos e distribui sinais entre 283 CIs. Regressões ideal e com atrasos em `verification/net10`; ERC conserva 56 violações nas interfaces ainda incompletas. Memória/periféricos, alimentação, fechamento temporal e PCB continuam pendentes. A base anterior [NET-09](docs/engineering/NET09.md) permanece preservada.
+**Desenvolvimento atual:** [NET-11 — decodificador físico de memória](docs/engineering/NET11.md), ligado à [CPU global NET-10](docs/engineering/NET10.md). Decoder ideal/com atrasos: 4.194.305 verificações por modo; integração ideal completa com programa/quadro e integração temporizada reduzida aprovadas. CPU global também passou no programa completo com atrasos. Controlador físico de memória/VRAM/MMIO, alimentação, vídeo elétrico, fechamento temporal e PCB continuam pendentes; ERC dos esquemas parciais conserva violações explícitas.
 
 **Registradores/dados:** [NET-06](docs/engineering/NET06.md). A referência fornecida pelo usuário para as membranas está em [KEYPAD_CONNECTOR.md](docs/engineering/KEYPAD_CONNECTOR.md).
 

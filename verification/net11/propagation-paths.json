@@ -1,0 +1,1584 @@
+{
+  "date": "2026-11-25",
+  "sources": [
+    {
+      "path": "verification/net11/memory_decode.xml",
+      "sha256": "309e7decaf1265844effbb6a4706a8e2d73eb1ceed0901f70def25bcd87dbfcd"
+    },
+    {
+      "path": "hardware/memory_decode/package-functions.json",
+      "sha256": "b0969e86ae1a7500a3fb898e7b5af0d1db960bc90a314e3a2f444b622f960562"
+    },
+    {
+      "path": "tools/build_memory_decode.py",
+      "sha256": "0489d6dd49017fc524eb39d73fdf05a97c17b132743920ddb99b7ead3407e1b6"
+    },
+    {
+      "path": "tools/analyze_memory_decode.py",
+      "sha256": "6247e330f005b5371ce121896a09a4a50e3d61cd1759588d45aeedc08849681a"
+    }
+  ],
+  "scope": "Longest paths of selected maximum-delay combinational model, zero input arrival; not minimum/hold/hazard/PCB or complete PVT analysis",
+  "assumed_settle_interval_ns": 1000,
+  "maximum_path_ns": 251,
+  "model_settle_margin_ns": 749,
+  "slowest_output": "IO_VB",
+  "outputs": [
+    {
+      "net": "SELECT_RAM",
+      "port": "select[0]",
+      "arrival_ns": 208,
+      "path": [
+        {
+          "reference": "U30",
+          "part": "SN74HC125",
+          "input_pin": "5",
+          "input_net": "ADDRESS_14",
+          "output_pin": "6",
+          "output_net": "FANOUT_14_1",
+          "delay_ns": 36
+        },
+        {
+          "reference": "U25",
+          "part": "SN74HC32",
+          "input_pin": "1",
+          "input_net": "FANOUT_14_1",
+          "output_pin": "3",
+          "output_net": "G_0",
+          "delay_ns": 31
+        },
+        {
+          "reference": "U26",
+          "part": "SN74HC04",
+          "input_pin": "1",
+          "input_net": "G_0",
+          "output_pin": "2",
+          "output_net": "G_1",
+          "delay_ns": 24
+        },
+        {
+          "reference": "U13",
+          "part": "SN74HC08",
+          "input_pin": "2",
+          "input_net": "G_1",
+          "output_pin": "3",
+          "output_net": "G_2",
+          "delay_ns": 31
+        },
+        {
+          "reference": "U26",
+          "part": "SN74HC04",
+          "input_pin": "5",
+          "input_net": "G_2",
+          "output_pin": "6",
+          "output_net": "G_4",
+          "delay_ns": 24
+        },
+        {
+          "reference": "U13",
+          "part": "SN74HC08",
+          "input_pin": "5",
+          "input_net": "G_4",
+          "output_pin": "6",
+          "output_net": "G_5",
+          "delay_ns": 31
+        },
+        {
+          "reference": "U14",
+          "part": "SN74HC08",
+          "input_pin": "13",
+          "input_net": "G_5",
+          "output_pin": "11",
+          "output_net": "SELECT_RAM",
+          "delay_ns": 31
+        }
+      ]
+    },
+    {
+      "net": "SELECT_VRAM",
+      "port": "select[1]",
+      "arrival_ns": 153,
+      "path": [
+        {
+          "reference": "U30",
+          "part": "SN74HC125",
+          "input_pin": "2",
+          "input_net": "ADDRESS_13",
+          "output_pin": "3",
+          "output_net": "FANOUT_13_4",
+          "delay_ns": 36
+        },
+        {
+          "reference": "U25",
+          "part": "SN74HC32",
+          "input_pin": "4",
+          "input_net": "FANOUT_13_4",
+          "output_pin": "6",
+          "output_net": "G_6",
+          "delay_ns": 31
+        },
+        {
+          "reference": "U26",
+          "part": "SN74HC04",
+          "input_pin": "9",
+          "input_net": "G_6",
+          "output_pin": "8",
+          "output_net": "G_7",
+          "delay_ns": 24
+        },
+        {
+          "reference": "U13",
+          "part": "SN74HC08",
+          "input_pin": "10",
+          "input_net": "G_7",
+          "output_pin": "8",
+          "output_net": "G_8",
+          "delay_ns": 31
+        },
+        {
+          "reference": "U15",
+          "part": "SN74HC08",
+          "input_pin": "2",
+          "input_net": "G_8",
+          "output_pin": "3",
+          "output_net": "SELECT_VRAM",
+          "delay_ns": 31
+        }
+      ]
+    },
+    {
+      "net": "SELECT_ROM",
+      "port": "select[2]",
+      "arrival_ns": 184,
+      "path": [
+        {
+          "reference": "U30",
+          "part": "SN74HC125",
+          "input_pin": "5",
+          "input_net": "ADDRESS_14",
+          "output_pin": "6",
+          "output_net": "FANOUT_14_1",
+          "delay_ns": 36
+        },
+        {
+          "reference": "U25",
+          "part": "SN74HC32",
+          "input_pin": "1",
+          "input_net": "FANOUT_14_1",
+          "output_pin": "3",
+          "output_net": "G_0",
+          "delay_ns": 31
+        },
+        {
+          "reference": "U26",
+          "part": "SN74HC04",
+          "input_pin": "1",
+          "input_net": "G_0",
+          "output_pin": "2",
+          "output_net": "G_1",
+          "delay_ns": 24
+        },
+        {
+          "reference": "U13",
+          "part": "SN74HC08",
+          "input_pin": "2",
+          "input_net": "G_1",
+          "output_pin": "3",
+          "output_net": "G_2",
+          "delay_ns": 31
+        },
+        {
+          "reference": "U25",
+          "part": "SN74HC32",
+          "input_pin": "10",
+          "input_net": "G_2",
+          "output_pin": "8",
+          "output_net": "G_13",
+          "delay_ns": 31
+        },
+        {
+          "reference": "U15",
+          "part": "SN74HC08",
+          "input_pin": "4",
+          "input_net": "G_13",
+          "output_pin": "6",
+          "output_net": "SELECT_ROM",
+          "delay_ns": 31
+        }
+      ]
+    },
+    {
+      "net": "SELECT_IO",
+      "port": "select[3]",
+      "arrival_ns": 153,
+      "path": [
+        {
+          "reference": "U30",
+          "part": "SN74HC125",
+          "input_pin": "9",
+          "input_net": "ADDRESS_14",
+          "output_pin": "8",
+          "output_net": "FANOUT_14_2",
+          "delay_ns": 36
+        },
+        {
+          "reference": "U26",
+          "part": "SN74HC04",
+          "input_pin": "11",
+          "input_net": "FANOUT_14_2",
+          "output_pin": "10",
+          "output_net": "G_9",
+          "delay_ns": 24
+        },
+        {
+          "reference": "U13",
+          "part": "SN74HC08",
+          "input_pin": "13",
+          "input_net": "G_9",
+          "output_pin": "11",
+          "output_net": "G_10",
+          "delay_ns": 31
+        },
+        {
+          "reference": "U14",
+          "part": "SN74HC08",
+          "input_pin": "2",
+          "input_net": "G_10",
+          "output_pin": "3",
+          "output_net": "G_11",
+          "delay_ns": 31
+        },
+        {
+          "reference": "U15",
+          "part": "SN74HC08",
+          "input_pin": "9",
+          "input_net": "G_11",
+          "output_pin": "8",
+          "output_net": "SELECT_IO",
+          "delay_ns": 31
+        }
+      ]
+    },
+    {
+      "net": "IO_VB",
+      "port": "io_select[0]",
+      "arrival_ns": 251,
+      "path": [
+        {
+          "reference": "U30",
+          "part": "SN74HC125",
+          "input_pin": "9",
+          "input_net": "ADDRESS_14",
+          "output_pin": "8",
+          "output_net": "FANOUT_14_2",
+          "delay_ns": 36
+        },
+        {
+          "reference": "U26",
+          "part": "SN74HC04",
+          "input_pin": "11",
+          "input_net": "FANOUT_14_2",
+          "output_pin": "10",
+          "output_net": "G_9",
+          "delay_ns": 24
+        },
+        {
+          "reference": "U13",
+          "part": "SN74HC08",
+          "input_pin": "13",
+          "input_net": "G_9",
+          "output_pin": "11",
+          "output_net": "G_10",
+          "delay_ns": 31
+        },
+        {
+          "reference": "U18",
+          "part": "SN74HC08",
+          "input_pin": "4",
+          "input_net": "G_10",
+          "output_pin": "6",
+          "output_net": "G_42",
+          "delay_ns": 31
+        },
+        {
+          "reference": "U18",
+          "part": "SN74HC08",
+          "input_pin": "13",
+          "input_net": "G_42",
+          "output_pin": "11",
+          "output_net": "G_44",
+          "delay_ns": 31
+        },
+        {
+          "reference": "U32",
+          "part": "SN74HC125",
+          "input_pin": "2",
+          "input_net": "G_44",
+          "output_pin": "3",
+          "output_net": "FANOUT_15_4",
+          "delay_ns": 36
+        },
+        {
+          "reference": "U19",
+          "part": "SN74HC08",
+          "input_pin": "2",
+          "input_net": "FANOUT_15_4",
+          "output_pin": "3",
+          "output_net": "G_45",
+          "delay_ns": 31
+        },
+        {
+          "reference": "U19",
+          "part": "SN74HC08",
+          "input_pin": "5",
+          "input_net": "G_45",
+          "output_pin": "6",
+          "output_net": "IO_VB",
+          "delay_ns": 31
+        }
+      ]
+    },
+    {
+      "net": "IO_EB",
+      "port": "io_select[1]",
+      "arrival_ns": 251,
+      "path": [
+        {
+          "reference": "U30",
+          "part": "SN74HC125",
+          "input_pin": "9",
+          "input_net": "ADDRESS_14",
+          "output_pin": "8",
+          "output_net": "FANOUT_14_2",
+          "delay_ns": 36
+        },
+        {
+          "reference": "U26",
+          "part": "SN74HC04",
+          "input_pin": "11",
+          "input_net": "FANOUT_14_2",
+          "output_pin": "10",
+          "output_net": "G_9",
+          "delay_ns": 24
+        },
+        {
+          "reference": "U13",
+          "part": "SN74HC08",
+          "input_pin": "13",
+          "input_net": "G_9",
+          "output_pin": "11",
+          "output_net": "G_10",
+          "delay_ns": 31
+        },
+        {
+          "reference": "U18",
+          "part": "SN74HC08",
+          "input_pin": "4",
+          "input_net": "G_10",
+          "output_pin": "6",
+          "output_net": "G_42",
+          "delay_ns": 31
+        },
+        {
+          "reference": "U18",
+          "part": "SN74HC08",
+          "input_pin": "13",
+          "input_net": "G_42",
+          "output_pin": "11",
+          "output_net": "G_44",
+          "delay_ns": 31
+        },
+        {
+          "reference": "U32",
+          "part": "SN74HC125",
+          "input_pin": "2",
+          "input_net": "G_44",
+          "output_pin": "3",
+          "output_net": "FANOUT_15_4",
+          "delay_ns": 36
+        },
+        {
+          "reference": "U20",
+          "part": "SN74HC08",
+          "input_pin": "4",
+          "input_net": "FANOUT_15_4",
+          "output_pin": "6",
+          "output_net": "G_50",
+          "delay_ns": 31
+        },
+        {
+          "reference": "U20",
+          "part": "SN74HC08",
+          "input_pin": "10",
+          "input_net": "G_50",
+          "output_pin": "8",
+          "output_net": "IO_EB",
+          "delay_ns": 31
+        }
+      ]
+    },
+    {
+      "net": "IO_BOOT",
+      "port": "io_select[2]",
+      "arrival_ns": 251,
+      "path": [
+        {
+          "reference": "U30",
+          "part": "SN74HC125",
+          "input_pin": "9",
+          "input_net": "ADDRESS_14",
+          "output_pin": "8",
+          "output_net": "FANOUT_14_2",
+          "delay_ns": 36
+        },
+        {
+          "reference": "U26",
+          "part": "SN74HC04",
+          "input_pin": "11",
+          "input_net": "FANOUT_14_2",
+          "output_pin": "10",
+          "output_net": "G_9",
+          "delay_ns": 24
+        },
+        {
+          "reference": "U13",
+          "part": "SN74HC08",
+          "input_pin": "13",
+          "input_net": "G_9",
+          "output_pin": "11",
+          "output_net": "G_10",
+          "delay_ns": 31
+        },
+        {
+          "reference": "U18",
+          "part": "SN74HC08",
+          "input_pin": "4",
+          "input_net": "G_10",
+          "output_pin": "6",
+          "output_net": "G_42",
+          "delay_ns": 31
+        },
+        {
+          "reference": "U18",
+          "part": "SN74HC08",
+          "input_pin": "13",
+          "input_net": "G_42",
+          "output_pin": "11",
+          "output_net": "G_44",
+          "delay_ns": 31
+        },
+        {
+          "reference": "U32",
+          "part": "SN74HC125",
+          "input_pin": "2",
+          "input_net": "G_44",
+          "output_pin": "3",
+          "output_net": "FANOUT_15_4",
+          "delay_ns": 36
+        },
+        {
+          "reference": "U21",
+          "part": "SN74HC08",
+          "input_pin": "9",
+          "input_net": "FANOUT_15_4",
+          "output_pin": "8",
+          "output_net": "G_55",
+          "delay_ns": 31
+        },
+        {
+          "reference": "U21",
+          "part": "SN74HC08",
+          "input_pin": "13",
+          "input_net": "G_55",
+          "output_pin": "11",
+          "output_net": "IO_BOOT",
+          "delay_ns": 31
+        }
+      ]
+    },
+    {
+      "net": "IO_ROW",
+      "port": "io_select[3]",
+      "arrival_ns": 251,
+      "path": [
+        {
+          "reference": "U30",
+          "part": "SN74HC125",
+          "input_pin": "9",
+          "input_net": "ADDRESS_14",
+          "output_pin": "8",
+          "output_net": "FANOUT_14_2",
+          "delay_ns": 36
+        },
+        {
+          "reference": "U26",
+          "part": "SN74HC04",
+          "input_pin": "11",
+          "input_net": "FANOUT_14_2",
+          "output_pin": "10",
+          "output_net": "G_9",
+          "delay_ns": 24
+        },
+        {
+          "reference": "U13",
+          "part": "SN74HC08",
+          "input_pin": "13",
+          "input_net": "G_9",
+          "output_pin": "11",
+          "output_net": "G_10",
+          "delay_ns": 31
+        },
+        {
+          "reference": "U18",
+          "part": "SN74HC08",
+          "input_pin": "4",
+          "input_net": "G_10",
+          "output_pin": "6",
+          "output_net": "G_42",
+          "delay_ns": 31
+        },
+        {
+          "reference": "U18",
+          "part": "SN74HC08",
+          "input_pin": "13",
+          "input_net": "G_42",
+          "output_pin": "11",
+          "output_net": "G_44",
+          "delay_ns": 31
+        },
+        {
+          "reference": "U32",
+          "part": "SN74HC125",
+          "input_pin": "2",
+          "input_net": "G_44",
+          "output_pin": "3",
+          "output_net": "FANOUT_15_4",
+          "delay_ns": 36
+        },
+        {
+          "reference": "U22",
+          "part": "SN74HC08",
+          "input_pin": "12",
+          "input_net": "FANOUT_15_4",
+          "output_pin": "11",
+          "output_net": "G_60",
+          "delay_ns": 31
+        },
+        {
+          "reference": "U23",
+          "part": "SN74HC08",
+          "input_pin": "2",
+          "input_net": "G_60",
+          "output_pin": "3",
+          "output_net": "IO_ROW",
+          "delay_ns": 31
+        }
+      ]
+    },
+    {
+      "net": "IO_COL_LO",
+      "port": "io_select[4]",
+      "arrival_ns": 251,
+      "path": [
+        {
+          "reference": "U30",
+          "part": "SN74HC125",
+          "input_pin": "9",
+          "input_net": "ADDRESS_14",
+          "output_pin": "8",
+          "output_net": "FANOUT_14_2",
+          "delay_ns": 36
+        },
+        {
+          "reference": "U26",
+          "part": "SN74HC04",
+          "input_pin": "11",
+          "input_net": "FANOUT_14_2",
+          "output_pin": "10",
+          "output_net": "G_9",
+          "delay_ns": 24
+        },
+        {
+          "reference": "U13",
+          "part": "SN74HC08",
+          "input_pin": "13",
+          "input_net": "G_9",
+          "output_pin": "11",
+          "output_net": "G_10",
+          "delay_ns": 31
+        },
+        {
+          "reference": "U18",
+          "part": "SN74HC08",
+          "input_pin": "4",
+          "input_net": "G_10",
+          "output_pin": "6",
+          "output_net": "G_42",
+          "delay_ns": 31
+        },
+        {
+          "reference": "U18",
+          "part": "SN74HC08",
+          "input_pin": "13",
+          "input_net": "G_42",
+          "output_pin": "11",
+          "output_net": "G_44",
+          "delay_ns": 31
+        },
+        {
+          "reference": "U32",
+          "part": "SN74HC125",
+          "input_pin": "5",
+          "input_net": "G_44",
+          "output_pin": "6",
+          "output_net": "FANOUT_16_1",
+          "delay_ns": 36
+        },
+        {
+          "reference": "U23",
+          "part": "SN74HC08",
+          "input_pin": "9",
+          "input_net": "FANOUT_16_1",
+          "output_pin": "8",
+          "output_net": "G_63",
+          "delay_ns": 31
+        },
+        {
+          "reference": "U23",
+          "part": "SN74HC08",
+          "input_pin": "13",
+          "input_net": "G_63",
+          "output_pin": "11",
+          "output_net": "IO_COL_LO",
+          "delay_ns": 31
+        }
+      ]
+    },
+    {
+      "net": "IO_COL_HI",
+      "port": "io_select[5]",
+      "arrival_ns": 251,
+      "path": [
+        {
+          "reference": "U30",
+          "part": "SN74HC125",
+          "input_pin": "9",
+          "input_net": "ADDRESS_14",
+          "output_pin": "8",
+          "output_net": "FANOUT_14_2",
+          "delay_ns": 36
+        },
+        {
+          "reference": "U26",
+          "part": "SN74HC04",
+          "input_pin": "11",
+          "input_net": "FANOUT_14_2",
+          "output_pin": "10",
+          "output_net": "G_9",
+          "delay_ns": 24
+        },
+        {
+          "reference": "U13",
+          "part": "SN74HC08",
+          "input_pin": "13",
+          "input_net": "G_9",
+          "output_pin": "11",
+          "output_net": "G_10",
+          "delay_ns": 31
+        },
+        {
+          "reference": "U18",
+          "part": "SN74HC08",
+          "input_pin": "4",
+          "input_net": "G_10",
+          "output_pin": "6",
+          "output_net": "G_42",
+          "delay_ns": 31
+        },
+        {
+          "reference": "U18",
+          "part": "SN74HC08",
+          "input_pin": "13",
+          "input_net": "G_42",
+          "output_pin": "11",
+          "output_net": "G_44",
+          "delay_ns": 31
+        },
+        {
+          "reference": "U32",
+          "part": "SN74HC125",
+          "input_pin": "5",
+          "input_net": "G_44",
+          "output_pin": "6",
+          "output_net": "FANOUT_16_1",
+          "delay_ns": 36
+        },
+        {
+          "reference": "U24",
+          "part": "SN74HC08",
+          "input_pin": "4",
+          "input_net": "FANOUT_16_1",
+          "output_pin": "6",
+          "output_net": "G_66",
+          "delay_ns": 31
+        },
+        {
+          "reference": "U24",
+          "part": "SN74HC08",
+          "input_pin": "10",
+          "input_net": "G_66",
+          "output_pin": "8",
+          "output_net": "IO_COL_HI",
+          "delay_ns": 31
+        }
+      ]
+    },
+    {
+      "net": "RAM_ADDRESS_0",
+      "port": "ram_address[0]",
+      "arrival_ns": 72,
+      "path": [
+        {
+          "reference": "U12",
+          "part": "SN74HC125",
+          "input_pin": "5",
+          "input_net": "ADDRESS_0",
+          "output_pin": "6",
+          "output_net": "FANOUT_12_1",
+          "delay_ns": 36
+        },
+        {
+          "reference": "U1",
+          "part": "SN74HC125",
+          "input_pin": "2",
+          "input_net": "FANOUT_12_1",
+          "output_pin": "3",
+          "output_net": "RAM_ADDRESS_0",
+          "delay_ns": 36
+        }
+      ]
+    },
+    {
+      "net": "RAM_ADDRESS_1",
+      "port": "ram_address[1]",
+      "arrival_ns": 72,
+      "path": [
+        {
+          "reference": "U12",
+          "part": "SN74HC125",
+          "input_pin": "12",
+          "input_net": "ADDRESS_1",
+          "output_pin": "11",
+          "output_net": "FANOUT_12_3",
+          "delay_ns": 36
+        },
+        {
+          "reference": "U1",
+          "part": "SN74HC125",
+          "input_pin": "12",
+          "input_net": "FANOUT_12_3",
+          "output_pin": "11",
+          "output_net": "RAM_ADDRESS_1",
+          "delay_ns": 36
+        }
+      ]
+    },
+    {
+      "net": "RAM_ADDRESS_2",
+      "port": "ram_address[2]",
+      "arrival_ns": 36,
+      "path": [
+        {
+          "reference": "U2",
+          "part": "SN74HC125",
+          "input_pin": "9",
+          "input_net": "ADDRESS_2",
+          "output_pin": "8",
+          "output_net": "RAM_ADDRESS_2",
+          "delay_ns": 36
+        }
+      ]
+    },
+    {
+      "net": "RAM_ADDRESS_3",
+      "port": "ram_address[3]",
+      "arrival_ns": 36,
+      "path": [
+        {
+          "reference": "U3",
+          "part": "SN74HC125",
+          "input_pin": "5",
+          "input_net": "ADDRESS_3",
+          "output_pin": "6",
+          "output_net": "RAM_ADDRESS_3",
+          "delay_ns": 36
+        }
+      ]
+    },
+    {
+      "net": "RAM_ADDRESS_4",
+      "port": "ram_address[4]",
+      "arrival_ns": 72,
+      "path": [
+        {
+          "reference": "U29",
+          "part": "SN74HC125",
+          "input_pin": "5",
+          "input_net": "ADDRESS_4",
+          "output_pin": "6",
+          "output_net": "FANOUT_13_1",
+          "delay_ns": 36
+        },
+        {
+          "reference": "U4",
+          "part": "SN74HC125",
+          "input_pin": "2",
+          "input_net": "FANOUT_13_1",
+          "output_pin": "3",
+          "output_net": "RAM_ADDRESS_4",
+          "delay_ns": 36
+        }
+      ]
+    },
+    {
+      "net": "RAM_ADDRESS_5",
+      "port": "ram_address[5]",
+      "arrival_ns": 36,
+      "path": [
+        {
+          "reference": "U4",
+          "part": "SN74HC125",
+          "input_pin": "12",
+          "input_net": "ADDRESS_5",
+          "output_pin": "11",
+          "output_net": "RAM_ADDRESS_5",
+          "delay_ns": 36
+        }
+      ]
+    },
+    {
+      "net": "RAM_ADDRESS_6",
+      "port": "ram_address[6]",
+      "arrival_ns": 36,
+      "path": [
+        {
+          "reference": "U5",
+          "part": "SN74HC125",
+          "input_pin": "9",
+          "input_net": "ADDRESS_6",
+          "output_pin": "8",
+          "output_net": "RAM_ADDRESS_6",
+          "delay_ns": 36
+        }
+      ]
+    },
+    {
+      "net": "RAM_ADDRESS_7",
+      "port": "ram_address[7]",
+      "arrival_ns": 36,
+      "path": [
+        {
+          "reference": "U6",
+          "part": "SN74HC125",
+          "input_pin": "5",
+          "input_net": "ADDRESS_7",
+          "output_pin": "6",
+          "output_net": "RAM_ADDRESS_7",
+          "delay_ns": 36
+        }
+      ]
+    },
+    {
+      "net": "RAM_ADDRESS_8",
+      "port": "ram_address[8]",
+      "arrival_ns": 36,
+      "path": [
+        {
+          "reference": "U7",
+          "part": "SN74HC125",
+          "input_pin": "2",
+          "input_net": "ADDRESS_8",
+          "output_pin": "3",
+          "output_net": "RAM_ADDRESS_8",
+          "delay_ns": 36
+        }
+      ]
+    },
+    {
+      "net": "RAM_ADDRESS_9",
+      "port": "ram_address[9]",
+      "arrival_ns": 36,
+      "path": [
+        {
+          "reference": "U7",
+          "part": "SN74HC125",
+          "input_pin": "12",
+          "input_net": "ADDRESS_9",
+          "output_pin": "11",
+          "output_net": "RAM_ADDRESS_9",
+          "delay_ns": 36
+        }
+      ]
+    },
+    {
+      "net": "RAM_ADDRESS_10",
+      "port": "ram_address[10]",
+      "arrival_ns": 36,
+      "path": [
+        {
+          "reference": "U8",
+          "part": "SN74HC125",
+          "input_pin": "9",
+          "input_net": "ADDRESS_10",
+          "output_pin": "8",
+          "output_net": "RAM_ADDRESS_10",
+          "delay_ns": 36
+        }
+      ]
+    },
+    {
+      "net": "RAM_ADDRESS_11",
+      "port": "ram_address[11]",
+      "arrival_ns": 36,
+      "path": [
+        {
+          "reference": "U9",
+          "part": "SN74HC125",
+          "input_pin": "5",
+          "input_net": "ADDRESS_11",
+          "output_pin": "6",
+          "output_net": "RAM_ADDRESS_11",
+          "delay_ns": 36
+        }
+      ]
+    },
+    {
+      "net": "RAM_ADDRESS_12",
+      "port": "ram_address[12]",
+      "arrival_ns": 36,
+      "path": [
+        {
+          "reference": "U10",
+          "part": "SN74HC125",
+          "input_pin": "2",
+          "input_net": "ADDRESS_12",
+          "output_pin": "3",
+          "output_net": "RAM_ADDRESS_12",
+          "delay_ns": 36
+        }
+      ]
+    },
+    {
+      "net": "RAM_ADDRESS_13",
+      "port": "ram_address[13]",
+      "arrival_ns": 72,
+      "path": [
+        {
+          "reference": "U29",
+          "part": "SN74HC125",
+          "input_pin": "12",
+          "input_net": "ADDRESS_13",
+          "output_pin": "11",
+          "output_net": "FANOUT_13_3",
+          "delay_ns": 36
+        },
+        {
+          "reference": "U10",
+          "part": "SN74HC125",
+          "input_pin": "12",
+          "input_net": "FANOUT_13_3",
+          "output_pin": "11",
+          "output_net": "RAM_ADDRESS_13",
+          "delay_ns": 36
+        }
+      ]
+    },
+    {
+      "net": "RAM_ADDRESS_14",
+      "port": "ram_address[14]",
+      "arrival_ns": 72,
+      "path": [
+        {
+          "reference": "U30",
+          "part": "SN74HC125",
+          "input_pin": "5",
+          "input_net": "ADDRESS_14",
+          "output_pin": "6",
+          "output_net": "FANOUT_14_1",
+          "delay_ns": 36
+        },
+        {
+          "reference": "U11",
+          "part": "SN74HC125",
+          "input_pin": "9",
+          "input_net": "FANOUT_14_1",
+          "output_pin": "8",
+          "output_net": "RAM_ADDRESS_14",
+          "delay_ns": 36
+        }
+      ]
+    },
+    {
+      "net": "VRAM_ADDRESS_0",
+      "port": "vram_address[0]",
+      "arrival_ns": 72,
+      "path": [
+        {
+          "reference": "U12",
+          "part": "SN74HC125",
+          "input_pin": "5",
+          "input_net": "ADDRESS_0",
+          "output_pin": "6",
+          "output_net": "FANOUT_12_1",
+          "delay_ns": 36
+        },
+        {
+          "reference": "U1",
+          "part": "SN74HC125",
+          "input_pin": "5",
+          "input_net": "FANOUT_12_1",
+          "output_pin": "6",
+          "output_net": "VRAM_ADDRESS_0",
+          "delay_ns": 36
+        }
+      ]
+    },
+    {
+      "net": "VRAM_ADDRESS_1",
+      "port": "vram_address[1]",
+      "arrival_ns": 72,
+      "path": [
+        {
+          "reference": "U12",
+          "part": "SN74HC125",
+          "input_pin": "12",
+          "input_net": "ADDRESS_1",
+          "output_pin": "11",
+          "output_net": "FANOUT_12_3",
+          "delay_ns": 36
+        },
+        {
+          "reference": "U2",
+          "part": "SN74HC125",
+          "input_pin": "2",
+          "input_net": "FANOUT_12_3",
+          "output_pin": "3",
+          "output_net": "VRAM_ADDRESS_1",
+          "delay_ns": 36
+        }
+      ]
+    },
+    {
+      "net": "VRAM_ADDRESS_2",
+      "port": "vram_address[2]",
+      "arrival_ns": 36,
+      "path": [
+        {
+          "reference": "U2",
+          "part": "SN74HC125",
+          "input_pin": "12",
+          "input_net": "ADDRESS_2",
+          "output_pin": "11",
+          "output_net": "VRAM_ADDRESS_2",
+          "delay_ns": 36
+        }
+      ]
+    },
+    {
+      "net": "VRAM_ADDRESS_3",
+      "port": "vram_address[3]",
+      "arrival_ns": 36,
+      "path": [
+        {
+          "reference": "U3",
+          "part": "SN74HC125",
+          "input_pin": "9",
+          "input_net": "ADDRESS_3",
+          "output_pin": "8",
+          "output_net": "VRAM_ADDRESS_3",
+          "delay_ns": 36
+        }
+      ]
+    },
+    {
+      "net": "VRAM_ADDRESS_4",
+      "port": "vram_address[4]",
+      "arrival_ns": 72,
+      "path": [
+        {
+          "reference": "U29",
+          "part": "SN74HC125",
+          "input_pin": "5",
+          "input_net": "ADDRESS_4",
+          "output_pin": "6",
+          "output_net": "FANOUT_13_1",
+          "delay_ns": 36
+        },
+        {
+          "reference": "U4",
+          "part": "SN74HC125",
+          "input_pin": "5",
+          "input_net": "FANOUT_13_1",
+          "output_pin": "6",
+          "output_net": "VRAM_ADDRESS_4",
+          "delay_ns": 36
+        }
+      ]
+    },
+    {
+      "net": "VRAM_ADDRESS_5",
+      "port": "vram_address[5]",
+      "arrival_ns": 36,
+      "path": [
+        {
+          "reference": "U5",
+          "part": "SN74HC125",
+          "input_pin": "2",
+          "input_net": "ADDRESS_5",
+          "output_pin": "3",
+          "output_net": "VRAM_ADDRESS_5",
+          "delay_ns": 36
+        }
+      ]
+    },
+    {
+      "net": "VRAM_ADDRESS_6",
+      "port": "vram_address[6]",
+      "arrival_ns": 36,
+      "path": [
+        {
+          "reference": "U5",
+          "part": "SN74HC125",
+          "input_pin": "12",
+          "input_net": "ADDRESS_6",
+          "output_pin": "11",
+          "output_net": "VRAM_ADDRESS_6",
+          "delay_ns": 36
+        }
+      ]
+    },
+    {
+      "net": "VRAM_ADDRESS_7",
+      "port": "vram_address[7]",
+      "arrival_ns": 36,
+      "path": [
+        {
+          "reference": "U6",
+          "part": "SN74HC125",
+          "input_pin": "9",
+          "input_net": "ADDRESS_7",
+          "output_pin": "8",
+          "output_net": "VRAM_ADDRESS_7",
+          "delay_ns": 36
+        }
+      ]
+    },
+    {
+      "net": "VRAM_ADDRESS_8",
+      "port": "vram_address[8]",
+      "arrival_ns": 36,
+      "path": [
+        {
+          "reference": "U7",
+          "part": "SN74HC125",
+          "input_pin": "5",
+          "input_net": "ADDRESS_8",
+          "output_pin": "6",
+          "output_net": "VRAM_ADDRESS_8",
+          "delay_ns": 36
+        }
+      ]
+    },
+    {
+      "net": "VRAM_ADDRESS_9",
+      "port": "vram_address[9]",
+      "arrival_ns": 36,
+      "path": [
+        {
+          "reference": "U8",
+          "part": "SN74HC125",
+          "input_pin": "2",
+          "input_net": "ADDRESS_9",
+          "output_pin": "3",
+          "output_net": "VRAM_ADDRESS_9",
+          "delay_ns": 36
+        }
+      ]
+    },
+    {
+      "net": "VRAM_ADDRESS_10",
+      "port": "vram_address[10]",
+      "arrival_ns": 36,
+      "path": [
+        {
+          "reference": "U8",
+          "part": "SN74HC125",
+          "input_pin": "12",
+          "input_net": "ADDRESS_10",
+          "output_pin": "11",
+          "output_net": "VRAM_ADDRESS_10",
+          "delay_ns": 36
+        }
+      ]
+    },
+    {
+      "net": "VRAM_ADDRESS_11",
+      "port": "vram_address[11]",
+      "arrival_ns": 36,
+      "path": [
+        {
+          "reference": "U9",
+          "part": "SN74HC125",
+          "input_pin": "9",
+          "input_net": "ADDRESS_11",
+          "output_pin": "8",
+          "output_net": "VRAM_ADDRESS_11",
+          "delay_ns": 36
+        }
+      ]
+    },
+    {
+      "net": "VRAM_ADDRESS_12",
+      "port": "vram_address[12]",
+      "arrival_ns": 36,
+      "path": [
+        {
+          "reference": "U10",
+          "part": "SN74HC125",
+          "input_pin": "5",
+          "input_net": "ADDRESS_12",
+          "output_pin": "6",
+          "output_net": "VRAM_ADDRESS_12",
+          "delay_ns": 36
+        }
+      ]
+    },
+    {
+      "net": "VRAM_ADDRESS_13",
+      "port": "vram_address[13]",
+      "arrival_ns": 36,
+      "path": [
+        {
+          "reference": "U11",
+          "part": "SN74HC125",
+          "input_pin": "2",
+          "input_net": "VB_0",
+          "output_pin": "3",
+          "output_net": "VRAM_ADDRESS_13",
+          "delay_ns": 36
+        }
+      ]
+    },
+    {
+      "net": "VRAM_ADDRESS_14",
+      "port": "vram_address[14]",
+      "arrival_ns": 36,
+      "path": [
+        {
+          "reference": "U11",
+          "part": "SN74HC125",
+          "input_pin": "12",
+          "input_net": "VB_1",
+          "output_pin": "11",
+          "output_net": "VRAM_ADDRESS_14",
+          "delay_ns": 36
+        }
+      ]
+    },
+    {
+      "net": "ROM_ADDRESS_0",
+      "port": "rom_address[0]",
+      "arrival_ns": 72,
+      "path": [
+        {
+          "reference": "U12",
+          "part": "SN74HC125",
+          "input_pin": "5",
+          "input_net": "ADDRESS_0",
+          "output_pin": "6",
+          "output_net": "FANOUT_12_1",
+          "delay_ns": 36
+        },
+        {
+          "reference": "U1",
+          "part": "SN74HC125",
+          "input_pin": "9",
+          "input_net": "FANOUT_12_1",
+          "output_pin": "8",
+          "output_net": "ROM_ADDRESS_0",
+          "delay_ns": 36
+        }
+      ]
+    },
+    {
+      "net": "ROM_ADDRESS_1",
+      "port": "rom_address[1]",
+      "arrival_ns": 72,
+      "path": [
+        {
+          "reference": "U12",
+          "part": "SN74HC125",
+          "input_pin": "12",
+          "input_net": "ADDRESS_1",
+          "output_pin": "11",
+          "output_net": "FANOUT_12_3",
+          "delay_ns": 36
+        },
+        {
+          "reference": "U2",
+          "part": "SN74HC125",
+          "input_pin": "5",
+          "input_net": "FANOUT_12_3",
+          "output_pin": "6",
+          "output_net": "ROM_ADDRESS_1",
+          "delay_ns": 36
+        }
+      ]
+    },
+    {
+      "net": "ROM_ADDRESS_2",
+      "port": "rom_address[2]",
+      "arrival_ns": 36,
+      "path": [
+        {
+          "reference": "U3",
+          "part": "SN74HC125",
+          "input_pin": "2",
+          "input_net": "ADDRESS_2",
+          "output_pin": "3",
+          "output_net": "ROM_ADDRESS_2",
+          "delay_ns": 36
+        }
+      ]
+    },
+    {
+      "net": "ROM_ADDRESS_3",
+      "port": "rom_address[3]",
+      "arrival_ns": 36,
+      "path": [
+        {
+          "reference": "U3",
+          "part": "SN74HC125",
+          "input_pin": "12",
+          "input_net": "ADDRESS_3",
+          "output_pin": "11",
+          "output_net": "ROM_ADDRESS_3",
+          "delay_ns": 36
+        }
+      ]
+    },
+    {
+      "net": "ROM_ADDRESS_4",
+      "port": "rom_address[4]",
+      "arrival_ns": 72,
+      "path": [
+        {
+          "reference": "U29",
+          "part": "SN74HC125",
+          "input_pin": "5",
+          "input_net": "ADDRESS_4",
+          "output_pin": "6",
+          "output_net": "FANOUT_13_1",
+          "delay_ns": 36
+        },
+        {
+          "reference": "U4",
+          "part": "SN74HC125",
+          "input_pin": "9",
+          "input_net": "FANOUT_13_1",
+          "output_pin": "8",
+          "output_net": "ROM_ADDRESS_4",
+          "delay_ns": 36
+        }
+      ]
+    },
+    {
+      "net": "ROM_ADDRESS_5",
+      "port": "rom_address[5]",
+      "arrival_ns": 36,
+      "path": [
+        {
+          "reference": "U5",
+          "part": "SN74HC125",
+          "input_pin": "5",
+          "input_net": "ADDRESS_5",
+          "output_pin": "6",
+          "output_net": "ROM_ADDRESS_5",
+          "delay_ns": 36
+        }
+      ]
+    },
+    {
+      "net": "ROM_ADDRESS_6",
+      "port": "rom_address[6]",
+      "arrival_ns": 36,
+      "path": [
+        {
+          "reference": "U6",
+          "part": "SN74HC125",
+          "input_pin": "2",
+          "input_net": "ADDRESS_6",
+          "output_pin": "3",
+          "output_net": "ROM_ADDRESS_6",
+          "delay_ns": 36
+        }
+      ]
+    },
+    {
+      "net": "ROM_ADDRESS_7",
+      "port": "rom_address[7]",
+      "arrival_ns": 36,
+      "path": [
+        {
+          "reference": "U6",
+          "part": "SN74HC125",
+          "input_pin": "12",
+          "input_net": "ADDRESS_7",
+          "output_pin": "11",
+          "output_net": "ROM_ADDRESS_7",
+          "delay_ns": 36
+        }
+      ]
+    },
+    {
+      "net": "ROM_ADDRESS_8",
+      "port": "rom_address[8]",
+      "arrival_ns": 36,
+      "path": [
+        {
+          "reference": "U7",
+          "part": "SN74HC125",
+          "input_pin": "9",
+          "input_net": "ADDRESS_8",
+          "output_pin": "8",
+          "output_net": "ROM_ADDRESS_8",
+          "delay_ns": 36
+        }
+      ]
+    },
+    {
+      "net": "ROM_ADDRESS_9",
+      "port": "rom_address[9]",
+      "arrival_ns": 36,
+      "path": [
+        {
+          "reference": "U8",
+          "part": "SN74HC125",
+          "input_pin": "5",
+          "input_net": "ADDRESS_9",
+          "output_pin": "6",
+          "output_net": "ROM_ADDRESS_9",
+          "delay_ns": 36
+        }
+      ]
+    },
+    {
+      "net": "ROM_ADDRESS_10",
+      "port": "rom_address[10]",
+      "arrival_ns": 36,
+      "path": [
+        {
+          "reference": "U9",
+          "part": "SN74HC125",
+          "input_pin": "2",
+          "input_net": "ADDRESS_10",
+          "output_pin": "3",
+          "output_net": "ROM_ADDRESS_10",
+          "delay_ns": 36
+        }
+      ]
+    },
+    {
+      "net": "ROM_ADDRESS_11",
+      "port": "rom_address[11]",
+      "arrival_ns": 36,
+      "path": [
+        {
+          "reference": "U9",
+          "part": "SN74HC125",
+          "input_pin": "12",
+          "input_net": "ADDRESS_11",
+          "output_pin": "11",
+          "output_net": "ROM_ADDRESS_11",
+          "delay_ns": 36
+        }
+      ]
+    },
+    {
+      "net": "ROM_ADDRESS_12",
+      "port": "rom_address[12]",
+      "arrival_ns": 36,
+      "path": [
+        {
+          "reference": "U10",
+          "part": "SN74HC125",
+          "input_pin": "9",
+          "input_net": "ADDRESS_12",
+          "output_pin": "8",
+          "output_net": "ROM_ADDRESS_12",
+          "delay_ns": 36
+        }
+      ]
+    },
+    {
+      "net": "ROM_ADDRESS_13",
+      "port": "rom_address[13]",
+      "arrival_ns": 72,
+      "path": [
+        {
+          "reference": "U29",
+          "part": "SN74HC125",
+          "input_pin": "12",
+          "input_net": "ADDRESS_13",
+          "output_pin": "11",
+          "output_net": "FANOUT_13_3",
+          "delay_ns": 36
+        },
+        {
+          "reference": "U11",
+          "part": "SN74HC125",
+          "input_pin": "5",
+          "input_net": "FANOUT_13_3",
+          "output_pin": "6",
+          "output_net": "ROM_ADDRESS_13",
+          "delay_ns": 36
+        }
+      ]
+    },
+    {
+      "net": "ROM_ADDRESS_14",
+      "port": "rom_address[14]",
+      "arrival_ns": 103,
+      "path": [
+        {
+          "reference": "U30",
+          "part": "SN74HC125",
+          "input_pin": "12",
+          "input_net": "ADDRESS_15",
+          "output_pin": "11",
+          "output_net": "FANOUT_14_3",
+          "delay_ns": 36
+        },
+        {
+          "reference": "U24",
+          "part": "SN74HC08",
+          "input_pin": "12",
+          "input_net": "FANOUT_14_3",
+          "output_pin": "11",
+          "output_net": "G_68",
+          "delay_ns": 31
+        },
+        {
+          "reference": "U12",
+          "part": "SN74HC125",
+          "input_pin": "2",
+          "input_net": "G_68",
+          "output_pin": "3",
+          "output_net": "ROM_ADDRESS_14",
+          "delay_ns": 36
+        }
+      ]
+    }
+  ],
+  "production_released": false
+}

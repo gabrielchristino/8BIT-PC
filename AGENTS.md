@@ -78,3 +78,12 @@
 - A bancada temporizada usa CPU_HALF=5000 e VIDEO_HALF=7000 ns, memória/periféricos ainda comportamentais. Não alegue VGA físico ou fechamento PVT.
 - O ERC retorna 5 com 56 violações registradas; não adicione exceções para obter zero. O script transmite o retorno nativo, embora o lançador WSL possa reportar 1 ao host.
 - Resposta digital a reset/POWER_GOOD de 1 us não substitui supervisor/hold-up físico; contador de efeitos deve começar antes da afirmação.
+
+## Continuidade NET-11
+
+- Leia docs/engineering/NET11.md. hardware/memory_decode é mapa físico; não confunda SELECT/IO_SELECT com WE/OE ou pulsos de commit.
+- Gere pelo builder e make_memory_decode_cpu.py. sim/net11 mantém armazenamento, MMIO e vídeo comportamentais; somente região/endereço capturados vêm do decoder por pinos.
+- Cobertura isolada ideal/com atrasos é exaustiva sobre endereço/bancos/habilitações; integração ideal é completa e a temporizada é --quick. Não ampliar a alegação.
+- Propagação máxima 251 ns pertence ao modelo de portas selecionado, sem mínimos/hold/hazards/skew/carga de PCB. Não certifica frequência de memória ou VGA.
+- ERC parcial do decoder tem 85 violações, retorno 5. Resolva fontes/consumidores no circuito de sistema sem inserir exceções artificiais. Reconte cargas entre CPU, decoder e memórias.
+- PDFs em references/system-candidates-2026-11-25.json são candidatos; não implicam BOM homologada, disponibilidade, footprint ou alimentação aprovados.

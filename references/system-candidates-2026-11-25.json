@@ -1,0 +1,116 @@
+{
+  "date": "2026-11-25",
+  "scope": "References for future memory/video/keyboard circuits; no new license inferred",
+  "files": [
+    {
+      "path": "references/ti/sn74lv163a.pdf",
+      "url": "https://www.ti.com/lit/ds/symlink/sn74lv163a.pdf",
+      "publisher": "Texas Instruments",
+      "retrieved_date": "2026-11-25",
+      "bytes": 1890692,
+      "sha256": "941aea877b641ad1c0496ef63a45c1069bd2cd89a0a591f5f764be309d571929",
+      "transformation": "None; original downloaded PDF bytes",
+      "status": "Candidate reference only; not qualified BOM, availability/footprint/electrical acceptance pending"
+    },
+    {
+      "path": "references/ti/sn74ahc08.pdf",
+      "url": "https://www.ti.com/lit/ds/symlink/sn74ahc08.pdf",
+      "publisher": "Texas Instruments",
+      "retrieved_date": "2026-11-25",
+      "bytes": 3315415,
+      "sha256": "5b2bcbcf6b40a36fe9ddccda528bd5bb5ab7516356f540d879129a7d5c3f9036",
+      "transformation": "None; original downloaded PDF bytes",
+      "status": "Candidate reference only; not qualified BOM, availability/footprint/electrical acceptance pending"
+    },
+    {
+      "path": "references/ti/sn74ahc32.pdf",
+      "url": "https://www.ti.com/lit/ds/symlink/sn74ahc32.pdf",
+      "publisher": "Texas Instruments",
+      "retrieved_date": "2026-11-25",
+      "bytes": 3524307,
+      "sha256": "8c1e2f6b2999874ca37e228dee0dad8f20a8cb58969c764fb63feee684c16e41",
+      "transformation": "None; original downloaded PDF bytes",
+      "status": "Candidate reference only; not qualified BOM, availability/footprint/electrical acceptance pending"
+    },
+    {
+      "path": "references/ti/sn74ahc04.pdf",
+      "url": "https://www.ti.com/lit/ds/symlink/sn74ahc04.pdf",
+      "publisher": "Texas Instruments",
+      "retrieved_date": "2026-11-25",
+      "bytes": 3446485,
+      "sha256": "da1e18e887be71dfe3b2f69341cd7ab969b75a7a1929aec4346fdc32e2c24962",
+      "transformation": "None; original downloaded PDF bytes",
+      "status": "Candidate reference only; not qualified BOM, availability/footprint/electrical acceptance pending"
+    },
+    {
+      "path": "references/ti/sn74ahc125.pdf",
+      "url": "https://www.ti.com/lit/ds/symlink/sn74ahc125.pdf",
+      "publisher": "Texas Instruments",
+      "retrieved_date": "2026-11-25",
+      "bytes": 3567515,
+      "sha256": "c2ca226688e5704e94755fb20907c970ba7e2bac3a18fd6b2c28ce73295d0a3f",
+      "transformation": "None; original downloaded PDF bytes",
+      "status": "Candidate reference only; not qualified BOM, availability/footprint/electrical acceptance pending"
+    },
+    {
+      "path": "references/ti/sn74hct574.pdf",
+      "url": "https://www.ti.com/lit/ds/symlink/sn74hct574.pdf",
+      "publisher": "Texas Instruments",
+      "retrieved_date": "2026-11-25",
+      "bytes": 1637629,
+      "sha256": "741ea0d0fbeb1d5c18125cca106df860bb2fc2b2eca236db99de1d2b09f9ec8c",
+      "transformation": "None; original downloaded PDF bytes",
+      "status": "Candidate reference only; not qualified BOM, availability/footprint/electrical acceptance pending"
+    },
+    {
+      "path": "references/ti/sn74hcs244.pdf",
+      "url": "https://www.ti.com/lit/ds/symlink/sn74hcs244.pdf",
+      "publisher": "Texas Instruments",
+      "retrieved_date": "2026-11-25",
+      "bytes": 1739657,
+      "sha256": "c64b57427fca4ac14afde6fd3dfa8ab4d869b7e04f4f9e2eb637933a6d90c382",
+      "transformation": "None; original downloaded PDF bytes",
+      "status": "Candidate reference only; not qualified BOM, availability/footprint/electrical acceptance pending"
+    },
+    {
+      "path": "references/ti/sn74ac244.pdf",
+      "url": "https://www.ti.com/lit/ds/symlink/sn74ac244.pdf",
+      "publisher": "Texas Instruments",
+      "retrieved_date": "2026-11-25",
+      "bytes": 3035822,
+      "sha256": "5f06e64e82f789f89f86797db545eacb1274c5201d2f211a57544c3dad79d7d0",
+      "transformation": "None; original downloaded PDF bytes",
+      "status": "Candidate reference only; not qualified BOM, availability/footprint/electrical acceptance pending"
+    },
+    {
+      "path": "references/ti/sn74ahct157.pdf",
+      "url": "https://www.ti.com/lit/ds/symlink/sn74ahct157.pdf",
+      "publisher": "Texas Instruments",
+      "retrieved_date": "2026-11-25",
+      "bytes": 1331707,
+      "sha256": "253c4ef1919a5088feaffd2fe3c481d49705ddedea70da88ed1f92156f9054a5",
+      "transformation": "None; original downloaded PDF bytes",
+      "status": "Candidate reference only; not qualified BOM, availability/footprint/electrical acceptance pending"
+    },
+    {
+      "path": "references/alliance/as7c256a.pdf",
+      "url": "https://www.alliancememory.com/wp-content/uploads/as7c256av.1.2.pdf",
+      "publisher": "Alliance Memory",
+      "retrieved_date": "2026-11-25",
+      "bytes": 254546,
+      "sha256": "435dc7cb96520090252688ceead67f550be8fd223c3eafab21af2eea0a24c3c8",
+      "transformation": "None; original downloaded PDF bytes",
+      "status": "Candidate reference only; not qualified BOM, availability/footprint/electrical acceptance pending"
+    },
+    {
+      "path": "references/microchip/at28c256-industrial.pdf",
+      "url": "https://ww1.microchip.com/downloads/en/DeviceDoc/Industrial-Grade-256-Kbit-%2832%2C768-x-8%29-Paged-Parallel-EEPROM.pdf",
+      "publisher": "Microchip",
+      "retrieved_date": "2026-11-25",
+      "bytes": 761476,
+      "sha256": "fbad827166a0867cc82c149438a489e49670cb92fa505b9d4502962040815db7",
+      "transformation": "None; original downloaded PDF bytes",
+      "status": "Candidate reference only; not qualified BOM, availability/footprint/electrical acceptance pending"
+    }
+  ]
+}

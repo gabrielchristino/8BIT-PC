@@ -1,5 +1,12 @@
 # Histórico preservado
 
+## 24/11/2026 — desenvolvimento 9.8.4.2
+
+- Ferramentas Icarus Verilog 12.0, ngspice 42 e KiCad CLI 7.0.11 preparadas no WSL Ubuntu.
+- Modelos novos HC191/157/377, banco de carga de 16 bits e sequenciador de referência, mantendo a CPU e arquivos históricos intactos.
+- Duas rodadas de 393.235 verificações de valor aprovadas; modelo HC191 exercitado e sete violações temporais intencionais detectadas.
+- Primeiro esquema parcial do banco X, com 20 componentes e 188 pinos; mapa conferido contra a netlist exportada. Controle físico, SP-1, ERC/DRC e produção continuam pendentes.
+
 ## 24/11/2026 — migração para GitHub
 
 - Inspeção do remoto vazio e das pastas locais, recuperação dos pacotes 9.3, 9.8.3 e incremento 9.8.4.1.

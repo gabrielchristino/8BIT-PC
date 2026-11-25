@@ -6,6 +6,8 @@ Projeto de computador pessoal com CPU própria de lógica discreta, endereçamen
 
 ## Começar
 
+**Desenvolvimento ativo:** [revisão 9.8.4.2](docs/engineering/REV9842.md), com modelos HDL de componentes, bancadas e primeiro esquemático parcial do banco X. As ferramentas de simulação rodam no WSL Ubuntu. Ver os [critérios de produção](docs/engineering/PRODUCTION_GATES.md) antes de interpretar uma aprovação como liberação de hardware.
+
 O diretório de continuidade é `C:/Users/gabri/projetos/isa1`. A nova conferência preservou arquivos locais 7.4/7.5 e a auditoria 7.6, mas os downloads pelo chat compartilhado foram bloqueados pelo Chrome. Ver [relatório da conferência](docs/RECHECK_SHARED_CHATS.md).
 
 - [Arquitetura e conjunto de instruções](ARCHITECTURE.md)

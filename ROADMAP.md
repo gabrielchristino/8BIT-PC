@@ -1,5 +1,17 @@
 # Roadmap de continuidade
 
+## Iteração ativa — 9.8.4.2
+
+- [x] Preparar Icarus Verilog, ngspice e KiCad CLI no WSL Ubuntu.
+- [x] Modelar carga transparente HC191, HC157 e HC377 e testar inicialização/carga de 16 bits.
+- [x] Executar rodadas lógica e com atrasos selecionados, reset, WAIT e testes negativos dos monitores.
+- [x] Gerar esquema parcial do banco X, mapa de pinos e conferir netlist exportada.
+- [ ] Mapear sequenciamento e portas a CIs/controle real; comparar custo com alternativas.
+- [ ] Fechar temporização com atrasos mínimos, skew e cargas reais.
+- [ ] Resolver SP-1 e integrar o controle à CPU com regressão das 26 instruções.
+
+A etapa de carga tem uma bancada aprovada, mas ainda não está fechada como circuito físico completo. Detalhes e critérios em docs/engineering/REV9842.md e PRODUCTION_GATES.md.
+
 As etapas abaixo organizam pendências recuperadas e trabalho necessário para concluir a migração. Não representam revisões implementadas ou datas prometidas.
 
 ## 1. Completar a recuperação

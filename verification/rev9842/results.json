@@ -1,0 +1,138 @@
+{
+  "date": "2026-11-24",
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "python": "3.12.3",
+  "iverilog": "Icarus Verilog version 12.0 (stable) ()",
+  "sources": [
+    {
+      "path": "sim/hdl/hc_models.sv",
+      "sha256": "f305ff38b7e58701e9f97528de68ea8c5518a628d38bd5a8ac9e847fa87c8680"
+    },
+    {
+      "path": "sim/hdl/counter_load_candidate.sv",
+      "sha256": "3651b6f7534de18a7e78df660649a7ffdcfae29f0729721ff84e91e13182840d"
+    },
+    {
+      "path": "sim/hdl/tb_counter_load.sv",
+      "sha256": "51fcacf9860094e09c7a6bace2886398174b2124215a4ff3cf783e9bd233ac75"
+    },
+    {
+      "path": "sim/hdl/tb_hc191_unit.sv",
+      "sha256": "c8d9eae6ddf39b44a0bb7cc8eaba12ead9de1b58e5116f8b938dc6df368301a8"
+    },
+    {
+      "path": "sim/hdl/tb_hc191_negative.sv",
+      "sha256": "d667784cb2e36cf8b8ca24d1c6315497c3e0725e490949954631691cab61f01c"
+    }
+  ],
+  "runs": [
+    {
+      "timed": 0,
+      "compile_exit": 0,
+      "compile_stdout": "",
+      "compile_stderr": "",
+      "run_exit": 0,
+      "stdout": "RESULT timed=0 loads=65539 value_checks=393235 reset_cases=20 gate_cases=2 failures=0\n/mnt/c/Users/gabri/projetos/isa1/sim/hdl/tb_counter_load.sv:93: $finish called at 786579200000 (1ps)\n",
+      "stderr": "",
+      "counts": {
+        "timed": 0,
+        "loads": 65539,
+        "value_checks": 393235,
+        "reset_cases": 20,
+        "gate_cases": 2,
+        "failures": 0
+      }
+    },
+    {
+      "timed": 1,
+      "compile_exit": 0,
+      "compile_stdout": "",
+      "compile_stderr": "",
+      "run_exit": 0,
+      "stdout": "RESULT timed=1 loads=65539 value_checks=393235 reset_cases=20 gate_cases=2 failures=0\n/mnt/c/Users/gabri/projetos/isa1/sim/hdl/tb_counter_load.sv:93: $finish called at 786579200000 (1ps)\n",
+      "stderr": "",
+      "counts": {
+        "timed": 1,
+        "loads": 65539,
+        "value_checks": 393235,
+        "reset_cases": 20,
+        "gate_cases": 2,
+        "failures": 0
+      }
+    }
+  ],
+  "additional_checks": [
+    {
+      "bench": "tb_hc191_unit",
+      "case": -1,
+      "expected_failure": false,
+      "passed": true,
+      "compile_exit": 0,
+      "run_exit": 0,
+      "output": "UNIT count_cases=64 transparent_load_cases=32 priority_cases=1 failures=0\n/mnt/c/Users/gabri/projetos/isa1/sim/hdl/tb_hc191_unit.sv:37: $finish called at 228000 (1ps)\n"
+    },
+    {
+      "bench": "tb_hc191_negative",
+      "case": 0,
+      "expected_failure": true,
+      "passed": true,
+      "compile_exit": 0,
+      "run_exit": 1,
+      "output": "FATAL: /mnt/c/Users/gabri/projetos/isa1/sim/hdl/hc_models.sv:56: HC191 LOAD pulse violation\n       Time: 360000  Scope: tb_hc191_negative.monitor\n"
+    },
+    {
+      "bench": "tb_hc191_negative",
+      "case": 1,
+      "expected_failure": true,
+      "passed": true,
+      "compile_exit": 0,
+      "run_exit": 1,
+      "output": "FATAL: /mnt/c/Users/gabri/projetos/isa1/sim/hdl/hc_models.sv:58: HC191 data setup before LOAD release violation\n       Time: 301000  Scope: tb_hc191_negative.monitor\n"
+    },
+    {
+      "bench": "tb_hc191_negative",
+      "case": 2,
+      "expected_failure": true,
+      "passed": true,
+      "compile_exit": 0,
+      "run_exit": 1,
+      "output": "FATAL: /mnt/c/Users/gabri/projetos/isa1/sim/hdl/hc_models.sv:63: HC191 LOAD recovery violation\n       Time: 310000  Scope: tb_hc191_negative.monitor\n"
+    },
+    {
+      "bench": "tb_hc191_negative",
+      "case": 3,
+      "expected_failure": true,
+      "passed": true,
+      "compile_exit": 0,
+      "run_exit": 1,
+      "output": "FATAL: /mnt/c/Users/gabri/projetos/isa1/sim/hdl/hc_models.sv:66: HC191 count setup violation\n       Time: 420000  Scope: tb_hc191_negative.monitor\n"
+    },
+    {
+      "bench": "tb_hc191_negative",
+      "case": 4,
+      "expected_failure": true,
+      "passed": true,
+      "compile_exit": 0,
+      "run_exit": 1,
+      "output": "FATAL: /mnt/c/Users/gabri/projetos/isa1/sim/hdl/hc_models.sv:40: HC191 data hold after LOAD violation\n       Time: 301000  Scope: tb_hc191_negative.monitor\n"
+    },
+    {
+      "bench": "tb_hc191_negative",
+      "case": 5,
+      "expected_failure": true,
+      "passed": true,
+      "compile_exit": 0,
+      "run_exit": 1,
+      "output": "FATAL: /mnt/c/Users/gabri/projetos/isa1/sim/hdl/hc_models.sv:45: HC191 CTEN hold violation\n       Time: 501000  Scope: tb_hc191_negative.monitor\n"
+    },
+    {
+      "bench": "tb_hc191_negative",
+      "case": 6,
+      "expected_failure": true,
+      "passed": true,
+      "compile_exit": 0,
+      "run_exit": 1,
+      "output": "FATAL: /mnt/c/Users/gabri/projetos/isa1/sim/hdl/hc_models.sv:50: HC191 direction hold violation\n       Time: 501000  Scope: tb_hc191_negative.monitor\n"
+    }
+  ]
+}

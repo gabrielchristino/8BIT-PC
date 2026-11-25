@@ -27,6 +27,8 @@ Os downloads chegaram com nomes temporários; os nomes legíveis acima foram res
 
 ## Transformações e material novo
 
+O desenvolvimento novo 9.8.4.2 está separado dos snapshots históricos: `sim/hdl/`, `hardware/counter_load_candidate/`, `tools/` e `docs/engineering/`. Datasheets TI foram obtidos das URLs oficiais, com documentos e avisos preservados em `references/`. A biblioteca gráfica KiCad é identificada por versão/hash e seus créditos foram preservados. `verification/rev9842/manifest.json` registra a origem e os hashes dos artefatos desta iteração; logs de execução e escopo das validações constam do relatório de engenharia.
+
 Na nova conferência, o acervo foi copiado para `C:/Users/gabri/projetos/isa1` sem sobrescrever os materiais já existentes. Arquivos locais adicionais, duplicatas e placeholders vazios têm inventário separado em `archive/local-additions-manifest.json`; ver `docs/RECHECK_SHARED_CHATS.md`. A pasta estava vazia na inspeção inicial descrita abaixo, mas recebeu arquivos posteriormente. A origem imediata dos acréscimos é a pasta local, sem presumir mecanismo ou autoria do download.
 
 - `archive/pages/*.md` é o Markdown retornado pela API, não uma reconstrução de um arquivo `.md` anterior.

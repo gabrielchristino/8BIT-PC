@@ -3,6 +3,8 @@ archive/** -text
 revisions/** -text
 *.zip -text
 *.bin -text
+*.pdf -text
+/hardware/counter_load_candidate/pinmap.csv -text
 /ISA-1_REV*.md -text
 /isa1_rev*.py -text
 /isa1_rev*.json -text

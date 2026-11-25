@@ -1,5 +1,13 @@
 # Decisões recuperadas e registro da migração
 
+## ADR E01 — Carga protegida do contador candidato
+
+Decisão de engenharia nova, 24/11/2026: separar captura, carga assíncrona, liberação e retenção antes de voltar a permitir contagem. Não ligar LOAD diretamente ao nível de ACK/COMMIT. Preservar a CPU recuperada enquanto o controle físico, a equivalência arquitetural e SP-1 não estiverem resolvidos. A alternativa de substituir imediatamente registradores por HC191 foi adiada: o banco isolado precisa de armazenamento/multiplexação auxiliares e não demonstrou economia total. Critério de aceitação para integração: simulação de netlist, 26 opcodes equivalentes, estabilidade durante WAIT, atualização única e reset seguro, além de fechamento temporal. Resultados e condições em docs/engineering/REV9842.md.
+
+## ADR E02 — Execução das ferramentas no Ubuntu WSL
+
+Preferência explícita do usuário: simulações/construção em WSL Ubuntu, com fontes persistentes no diretório Windows do projeto e saídas temporárias no Linux. Pacotes Icarus Verilog, ngspice e KiCad instalados pelos repositórios Ubuntu. Registrar versões efetivas e não confundir disponibilidade de ferramentas com validação do circuito. KiCad CLI 7 exporta o esquema/netlist, mas o ERC segue pendente.
+
 As decisões técnicas abaixo são registradas a partir de fontes históricas. O status «proposta» não significa aprovação de fabricação. Novas decisões da migração são identificadas explicitamente.
 
 | ID | Decisão e razão | Status e fonte |

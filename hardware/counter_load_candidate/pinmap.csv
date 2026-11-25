@@ -1,0 +1,189 @@
+reference,part,pin,pin_name,net,source
+U1,SN74HC191,1,P1,PRESET_1,TI datasheet pinout; KiCad graphical symbol
+U1,SN74HC191,10,P2,PRESET_2,TI datasheet pinout; KiCad graphical symbol
+U1,SN74HC191,11,Pl,X_LOAD_N,TI datasheet pinout; KiCad graphical symbol
+U1,SN74HC191,12,Tc,TERMINAL_0,TI datasheet pinout; KiCad graphical symbol
+U1,SN74HC191,13,Rc,NC,TI datasheet pinout; KiCad graphical symbol
+U1,SN74HC191,14,Cp,CLK,TI datasheet pinout; KiCad graphical symbol
+U1,SN74HC191,15,P0,PRESET_0,TI datasheet pinout; KiCad graphical symbol
+U1,SN74HC191,16,VCC,+5V,TI datasheet pinout; KiCad graphical symbol
+U1,SN74HC191,2,Q1,X_1,TI datasheet pinout; KiCad graphical symbol
+U1,SN74HC191,3,Q0,X_0,TI datasheet pinout; KiCad graphical symbol
+U1,SN74HC191,4,Ce,CTEN_0_N,TI datasheet pinout; KiCad graphical symbol
+U1,SN74HC191,5,D/U,X_DIR,TI datasheet pinout; KiCad graphical symbol
+U1,SN74HC191,6,Q2,X_2,TI datasheet pinout; KiCad graphical symbol
+U1,SN74HC191,7,Q3,X_3,TI datasheet pinout; KiCad graphical symbol
+U1,SN74HC191,8,GND,GND,TI datasheet pinout; KiCad graphical symbol
+U1,SN74HC191,9,P3,PRESET_3,TI datasheet pinout; KiCad graphical symbol
+U7,SN74HC157,1,S,SELECT_DATA,TI datasheet pinout; KiCad graphical symbol
+U7,SN74HC157,10,I1c,SAVED_2,TI datasheet pinout; KiCad graphical symbol
+U7,SN74HC157,11,I0c,GND,TI datasheet pinout; KiCad graphical symbol
+U7,SN74HC157,12,Zd,PRESET_3,TI datasheet pinout; KiCad graphical symbol
+U7,SN74HC157,13,I1d,SAVED_3,TI datasheet pinout; KiCad graphical symbol
+U7,SN74HC157,14,I0d,GND,TI datasheet pinout; KiCad graphical symbol
+U7,SN74HC157,15,E,GND,TI datasheet pinout; KiCad graphical symbol
+U7,SN74HC157,16,VCC,+5V,TI datasheet pinout; KiCad graphical symbol
+U7,SN74HC157,2,I0a,GND,TI datasheet pinout; KiCad graphical symbol
+U7,SN74HC157,3,I1a,SAVED_0,TI datasheet pinout; KiCad graphical symbol
+U7,SN74HC157,4,Za,PRESET_0,TI datasheet pinout; KiCad graphical symbol
+U7,SN74HC157,5,I0b,GND,TI datasheet pinout; KiCad graphical symbol
+U7,SN74HC157,6,I1b,SAVED_1,TI datasheet pinout; KiCad graphical symbol
+U7,SN74HC157,7,Zb,PRESET_1,TI datasheet pinout; KiCad graphical symbol
+U7,SN74HC157,8,GND,GND,TI datasheet pinout; KiCad graphical symbol
+U7,SN74HC157,9,Zc,PRESET_2,TI datasheet pinout; KiCad graphical symbol
+U2,SN74HC191,1,P1,PRESET_5,TI datasheet pinout; KiCad graphical symbol
+U2,SN74HC191,10,P2,PRESET_6,TI datasheet pinout; KiCad graphical symbol
+U2,SN74HC191,11,Pl,X_LOAD_N,TI datasheet pinout; KiCad graphical symbol
+U2,SN74HC191,12,Tc,TERMINAL_1,TI datasheet pinout; KiCad graphical symbol
+U2,SN74HC191,13,Rc,NC,TI datasheet pinout; KiCad graphical symbol
+U2,SN74HC191,14,Cp,CLK,TI datasheet pinout; KiCad graphical symbol
+U2,SN74HC191,15,P0,PRESET_4,TI datasheet pinout; KiCad graphical symbol
+U2,SN74HC191,16,VCC,+5V,TI datasheet pinout; KiCad graphical symbol
+U2,SN74HC191,2,Q1,X_5,TI datasheet pinout; KiCad graphical symbol
+U2,SN74HC191,3,Q0,X_4,TI datasheet pinout; KiCad graphical symbol
+U2,SN74HC191,4,Ce,CTEN_1_N,TI datasheet pinout; KiCad graphical symbol
+U2,SN74HC191,5,D/U,X_DIR,TI datasheet pinout; KiCad graphical symbol
+U2,SN74HC191,6,Q2,X_6,TI datasheet pinout; KiCad graphical symbol
+U2,SN74HC191,7,Q3,X_7,TI datasheet pinout; KiCad graphical symbol
+U2,SN74HC191,8,GND,GND,TI datasheet pinout; KiCad graphical symbol
+U2,SN74HC191,9,P3,PRESET_7,TI datasheet pinout; KiCad graphical symbol
+U8,SN74HC157,1,S,SELECT_DATA,TI datasheet pinout; KiCad graphical symbol
+U8,SN74HC157,10,I1c,SAVED_6,TI datasheet pinout; KiCad graphical symbol
+U8,SN74HC157,11,I0c,GND,TI datasheet pinout; KiCad graphical symbol
+U8,SN74HC157,12,Zd,PRESET_7,TI datasheet pinout; KiCad graphical symbol
+U8,SN74HC157,13,I1d,SAVED_7,TI datasheet pinout; KiCad graphical symbol
+U8,SN74HC157,14,I0d,GND,TI datasheet pinout; KiCad graphical symbol
+U8,SN74HC157,15,E,GND,TI datasheet pinout; KiCad graphical symbol
+U8,SN74HC157,16,VCC,+5V,TI datasheet pinout; KiCad graphical symbol
+U8,SN74HC157,2,I0a,GND,TI datasheet pinout; KiCad graphical symbol
+U8,SN74HC157,3,I1a,SAVED_4,TI datasheet pinout; KiCad graphical symbol
+U8,SN74HC157,4,Za,PRESET_4,TI datasheet pinout; KiCad graphical symbol
+U8,SN74HC157,5,I0b,GND,TI datasheet pinout; KiCad graphical symbol
+U8,SN74HC157,6,I1b,SAVED_5,TI datasheet pinout; KiCad graphical symbol
+U8,SN74HC157,7,Zb,PRESET_5,TI datasheet pinout; KiCad graphical symbol
+U8,SN74HC157,8,GND,GND,TI datasheet pinout; KiCad graphical symbol
+U8,SN74HC157,9,Zc,PRESET_6,TI datasheet pinout; KiCad graphical symbol
+U3,SN74HC191,1,P1,PRESET_9,TI datasheet pinout; KiCad graphical symbol
+U3,SN74HC191,10,P2,PRESET_10,TI datasheet pinout; KiCad graphical symbol
+U3,SN74HC191,11,Pl,X_LOAD_N,TI datasheet pinout; KiCad graphical symbol
+U3,SN74HC191,12,Tc,TERMINAL_2,TI datasheet pinout; KiCad graphical symbol
+U3,SN74HC191,13,Rc,NC,TI datasheet pinout; KiCad graphical symbol
+U3,SN74HC191,14,Cp,CLK,TI datasheet pinout; KiCad graphical symbol
+U3,SN74HC191,15,P0,PRESET_8,TI datasheet pinout; KiCad graphical symbol
+U3,SN74HC191,16,VCC,+5V,TI datasheet pinout; KiCad graphical symbol
+U3,SN74HC191,2,Q1,X_9,TI datasheet pinout; KiCad graphical symbol
+U3,SN74HC191,3,Q0,X_8,TI datasheet pinout; KiCad graphical symbol
+U3,SN74HC191,4,Ce,CTEN_2_N,TI datasheet pinout; KiCad graphical symbol
+U3,SN74HC191,5,D/U,X_DIR,TI datasheet pinout; KiCad graphical symbol
+U3,SN74HC191,6,Q2,X_10,TI datasheet pinout; KiCad graphical symbol
+U3,SN74HC191,7,Q3,X_11,TI datasheet pinout; KiCad graphical symbol
+U3,SN74HC191,8,GND,GND,TI datasheet pinout; KiCad graphical symbol
+U3,SN74HC191,9,P3,PRESET_11,TI datasheet pinout; KiCad graphical symbol
+U9,SN74HC157,1,S,SELECT_DATA,TI datasheet pinout; KiCad graphical symbol
+U9,SN74HC157,10,I1c,SAVED_10,TI datasheet pinout; KiCad graphical symbol
+U9,SN74HC157,11,I0c,GND,TI datasheet pinout; KiCad graphical symbol
+U9,SN74HC157,12,Zd,PRESET_11,TI datasheet pinout; KiCad graphical symbol
+U9,SN74HC157,13,I1d,SAVED_11,TI datasheet pinout; KiCad graphical symbol
+U9,SN74HC157,14,I0d,GND,TI datasheet pinout; KiCad graphical symbol
+U9,SN74HC157,15,E,GND,TI datasheet pinout; KiCad graphical symbol
+U9,SN74HC157,16,VCC,+5V,TI datasheet pinout; KiCad graphical symbol
+U9,SN74HC157,2,I0a,GND,TI datasheet pinout; KiCad graphical symbol
+U9,SN74HC157,3,I1a,SAVED_8,TI datasheet pinout; KiCad graphical symbol
+U9,SN74HC157,4,Za,PRESET_8,TI datasheet pinout; KiCad graphical symbol
+U9,SN74HC157,5,I0b,GND,TI datasheet pinout; KiCad graphical symbol
+U9,SN74HC157,6,I1b,SAVED_9,TI datasheet pinout; KiCad graphical symbol
+U9,SN74HC157,7,Zb,PRESET_9,TI datasheet pinout; KiCad graphical symbol
+U9,SN74HC157,8,GND,GND,TI datasheet pinout; KiCad graphical symbol
+U9,SN74HC157,9,Zc,PRESET_10,TI datasheet pinout; KiCad graphical symbol
+U4,SN74HC191,1,P1,PRESET_13,TI datasheet pinout; KiCad graphical symbol
+U4,SN74HC191,10,P2,PRESET_14,TI datasheet pinout; KiCad graphical symbol
+U4,SN74HC191,11,Pl,X_LOAD_N,TI datasheet pinout; KiCad graphical symbol
+U4,SN74HC191,12,Tc,NC,TI datasheet pinout; KiCad graphical symbol
+U4,SN74HC191,13,Rc,NC,TI datasheet pinout; KiCad graphical symbol
+U4,SN74HC191,14,Cp,CLK,TI datasheet pinout; KiCad graphical symbol
+U4,SN74HC191,15,P0,PRESET_12,TI datasheet pinout; KiCad graphical symbol
+U4,SN74HC191,16,VCC,+5V,TI datasheet pinout; KiCad graphical symbol
+U4,SN74HC191,2,Q1,X_13,TI datasheet pinout; KiCad graphical symbol
+U4,SN74HC191,3,Q0,X_12,TI datasheet pinout; KiCad graphical symbol
+U4,SN74HC191,4,Ce,CTEN_3_N,TI datasheet pinout; KiCad graphical symbol
+U4,SN74HC191,5,D/U,X_DIR,TI datasheet pinout; KiCad graphical symbol
+U4,SN74HC191,6,Q2,X_14,TI datasheet pinout; KiCad graphical symbol
+U4,SN74HC191,7,Q3,X_15,TI datasheet pinout; KiCad graphical symbol
+U4,SN74HC191,8,GND,GND,TI datasheet pinout; KiCad graphical symbol
+U4,SN74HC191,9,P3,PRESET_15,TI datasheet pinout; KiCad graphical symbol
+U10,SN74HC157,1,S,SELECT_DATA,TI datasheet pinout; KiCad graphical symbol
+U10,SN74HC157,10,I1c,SAVED_14,TI datasheet pinout; KiCad graphical symbol
+U10,SN74HC157,11,I0c,GND,TI datasheet pinout; KiCad graphical symbol
+U10,SN74HC157,12,Zd,PRESET_15,TI datasheet pinout; KiCad graphical symbol
+U10,SN74HC157,13,I1d,SAVED_15,TI datasheet pinout; KiCad graphical symbol
+U10,SN74HC157,14,I0d,GND,TI datasheet pinout; KiCad graphical symbol
+U10,SN74HC157,15,E,GND,TI datasheet pinout; KiCad graphical symbol
+U10,SN74HC157,16,VCC,+5V,TI datasheet pinout; KiCad graphical symbol
+U10,SN74HC157,2,I0a,GND,TI datasheet pinout; KiCad graphical symbol
+U10,SN74HC157,3,I1a,SAVED_12,TI datasheet pinout; KiCad graphical symbol
+U10,SN74HC157,4,Za,PRESET_12,TI datasheet pinout; KiCad graphical symbol
+U10,SN74HC157,5,I0b,GND,TI datasheet pinout; KiCad graphical symbol
+U10,SN74HC157,6,I1b,SAVED_13,TI datasheet pinout; KiCad graphical symbol
+U10,SN74HC157,7,Zb,PRESET_13,TI datasheet pinout; KiCad graphical symbol
+U10,SN74HC157,8,GND,GND,TI datasheet pinout; KiCad graphical symbol
+U10,SN74HC157,9,Zc,PRESET_14,TI datasheet pinout; KiCad graphical symbol
+U5,SN74HC377,1,~{E},CAPTURE_N,TI datasheet pinout; KiCad graphical symbol
+U5,SN74HC377,10,GND,GND,TI datasheet pinout; KiCad graphical symbol
+U5,SN74HC377,11,CP,CLK,TI datasheet pinout; KiCad graphical symbol
+U5,SN74HC377,12,Q4,SAVED_4,TI datasheet pinout; KiCad graphical symbol
+U5,SN74HC377,13,D4,EA_4,TI datasheet pinout; KiCad graphical symbol
+U5,SN74HC377,14,D5,EA_5,TI datasheet pinout; KiCad graphical symbol
+U5,SN74HC377,15,Q5,SAVED_5,TI datasheet pinout; KiCad graphical symbol
+U5,SN74HC377,16,Q6,SAVED_6,TI datasheet pinout; KiCad graphical symbol
+U5,SN74HC377,17,D6,EA_6,TI datasheet pinout; KiCad graphical symbol
+U5,SN74HC377,18,D7,EA_7,TI datasheet pinout; KiCad graphical symbol
+U5,SN74HC377,19,Q7,SAVED_7,TI datasheet pinout; KiCad graphical symbol
+U5,SN74HC377,2,Q0,SAVED_0,TI datasheet pinout; KiCad graphical symbol
+U5,SN74HC377,20,VCC,+5V,TI datasheet pinout; KiCad graphical symbol
+U5,SN74HC377,3,D0,EA_0,TI datasheet pinout; KiCad graphical symbol
+U5,SN74HC377,4,D1,EA_1,TI datasheet pinout; KiCad graphical symbol
+U5,SN74HC377,5,Q1,SAVED_1,TI datasheet pinout; KiCad graphical symbol
+U5,SN74HC377,6,Q2,SAVED_2,TI datasheet pinout; KiCad graphical symbol
+U5,SN74HC377,7,D2,EA_2,TI datasheet pinout; KiCad graphical symbol
+U5,SN74HC377,8,D3,EA_3,TI datasheet pinout; KiCad graphical symbol
+U5,SN74HC377,9,Q3,SAVED_3,TI datasheet pinout; KiCad graphical symbol
+U6,SN74HC377,1,~{E},CAPTURE_N,TI datasheet pinout; KiCad graphical symbol
+U6,SN74HC377,10,GND,GND,TI datasheet pinout; KiCad graphical symbol
+U6,SN74HC377,11,CP,CLK,TI datasheet pinout; KiCad graphical symbol
+U6,SN74HC377,12,Q4,SAVED_12,TI datasheet pinout; KiCad graphical symbol
+U6,SN74HC377,13,D4,EA_12,TI datasheet pinout; KiCad graphical symbol
+U6,SN74HC377,14,D5,EA_13,TI datasheet pinout; KiCad graphical symbol
+U6,SN74HC377,15,Q5,SAVED_13,TI datasheet pinout; KiCad graphical symbol
+U6,SN74HC377,16,Q6,SAVED_14,TI datasheet pinout; KiCad graphical symbol
+U6,SN74HC377,17,D6,EA_14,TI datasheet pinout; KiCad graphical symbol
+U6,SN74HC377,18,D7,EA_15,TI datasheet pinout; KiCad graphical symbol
+U6,SN74HC377,19,Q7,SAVED_15,TI datasheet pinout; KiCad graphical symbol
+U6,SN74HC377,2,Q0,SAVED_8,TI datasheet pinout; KiCad graphical symbol
+U6,SN74HC377,20,VCC,+5V,TI datasheet pinout; KiCad graphical symbol
+U6,SN74HC377,3,D0,EA_8,TI datasheet pinout; KiCad graphical symbol
+U6,SN74HC377,4,D1,EA_9,TI datasheet pinout; KiCad graphical symbol
+U6,SN74HC377,5,Q1,SAVED_9,TI datasheet pinout; KiCad graphical symbol
+U6,SN74HC377,6,Q2,SAVED_10,TI datasheet pinout; KiCad graphical symbol
+U6,SN74HC377,7,D2,EA_10,TI datasheet pinout; KiCad graphical symbol
+U6,SN74HC377,8,D3,EA_11,TI datasheet pinout; KiCad graphical symbol
+U6,SN74HC377,9,Q3,SAVED_11,TI datasheet pinout; KiCad graphical symbol
+C1,C,1,~,+5V,Engineering assumption; KiCad capacitor symbol
+C1,C,2,~,GND,Engineering assumption; KiCad capacitor symbol
+C2,C,1,~,+5V,Engineering assumption; KiCad capacitor symbol
+C2,C,2,~,GND,Engineering assumption; KiCad capacitor symbol
+C3,C,1,~,+5V,Engineering assumption; KiCad capacitor symbol
+C3,C,2,~,GND,Engineering assumption; KiCad capacitor symbol
+C4,C,1,~,+5V,Engineering assumption; KiCad capacitor symbol
+C4,C,2,~,GND,Engineering assumption; KiCad capacitor symbol
+C5,C,1,~,+5V,Engineering assumption; KiCad capacitor symbol
+C5,C,2,~,GND,Engineering assumption; KiCad capacitor symbol
+C6,C,1,~,+5V,Engineering assumption; KiCad capacitor symbol
+C6,C,2,~,GND,Engineering assumption; KiCad capacitor symbol
+C7,C,1,~,+5V,Engineering assumption; KiCad capacitor symbol
+C7,C,2,~,GND,Engineering assumption; KiCad capacitor symbol
+C8,C,1,~,+5V,Engineering assumption; KiCad capacitor symbol
+C8,C,2,~,GND,Engineering assumption; KiCad capacitor symbol
+C9,C,1,~,+5V,Engineering assumption; KiCad capacitor symbol
+C9,C,2,~,GND,Engineering assumption; KiCad capacitor symbol
+C10,C,1,~,+5V,Engineering assumption; KiCad capacitor symbol
+C10,C,2,~,GND,Engineering assumption; KiCad capacitor symbol

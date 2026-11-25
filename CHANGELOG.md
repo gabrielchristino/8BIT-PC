@@ -10,6 +10,8 @@
 
 ## Sequência histórica recuperada
 
+Nova conferência: acervo salvo em `C:/Users/gabri/projetos/isa1`, arquivos locais adicionais preservados e modelos 7.4/7.5 reexecutados com resultados iguais aos registros existentes. Downloads novos pelo chat compartilhado bloqueados com `ERR_BLOCKED_BY_CLIENT`; completude integral não confirmada. Ver `docs/RECHECK_SHARED_CHATS.md`.
+
 | Revisão | Conteúdo e limite de evidência |
 |---|---|
 | 7.6 / REV76 | Auditoria estrutural, divergência de convenção de pilha, sete opcodes pendentes naquele estágio; não emulador completo |

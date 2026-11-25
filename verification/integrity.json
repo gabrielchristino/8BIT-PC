@@ -1,6 +1,10 @@
 {
   "date": "2026-11-24",
-  "manifest_files_checked": 78,
+  "manifest_files_checked": 159,
+  "manifests": [
+    "archive/manifest.json",
+    "archive/local-additions-manifest.json"
+  ],
   "zip_entries_checked": 55,
   "failures": []
 }

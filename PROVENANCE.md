@@ -27,6 +27,8 @@ Os downloads chegaram com nomes temporários; os nomes legíveis acima foram res
 
 ## Transformações e material novo
 
+Na nova conferência, o acervo foi copiado para `C:/Users/gabri/projetos/isa1` sem sobrescrever os materiais já existentes. Arquivos locais adicionais, duplicatas e placeholders vazios têm inventário separado em `archive/local-additions-manifest.json`; ver `docs/RECHECK_SHARED_CHATS.md`. A pasta estava vazia na inspeção inicial descrita abaixo, mas recebeu arquivos posteriormente. A origem imediata dos acréscimos é a pasta local, sem presumir mecanismo ou autoria do download.
+
 - `archive/pages/*.md` é o Markdown retornado pela API, não uma reconstrução de um arquivo `.md` anterior.
 - `archive/browser-captures/` registra conteúdo exibido na interface, com identificação da conversa e do tipo de captura. Extrações de código removem apenas a coluna visual de números de linha; não possuem garantia dos bytes originais.
 - Fragmentos virtualizados são mantidos como capturas/fragmentos e não promovidos a fontes completas.

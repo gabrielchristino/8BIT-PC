@@ -13,6 +13,7 @@ O inventário detalhado por caminho, tamanho, SHA-256 e origem fica em [archive/
 | archive/browser-captures | Capturas adicionais da conversa e prévias de arquivos | Texto da interface; verificar cobertura e virtualização |
 | scripts | Verificador de bancadas e de integridade do acervo | Novo na migração |
 | verification | Saídas locais, falhas e comparação de ROM | Novo na migração |
+| Arquivos locais adicionais | Relatórios 7.4/7.5/7.6, códigos e resultados 7.4/7.5, duplicatas e placeholders | Preservados; hashes em archive/local-additions-manifest.json |
 
 ## Fontes e código por função
 

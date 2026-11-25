@@ -13,9 +13,14 @@ def digest(data):
 
 
 def main():
-    manifest = json.loads((ROOT / "archive/manifest.json").read_text(encoding="utf-8"))
+    manifests = [ROOT / "archive/manifest.json"]
+    additions = ROOT / "archive/local-additions-manifest.json"
+    if additions.exists():
+        manifests.append(additions)
+    entries = [entry for filename in manifests
+               for entry in json.loads(filename.read_text(encoding="utf-8"))["files"]]
     failures = []
-    for entry in manifest["files"]:
+    for entry in entries:
         target = (ROOT / entry["path"]).resolve()
         if not target.is_relative_to(ROOT):
             failures.append(f"Path outside repository: {entry['path']}")
@@ -45,7 +50,8 @@ def main():
                       for p in (ROOT / "revisions" / revision).rglob("*") if p.is_file()}
             if actual != expected:
                 failures.append(f"Unexpected/missing extracted files in {revision}: {sorted(actual ^ expected)}")
-    report = {"date": "2026-11-24", "manifest_files_checked": len(manifest["files"]),
+    report = {"date": "2026-11-24", "manifest_files_checked": len(entries),
+              "manifests": [p.relative_to(ROOT).as_posix() for p in manifests],
               "zip_entries_checked": checked, "failures": failures}
     (ROOT / "verification/integrity.json").write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
     print(json.dumps(report, indent=2))

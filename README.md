@@ -6,6 +6,8 @@ Projeto de computador pessoal com CPU própria de lógica discreta, endereçamen
 
 ## Começar
 
+O diretório de continuidade é `C:/Users/gabri/projetos/isa1`. A nova conferência preservou arquivos locais 7.4/7.5 e a auditoria 7.6, mas os downloads pelo chat compartilhado foram bloqueados pelo Chrome. Ver [relatório da conferência](docs/RECHECK_SHARED_CHATS.md).
+
 - [Arquitetura e conjunto de instruções](ARCHITECTURE.md)
 - [Decisões e alternativas](DECISIONS.md)
 - [Próximas etapas](ROADMAP.md)

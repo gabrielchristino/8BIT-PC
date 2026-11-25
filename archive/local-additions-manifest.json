@@ -1,0 +1,647 @@
+{
+  "date": "2026-11-24",
+  "hash": "SHA-256",
+  "scope": "Previously untracked local source files, duplicates and empty placeholders; original manifest unchanged.",
+  "files": [
+    {
+      "path": "archive/originals/counter.py",
+      "bytes": 1142,
+      "sha256": "5e43f91d3282736e44acf73a8f43fee9333916f885c959b393921296e529bcf2",
+      "source": "Pre-existing files in C:/Users/gabri/projetos/isa1 at recheck on 2026-11-24",
+      "kind": "preserved-local-source",
+      "duplicate_of": "revisions/rev984/counter.py"
+    },
+    {
+      "path": "archive/originals/ISA-1_REV74_RECUPERACAO.md",
+      "bytes": 1692,
+      "sha256": "10820cacc6409a6d037536d0a871211431e0a3995cf9708edbc7049d5a966f7c",
+      "source": "Pre-existing files in C:/Users/gabri/projetos/isa1 at recheck on 2026-11-24",
+      "kind": "preserved-local-source",
+      "duplicate_of": "ISA-1_REV74_RECUPERACAO.md"
+    },
+    {
+      "path": "archive/originals/ISA-1_REV75_CONTROLE.md",
+      "bytes": 1606,
+      "sha256": "f6bfe794722a4dc1d5b4004b9e3db6cec401f09ccb2e5a7f5f35938dbd49cf84",
+      "source": "Pre-existing files in C:/Users/gabri/projetos/isa1 at recheck on 2026-11-24",
+      "kind": "preserved-local-source",
+      "duplicate_of": "ISA-1_REV75_CONTROLE.md"
+    },
+    {
+      "path": "archive/originals/ISA-1_REV76_AUDITORIA.md",
+      "bytes": 1215,
+      "sha256": "eac8c30ea165ca7770b1f421e484635409c2a94cd8039f68d36089977a53bfd1",
+      "source": "Pre-existing files in C:/Users/gabri/projetos/isa1 at recheck on 2026-11-24",
+      "kind": "preserved-local-source",
+      "duplicate_of": "ISA-1_REV76_AUDITORIA.md"
+    },
+    {
+      "path": "archive/originals/ISA-1_rev93.zip",
+      "bytes": 12264,
+      "sha256": "b5200710ef925d19efc29bfc0b854e2d41721541f83747714a32f32976e41dcb",
+      "source": "Pre-existing files in C:/Users/gabri/projetos/isa1 at recheck on 2026-11-24",
+      "kind": "preserved-local-source",
+      "duplicate_of": "archive/packages/ISA-1_rev93.zip"
+    },
+    {
+      "path": "archive/originals/ISA-1_rev983.zip",
+      "bytes": 25511,
+      "sha256": "7918445ef57193670812688d72b13a522883a8490f84288c35db256c6ead11b8",
+      "source": "Pre-existing files in C:/Users/gabri/projetos/isa1 at recheck on 2026-11-24",
+      "kind": "preserved-local-source",
+      "duplicate_of": "archive/packages/ISA-1_rev983.zip"
+    },
+    {
+      "path": "archive/originals/ISA-1_rev984.zip",
+      "bytes": 2654,
+      "sha256": "8292639f9fb665f8943d81b5a08001a89750ebcb6dd7fcb3eb7cbbbfec8a5cd9",
+      "source": "Pre-existing files in C:/Users/gabri/projetos/isa1 at recheck on 2026-11-24",
+      "kind": "preserved-local-source",
+      "duplicate_of": "archive/packages/ISA-1_rev984.zip"
+    },
+    {
+      "path": "archive/originals/isa1_rev74 (1).py",
+      "bytes": 2454,
+      "sha256": "0b935129ff8f6b22de93a9529730ee5f6a67eebb13282735f52ba8b5358fa5eb",
+      "source": "Pre-existing files in C:/Users/gabri/projetos/isa1 at recheck on 2026-11-24",
+      "kind": "preserved-local-source"
+    },
+    {
+      "path": "archive/originals/isa1_rev74_results.json",
+      "bytes": 119,
+      "sha256": "a65be12af2298c615b81186eb097ea58c150b3b0d3007548e8b96e72d90056ae",
+      "source": "Pre-existing files in C:/Users/gabri/projetos/isa1 at recheck on 2026-11-24",
+      "kind": "preserved-local-source"
+    },
+    {
+      "path": "archive/originals/isa1_rev74.py",
+      "bytes": 2454,
+      "sha256": "0b935129ff8f6b22de93a9529730ee5f6a67eebb13282735f52ba8b5358fa5eb",
+      "source": "Pre-existing files in C:/Users/gabri/projetos/isa1 at recheck on 2026-11-24",
+      "kind": "preserved-local-source",
+      "duplicate_of": "archive/originals/isa1_rev74 (1).py"
+    },
+    {
+      "path": "archive/originals/isa1_rev75_results.json",
+      "bytes": 95,
+      "sha256": "94a68b6579560052d627483fe7c12c92d9248f967c18e9d0992269fdc3d60d87",
+      "source": "Pre-existing files in C:/Users/gabri/projetos/isa1 at recheck on 2026-11-24",
+      "kind": "preserved-local-source"
+    },
+    {
+      "path": "archive/originals/isa1_rev75.py",
+      "bytes": 1273,
+      "sha256": "6024ba6faad5efe969a9cd946fbd88f02ce52fbc627ce614e5e9efbc70ea2445",
+      "source": "Pre-existing files in C:/Users/gabri/projetos/isa1 at recheck on 2026-11-24",
+      "kind": "preserved-local-source"
+    },
+    {
+      "path": "archive/revisions/rev93/async_results.json",
+      "bytes": 86,
+      "sha256": "7c5b862d031cd9294e49163120437f9f31c86d33b944abc19455d40bbcf91419",
+      "source": "Pre-existing files in C:/Users/gabri/projetos/isa1 at recheck on 2026-11-24",
+      "kind": "preserved-local-source",
+      "duplicate_of": "revisions/rev93/async_results.json"
+    },
+    {
+      "path": "archive/revisions/rev93/cpu.py",
+      "bytes": 3284,
+      "sha256": "92d7f858d89c26a906422f4995a25b9a079a1470eca792bfa44d7507f3c33eb5",
+      "source": "Pre-existing files in C:/Users/gabri/projetos/isa1 at recheck on 2026-11-24",
+      "kind": "preserved-local-source",
+      "duplicate_of": "revisions/rev983/cpu.py"
+    },
+    {
+      "path": "archive/revisions/rev93/instruction_reset_results.json",
+      "bytes": 51,
+      "sha256": "a2b87dc78c457e1ff89e58bdf232a5a3e7b4b8fa3a892a1756b092e7d159c880",
+      "source": "Pre-existing files in C:/Users/gabri/projetos/isa1 at recheck on 2026-11-24",
+      "kind": "preserved-local-source",
+      "duplicate_of": "revisions/rev93/instruction_reset_results.json"
+    },
+    {
+      "path": "archive/revisions/rev93/integrated.py",
+      "bytes": 2755,
+      "sha256": "b0eca750bd4b30bafb434556eba783949c3653551e829e0b0016e109ca8abd8d",
+      "source": "Pre-existing files in C:/Users/gabri/projetos/isa1 at recheck on 2026-11-24",
+      "kind": "preserved-local-source",
+      "duplicate_of": "revisions/rev983/integrated.py"
+    },
+    {
+      "path": "archive/revisions/rev93/keyboard_results.json",
+      "bytes": 128,
+      "sha256": "7eef288ecfe83404e09ced74ac8dac95f0b55fab87daa5aab1f9e8dc31b87a6c",
+      "source": "Pre-existing files in C:/Users/gabri/projetos/isa1 at recheck on 2026-11-24",
+      "kind": "preserved-local-source",
+      "duplicate_of": "revisions/rev93/keyboard_results.json"
+    },
+    {
+      "path": "archive/revisions/rev93/keyboard.py",
+      "bytes": 2370,
+      "sha256": "a2eccfd9d04b69879ee2c8321a5f1abe5b932cb9ee0d4af10603d85d0f005fa9",
+      "source": "Pre-existing files in C:/Users/gabri/projetos/isa1 at recheck on 2026-11-24",
+      "kind": "preserved-local-source",
+      "duplicate_of": "revisions/rev983/keyboard.py"
+    },
+    {
+      "path": "archive/revisions/rev93/logic.py",
+      "bytes": 783,
+      "sha256": "f350d39b8b4c434344d7c37c6d5852edc98e3afe8fd2138b7e0577a488fa17c5",
+      "source": "Pre-existing files in C:/Users/gabri/projetos/isa1 at recheck on 2026-11-24",
+      "kind": "preserved-local-source",
+      "duplicate_of": "revisions/rev983/logic.py"
+    },
+    {
+      "path": "archive/revisions/rev93/README.md",
+      "bytes": 2273,
+      "sha256": "0997f0faf80c4bea199991054ee35969dec4cccb68ed5bf8547708a511b9d54c",
+      "source": "Pre-existing files in C:/Users/gabri/projetos/isa1 at recheck on 2026-11-24",
+      "kind": "preserved-local-source",
+      "duplicate_of": "revisions/rev93/README.md"
+    },
+    {
+      "path": "archive/revisions/rev93/results.json",
+      "bytes": 186,
+      "sha256": "64dc20fe1943f03f6521de0406d0b48494fef11c2ec447b857a67e89d3a1ad02",
+      "source": "Pre-existing files in C:/Users/gabri/projetos/isa1 at recheck on 2026-11-24",
+      "kind": "preserved-local-source",
+      "duplicate_of": "revisions/rev93/results.json"
+    },
+    {
+      "path": "archive/revisions/rev93/safety_results.json",
+      "bytes": 30,
+      "sha256": "58300248a0837235bfd9c178cf4e51f91e88367563d18a5f2438dcd50600e225",
+      "source": "Pre-existing files in C:/Users/gabri/projetos/isa1 at recheck on 2026-11-24",
+      "kind": "preserved-local-source",
+      "duplicate_of": "revisions/rev93/safety_results.json"
+    },
+    {
+      "path": "archive/revisions/rev93/system.py",
+      "bytes": 1939,
+      "sha256": "950f7e491f852d0cf469725f279645fdb3a57923a6cef3b4a9b05eb8d7f9f438",
+      "source": "Pre-existing files in C:/Users/gabri/projetos/isa1 at recheck on 2026-11-24",
+      "kind": "preserved-local-source",
+      "duplicate_of": "revisions/rev983/system.py"
+    },
+    {
+      "path": "archive/revisions/rev93/test_async.py",
+      "bytes": 850,
+      "sha256": "ea248bd9c066e21a22dd3b6760613848ae03fdbfdeb3bab21cec6cacbc8eb8e6",
+      "source": "Pre-existing files in C:/Users/gabri/projetos/isa1 at recheck on 2026-11-24",
+      "kind": "preserved-local-source",
+      "duplicate_of": "revisions/rev983/test_async.py"
+    },
+    {
+      "path": "archive/revisions/rev93/test_instruction_reset.py",
+      "bytes": 1491,
+      "sha256": "2b3da31316b85e7e551a7a76e1d08d3baaf84642a1c910fb7ec9619f2700d414",
+      "source": "Pre-existing files in C:/Users/gabri/projetos/isa1 at recheck on 2026-11-24",
+      "kind": "preserved-local-source",
+      "duplicate_of": "revisions/rev983/test_instruction_reset.py"
+    },
+    {
+      "path": "archive/revisions/rev93/test_safety.py",
+      "bytes": 1034,
+      "sha256": "92f1aeba286a862292d71aee792280f25d05c858f46f706108633b2f8a7941c5",
+      "source": "Pre-existing files in C:/Users/gabri/projetos/isa1 at recheck on 2026-11-24",
+      "kind": "preserved-local-source",
+      "duplicate_of": "revisions/rev983/test_safety.py"
+    },
+    {
+      "path": "archive/revisions/rev93/test.py",
+      "bytes": 1388,
+      "sha256": "961a9da2478f0de837824e91513e1ec97a3a008c20aea9f6b10038dec64a424f",
+      "source": "Pre-existing files in C:/Users/gabri/projetos/isa1 at recheck on 2026-11-24",
+      "kind": "preserved-local-source",
+      "duplicate_of": "revisions/rev983/test.py"
+    },
+    {
+      "path": "archive/revisions/rev93/validation_results.json",
+      "bytes": 101,
+      "sha256": "c8c98266f3e3121a4b2d983b8eb43a76c59d2246cd0efd56ebd5caa5fcebadb1",
+      "source": "Pre-existing files in C:/Users/gabri/projetos/isa1 at recheck on 2026-11-24",
+      "kind": "preserved-local-source",
+      "duplicate_of": "revisions/rev93/validation_results.json"
+    },
+    {
+      "path": "archive/revisions/rev93/validation.py",
+      "bytes": 2578,
+      "sha256": "537a4988a72d76e4d6cf1aed4489f43d8fbfcb4e530e06b6d18c6284be84745f",
+      "source": "Pre-existing files in C:/Users/gabri/projetos/isa1 at recheck on 2026-11-24",
+      "kind": "preserved-local-source",
+      "duplicate_of": "revisions/rev983/validation.py"
+    },
+    {
+      "path": "archive/revisions/rev983/alu_gates.py",
+      "bytes": 1031,
+      "sha256": "98fcd0111c4c7a3559bd67eadff2a83b5c6c1dc0fc159d172004d809c2c39ed4",
+      "source": "Pre-existing files in C:/Users/gabri/projetos/isa1 at recheck on 2026-11-24",
+      "kind": "preserved-local-source",
+      "duplicate_of": "revisions/rev983/alu_gates.py"
+    },
+    {
+      "path": "archive/revisions/rev983/assembler.py",
+      "bytes": 1610,
+      "sha256": "144c037cb92db216d6ec85d33c7f668e8dd20993c14552acf5cbb9316e186c08",
+      "source": "Pre-existing files in C:/Users/gabri/projetos/isa1 at recheck on 2026-11-24",
+      "kind": "preserved-local-source",
+      "duplicate_of": "revisions/rev983/assembler.py"
+    },
+    {
+      "path": "archive/revisions/rev983/blocks_results.txt",
+      "bytes": 62,
+      "sha256": "003cbaea9b4a2045bbd7bbc2fae404f9205873abd8c42d8dfefa2ddf3c5339aa",
+      "source": "Pre-existing files in C:/Users/gabri/projetos/isa1 at recheck on 2026-11-24",
+      "kind": "preserved-local-source",
+      "duplicate_of": "revisions/rev983/blocks_results.txt"
+    },
+    {
+      "path": "archive/revisions/rev983/control_lane0.bin",
+      "bytes": 8192,
+      "sha256": "d8e4a90ed70b376c12cda278f659b32decb14e0b588bda475932124dc5c576f2",
+      "source": "Pre-existing files in C:/Users/gabri/projetos/isa1 at recheck on 2026-11-24",
+      "kind": "preserved-local-source",
+      "duplicate_of": "revisions/rev983/control_lane0.bin"
+    },
+    {
+      "path": "archive/revisions/rev983/control_lane1.bin",
+      "bytes": 8192,
+      "sha256": "e403962ad102f2018347fbc1f9c8ba01b7ad71c23d29824eee33248ee29f2da6",
+      "source": "Pre-existing files in C:/Users/gabri/projetos/isa1 at recheck on 2026-11-24",
+      "kind": "preserved-local-source",
+      "duplicate_of": "revisions/rev983/control_lane1.bin"
+    },
+    {
+      "path": "archive/revisions/rev983/control_lane2.bin",
+      "bytes": 8192,
+      "sha256": "1cb7101341d7b4e13bb615695d4e5bbeb55b4de5132ad8e408033c8effceefe6",
+      "source": "Pre-existing files in C:/Users/gabri/projetos/isa1 at recheck on 2026-11-24",
+      "kind": "preserved-local-source",
+      "duplicate_of": "revisions/rev983/control_lane2.bin"
+    },
+    {
+      "path": "archive/revisions/rev983/control_lane3.bin",
+      "bytes": 8192,
+      "sha256": "20cca3fa9b9106e433062a0fd4001f8d3575200708c5b1e2ff3758f3ed962461",
+      "source": "Pre-existing files in C:/Users/gabri/projetos/isa1 at recheck on 2026-11-24",
+      "kind": "preserved-local-source",
+      "duplicate_of": "revisions/rev983/control_lane3.bin"
+    },
+    {
+      "path": "archive/revisions/rev983/control_reset_results.json",
+      "bytes": 51,
+      "sha256": "7ff6060e3320c2f580cd9dca9efb2d4228667fa22488be37fa29aba37f5785a0",
+      "source": "Pre-existing files in C:/Users/gabri/projetos/isa1 at recheck on 2026-11-24",
+      "kind": "preserved-local-source",
+      "duplicate_of": "revisions/rev983/control_reset_results.json"
+    },
+    {
+      "path": "archive/revisions/rev983/control_results.json",
+      "bytes": 97,
+      "sha256": "b95a837a413287be7d522bb9b346f14e81720380214c8526a4ada9816d1348d2",
+      "source": "Pre-existing files in C:/Users/gabri/projetos/isa1 at recheck on 2026-11-24",
+      "kind": "preserved-local-source",
+      "duplicate_of": "revisions/rev983/control_results.json"
+    },
+    {
+      "path": "archive/revisions/rev983/control.py",
+      "bytes": 3901,
+      "sha256": "2b2da7d45ed55ecc8bcd1720a4c99f6f134bd856b7d7f32065643765a458f19e",
+      "source": "Pre-existing files in C:/Users/gabri/projetos/isa1 at recheck on 2026-11-24",
+      "kind": "preserved-local-source",
+      "duplicate_of": "revisions/rev983/control.py"
+    },
+    {
+      "path": "archive/revisions/rev983/cpu.py",
+      "bytes": 3284,
+      "sha256": "92d7f858d89c26a906422f4995a25b9a079a1470eca792bfa44d7507f3c33eb5",
+      "source": "Pre-existing files in C:/Users/gabri/projetos/isa1 at recheck on 2026-11-24",
+      "kind": "preserved-local-source",
+      "duplicate_of": "revisions/rev983/cpu.py"
+    },
+    {
+      "path": "archive/revisions/rev983/datapath_blocks.py",
+      "bytes": 1139,
+      "sha256": "403799a67ed20eff558c6ab0223b97b4113fbb88105999b808e1db4fd44433bf",
+      "source": "Pre-existing files in C:/Users/gabri/projetos/isa1 at recheck on 2026-11-24",
+      "kind": "preserved-local-source",
+      "duplicate_of": "revisions/rev983/datapath_blocks.py"
+    },
+    {
+      "path": "archive/revisions/rev983/disassembler.py",
+      "bytes": 846,
+      "sha256": "ca788ca18c51ecd593b7976d5467fd56848e06c5a8ace430a1ae196eeb084911",
+      "source": "Pre-existing files in C:/Users/gabri/projetos/isa1 at recheck on 2026-11-24",
+      "kind": "preserved-local-source",
+      "duplicate_of": "revisions/rev983/disassembler.py"
+    },
+    {
+      "path": "archive/revisions/rev983/eeprom.py",
+      "bytes": 703,
+      "sha256": "2c59b21a9a4345a09b6a01aa7ff91b4c953ae5a32d26dbd0f38c5fb485df986f",
+      "source": "Pre-existing files in C:/Users/gabri/projetos/isa1 at recheck on 2026-11-24",
+      "kind": "preserved-local-source",
+      "duplicate_of": "revisions/rev983/eeprom.py"
+    },
+    {
+      "path": "archive/revisions/rev983/integrated.py",
+      "bytes": 2755,
+      "sha256": "b0eca750bd4b30bafb434556eba783949c3653551e829e0b0016e109ca8abd8d",
+      "source": "Pre-existing files in C:/Users/gabri/projetos/isa1 at recheck on 2026-11-24",
+      "kind": "preserved-local-source",
+      "duplicate_of": "revisions/rev983/integrated.py"
+    },
+    {
+      "path": "archive/revisions/rev983/keyboard.py",
+      "bytes": 2370,
+      "sha256": "a2eccfd9d04b69879ee2c8321a5f1abe5b932cb9ee0d4af10603d85d0f005fa9",
+      "source": "Pre-existing files in C:/Users/gabri/projetos/isa1 at recheck on 2026-11-24",
+      "kind": "preserved-local-source",
+      "duplicate_of": "revisions/rev983/keyboard.py"
+    },
+    {
+      "path": "archive/revisions/rev983/logic.py",
+      "bytes": 783,
+      "sha256": "f350d39b8b4c434344d7c37c6d5852edc98e3afe8fd2138b7e0577a488fa17c5",
+      "source": "Pre-existing files in C:/Users/gabri/projetos/isa1 at recheck on 2026-11-24",
+      "kind": "preserved-local-source",
+      "duplicate_of": "revisions/rev983/logic.py"
+    },
+    {
+      "path": "archive/revisions/rev983/microcode.py",
+      "bytes": 2875,
+      "sha256": "47a28fff88566794bf616a75ca394219d2243da1ddb8d6492c5033f3c06a514f",
+      "source": "Pre-existing files in C:/Users/gabri/projetos/isa1 at recheck on 2026-11-24",
+      "kind": "preserved-local-source",
+      "duplicate_of": "revisions/rev983/microcode.py"
+    },
+    {
+      "path": "archive/revisions/rev983/README.md",
+      "bytes": 1590,
+      "sha256": "646c70b9b2f145af290a59a74abf643c3c4e597594c668e6272f4e8b5be8eb96",
+      "source": "Pre-existing files in C:/Users/gabri/projetos/isa1 at recheck on 2026-11-24",
+      "kind": "preserved-local-source",
+      "duplicate_of": "revisions/rev984/previous_README.md"
+    },
+    {
+      "path": "archive/revisions/rev983/sequencer.py",
+      "bytes": 1058,
+      "sha256": "612239002cb3644800d1dfc43430a15b3d46836e750ca01560e6ea10bffc195b",
+      "source": "Pre-existing files in C:/Users/gabri/projetos/isa1 at recheck on 2026-11-24",
+      "kind": "preserved-local-source",
+      "duplicate_of": "revisions/rev983/sequencer.py"
+    },
+    {
+      "path": "archive/revisions/rev983/system.py",
+      "bytes": 1939,
+      "sha256": "950f7e491f852d0cf469725f279645fdb3a57923a6cef3b4a9b05eb8d7f9f438",
+      "source": "Pre-existing files in C:/Users/gabri/projetos/isa1 at recheck on 2026-11-24",
+      "kind": "preserved-local-source",
+      "duplicate_of": "revisions/rev983/system.py"
+    },
+    {
+      "path": "archive/revisions/rev983/test_assembler.py",
+      "bytes": 920,
+      "sha256": "1f38d11a991377df438f88d9657a8d68275ead7e76e72e4b1dd2bdbf6410b5bc",
+      "source": "Pre-existing files in C:/Users/gabri/projetos/isa1 at recheck on 2026-11-24",
+      "kind": "preserved-local-source",
+      "duplicate_of": "revisions/rev983/test_assembler.py"
+    },
+    {
+      "path": "archive/revisions/rev983/test_async.py",
+      "bytes": 850,
+      "sha256": "ea248bd9c066e21a22dd3b6760613848ae03fdbfdeb3bab21cec6cacbc8eb8e6",
+      "source": "Pre-existing files in C:/Users/gabri/projetos/isa1 at recheck on 2026-11-24",
+      "kind": "preserved-local-source",
+      "duplicate_of": "revisions/rev983/test_async.py"
+    },
+    {
+      "path": "archive/revisions/rev983/test_control_reset.py",
+      "bytes": 1525,
+      "sha256": "35afff2250938a893bd21c3391642dc7f2ec5b691123d15e04613f41105a949d",
+      "source": "Pre-existing files in C:/Users/gabri/projetos/isa1 at recheck on 2026-11-24",
+      "kind": "preserved-local-source",
+      "duplicate_of": "revisions/rev983/test_control_reset.py"
+    },
+    {
+      "path": "archive/revisions/rev983/test_control.py",
+      "bytes": 1158,
+      "sha256": "03dde78d83e05cba3ab0d625eb7ff344bb067f6c4d5257c50126d8c5ba485d6b",
+      "source": "Pre-existing files in C:/Users/gabri/projetos/isa1 at recheck on 2026-11-24",
+      "kind": "preserved-local-source",
+      "duplicate_of": "revisions/rev983/test_control.py"
+    },
+    {
+      "path": "archive/revisions/rev983/test_eeprom.py",
+      "bytes": 914,
+      "sha256": "e5445e50a2deae84bb71e60e0ba8f0afb0849a0f1bc57fe70d96d94fa7764e55",
+      "source": "Pre-existing files in C:/Users/gabri/projetos/isa1 at recheck on 2026-11-24",
+      "kind": "preserved-local-source",
+      "duplicate_of": "revisions/rev983/test_eeprom.py"
+    },
+    {
+      "path": "archive/revisions/rev983/test_encoded_reset.py",
+      "bytes": 1531,
+      "sha256": "565ee3a1684208048c8eac52557ad65bebd27a98f77bad238a56b05d80837aea",
+      "source": "Pre-existing files in C:/Users/gabri/projetos/isa1 at recheck on 2026-11-24",
+      "kind": "preserved-local-source",
+      "duplicate_of": "revisions/rev983/test_encoded_reset.py"
+    },
+    {
+      "path": "archive/revisions/rev983/test_instruction_reset.py",
+      "bytes": 1491,
+      "sha256": "2b3da31316b85e7e551a7a76e1d08d3baaf84642a1c910fb7ec9619f2700d414",
+      "source": "Pre-existing files in C:/Users/gabri/projetos/isa1 at recheck on 2026-11-24",
+      "kind": "preserved-local-source",
+      "duplicate_of": "revisions/rev983/test_instruction_reset.py"
+    },
+    {
+      "path": "archive/revisions/rev983/test_invalid.py",
+      "bytes": 340,
+      "sha256": "4f0ba7da75fc92382434210fc01362c1400bfd89724f96e9ba1c614f66631e47",
+      "source": "Pre-existing files in C:/Users/gabri/projetos/isa1 at recheck on 2026-11-24",
+      "kind": "preserved-local-source",
+      "duplicate_of": "revisions/rev983/test_invalid.py"
+    },
+    {
+      "path": "archive/revisions/rev983/test_microcode.py",
+      "bytes": 1159,
+      "sha256": "d59de577b3d417cdd3c0d9e8a3cdccb713e8e9dd4b2891e976d61f258439f38b",
+      "source": "Pre-existing files in C:/Users/gabri/projetos/isa1 at recheck on 2026-11-24",
+      "kind": "preserved-local-source",
+      "duplicate_of": "revisions/rev983/test_microcode.py"
+    },
+    {
+      "path": "archive/revisions/rev983/test_safety.py",
+      "bytes": 1034,
+      "sha256": "92f1aeba286a862292d71aee792280f25d05c858f46f706108633b2f8a7941c5",
+      "source": "Pre-existing files in C:/Users/gabri/projetos/isa1 at recheck on 2026-11-24",
+      "kind": "preserved-local-source",
+      "duplicate_of": "revisions/rev983/test_safety.py"
+    },
+    {
+      "path": "archive/revisions/rev983/test_sequencer.py",
+      "bytes": 1271,
+      "sha256": "95eb6468cfe719ed350c982a5de572c8ad9bc25a96407622f494915203770608",
+      "source": "Pre-existing files in C:/Users/gabri/projetos/isa1 at recheck on 2026-11-24",
+      "kind": "preserved-local-source",
+      "duplicate_of": "revisions/rev983/test_sequencer.py"
+    },
+    {
+      "path": "archive/revisions/rev983/test.py",
+      "bytes": 1388,
+      "sha256": "961a9da2478f0de837824e91513e1ec97a3a008c20aea9f6b10038dec64a424f",
+      "source": "Pre-existing files in C:/Users/gabri/projetos/isa1 at recheck on 2026-11-24",
+      "kind": "preserved-local-source",
+      "duplicate_of": "revisions/rev983/test.py"
+    },
+    {
+      "path": "archive/revisions/rev983/validation.py",
+      "bytes": 2578,
+      "sha256": "537a4988a72d76e4d6cf1aed4489f43d8fbfcb4e530e06b6d18c6284be84745f",
+      "source": "Pre-existing files in C:/Users/gabri/projetos/isa1 at recheck on 2026-11-24",
+      "kind": "preserved-local-source",
+      "duplicate_of": "revisions/rev983/validation.py"
+    },
+    {
+      "path": "archive/revisions/rev984/counter.py",
+      "bytes": 1142,
+      "sha256": "5e43f91d3282736e44acf73a8f43fee9333916f885c959b393921296e529bcf2",
+      "source": "Pre-existing files in C:/Users/gabri/projetos/isa1 at recheck on 2026-11-24",
+      "kind": "preserved-local-source",
+      "duplicate_of": "revisions/rev984/counter.py"
+    },
+    {
+      "path": "archive/revisions/rev984/previous_README.md",
+      "bytes": 1590,
+      "sha256": "646c70b9b2f145af290a59a74abf643c3c4e597594c668e6272f4e8b5be8eb96",
+      "source": "Pre-existing files in C:/Users/gabri/projetos/isa1 at recheck on 2026-11-24",
+      "kind": "preserved-local-source",
+      "duplicate_of": "revisions/rev984/previous_README.md"
+    },
+    {
+      "path": "archive/revisions/rev984/README.md",
+      "bytes": 958,
+      "sha256": "e210ef232fb724a8fac306e3a807f129ab78512c933747a959d2d0a73587a0ae",
+      "source": "Pre-existing files in C:/Users/gabri/projetos/isa1 at recheck on 2026-11-24",
+      "kind": "preserved-local-source",
+      "duplicate_of": "revisions/rev984/README.md"
+    },
+    {
+      "path": "archive/revisions/rev984/results.txt",
+      "bytes": 53,
+      "sha256": "3661fa5c7638658465f9f5cca6ec60e7cff24d32f6b2d3c0bbee044a3f91393d",
+      "source": "Pre-existing files in C:/Users/gabri/projetos/isa1 at recheck on 2026-11-24",
+      "kind": "preserved-local-source",
+      "duplicate_of": "revisions/rev984/results.txt"
+    },
+    {
+      "path": "counter.py",
+      "bytes": 1142,
+      "sha256": "5e43f91d3282736e44acf73a8f43fee9333916f885c959b393921296e529bcf2",
+      "source": "Pre-existing files in C:/Users/gabri/projetos/isa1 at recheck on 2026-11-24",
+      "kind": "preserved-local-source",
+      "duplicate_of": "revisions/rev984/counter.py"
+    },
+    {
+      "path": "ISA-1_REV74_RECUPERACAO.md",
+      "bytes": 1692,
+      "sha256": "10820cacc6409a6d037536d0a871211431e0a3995cf9708edbc7049d5a966f7c",
+      "source": "Pre-existing files in C:/Users/gabri/projetos/isa1 at recheck on 2026-11-24",
+      "kind": "preserved-local-source"
+    },
+    {
+      "path": "ISA-1_REV75_CONTROLE.md",
+      "bytes": 1606,
+      "sha256": "f6bfe794722a4dc1d5b4004b9e3db6cec401f09ccb2e5a7f5f35938dbd49cf84",
+      "source": "Pre-existing files in C:/Users/gabri/projetos/isa1 at recheck on 2026-11-24",
+      "kind": "preserved-local-source"
+    },
+    {
+      "path": "ISA-1_REV76_AUDITORIA.md",
+      "bytes": 1215,
+      "sha256": "eac8c30ea165ca7770b1f421e484635409c2a94cd8039f68d36089977a53bfd1",
+      "source": "Pre-existing files in C:/Users/gabri/projetos/isa1 at recheck on 2026-11-24",
+      "kind": "preserved-local-source"
+    },
+    {
+      "path": "ISA-1_rev93.zip",
+      "bytes": 12264,
+      "sha256": "b5200710ef925d19efc29bfc0b854e2d41721541f83747714a32f32976e41dcb",
+      "source": "Pre-existing files in C:/Users/gabri/projetos/isa1 at recheck on 2026-11-24",
+      "kind": "preserved-local-source",
+      "duplicate_of": "archive/packages/ISA-1_rev93.zip"
+    },
+    {
+      "path": "ISA-1_rev983.zip",
+      "bytes": 25511,
+      "sha256": "7918445ef57193670812688d72b13a522883a8490f84288c35db256c6ead11b8",
+      "source": "Pre-existing files in C:/Users/gabri/projetos/isa1 at recheck on 2026-11-24",
+      "kind": "preserved-local-source",
+      "duplicate_of": "archive/packages/ISA-1_rev983.zip"
+    },
+    {
+      "path": "ISA-1_rev984.zip",
+      "bytes": 2654,
+      "sha256": "8292639f9fb665f8943d81b5a08001a89750ebcb6dd7fcb3eb7cbbbfec8a5cd9",
+      "source": "Pre-existing files in C:/Users/gabri/projetos/isa1 at recheck on 2026-11-24",
+      "kind": "preserved-local-source",
+      "duplicate_of": "archive/packages/ISA-1_rev984.zip"
+    },
+    {
+      "path": "isa1_rev74 (1).py",
+      "bytes": 2454,
+      "sha256": "0b935129ff8f6b22de93a9529730ee5f6a67eebb13282735f52ba8b5358fa5eb",
+      "source": "Pre-existing files in C:/Users/gabri/projetos/isa1 at recheck on 2026-11-24",
+      "kind": "preserved-local-source",
+      "duplicate_of": "archive/originals/isa1_rev74 (1).py"
+    },
+    {
+      "path": "isa1_rev74_results.json",
+      "bytes": 119,
+      "sha256": "a65be12af2298c615b81186eb097ea58c150b3b0d3007548e8b96e72d90056ae",
+      "source": "Pre-existing files in C:/Users/gabri/projetos/isa1 at recheck on 2026-11-24",
+      "kind": "preserved-local-source",
+      "duplicate_of": "archive/originals/isa1_rev74_results.json"
+    },
+    {
+      "path": "isa1_rev74.py",
+      "bytes": 2454,
+      "sha256": "0b935129ff8f6b22de93a9529730ee5f6a67eebb13282735f52ba8b5358fa5eb",
+      "source": "Pre-existing files in C:/Users/gabri/projetos/isa1 at recheck on 2026-11-24",
+      "kind": "preserved-local-source",
+      "duplicate_of": "archive/originals/isa1_rev74 (1).py"
+    },
+    {
+      "path": "isa1_rev75_results.json",
+      "bytes": 95,
+      "sha256": "94a68b6579560052d627483fe7c12c92d9248f967c18e9d0992269fdc3d60d87",
+      "source": "Pre-existing files in C:/Users/gabri/projetos/isa1 at recheck on 2026-11-24",
+      "kind": "preserved-local-source",
+      "duplicate_of": "archive/originals/isa1_rev75_results.json"
+    },
+    {
+      "path": "isa1_rev75.py",
+      "bytes": 1273,
+      "sha256": "6024ba6faad5efe969a9cd946fbd88f02ce52fbc627ce614e5e9efbc70ea2445",
+      "source": "Pre-existing files in C:/Users/gabri/projetos/isa1 at recheck on 2026-11-24",
+      "kind": "preserved-local-source",
+      "duplicate_of": "archive/originals/isa1_rev75.py"
+    },
+    {
+      "path": "reports/chat1.html",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "Pre-existing files in C:/Users/gabri/projetos/isa1 at recheck on 2026-11-24",
+      "kind": "empty-placeholder"
+    },
+    {
+      "path": "reports/chat2.html",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "Pre-existing files in C:/Users/gabri/projetos/isa1 at recheck on 2026-11-24",
+      "kind": "empty-placeholder",
+      "duplicate_of": "reports/chat1.html"
+    }
+  ]
+}

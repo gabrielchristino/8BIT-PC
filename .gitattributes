@@ -3,3 +3,7 @@ archive/** -text
 revisions/** -text
 *.zip -text
 *.bin -text
+/ISA-1_REV*.md -text
+/isa1_rev*.py -text
+/isa1_rev*.json -text
+/counter.py -text

@@ -1,0 +1,25 @@
+{
+  "scope": "22k candidate passed selected digital matrix/ABI tests; that did not qualify contact resistance/RC or guarantee settled physical column reads. Preserve before adding larger pull-ups and explicit quiet timer.",
+  "files": [
+    {
+      "source": "tools/build_mmio_keyboard.py",
+      "path": "verification/net15/development/before-settling-budget/build_mmio_keyboard.py.txt",
+      "sha256": "9c094d664d1a58dc3dcd98a689d5fb786bda83e7b1e3b4baa6531644a557acdb"
+    },
+    {
+      "source": "hardware/mmio_keyboard/mmio_keyboard_netlist.sv",
+      "path": "verification/net15/development/before-settling-budget/mmio_keyboard_netlist.sv.txt",
+      "sha256": "93f0aa4d58028f59ee2c500ea1ef5ec41e935cba7d97a5964b8c6cf9566d9794"
+    },
+    {
+      "source": "verification/net15/results.json",
+      "path": "verification/net15/development/before-settling-budget/results.json.txt",
+      "sha256": "710312e1426782e581221fe438a01436c6e9168889bec33f0b9b69d0bf1c139b"
+    },
+    {
+      "source": "sim/net15/tb_mmio_keyboard.sv",
+      "path": "verification/net15/development/before-settling-budget/tb_mmio_keyboard.sv.txt",
+      "sha256": "76fa3fd2441d0969ad7199848ffcc12cdbf26f0117555130481d7b20c1315faf"
+    }
+  ]
+}

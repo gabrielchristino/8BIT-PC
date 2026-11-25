@@ -13,3 +13,4 @@ revisions/** -text
 /tools/run_cpu_global.py -text whitespace=cr-at-eol
 # Preserve verbatim ngspice console evidence, including native trailing spaces.
 /verification/net13/rc/*.log -whitespace
+/verification/net15/**/*.log -whitespace

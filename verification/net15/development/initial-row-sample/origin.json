@@ -1,0 +1,20 @@
+{
+  "scope": "Initial ideal matrix/MMIO pass. Delayed row check sampled at the same instant as propagated Q update. Move fixture observation later and correct HC139/AHC14 selected delays to archived datasheet maxima before acceptance.",
+  "files": [
+    {
+      "source": "tools/build_mmio_keyboard.py",
+      "path": "verification/net15/development/initial-row-sample/build_mmio_keyboard.py.txt",
+      "sha256": "90e316282e9136002046be7ef5683ccf47bd61ea25fd60bcd9bbcb9b763a4694"
+    },
+    {
+      "source": "sim/net15/tb_mmio_keyboard.sv",
+      "path": "verification/net15/development/initial-row-sample/tb_mmio_keyboard.sv.txt",
+      "sha256": "da82187db18df0a11a40b4e84f5d072c8a9161e1c58b39d087d41be1783a3e9d"
+    },
+    {
+      "source": "verification/net15/results.json",
+      "path": "verification/net15/development/initial-row-sample/results.json.txt",
+      "sha256": "4cf8f0b0e2e3930ffe42a70f4c1dcc39a81346d2ed7c6f50412414ec6cf0c464"
+    }
+  ]
+}

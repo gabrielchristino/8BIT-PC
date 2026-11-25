@@ -1,0 +1,20 @@
+Conditional keypad path bound, corner 48
+VCC vcc 0 5.5
+VDRV drv 0 0.44
+VSW control 0 PWL(0 1 19.999u 1 20u 0)
+SINK common drv control 0 SW
+.model SW SW(Ron=0.01 Roff=1e12 Vt=0.5 Vh=0)
+RPATH common columns 70.8
+RPULL vcc feed 6477.272727272727
+RCHARGE feed columns 70.8
+SBYPASS feed columns control 0 SW
+CCOL columns 0 2e-09
+* Low-state leakage sources current into the input; after release use the
+* opposite worst-case sign. This is an envelope, not a vendor input model.
+ILEAK vcc columns PWL(0 40u 19.999u 40u 20u -40u)
+.tran 1u 10m
+.measure tran low_column FIND V(columns) AT=19u
+.measure tran sink_current FIND I(VDRV) AT=19u
+.measure tran high_column FIND V(columns) AT=9.99m
+.measure tran threshold_cross WHEN V(columns)=3.85 RISE=1 TD=20u
+.end

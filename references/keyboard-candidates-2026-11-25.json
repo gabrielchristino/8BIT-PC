@@ -1,0 +1,24 @@
+{
+  "date": "2026-11-25",
+  "origin": "Texas Instruments official PDF endpoints; originals preserved without transformation",
+  "files": [
+    {
+      "path": "references/ti/sn74ahc14.pdf",
+      "url": "https://www.ti.com/lit/ds/symlink/sn74ahc14.pdf",
+      "sha256": "4ef53e806a952722b71c3ba94590f0b41099f86022ed5bd5fb37bc4a704bebe7",
+      "status": "Selected candidate for Schmitt input, not qualified BOM"
+    },
+    {
+      "path": "references/ti/sn74hc14.pdf",
+      "url": "https://www.ti.com/lit/ds/symlink/sn74hc14.pdf",
+      "sha256": "24911ae018ad9bf6f8f069158b8689d0d941e3cde9f48924e2421276ae10e397",
+      "status": "Consulted alternative, not selected"
+    },
+    {
+      "path": "references/ti/sn74hcs125.pdf",
+      "url": "https://www.ti.com/lit/ds/symlink/sn74hcs125.pdf",
+      "sha256": "989b659eb68b906b2c44d7a2c0ac6f9738645daff524dc89b01c277bed71da5e",
+      "status": "Consulted alternative, not selected; required guaranteed IOZ not found"
+    }
+  ]
+}

@@ -1,3 +1,10 @@
+## Continuidade NET-15
+
+- Leia docs/engineering/NET15.md. Novas folhas mmio_keyboard/keyboard_access não alteram a integração NET-14C. Não alegue CPU/teclado completo testado nesta etapa.
+- Drivers de linha são baixo/Hi-Z com polarização fraca de 100 kohm; colunas 150 kohm. Não remova polarização de linha sem recalcular IOZ. Membranas sem diodos, ghosting esperado.
+- KEY_READY exige 8.192 ciclos após ROW/reset. Não confundir espera RC com debounce. BANK_RESET_N é domínio separado; ordem física WE/bancos e liberação sincronizada ainda precisam ser implementadas.
+- Envelope RC é condicional, unidades não medidas; AHC14 é candidato, HC14/HCS125 apenas consultados. Preserve aviso de captura tardia e as versões reconstruídas verificadas por hash no desenvolvimento.
+
 # Continuidade do ISA-1
 
 ## Continuidade NET-14C

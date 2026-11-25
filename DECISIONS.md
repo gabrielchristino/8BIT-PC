@@ -1,5 +1,13 @@
 # Decisões recuperadas e registro da migração
 
+## ADR E20 — MMIO por pinos e espera antes de ler colunas
+
+25/11/2026: acrescentar folhas separadas MMIO/teclado e controlador com KEY_READY, preservando endereços, valores, ISA, COMMIT único, payload e posse. Usar drivers baixo/Hi-Z, pull-ups de linha 100 kohm e coluna 150 kohm, Schmitt AHC14, duas etapas de amostragem e espera de 8.192 ciclos de backend após ROW/reset. Não alterar membranas nem adicionar diodos por tecla.
+
+Alternativas: driver push-pull alto foi rejeitado por conflito entre teclas; ausência de polarização de linhas foi rejeitada por fuga IOZ; espera somente em software não protege leituras MMIO arbitrárias. HC14/HCS125 foram consultados, mas não selecionados. A leitura de coluna pendente permanece em WAIT; outras operações não recebem essa espera. O temporizador não é debounce, não evita ghosting e não fecha MTBF.
+
+Aceitação digital: 5.681 padrões por modo, três configurações do controlador e integração isolada do temporizador, com negativos. Aceitação elétrica apenas condicional: 48 cantos dentro do orçamento RC passaram, mas unidades não medidas. Critérios futuros: integrar CPU/raster sob reset/energia qualificados, confirmar R/C/contatos reais, proteger conectores e validar firmware de ambiguidades/bounce/fila. ERC parcial tem 25/135 violações e não libera placa. Evidências e limites em [NET15](docs/engineering/NET15.md).
+
 ## ADR E19 — Backend sem clear assíncrono e fronteira de reset explícita
 
 Decisão nova de 25/11/2026: criar hardware/video_system separado e fixar alto o clear do FF de backend, mantendo suas transições em bordas mestre. O caso integrado revelou pulso truncado; o ensaio de reversão de um único pino reproduz a falha. Preservar os demais pinos/35 CIs, raster/ISA/mapa e antecessores. A alternativa de ocultar o monitor de pulsos foi rejeitada; clocks de runtime não passam a ser decodificação combinacional.

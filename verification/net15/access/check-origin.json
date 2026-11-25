@@ -1,0 +1,26 @@
+{
+  "date": "2026-11-25",
+  "transformation": "Same three configurations and negative pin tests as NET-13 controller, renamed native graph with KEY_READY=1 and column flags=0 for compatibility. Settling-specific behavior has a separate unit bench.",
+  "files": [
+    {
+      "path": "sim/net12/tb_memory_access.sv",
+      "sha256": "5084619ee24f3c334b5329ad920e0752525eeb2664711a3416ed7443095ea00e"
+    },
+    {
+      "path": "sim/net15/tb_keyboard_access.sv",
+      "sha256": "a978b9f64fbd74f5506fd75f5bc850d5afe727f58fe7c2e8f57623328c9aa2b9"
+    },
+    {
+      "path": "tools/run_memory_bus_control.py",
+      "sha256": "5100ec83b9f5c1b7dca17734c385add68ad444179816abb0338f210569f43eff"
+    },
+    {
+      "path": "tools/run_keyboard_access_control.py",
+      "sha256": "41459f179b7da9bbf0d079ae00e6e9a2a23e997fdf1c8c33ef3023569b95fe11"
+    },
+    {
+      "path": "tools/prepare_keyboard_access_checks.py",
+      "sha256": "f4e1f75bd4354ff797afefee73203aa5c48e5fa5ba078786951d0738e7b9086a"
+    }
+  ]
+}

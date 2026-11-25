@@ -1,3 +1,5 @@
+NET-15 (25/11/2026), base c1eac2581f8c08b92aff576c700a6465e16056d2: novos hardware/mmio_keyboard, hardware/keyboard_access, sim/net15 e ferramentas/relatórios próprios; antecessores preservados. Esquemas nativos geram XML e modelos por pinos. Três PDFs oficiais TI são arquivados byte a byte, com origem/status/hash em references/keyboard-candidates-2026-11-25.json. Cópias tardias de duas fontes intermediárias são identificadas como tais; versões anteriores reconstruídas têm transformação e hashes comparados aos ensaios. Novos ensaios não são materiais históricos recuperados nem medições das membranas.
+
 # Origem e integridade dos materiais
 
 Recuperação realizada em **24/11/2026**, com data local de São Paulo. Conteúdo do projeto pertence ao histórico fornecido pelo usuário e às respostas do ChatGPT; a migração não presume autoria exclusivamente humana nem escolhe uma licença.

@@ -1,0 +1,1379 @@
+{
+  "date": "2026-11-25",
+  "iteration": "NET-15",
+  "python": "3.12.3",
+  "ngspice": "******\n** ngspice-42 : Circuit level simulation program\n** Compiled with KLU Direct Linear Solver\n** The U. C. Berkeley CAD Group\n** Copyright 1985-1994, Regents of the University of California.\n** Copyright 2001-2023, The ngspice team.\n** Please get your ngspice manual from https://ngspice.sourceforge.io/docs.html\n** Please file your bug-reports at http://ngspice.sourceforge.net/bugrep.html\n** Creation Date: Sun Mar 31 20:15:14 UTC 2024\n******\n",
+  "scope": "Conditional first-order resistance/RC envelope, no measured units or vendor pad/ESD/CDC/bounce/PCB approval",
+  "assumptions": {
+    "pullup_ohm": 100000,
+    "tolerance_fraction": 0.05,
+    "contact_max_ohm": 150,
+    "shared_row_wire_max_ohm": 10,
+    "max_contacts_in_simple_path": 7,
+    "max_rows_in_path": 4,
+    "effective_capacitance_per_column_max_f": 1e-09,
+    "column_leakage_envelope_a": 2e-06,
+    "driver_vol_clamp_v": 0.44,
+    "driver_sink_limit_a": 0.008,
+    "global_negative_threshold_min_v": 1.35,
+    "global_positive_threshold_max_v": 3.85,
+    "settling_limit_s": 0.001,
+    "native_guard_cycles": 8192,
+    "backend_hz": 6293750.0,
+    "native_guard_s": 0.0013016087388282025,
+    "parameters_measured": false
+  },
+  "sources": [
+    {
+      "path": "tools/run_keypad_envelope.py",
+      "sha256": "2e216d8c27d1319ec861b11ba1b82e4f6078fc6cd427413909516661c9b7235e"
+    },
+    {
+      "path": "references/ti/sn74ahc14.pdf",
+      "sha256": "4ef53e806a952722b71c3ba94590f0b41099f86022ed5bd5fb37bc4a704bebe7"
+    },
+    {
+      "path": "references/ti/sn74ahc125.pdf",
+      "sha256": "c2ca226688e5704e94755fb20907c970ba7e2bac3a18fd6b2c28ce73295d0a3f"
+    }
+  ],
+  "rows": [
+    {
+      "corner": 0,
+      "supply_v": 4.5,
+      "pullup_ohm": 95000.0,
+      "contact_ohm": 10,
+      "shared_row_wire_ohm": 0.1,
+      "effective_column_cap_f": 1e-10,
+      "path_ohm": 70.4,
+      "command": [
+        "ngspice",
+        "-b",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net15/rc/corner-000.cir"
+      ],
+      "exit": 0,
+      "measures": {
+        "low_column": 0.4898081,
+        "sink_current": 0.0007074007,
+        "high_column": 4.31,
+        "threshold_cross": 4.01005e-05
+      },
+      "within_qualification_budget": true,
+      "deck": "verification/net15/rc/corner-000.cir",
+      "log": "verification/net15/rc/corner-000.log",
+      "settling_s": 2.01005e-05,
+      "low_passed": true,
+      "high_passed": true,
+      "current_passed": true,
+      "settling_passed": true,
+      "envelope_passed": true,
+      "dc_formula_v": 0.4898080863395091
+    },
+    {
+      "corner": 1,
+      "supply_v": 4.5,
+      "pullup_ohm": 95000.0,
+      "contact_ohm": 10,
+      "shared_row_wire_ohm": 0.1,
+      "effective_column_cap_f": 1e-09,
+      "path_ohm": 70.4,
+      "command": [
+        "ngspice",
+        "-b",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net15/rc/corner-001.cir"
+      ],
+      "exit": 0,
+      "measures": {
+        "low_column": 0.4898081,
+        "sink_current": 0.0007074007,
+        "high_column": 4.31,
+        "threshold_cross": 0.000221097
+      },
+      "within_qualification_budget": true,
+      "deck": "verification/net15/rc/corner-001.cir",
+      "log": "verification/net15/rc/corner-001.log",
+      "settling_s": 0.000201097,
+      "low_passed": true,
+      "high_passed": true,
+      "current_passed": true,
+      "settling_passed": true,
+      "envelope_passed": true,
+      "dc_formula_v": 0.4898080863395091
+    },
+    {
+      "corner": 2,
+      "supply_v": 4.5,
+      "pullup_ohm": 95000.0,
+      "contact_ohm": 10,
+      "shared_row_wire_ohm": 0.1,
+      "effective_column_cap_f": 2e-08,
+      "path_ohm": 70.4,
+      "command": [
+        "ngspice",
+        "-b",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net15/rc/corner-002.cir"
+      ],
+      "exit": 0,
+      "measures": {
+        "low_column": 0.4898081,
+        "sink_current": 0.0007074007,
+        "high_column": 4.289901,
+        "threshold_cross": 0.00404198
+      },
+      "within_qualification_budget": false,
+      "deck": "verification/net15/rc/corner-002.cir",
+      "log": "verification/net15/rc/corner-002.log",
+      "settling_s": 0.00402198,
+      "low_passed": true,
+      "high_passed": true,
+      "current_passed": true,
+      "settling_passed": false,
+      "envelope_passed": false,
+      "dc_formula_v": 0.4898080863395091
+    },
+    {
+      "corner": 3,
+      "supply_v": 4.5,
+      "pullup_ohm": 95000.0,
+      "contact_ohm": 10,
+      "shared_row_wire_ohm": 10,
+      "effective_column_cap_f": 1e-10,
+      "path_ohm": 110,
+      "command": [
+        "ngspice",
+        "-b",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net15/rc/corner-003.cir"
+      ],
+      "exit": 0,
+      "measures": {
+        "low_column": 0.5173116,
+        "sink_current": 0.0007027686,
+        "high_column": 4.31,
+        "threshold_cross": 4.00337e-05
+      },
+      "within_qualification_budget": true,
+      "deck": "verification/net15/rc/corner-003.cir",
+      "log": "verification/net15/rc/corner-003.log",
+      "settling_s": 2.00337e-05,
+      "low_passed": true,
+      "high_passed": true,
+      "current_passed": true,
+      "settling_passed": true,
+      "envelope_passed": true,
+      "dc_formula_v": 0.5173115712086461
+    },
+    {
+      "corner": 4,
+      "supply_v": 4.5,
+      "pullup_ohm": 95000.0,
+      "contact_ohm": 10,
+      "shared_row_wire_ohm": 10,
+      "effective_column_cap_f": 1e-09,
+      "path_ohm": 110,
+      "command": [
+        "ngspice",
+        "-b",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net15/rc/corner-004.cir"
+      ],
+      "exit": 0,
+      "measures": {
+        "low_column": 0.5173116,
+        "sink_current": 0.0007027686,
+        "high_column": 4.31,
+        "threshold_cross": 0.00022041
+      },
+      "within_qualification_budget": true,
+      "deck": "verification/net15/rc/corner-004.cir",
+      "log": "verification/net15/rc/corner-004.log",
+      "settling_s": 0.00020041000000000001,
+      "low_passed": true,
+      "high_passed": true,
+      "current_passed": true,
+      "settling_passed": true,
+      "envelope_passed": true,
+      "dc_formula_v": 0.5173115712086461
+    },
+    {
+      "corner": 5,
+      "supply_v": 4.5,
+      "pullup_ohm": 95000.0,
+      "contact_ohm": 10,
+      "shared_row_wire_ohm": 10,
+      "effective_column_cap_f": 2e-08,
+      "path_ohm": 110,
+      "command": [
+        "ngspice",
+        "-b",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net15/rc/corner-005.cir"
+      ],
+      "exit": 0,
+      "measures": {
+        "low_column": 0.5173116,
+        "sink_current": 0.0007027686,
+        "high_column": 4.290045,
+        "threshold_cross": 0.00402825
+      },
+      "within_qualification_budget": false,
+      "deck": "verification/net15/rc/corner-005.cir",
+      "log": "verification/net15/rc/corner-005.log",
+      "settling_s": 0.00400825,
+      "low_passed": true,
+      "high_passed": true,
+      "current_passed": true,
+      "settling_passed": false,
+      "envelope_passed": false,
+      "dc_formula_v": 0.5173115712086461
+    },
+    {
+      "corner": 6,
+      "supply_v": 4.5,
+      "pullup_ohm": 95000.0,
+      "contact_ohm": 100,
+      "shared_row_wire_ohm": 0.1,
+      "effective_column_cap_f": 1e-10,
+      "path_ohm": 700.4,
+      "command": [
+        "ngspice",
+        "-b",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net15/rc/corner-006.cir"
+      ],
+      "exit": 0,
+      "measures": {
+        "low_column": 0.8884457,
+        "sink_current": 0.0006402618,
+        "high_column": 4.31,
+        "threshold_cross": 3.90558e-05
+      },
+      "within_qualification_budget": true,
+      "deck": "verification/net15/rc/corner-006.cir",
+      "log": "verification/net15/rc/corner-006.log",
+      "settling_s": 1.9055799999999998e-05,
+      "low_passed": true,
+      "high_passed": true,
+      "current_passed": true,
+      "settling_passed": true,
+      "envelope_passed": true,
+      "dc_formula_v": 0.8884457457241812
+    },
+    {
+      "corner": 7,
+      "supply_v": 4.5,
+      "pullup_ohm": 95000.0,
+      "contact_ohm": 100,
+      "shared_row_wire_ohm": 0.1,
+      "effective_column_cap_f": 1e-09,
+      "path_ohm": 700.4,
+      "command": [
+        "ngspice",
+        "-b",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net15/rc/corner-007.cir"
+      ],
+      "exit": 0,
+      "measures": {
+        "low_column": 0.8884457,
+        "sink_current": 0.0006402618,
+        "high_column": 4.31,
+        "threshold_cross": 0.000210628
+      },
+      "within_qualification_budget": true,
+      "deck": "verification/net15/rc/corner-007.cir",
+      "log": "verification/net15/rc/corner-007.log",
+      "settling_s": 0.000190628,
+      "low_passed": true,
+      "high_passed": true,
+      "current_passed": true,
+      "settling_passed": true,
+      "envelope_passed": true,
+      "dc_formula_v": 0.8884457457241812
+    },
+    {
+      "corner": 8,
+      "supply_v": 4.5,
+      "pullup_ohm": 95000.0,
+      "contact_ohm": 100,
+      "shared_row_wire_ohm": 0.1,
+      "effective_column_cap_f": 2e-08,
+      "path_ohm": 700.4,
+      "command": [
+        "ngspice",
+        "-b",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net15/rc/corner-008.cir"
+      ],
+      "exit": 0,
+      "measures": {
+        "low_column": 0.8884457,
+        "sink_current": 0.0006402618,
+        "high_column": 4.291998,
+        "threshold_cross": 0.00383258
+      },
+      "within_qualification_budget": false,
+      "deck": "verification/net15/rc/corner-008.cir",
+      "log": "verification/net15/rc/corner-008.log",
+      "settling_s": 0.00381258,
+      "low_passed": true,
+      "high_passed": true,
+      "current_passed": true,
+      "settling_passed": false,
+      "envelope_passed": false,
+      "dc_formula_v": 0.8884457457241812
+    },
+    {
+      "corner": 9,
+      "supply_v": 4.5,
+      "pullup_ohm": 95000.0,
+      "contact_ohm": 100,
+      "shared_row_wire_ohm": 10,
+      "effective_column_cap_f": 1e-10,
+      "path_ohm": 740,
+      "command": [
+        "ngspice",
+        "-b",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net15/rc/corner-009.cir"
+      ],
+      "exit": 0,
+      "measures": {
+        "low_column": 0.9109903,
+        "sink_current": 0.0006364648,
+        "high_column": 4.31,
+        "threshold_cross": 3.89944e-05
+      },
+      "within_qualification_budget": true,
+      "deck": "verification/net15/rc/corner-009.cir",
+      "log": "verification/net15/rc/corner-009.log",
+      "settling_s": 1.89944e-05,
+      "low_passed": true,
+      "high_passed": true,
+      "current_passed": true,
+      "settling_passed": true,
+      "envelope_passed": true,
+      "dc_formula_v": 0.9109903092619853
+    },
+    {
+      "corner": 10,
+      "supply_v": 4.5,
+      "pullup_ohm": 95000.0,
+      "contact_ohm": 100,
+      "shared_row_wire_ohm": 10,
+      "effective_column_cap_f": 1e-09,
+      "path_ohm": 740,
+      "command": [
+        "ngspice",
+        "-b",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net15/rc/corner-010.cir"
+      ],
+      "exit": 0,
+      "measures": {
+        "low_column": 0.9109903,
+        "sink_current": 0.0006364648,
+        "high_column": 4.31,
+        "threshold_cross": 0.00021
+      },
+      "within_qualification_budget": true,
+      "deck": "verification/net15/rc/corner-010.cir",
+      "log": "verification/net15/rc/corner-010.log",
+      "settling_s": 0.00019,
+      "low_passed": true,
+      "high_passed": true,
+      "current_passed": true,
+      "settling_passed": true,
+      "envelope_passed": true,
+      "dc_formula_v": 0.9109903092619853
+    },
+    {
+      "corner": 11,
+      "supply_v": 4.5,
+      "pullup_ohm": 95000.0,
+      "contact_ohm": 100,
+      "shared_row_wire_ohm": 10,
+      "effective_column_cap_f": 2e-08,
+      "path_ohm": 740,
+      "command": [
+        "ngspice",
+        "-b",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net15/rc/corner-011.cir"
+      ],
+      "exit": 0,
+      "measures": {
+        "low_column": 0.9109903,
+        "sink_current": 0.0006364648,
+        "high_column": 4.292117,
+        "threshold_cross": 0.00382002
+      },
+      "within_qualification_budget": false,
+      "deck": "verification/net15/rc/corner-011.cir",
+      "log": "verification/net15/rc/corner-011.log",
+      "settling_s": 0.00380002,
+      "low_passed": true,
+      "high_passed": true,
+      "current_passed": true,
+      "settling_passed": false,
+      "envelope_passed": false,
+      "dc_formula_v": 0.9109903092619853
+    },
+    {
+      "corner": 12,
+      "supply_v": 4.5,
+      "pullup_ohm": 95000.0,
+      "contact_ohm": 150,
+      "shared_row_wire_ohm": 0.1,
+      "effective_column_cap_f": 1e-10,
+      "path_ohm": 1050.4,
+      "command": [
+        "ngspice",
+        "-b",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net15/rc/corner-012.cir"
+      ],
+      "exit": 0,
+      "measures": {
+        "low_column": 1.078852,
+        "sink_current": 0.0006081933,
+        "high_column": 4.31,
+        "threshold_cross": 3.85104e-05
+      },
+      "within_qualification_budget": true,
+      "deck": "verification/net15/rc/corner-012.cir",
+      "log": "verification/net15/rc/corner-012.log",
+      "settling_s": 1.85104e-05,
+      "low_passed": true,
+      "high_passed": true,
+      "current_passed": true,
+      "settling_passed": true,
+      "envelope_passed": true,
+      "dc_formula_v": 1.078852317788867
+    },
+    {
+      "corner": 13,
+      "supply_v": 4.5,
+      "pullup_ohm": 95000.0,
+      "contact_ohm": 150,
+      "shared_row_wire_ohm": 0.1,
+      "effective_column_cap_f": 1e-09,
+      "path_ohm": 1050.4,
+      "command": [
+        "ngspice",
+        "-b",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net15/rc/corner-013.cir"
+      ],
+      "exit": 0,
+      "measures": {
+        "low_column": 1.078852,
+        "sink_current": 0.0006081933,
+        "high_column": 4.31,
+        "threshold_cross": 0.000205188
+      },
+      "within_qualification_budget": true,
+      "deck": "verification/net15/rc/corner-013.cir",
+      "log": "verification/net15/rc/corner-013.log",
+      "settling_s": 0.000185188,
+      "low_passed": true,
+      "high_passed": true,
+      "current_passed": true,
+      "settling_passed": true,
+      "envelope_passed": true,
+      "dc_formula_v": 1.078852317788867
+    },
+    {
+      "corner": 14,
+      "supply_v": 4.5,
+      "pullup_ohm": 95000.0,
+      "contact_ohm": 150,
+      "shared_row_wire_ohm": 0.1,
+      "effective_column_cap_f": 2e-08,
+      "path_ohm": 1050.4,
+      "command": [
+        "ngspice",
+        "-b",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net15/rc/corner-014.cir"
+      ],
+      "exit": 0,
+      "measures": {
+        "low_column": 1.078852,
+        "sink_current": 0.0006081933,
+        "high_column": 4.293,
+        "threshold_cross": 0.0037238
+      },
+      "within_qualification_budget": false,
+      "deck": "verification/net15/rc/corner-014.cir",
+      "log": "verification/net15/rc/corner-014.log",
+      "settling_s": 0.0037038,
+      "low_passed": true,
+      "high_passed": true,
+      "current_passed": true,
+      "settling_passed": false,
+      "envelope_passed": false,
+      "dc_formula_v": 1.078852317788867
+    },
+    {
+      "corner": 15,
+      "supply_v": 4.5,
+      "pullup_ohm": 95000.0,
+      "contact_ohm": 150,
+      "shared_row_wire_ohm": 10,
+      "effective_column_cap_f": 1e-10,
+      "path_ohm": 1090,
+      "command": [
+        "ngspice",
+        "-b",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net15/rc/corner-015.cir"
+      ],
+      "exit": 0,
+      "measures": {
+        "low_column": 1.099201,
+        "sink_current": 0.0006047661,
+        "high_column": 4.31,
+        "threshold_cross": 3.84483e-05
+      },
+      "within_qualification_budget": true,
+      "deck": "verification/net15/rc/corner-015.cir",
+      "log": "verification/net15/rc/corner-015.log",
+      "settling_s": 1.84483e-05,
+      "low_passed": true,
+      "high_passed": true,
+      "current_passed": true,
+      "settling_passed": true,
+      "envelope_passed": true,
+      "dc_formula_v": 1.0992011252918885
+    },
+    {
+      "corner": 16,
+      "supply_v": 4.5,
+      "pullup_ohm": 95000.0,
+      "contact_ohm": 150,
+      "shared_row_wire_ohm": 10,
+      "effective_column_cap_f": 1e-09,
+      "path_ohm": 1090,
+      "command": [
+        "ngspice",
+        "-b",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net15/rc/corner-016.cir"
+      ],
+      "exit": 0,
+      "measures": {
+        "low_column": 1.099201,
+        "sink_current": 0.0006047661,
+        "high_column": 4.31,
+        "threshold_cross": 0.000204588
+      },
+      "within_qualification_budget": true,
+      "deck": "verification/net15/rc/corner-016.cir",
+      "log": "verification/net15/rc/corner-016.log",
+      "settling_s": 0.000184588,
+      "low_passed": true,
+      "high_passed": true,
+      "current_passed": true,
+      "settling_passed": true,
+      "envelope_passed": true,
+      "dc_formula_v": 1.0992011252918885
+    },
+    {
+      "corner": 17,
+      "supply_v": 4.5,
+      "pullup_ohm": 95000.0,
+      "contact_ohm": 150,
+      "shared_row_wire_ohm": 10,
+      "effective_column_cap_f": 2e-08,
+      "path_ohm": 1090,
+      "command": [
+        "ngspice",
+        "-b",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net15/rc/corner-017.cir"
+      ],
+      "exit": 0,
+      "measures": {
+        "low_column": 1.099201,
+        "sink_current": 0.0006047661,
+        "high_column": 4.293107,
+        "threshold_cross": 0.00371179
+      },
+      "within_qualification_budget": false,
+      "deck": "verification/net15/rc/corner-017.cir",
+      "log": "verification/net15/rc/corner-017.log",
+      "settling_s": 0.00369179,
+      "low_passed": true,
+      "high_passed": true,
+      "current_passed": true,
+      "settling_passed": false,
+      "envelope_passed": false,
+      "dc_formula_v": 1.0992011252918885
+    },
+    {
+      "corner": 18,
+      "supply_v": 4.5,
+      "pullup_ohm": 95000.0,
+      "contact_ohm": 250,
+      "shared_row_wire_ohm": 0.1,
+      "effective_column_cap_f": 1e-10,
+      "path_ohm": 1750.4,
+      "command": [
+        "ngspice",
+        "-b",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net15/rc/corner-018.cir"
+      ],
+      "exit": 0,
+      "measures": {
+        "low_column": 1.407655,
+        "sink_current": 0.000552816,
+        "high_column": 4.31,
+        "threshold_cross": 3.74912e-05
+      },
+      "within_qualification_budget": false,
+      "deck": "verification/net15/rc/corner-018.cir",
+      "log": "verification/net15/rc/corner-018.log",
+      "settling_s": 1.7491199999999996e-05,
+      "low_passed": false,
+      "high_passed": true,
+      "current_passed": true,
+      "settling_passed": true,
+      "envelope_passed": false,
+      "dc_formula_v": 1.4076547332109768
+    },
+    {
+      "corner": 19,
+      "supply_v": 4.5,
+      "pullup_ohm": 95000.0,
+      "contact_ohm": 250,
+      "shared_row_wire_ohm": 0.1,
+      "effective_column_cap_f": 1e-09,
+      "path_ohm": 1750.4,
+      "command": [
+        "ngspice",
+        "-b",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net15/rc/corner-019.cir"
+      ],
+      "exit": 0,
+      "measures": {
+        "low_column": 1.407655,
+        "sink_current": 0.000552816,
+        "high_column": 4.31,
+        "threshold_cross": 0.000194993
+      },
+      "within_qualification_budget": false,
+      "deck": "verification/net15/rc/corner-019.cir",
+      "log": "verification/net15/rc/corner-019.log",
+      "settling_s": 0.000174993,
+      "low_passed": false,
+      "high_passed": true,
+      "current_passed": true,
+      "settling_passed": true,
+      "envelope_passed": false,
+      "dc_formula_v": 1.4076547332109768
+    },
+    {
+      "corner": 20,
+      "supply_v": 4.5,
+      "pullup_ohm": 95000.0,
+      "contact_ohm": 250,
+      "shared_row_wire_ohm": 0.1,
+      "effective_column_cap_f": 2e-08,
+      "path_ohm": 1750.4,
+      "command": [
+        "ngspice",
+        "-b",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net15/rc/corner-020.cir"
+      ],
+      "exit": 0,
+      "measures": {
+        "low_column": 1.407655,
+        "sink_current": 0.000552816,
+        "high_column": 4.29473,
+        "threshold_cross": 0.00351989
+      },
+      "within_qualification_budget": false,
+      "deck": "verification/net15/rc/corner-020.cir",
+      "log": "verification/net15/rc/corner-020.log",
+      "settling_s": 0.00349989,
+      "low_passed": false,
+      "high_passed": true,
+      "current_passed": true,
+      "settling_passed": false,
+      "envelope_passed": false,
+      "dc_formula_v": 1.4076547332109768
+    },
+    {
+      "corner": 21,
+      "supply_v": 4.5,
+      "pullup_ohm": 95000.0,
+      "contact_ohm": 250,
+      "shared_row_wire_ohm": 10,
+      "effective_column_cap_f": 1e-10,
+      "path_ohm": 1790,
+      "command": [
+        "ngspice",
+        "-b",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net15/rc/corner-021.cir"
+      ],
+      "exit": 0,
+      "measures": {
+        "low_column": 1.424475,
+        "sink_current": 0.0005499831,
+        "high_column": 4.31,
+        "threshold_cross": 3.7434e-05
+      },
+      "within_qualification_budget": false,
+      "deck": "verification/net15/rc/corner-021.cir",
+      "log": "verification/net15/rc/corner-021.log",
+      "settling_s": 1.7434e-05,
+      "low_passed": false,
+      "high_passed": true,
+      "current_passed": true,
+      "settling_passed": true,
+      "envelope_passed": false,
+      "dc_formula_v": 1.424475270818155
+    },
+    {
+      "corner": 22,
+      "supply_v": 4.5,
+      "pullup_ohm": 95000.0,
+      "contact_ohm": 250,
+      "shared_row_wire_ohm": 10,
+      "effective_column_cap_f": 1e-09,
+      "path_ohm": 1790,
+      "command": [
+        "ngspice",
+        "-b",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net15/rc/corner-022.cir"
+      ],
+      "exit": 0,
+      "measures": {
+        "low_column": 1.424475,
+        "sink_current": 0.0005499831,
+        "high_column": 4.31,
+        "threshold_cross": 0.000194441
+      },
+      "within_qualification_budget": false,
+      "deck": "verification/net15/rc/corner-022.cir",
+      "log": "verification/net15/rc/corner-022.log",
+      "settling_s": 0.000174441,
+      "low_passed": false,
+      "high_passed": true,
+      "current_passed": true,
+      "settling_passed": true,
+      "envelope_passed": false,
+      "dc_formula_v": 1.424475270818155
+    },
+    {
+      "corner": 23,
+      "supply_v": 4.5,
+      "pullup_ohm": 95000.0,
+      "contact_ohm": 250,
+      "shared_row_wire_ohm": 10,
+      "effective_column_cap_f": 2e-08,
+      "path_ohm": 1790,
+      "command": [
+        "ngspice",
+        "-b",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net15/rc/corner-023.cir"
+      ],
+      "exit": 0,
+      "measures": {
+        "low_column": 1.424475,
+        "sink_current": 0.0005499831,
+        "high_column": 4.294818,
+        "threshold_cross": 0.00350885
+      },
+      "within_qualification_budget": false,
+      "deck": "verification/net15/rc/corner-023.cir",
+      "log": "verification/net15/rc/corner-023.log",
+      "settling_s": 0.00348885,
+      "low_passed": false,
+      "high_passed": true,
+      "current_passed": true,
+      "settling_passed": false,
+      "envelope_passed": false,
+      "dc_formula_v": 1.424475270818155
+    },
+    {
+      "corner": 24,
+      "supply_v": 4.5,
+      "pullup_ohm": 105000.0,
+      "contact_ohm": 10,
+      "shared_row_wire_ohm": 0.1,
+      "effective_column_cap_f": 1e-10,
+      "path_ohm": 70.4,
+      "command": [
+        "ngspice",
+        "-b",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net15/rc/corner-024.cir"
+      ],
+      "exit": 0,
+      "measures": {
+        "low_column": 0.4853271,
+        "sink_current": 0.0006437597,
+        "high_column": 4.29,
+        "threshold_cross": 4.26442e-05
+      },
+      "within_qualification_budget": true,
+      "deck": "verification/net15/rc/corner-024.cir",
+      "log": "verification/net15/rc/corner-024.log",
+      "settling_s": 2.26442e-05,
+      "low_passed": true,
+      "high_passed": true,
+      "current_passed": true,
+      "settling_passed": true,
+      "envelope_passed": true,
+      "dc_formula_v": 0.48532711886637997
+    },
+    {
+      "corner": 25,
+      "supply_v": 4.5,
+      "pullup_ohm": 105000.0,
+      "contact_ohm": 10,
+      "shared_row_wire_ohm": 0.1,
+      "effective_column_cap_f": 1e-09,
+      "path_ohm": 70.4,
+      "command": [
+        "ngspice",
+        "-b",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net15/rc/corner-025.cir"
+      ],
+      "exit": 0,
+      "measures": {
+        "low_column": 0.4853271,
+        "sink_current": 0.0006437597,
+        "high_column": 4.29,
+        "threshold_cross": 0.000246506
+      },
+      "within_qualification_budget": true,
+      "deck": "verification/net15/rc/corner-025.cir",
+      "log": "verification/net15/rc/corner-025.log",
+      "settling_s": 0.00022650600000000002,
+      "low_passed": true,
+      "high_passed": true,
+      "current_passed": true,
+      "settling_passed": true,
+      "envelope_passed": true,
+      "dc_formula_v": 0.48532711886637997
+    },
+    {
+      "corner": 26,
+      "supply_v": 4.5,
+      "pullup_ohm": 105000.0,
+      "contact_ohm": 10,
+      "shared_row_wire_ohm": 0.1,
+      "effective_column_cap_f": 2e-08,
+      "path_ohm": 70.4,
+      "command": [
+        "ngspice",
+        "-b",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net15/rc/corner-026.cir"
+      ],
+      "exit": 0,
+      "measures": {
+        "low_column": 0.4853271,
+        "sink_current": 0.0006437597,
+        "high_column": 4.257005,
+        "threshold_cross": 0.00455014
+      },
+      "within_qualification_budget": false,
+      "deck": "verification/net15/rc/corner-026.cir",
+      "log": "verification/net15/rc/corner-026.log",
+      "settling_s": 0.00453014,
+      "low_passed": true,
+      "high_passed": true,
+      "current_passed": true,
+      "settling_passed": false,
+      "envelope_passed": false,
+      "dc_formula_v": 0.48532711886637997
+    },
+    {
+      "corner": 27,
+      "supply_v": 4.5,
+      "pullup_ohm": 105000.0,
+      "contact_ohm": 10,
+      "shared_row_wire_ohm": 10,
+      "effective_column_cap_f": 1e-10,
+      "path_ohm": 110,
+      "command": [
+        "ngspice",
+        "-b",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net15/rc/corner-027.cir"
+      ],
+      "exit": 0,
+      "measures": {
+        "low_column": 0.5103997,
+        "sink_current": 0.0006399391,
+        "high_column": 4.29,
+        "threshold_cross": 4.25734e-05
+      },
+      "within_qualification_budget": true,
+      "deck": "verification/net15/rc/corner-027.cir",
+      "log": "verification/net15/rc/corner-027.log",
+      "settling_s": 2.25734e-05,
+      "low_passed": true,
+      "high_passed": true,
+      "current_passed": true,
+      "settling_passed": true,
+      "envelope_passed": true,
+      "dc_formula_v": 0.5103996996632452
+    },
+    {
+      "corner": 28,
+      "supply_v": 4.5,
+      "pullup_ohm": 105000.0,
+      "contact_ohm": 10,
+      "shared_row_wire_ohm": 10,
+      "effective_column_cap_f": 1e-09,
+      "path_ohm": 110,
+      "command": [
+        "ngspice",
+        "-b",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net15/rc/corner-028.cir"
+      ],
+      "exit": 0,
+      "measures": {
+        "low_column": 0.5103997,
+        "sink_current": 0.0006399391,
+        "high_column": 4.29,
+        "threshold_cross": 0.000245812
+      },
+      "within_qualification_budget": true,
+      "deck": "verification/net15/rc/corner-028.cir",
+      "log": "verification/net15/rc/corner-028.log",
+      "settling_s": 0.00022581199999999999,
+      "low_passed": true,
+      "high_passed": true,
+      "current_passed": true,
+      "settling_passed": true,
+      "envelope_passed": true,
+      "dc_formula_v": 0.5103996996632452
+    },
+    {
+      "corner": 29,
+      "supply_v": 4.5,
+      "pullup_ohm": 105000.0,
+      "contact_ohm": 10,
+      "shared_row_wire_ohm": 10,
+      "effective_column_cap_f": 2e-08,
+      "path_ohm": 110,
+      "command": [
+        "ngspice",
+        "-b",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net15/rc/corner-029.cir"
+      ],
+      "exit": 0,
+      "measures": {
+        "low_column": 0.5103997,
+        "sink_current": 0.0006399391,
+        "high_column": 4.257222,
+        "threshold_cross": 0.00453626
+      },
+      "within_qualification_budget": false,
+      "deck": "verification/net15/rc/corner-029.cir",
+      "log": "verification/net15/rc/corner-029.log",
+      "settling_s": 0.00451626,
+      "low_passed": true,
+      "high_passed": true,
+      "current_passed": true,
+      "settling_passed": false,
+      "envelope_passed": false,
+      "dc_formula_v": 0.5103996996632452
+    },
+    {
+      "corner": 30,
+      "supply_v": 4.5,
+      "pullup_ohm": 105000.0,
+      "contact_ohm": 100,
+      "shared_row_wire_ohm": 0.1,
+      "effective_column_cap_f": 1e-10,
+      "path_ohm": 700.4,
+      "command": [
+        "ngspice",
+        "-b",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net15/rc/corner-030.cir"
+      ],
+      "exit": 0,
+      "measures": {
+        "low_column": 0.8517841,
+        "sink_current": 0.0005879186,
+        "high_column": 4.29,
+        "threshold_cross": 4.15804e-05
+      },
+      "within_qualification_budget": true,
+      "deck": "verification/net15/rc/corner-030.cir",
+      "log": "verification/net15/rc/corner-030.log",
+      "settling_s": 2.1580399999999998e-05,
+      "low_passed": true,
+      "high_passed": true,
+      "current_passed": true,
+      "settling_passed": true,
+      "envelope_passed": true,
+      "dc_formula_v": 0.8517840782826719
+    },
+    {
+      "corner": 31,
+      "supply_v": 4.5,
+      "pullup_ohm": 105000.0,
+      "contact_ohm": 100,
+      "shared_row_wire_ohm": 0.1,
+      "effective_column_cap_f": 1e-09,
+      "path_ohm": 700.4,
+      "command": [
+        "ngspice",
+        "-b",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net15/rc/corner-031.cir"
+      ],
+      "exit": 0,
+      "measures": {
+        "low_column": 0.8517841,
+        "sink_current": 0.0005879186,
+        "high_column": 4.29,
+        "threshold_cross": 0.000235872
+      },
+      "within_qualification_budget": true,
+      "deck": "verification/net15/rc/corner-031.cir",
+      "log": "verification/net15/rc/corner-031.log",
+      "settling_s": 0.000215872,
+      "low_passed": true,
+      "high_passed": true,
+      "current_passed": true,
+      "settling_passed": true,
+      "envelope_passed": true,
+      "dc_formula_v": 0.8517840782826719
+    },
+    {
+      "corner": 32,
+      "supply_v": 4.5,
+      "pullup_ohm": 105000.0,
+      "contact_ohm": 100,
+      "shared_row_wire_ohm": 0.1,
+      "effective_column_cap_f": 2e-08,
+      "path_ohm": 700.4,
+      "command": [
+        "ngspice",
+        "-b",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net15/rc/corner-032.cir"
+      ],
+      "exit": 0,
+      "measures": {
+        "low_column": 0.8517841,
+        "sink_current": 0.0005879186,
+        "high_column": 4.260183,
+        "threshold_cross": 0.00433746
+      },
+      "within_qualification_budget": false,
+      "deck": "verification/net15/rc/corner-032.cir",
+      "log": "verification/net15/rc/corner-032.log",
+      "settling_s": 0.0043174599999999995,
+      "low_passed": true,
+      "high_passed": true,
+      "current_passed": true,
+      "settling_passed": false,
+      "envelope_passed": false,
+      "dc_formula_v": 0.8517840782826719
+    },
+    {
+      "corner": 33,
+      "supply_v": 4.5,
+      "pullup_ohm": 105000.0,
+      "contact_ohm": 100,
+      "shared_row_wire_ohm": 10,
+      "effective_column_cap_f": 1e-10,
+      "path_ohm": 740,
+      "command": [
+        "ngspice",
+        "-b",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net15/rc/corner-033.cir"
+      ],
+      "exit": 0,
+      "measures": {
+        "low_column": 0.8727064,
+        "sink_current": 0.0005847305,
+        "high_column": 4.29,
+        "threshold_cross": 4.15147e-05
+      },
+      "within_qualification_budget": true,
+      "deck": "verification/net15/rc/corner-033.cir",
+      "log": "verification/net15/rc/corner-033.log",
+      "settling_s": 2.1514699999999996e-05,
+      "low_passed": true,
+      "high_passed": true,
+      "current_passed": true,
+      "settling_passed": true,
+      "envelope_passed": true,
+      "dc_formula_v": 0.8727063845171041
+    },
+    {
+      "corner": 34,
+      "supply_v": 4.5,
+      "pullup_ohm": 105000.0,
+      "contact_ohm": 100,
+      "shared_row_wire_ohm": 10,
+      "effective_column_cap_f": 1e-09,
+      "path_ohm": 740,
+      "command": [
+        "ngspice",
+        "-b",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net15/rc/corner-034.cir"
+      ],
+      "exit": 0,
+      "measures": {
+        "low_column": 0.8727064,
+        "sink_current": 0.0005847305,
+        "high_column": 4.29,
+        "threshold_cross": 0.00023523
+      },
+      "within_qualification_budget": true,
+      "deck": "verification/net15/rc/corner-034.cir",
+      "log": "verification/net15/rc/corner-034.log",
+      "settling_s": 0.00021523,
+      "low_passed": true,
+      "high_passed": true,
+      "current_passed": true,
+      "settling_passed": true,
+      "envelope_passed": true,
+      "dc_formula_v": 0.8727063845171041
+    },
+    {
+      "corner": 35,
+      "supply_v": 4.5,
+      "pullup_ohm": 105000.0,
+      "contact_ohm": 100,
+      "shared_row_wire_ohm": 10,
+      "effective_column_cap_f": 2e-08,
+      "path_ohm": 740,
+      "command": [
+        "ngspice",
+        "-b",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net15/rc/corner-035.cir"
+      ],
+      "exit": 0,
+      "measures": {
+        "low_column": 0.8727064,
+        "sink_current": 0.0005847305,
+        "high_column": 4.260364,
+        "threshold_cross": 0.00432464
+      },
+      "within_qualification_budget": false,
+      "deck": "verification/net15/rc/corner-035.cir",
+      "log": "verification/net15/rc/corner-035.log",
+      "settling_s": 0.00430464,
+      "low_passed": true,
+      "high_passed": true,
+      "current_passed": true,
+      "settling_passed": false,
+      "envelope_passed": false,
+      "dc_formula_v": 0.8727063845171041
+    },
+    {
+      "corner": 36,
+      "supply_v": 4.5,
+      "pullup_ohm": 105000.0,
+      "contact_ohm": 150,
+      "shared_row_wire_ohm": 0.1,
+      "effective_column_cap_f": 1e-10,
+      "path_ohm": 1050.4,
+      "command": [
+        "ngspice",
+        "-b",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net15/rc/corner-036.cir"
+      ],
+      "exit": 0,
+      "measures": {
+        "low_column": 1.029164,
+        "sink_current": 0.0005608893,
+        "high_column": 4.29,
+        "threshold_cross": 4.10252e-05
+      },
+      "within_qualification_budget": true,
+      "deck": "verification/net15/rc/corner-036.cir",
+      "log": "verification/net15/rc/corner-036.log",
+      "settling_s": 2.10252e-05,
+      "low_passed": true,
+      "high_passed": true,
+      "current_passed": true,
+      "settling_passed": true,
+      "envelope_passed": true,
+      "dc_formula_v": 1.0291637626085164
+    },
+    {
+      "corner": 37,
+      "supply_v": 4.5,
+      "pullup_ohm": 105000.0,
+      "contact_ohm": 150,
+      "shared_row_wire_ohm": 0.1,
+      "effective_column_cap_f": 1e-09,
+      "path_ohm": 1050.4,
+      "command": [
+        "ngspice",
+        "-b",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net15/rc/corner-037.cir"
+      ],
+      "exit": 0,
+      "measures": {
+        "low_column": 1.029164,
+        "sink_current": 0.0005608893,
+        "high_column": 4.29,
+        "threshold_cross": 0.000230309
+      },
+      "within_qualification_budget": true,
+      "deck": "verification/net15/rc/corner-037.cir",
+      "log": "verification/net15/rc/corner-037.log",
+      "settling_s": 0.000210309,
+      "low_passed": true,
+      "high_passed": true,
+      "current_passed": true,
+      "settling_passed": true,
+      "envelope_passed": true,
+      "dc_formula_v": 1.0291637626085164
+    },
+    {
+      "corner": 38,
+      "supply_v": 4.5,
+      "pullup_ohm": 105000.0,
+      "contact_ohm": 150,
+      "shared_row_wire_ohm": 0.1,
+      "effective_column_cap_f": 2e-08,
+      "path_ohm": 1050.4,
+      "command": [
+        "ngspice",
+        "-b",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net15/rc/corner-038.cir"
+      ],
+      "exit": 0,
+      "measures": {
+        "low_column": 1.029164,
+        "sink_current": 0.0005608893,
+        "high_column": 4.261721,
+        "threshold_cross": 0.00422622
+      },
+      "within_qualification_budget": false,
+      "deck": "verification/net15/rc/corner-038.cir",
+      "log": "verification/net15/rc/corner-038.log",
+      "settling_s": 0.00420622,
+      "low_passed": true,
+      "high_passed": true,
+      "current_passed": true,
+      "settling_passed": false,
+      "envelope_passed": false,
+      "dc_formula_v": 1.0291637626085164
+    },
+    {
+      "corner": 39,
+      "supply_v": 4.5,
+      "pullup_ohm": 105000.0,
+      "contact_ohm": 150,
+      "shared_row_wire_ohm": 10,
+      "effective_column_cap_f": 1e-10,
+      "path_ohm": 1090,
+      "command": [
+        "ngspice",
+        "-b",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net15/rc/corner-039.cir"
+      ],
+      "exit": 0,
+      "measures": {
+        "low_column": 1.048211,
+        "sink_current": 0.0005579869,
+        "high_column": 4.29,
+        "threshold_cross": 4.09648e-05
+      },
+      "within_qualification_budget": true,
+      "deck": "verification/net15/rc/corner-039.cir",
+      "log": "verification/net15/rc/corner-039.log",
+      "settling_s": 2.0964799999999996e-05,
+      "low_passed": true,
+      "high_passed": true,
+      "current_passed": true,
+      "settling_passed": true,
+      "envelope_passed": true,
+      "dc_formula_v": 1.0482112535625565
+    },
+    {
+      "corner": 40,
+      "supply_v": 4.5,
+      "pullup_ohm": 105000.0,
+      "contact_ohm": 150,
+      "shared_row_wire_ohm": 10,
+      "effective_column_cap_f": 1e-09,
+      "path_ohm": 1090,
+      "command": [
+        "ngspice",
+        "-b",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net15/rc/corner-040.cir"
+      ],
+      "exit": 0,
+      "measures": {
+        "low_column": 1.048211,
+        "sink_current": 0.0005579869,
+        "high_column": 4.29,
+        "threshold_cross": 0.000229695
+      },
+      "within_qualification_budget": true,
+      "deck": "verification/net15/rc/corner-040.cir",
+      "log": "verification/net15/rc/corner-040.log",
+      "settling_s": 0.000209695,
+      "low_passed": true,
+      "high_passed": true,
+      "current_passed": true,
+      "settling_passed": true,
+      "envelope_passed": true,
+      "dc_formula_v": 1.0482112535625565
+    },
+    {
+      "corner": 41,
+      "supply_v": 4.5,
+      "pullup_ohm": 105000.0,
+      "contact_ohm": 150,
+      "shared_row_wire_ohm": 10,
+      "effective_column_cap_f": 2e-08,
+      "path_ohm": 1090,
+      "command": [
+        "ngspice",
+        "-b",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net15/rc/corner-041.cir"
+      ],
+      "exit": 0,
+      "measures": {
+        "low_column": 1.048211,
+        "sink_current": 0.0005579869,
+        "high_column": 4.261886,
+        "threshold_cross": 0.00421392
+      },
+      "within_qualification_budget": false,
+      "deck": "verification/net15/rc/corner-041.cir",
+      "log": "verification/net15/rc/corner-041.log",
+      "settling_s": 0.00419392,
+      "low_passed": true,
+      "high_passed": true,
+      "current_passed": true,
+      "settling_passed": false,
+      "envelope_passed": false,
+      "dc_formula_v": 1.0482112535625565
+    },
+    {
+      "corner": 42,
+      "supply_v": 4.5,
+      "pullup_ohm": 105000.0,
+      "contact_ohm": 250,
+      "shared_row_wire_ohm": 0.1,
+      "effective_column_cap_f": 1e-10,
+      "path_ohm": 1750.4,
+      "command": [
+        "ngspice",
+        "-b",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net15/rc/corner-042.cir"
+      ],
+      "exit": 0,
+      "measures": {
+        "low_column": 1.339114,
+        "sink_current": 0.0005136589,
+        "high_column": 4.29,
+        "threshold_cross": 3.99781e-05
+      },
+      "within_qualification_budget": false,
+      "deck": "verification/net15/rc/corner-042.cir",
+      "log": "verification/net15/rc/corner-042.log",
+      "settling_s": 1.99781e-05,
+      "low_passed": true,
+      "high_passed": true,
+      "current_passed": true,
+      "settling_passed": true,
+      "envelope_passed": true,
+      "dc_formula_v": 1.3391136316885424
+    }
+  ],
+  "failures": [
+    "Corner 42 acceptance/calibration mismatch"
+  ],
+  "physical_approval": false
+}

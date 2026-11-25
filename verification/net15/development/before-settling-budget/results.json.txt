@@ -1,0 +1,137 @@
+{
+  "date": "2026-11-25",
+  "iteration": "NET-15",
+  "scope": "Native digital MMIO/connector/row drivers/two-stage sampled columns, functional switch contacts and weak pull-ups; no analog Schmitt/RC/contact/CDC/debounce/physical approval",
+  "sources": [
+    {
+      "path": "sim/hdl/hc_models.sv",
+      "sha256": "f305ff38b7e58701e9f97528de68ea8c5518a628d38bd5a8ac9e847fa87c8680"
+    },
+    {
+      "path": "sim/net03/package_models.sv",
+      "sha256": "53712265aa1d4312866135c59e73d7543069c7a3281635d43d66825790716258"
+    },
+    {
+      "path": "sim/net04/package_models.sv",
+      "sha256": "85b00a3b6b0307d68b53e4ea1ae97ba5cbf83c20685544bb12fde333efa07d63"
+    },
+    {
+      "path": "sim/net14b/package_models.sv",
+      "sha256": "f8f84c02d57e6043d6abc8ede4483971e88d6d1b18d53ea4fce39bf748274bc8"
+    },
+    {
+      "path": "hardware/mmio_keyboard/mmio_keyboard_netlist.sv",
+      "sha256": "93f0aa4d58028f59ee2c500ea1ef5ec41e935cba7d97a5964b8c6cf9566d9794"
+    },
+    {
+      "path": "sim/net15/tb_mmio_keyboard.sv",
+      "sha256": "76fa3fd2441d0969ad7199848ffcc12cdbf26f0117555130481d7b20c1315faf"
+    },
+    {
+      "path": "tools/run_mmio_keyboard.py",
+      "sha256": "9411bfab1a541b60e8288f3e20450d5c5039780b8785db75748f823cd1550d43"
+    },
+    {
+      "path": "tools/build_mmio_keyboard.py",
+      "sha256": "9c094d664d1a58dc3dcd98a689d5fb786bda83e7b1e3b4baa6531644a557acdb"
+    },
+    {
+      "path": "verification/net15/mmio_keyboard.xml",
+      "sha256": "3ed5ce47abf750566c3bd1c0ed4dca28cbedd224766e199341e7db9849d49f52"
+    },
+    {
+      "path": "references/ti/sn74ahc14.pdf",
+      "sha256": "4ef53e806a952722b71c3ba94590f0b41099f86022ed5bd5fb37bc4a704bebe7"
+    }
+  ],
+  "runs": [
+    {
+      "timed": 0,
+      "compile": {
+        "command": [
+          "iverilog",
+          "-g2012",
+          "-Wall",
+          "-s",
+          "tb_mmio_keyboard",
+          "-Ptb_mmio_keyboard.TIMED=0",
+          "-o",
+          "/tmp/isa1-mmio-q4rm77h1/test.vvp",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/hdl/hc_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net03/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net04/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net14b/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/mmio_keyboard/mmio_keyboard_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net15/tb_mmio_keyboard.sv"
+        ],
+        "exit": 0,
+        "stdout": "",
+        "stderr": "",
+        "seconds": 0.033
+      },
+      "execution": {
+        "command": [
+          "vvp",
+          "/tmp/isa1-mmio-q4rm77h1/test.vvp"
+        ],
+        "exit": 0,
+        "stdout": "RESULT timed=0 writes=23504 reads=45969 matrix_patterns=5681 row_scans=22724 empty=1 singles=64 pairs=2016 L_triples=2880 rectangles=720 failures=0\n/mnt/c/Users/gabri/projetos/isa1/sim/net15/tb_mmio_keyboard.sv:101: $finish called at 26387385630 (1ps)\n",
+        "stderr": "",
+        "seconds": 25.587
+      },
+      "passed": true
+    },
+    {
+      "timed": 1,
+      "compile": {
+        "command": [
+          "iverilog",
+          "-g2012",
+          "-Wall",
+          "-s",
+          "tb_mmio_keyboard",
+          "-Ptb_mmio_keyboard.TIMED=1",
+          "-o",
+          "/tmp/isa1-mmio-q4rm77h1/test.vvp",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/hdl/hc_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net03/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net04/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net14b/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/mmio_keyboard/mmio_keyboard_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net15/tb_mmio_keyboard.sv"
+        ],
+        "exit": 0,
+        "stdout": "",
+        "stderr": "",
+        "seconds": 0.034
+      },
+      "execution": {
+        "command": [
+          "vvp",
+          "/tmp/isa1-mmio-q4rm77h1/test.vvp"
+        ],
+        "exit": 0,
+        "stdout": "RESULT timed=1 writes=23504 reads=45969 matrix_patterns=5681 row_scans=22724 empty=1 singles=64 pairs=2016 L_triples=2880 rectangles=720 failures=0\n/mnt/c/Users/gabri/projetos/isa1/sim/net15/tb_mmio_keyboard.sv:101: $finish called at 26387385630 (1ps)\n",
+        "stderr": "",
+        "seconds": 27.347
+      },
+      "passed": true
+    }
+  ],
+  "negative": [
+    {
+      "case": "Connector rows/columns exchanged",
+      "expected_rejection": true,
+      "message": "Membrane connector pin map J1",
+      "passed": true
+    },
+    {
+      "case": "Row driver forced high",
+      "expected_rejection": true,
+      "message": "Row driver not low-only U3",
+      "passed": true
+    }
+  ],
+  "failures": [],
+  "production_released": false
+}

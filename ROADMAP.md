@@ -1,3 +1,5 @@
+Atualização NET-15 (25/11/2026): MMIO/teclado e controlador com espera KEY_READY por pinos; 5.681 padrões por modo e 48 cantos elétricos dentro de orçamento condicional passaram. As membranas reais não foram medidas. Próximo: reset/energia e integração CPU/teclado; depois proteção, firmware de teclado, DAC e união da placa. Ver docs/engineering/NET15.md.
+
 **Estado consolidado atual:** [testes, pendências e revisões](docs/engineering/VALIDATION_STATUS.md). As listas abaixo preservam o estado das etapas anteriores; checkboxes antigos não representam pendências atuais sem consultar a lista consolidada.
 
 Atualização NET-14C (25/11/2026): CPU integrada ao raster/SLOT/captura por pinos, boot/quadro ideal completo com SRAM indefinida e imagem idêntica. Variante nativa evita truncar clock de backend por reset; negativo de reversão do pino reproduz a falha. Fronteira assíncrona tem rejeição estrita preservada e modelo binário separado, não MTBF aprovado. 1.062 instruções temporizadas e sete lotes completos de cortes/26 opcodes passaram nesse escopo. Próximo: MMIO/teclado, DAC/oscilador e energia/reset global; depois esquema unido, cargas, footprints/PCB e protótipo.

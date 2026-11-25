@@ -1,0 +1,25 @@
+{
+  "scope": "Initial acceptance rule wrongly required every out-of-qualification corner to fail. A 250-ohm contact corner passed the linear model at one supply/tolerance but does not qualify across the full envelope. Keep the data; require all qualified corners to pass and excess-R/excess-C calibrations to detect failures somewhere, never approve out-of-budget corners.",
+  "files": [
+    {
+      "source": "tools/run_keypad_envelope.py",
+      "path": "verification/net15/development/envelope-outside-budget/run_keypad_envelope.py",
+      "sha256": "2e216d8c27d1319ec861b11ba1b82e4f6078fc6cd427413909516661c9b7235e"
+    },
+    {
+      "source": "verification/net15/electrical-envelope.json",
+      "path": "verification/net15/development/envelope-outside-budget/electrical-envelope.json",
+      "sha256": "971d299309a003e8fdfff6dc9a6f94951d8c32a7a7c53517d9c658c4af8ad225"
+    },
+    {
+      "source": "verification/net15/rc/corner-042.cir",
+      "path": "verification/net15/development/envelope-outside-budget/corner-042.cir",
+      "sha256": "6908f9a8b1a96e140eb027ff70a36267a840617ff84ac0e6faad82765151c826"
+    },
+    {
+      "source": "verification/net15/rc/corner-042.log",
+      "path": "verification/net15/development/envelope-outside-budget/corner-042.log",
+      "sha256": "67de365a5a4a429dac41f325c07a0b7f75cd06d1ee8d25a56cc305fc80491ca2"
+    }
+  ]
+}

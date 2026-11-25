@@ -1,6 +1,6 @@
 # Lista consolidada de testes, itens e revisões
 
-Atualizada em 25/11/2026, após integração NET-14C de CPU/raster por pinos. Esta lista substitui a leitura dos checkboxes antigos como estado atual; eles permanecem no ROADMAP como registros das respectivas etapas. Não há percentual de placa pronta: uma aprovação de modelo não equivale a aprovação elétrica ou física.
+Atualizada em 25/11/2026, após NET-15 de MMIO/teclado e controlador por pinos, ainda separados da integração CPU/raster NET-14C. Esta lista substitui a leitura dos checkboxes antigos como estado atual; eles permanecem no ROADMAP como registros das respectivas etapas. Não há percentual de placa pronta: uma aprovação de modelo não equivale a aprovação elétrica ou física.
 
 ## Evidências aprovadas no escopo de modelo
 
@@ -24,7 +24,7 @@ Evidências: [NET13](NET13.md), [integração ideal](../../verification/net13/cp
 |---|---|---|
 | 1. Relógio, raster e captura de vídeo | NET-14C: CPU/boot/quadro ideal com circuito por pinos; variante corrige clock truncado; cortes temporizados têm hipótese binária na fronteira de reset | Cargas/setup/hold/skew/PVT, oscilador e reset/MTBF físico; programa/quadro temporizado completo |
 | 2. Concessão física da VRAM | SLOT por pinos, 32 posições exercitadas e integração com CPU/quadro ideal | Fechar cargas/min/max/clock globais e validar placa |
-| 3. MMIO e teclado por pinos | Modelo conserva endereços A000/A001/A002/A010/A011/A012; fotos indicam conector | Registradores/muxes/drivers/proteções reais, equivalência do MMIO, varredura/bounce/ambiguidades/fila; medir unidades |
+| 3. MMIO e teclado por pinos | NET-15: registradores/muxes/drivers/conectores em esquema; 5.681 padrões por modo, espera de 8.192 ciclos e RC condicional em 48 cantos | Integrar CPU/raster após reset/energia; MTBF, proteções, bounce/ambiguidades/fila e medidas das unidades |
 | 4. Alimentação e reset | Bloqueio lógico de acessos testado; corrupção de escrita interrompida é explícita | Supervisor/brownout/hold-up, WE inibido antes de alterar bancos/posse/endereço, sem novas escritas inseguras; ensaiar rampas/cortes |
 | 5. Saída VGA e DAC RGB332 | Dados digitais disponíveis; DAC e conector não fechados | Níveis/correntes/impedância, cargas do monitor, sincronismos, proteção, simulação e medição |
 | 6. Temporização global | Cenários de atrasos selecionados e orçamento de captura NET-14A | Setup/hold/recovery/removal, mínimos/máximos, temperatura/tensão, skew/jitter/duty cycle e MTBF; regressão integrada correspondente |

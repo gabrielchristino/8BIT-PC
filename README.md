@@ -1,3 +1,5 @@
+**Avanço NET-15:** [MMIO e teclado por pinos](docs/engineering/NET15.md): matriz de quatro membranas, registradores e espera de acomodação em esquema separado; testes digitais e envelope RC condicional registrados. Integração CPU desta etapa, reset/energia global e validação física continuam pendentes.
+
 # ISA-1 — computador de 8 bits
 
 Projeto de computador pessoal com CPU própria de lógica discreta, endereçamento de 16 bits, vídeo VGA e teclado de membrana. Este repositório reúne os materiais originais recuperados e a documentação de continuidade.

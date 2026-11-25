@@ -1,0 +1,20 @@
+{
+  "date": "2026-11-25",
+  "components": 62,
+  "pins": 526,
+  "no_connects": 9,
+  "max_signal_input_loads": 4,
+  "failures": [],
+  "command": [
+    "/home/gabri/.local/opt/isa1-kicad-10.0.8/squashfs-root/usr/bin/kicad-cli",
+    "sch",
+    "export",
+    "netlist",
+    "--format",
+    "kicadxml",
+    "-o",
+    "/mnt/c/Users/gabri/projetos/isa1/verification/net15/access/keyboard_access.xml",
+    "/mnt/c/Users/gabri/projetos/isa1/hardware/keyboard_access/keyboard_access.kicad_sch"
+  ],
+  "kicad": "10.0.8"
+}

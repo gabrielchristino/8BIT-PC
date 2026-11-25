@@ -1,0 +1,45 @@
+{
+  "scope": "100k columns without row bias passed digital tests; initial electrical bound omitted concentration of inactive-row output leakage onto a column. Preserve before adding weak row bias and revised correlated leakage/RC bound. No physical approval claimed.",
+  "files": [
+    {
+      "source": "tools/build_mmio_keyboard.py",
+      "path": "verification/net15/development/before-row-leak-bias/build_mmio_keyboard.py.txt",
+      "sha256": "956c162ed78809c65da427d292c13a6b286c810692b1dc8a77501d02e3bdbffb"
+    },
+    {
+      "source": "tools/run_keypad_envelope.py",
+      "path": "verification/net15/development/before-row-leak-bias/run_keypad_envelope.py.txt",
+      "sha256": "1a7df29fdfa8e782d6b286cd6a562e0a8b8c138db0f4bec4d95d6d2f9c986aee"
+    },
+    {
+      "source": "verification/net15/electrical-envelope.json",
+      "path": "verification/net15/development/before-row-leak-bias/electrical-envelope.json.txt",
+      "sha256": "b30aa2757c1d13cd588ca9d033d1156e0a92d787d8a22685a682283224ea9d0d"
+    },
+    {
+      "source": "verification/net15/results.json",
+      "path": "verification/net15/development/before-row-leak-bias/results.json.txt",
+      "sha256": "7728107ef35c092686f014782e05a5a6e81ee1404babeada5d14cd2a3a3b6040"
+    },
+    {
+      "source": "sim/net15/tb_mmio_keyboard.sv",
+      "path": "verification/net15/development/before-row-leak-bias/tb_mmio_keyboard.sv.txt",
+      "sha256": "e48909d90eda64c8fdfe8f6e1dc0681ec33b16596e9986ce0a5a8e2d79610100"
+    }
+  ],
+  "capture_warning": "Preservation command completed after row-bias edit for builder and bench; their original .txt copies are later captures, not the tested sources. Preserve them as captured. Exact earlier sources below are recovered by reversing that edit and verifying the existing report SHA-256.",
+  "verified_tested_sources": [
+    {
+      "source": "tools/build_mmio_keyboard.py",
+      "path": "verification/net15/development/before-row-leak-bias/build_mmio_keyboard.py.tested-before-row-bias.txt",
+      "sha256": "00106322d93d662a247c05b0d9118a8e6dd68058e74365ca8de74d7e5080dae9",
+      "transformation": "Reverse the recorded row-bias edit; exact existing tested SHA-256 match, not invented historical original"
+    },
+    {
+      "source": "sim/net15/tb_mmio_keyboard.sv",
+      "path": "verification/net15/development/before-row-leak-bias/tb_mmio_keyboard.sv.tested-before-row-bias.txt",
+      "sha256": "c325057093d77412c8661158af50f89ca177f5fb9a1f40eff37dcc2aff2af987",
+      "transformation": "Reverse the recorded row-bias edit; exact existing tested SHA-256 match, not invented historical original"
+    }
+  ]
+}

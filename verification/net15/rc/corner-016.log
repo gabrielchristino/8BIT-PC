@@ -1,0 +1,50 @@
+
+Note: No compatibility mode selected!
+
+
+Circuit: conditional keypad path bound, corner 16
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+vcc                                        4.5
+drv                                       0.44
+control                                      1
+common                                0.440006
+columns                                1.08157
+feed                                   1.08158
+vsw#branch                                   0
+vdrv#branch                        0.000567757
+vcc#branch                        -0.000567757
+
+
+No. of Data Rows : 10026
+
+  Measurements for Transient Analysis
+
+low_column          =  1.081571e+00
+sink_current        =  5.677567e-04
+high_column         =  4.195709e+00
+threshold_cross     =   3.54431e-04
+
+
+Total analysis time (seconds) = 0.026
+
+Total elapsed time (seconds) = 0.034 
+
+Total DRAM available = 7873.207 MB.
+DRAM currently available = 7032.520 MB.
+Maximum ngspice program size =   21.652 MB.
+Current ngspice program size =   12.875 MB.
+
+Shared ngspice pages =   10.750 MB.
+Text (code) pages =    6.156 MB.
+Stack = 0 bytes.
+Library pages =    2.402 MB.
+
+Using SPARSE 1.3 as Direct Linear Solver

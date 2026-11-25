@@ -1,3 +1,5 @@
+NET-15 — 25/11/2026: acrescentados MMIO/teclado por pinos e controlador que aguarda acomodação de colunas; matriz, cortes e RC condicional verificados, intermediários e negativos preservados. Não integrado ainda ao programa completo CPU/raster, sem fabricação liberada.
+
 ## 25/11/2026 — NET-14C, integração CPU/vídeo e correção de clock
 
 - Variante nativa de um pino impede truncamento assíncrono do clock de backend; teste negativo reproduz o circuito anterior.

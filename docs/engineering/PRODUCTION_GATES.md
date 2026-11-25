@@ -24,3 +24,6 @@ A [lista consolidada de testes e revisões](VALIDATION_STATUS.md) mostra o estad
 Para cada iteração, registrar revisão, arquivos de entrada, hashes, ferramentas/versões, comandos, saídas, falhas e limitações. Testes negativos devem comprovar que os monitores detectam violações reais. Arquivos históricos não são corrigidos em seu lugar.
 
 As decisões de rotina podem seguir autonomamente. Consultar o usuário quando dependerem de um dado físico não disponível (por exemplo pinagem da membrana), de uma mudança material nos requisitos ou de uma decisão de compra/fabricação.
+# Atualização NET-15
+
+MMIO e controlador de teclado agora têm folhas nativas e ensaios isolados, com ERC parcial de 25/135 violações. Envelope de resistência/capacitância é condicional e unidades não foram medidas. Não há integração nova completa da CPU ao teclado nem liberação de fabricação. Reset/energia deve bloquear escritas antes de mudar bancos e liberar registradores com clocks válidos; esquemas unidos, proteção, cargas, BOM/footprints, ERC/DRC e protótipo permanecem obrigatórios. Ver [NET15](NET15.md).

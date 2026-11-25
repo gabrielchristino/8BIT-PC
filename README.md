@@ -6,7 +6,9 @@ Projeto de computador pessoal com CPU própria de lógica discreta, endereçamen
 
 ## Começar
 
-**Desenvolvimento atual:** [NET-03 — controle de transações](docs/engineering/NET03.md). Captura de endereço/dados/modo, MDR, sincronização de ACK e fases do handshake são simulados da netlist KiCad, integrados ao SP e à CPU das ROMs. Execute `python3 tools/run_transaction_netlist.py` e `python3 tools/run_ack_phase.py` no WSL Ubuntu. Restam o sequenciador/controle das ROMs e a validação física completa.
+**Desenvolvimento atual:** [NET-04 — sequenciador e palavra de controle](docs/engineering/NET04.md). Contador de microsteps, FETCH, IR, quatro EEPROMs, retenção e decodificação são simulados da netlist KiCad, integrados ao SP e ao banco de transações. Execute `python3 tools/run_microcode_netlist.py` e `python3 tools/run_microcode_timing_checks.py` no WSL Ubuntu. Restam datapath/controle físico completos e validação elétrica, temporal e física.
+
+**Controle de transações:** [NET-03](docs/engineering/NET03.md), reutilizado pela NET-04.
 
 **Banco SP:** [NET-02 — SP a partir do esquema](docs/engineering/NET02.md). O armazenamento de SP e o somador SP±1 são simulados da netlist exportada pelo KiCad e ligados à CPU das ROMs. Esquema nativo em `hardware/stack_bank/`; regressões em `verification/net02/`. Controle físico, restante da CPU e liberação para produção continuam pendentes.
 

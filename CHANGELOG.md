@@ -1,5 +1,10 @@
 # Histórico preservado
 
+## NET-04 — 25/11/2026
+
+Banco parcial de microcódigo com 34 CIs: esquema/pinos/XML e simulação derivada, integração sem alterar as ROMs recuperadas, retenção da palavra em WAIT e decodificação de SP. Correção nova da fase de direção DEX, fontes anteriores preservadas. Regressões nas duas configurações de X, monitores temporais e casos negativos em verification/net04; relatório docs/engineering/NET04.md. Não constitui liberação para fabricação.
+
+
 ## 25/11/2026 — NET-03, transações derivadas do esquema
 
 - Controle em HC174/HC74/portas, com captura e retenção de endereço/dado/modo/MDR em HC377.

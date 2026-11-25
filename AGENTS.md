@@ -33,3 +33,10 @@
 - `python scripts/verify_archive.py` verifica ZIPs, extrações e inventário de fontes.
 - Antes de publicar, inspecione a árvore remota, preserve arquivos e histórico existentes e verifique o commit publicado. Não use force push para migração.
 - Documente decisões novas em ADRs, com alternativas, evidência, impacto na compatibilidade e critério de aceitação. Pergunte somente quando uma decisão material não puder ser resolvida pelas fontes e pela autorização do usuário.
+
+## Continuidade NET-04
+
+- Leia docs/engineering/NET04.md e verification/net04/results.json antes da próxima integração. O sequenciador/IR/ROM/palavra retida vêm da netlist; ADVANCE_REQ/EXECUTE_PULSE e parte do datapath permanecem RTL.
+- Não substitua a AT28HC64B-120 pela AT28C64B sem revisar VOH/VIH e margens; a seleção atual ainda não é BOM homologada. Preserve as quatro lanes históricas.
+- Preserve fontes de etapas anteriores. A versão NET-04 de X usa direção retida na palavra, evitando a amostragem anterior à captura que causou falha DEX.
+- Audite manifestos antigos nos respectivos commits, não reescreva seus hashes para acomodar a evolução dos documentos gerais.

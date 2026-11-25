@@ -1,5 +1,15 @@
 # Roadmap de continuidade
 
+## Iteração atual — NET-04
+
+- [x] Mapear microstep, FETCH, IR, ROMs, retenção e decodificação da palavra a pacotes com pinos e simulação da netlist KiCad.
+- [x] Preservar palavras originais, estabilidade durante WAIT e regressões com as duas configurações de X.
+- [x] Verificar atrasos selecionados e rejeição de violações temporais; registrar escolha de EEPROM/HCT e limites.
+- [ ] Mapear ALU, A/B/PC/EA/flags e controle de execução restante; integrar sem mudar a ISA.
+- [ ] Fechar temporização global, níveis/cargas/energia/reset, esquema completo, ERC/DRC e protótipo.
+
+Evidência: docs/engineering/NET04.md. Listas anteriores preservam o contexto e não substituem este estado parcial.
+
 ## NET-03 — transações e payload retido
 
 - [x] Mapear fases de captura, estabilização, pedido, drenagem, conclusão e rearme a HC174/portas.

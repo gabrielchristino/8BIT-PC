@@ -1,0 +1,49 @@
+{
+  "date": "2026-11-25",
+  "sources": [
+    {
+      "part": "SN74AHC08",
+      "path": "references/ti/sn74ahc08.pdf",
+      "url": "https://www.ti.com/lit/ds/symlink/sn74ahc08.pdf",
+      "sha256": "5b2bcbcf6b40a36fe9ddccda528bd5bb5ab7516356f540d879129a7d5c3f9036",
+      "document_header": "SCLS236L \u2013 OCTOBER 1995 \u2013 REVISED FEBRUARY 2024",
+      "selected_max_data_propagation_ns": 9,
+      "model_delay_ns": 10,
+      "conditions": "VCC=5V +/-0.5V, CL=50pF, SN74 -40..85C table; AHC125 output enables tied LOW, data propagation only"
+    },
+    {
+      "part": "SN74AHC32",
+      "path": "references/ti/sn74ahc32.pdf",
+      "url": "https://www.ti.com/lit/ds/symlink/sn74ahc32.pdf",
+      "sha256": "8c1e2f6b2999874ca37e228dee0dad8f20a8cb58969c764fb63feee684c16e41",
+      "document_header": "SCLS247L \u2013 OCTOBER 1995 \u2013 REVISED FEBRUARY 2024",
+      "selected_max_data_propagation_ns": 8.5,
+      "model_delay_ns": 10,
+      "conditions": "VCC=5V +/-0.5V, CL=50pF, SN74 -40..85C table; AHC125 output enables tied LOW, data propagation only"
+    },
+    {
+      "part": "SN74AHC04",
+      "path": "references/ti/sn74ahc04.pdf",
+      "url": "https://www.ti.com/lit/ds/symlink/sn74ahc04.pdf",
+      "sha256": "da1e18e887be71dfe3b2f69341cd7ab969b75a7a1929aec4346fdc32e2c24962",
+      "document_header": "SCLS231P \u2013 OCTOBER 1995 \u2013 REVISED JUNE 2023",
+      "selected_max_data_propagation_ns": 8.5,
+      "model_delay_ns": 10,
+      "conditions": "VCC=5V +/-0.5V, CL=50pF, SN74 -40..85C table; AHC125 output enables tied LOW, data propagation only"
+    },
+    {
+      "part": "SN74AHC125",
+      "path": "references/ti/sn74ahc125.pdf",
+      "url": "https://www.ti.com/lit/ds/symlink/sn74ahc125.pdf",
+      "sha256": "c2ca226688e5704e94755fb20907c970ba7e2bac3a18fd6b2c28ce73295d0a3f",
+      "document_header": "SCLS256O \u2013 DECEMBER 1995 \u2013 REVISED FEBRUARY 2024",
+      "selected_max_data_propagation_ns": 8.5,
+      "model_delay_ns": 10,
+      "conditions": "VCC=5V +/-0.5V, CL=50pF, SN74 -40..85C table; AHC125 output enables tied LOW, data propagation only"
+    }
+  ],
+  "package_pins": "14-pin AHC gates/buffers use corresponding TI HC channel/power pin numbers; package functions and actual export compared by builder",
+  "other_models": "HC174/74/377 and HCT377 selected delays/monitors inherited from preceding stages, unchanged; see source files/hashes in unit-results.json",
+  "limits": "No full minimum/maximum/skew/PCB/analog or metastability closure; current source-to-consumer interblock capacitance not yet closed",
+  "board_release": false
+}

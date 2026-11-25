@@ -1,5 +1,15 @@
 # Decisões recuperadas e registro da migração
 
+## ADR E15 — Reter payload no reset e desocupar VRAM antes de esperar o produtor
+
+Decisão nova de 25/11/2026. Controlar memória no domínio do backend/vídeo, sincronizando o pedido por dois HC74 e mantendo a sincronização de ACK existente na CPU. Após reset, aquecimento e observação de pedido baixo impedem replay do pedido antigo. Três HC377 sem clear capturam endereço/dados; flags de leitura/escrita separadas zeram juntas. A alternativa de apagar payload no reset foi rejeitada porque poderia mudar o endereço com WE ainda ativo. Não se promete atomicidade de uma escrita truncada por reset/energia.
+
+BUS_ACTIVE tem flip-flop próprio; CS/OE não são reconstruídos pelo OR de fases one-hot. A VRAM é concedida somente por SLOT síncrono e é desocupada após acesso/hold, antes de manter ACK. Reter a posse até o produtor baixar o pedido foi rejeitado: uma pausa prolongada poderia atravessar pixels visíveis. O raster/concessão físico e a prova dos clocks continuam etapas próprias.
+
+O commit físico externo ocorre antes de ACK, e os registradores da CPU só mudam após confirmação. Fixtures novas mantêm a estabilidade do núcleo em WAIT e verificam mudanças de MMIO na transação pendente apenas durante IO_COMMIT; comparam o estado completo ao retirar a instrução. A alternativa de impor simultaneidade ideal entre gravar um periférico e a chegada da confirmação não representa os atrasos do circuito. Isso muda latência, sem alterar ISA, mapa, flags, pilha ou resultados válidos. Escritas de EEPROM continuam ignoradas.
+
+Aceitação do bloco: pinos/XML consistentes, três cenários isolados com 890 transações/128 cortes por cenário, todas as posições de início de janela, pedido mantido por mais de um quadro, três negativos detectados, regressão ideal completa de CPU/programa/quadro e temporizada reduzida. AHC é candidato fundamentado nos PDFs arquivados, sem alegação de BOM homologada/economia. ERC parcial mantém 129 violações; faltam memórias/barramento reais, limites mínimos/skew/MTBF, elétrica, alimentação e placa completa. Evidência em docs/engineering/NET12.md.
+
 ## ADR E14 — Separar decodificação de endereço e pulso de acesso
 
 Decisão nova de 25/11/2026: implementar o mapa de memória/MMIO em portas HC e buffers, mantendo 96 KiB físicos, overlay e bancos. Selects são qualificados por SAFE/ACCESS e comparações MMIO exatas. A alternativa de ligar decodificação diretamente a WE foi rejeitada por hazards e falta de retenção/commit; o controlador de acesso continua uma etapa própria. Não muda a ISA válida ou o mapa posterior. Escritas em EEPROM continuam ignoradas pelo modelo, sem programação física prometida. Aceitação do decoder: todos os endereços/bancos/habilitações em cenários ideal/com atrasos, negativos e integração ideal completa com CPU. O ensaio temporizado integrado é reduzido, não aprovação completa. Fabricar exige backend físico, TTL/CMOS, conflitos OE/WE, clock/CDC, cargas globais e ERC/DRC do sistema. Evidência em docs/engineering/NET11.md.

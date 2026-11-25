@@ -27,6 +27,9 @@ Os downloads chegaram com nomes temporários; os nomes legíveis acima foram res
 
 ## Transformações e material novo
 
+NET-12 (25/11/2026), base 3cac9fca256377186960d106d08d7ccd0ca6c6dc: novo hardware/memory_access e sim/net12. XML KiCad gera o controlador com HC/HCT/AHC; PDFs anteriores preservados. Adaptador conserva interface/funções de memória da RTL-01 e troca as FSMs de acesso/arbitragem por pinos; armazenamento, MMIO, raster, concessão e retorno de dados continuam modelos. Fixtures novas distinguem commit físico MMIO da confirmação à CPU. Falha inicial do monitor na preparação da fixture e rodada anterior ao cache de colunas estão preservadas, com fontes anteriores identificadas por hashes em verification/net12/development. Nenhum material novo é apresentado como original recuperado. Manifesto audita os doze snapshots anteriores nos respectivos commits.
+
+
 NET-11 (25/11/2026), base 52bb48901fda92848add95f01097b704472d397e: novo hardware/memory_decode e sim/net11; nenhum arquivo anterior foi sobrescrito. XML KiCad gera o decodificador. O adaptador copia a memória comportamental da RTL-01 e substitui somente a captura de região/endereço; demais periféricos continuam modelos. Runner derivado da NET-10 e hashes em adapter-origin.json. Onze PDFs oficiais novos são preservados sem transformação, com URLs/hashes/status de candidato em references/system-candidates-2026-11-25.json. Manifesto audita os onze snapshots anteriores nos respectivos commits.
 
 

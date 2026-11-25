@@ -1,0 +1,329 @@
+{
+  "iteration": "NET-12",
+  "date": "2026-11-25",
+  "base_git_commit": "3cac9fca256377186960d106d08d7ccd0ca6c6dc",
+  "transformation": "HC/HCT/AHC package pins -> KiCad XML -> memory payload/state/strobe netlist -> separate simulation adapter and scoped CPU fixtures",
+  "scope": "Three isolated controller scenarios; full ideal CPU integration; quick delayed integration; arrays/MMIO/raster/data-bus still models; ERC 129 violations, production blocked",
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "bytes": 11288,
+      "sha256": "f5637614e85bd0a1da7ab2aaddc8f23218343d06916b17d2409fd4b66f2646cf",
+      "origin": "NET-12 original engineering/verification, 2026-11-25; intermediate logs identified separately"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "bytes": 8697,
+      "sha256": "f783d07797cde958b880c3c977c7089ead5809125b87764154c401a426c7bb18",
+      "origin": "NET-12 original engineering/verification, 2026-11-25; intermediate logs identified separately"
+    },
+    {
+      "path": "DECISIONS.md",
+      "bytes": 19527,
+      "sha256": "8b6abc2ab533da2f90480db076e4393c2cc88a9da9f166154354297a17c64036",
+      "origin": "NET-12 original engineering/verification, 2026-11-25; intermediate logs identified separately"
+    },
+    {
+      "path": "PROVENANCE.md",
+      "bytes": 13617,
+      "sha256": "5fca23a39cf1e8853a61f20d054d9f55abed2c1a034eac2cc1b4e95e06535b3c",
+      "origin": "NET-12 original engineering/verification, 2026-11-25; intermediate logs identified separately"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5646,
+      "sha256": "eae0508059c0bd568dcbe4357861618840f7570f87dd23c6d7fe4fb506ceb747",
+      "origin": "NET-12 original engineering/verification, 2026-11-25; intermediate logs identified separately"
+    },
+    {
+      "path": "ROADMAP.md",
+      "bytes": 12135,
+      "sha256": "34c457b2f66a3afe40688e84a77f3b4e1cae956c460edc60da51d55fdb0910f6",
+      "origin": "NET-12 original engineering/verification, 2026-11-25; intermediate logs identified separately"
+    },
+    {
+      "path": "docs/engineering/NET12.md",
+      "bytes": 9054,
+      "sha256": "7e5c6638c4b1b8a9ee8f2e8a22a6f16acbe7c1f6f80e53d0da392e6dae719eb2",
+      "origin": "NET-12 original engineering/verification, 2026-11-25; intermediate logs identified separately"
+    },
+    {
+      "path": "docs/engineering/PRODUCTION_GATES.md",
+      "bytes": 3374,
+      "sha256": "67fc42284a9c5696122c72bee967854a4cf38d5ad0f342d8aa7040e4cc2a1f01",
+      "origin": "NET-12 original engineering/verification, 2026-11-25; intermediate logs identified separately"
+    },
+    {
+      "path": "hardware/memory_access/access_packages.kicad_sym",
+      "bytes": 22467,
+      "sha256": "a9d6b6cb924a279603d186572f16e9751a9e7a2763ee6c5b8018af5470b51343",
+      "origin": "NET-12 original engineering/verification, 2026-11-25; intermediate logs identified separately"
+    },
+    {
+      "path": "hardware/memory_access/design.json",
+      "bytes": 17832,
+      "sha256": "3e38c0decc3c27fedc34ae0218dd8ef4728c639c46f728d560a882231e805526",
+      "origin": "NET-12 original engineering/verification, 2026-11-25; intermediate logs identified separately"
+    },
+    {
+      "path": "hardware/memory_access/memory_access.kicad_pro",
+      "bytes": 80,
+      "sha256": "53febadfbe33ff3fc957cf2a54968ecc060afe109d76bd2f093e15d311efc295",
+      "origin": "NET-12 original engineering/verification, 2026-11-25; intermediate logs identified separately"
+    },
+    {
+      "path": "hardware/memory_access/memory_access.kicad_sch",
+      "bytes": 139975,
+      "sha256": "aac68e96e4503d2643e5b4eae728f1ec7762d6579138aa94cbbdbffda7de14b5",
+      "origin": "NET-12 original engineering/verification, 2026-11-25; intermediate logs identified separately"
+    },
+    {
+      "path": "hardware/memory_access/memory_access_netlist.sv",
+      "bytes": 13230,
+      "sha256": "d19babac52f68cb4c547d17a1352a9d92a3c6a23fd8899911602299bd3be459a",
+      "origin": "NET-12 original engineering/verification, 2026-11-25; intermediate logs identified separately"
+    },
+    {
+      "path": "hardware/memory_access/package-functions.json",
+      "bytes": 10682,
+      "sha256": "1fa0c621cecdf1ed5f2eb78977a2f03887e9c73950d2a478766cc0b377411ab3",
+      "origin": "NET-12 original engineering/verification, 2026-11-25; intermediate logs identified separately"
+    },
+    {
+      "path": "hardware/memory_access/pinmap.csv",
+      "bytes": 11877,
+      "sha256": "0dcbce71b849ea89e47a7c1d14e7113616d50e5d7bb5603fc775c530d6716600",
+      "origin": "NET-12 original engineering/verification, 2026-11-25; intermediate logs identified separately"
+    },
+    {
+      "path": "hardware/memory_access/sym-lib-table",
+      "bytes": 158,
+      "sha256": "67f66804af4f854f9c9a25f290c370f96c16ce88dd8ea998b71e243b37188d19",
+      "origin": "NET-12 original engineering/verification, 2026-11-25; intermediate logs identified separately"
+    },
+    {
+      "path": "references/ti/sn74ahc04.pdf",
+      "bytes": 3446485,
+      "sha256": "da1e18e887be71dfe3b2f69341cd7ab969b75a7a1929aec4346fdc32e2c24962",
+      "origin": "Previously preserved official TI PDF, original bytes; selected model only, no qualified BOM",
+      "url": "https://www.ti.com/lit/ds/symlink/sn74ahc04.pdf"
+    },
+    {
+      "path": "references/ti/sn74ahc08.pdf",
+      "bytes": 3315415,
+      "sha256": "5b2bcbcf6b40a36fe9ddccda528bd5bb5ab7516356f540d879129a7d5c3f9036",
+      "origin": "Previously preserved official TI PDF, original bytes; selected model only, no qualified BOM",
+      "url": "https://www.ti.com/lit/ds/symlink/sn74ahc08.pdf"
+    },
+    {
+      "path": "references/ti/sn74ahc125.pdf",
+      "bytes": 3567515,
+      "sha256": "c2ca226688e5704e94755fb20907c970ba7e2bac3a18fd6b2c28ce73295d0a3f",
+      "origin": "Previously preserved official TI PDF, original bytes; selected model only, no qualified BOM",
+      "url": "https://www.ti.com/lit/ds/symlink/sn74ahc125.pdf"
+    },
+    {
+      "path": "references/ti/sn74ahc32.pdf",
+      "bytes": 3524307,
+      "sha256": "8c1e2f6b2999874ca37e228dee0dad8f20a8cb58969c764fb63feee684c16e41",
+      "origin": "Previously preserved official TI PDF, original bytes; selected model only, no qualified BOM",
+      "url": "https://www.ti.com/lit/ds/symlink/sn74ahc32.pdf"
+    },
+    {
+      "path": "references/ti/sn74hc174.pdf",
+      "bytes": 1959503,
+      "sha256": "4e3f867472d030acb75fab58378eb09c998d0a2e1cf5cb21f88f2951f63f593b",
+      "origin": "Previously preserved official TI PDF, original bytes; selected model only, no qualified BOM",
+      "url": "https://www.ti.com/lit/ds/symlink/sn74hc174.pdf"
+    },
+    {
+      "path": "references/ti/sn74hc377.pdf",
+      "bytes": 1733082,
+      "sha256": "b22acd7e22c3c90494921cb7c8e98cb53570d57e0612d01ad6d3f29ad70a2d53",
+      "origin": "Previously preserved official TI PDF, original bytes; selected model only, no qualified BOM",
+      "url": "https://www.ti.com/lit/ds/symlink/sn74hc377.pdf"
+    },
+    {
+      "path": "references/ti/sn74hc74.pdf",
+      "bytes": 2256700,
+      "sha256": "a4043d37d693a2997900a0542dd226b9b61285794f3c1a541adb99cc7dcb1ae2",
+      "origin": "Previously preserved official TI PDF, original bytes; selected model only, no qualified BOM",
+      "url": "https://www.ti.com/lit/ds/symlink/sn74hc74.pdf"
+    },
+    {
+      "path": "references/ti/sn74hct377.pdf",
+      "bytes": 676798,
+      "sha256": "baa4637a18ffb5f90221ac7a10a1669d2c7402da328162559bb3bb1310535945",
+      "origin": "Previously preserved official TI PDF, original bytes; selected model only, no qualified BOM",
+      "url": "https://www.ti.com/lit/ds/symlink/sn74hct377.pdf"
+    },
+    {
+      "path": "sim/net12/isa1_memory_access.sv",
+      "bytes": 5285,
+      "sha256": "4f9d9f9bbc6ee31dfb52320c1b2d82930aca19cc069be480b4a046eb917d7ad4",
+      "origin": "NET-12 original engineering/verification, 2026-11-25; intermediate logs identified separately"
+    },
+    {
+      "path": "sim/net12/tb_memory_access.sv",
+      "bytes": 7348,
+      "sha256": "5084619ee24f3c334b5329ad920e0752525eeb2664711a3416ed7443095ea00e",
+      "origin": "NET-12 original engineering/verification, 2026-11-25; intermediate logs identified separately"
+    },
+    {
+      "path": "tools/build_memory_access.py",
+      "bytes": 16549,
+      "sha256": "86a66e1a71248c7277a2e6f1e5d1fbf9af61864adc9010c7037d435fbbacf7e2",
+      "origin": "NET-12 original engineering/verification, 2026-11-25; intermediate logs identified separately"
+    },
+    {
+      "path": "tools/check_memory_access_erc.py",
+      "bytes": 1522,
+      "sha256": "ff7925c8fe419fe37e0f5a9dcd20af0b48590496373d56fcf9fb5fe8c560ea9b",
+      "origin": "NET-12 original engineering/verification, 2026-11-25; intermediate logs identified separately"
+    },
+    {
+      "path": "tools/make_memory_access_cpu.py",
+      "bytes": 7765,
+      "sha256": "e453855638a17f16ccc21d1f9e08c22c4b7038db7e1e478ddb0aeb2278af1d04",
+      "origin": "NET-12 original engineering/verification, 2026-11-25; intermediate logs identified separately"
+    },
+    {
+      "path": "tools/record_net12_manifest.py",
+      "bytes": 5491,
+      "sha256": "3bcac39484c6a8bc484c44462c437ddb4231b5e92996cdcbf26f95570ab4816f",
+      "origin": "NET-12 original engineering/verification, 2026-11-25; intermediate logs identified separately"
+    },
+    {
+      "path": "tools/run_memory_access.py",
+      "bytes": 4914,
+      "sha256": "13b6fcadf6656a345e54d18e4eaec439def5062d8cde033920776578f1f2e9db",
+      "origin": "NET-12 original engineering/verification, 2026-11-25; intermediate logs identified separately"
+    },
+    {
+      "path": "tools/run_memory_access_cpu.py",
+      "bytes": 8101,
+      "sha256": "0eab49c9e59e22c09ba82c4cd805ef53fe156c5a50de398679c59ad0fe17ebac",
+      "origin": "NET-12 original engineering/verification, 2026-11-25; intermediate logs identified separately"
+    },
+    {
+      "path": "verification/net12/adapter-origin.json",
+      "bytes": 1026,
+      "sha256": "d2ec4f6a61a5a33cc0ab5780f277f58a35dadd144ed1280a6e6530fc7cd5f152",
+      "origin": "NET-12 original engineering/verification, 2026-11-25; intermediate logs identified separately"
+    },
+    {
+      "path": "verification/net12/baseline-integrity.json",
+      "bytes": 1937,
+      "sha256": "43f2dbd0f4cc38173dd45e0f08743f08bfbc3c755fcd0de09f359709e73479c5",
+      "origin": "NET-12 original engineering/verification, 2026-11-25; intermediate logs identified separately"
+    },
+    {
+      "path": "verification/net12/baseline-quick-before-column-cache.json",
+      "bytes": 12626,
+      "sha256": "d5b8a061604466a0be5a9f5e223f94bc89216d34221e509d9c5101b05ebc92eb",
+      "origin": "NET-12 original engineering/verification, 2026-11-25; intermediate logs identified separately"
+    },
+    {
+      "path": "verification/net12/cpu/frame-ideal.png",
+      "bytes": 1361,
+      "sha256": "d9a8e76c001c18198f03ed53bed7864ad1043e3002e2908a94e98452b58f6375",
+      "origin": "NET-12 original engineering/verification, 2026-11-25; intermediate logs identified separately"
+    },
+    {
+      "path": "verification/net12/cpu/results-ideal.json",
+      "bytes": 15759,
+      "sha256": "dfa7a626fdb826a33b2a01a7f8fd71594a57f1b72963bcbbd9a645588917e442",
+      "origin": "NET-12 original engineering/verification, 2026-11-25; intermediate logs identified separately"
+    },
+    {
+      "path": "verification/net12/cpu/results-timed.json",
+      "bytes": 12631,
+      "sha256": "e92d4efa0f9beeab80ab9d9bb675164ce9ada14a623826b4632d26f35ad81f82",
+      "origin": "NET-12 original engineering/verification, 2026-11-25; intermediate logs identified separately"
+    },
+    {
+      "path": "verification/net12/development/make_before_column_cache.py.txt",
+      "bytes": 7742,
+      "sha256": "bce9d22a85181e92ad0d26ba32424de61443c928d581bdb8f72ba2f22d28f166",
+      "origin": "NET-12 original engineering/verification, 2026-11-25; intermediate logs identified separately"
+    },
+    {
+      "path": "verification/net12/development/make_memory_access_cpu.py.txt",
+      "bytes": 7735,
+      "sha256": "b3422dde84169969909e250017d00a3282fc4a50c88ca533aef02a7844d972be",
+      "origin": "NET-12 original engineering/verification, 2026-11-25; intermediate logs identified separately"
+    },
+    {
+      "path": "verification/net12/development/memory_before_column_cache.sv.txt",
+      "bytes": 5262,
+      "sha256": "7e8b81293cc8a08945a67bb3eaa3b5f958c95c9d1bfb62ac98e309030f6a54b6",
+      "origin": "NET-12 original engineering/verification, 2026-11-25; intermediate logs identified separately"
+    },
+    {
+      "path": "verification/net12/development/run_memory_access_cpu.py.txt",
+      "bytes": 8094,
+      "sha256": "afa17e18524e80422b6dfcb590c95cf62de79b3be54d08a6f755856303747903",
+      "origin": "NET-12 original engineering/verification, 2026-11-25; intermediate logs identified separately"
+    },
+    {
+      "path": "verification/net12/erc-summary.json",
+      "bytes": 1518,
+      "sha256": "b877f9a474407005ad4bee397a508647add2e0e6997476b53069a928f55d8793",
+      "origin": "NET-12 original engineering/verification, 2026-11-25; intermediate logs identified separately"
+    },
+    {
+      "path": "verification/net12/erc.json",
+      "bytes": 79285,
+      "sha256": "4d0c364fed8e47259e338816279a6b64f7c82134886aec8a6fbe281ac149404d",
+      "origin": "NET-12 original engineering/verification, 2026-11-25; intermediate logs identified separately"
+    },
+    {
+      "path": "verification/net12/initial-mmio-fixture-monitor-failure.json",
+      "bytes": 11169,
+      "sha256": "3f95037c5a358dfb8e1c695b49b97dafad8d34e7334aedf8a4fa25decbee0fb8",
+      "origin": "NET-12 original engineering/verification, 2026-11-25; intermediate logs identified separately"
+    },
+    {
+      "path": "verification/net12/memory_access.pdf",
+      "bytes": 223390,
+      "sha256": "10a465d00e5bd9ffc656ecd01cd235f758e75095995a37af01069ed630cb87c6",
+      "origin": "NET-12 original engineering/verification, 2026-11-25; intermediate logs identified separately"
+    },
+    {
+      "path": "verification/net12/memory_access.xml",
+      "bytes": 101626,
+      "sha256": "2a4545321e2e2f4709c7f88d0288c97fc4493a603fde9b42f1f99a3913364469",
+      "origin": "NET-12 original engineering/verification, 2026-11-25; intermediate logs identified separately"
+    },
+    {
+      "path": "verification/net12/publication-preflight.json",
+      "bytes": 300,
+      "sha256": "200b910a300f0664946ea66cdc6ff05581fc2b667ae9e19dbfcc46d0180f797f",
+      "origin": "NET-12 original engineering/verification, 2026-11-25; intermediate logs identified separately"
+    },
+    {
+      "path": "verification/net12/schematic-check.json",
+      "bytes": 498,
+      "sha256": "510a46402537149a762e8f3102eef5dc67e4bd7ab445df2777a50250bb3f6f39",
+      "origin": "NET-12 original engineering/verification, 2026-11-25; intermediate logs identified separately"
+    },
+    {
+      "path": "verification/net12/sheet-preview.png",
+      "bytes": 92974,
+      "sha256": "aba5a790b2c7e7c1f67a16afa1177deab09ecb58a01272048cc02d74250a7153",
+      "origin": "NET-12 original engineering/verification, 2026-11-25; intermediate logs identified separately"
+    },
+    {
+      "path": "verification/net12/timing-basis.json",
+      "bytes": 2592,
+      "sha256": "b0716ac73fcc08199deea35bdf843578ff7a59a842781ac972e5a882216d453c",
+      "origin": "NET-12 original engineering/verification, 2026-11-25; intermediate logs identified separately"
+    },
+    {
+      "path": "verification/net12/unit-results.json",
+      "bytes": 9852,
+      "sha256": "058f74367c0f515bb288ca92f3c49288ee4c4ad4c5440ff15880934eb70029f7",
+      "origin": "NET-12 original engineering/verification, 2026-11-25; intermediate logs identified separately"
+    }
+  ]
+}

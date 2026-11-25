@@ -1,3 +1,11 @@
+## 25/11/2026 — NET-12, controlador de acesso à memória
+
+- Novo esquema de 28 CIs/478 pinos, pedido sincronizado, payload retido no reset, MDR e strobes físicos.
+- Posse de VRAM independente da espera por retirada do pedido; BUS_ACTIVE registrado e flags de leitura/escrita separadas.
+- Três cenários isolados com 890 transações e 128 cortes por cenário; três negativos detectados.
+- Integração ideal completa com 26 instruções, guardas e programa/quadro; integração temporizada reduzida passou.
+- Distinção explícita entre commit do periférico e confirmação à CPU; fontes/intermediários preservados. ERC parcial: 129 violações, sem produção liberada.
+
 ## 25/11/2026 — NET-11, decodificador de memória
 
 - Novo esquema de 32 CIs, 512 pinos, mapas/bancos preservados e seis selects MMIO exatos.

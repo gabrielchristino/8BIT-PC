@@ -87,3 +87,13 @@
 - Propagação máxima 251 ns pertence ao modelo de portas selecionado, sem mínimos/hold/hazards/skew/carga de PCB. Não certifica frequência de memória ou VGA.
 - ERC parcial do decoder tem 85 violações, retorno 5. Resolva fontes/consumidores no circuito de sistema sem inserir exceções artificiais. Reconte cargas entre CPU, decoder e memórias.
 - PDFs em references/system-candidates-2026-11-25.json são candidatos; não implicam BOM homologada, disponibilidade, footprint ou alimentação aprovados.
+
+## Continuidade NET-12
+
+- Leia docs/engineering/NET12.md e os relatórios em verification/net12. Gere pelos builders/conversores; preserve as etapas anteriores.
+- Payload usa HC377 sem reset, mantendo endereço/dados enquanto SAFE bloqueia acessos. READ_FLAG e WRITE_FLAG são distintas; não gerar leitura pela inversão da flag de escrita apagada.
+- BUS_ACTIVE é um FF dedicado. Não reconstruir posse/CS por OR dos estados nem manter VRAM ocupada durante DONE/ACK prolongado.
+- SLOT precisa estar estável na fase contratada e reservar a janela completa. Raster/concessão no adaptador ainda são modelos; cenário de 158,89 ns não certifica VGA, mínimos/skew ou MTBF.
+- CPU WAIT continua estável; mudanças de MMIO da transação pendente são permitidas somente em IO_COMMIT físico, antes de ACK. Fixtures originais não foram alteradas; o estado completo é comparado na retirada.
+- A integração ideal é completa e a temporizada é --quick. Arrays, barramento de dados, MMIO e raster ainda são comportamentais. latency/ack_hold antigos não comandam esta implementação.
+- ERC parcial conserva 129 violações e retorno 5. Não ocultar falhas de produção. Reset pode truncar escrita já iniciada; não alegar rollback ou cancelamento físico definido.

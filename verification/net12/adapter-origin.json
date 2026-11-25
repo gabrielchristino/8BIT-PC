@@ -1,0 +1,26 @@
+{
+  "date": "2026-11-25",
+  "transformation": "Original memory interface/helpers retained; behavioral transaction FSM replaced by NET-12 pin controller and NET-11 decoder. Arrays/MMIO/raster/slot/data-return remain simulation models; fixtures distinguish physical peripheral commit from CPU commit.",
+  "files": [
+    {
+      "path": "sim/rtl/isa1_memory.sv",
+      "sha256": "1b4e568ffc3162d1ba1e67f71ead2a9e887351d50d55f89b454e719be98f4e3d"
+    },
+    {
+      "path": "tools/run_cpu_global.py",
+      "sha256": "3f6a921d3d2ed0cda3cafdaab4887c1290ad3fff0d13efd63666a6969e66f836"
+    },
+    {
+      "path": "tools/make_memory_access_cpu.py",
+      "sha256": "e453855638a17f16ccc21d1f9e08c22c4b7038db7e1e478ddb0aeb2278af1d04"
+    },
+    {
+      "path": "sim/net12/isa1_memory_access.sv",
+      "sha256": "4f9d9f9bbc6ee31dfb52320c1b2d82930aca19cc069be480b4a046eb917d7ad4"
+    },
+    {
+      "path": "tools/run_memory_access_cpu.py",
+      "sha256": "0eab49c9e59e22c09ba82c4cd805ef53fe156c5a50de398679c59ad0fe17ebac"
+    }
+  ]
+}

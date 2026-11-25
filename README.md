@@ -6,7 +6,7 @@ Projeto de computador pessoal com CPU própria de lógica discreta, endereçamen
 
 ## Começar
 
-**Desenvolvimento atual:** [NET-11 — decodificador físico de memória](docs/engineering/NET11.md), ligado à [CPU global NET-10](docs/engineering/NET10.md). Decoder ideal/com atrasos: 4.194.305 verificações por modo; integração ideal completa com programa/quadro e integração temporizada reduzida aprovadas. CPU global também passou no programa completo com atrasos. Controlador físico de memória/VRAM/MMIO, alimentação, vídeo elétrico, fechamento temporal e PCB continuam pendentes; ERC dos esquemas parciais conserva violações explícitas.
+**Desenvolvimento atual:** [NET-12 — controlador de acesso à memória](docs/engineering/NET12.md), com payload retido, leitura/escrita, confirmação única e posse de VRAM liberada antes de ACK baixar. Esquema de 28 CIs/478 pinos, três cenários isolados e integração ideal completa aprovados; integração temporizada é reduzida. Usa a [CPU global NET-10](docs/engineering/NET10.md) e o [decoder NET-11](docs/engineering/NET11.md). Chips de memória, barramento físico, MMIO/raster/saída VGA, alimentação, fechamento temporal e PCB continuam pendentes; ERC parcial conserva violações explícitas.
 
 **Registradores/dados:** [NET-06](docs/engineering/NET06.md). A referência fornecida pelo usuário para as membranas está em [KEYPAD_CONNECTOR.md](docs/engineering/KEYPAD_CONNECTOR.md).
 

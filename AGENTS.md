@@ -58,3 +58,9 @@
 - Leia docs/engineering/NET07.md e PRODUCTION_GATES.md. PC/endereço vêm dos pinos KiCad; fontes anteriores intactas. O usuário autorizou continuar até a preparação de produção; não parar para pedir autorização por bloco.
 - Imagens do usuário indicam L1/L2/L3/L4/C1/C2/C3/C4 na orientação da foto. Veja KEYPAD_CONNECTOR.md; não confunda referência de imagem/FAQ com continuidade ou resistência medidas.
 - Não fabricar nem declarar liberação sem fechar os critérios, incluindo placa completa, elétrica/temporização, ERC/DRC e evidência física necessária. Dados físicos faltantes devem permanecer explícitos enquanto outras partes avançam.
+
+## Continuidade NET-08
+
+- Leia docs/engineering/NET08.md e relatórios antes de alterar controle. Estados de execução/guardas/fault/retire vêm de HC174/portas; X ainda tem alternativa de referência até NET-09.
+- MEM_N_0 é baixo para mem=0 e alto para operação de memória. Preserve pedidos retidos, conclusão de DROP durante pausa e X_COMPLETED até retomada.
+- Logs initial-integration-failure e memory-decode-trace-failure são evidências intermediárias, não resultados de aceitação atuais.

@@ -1,0 +1,2093 @@
+{
+  "assumption": "10 pF/input + 10 pF routing reserve; internal loads only",
+  "nets": [
+    {
+      "net": "BUF_1_0",
+      "loads": 4,
+      "pins": [
+        "U5/4",
+        "U18/12",
+        "U19/12",
+        "U21/5"
+      ],
+      "input_cap_budget_pf": 40
+    },
+    {
+      "net": "BUF_1_2",
+      "loads": 4,
+      "pins": [
+        "U6/5",
+        "U30/10",
+        "U30/13",
+        "U33/13"
+      ],
+      "input_cap_budget_pf": 40
+    },
+    {
+      "net": "BUF_2_0",
+      "loads": 4,
+      "pins": [
+        "U9/10",
+        "U29/2",
+        "U30/12",
+        "U32/13"
+      ],
+      "input_cap_budget_pf": 40
+    },
+    {
+      "net": "BUF_2_2",
+      "loads": 4,
+      "pins": [
+        "U18/10",
+        "U21/13",
+        "U26/5",
+        "U42/10"
+      ],
+      "input_cap_budget_pf": 40
+    },
+    {
+      "net": "BUF_3_0",
+      "loads": 4,
+      "pins": [
+        "U23/4",
+        "U24/1",
+        "U40/1",
+        "U40/9"
+      ],
+      "input_cap_budget_pf": 40
+    },
+    {
+      "net": "DROP",
+      "loads": 4,
+      "pins": [
+        "U19/10",
+        "U21/9",
+        "U26/1",
+        "U42/12"
+      ],
+      "input_cap_budget_pf": 40
+    },
+    {
+      "net": "RESPONSE",
+      "loads": 4,
+      "pins": [
+        "U20/13",
+        "U21/2",
+        "U26/2",
+        "U42/9"
+      ],
+      "input_cap_budget_pf": 40
+    },
+    {
+      "net": "SAFE",
+      "loads": 4,
+      "pins": [
+        "U1/1",
+        "U2/1",
+        "U4/5",
+        "U5/13"
+      ],
+      "input_cap_budget_pf": 40
+    },
+    {
+      "net": "SP_13",
+      "loads": 4,
+      "pins": [
+        "U8/10",
+        "U28/2",
+        "U32/12",
+        "U34/13"
+      ],
+      "input_cap_budget_pf": 40
+    },
+    {
+      "net": "BOOT",
+      "loads": 3,
+      "pins": [
+        "U13/1",
+        "U13/4",
+        "U14/1"
+      ],
+      "input_cap_budget_pf": 30
+    },
+    {
+      "net": "BUF_1_3",
+      "loads": 3,
+      "pins": [
+        "U35/10",
+        "U36/13",
+        "U43/13"
+      ],
+      "input_cap_budget_pf": 30
+    },
+    {
+      "net": "G_121",
+      "loads": 3,
+      "pins": [
+        "U41/4",
+        "U41/12",
+        "U41/2"
+      ],
+      "input_cap_budget_pf": 30
+    },
+    {
+      "net": "G_127",
+      "loads": 3,
+      "pins": [
+        "U18/13",
+        "U20/9",
+        "U22/1"
+      ],
+      "input_cap_budget_pf": 30
+    },
+    {
+      "net": "G_166",
+      "loads": 3,
+      "pins": [
+        "U23/9",
+        "U24/4",
+        "U47/13"
+      ],
+      "input_cap_budget_pf": 30
+    },
+    {
+      "net": "HALT_EXEC",
+      "loads": 3,
+      "pins": [
+        "U17/10",
+        "U40/5",
+        "U40/10"
+      ],
+      "input_cap_budget_pf": 30
+    },
+    {
+      "net": "IR_0",
+      "loads": 3,
+      "pins": [
+        "U12/10",
+        "U15/12",
+        "U45/9"
+      ],
+      "input_cap_budget_pf": 30
+    },
+    {
+      "net": "SP_1",
+      "loads": 3,
+      "pins": [
+        "U7/2",
+        "U26/10",
+        "U31/4"
+      ],
+      "input_cap_budget_pf": 30
+    },
+    {
+      "net": "SP_10",
+      "loads": 3,
+      "pins": [
+        "U8/4",
+        "U27/12",
+        "U32/4"
+      ],
+      "input_cap_budget_pf": 30
+    },
+    {
+      "net": "SP_11",
+      "loads": 3,
+      "pins": [
+        "U8/5",
+        "U27/13",
+        "U32/9"
+      ],
+      "input_cap_budget_pf": 30
+    },
+    {
+      "net": "SP_12",
+      "loads": 3,
+      "pins": [
+        "U8/9",
+        "U28/1",
+        "U32/10"
+      ],
+      "input_cap_budget_pf": 30
+    },
+    {
+      "net": "SP_2",
+      "loads": 3,
+      "pins": [
+        "U7/4",
+        "U26/12",
+        "U31/5"
+      ],
+      "input_cap_budget_pf": 30
+    },
+    {
+      "net": "SP_3",
+      "loads": 3,
+      "pins": [
+        "U7/5",
+        "U26/13",
+        "U31/9"
+      ],
+      "input_cap_budget_pf": 30
+    },
+    {
+      "net": "SP_4",
+      "loads": 3,
+      "pins": [
+        "U7/9",
+        "U27/1",
+        "U31/10"
+      ],
+      "input_cap_budget_pf": 30
+    },
+    {
+      "net": "SP_5",
+      "loads": 3,
+      "pins": [
+        "U7/10",
+        "U27/2",
+        "U31/12"
+      ],
+      "input_cap_budget_pf": 30
+    },
+    {
+      "net": "SP_6",
+      "loads": 3,
+      "pins": [
+        "U7/12",
+        "U27/4",
+        "U31/13"
+      ],
+      "input_cap_budget_pf": 30
+    },
+    {
+      "net": "SP_7",
+      "loads": 3,
+      "pins": [
+        "U7/13",
+        "U27/5",
+        "U32/1"
+      ],
+      "input_cap_budget_pf": 30
+    },
+    {
+      "net": "SP_8",
+      "loads": 3,
+      "pins": [
+        "U8/1",
+        "U27/9",
+        "U32/2"
+      ],
+      "input_cap_budget_pf": 30
+    },
+    {
+      "net": "SP_9",
+      "loads": 3,
+      "pins": [
+        "U8/2",
+        "U27/10",
+        "U32/5"
+      ],
+      "input_cap_budget_pf": 30
+    },
+    {
+      "net": "ACCEPT",
+      "loads": 2,
+      "pins": [
+        "U5/9",
+        "U14/12"
+      ],
+      "input_cap_budget_pf": 20
+    },
+    {
+      "net": "ACCESS",
+      "loads": 2,
+      "pins": [
+        "U22/4",
+        "U38/12"
+      ],
+      "input_cap_budget_pf": 20
+    },
+    {
+      "net": "BUS_DONE",
+      "loads": 2,
+      "pins": [
+        "U21/1",
+        "U47/3"
+      ],
+      "input_cap_budget_pf": 20
+    },
+    {
+      "net": "BUS_READY",
+      "loads": 2,
+      "pins": [
+        "U19/9",
+        "U21/4"
+      ],
+      "input_cap_budget_pf": 20
+    },
+    {
+      "net": "CLK_CORE",
+      "loads": 2,
+      "pins": [
+        "U1/9",
+        "U2/9"
+      ],
+      "input_cap_budget_pf": 20
+    },
+    {
+      "net": "CONTROL_READY",
+      "loads": 2,
+      "pins": [
+        "U49/2",
+        "U49/5"
+      ],
+      "input_cap_budget_pf": 20
+    },
+    {
+      "net": "CW_HALT",
+      "loads": 2,
+      "pins": [
+        "U15/9",
+        "U46/9"
+      ],
+      "input_cap_budget_pf": 20
+    },
+    {
+      "net": "EXEC",
+      "loads": 2,
+      "pins": [
+        "U4/4",
+        "U24/12"
+      ],
+      "input_cap_budget_pf": 20
+    },
+    {
+      "net": "EXEC_ACCEPT",
+      "loads": 2,
+      "pins": [
+        "U15/10",
+        "U17/12"
+      ],
+      "input_cap_budget_pf": 20
+    },
+    {
+      "net": "GUARD_FAULT",
+      "loads": 2,
+      "pins": [
+        "U51/2",
+        "U51/5"
+      ],
+      "input_cap_budget_pf": 20
+    },
+    {
+      "net": "G_10",
+      "loads": 2,
+      "pins": [
+        "U5/10",
+        "U6/1"
+      ],
+      "input_cap_budget_pf": 20
+    },
+    {
+      "net": "G_101",
+      "loads": 2,
+      "pins": [
+        "U14/9",
+        "U39/9"
+      ],
+      "input_cap_budget_pf": 20
+    },
+    {
+      "net": "G_107",
+      "loads": 2,
+      "pins": [
+        "U15/4",
+        "U46/3"
+      ],
+      "input_cap_budget_pf": 20
+    },
+    {
+      "net": "G_109",
+      "loads": 2,
+      "pins": [
+        "U15/2",
+        "U15/5"
+      ],
+      "input_cap_budget_pf": 20
+    },
+    {
+      "net": "G_122",
+      "loads": 2,
+      "pins": [
+        "U17/13",
+        "U20/2"
+      ],
+      "input_cap_budget_pf": 20
+    },
+    {
+      "net": "G_124",
+      "loads": 2,
+      "pins": [
+        "U18/4",
+        "U19/4"
+      ],
+      "input_cap_budget_pf": 20
+    },
+    {
+      "net": "G_125",
+      "loads": 2,
+      "pins": [
+        "U18/5",
+        "U47/1"
+      ],
+      "input_cap_budget_pf": 20
+    },
+    {
+      "net": "G_128",
+      "loads": 2,
+      "pins": [
+        "U19/1",
+        "U20/10"
+      ],
+      "input_cap_budget_pf": 20
+    },
+    {
+      "net": "G_133",
+      "loads": 2,
+      "pins": [
+        "U19/13",
+        "U38/4"
+      ],
+      "input_cap_budget_pf": 20
+    },
+    {
+      "net": "G_152",
+      "loads": 2,
+      "pins": [
+        "U22/2",
+        "U39/4"
+      ],
+      "input_cap_budget_pf": 20
+    },
+    {
+      "net": "G_155",
+      "loads": 2,
+      "pins": [
+        "U22/9",
+        "U23/1"
+      ],
+      "input_cap_budget_pf": 20
+    },
+    {
+      "net": "G_170",
+      "loads": 2,
+      "pins": [
+        "U23/13",
+        "U24/10"
+      ],
+      "input_cap_budget_pf": 20
+    },
+    {
+      "net": "G_20",
+      "loads": 2,
+      "pins": [
+        "U29/1",
+        "U30/1"
+      ],
+      "input_cap_budget_pf": 20
+    },
+    {
+      "net": "G_23",
+      "loads": 2,
+      "pins": [
+        "U29/9",
+        "U30/2"
+      ],
+      "input_cap_budget_pf": 20
+    },
+    {
+      "net": "G_25",
+      "loads": 2,
+      "pins": [
+        "U29/12",
+        "U30/4"
+      ],
+      "input_cap_budget_pf": 20
+    },
+    {
+      "net": "G_27",
+      "loads": 2,
+      "pins": [
+        "U6/4",
+        "U30/9"
+      ],
+      "input_cap_budget_pf": 20
+    },
+    {
+      "net": "G_35",
+      "loads": 2,
+      "pins": [
+        "U6/9",
+        "U6/12"
+      ],
+      "input_cap_budget_pf": 20
+    },
+    {
+      "net": "G_36",
+      "loads": 2,
+      "pins": [
+        "U31/1",
+        "U35/4"
+      ],
+      "input_cap_budget_pf": 20
+    },
+    {
+      "net": "G_49",
+      "loads": 2,
+      "pins": [
+        "U34/4",
+        "U34/12"
+      ],
+      "input_cap_budget_pf": 20
+    },
+    {
+      "net": "G_51",
+      "loads": 2,
+      "pins": [
+        "U34/9",
+        "U35/1"
+      ],
+      "input_cap_budget_pf": 20
+    },
+    {
+      "net": "G_6",
+      "loads": 2,
+      "pins": [
+        "U4/13",
+        "U25/5"
+      ],
+      "input_cap_budget_pf": 20
+    },
+    {
+      "net": "G_85",
+      "loads": 2,
+      "pins": [
+        "U12/1",
+        "U12/9"
+      ],
+      "input_cap_budget_pf": 20
+    },
+    {
+      "net": "G_87",
+      "loads": 2,
+      "pins": [
+        "U12/4",
+        "U12/12"
+      ],
+      "input_cap_budget_pf": 20
+    },
+    {
+      "net": "G_92",
+      "loads": 2,
+      "pins": [
+        "U13/12",
+        "U39/10"
+      ],
+      "input_cap_budget_pf": 20
+    },
+    {
+      "net": "HALTED",
+      "loads": 2,
+      "pins": [
+        "U40/2",
+        "U43/3"
+      ],
+      "input_cap_budget_pf": 20
+    },
+    {
+      "net": "IR_1",
+      "loads": 2,
+      "pins": [
+        "U15/13",
+        "U45/5"
+      ],
+      "input_cap_budget_pf": 20
+    },
+    {
+      "net": "IR_2",
+      "loads": 2,
+      "pins": [
+        "U16/1",
+        "U45/3"
+      ],
+      "input_cap_budget_pf": 20
+    },
+    {
+      "net": "IR_3",
+      "loads": 2,
+      "pins": [
+        "U16/2",
+        "U45/1"
+      ],
+      "input_cap_budget_pf": 20
+    },
+    {
+      "net": "IR_4",
+      "loads": 2,
+      "pins": [
+        "U10/13",
+        "U16/4"
+      ],
+      "input_cap_budget_pf": 20
+    },
+    {
+      "net": "IR_5",
+      "loads": 2,
+      "pins": [
+        "U16/5",
+        "U44/13"
+      ],
+      "input_cap_budget_pf": 20
+    },
+    {
+      "net": "IR_6",
+      "loads": 2,
+      "pins": [
+        "U10/10",
+        "U16/9"
+      ],
+      "input_cap_budget_pf": 20
+    },
+    {
+      "net": "IR_7",
+      "loads": 2,
+      "pins": [
+        "U16/10",
+        "U44/11"
+      ],
+      "input_cap_budget_pf": 20
+    },
+    {
+      "net": "MEM_N_0",
+      "loads": 2,
+      "pins": [
+        "U14/13",
+        "U43/5"
+      ],
+      "input_cap_budget_pf": 20
+    },
+    {
+      "net": "POP_BAD",
+      "loads": 2,
+      "pins": [
+        "U24/2",
+        "U37/4"
+      ],
+      "input_cap_budget_pf": 20
+    },
+    {
+      "net": "PUSH_BAD",
+      "loads": 2,
+      "pins": [
+        "U23/5",
+        "U37/5"
+      ],
+      "input_cap_budget_pf": 20
+    },
+    {
+      "net": "RUN",
+      "loads": 2,
+      "pins": [
+        "U4/10",
+        "U18/9"
+      ],
+      "input_cap_budget_pf": 20
+    },
+    {
+      "net": "RUNNING",
+      "loads": 2,
+      "pins": [
+        "U5/12",
+        "U5/5"
+      ],
+      "input_cap_budget_pf": 20
+    },
+    {
+      "net": "SP_0",
+      "loads": 2,
+      "pins": [
+        "U7/1",
+        "U26/9"
+      ],
+      "input_cap_budget_pf": 20
+    },
+    {
+      "net": "SP_14",
+      "loads": 2,
+      "pins": [
+        "U50/2",
+        "U50/5"
+      ],
+      "input_cap_budget_pf": 20
+    },
+    {
+      "net": "SP_15",
+      "loads": 2,
+      "pins": [
+        "U49/9",
+        "U49/12"
+      ],
+      "input_cap_budget_pf": 20
+    },
+    {
+      "net": "STACK_CHECKED",
+      "loads": 2,
+      "pins": [
+        "U39/13",
+        "U45/11"
+      ],
+      "input_cap_budget_pf": 20
+    },
+    {
+      "net": "USE_X",
+      "loads": 2,
+      "pins": [
+        "U18/2",
+        "U24/13"
+      ],
+      "input_cap_budget_pf": 20
+    },
+    {
+      "net": "X_LOAD",
+      "loads": 2,
+      "pins": [
+        "U50/9",
+        "U50/12"
+      ],
+      "input_cap_budget_pf": 20
+    },
+    {
+      "net": "X_RESUME",
+      "loads": 2,
+      "pins": [
+        "U37/13",
+        "U47/9"
+      ],
+      "input_cap_budget_pf": 20
+    },
+    {
+      "net": "X_START",
+      "loads": 2,
+      "pins": [
+        "U39/5",
+        "U46/13"
+      ],
+      "input_cap_budget_pf": 20
+    },
+    {
+      "net": "ADDR_N_4",
+      "loads": 1,
+      "pins": [
+        "U46/1"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "ADDR_N_5",
+      "loads": 1,
+      "pins": [
+        "U45/13"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "BUF_1_1",
+      "loads": 1,
+      "pins": [
+        "U25/1"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "BUF_2_1",
+      "loads": 1,
+      "pins": [
+        "U44/1"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "BUF_2_3",
+      "loads": 1,
+      "pins": [
+        "U42/13"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "BUF_3_1",
+      "loads": 1,
+      "pins": [
+        "U41/1"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "CHECKED_D",
+      "loads": 1,
+      "pins": [
+        "U1/13"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "CLK",
+      "loads": 1,
+      "pins": [
+        "U3/2"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "CW_END",
+      "loads": 1,
+      "pins": [
+        "U22/12"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "DISPATCH",
+      "loads": 1,
+      "pins": [
+        "U47/11"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "DROP_D",
+      "loads": 1,
+      "pins": [
+        "U1/4"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "EXECUTE_PULSE",
+      "loads": 1,
+      "pins": [
+        "U20/1"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "FAULT_0",
+      "loads": 1,
+      "pins": [
+        "U23/12"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "FAULT_1",
+      "loads": 1,
+      "pins": [
+        "U24/9"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "FAULT_D0",
+      "loads": 1,
+      "pins": [
+        "U2/3"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "FAULT_D1",
+      "loads": 1,
+      "pins": [
+        "U2/4"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_1",
+      "loads": 1,
+      "pins": [
+        "U26/4"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_102",
+      "loads": 1,
+      "pins": [
+        "U36/12"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_103",
+      "loads": 1,
+      "pins": [
+        "U37/1"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_104",
+      "loads": 1,
+      "pins": [
+        "U37/2"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_105",
+      "loads": 1,
+      "pins": [
+        "U14/10"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_108",
+      "loads": 1,
+      "pins": [
+        "U15/1"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_113",
+      "loads": 1,
+      "pins": [
+        "U16/12"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_114",
+      "loads": 1,
+      "pins": [
+        "U16/13"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_115",
+      "loads": 1,
+      "pins": [
+        "U17/1"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_116",
+      "loads": 1,
+      "pins": [
+        "U17/2"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_117",
+      "loads": 1,
+      "pins": [
+        "U17/4"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_118",
+      "loads": 1,
+      "pins": [
+        "U17/5"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_119",
+      "loads": 1,
+      "pins": [
+        "U46/5"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_12",
+      "loads": 1,
+      "pins": [
+        "U6/2"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_120",
+      "loads": 1,
+      "pins": [
+        "U17/9"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_123",
+      "loads": 1,
+      "pins": [
+        "U18/1"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_129",
+      "loads": 1,
+      "pins": [
+        "U19/2"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_131",
+      "loads": 1,
+      "pins": [
+        "U19/5"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_132",
+      "loads": 1,
+      "pins": [
+        "U37/12"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_134",
+      "loads": 1,
+      "pins": [
+        "U38/1"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_135",
+      "loads": 1,
+      "pins": [
+        "U38/2"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_136",
+      "loads": 1,
+      "pins": [
+        "U22/13"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_137",
+      "loads": 1,
+      "pins": [
+        "U20/4"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_138",
+      "loads": 1,
+      "pins": [
+        "U20/5"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_139",
+      "loads": 1,
+      "pins": [
+        "U38/9"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_14",
+      "loads": 1,
+      "pins": [
+        "U28/4"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_140",
+      "loads": 1,
+      "pins": [
+        "U38/5"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_141",
+      "loads": 1,
+      "pins": [
+        "U38/10"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_143",
+      "loads": 1,
+      "pins": [
+        "U20/12"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_144",
+      "loads": 1,
+      "pins": [
+        "U38/13"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_146",
+      "loads": 1,
+      "pins": [
+        "U39/1"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_147",
+      "loads": 1,
+      "pins": [
+        "U47/5"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_148",
+      "loads": 1,
+      "pins": [
+        "U21/10"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_149",
+      "loads": 1,
+      "pins": [
+        "U39/2"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_15",
+      "loads": 1,
+      "pins": [
+        "U28/5"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_151",
+      "loads": 1,
+      "pins": [
+        "U21/12"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_156",
+      "loads": 1,
+      "pins": [
+        "U22/5"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_157",
+      "loads": 1,
+      "pins": [
+        "U39/12"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_158",
+      "loads": 1,
+      "pins": [
+        "U22/10"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_16",
+      "loads": 1,
+      "pins": [
+        "U28/9"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_160",
+      "loads": 1,
+      "pins": [
+        "U40/4"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_162",
+      "loads": 1,
+      "pins": [
+        "U23/2"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_163",
+      "loads": 1,
+      "pins": [
+        "U40/12"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_164",
+      "loads": 1,
+      "pins": [
+        "U40/13"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_167",
+      "loads": 1,
+      "pins": [
+        "U41/5"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_168",
+      "loads": 1,
+      "pins": [
+        "U23/10"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_169",
+      "loads": 1,
+      "pins": [
+        "U41/9"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_17",
+      "loads": 1,
+      "pins": [
+        "U28/10"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_171",
+      "loads": 1,
+      "pins": [
+        "U41/10"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_173",
+      "loads": 1,
+      "pins": [
+        "U41/13"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_174",
+      "loads": 1,
+      "pins": [
+        "U24/5"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_175",
+      "loads": 1,
+      "pins": [
+        "U42/1"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_176",
+      "loads": 1,
+      "pins": [
+        "U42/2"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_178",
+      "loads": 1,
+      "pins": [
+        "U42/4"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_179",
+      "loads": 1,
+      "pins": [
+        "U42/5"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_18",
+      "loads": 1,
+      "pins": [
+        "U28/12"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_180",
+      "loads": 1,
+      "pins": [
+        "U25/2"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_181",
+      "loads": 1,
+      "pins": [
+        "U25/4"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_182",
+      "loads": 1,
+      "pins": [
+        "U25/9"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_183",
+      "loads": 1,
+      "pins": [
+        "U25/10"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_19",
+      "loads": 1,
+      "pins": [
+        "U28/13"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_2",
+      "loads": 1,
+      "pins": [
+        "U43/1"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_21",
+      "loads": 1,
+      "pins": [
+        "U29/4"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_22",
+      "loads": 1,
+      "pins": [
+        "U29/5"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_24",
+      "loads": 1,
+      "pins": [
+        "U29/10"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_26",
+      "loads": 1,
+      "pins": [
+        "U29/13"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_28",
+      "loads": 1,
+      "pins": [
+        "U30/5"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_29",
+      "loads": 1,
+      "pins": [
+        "U44/3"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_30",
+      "loads": 1,
+      "pins": [
+        "U43/9"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_31",
+      "loads": 1,
+      "pins": [
+        "U36/1"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_32",
+      "loads": 1,
+      "pins": [
+        "U36/2"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_33",
+      "loads": 1,
+      "pins": [
+        "U43/11"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_34",
+      "loads": 1,
+      "pins": [
+        "U14/2"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_37",
+      "loads": 1,
+      "pins": [
+        "U31/2"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_38",
+      "loads": 1,
+      "pins": [
+        "U6/10"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_39",
+      "loads": 1,
+      "pins": [
+        "U13/2"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_4",
+      "loads": 1,
+      "pins": [
+        "U4/9"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_40",
+      "loads": 1,
+      "pins": [
+        "U33/1"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_41",
+      "loads": 1,
+      "pins": [
+        "U33/2"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_42",
+      "loads": 1,
+      "pins": [
+        "U33/4"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_43",
+      "loads": 1,
+      "pins": [
+        "U33/5"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_44",
+      "loads": 1,
+      "pins": [
+        "U33/9"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_45",
+      "loads": 1,
+      "pins": [
+        "U33/10"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_46",
+      "loads": 1,
+      "pins": [
+        "U33/12"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_47",
+      "loads": 1,
+      "pins": [
+        "U34/1"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_48",
+      "loads": 1,
+      "pins": [
+        "U34/2"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_5",
+      "loads": 1,
+      "pins": [
+        "U4/12"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_50",
+      "loads": 1,
+      "pins": [
+        "U34/5"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_52",
+      "loads": 1,
+      "pins": [
+        "U34/10"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_53",
+      "loads": 1,
+      "pins": [
+        "U44/5"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_54",
+      "loads": 1,
+      "pins": [
+        "U35/12"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_55",
+      "loads": 1,
+      "pins": [
+        "U35/2"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_56",
+      "loads": 1,
+      "pins": [
+        "U44/9"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_57",
+      "loads": 1,
+      "pins": [
+        "U35/5"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_58",
+      "loads": 1,
+      "pins": [
+        "U6/13"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_59",
+      "loads": 1,
+      "pins": [
+        "U13/5"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_60",
+      "loads": 1,
+      "pins": [
+        "U8/12"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_61",
+      "loads": 1,
+      "pins": [
+        "U8/13"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_62",
+      "loads": 1,
+      "pins": [
+        "U9/1"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_63",
+      "loads": 1,
+      "pins": [
+        "U9/2"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_64",
+      "loads": 1,
+      "pins": [
+        "U9/4"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_65",
+      "loads": 1,
+      "pins": [
+        "U9/5"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_66",
+      "loads": 1,
+      "pins": [
+        "U9/9"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_67",
+      "loads": 1,
+      "pins": [
+        "U9/12"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_68",
+      "loads": 1,
+      "pins": [
+        "U9/13"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_69",
+      "loads": 1,
+      "pins": [
+        "U10/1"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_7",
+      "loads": 1,
+      "pins": [
+        "U5/1"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_70",
+      "loads": 1,
+      "pins": [
+        "U10/2"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_71",
+      "loads": 1,
+      "pins": [
+        "U10/4"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_72",
+      "loads": 1,
+      "pins": [
+        "U10/5"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_73",
+      "loads": 1,
+      "pins": [
+        "U35/9"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_74",
+      "loads": 1,
+      "pins": [
+        "U14/4"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_75",
+      "loads": 1,
+      "pins": [
+        "U10/9"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_76",
+      "loads": 1,
+      "pins": [
+        "U10/12"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_77",
+      "loads": 1,
+      "pins": [
+        "U11/1"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_78",
+      "loads": 1,
+      "pins": [
+        "U11/2"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_79",
+      "loads": 1,
+      "pins": [
+        "U11/9"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_80",
+      "loads": 1,
+      "pins": [
+        "U11/4"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_81",
+      "loads": 1,
+      "pins": [
+        "U11/5"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_82",
+      "loads": 1,
+      "pins": [
+        "U11/10"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_83",
+      "loads": 1,
+      "pins": [
+        "U11/12"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_84",
+      "loads": 1,
+      "pins": [
+        "U11/13"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_86",
+      "loads": 1,
+      "pins": [
+        "U12/2"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_88",
+      "loads": 1,
+      "pins": [
+        "U12/5"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_89",
+      "loads": 1,
+      "pins": [
+        "U13/9"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_90",
+      "loads": 1,
+      "pins": [
+        "U12/13"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_91",
+      "loads": 1,
+      "pins": [
+        "U14/5"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_93",
+      "loads": 1,
+      "pins": [
+        "U36/4"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_94",
+      "loads": 1,
+      "pins": [
+        "U35/13"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_95",
+      "loads": 1,
+      "pins": [
+        "U13/10"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_96",
+      "loads": 1,
+      "pins": [
+        "U36/5"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_97",
+      "loads": 1,
+      "pins": [
+        "U36/9"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_98",
+      "loads": 1,
+      "pins": [
+        "U36/10"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "G_99",
+      "loads": 1,
+      "pins": [
+        "U13/13"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "HALTED_D",
+      "loads": 1,
+      "pins": [
+        "U1/14"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "POWER_GOOD",
+      "loads": 1,
+      "pins": [
+        "U4/1"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "RESET_N",
+      "loads": 1,
+      "pins": [
+        "U4/2"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "RESP_D",
+      "loads": 1,
+      "pins": [
+        "U1/3"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "RETIRED_D",
+      "loads": 1,
+      "pins": [
+        "U2/6"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "X_COMPLETED",
+      "loads": 1,
+      "pins": [
+        "U37/9"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "X_COMP_D",
+      "loads": 1,
+      "pins": [
+        "U1/11"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "X_D",
+      "loads": 1,
+      "pins": [
+        "U1/6"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "X_DONE",
+      "loads": 1,
+      "pins": [
+        "U37/10"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "X_N_1",
+      "loads": 1,
+      "pins": [
+        "U46/11"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "X_N_2",
+      "loads": 1,
+      "pins": [
+        "U48/1"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "X_N_3",
+      "loads": 1,
+      "pins": [
+        "U48/3"
+      ],
+      "input_cap_budget_pf": 10
+    },
+    {
+      "net": "X_READY",
+      "loads": 1,
+      "pins": [
+        "U5/2"
+      ],
+      "input_cap_budget_pf": 10
+    }
+  ]
+}

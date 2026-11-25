@@ -1,5 +1,10 @@
 # Decisões recuperadas e registro da migração
 
+## ADR E11 — Execução one-hot, pedidos retidos e guardas por portas
+
+25/11/2026: HC174 mantém RESPONSE/DROP/X_LOAD e flags, EXEC implícito; portas geram retenção e transições, guardas por limites binários de SP, fault/retire. Alternativa de FSM binária economiza bits mas acrescenta decodificação/hazards; START combinacional direto de microcódigo não preserva a transação. Aceitam-se 51 CIs sem alegar economia. Preservam-se ISA, semântica de WAIT/COMMIT, preflight de dois bytes e conclusão durante pausa. Aceitação: guardas todo SP/overlay/checked, HALT/handshake, falhas introduzidas, CPU/segurança/guardas/boot/VGA nas duas configurações. O erro inicial de polaridade MEM_N_0 é preservado e corrigido no trabalho novo. Sem fechamento temporal global. Ver docs/engineering/NET08.md.
+
+
 ## ADR E10 — PC síncrono e árvore de seleção de endereço
 
 25/11/2026: dois HC273, quatro HC283 para incremento e HC157 para próximo PC/retenção e endereço; portas reutilizam PC_N físico e Z anterior. Alternativas: contadores com carga assíncrona exigiriam novas fases de captura/liberação; barramento tri-state exigiria exclusão de drivers/turnaround. A árvore evita disputa por construção, sem alegar menor BOM. Preservam-se wrap, desvios, endereço SP/SP−1 e captura pela NET-03 antes de WAIT. Aceitação: 2.097.152 casos PC e 524.288 padrões/seletores por modo ideal/temporizado, regressões completas e rejeições intencionais. Limites: cenário temporal isolado, sem placa liberada. Ver docs/engineering/NET07.md.

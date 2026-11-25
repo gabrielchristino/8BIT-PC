@@ -1,5 +1,15 @@
 # Roadmap de continuidade
 
+## Continuidade — NET-08
+
+- [x] Execução/guardas/fault/retire a partir dos pinos KiCad; testes isolados e programa completo aprovados.
+- [ ] NET-09: aceitar X síncrono e integrar CPU principal sem estado procedural de execução/datapath.
+- [ ] Fechar memória/periféricos/energia/reset/clock e união elétrica/temporal de todos os blocos.
+- [ ] Esquema global, ERC, layout, DRC, pacote de fabricação e validação de protótipo.
+
+Continuar pelas etapas, mantendo a distinção entre modelos, layout verificável e produção liberada.
+
+
 ## Continuidade até a placa — NET-07
 
 - [x] PC, incremento/desvios e seleção de endereços a partir do esquema; regressões completas nas duas configurações de X.

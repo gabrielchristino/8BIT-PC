@@ -1,0 +1,2333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>/mnt/c/Users/gabri/projetos/isa1/hardware/execution_bank/execution_bank.kicad_sch</source>
+    <date>Wed Nov 25 09:58:00 2026</date>
+    <tool>Eeschema 7.0.11+dfsg-1build4</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>ISA-1 execution handshake / guards / faults</title>
+        <company/>
+        <rev>NET-08</rev>
+        <date>2026-11-25</date>
+        <source>execution_bank.kicad_sch</source>
+        <comment number="1" value="PARTIAL EXECUTION CONTROL - NOT FOR PRODUCTION"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C1">
+      <value>100nF</value>
+      <libsource lib="NET08" part="C" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>01e99249-22e8-5133-8977-266c9cc62ed1</tstamps>
+    </comp>
+    <comp ref="C2">
+      <value>100nF</value>
+      <libsource lib="NET08" part="C" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f10a566e-af6c-5fad-b75d-8f01451abc4b</tstamps>
+    </comp>
+    <comp ref="C3">
+      <value>100nF</value>
+      <libsource lib="NET08" part="C" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9fac4b15-7fa9-50cd-9f9b-3a12f65263d8</tstamps>
+    </comp>
+    <comp ref="C4">
+      <value>100nF</value>
+      <libsource lib="NET08" part="C" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f4405024-e777-570d-aa0b-ee32d5f00f13</tstamps>
+    </comp>
+    <comp ref="C5">
+      <value>100nF</value>
+      <libsource lib="NET08" part="C" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>37a47e02-237f-5bf3-bf3c-62c013c8d83a</tstamps>
+    </comp>
+    <comp ref="C6">
+      <value>100nF</value>
+      <libsource lib="NET08" part="C" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0f36b499-f36e-5613-8c61-ec954ffceecf</tstamps>
+    </comp>
+    <comp ref="C7">
+      <value>100nF</value>
+      <libsource lib="NET08" part="C" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6c14325e-4a1f-565c-b7ee-14acba4d473d</tstamps>
+    </comp>
+    <comp ref="C8">
+      <value>100nF</value>
+      <libsource lib="NET08" part="C" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6c043014-0a38-51ae-a363-a1e1520a57ae</tstamps>
+    </comp>
+    <comp ref="C9">
+      <value>100nF</value>
+      <libsource lib="NET08" part="C" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ea089e57-6d0d-5be2-9698-59e706b20220</tstamps>
+    </comp>
+    <comp ref="C10">
+      <value>100nF</value>
+      <libsource lib="NET08" part="C" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3eb8f5da-70b2-57dd-9267-677ef900262c</tstamps>
+    </comp>
+    <comp ref="C11">
+      <value>100nF</value>
+      <libsource lib="NET08" part="C" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6b3b3ea6-0ef9-53ae-beb6-f22da9e28467</tstamps>
+    </comp>
+    <comp ref="C12">
+      <value>100nF</value>
+      <libsource lib="NET08" part="C" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d221ffd3-b513-5327-a20b-02144c82cd79</tstamps>
+    </comp>
+    <comp ref="C13">
+      <value>100nF</value>
+      <libsource lib="NET08" part="C" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>771bf501-b78b-5211-9625-3d986e2b6dda</tstamps>
+    </comp>
+    <comp ref="C14">
+      <value>100nF</value>
+      <libsource lib="NET08" part="C" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c7960838-d3e3-5efc-bc53-9dc00407164d</tstamps>
+    </comp>
+    <comp ref="C15">
+      <value>100nF</value>
+      <libsource lib="NET08" part="C" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>65236b7b-337e-525c-940f-31809c805c6f</tstamps>
+    </comp>
+    <comp ref="C16">
+      <value>100nF</value>
+      <libsource lib="NET08" part="C" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>dc608291-05f0-5c12-8ac1-cff7e49cd8ba</tstamps>
+    </comp>
+    <comp ref="C17">
+      <value>100nF</value>
+      <libsource lib="NET08" part="C" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4e519aca-ad2e-5c29-a5eb-c4ade235c8a2</tstamps>
+    </comp>
+    <comp ref="C18">
+      <value>100nF</value>
+      <libsource lib="NET08" part="C" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a85de7f8-d1cc-550d-a403-8220d44b6e38</tstamps>
+    </comp>
+    <comp ref="C19">
+      <value>100nF</value>
+      <libsource lib="NET08" part="C" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2dae4847-c349-591f-8723-7929e9b59fdd</tstamps>
+    </comp>
+    <comp ref="C20">
+      <value>100nF</value>
+      <libsource lib="NET08" part="C" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>05bc3e6f-ff37-5323-91e5-1213dd219bb7</tstamps>
+    </comp>
+    <comp ref="C21">
+      <value>100nF</value>
+      <libsource lib="NET08" part="C" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>662b32da-ea68-57b0-815e-a07748f83553</tstamps>
+    </comp>
+    <comp ref="C22">
+      <value>100nF</value>
+      <libsource lib="NET08" part="C" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>34226b86-e299-5e5f-9780-9d84b2e8ecbb</tstamps>
+    </comp>
+    <comp ref="C23">
+      <value>100nF</value>
+      <libsource lib="NET08" part="C" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2889ec38-3bab-5d89-a4c9-306f495514d6</tstamps>
+    </comp>
+    <comp ref="C24">
+      <value>100nF</value>
+      <libsource lib="NET08" part="C" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>46b4c612-157c-5dda-81c8-435d108b895d</tstamps>
+    </comp>
+    <comp ref="C25">
+      <value>100nF</value>
+      <libsource lib="NET08" part="C" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>abd599cf-8ae3-567f-ac3e-868b3cc95028</tstamps>
+    </comp>
+    <comp ref="C26">
+      <value>100nF</value>
+      <libsource lib="NET08" part="C" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6b9650dd-4bc3-50a5-9c1a-6e01bb1b61b4</tstamps>
+    </comp>
+    <comp ref="C27">
+      <value>100nF</value>
+      <libsource lib="NET08" part="C" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d873d1b7-e3eb-5147-9802-70ed386da5d6</tstamps>
+    </comp>
+    <comp ref="C28">
+      <value>100nF</value>
+      <libsource lib="NET08" part="C" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9b35da0c-4ae9-5b75-b769-1243c39d18d6</tstamps>
+    </comp>
+    <comp ref="C29">
+      <value>100nF</value>
+      <libsource lib="NET08" part="C" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1e1f925a-3d04-540b-b297-4b07ddcee526</tstamps>
+    </comp>
+    <comp ref="C30">
+      <value>100nF</value>
+      <libsource lib="NET08" part="C" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>fd6e49da-c82f-5b1c-abc5-5f579078302b</tstamps>
+    </comp>
+    <comp ref="C31">
+      <value>100nF</value>
+      <libsource lib="NET08" part="C" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>03c780b5-ffb1-5599-bb98-164f12666652</tstamps>
+    </comp>
+    <comp ref="C32">
+      <value>100nF</value>
+      <libsource lib="NET08" part="C" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>777ea3be-0bb6-51a3-b6ca-dab25b93546f</tstamps>
+    </comp>
+    <comp ref="C33">
+      <value>100nF</value>
+      <libsource lib="NET08" part="C" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5d554b6a-0103-5684-997c-5ef8d0a73a3c</tstamps>
+    </comp>
+    <comp ref="C34">
+      <value>100nF</value>
+      <libsource lib="NET08" part="C" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>bb9dcc11-7d4b-510b-b8fb-99044bf2782c</tstamps>
+    </comp>
+    <comp ref="C35">
+      <value>100nF</value>
+      <libsource lib="NET08" part="C" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>569ceae3-b289-5587-a6f4-c01b2c157031</tstamps>
+    </comp>
+    <comp ref="C36">
+      <value>100nF</value>
+      <libsource lib="NET08" part="C" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0c4c6093-dce8-5780-8284-f864fc79f528</tstamps>
+    </comp>
+    <comp ref="C37">
+      <value>100nF</value>
+      <libsource lib="NET08" part="C" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>cb3940d7-48f3-56f2-9d2a-c286cf7f12ee</tstamps>
+    </comp>
+    <comp ref="C38">
+      <value>100nF</value>
+      <libsource lib="NET08" part="C" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>95291412-1545-5b06-89ce-852159fa7686</tstamps>
+    </comp>
+    <comp ref="C39">
+      <value>100nF</value>
+      <libsource lib="NET08" part="C" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>164de540-9db6-5ef1-b96e-0f0e747e3382</tstamps>
+    </comp>
+    <comp ref="C40">
+      <value>100nF</value>
+      <libsource lib="NET08" part="C" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7c053a26-910a-58d2-afb5-65378dc2d529</tstamps>
+    </comp>
+    <comp ref="C41">
+      <value>100nF</value>
+      <libsource lib="NET08" part="C" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a34e7351-70f4-5464-b3ac-5c51beb53285</tstamps>
+    </comp>
+    <comp ref="C42">
+      <value>100nF</value>
+      <libsource lib="NET08" part="C" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>491b495a-55f9-5b7a-b775-ab2ac6353092</tstamps>
+    </comp>
+    <comp ref="C43">
+      <value>100nF</value>
+      <libsource lib="NET08" part="C" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d2d10dc8-b289-55fe-99a3-3cf92bc2a725</tstamps>
+    </comp>
+    <comp ref="C44">
+      <value>100nF</value>
+      <libsource lib="NET08" part="C" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>982566d0-9fe2-5362-a4b7-747e2cd673ed</tstamps>
+    </comp>
+    <comp ref="C45">
+      <value>100nF</value>
+      <libsource lib="NET08" part="C" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>09576ebd-71d2-5792-b1a2-43a06b6d17f5</tstamps>
+    </comp>
+    <comp ref="C46">
+      <value>100nF</value>
+      <libsource lib="NET08" part="C" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0d5370c2-e743-5f6f-a02b-7845e81d7ca5</tstamps>
+    </comp>
+    <comp ref="C47">
+      <value>100nF</value>
+      <libsource lib="NET08" part="C" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>51a0e011-3f14-56c3-951f-abdfdcc26131</tstamps>
+    </comp>
+    <comp ref="C48">
+      <value>100nF</value>
+      <libsource lib="NET08" part="C" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0ffe04fc-b7ea-5619-8450-9e6de893375a</tstamps>
+    </comp>
+    <comp ref="C49">
+      <value>100nF</value>
+      <libsource lib="NET08" part="C" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>794b0b8e-fd2b-546f-ba03-37535bb3ec29</tstamps>
+    </comp>
+    <comp ref="C50">
+      <value>100nF</value>
+      <libsource lib="NET08" part="C" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7799d73d-eb54-5678-88df-ded75722e780</tstamps>
+    </comp>
+    <comp ref="C51">
+      <value>100nF</value>
+      <libsource lib="NET08" part="C" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e4dcb03d-b28c-549c-a189-ae35f0fe0e33</tstamps>
+    </comp>
+    <comp ref="U1">
+      <value>SN74HC174</value>
+      <libsource lib="NET08" part="SN74HC174" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0f2984da-ebab-54e9-bb3f-35a31f2b09b5</tstamps>
+    </comp>
+    <comp ref="U2">
+      <value>SN74HC174</value>
+      <libsource lib="NET08" part="SN74HC174" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>fe4a11d0-9f4b-5f0a-99ff-84fa28bfc61c</tstamps>
+    </comp>
+    <comp ref="U3">
+      <value>SN74HC125</value>
+      <libsource lib="NET08" part="SN74HC125" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ac67e96c-cf8e-5ddf-a808-1a578a89f624</tstamps>
+    </comp>
+    <comp ref="U4">
+      <value>SN74HC08</value>
+      <libsource lib="NET08" part="SN74HC08" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4073bc77-65ae-5c6b-9ec4-8eb6c44035db</tstamps>
+    </comp>
+    <comp ref="U5">
+      <value>SN74HC08</value>
+      <libsource lib="NET08" part="SN74HC08" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>acfc5fc9-9555-5711-9df6-a68ecb1984aa</tstamps>
+    </comp>
+    <comp ref="U6">
+      <value>SN74HC08</value>
+      <libsource lib="NET08" part="SN74HC08" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>fc3a1d05-8679-5e6a-9944-b035b497fee1</tstamps>
+    </comp>
+    <comp ref="U7">
+      <value>SN74HC08</value>
+      <libsource lib="NET08" part="SN74HC08" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9f80881d-652d-530c-a731-0471a9e97b8b</tstamps>
+    </comp>
+    <comp ref="U8">
+      <value>SN74HC08</value>
+      <libsource lib="NET08" part="SN74HC08" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6c79a1b2-8b6d-5209-b29c-af558756c46d</tstamps>
+    </comp>
+    <comp ref="U9">
+      <value>SN74HC08</value>
+      <libsource lib="NET08" part="SN74HC08" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b5d538d6-b90f-5fb1-9aba-573542526bd0</tstamps>
+    </comp>
+    <comp ref="U10">
+      <value>SN74HC08</value>
+      <libsource lib="NET08" part="SN74HC08" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7c66c957-048e-53c4-ada1-54d61278e660</tstamps>
+    </comp>
+    <comp ref="U11">
+      <value>SN74HC08</value>
+      <libsource lib="NET08" part="SN74HC08" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a46a33f3-ba04-59e0-a4c2-8cd785f3db6f</tstamps>
+    </comp>
+    <comp ref="U12">
+      <value>SN74HC08</value>
+      <libsource lib="NET08" part="SN74HC08" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3faae2e7-9645-5510-b4f3-071f97757537</tstamps>
+    </comp>
+    <comp ref="U13">
+      <value>SN74HC08</value>
+      <libsource lib="NET08" part="SN74HC08" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6ee62c02-517d-5246-a941-b9d0c13da657</tstamps>
+    </comp>
+    <comp ref="U14">
+      <value>SN74HC08</value>
+      <libsource lib="NET08" part="SN74HC08" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c2a626a4-40c2-5d63-a137-ffac1fa73e7b</tstamps>
+    </comp>
+    <comp ref="U15">
+      <value>SN74HC08</value>
+      <libsource lib="NET08" part="SN74HC08" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>90dbb752-c459-5876-9802-f060c97c67c0</tstamps>
+    </comp>
+    <comp ref="U16">
+      <value>SN74HC08</value>
+      <libsource lib="NET08" part="SN74HC08" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>053e23a8-75a1-57f8-9cd2-eb9c54c49e30</tstamps>
+    </comp>
+    <comp ref="U17">
+      <value>SN74HC08</value>
+      <libsource lib="NET08" part="SN74HC08" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3f6a4425-ab7b-58b3-b228-6bac989534d1</tstamps>
+    </comp>
+    <comp ref="U18">
+      <value>SN74HC08</value>
+      <libsource lib="NET08" part="SN74HC08" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>98460750-46f0-5a49-b2f8-b3212cd39f84</tstamps>
+    </comp>
+    <comp ref="U19">
+      <value>SN74HC08</value>
+      <libsource lib="NET08" part="SN74HC08" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8ea94ee7-c7dd-5783-87a1-4a3d172b1221</tstamps>
+    </comp>
+    <comp ref="U20">
+      <value>SN74HC08</value>
+      <libsource lib="NET08" part="SN74HC08" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>54d33e55-1243-5565-af6b-b0a6bf6673e2</tstamps>
+    </comp>
+    <comp ref="U21">
+      <value>SN74HC08</value>
+      <libsource lib="NET08" part="SN74HC08" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ebed76a6-7a09-5293-8f42-2f3a1066be45</tstamps>
+    </comp>
+    <comp ref="U22">
+      <value>SN74HC08</value>
+      <libsource lib="NET08" part="SN74HC08" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>351d3c5a-8905-5e51-935c-af6ac4e45dd4</tstamps>
+    </comp>
+    <comp ref="U23">
+      <value>SN74HC08</value>
+      <libsource lib="NET08" part="SN74HC08" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a43919b0-ab29-5223-ae28-7fa005119751</tstamps>
+    </comp>
+    <comp ref="U24">
+      <value>SN74HC08</value>
+      <libsource lib="NET08" part="SN74HC08" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4530dd50-907c-5603-97e0-2b37a0a44c4f</tstamps>
+    </comp>
+    <comp ref="U25">
+      <value>SN74HC08</value>
+      <libsource lib="NET08" part="SN74HC08" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c742f110-3432-57d2-8c14-848565137269</tstamps>
+    </comp>
+    <comp ref="U26">
+      <value>SN74HC32</value>
+      <libsource lib="NET08" part="SN74HC32" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4e61c276-7fc6-5a7f-b130-50da149e748e</tstamps>
+    </comp>
+    <comp ref="U27">
+      <value>SN74HC32</value>
+      <libsource lib="NET08" part="SN74HC32" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c895cf5f-7490-5ce9-ad97-336b551828bb</tstamps>
+    </comp>
+    <comp ref="U28">
+      <value>SN74HC32</value>
+      <libsource lib="NET08" part="SN74HC32" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>06a1a322-41b8-5f92-8f0d-dfd06fe5779c</tstamps>
+    </comp>
+    <comp ref="U29">
+      <value>SN74HC32</value>
+      <libsource lib="NET08" part="SN74HC32" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e551c0bb-4c84-569a-ac62-94ecd80706f1</tstamps>
+    </comp>
+    <comp ref="U30">
+      <value>SN74HC32</value>
+      <libsource lib="NET08" part="SN74HC32" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c9f819f2-23c3-5415-a91d-f12f5607c864</tstamps>
+    </comp>
+    <comp ref="U31">
+      <value>SN74HC32</value>
+      <libsource lib="NET08" part="SN74HC32" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d8c9a1d2-0557-5045-a380-cb52de1b7c05</tstamps>
+    </comp>
+    <comp ref="U32">
+      <value>SN74HC32</value>
+      <libsource lib="NET08" part="SN74HC32" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>eaac733e-7009-54fb-96a6-d0a4e820d714</tstamps>
+    </comp>
+    <comp ref="U33">
+      <value>SN74HC32</value>
+      <libsource lib="NET08" part="SN74HC32" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>06946a0d-bf39-5aee-9297-d0c4a865e422</tstamps>
+    </comp>
+    <comp ref="U34">
+      <value>SN74HC32</value>
+      <libsource lib="NET08" part="SN74HC32" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8e189fcf-5f86-58b5-a222-7fbd5deb1436</tstamps>
+    </comp>
+    <comp ref="U35">
+      <value>SN74HC32</value>
+      <libsource lib="NET08" part="SN74HC32" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>85f441b8-8aec-5829-8104-5e7ae91a5370</tstamps>
+    </comp>
+    <comp ref="U36">
+      <value>SN74HC32</value>
+      <libsource lib="NET08" part="SN74HC32" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>103e8bf3-8c58-539b-8825-46019bd999b3</tstamps>
+    </comp>
+    <comp ref="U37">
+      <value>SN74HC32</value>
+      <libsource lib="NET08" part="SN74HC32" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2de757c9-980d-5acc-aef4-484972c9b49e</tstamps>
+    </comp>
+    <comp ref="U38">
+      <value>SN74HC32</value>
+      <libsource lib="NET08" part="SN74HC32" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>af871bc7-7166-5683-aa51-cafb13be2515</tstamps>
+    </comp>
+    <comp ref="U39">
+      <value>SN74HC32</value>
+      <libsource lib="NET08" part="SN74HC32" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9cd43957-de18-52d3-a651-861f34b6c483</tstamps>
+    </comp>
+    <comp ref="U40">
+      <value>SN74HC32</value>
+      <libsource lib="NET08" part="SN74HC32" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>17754734-07e9-583b-99c6-f663988a4273</tstamps>
+    </comp>
+    <comp ref="U41">
+      <value>SN74HC32</value>
+      <libsource lib="NET08" part="SN74HC32" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d9ac6024-ba07-5eaf-b52d-e26a383ec8d0</tstamps>
+    </comp>
+    <comp ref="U42">
+      <value>SN74HC32</value>
+      <libsource lib="NET08" part="SN74HC32" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7f2bf45d-77ab-5c50-9ffd-34a48badb00a</tstamps>
+    </comp>
+    <comp ref="U43">
+      <value>SN74HC04</value>
+      <libsource lib="NET08" part="SN74HC04" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a3d92baa-e6dc-5838-8d30-02c2547e0085</tstamps>
+    </comp>
+    <comp ref="U44">
+      <value>SN74HC04</value>
+      <libsource lib="NET08" part="SN74HC04" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>63ff2e5f-2665-59ca-8743-649ca460222b</tstamps>
+    </comp>
+    <comp ref="U45">
+      <value>SN74HC04</value>
+      <libsource lib="NET08" part="SN74HC04" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c02b54d4-38f1-5819-87be-464b59b4623d</tstamps>
+    </comp>
+    <comp ref="U46">
+      <value>SN74HC04</value>
+      <libsource lib="NET08" part="SN74HC04" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1cb4a6f4-0228-5534-87b4-b661570cf68d</tstamps>
+    </comp>
+    <comp ref="U47">
+      <value>SN74HC04</value>
+      <libsource lib="NET08" part="SN74HC04" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>44d10ef8-5686-585e-b120-9aaad8d0b7ed</tstamps>
+    </comp>
+    <comp ref="U48">
+      <value>SN74HC04</value>
+      <libsource lib="NET08" part="SN74HC04" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>54f47d9f-a24e-534b-8fdc-aeee35d8122f</tstamps>
+    </comp>
+    <comp ref="U49">
+      <value>SN74HC125</value>
+      <libsource lib="NET08" part="SN74HC125" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>76a68c5c-5498-5d77-9df8-01e25ad1e538</tstamps>
+    </comp>
+    <comp ref="U50">
+      <value>SN74HC125</value>
+      <libsource lib="NET08" part="SN74HC125" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>982659d3-70c1-5034-b3c9-b000f65476c1</tstamps>
+    </comp>
+    <comp ref="U51">
+      <value>SN74HC125</value>
+      <libsource lib="NET08" part="SN74HC125" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hardware/execution_bank/execution_bank.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f8cc44ee-446f-5413-90a6-7c5a448ceda8</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="NET08" part="C">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="NET08" part="SN74HC04">
+      <docs>https://www.ti.com/lit/ds/symlink/sn74hc04.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">SN74HC04</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/sn74hc04.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A0" type="input"/>
+        <pin num="2" name="Y0" type="output"/>
+        <pin num="3" name="A1" type="input"/>
+        <pin num="4" name="Y1" type="output"/>
+        <pin num="5" name="A2" type="input"/>
+        <pin num="6" name="Y2" type="output"/>
+        <pin num="7" name="GND" type="power_in"/>
+        <pin num="8" name="Y3" type="output"/>
+        <pin num="9" name="A3" type="input"/>
+        <pin num="10" name="Y4" type="output"/>
+        <pin num="11" name="A4" type="input"/>
+        <pin num="12" name="Y5" type="output"/>
+        <pin num="13" name="A5" type="input"/>
+        <pin num="14" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="NET08" part="SN74HC08">
+      <docs>https://www.ti.com/lit/ds/symlink/sn74hc08.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">SN74HC08</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/sn74hc08.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A0" type="input"/>
+        <pin num="2" name="B0" type="input"/>
+        <pin num="3" name="Y0" type="output"/>
+        <pin num="4" name="A1" type="input"/>
+        <pin num="5" name="B1" type="input"/>
+        <pin num="6" name="Y1" type="output"/>
+        <pin num="7" name="GND" type="power_in"/>
+        <pin num="8" name="Y2" type="output"/>
+        <pin num="9" name="A2" type="input"/>
+        <pin num="10" name="B2" type="input"/>
+        <pin num="11" name="Y3" type="output"/>
+        <pin num="12" name="A3" type="input"/>
+        <pin num="13" name="B3" type="input"/>
+        <pin num="14" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="NET08" part="SN74HC125">
+      <docs>https://www.ti.com/lit/ds/symlink/sn74hc125.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">SN74HC125</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/sn74hc125.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="OE0_N" type="input"/>
+        <pin num="2" name="A0" type="input"/>
+        <pin num="3" name="Y0" type="output"/>
+        <pin num="4" name="OE1_N" type="input"/>
+        <pin num="5" name="A1" type="input"/>
+        <pin num="6" name="Y1" type="output"/>
+        <pin num="7" name="GND" type="power_in"/>
+        <pin num="8" name="Y2" type="output"/>
+        <pin num="9" name="A2" type="input"/>
+        <pin num="10" name="OE2_N" type="input"/>
+        <pin num="11" name="Y3" type="output"/>
+        <pin num="12" name="A3" type="input"/>
+        <pin num="13" name="OE3_N" type="input"/>
+        <pin num="14" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="NET08" part="SN74HC174">
+      <docs>https://www.ti.com/lit/ds/symlink/sn74hc174.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">SN74HC174</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/sn74hc174.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="CLR_N" type="input"/>
+        <pin num="2" name="Q0" type="output"/>
+        <pin num="3" name="D0" type="input"/>
+        <pin num="4" name="D1" type="input"/>
+        <pin num="5" name="Q1" type="output"/>
+        <pin num="6" name="D2" type="input"/>
+        <pin num="7" name="Q2" type="output"/>
+        <pin num="8" name="GND" type="power_in"/>
+        <pin num="9" name="CLK" type="input"/>
+        <pin num="10" name="Q3" type="output"/>
+        <pin num="11" name="D3" type="input"/>
+        <pin num="12" name="Q4" type="output"/>
+        <pin num="13" name="D4" type="input"/>
+        <pin num="14" name="D5" type="input"/>
+        <pin num="15" name="Q5" type="output"/>
+        <pin num="16" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="NET08" part="SN74HC32">
+      <docs>https://www.ti.com/lit/ds/symlink/sn74hc32.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">SN74HC32</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/sn74hc32.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A0" type="input"/>
+        <pin num="2" name="B0" type="input"/>
+        <pin num="3" name="Y0" type="output"/>
+        <pin num="4" name="A1" type="input"/>
+        <pin num="5" name="B1" type="input"/>
+        <pin num="6" name="Y1" type="output"/>
+        <pin num="7" name="GND" type="power_in"/>
+        <pin num="8" name="Y2" type="output"/>
+        <pin num="9" name="A2" type="input"/>
+        <pin num="10" name="B2" type="input"/>
+        <pin num="11" name="Y3" type="output"/>
+        <pin num="12" name="A3" type="input"/>
+        <pin num="13" name="B3" type="input"/>
+        <pin num="14" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries/>
+  <nets>
+    <net code="1" name="/+5V">
+      <node ref="C1" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="C10" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="C11" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="C12" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="C13" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="C14" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="C15" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="C16" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="C17" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="C18" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="C19" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="C2" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="C20" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="C21" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="C22" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="C23" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="C24" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="C25" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="C26" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="C27" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="C28" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="C29" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="C3" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="C30" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="C31" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="C32" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="C33" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="C34" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="C35" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="C36" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="C37" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="C38" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="C39" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="C4" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="C40" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="C41" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="C42" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="C43" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="C44" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="C45" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="C46" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="C47" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="C48" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="C49" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="C5" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="C50" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="C51" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="C6" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="C7" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="C8" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="C9" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U1" pin="16" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U10" pin="14" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U11" pin="14" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U12" pin="14" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U13" pin="14" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U14" pin="14" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U15" pin="14" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U16" pin="14" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U17" pin="14" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U18" pin="14" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U19" pin="14" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U2" pin="16" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U20" pin="14" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U21" pin="14" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U22" pin="14" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U23" pin="14" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U24" pin="14" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U25" pin="14" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U26" pin="14" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U27" pin="14" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U28" pin="14" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U29" pin="14" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U3" pin="14" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U30" pin="14" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U31" pin="14" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U32" pin="14" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U33" pin="14" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U34" pin="14" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U35" pin="14" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U36" pin="14" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U37" pin="14" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U38" pin="14" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U39" pin="14" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U4" pin="14" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U40" pin="14" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U41" pin="14" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U42" pin="14" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U43" pin="14" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U44" pin="14" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U45" pin="14" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U46" pin="14" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U47" pin="14" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U48" pin="14" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U49" pin="14" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U5" pin="14" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U50" pin="14" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U51" pin="14" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U6" pin="14" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U7" pin="14" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U8" pin="14" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U9" pin="14" pinfunction="VCC" pintype="power_in"/>
+    </net>
+    <net code="2" name="/ACCEPT">
+      <node ref="U14" pin="12" pinfunction="A3" pintype="input"/>
+      <node ref="U5" pin="6" pinfunction="Y1" pintype="output"/>
+      <node ref="U5" pin="9" pinfunction="A2" pintype="input"/>
+    </net>
+    <net code="3" name="/ACCESS">
+      <node ref="U15" pin="3" pinfunction="Y0" pintype="output"/>
+      <node ref="U22" pin="4" pinfunction="A1" pintype="input"/>
+      <node ref="U38" pin="12" pinfunction="A3" pintype="input"/>
+    </net>
+    <net code="4" name="/ADDR_N_4">
+      <node ref="U46" pin="1" pinfunction="A0" pintype="input"/>
+    </net>
+    <net code="5" name="/ADDR_N_5">
+      <node ref="U45" pin="13" pinfunction="A5" pintype="input"/>
+    </net>
+    <net code="6" name="/ADVANCE_REQ">
+      <node ref="U38" pin="8" pinfunction="Y2" pintype="output"/>
+    </net>
+    <net code="7" name="/BOOT">
+      <node ref="U13" pin="1" pinfunction="A0" pintype="input"/>
+      <node ref="U13" pin="4" pinfunction="A1" pintype="input"/>
+      <node ref="U14" pin="1" pinfunction="A0" pintype="input"/>
+    </net>
+    <net code="8" name="/BUF_1_0">
+      <node ref="U18" pin="12" pinfunction="A3" pintype="input"/>
+      <node ref="U19" pin="12" pinfunction="A3" pintype="input"/>
+      <node ref="U21" pin="5" pinfunction="B1" pintype="input"/>
+      <node ref="U49" pin="3" pinfunction="Y0" pintype="output"/>
+      <node ref="U5" pin="4" pinfunction="A1" pintype="input"/>
+    </net>
+    <net code="9" name="/BUF_1_1">
+      <node ref="U25" pin="1" pinfunction="A0" pintype="input"/>
+      <node ref="U49" pin="6" pinfunction="Y1" pintype="output"/>
+    </net>
+    <net code="10" name="/BUF_1_2">
+      <node ref="U30" pin="10" pinfunction="B2" pintype="input"/>
+      <node ref="U30" pin="13" pinfunction="B3" pintype="input"/>
+      <node ref="U33" pin="13" pinfunction="B3" pintype="input"/>
+      <node ref="U49" pin="8" pinfunction="Y2" pintype="output"/>
+      <node ref="U6" pin="5" pinfunction="B1" pintype="input"/>
+    </net>
+    <net code="11" name="/BUF_1_3">
+      <node ref="U35" pin="10" pinfunction="B2" pintype="input"/>
+      <node ref="U36" pin="13" pinfunction="B3" pintype="input"/>
+      <node ref="U43" pin="13" pinfunction="A5" pintype="input"/>
+      <node ref="U49" pin="11" pinfunction="Y3" pintype="output"/>
+    </net>
+    <net code="12" name="/BUF_2_0">
+      <node ref="U29" pin="2" pinfunction="B0" pintype="input"/>
+      <node ref="U30" pin="12" pinfunction="A3" pintype="input"/>
+      <node ref="U32" pin="13" pinfunction="B3" pintype="input"/>
+      <node ref="U50" pin="3" pinfunction="Y0" pintype="output"/>
+      <node ref="U9" pin="10" pinfunction="B2" pintype="input"/>
+    </net>
+    <net code="13" name="/BUF_2_1">
+      <node ref="U44" pin="1" pinfunction="A0" pintype="input"/>
+      <node ref="U50" pin="6" pinfunction="Y1" pintype="output"/>
+    </net>
+    <net code="14" name="/BUF_2_2">
+      <node ref="U18" pin="10" pinfunction="B2" pintype="input"/>
+      <node ref="U21" pin="13" pinfunction="B3" pintype="input"/>
+      <node ref="U26" pin="5" pinfunction="B1" pintype="input"/>
+      <node ref="U42" pin="10" pinfunction="B2" pintype="input"/>
+      <node ref="U50" pin="8" pinfunction="Y2" pintype="output"/>
+    </net>
+    <net code="15" name="/BUF_2_3">
+      <node ref="U42" pin="13" pinfunction="B3" pintype="input"/>
+      <node ref="U50" pin="11" pinfunction="Y3" pintype="output"/>
+    </net>
+    <net code="16" name="/BUF_3_0">
+      <node ref="U23" pin="4" pinfunction="A1" pintype="input"/>
+      <node ref="U24" pin="1" pinfunction="A0" pintype="input"/>
+      <node ref="U40" pin="1" pinfunction="A0" pintype="input"/>
+      <node ref="U40" pin="9" pinfunction="A2" pintype="input"/>
+      <node ref="U51" pin="3" pinfunction="Y0" pintype="output"/>
+    </net>
+    <net code="17" name="/BUF_3_1">
+      <node ref="U41" pin="1" pinfunction="A0" pintype="input"/>
+      <node ref="U51" pin="6" pinfunction="Y1" pintype="output"/>
+    </net>
+    <net code="18" name="/BUS_DONE">
+      <node ref="U21" pin="1" pinfunction="A0" pintype="input"/>
+      <node ref="U47" pin="3" pinfunction="A1" pintype="input"/>
+    </net>
+    <net code="19" name="/BUS_READY">
+      <node ref="U19" pin="9" pinfunction="A2" pintype="input"/>
+      <node ref="U21" pin="4" pinfunction="A1" pintype="input"/>
+    </net>
+    <net code="20" name="/CHECKED_D">
+      <node ref="U1" pin="13" pinfunction="D4" pintype="input"/>
+      <node ref="U22" pin="8" pinfunction="Y2" pintype="output"/>
+    </net>
+    <net code="21" name="/CLK">
+      <node ref="U3" pin="2" pinfunction="A0" pintype="input"/>
+    </net>
+    <net code="22" name="/CLK_CORE">
+      <node ref="U1" pin="9" pinfunction="CLK" pintype="input"/>
+      <node ref="U2" pin="9" pinfunction="CLK" pintype="input"/>
+      <node ref="U3" pin="3" pinfunction="Y0" pintype="output"/>
+    </net>
+    <net code="23" name="/CONTROL_READY">
+      <node ref="U49" pin="2" pinfunction="A0" pintype="input"/>
+      <node ref="U49" pin="5" pinfunction="A1" pintype="input"/>
+    </net>
+    <net code="24" name="/CW_END">
+      <node ref="U22" pin="12" pinfunction="A3" pintype="input"/>
+    </net>
+    <net code="25" name="/CW_HALT">
+      <node ref="U15" pin="9" pinfunction="A2" pintype="input"/>
+      <node ref="U46" pin="9" pinfunction="A3" pintype="input"/>
+    </net>
+    <net code="26" name="/DISPATCH">
+      <node ref="U47" pin="11" pinfunction="A4" pintype="input"/>
+    </net>
+    <net code="27" name="/DROP">
+      <node ref="U1" pin="5" pinfunction="Q1" pintype="output"/>
+      <node ref="U19" pin="10" pinfunction="B2" pintype="input"/>
+      <node ref="U21" pin="9" pinfunction="A2" pintype="input"/>
+      <node ref="U26" pin="1" pinfunction="A0" pintype="input"/>
+      <node ref="U42" pin="12" pinfunction="A3" pintype="input"/>
+    </net>
+    <net code="28" name="/DROP_D">
+      <node ref="U1" pin="4" pinfunction="D1" pintype="input"/>
+      <node ref="U39" pin="3" pinfunction="Y0" pintype="output"/>
+    </net>
+    <net code="29" name="/EXEC">
+      <node ref="U24" pin="12" pinfunction="A3" pintype="input"/>
+      <node ref="U4" pin="4" pinfunction="A1" pintype="input"/>
+      <node ref="U43" pin="2" pinfunction="Y0" pintype="output"/>
+    </net>
+    <net code="30" name="/EXECUTE_PULSE">
+      <node ref="U20" pin="1" pinfunction="A0" pintype="input"/>
+      <node ref="U6" pin="3" pinfunction="Y0" pintype="output"/>
+    </net>
+    <net code="31" name="/EXEC_ACCEPT">
+      <node ref="U15" pin="10" pinfunction="B2" pintype="input"/>
+      <node ref="U17" pin="12" pinfunction="A3" pintype="input"/>
+      <node ref="U5" pin="8" pinfunction="Y2" pintype="output"/>
+    </net>
+    <net code="32" name="/FAULT_0">
+      <node ref="U2" pin="2" pinfunction="Q0" pintype="output"/>
+      <node ref="U23" pin="12" pinfunction="A3" pintype="input"/>
+    </net>
+    <net code="33" name="/FAULT_1">
+      <node ref="U2" pin="5" pinfunction="Q1" pintype="output"/>
+      <node ref="U24" pin="9" pinfunction="A2" pintype="input"/>
+    </net>
+    <net code="34" name="/FAULT_D0">
+      <node ref="U2" pin="3" pinfunction="D0" pintype="input"/>
+      <node ref="U41" pin="8" pinfunction="Y2" pintype="output"/>
+    </net>
+    <net code="35" name="/FAULT_D1">
+      <node ref="U2" pin="4" pinfunction="D1" pintype="input"/>
+      <node ref="U42" pin="3" pinfunction="Y0" pintype="output"/>
+    </net>
+    <net code="36" name="/GND">
+      <node ref="C1" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C10" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C11" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C12" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C13" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C14" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C15" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C16" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C17" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C18" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C19" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C2" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C20" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C21" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C22" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C23" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C24" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C25" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C26" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C27" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C28" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C29" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C3" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C30" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C31" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C32" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C33" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C34" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C35" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C36" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C37" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C38" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C39" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C4" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C40" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C41" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C42" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C43" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C44" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C45" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C46" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C47" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C48" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C49" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C5" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C50" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C51" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C6" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C7" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C8" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C9" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="U1" pin="8" pinfunction="GND" pintype="power_in"/>
+      <node ref="U10" pin="7" pinfunction="GND" pintype="power_in"/>
+      <node ref="U11" pin="7" pinfunction="GND" pintype="power_in"/>
+      <node ref="U12" pin="7" pinfunction="GND" pintype="power_in"/>
+      <node ref="U13" pin="7" pinfunction="GND" pintype="power_in"/>
+      <node ref="U14" pin="7" pinfunction="GND" pintype="power_in"/>
+      <node ref="U15" pin="7" pinfunction="GND" pintype="power_in"/>
+      <node ref="U16" pin="7" pinfunction="GND" pintype="power_in"/>
+      <node ref="U17" pin="7" pinfunction="GND" pintype="power_in"/>
+      <node ref="U18" pin="7" pinfunction="GND" pintype="power_in"/>
+      <node ref="U19" pin="7" pinfunction="GND" pintype="power_in"/>
+      <node ref="U2" pin="11" pinfunction="D3" pintype="input"/>
+      <node ref="U2" pin="13" pinfunction="D4" pintype="input"/>
+      <node ref="U2" pin="14" pinfunction="D5" pintype="input"/>
+      <node ref="U2" pin="8" pinfunction="GND" pintype="power_in"/>
+      <node ref="U20" pin="7" pinfunction="GND" pintype="power_in"/>
+      <node ref="U21" pin="7" pinfunction="GND" pintype="power_in"/>
+      <node ref="U22" pin="7" pinfunction="GND" pintype="power_in"/>
+      <node ref="U23" pin="7" pinfunction="GND" pintype="power_in"/>
+      <node ref="U24" pin="7" pinfunction="GND" pintype="power_in"/>
+      <node ref="U25" pin="12" pinfunction="A3" pintype="input"/>
+      <node ref="U25" pin="13" pinfunction="B3" pintype="input"/>
+      <node ref="U25" pin="7" pinfunction="GND" pintype="power_in"/>
+      <node ref="U26" pin="7" pinfunction="GND" pintype="power_in"/>
+      <node ref="U27" pin="7" pinfunction="GND" pintype="power_in"/>
+      <node ref="U28" pin="7" pinfunction="GND" pintype="power_in"/>
+      <node ref="U29" pin="7" pinfunction="GND" pintype="power_in"/>
+      <node ref="U3" pin="1" pinfunction="OE0_N" pintype="input"/>
+      <node ref="U3" pin="10" pinfunction="OE2_N" pintype="input"/>
+      <node ref="U3" pin="12" pinfunction="A3" pintype="input"/>
+      <node ref="U3" pin="13" pinfunction="OE3_N" pintype="input"/>
+      <node ref="U3" pin="4" pinfunction="OE1_N" pintype="input"/>
+      <node ref="U3" pin="5" pinfunction="A1" pintype="input"/>
+      <node ref="U3" pin="7" pinfunction="GND" pintype="power_in"/>
+      <node ref="U3" pin="9" pinfunction="A2" pintype="input"/>
+      <node ref="U30" pin="7" pinfunction="GND" pintype="power_in"/>
+      <node ref="U31" pin="7" pinfunction="GND" pintype="power_in"/>
+      <node ref="U32" pin="7" pinfunction="GND" pintype="power_in"/>
+      <node ref="U33" pin="7" pinfunction="GND" pintype="power_in"/>
+      <node ref="U34" pin="7" pinfunction="GND" pintype="power_in"/>
+      <node ref="U35" pin="7" pinfunction="GND" pintype="power_in"/>
+      <node ref="U36" pin="7" pinfunction="GND" pintype="power_in"/>
+      <node ref="U37" pin="7" pinfunction="GND" pintype="power_in"/>
+      <node ref="U38" pin="7" pinfunction="GND" pintype="power_in"/>
+      <node ref="U39" pin="7" pinfunction="GND" pintype="power_in"/>
+      <node ref="U4" pin="7" pinfunction="GND" pintype="power_in"/>
+      <node ref="U40" pin="7" pinfunction="GND" pintype="power_in"/>
+      <node ref="U41" pin="7" pinfunction="GND" pintype="power_in"/>
+      <node ref="U42" pin="7" pinfunction="GND" pintype="power_in"/>
+      <node ref="U43" pin="7" pinfunction="GND" pintype="power_in"/>
+      <node ref="U44" pin="7" pinfunction="GND" pintype="power_in"/>
+      <node ref="U45" pin="7" pinfunction="GND" pintype="power_in"/>
+      <node ref="U46" pin="7" pinfunction="GND" pintype="power_in"/>
+      <node ref="U47" pin="7" pinfunction="GND" pintype="power_in"/>
+      <node ref="U48" pin="11" pinfunction="A4" pintype="input"/>
+      <node ref="U48" pin="13" pinfunction="A5" pintype="input"/>
+      <node ref="U48" pin="5" pinfunction="A2" pintype="input"/>
+      <node ref="U48" pin="7" pinfunction="GND" pintype="power_in"/>
+      <node ref="U48" pin="9" pinfunction="A3" pintype="input"/>
+      <node ref="U49" pin="1" pinfunction="OE0_N" pintype="input"/>
+      <node ref="U49" pin="10" pinfunction="OE2_N" pintype="input"/>
+      <node ref="U49" pin="13" pinfunction="OE3_N" pintype="input"/>
+      <node ref="U49" pin="4" pinfunction="OE1_N" pintype="input"/>
+      <node ref="U49" pin="7" pinfunction="GND" pintype="power_in"/>
+      <node ref="U5" pin="7" pinfunction="GND" pintype="power_in"/>
+      <node ref="U50" pin="1" pinfunction="OE0_N" pintype="input"/>
+      <node ref="U50" pin="10" pinfunction="OE2_N" pintype="input"/>
+      <node ref="U50" pin="13" pinfunction="OE3_N" pintype="input"/>
+      <node ref="U50" pin="4" pinfunction="OE1_N" pintype="input"/>
+      <node ref="U50" pin="7" pinfunction="GND" pintype="power_in"/>
+      <node ref="U51" pin="1" pinfunction="OE0_N" pintype="input"/>
+      <node ref="U51" pin="10" pinfunction="OE2_N" pintype="input"/>
+      <node ref="U51" pin="12" pinfunction="A3" pintype="input"/>
+      <node ref="U51" pin="13" pinfunction="OE3_N" pintype="input"/>
+      <node ref="U51" pin="4" pinfunction="OE1_N" pintype="input"/>
+      <node ref="U51" pin="7" pinfunction="GND" pintype="power_in"/>
+      <node ref="U51" pin="9" pinfunction="A2" pintype="input"/>
+      <node ref="U6" pin="7" pinfunction="GND" pintype="power_in"/>
+      <node ref="U7" pin="7" pinfunction="GND" pintype="power_in"/>
+      <node ref="U8" pin="7" pinfunction="GND" pintype="power_in"/>
+      <node ref="U9" pin="7" pinfunction="GND" pintype="power_in"/>
+    </net>
+    <net code="37" name="/GUARD_FAULT">
+      <node ref="U15" pin="6" pinfunction="Y1" pintype="output"/>
+      <node ref="U51" pin="2" pinfunction="A0" pintype="input"/>
+      <node ref="U51" pin="5" pinfunction="A1" pintype="input"/>
+    </net>
+    <net code="38" name="/G_1">
+      <node ref="U26" pin="3" pinfunction="Y0" pintype="output"/>
+      <node ref="U26" pin="4" pinfunction="A1" pintype="input"/>
+    </net>
+    <net code="39" name="/G_2">
+      <node ref="U26" pin="6" pinfunction="Y1" pintype="output"/>
+      <node ref="U43" pin="1" pinfunction="A0" pintype="input"/>
+    </net>
+    <net code="40" name="/G_4">
+      <node ref="U4" pin="9" pinfunction="A2" pintype="input"/>
+      <node ref="U43" pin="4" pinfunction="Y1" pintype="output"/>
+    </net>
+    <net code="41" name="/G_5">
+      <node ref="U4" pin="12" pinfunction="A3" pintype="input"/>
+      <node ref="U4" pin="6" pinfunction="Y1" pintype="output"/>
+    </net>
+    <net code="42" name="/G_6">
+      <node ref="U25" pin="5" pinfunction="B1" pintype="input"/>
+      <node ref="U4" pin="13" pinfunction="B3" pintype="input"/>
+      <node ref="U4" pin="8" pinfunction="Y2" pintype="output"/>
+    </net>
+    <net code="43" name="/G_7">
+      <node ref="U4" pin="11" pinfunction="Y3" pintype="output"/>
+      <node ref="U5" pin="1" pinfunction="A0" pintype="input"/>
+    </net>
+    <net code="44" name="/G_10">
+      <node ref="U43" pin="6" pinfunction="Y2" pintype="output"/>
+      <node ref="U5" pin="10" pinfunction="B2" pintype="input"/>
+      <node ref="U6" pin="1" pinfunction="A0" pintype="input"/>
+    </net>
+    <net code="45" name="/G_12">
+      <node ref="U5" pin="11" pinfunction="Y3" pintype="output"/>
+      <node ref="U6" pin="2" pinfunction="B0" pintype="input"/>
+    </net>
+    <net code="46" name="/G_14">
+      <node ref="U26" pin="8" pinfunction="Y2" pintype="output"/>
+      <node ref="U28" pin="4" pinfunction="A1" pintype="input"/>
+    </net>
+    <net code="47" name="/G_15">
+      <node ref="U26" pin="11" pinfunction="Y3" pintype="output"/>
+      <node ref="U28" pin="5" pinfunction="B1" pintype="input"/>
+    </net>
+    <net code="48" name="/G_16">
+      <node ref="U27" pin="3" pinfunction="Y0" pintype="output"/>
+      <node ref="U28" pin="9" pinfunction="A2" pintype="input"/>
+    </net>
+    <net code="49" name="/G_17">
+      <node ref="U27" pin="6" pinfunction="Y1" pintype="output"/>
+      <node ref="U28" pin="10" pinfunction="B2" pintype="input"/>
+    </net>
+    <net code="50" name="/G_18">
+      <node ref="U27" pin="8" pinfunction="Y2" pintype="output"/>
+      <node ref="U28" pin="12" pinfunction="A3" pintype="input"/>
+    </net>
+    <net code="51" name="/G_19">
+      <node ref="U27" pin="11" pinfunction="Y3" pintype="output"/>
+      <node ref="U28" pin="13" pinfunction="B3" pintype="input"/>
+    </net>
+    <net code="52" name="/G_20">
+      <node ref="U28" pin="3" pinfunction="Y0" pintype="output"/>
+      <node ref="U29" pin="1" pinfunction="A0" pintype="input"/>
+      <node ref="U30" pin="1" pinfunction="A0" pintype="input"/>
+    </net>
+    <net code="53" name="/G_21">
+      <node ref="U28" pin="6" pinfunction="Y1" pintype="output"/>
+      <node ref="U29" pin="4" pinfunction="A1" pintype="input"/>
+    </net>
+    <net code="54" name="/G_22">
+      <node ref="U28" pin="8" pinfunction="Y2" pintype="output"/>
+      <node ref="U29" pin="5" pinfunction="B1" pintype="input"/>
+    </net>
+    <net code="55" name="/G_23">
+      <node ref="U28" pin="11" pinfunction="Y3" pintype="output"/>
+      <node ref="U29" pin="9" pinfunction="A2" pintype="input"/>
+      <node ref="U30" pin="2" pinfunction="B0" pintype="input"/>
+    </net>
+    <net code="56" name="/G_24">
+      <node ref="U29" pin="10" pinfunction="B2" pintype="input"/>
+      <node ref="U29" pin="3" pinfunction="Y0" pintype="output"/>
+    </net>
+    <net code="57" name="/G_25">
+      <node ref="U29" pin="12" pinfunction="A3" pintype="input"/>
+      <node ref="U29" pin="6" pinfunction="Y1" pintype="output"/>
+      <node ref="U30" pin="4" pinfunction="A1" pintype="input"/>
+    </net>
+    <net code="58" name="/G_26">
+      <node ref="U29" pin="13" pinfunction="B3" pintype="input"/>
+      <node ref="U29" pin="8" pinfunction="Y2" pintype="output"/>
+    </net>
+    <net code="59" name="/G_27">
+      <node ref="U29" pin="11" pinfunction="Y3" pintype="output"/>
+      <node ref="U30" pin="9" pinfunction="A2" pintype="input"/>
+      <node ref="U6" pin="4" pinfunction="A1" pintype="input"/>
+    </net>
+    <net code="60" name="/G_28">
+      <node ref="U30" pin="3" pinfunction="Y0" pintype="output"/>
+      <node ref="U30" pin="5" pinfunction="B1" pintype="input"/>
+    </net>
+    <net code="61" name="/G_29">
+      <node ref="U30" pin="6" pinfunction="Y1" pintype="output"/>
+      <node ref="U44" pin="3" pinfunction="A1" pintype="input"/>
+    </net>
+    <net code="62" name="/G_30">
+      <node ref="U30" pin="8" pinfunction="Y2" pintype="output"/>
+      <node ref="U43" pin="9" pinfunction="A3" pintype="input"/>
+    </net>
+    <net code="63" name="/G_31">
+      <node ref="U36" pin="1" pinfunction="A0" pintype="input"/>
+      <node ref="U43" pin="8" pinfunction="Y3" pintype="output"/>
+    </net>
+    <net code="64" name="/G_32">
+      <node ref="U36" pin="2" pinfunction="B0" pintype="input"/>
+      <node ref="U6" pin="6" pinfunction="Y1" pintype="output"/>
+    </net>
+    <net code="65" name="/G_33">
+      <node ref="U30" pin="11" pinfunction="Y3" pintype="output"/>
+      <node ref="U43" pin="11" pinfunction="A4" pintype="input"/>
+    </net>
+    <net code="66" name="/G_34">
+      <node ref="U14" pin="2" pinfunction="B0" pintype="input"/>
+      <node ref="U43" pin="10" pinfunction="Y4" pintype="output"/>
+    </net>
+    <net code="67" name="/G_35">
+      <node ref="U43" pin="12" pinfunction="Y5" pintype="output"/>
+      <node ref="U6" pin="12" pinfunction="A3" pintype="input"/>
+      <node ref="U6" pin="9" pinfunction="A2" pintype="input"/>
+    </net>
+    <net code="68" name="/G_36">
+      <node ref="U31" pin="1" pinfunction="A0" pintype="input"/>
+      <node ref="U35" pin="4" pinfunction="A1" pintype="input"/>
+      <node ref="U44" pin="2" pinfunction="Y0" pintype="output"/>
+    </net>
+    <net code="69" name="/G_37">
+      <node ref="U31" pin="2" pinfunction="B0" pintype="input"/>
+      <node ref="U44" pin="4" pinfunction="Y1" pintype="output"/>
+    </net>
+    <net code="70" name="/G_38">
+      <node ref="U31" pin="3" pinfunction="Y0" pintype="output"/>
+      <node ref="U6" pin="10" pinfunction="B2" pintype="input"/>
+    </net>
+    <net code="71" name="/G_39">
+      <node ref="U13" pin="2" pinfunction="B0" pintype="input"/>
+      <node ref="U6" pin="8" pinfunction="Y2" pintype="output"/>
+    </net>
+    <net code="72" name="/G_40">
+      <node ref="U31" pin="6" pinfunction="Y1" pintype="output"/>
+      <node ref="U33" pin="1" pinfunction="A0" pintype="input"/>
+    </net>
+    <net code="73" name="/G_41">
+      <node ref="U31" pin="8" pinfunction="Y2" pintype="output"/>
+      <node ref="U33" pin="2" pinfunction="B0" pintype="input"/>
+    </net>
+    <net code="74" name="/G_42">
+      <node ref="U31" pin="11" pinfunction="Y3" pintype="output"/>
+      <node ref="U33" pin="4" pinfunction="A1" pintype="input"/>
+    </net>
+    <net code="75" name="/G_43">
+      <node ref="U32" pin="3" pinfunction="Y0" pintype="output"/>
+      <node ref="U33" pin="5" pinfunction="B1" pintype="input"/>
+    </net>
+    <net code="76" name="/G_44">
+      <node ref="U32" pin="6" pinfunction="Y1" pintype="output"/>
+      <node ref="U33" pin="9" pinfunction="A2" pintype="input"/>
+    </net>
+    <net code="77" name="/G_45">
+      <node ref="U32" pin="8" pinfunction="Y2" pintype="output"/>
+      <node ref="U33" pin="10" pinfunction="B2" pintype="input"/>
+    </net>
+    <net code="78" name="/G_46">
+      <node ref="U32" pin="11" pinfunction="Y3" pintype="output"/>
+      <node ref="U33" pin="12" pinfunction="A3" pintype="input"/>
+    </net>
+    <net code="79" name="/G_47">
+      <node ref="U33" pin="3" pinfunction="Y0" pintype="output"/>
+      <node ref="U34" pin="1" pinfunction="A0" pintype="input"/>
+    </net>
+    <net code="80" name="/G_48">
+      <node ref="U33" pin="6" pinfunction="Y1" pintype="output"/>
+      <node ref="U34" pin="2" pinfunction="B0" pintype="input"/>
+    </net>
+    <net code="81" name="/G_49">
+      <node ref="U33" pin="8" pinfunction="Y2" pintype="output"/>
+      <node ref="U34" pin="12" pinfunction="A3" pintype="input"/>
+      <node ref="U34" pin="4" pinfunction="A1" pintype="input"/>
+    </net>
+    <net code="82" name="/G_50">
+      <node ref="U33" pin="11" pinfunction="Y3" pintype="output"/>
+      <node ref="U34" pin="5" pinfunction="B1" pintype="input"/>
+    </net>
+    <net code="83" name="/G_51">
+      <node ref="U34" pin="3" pinfunction="Y0" pintype="output"/>
+      <node ref="U34" pin="9" pinfunction="A2" pintype="input"/>
+      <node ref="U35" pin="1" pinfunction="A0" pintype="input"/>
+    </net>
+    <net code="84" name="/G_52">
+      <node ref="U34" pin="10" pinfunction="B2" pintype="input"/>
+      <node ref="U34" pin="6" pinfunction="Y1" pintype="output"/>
+    </net>
+    <net code="85" name="/G_53">
+      <node ref="U34" pin="8" pinfunction="Y2" pintype="output"/>
+      <node ref="U44" pin="5" pinfunction="A2" pintype="input"/>
+    </net>
+    <net code="86" name="/G_54">
+      <node ref="U35" pin="12" pinfunction="A3" pintype="input"/>
+      <node ref="U44" pin="6" pinfunction="Y2" pintype="output"/>
+    </net>
+    <net code="87" name="/G_55">
+      <node ref="U34" pin="11" pinfunction="Y3" pintype="output"/>
+      <node ref="U35" pin="2" pinfunction="B0" pintype="input"/>
+    </net>
+    <net code="88" name="/G_56">
+      <node ref="U35" pin="3" pinfunction="Y0" pintype="output"/>
+      <node ref="U44" pin="9" pinfunction="A3" pintype="input"/>
+    </net>
+    <net code="89" name="/G_57">
+      <node ref="U35" pin="5" pinfunction="B1" pintype="input"/>
+      <node ref="U44" pin="8" pinfunction="Y3" pintype="output"/>
+    </net>
+    <net code="90" name="/G_58">
+      <node ref="U35" pin="6" pinfunction="Y1" pintype="output"/>
+      <node ref="U6" pin="13" pinfunction="B3" pintype="input"/>
+    </net>
+    <net code="91" name="/G_59">
+      <node ref="U13" pin="5" pinfunction="B1" pintype="input"/>
+      <node ref="U6" pin="11" pinfunction="Y3" pintype="output"/>
+    </net>
+    <net code="92" name="/G_60">
+      <node ref="U7" pin="3" pinfunction="Y0" pintype="output"/>
+      <node ref="U8" pin="12" pinfunction="A3" pintype="input"/>
+    </net>
+    <net code="93" name="/G_61">
+      <node ref="U7" pin="6" pinfunction="Y1" pintype="output"/>
+      <node ref="U8" pin="13" pinfunction="B3" pintype="input"/>
+    </net>
+    <net code="94" name="/G_62">
+      <node ref="U7" pin="8" pinfunction="Y2" pintype="output"/>
+      <node ref="U9" pin="1" pinfunction="A0" pintype="input"/>
+    </net>
+    <net code="95" name="/G_63">
+      <node ref="U7" pin="11" pinfunction="Y3" pintype="output"/>
+      <node ref="U9" pin="2" pinfunction="B0" pintype="input"/>
+    </net>
+    <net code="96" name="/G_64">
+      <node ref="U8" pin="3" pinfunction="Y0" pintype="output"/>
+      <node ref="U9" pin="4" pinfunction="A1" pintype="input"/>
+    </net>
+    <net code="97" name="/G_65">
+      <node ref="U8" pin="6" pinfunction="Y1" pintype="output"/>
+      <node ref="U9" pin="5" pinfunction="B1" pintype="input"/>
+    </net>
+    <net code="98" name="/G_66">
+      <node ref="U8" pin="8" pinfunction="Y2" pintype="output"/>
+      <node ref="U9" pin="9" pinfunction="A2" pintype="input"/>
+    </net>
+    <net code="99" name="/G_67">
+      <node ref="U8" pin="11" pinfunction="Y3" pintype="output"/>
+      <node ref="U9" pin="12" pinfunction="A3" pintype="input"/>
+    </net>
+    <net code="100" name="/G_68">
+      <node ref="U9" pin="13" pinfunction="B3" pintype="input"/>
+      <node ref="U9" pin="3" pinfunction="Y0" pintype="output"/>
+    </net>
+    <net code="101" name="/G_69">
+      <node ref="U10" pin="1" pinfunction="A0" pintype="input"/>
+      <node ref="U9" pin="6" pinfunction="Y1" pintype="output"/>
+    </net>
+    <net code="102" name="/G_70">
+      <node ref="U10" pin="2" pinfunction="B0" pintype="input"/>
+      <node ref="U9" pin="8" pinfunction="Y2" pintype="output"/>
+    </net>
+    <net code="103" name="/G_71">
+      <node ref="U10" pin="4" pinfunction="A1" pintype="input"/>
+      <node ref="U9" pin="11" pinfunction="Y3" pintype="output"/>
+    </net>
+    <net code="104" name="/G_72">
+      <node ref="U10" pin="3" pinfunction="Y0" pintype="output"/>
+      <node ref="U10" pin="5" pinfunction="B1" pintype="input"/>
+    </net>
+    <net code="105" name="/G_73">
+      <node ref="U10" pin="6" pinfunction="Y1" pintype="output"/>
+      <node ref="U35" pin="9" pinfunction="A2" pintype="input"/>
+    </net>
+    <net code="106" name="/G_74">
+      <node ref="U14" pin="4" pinfunction="A1" pintype="input"/>
+      <node ref="U35" pin="8" pinfunction="Y2" pintype="output"/>
+    </net>
+    <net code="107" name="/G_75">
+      <node ref="U10" pin="9" pinfunction="A2" pintype="input"/>
+      <node ref="U44" pin="10" pinfunction="Y4" pintype="output"/>
+    </net>
+    <net code="108" name="/G_76">
+      <node ref="U10" pin="12" pinfunction="A3" pintype="input"/>
+      <node ref="U44" pin="12" pinfunction="Y5" pintype="output"/>
+    </net>
+    <net code="109" name="/G_77">
+      <node ref="U11" pin="1" pinfunction="A0" pintype="input"/>
+      <node ref="U45" pin="2" pinfunction="Y0" pintype="output"/>
+    </net>
+    <net code="110" name="/G_78">
+      <node ref="U11" pin="2" pinfunction="B0" pintype="input"/>
+      <node ref="U45" pin="4" pinfunction="Y1" pintype="output"/>
+    </net>
+    <net code="111" name="/G_79">
+      <node ref="U11" pin="9" pinfunction="A2" pintype="input"/>
+      <node ref="U45" pin="6" pinfunction="Y2" pintype="output"/>
+    </net>
+    <net code="112" name="/G_80">
+      <node ref="U10" pin="8" pinfunction="Y2" pintype="output"/>
+      <node ref="U11" pin="4" pinfunction="A1" pintype="input"/>
+    </net>
+    <net code="113" name="/G_81">
+      <node ref="U10" pin="11" pinfunction="Y3" pintype="output"/>
+      <node ref="U11" pin="5" pinfunction="B1" pintype="input"/>
+    </net>
+    <net code="114" name="/G_82">
+      <node ref="U11" pin="10" pinfunction="B2" pintype="input"/>
+      <node ref="U11" pin="3" pinfunction="Y0" pintype="output"/>
+    </net>
+    <net code="115" name="/G_83">
+      <node ref="U11" pin="12" pinfunction="A3" pintype="input"/>
+      <node ref="U11" pin="6" pinfunction="Y1" pintype="output"/>
+    </net>
+    <net code="116" name="/G_84">
+      <node ref="U11" pin="13" pinfunction="B3" pintype="input"/>
+      <node ref="U11" pin="8" pinfunction="Y2" pintype="output"/>
+    </net>
+    <net code="117" name="/G_85">
+      <node ref="U11" pin="11" pinfunction="Y3" pintype="output"/>
+      <node ref="U12" pin="1" pinfunction="A0" pintype="input"/>
+      <node ref="U12" pin="9" pinfunction="A2" pintype="input"/>
+    </net>
+    <net code="118" name="/G_86">
+      <node ref="U12" pin="2" pinfunction="B0" pintype="input"/>
+      <node ref="U45" pin="8" pinfunction="Y3" pintype="output"/>
+    </net>
+    <net code="119" name="/G_87">
+      <node ref="U12" pin="12" pinfunction="A3" pintype="input"/>
+      <node ref="U12" pin="4" pinfunction="A1" pintype="input"/>
+      <node ref="U45" pin="10" pinfunction="Y4" pintype="output"/>
+    </net>
+    <net code="120" name="/G_88">
+      <node ref="U12" pin="3" pinfunction="Y0" pintype="output"/>
+      <node ref="U12" pin="5" pinfunction="B1" pintype="input"/>
+    </net>
+    <net code="121" name="/G_89">
+      <node ref="U12" pin="6" pinfunction="Y1" pintype="output"/>
+      <node ref="U13" pin="9" pinfunction="A2" pintype="input"/>
+    </net>
+    <net code="122" name="/G_90">
+      <node ref="U12" pin="13" pinfunction="B3" pintype="input"/>
+      <node ref="U12" pin="8" pinfunction="Y2" pintype="output"/>
+    </net>
+    <net code="123" name="/G_91">
+      <node ref="U12" pin="11" pinfunction="Y3" pintype="output"/>
+      <node ref="U14" pin="5" pinfunction="B1" pintype="input"/>
+    </net>
+    <net code="124" name="/G_92">
+      <node ref="U13" pin="12" pinfunction="A3" pintype="input"/>
+      <node ref="U39" pin="10" pinfunction="B2" pintype="input"/>
+      <node ref="U45" pin="12" pinfunction="Y5" pintype="output"/>
+    </net>
+    <net code="125" name="/G_93">
+      <node ref="U13" pin="3" pinfunction="Y0" pintype="output"/>
+      <node ref="U36" pin="4" pinfunction="A1" pintype="input"/>
+    </net>
+    <net code="126" name="/G_94">
+      <node ref="U13" pin="6" pinfunction="Y1" pintype="output"/>
+      <node ref="U35" pin="13" pinfunction="B3" pintype="input"/>
+    </net>
+    <net code="127" name="/G_95">
+      <node ref="U13" pin="10" pinfunction="B2" pintype="input"/>
+      <node ref="U35" pin="11" pinfunction="Y3" pintype="output"/>
+    </net>
+    <net code="128" name="/G_96">
+      <node ref="U13" pin="8" pinfunction="Y2" pintype="output"/>
+      <node ref="U36" pin="5" pinfunction="B1" pintype="input"/>
+    </net>
+    <net code="129" name="/G_97">
+      <node ref="U36" pin="3" pinfunction="Y0" pintype="output"/>
+      <node ref="U36" pin="9" pinfunction="A2" pintype="input"/>
+    </net>
+    <net code="130" name="/G_98">
+      <node ref="U36" pin="10" pinfunction="B2" pintype="input"/>
+      <node ref="U36" pin="6" pinfunction="Y1" pintype="output"/>
+    </net>
+    <net code="131" name="/G_99">
+      <node ref="U13" pin="13" pinfunction="B3" pintype="input"/>
+      <node ref="U36" pin="8" pinfunction="Y2" pintype="output"/>
+    </net>
+    <net code="132" name="/G_101">
+      <node ref="U14" pin="9" pinfunction="A2" pintype="input"/>
+      <node ref="U39" pin="9" pinfunction="A2" pintype="input"/>
+      <node ref="U46" pin="2" pinfunction="Y0" pintype="output"/>
+    </net>
+    <net code="133" name="/G_102">
+      <node ref="U14" pin="3" pinfunction="Y0" pintype="output"/>
+      <node ref="U36" pin="12" pinfunction="A3" pintype="input"/>
+    </net>
+    <net code="134" name="/G_103">
+      <node ref="U14" pin="6" pinfunction="Y1" pintype="output"/>
+      <node ref="U37" pin="1" pinfunction="A0" pintype="input"/>
+    </net>
+    <net code="135" name="/G_104">
+      <node ref="U36" pin="11" pinfunction="Y3" pintype="output"/>
+      <node ref="U37" pin="2" pinfunction="B0" pintype="input"/>
+    </net>
+    <net code="136" name="/G_105">
+      <node ref="U14" pin="10" pinfunction="B2" pintype="input"/>
+      <node ref="U37" pin="3" pinfunction="Y0" pintype="output"/>
+    </net>
+    <net code="137" name="/G_107">
+      <node ref="U15" pin="4" pinfunction="A1" pintype="input"/>
+      <node ref="U37" pin="6" pinfunction="Y1" pintype="output"/>
+      <node ref="U46" pin="3" pinfunction="A1" pintype="input"/>
+    </net>
+    <net code="138" name="/G_108">
+      <node ref="U15" pin="1" pinfunction="A0" pintype="input"/>
+      <node ref="U46" pin="4" pinfunction="Y1" pintype="output"/>
+    </net>
+    <net code="139" name="/G_109">
+      <node ref="U14" pin="11" pinfunction="Y3" pintype="output"/>
+      <node ref="U15" pin="2" pinfunction="B0" pintype="input"/>
+      <node ref="U15" pin="5" pinfunction="B1" pintype="input"/>
+    </net>
+    <net code="140" name="/G_113">
+      <node ref="U15" pin="11" pinfunction="Y3" pintype="output"/>
+      <node ref="U16" pin="12" pinfunction="A3" pintype="input"/>
+    </net>
+    <net code="141" name="/G_114">
+      <node ref="U16" pin="13" pinfunction="B3" pintype="input"/>
+      <node ref="U16" pin="3" pinfunction="Y0" pintype="output"/>
+    </net>
+    <net code="142" name="/G_115">
+      <node ref="U16" pin="6" pinfunction="Y1" pintype="output"/>
+      <node ref="U17" pin="1" pinfunction="A0" pintype="input"/>
+    </net>
+    <net code="143" name="/G_116">
+      <node ref="U16" pin="8" pinfunction="Y2" pintype="output"/>
+      <node ref="U17" pin="2" pinfunction="B0" pintype="input"/>
+    </net>
+    <net code="144" name="/G_117">
+      <node ref="U16" pin="11" pinfunction="Y3" pintype="output"/>
+      <node ref="U17" pin="4" pinfunction="A1" pintype="input"/>
+    </net>
+    <net code="145" name="/G_118">
+      <node ref="U17" pin="3" pinfunction="Y0" pintype="output"/>
+      <node ref="U17" pin="5" pinfunction="B1" pintype="input"/>
+    </net>
+    <net code="146" name="/G_119">
+      <node ref="U17" pin="6" pinfunction="Y1" pintype="output"/>
+      <node ref="U46" pin="5" pinfunction="A2" pintype="input"/>
+    </net>
+    <net code="147" name="/G_120">
+      <node ref="U17" pin="9" pinfunction="A2" pintype="input"/>
+      <node ref="U46" pin="6" pinfunction="Y2" pintype="output"/>
+    </net>
+    <net code="148" name="/G_121">
+      <node ref="U17" pin="8" pinfunction="Y2" pintype="output"/>
+      <node ref="U41" pin="12" pinfunction="A3" pintype="input"/>
+      <node ref="U41" pin="2" pinfunction="B0" pintype="input"/>
+      <node ref="U41" pin="4" pinfunction="A1" pintype="input"/>
+    </net>
+    <net code="149" name="/G_122">
+      <node ref="U17" pin="13" pinfunction="B3" pintype="input"/>
+      <node ref="U20" pin="2" pinfunction="B0" pintype="input"/>
+      <node ref="U46" pin="8" pinfunction="Y3" pintype="output"/>
+    </net>
+    <net code="150" name="/G_123">
+      <node ref="U18" pin="1" pinfunction="A0" pintype="input"/>
+      <node ref="U46" pin="10" pinfunction="Y4" pintype="output"/>
+    </net>
+    <net code="151" name="/G_124">
+      <node ref="U17" pin="11" pinfunction="Y3" pintype="output"/>
+      <node ref="U18" pin="4" pinfunction="A1" pintype="input"/>
+      <node ref="U19" pin="4" pinfunction="A1" pintype="input"/>
+    </net>
+    <net code="152" name="/G_125">
+      <node ref="U18" pin="3" pinfunction="Y0" pintype="output"/>
+      <node ref="U18" pin="5" pinfunction="B1" pintype="input"/>
+      <node ref="U47" pin="1" pinfunction="A0" pintype="input"/>
+    </net>
+    <net code="153" name="/G_127">
+      <node ref="U18" pin="13" pinfunction="B3" pintype="input"/>
+      <node ref="U20" pin="9" pinfunction="A2" pintype="input"/>
+      <node ref="U22" pin="1" pinfunction="A0" pintype="input"/>
+      <node ref="U37" pin="8" pinfunction="Y2" pintype="output"/>
+    </net>
+    <net code="154" name="/G_128">
+      <node ref="U18" pin="8" pinfunction="Y2" pintype="output"/>
+      <node ref="U19" pin="1" pinfunction="A0" pintype="input"/>
+      <node ref="U20" pin="10" pinfunction="B2" pintype="input"/>
+    </net>
+    <net code="155" name="/G_129">
+      <node ref="U18" pin="11" pinfunction="Y3" pintype="output"/>
+      <node ref="U19" pin="2" pinfunction="B0" pintype="input"/>
+    </net>
+    <net code="156" name="/G_131">
+      <node ref="U19" pin="5" pinfunction="B1" pintype="input"/>
+      <node ref="U46" pin="12" pinfunction="Y5" pintype="output"/>
+    </net>
+    <net code="157" name="/G_132">
+      <node ref="U19" pin="6" pinfunction="Y1" pintype="output"/>
+      <node ref="U37" pin="12" pinfunction="A3" pintype="input"/>
+    </net>
+    <net code="158" name="/G_133">
+      <node ref="U19" pin="13" pinfunction="B3" pintype="input"/>
+      <node ref="U19" pin="8" pinfunction="Y2" pintype="output"/>
+      <node ref="U38" pin="4" pinfunction="A1" pintype="input"/>
+    </net>
+    <net code="159" name="/G_134">
+      <node ref="U19" pin="11" pinfunction="Y3" pintype="output"/>
+      <node ref="U38" pin="1" pinfunction="A0" pintype="input"/>
+    </net>
+    <net code="160" name="/G_135">
+      <node ref="U37" pin="11" pinfunction="Y3" pintype="output"/>
+      <node ref="U38" pin="2" pinfunction="B0" pintype="input"/>
+    </net>
+    <net code="161" name="/G_136">
+      <node ref="U22" pin="13" pinfunction="B3" pintype="input"/>
+      <node ref="U38" pin="3" pinfunction="Y0" pintype="output"/>
+    </net>
+    <net code="162" name="/G_137">
+      <node ref="U20" pin="4" pinfunction="A1" pintype="input"/>
+      <node ref="U47" pin="2" pinfunction="Y0" pintype="output"/>
+    </net>
+    <net code="163" name="/G_138">
+      <node ref="U20" pin="3" pinfunction="Y0" pintype="output"/>
+      <node ref="U20" pin="5" pinfunction="B1" pintype="input"/>
+    </net>
+    <net code="164" name="/G_139">
+      <node ref="U20" pin="6" pinfunction="Y1" pintype="output"/>
+      <node ref="U38" pin="9" pinfunction="A2" pintype="input"/>
+    </net>
+    <net code="165" name="/G_140">
+      <node ref="U20" pin="8" pinfunction="Y2" pintype="output"/>
+      <node ref="U38" pin="5" pinfunction="B1" pintype="input"/>
+    </net>
+    <net code="166" name="/G_141">
+      <node ref="U38" pin="10" pinfunction="B2" pintype="input"/>
+      <node ref="U38" pin="6" pinfunction="Y1" pintype="output"/>
+    </net>
+    <net code="167" name="/G_143">
+      <node ref="U20" pin="12" pinfunction="A3" pintype="input"/>
+      <node ref="U47" pin="4" pinfunction="Y1" pintype="output"/>
+    </net>
+    <net code="168" name="/G_144">
+      <node ref="U20" pin="11" pinfunction="Y3" pintype="output"/>
+      <node ref="U38" pin="13" pinfunction="B3" pintype="input"/>
+    </net>
+    <net code="169" name="/G_146">
+      <node ref="U21" pin="3" pinfunction="Y0" pintype="output"/>
+      <node ref="U39" pin="1" pinfunction="A0" pintype="input"/>
+    </net>
+    <net code="170" name="/G_147">
+      <node ref="U21" pin="6" pinfunction="Y1" pintype="output"/>
+      <node ref="U47" pin="5" pinfunction="A2" pintype="input"/>
+    </net>
+    <net code="171" name="/G_148">
+      <node ref="U21" pin="10" pinfunction="B2" pintype="input"/>
+      <node ref="U47" pin="6" pinfunction="Y2" pintype="output"/>
+    </net>
+    <net code="172" name="/G_149">
+      <node ref="U21" pin="8" pinfunction="Y2" pintype="output"/>
+      <node ref="U39" pin="2" pinfunction="B0" pintype="input"/>
+    </net>
+    <net code="173" name="/G_151">
+      <node ref="U21" pin="12" pinfunction="A3" pintype="input"/>
+      <node ref="U47" pin="8" pinfunction="Y3" pintype="output"/>
+    </net>
+    <net code="174" name="/G_152">
+      <node ref="U21" pin="11" pinfunction="Y3" pintype="output"/>
+      <node ref="U22" pin="2" pinfunction="B0" pintype="input"/>
+      <node ref="U39" pin="4" pinfunction="A1" pintype="input"/>
+    </net>
+    <net code="175" name="/G_155">
+      <node ref="U22" pin="9" pinfunction="A2" pintype="input"/>
+      <node ref="U23" pin="1" pinfunction="A0" pintype="input"/>
+      <node ref="U47" pin="10" pinfunction="Y4" pintype="output"/>
+    </net>
+    <net code="176" name="/G_156">
+      <node ref="U22" pin="5" pinfunction="B1" pintype="input"/>
+      <node ref="U39" pin="8" pinfunction="Y2" pintype="output"/>
+    </net>
+    <net code="177" name="/G_157">
+      <node ref="U22" pin="6" pinfunction="Y1" pintype="output"/>
+      <node ref="U39" pin="12" pinfunction="A3" pintype="input"/>
+    </net>
+    <net code="178" name="/G_158">
+      <node ref="U22" pin="10" pinfunction="B2" pintype="input"/>
+      <node ref="U39" pin="11" pinfunction="Y3" pintype="output"/>
+    </net>
+    <net code="179" name="/G_160">
+      <node ref="U40" pin="3" pinfunction="Y0" pintype="output"/>
+      <node ref="U40" pin="4" pinfunction="A1" pintype="input"/>
+    </net>
+    <net code="180" name="/G_162">
+      <node ref="U22" pin="11" pinfunction="Y3" pintype="output"/>
+      <node ref="U23" pin="2" pinfunction="B0" pintype="input"/>
+    </net>
+    <net code="181" name="/G_163">
+      <node ref="U23" pin="3" pinfunction="Y0" pintype="output"/>
+      <node ref="U40" pin="12" pinfunction="A3" pintype="input"/>
+    </net>
+    <net code="182" name="/G_164">
+      <node ref="U40" pin="13" pinfunction="B3" pintype="input"/>
+      <node ref="U40" pin="8" pinfunction="Y2" pintype="output"/>
+    </net>
+    <net code="183" name="/G_166">
+      <node ref="U23" pin="9" pinfunction="A2" pintype="input"/>
+      <node ref="U24" pin="4" pinfunction="A1" pintype="input"/>
+      <node ref="U41" pin="3" pinfunction="Y0" pintype="output"/>
+      <node ref="U47" pin="13" pinfunction="A5" pintype="input"/>
+    </net>
+    <net code="184" name="/G_167">
+      <node ref="U23" pin="6" pinfunction="Y1" pintype="output"/>
+      <node ref="U41" pin="5" pinfunction="B1" pintype="input"/>
+    </net>
+    <net code="185" name="/G_168">
+      <node ref="U23" pin="10" pinfunction="B2" pintype="input"/>
+      <node ref="U41" pin="6" pinfunction="Y1" pintype="output"/>
+    </net>
+    <net code="186" name="/G_169">
+      <node ref="U23" pin="8" pinfunction="Y2" pintype="output"/>
+      <node ref="U41" pin="9" pinfunction="A2" pintype="input"/>
+    </net>
+    <net code="187" name="/G_170">
+      <node ref="U23" pin="13" pinfunction="B3" pintype="input"/>
+      <node ref="U24" pin="10" pinfunction="B2" pintype="input"/>
+      <node ref="U47" pin="12" pinfunction="Y5" pintype="output"/>
+    </net>
+    <net code="188" name="/G_171">
+      <node ref="U23" pin="11" pinfunction="Y3" pintype="output"/>
+      <node ref="U41" pin="10" pinfunction="B2" pintype="input"/>
+    </net>
+    <net code="189" name="/G_173">
+      <node ref="U24" pin="3" pinfunction="Y0" pintype="output"/>
+      <node ref="U41" pin="13" pinfunction="B3" pintype="input"/>
+    </net>
+    <net code="190" name="/G_174">
+      <node ref="U24" pin="5" pinfunction="B1" pintype="input"/>
+      <node ref="U41" pin="11" pinfunction="Y3" pintype="output"/>
+    </net>
+    <net code="191" name="/G_175">
+      <node ref="U24" pin="6" pinfunction="Y1" pintype="output"/>
+      <node ref="U42" pin="1" pinfunction="A0" pintype="input"/>
+    </net>
+    <net code="192" name="/G_176">
+      <node ref="U24" pin="8" pinfunction="Y2" pintype="output"/>
+      <node ref="U42" pin="2" pinfunction="B0" pintype="input"/>
+    </net>
+    <net code="193" name="/G_178">
+      <node ref="U42" pin="4" pinfunction="A1" pintype="input"/>
+      <node ref="U48" pin="2" pinfunction="Y0" pintype="output"/>
+    </net>
+    <net code="194" name="/G_179">
+      <node ref="U42" pin="5" pinfunction="B1" pintype="input"/>
+      <node ref="U48" pin="4" pinfunction="Y1" pintype="output"/>
+    </net>
+    <net code="195" name="/G_180">
+      <node ref="U25" pin="2" pinfunction="B0" pintype="input"/>
+      <node ref="U42" pin="6" pinfunction="Y1" pintype="output"/>
+    </net>
+    <net code="196" name="/G_181">
+      <node ref="U24" pin="11" pinfunction="Y3" pintype="output"/>
+      <node ref="U25" pin="4" pinfunction="A1" pintype="input"/>
+    </net>
+    <net code="197" name="/G_182">
+      <node ref="U25" pin="3" pinfunction="Y0" pintype="output"/>
+      <node ref="U25" pin="9" pinfunction="A2" pintype="input"/>
+    </net>
+    <net code="198" name="/G_183">
+      <node ref="U25" pin="10" pinfunction="B2" pintype="input"/>
+      <node ref="U25" pin="6" pinfunction="Y1" pintype="output"/>
+    </net>
+    <net code="199" name="/HALTED">
+      <node ref="U1" pin="15" pinfunction="Q5" pintype="output"/>
+      <node ref="U40" pin="2" pinfunction="B0" pintype="input"/>
+      <node ref="U43" pin="3" pinfunction="A1" pintype="input"/>
+    </net>
+    <net code="200" name="/HALTED_D">
+      <node ref="U1" pin="14" pinfunction="D5" pintype="input"/>
+      <node ref="U40" pin="6" pinfunction="Y1" pintype="output"/>
+    </net>
+    <net code="201" name="/HALT_EXEC">
+      <node ref="U15" pin="8" pinfunction="Y2" pintype="output"/>
+      <node ref="U17" pin="10" pinfunction="B2" pintype="input"/>
+      <node ref="U40" pin="10" pinfunction="B2" pintype="input"/>
+      <node ref="U40" pin="5" pinfunction="B1" pintype="input"/>
+    </net>
+    <net code="202" name="/IR_0">
+      <node ref="U12" pin="10" pinfunction="B2" pintype="input"/>
+      <node ref="U15" pin="12" pinfunction="A3" pintype="input"/>
+      <node ref="U45" pin="9" pinfunction="A3" pintype="input"/>
+    </net>
+    <net code="203" name="/IR_1">
+      <node ref="U15" pin="13" pinfunction="B3" pintype="input"/>
+      <node ref="U45" pin="5" pinfunction="A2" pintype="input"/>
+    </net>
+    <net code="204" name="/IR_2">
+      <node ref="U16" pin="1" pinfunction="A0" pintype="input"/>
+      <node ref="U45" pin="3" pinfunction="A1" pintype="input"/>
+    </net>
+    <net code="205" name="/IR_3">
+      <node ref="U16" pin="2" pinfunction="B0" pintype="input"/>
+      <node ref="U45" pin="1" pinfunction="A0" pintype="input"/>
+    </net>
+    <net code="206" name="/IR_4">
+      <node ref="U10" pin="13" pinfunction="B3" pintype="input"/>
+      <node ref="U16" pin="4" pinfunction="A1" pintype="input"/>
+    </net>
+    <net code="207" name="/IR_5">
+      <node ref="U16" pin="5" pinfunction="B1" pintype="input"/>
+      <node ref="U44" pin="13" pinfunction="A5" pintype="input"/>
+    </net>
+    <net code="208" name="/IR_6">
+      <node ref="U10" pin="10" pinfunction="B2" pintype="input"/>
+      <node ref="U16" pin="9" pinfunction="A2" pintype="input"/>
+    </net>
+    <net code="209" name="/IR_7">
+      <node ref="U16" pin="10" pinfunction="B2" pintype="input"/>
+      <node ref="U44" pin="11" pinfunction="A4" pintype="input"/>
+    </net>
+    <net code="210" name="/MEM_N_0">
+      <node ref="U14" pin="13" pinfunction="B3" pintype="input"/>
+      <node ref="U43" pin="5" pinfunction="A2" pintype="input"/>
+    </net>
+    <net code="211" name="/POP_BAD">
+      <node ref="U14" pin="8" pinfunction="Y2" pintype="output"/>
+      <node ref="U24" pin="2" pinfunction="B0" pintype="input"/>
+      <node ref="U37" pin="4" pinfunction="A1" pintype="input"/>
+    </net>
+    <net code="212" name="/POWER_GOOD">
+      <node ref="U4" pin="1" pinfunction="A0" pintype="input"/>
+    </net>
+    <net code="213" name="/PUSH_BAD">
+      <node ref="U13" pin="11" pinfunction="Y3" pintype="output"/>
+      <node ref="U23" pin="5" pinfunction="B1" pintype="input"/>
+      <node ref="U37" pin="5" pinfunction="B1" pintype="input"/>
+    </net>
+    <net code="214" name="/RESET_N">
+      <node ref="U4" pin="2" pinfunction="B0" pintype="input"/>
+    </net>
+    <net code="215" name="/RESPONSE">
+      <node ref="U1" pin="2" pinfunction="Q0" pintype="output"/>
+      <node ref="U20" pin="13" pinfunction="B3" pintype="input"/>
+      <node ref="U21" pin="2" pinfunction="B0" pintype="input"/>
+      <node ref="U26" pin="2" pinfunction="B0" pintype="input"/>
+      <node ref="U42" pin="9" pinfunction="A2" pintype="input"/>
+    </net>
+    <net code="216" name="/RESP_D">
+      <node ref="U1" pin="3" pinfunction="D0" pintype="input"/>
+      <node ref="U38" pin="11" pinfunction="Y3" pintype="output"/>
+    </net>
+    <net code="217" name="/RETIRED">
+      <node ref="U2" pin="7" pinfunction="Q2" pintype="output"/>
+    </net>
+    <net code="218" name="/RETIRED_D">
+      <node ref="U2" pin="6" pinfunction="D2" pintype="input"/>
+      <node ref="U40" pin="11" pinfunction="Y3" pintype="output"/>
+    </net>
+    <net code="219" name="/RUN">
+      <node ref="U18" pin="9" pinfunction="A2" pintype="input"/>
+      <node ref="U4" pin="10" pinfunction="B2" pintype="input"/>
+    </net>
+    <net code="220" name="/RUNNING">
+      <node ref="U5" pin="12" pinfunction="A3" pintype="input"/>
+      <node ref="U5" pin="3" pinfunction="Y0" pintype="output"/>
+      <node ref="U5" pin="5" pinfunction="B1" pintype="input"/>
+    </net>
+    <net code="221" name="/SAFE">
+      <node ref="U1" pin="1" pinfunction="CLR_N" pintype="input"/>
+      <node ref="U2" pin="1" pinfunction="CLR_N" pintype="input"/>
+      <node ref="U4" pin="3" pinfunction="Y0" pintype="output"/>
+      <node ref="U4" pin="5" pinfunction="B1" pintype="input"/>
+      <node ref="U5" pin="13" pinfunction="B3" pintype="input"/>
+    </net>
+    <net code="222" name="/SP_0">
+      <node ref="U26" pin="9" pinfunction="A2" pintype="input"/>
+      <node ref="U7" pin="1" pinfunction="A0" pintype="input"/>
+    </net>
+    <net code="223" name="/SP_1">
+      <node ref="U26" pin="10" pinfunction="B2" pintype="input"/>
+      <node ref="U31" pin="4" pinfunction="A1" pintype="input"/>
+      <node ref="U7" pin="2" pinfunction="B0" pintype="input"/>
+    </net>
+    <net code="224" name="/SP_2">
+      <node ref="U26" pin="12" pinfunction="A3" pintype="input"/>
+      <node ref="U31" pin="5" pinfunction="B1" pintype="input"/>
+      <node ref="U7" pin="4" pinfunction="A1" pintype="input"/>
+    </net>
+    <net code="225" name="/SP_3">
+      <node ref="U26" pin="13" pinfunction="B3" pintype="input"/>
+      <node ref="U31" pin="9" pinfunction="A2" pintype="input"/>
+      <node ref="U7" pin="5" pinfunction="B1" pintype="input"/>
+    </net>
+    <net code="226" name="/SP_4">
+      <node ref="U27" pin="1" pinfunction="A0" pintype="input"/>
+      <node ref="U31" pin="10" pinfunction="B2" pintype="input"/>
+      <node ref="U7" pin="9" pinfunction="A2" pintype="input"/>
+    </net>
+    <net code="227" name="/SP_5">
+      <node ref="U27" pin="2" pinfunction="B0" pintype="input"/>
+      <node ref="U31" pin="12" pinfunction="A3" pintype="input"/>
+      <node ref="U7" pin="10" pinfunction="B2" pintype="input"/>
+    </net>
+    <net code="228" name="/SP_6">
+      <node ref="U27" pin="4" pinfunction="A1" pintype="input"/>
+      <node ref="U31" pin="13" pinfunction="B3" pintype="input"/>
+      <node ref="U7" pin="12" pinfunction="A3" pintype="input"/>
+    </net>
+    <net code="229" name="/SP_7">
+      <node ref="U27" pin="5" pinfunction="B1" pintype="input"/>
+      <node ref="U32" pin="1" pinfunction="A0" pintype="input"/>
+      <node ref="U7" pin="13" pinfunction="B3" pintype="input"/>
+    </net>
+    <net code="230" name="/SP_8">
+      <node ref="U27" pin="9" pinfunction="A2" pintype="input"/>
+      <node ref="U32" pin="2" pinfunction="B0" pintype="input"/>
+      <node ref="U8" pin="1" pinfunction="A0" pintype="input"/>
+    </net>
+    <net code="231" name="/SP_9">
+      <node ref="U27" pin="10" pinfunction="B2" pintype="input"/>
+      <node ref="U32" pin="5" pinfunction="B1" pintype="input"/>
+      <node ref="U8" pin="2" pinfunction="B0" pintype="input"/>
+    </net>
+    <net code="232" name="/SP_10">
+      <node ref="U27" pin="12" pinfunction="A3" pintype="input"/>
+      <node ref="U32" pin="4" pinfunction="A1" pintype="input"/>
+      <node ref="U8" pin="4" pinfunction="A1" pintype="input"/>
+    </net>
+    <net code="233" name="/SP_11">
+      <node ref="U27" pin="13" pinfunction="B3" pintype="input"/>
+      <node ref="U32" pin="9" pinfunction="A2" pintype="input"/>
+      <node ref="U8" pin="5" pinfunction="B1" pintype="input"/>
+    </net>
+    <net code="234" name="/SP_12">
+      <node ref="U28" pin="1" pinfunction="A0" pintype="input"/>
+      <node ref="U32" pin="10" pinfunction="B2" pintype="input"/>
+      <node ref="U8" pin="9" pinfunction="A2" pintype="input"/>
+    </net>
+    <net code="235" name="/SP_13">
+      <node ref="U28" pin="2" pinfunction="B0" pintype="input"/>
+      <node ref="U32" pin="12" pinfunction="A3" pintype="input"/>
+      <node ref="U34" pin="13" pinfunction="B3" pintype="input"/>
+      <node ref="U8" pin="10" pinfunction="B2" pintype="input"/>
+    </net>
+    <net code="236" name="/SP_14">
+      <node ref="U50" pin="2" pinfunction="A0" pintype="input"/>
+      <node ref="U50" pin="5" pinfunction="A1" pintype="input"/>
+    </net>
+    <net code="237" name="/SP_15">
+      <node ref="U49" pin="12" pinfunction="A3" pintype="input"/>
+      <node ref="U49" pin="9" pinfunction="A2" pintype="input"/>
+    </net>
+    <net code="238" name="/STACK_CHECKED">
+      <node ref="U1" pin="12" pinfunction="Q4" pintype="output"/>
+      <node ref="U39" pin="13" pinfunction="B3" pintype="input"/>
+      <node ref="U45" pin="11" pinfunction="A4" pintype="input"/>
+    </net>
+    <net code="239" name="/STATE_0">
+      <node ref="U42" pin="8" pinfunction="Y2" pintype="output"/>
+    </net>
+    <net code="240" name="/STATE_1">
+      <node ref="U42" pin="11" pinfunction="Y3" pintype="output"/>
+    </net>
+    <net code="241" name="/USE_X">
+      <node ref="U18" pin="2" pinfunction="B0" pintype="input"/>
+      <node ref="U24" pin="13" pinfunction="B3" pintype="input"/>
+    </net>
+    <net code="242" name="/X_COMPLETED">
+      <node ref="U1" pin="10" pinfunction="Q3" pintype="output"/>
+      <node ref="U37" pin="9" pinfunction="A2" pintype="input"/>
+    </net>
+    <net code="243" name="/X_COMP_D">
+      <node ref="U1" pin="11" pinfunction="D3" pintype="input"/>
+      <node ref="U22" pin="3" pinfunction="Y0" pintype="output"/>
+    </net>
+    <net code="244" name="/X_COUNT">
+      <node ref="U25" pin="8" pinfunction="Y2" pintype="output"/>
+    </net>
+    <net code="245" name="/X_D">
+      <node ref="U1" pin="6" pinfunction="D2" pintype="input"/>
+      <node ref="U39" pin="6" pinfunction="Y1" pintype="output"/>
+    </net>
+    <net code="246" name="/X_DONE">
+      <node ref="U37" pin="10" pinfunction="B2" pintype="input"/>
+    </net>
+    <net code="247" name="/X_LOAD">
+      <node ref="U1" pin="7" pinfunction="Q2" pintype="output"/>
+      <node ref="U50" pin="12" pinfunction="A3" pintype="input"/>
+      <node ref="U50" pin="9" pinfunction="A2" pintype="input"/>
+    </net>
+    <net code="248" name="/X_N_1">
+      <node ref="U46" pin="11" pinfunction="A4" pintype="input"/>
+    </net>
+    <net code="249" name="/X_N_2">
+      <node ref="U48" pin="1" pinfunction="A0" pintype="input"/>
+    </net>
+    <net code="250" name="/X_N_3">
+      <node ref="U48" pin="3" pinfunction="A1" pintype="input"/>
+    </net>
+    <net code="251" name="/X_READY">
+      <node ref="U5" pin="2" pinfunction="B0" pintype="input"/>
+    </net>
+    <net code="252" name="/X_RESUME">
+      <node ref="U19" pin="3" pinfunction="Y0" pintype="output"/>
+      <node ref="U37" pin="13" pinfunction="B3" pintype="input"/>
+      <node ref="U47" pin="9" pinfunction="A3" pintype="input"/>
+    </net>
+    <net code="253" name="/X_START">
+      <node ref="U18" pin="6" pinfunction="Y1" pintype="output"/>
+      <node ref="U39" pin="5" pinfunction="B1" pintype="input"/>
+      <node ref="U46" pin="13" pinfunction="A5" pintype="input"/>
+    </net>
+    <net code="254" name="unconnected-(U2-Q3-Pad10)">
+      <node ref="U2" pin="10" pinfunction="Q3" pintype="output+no_connect"/>
+    </net>
+    <net code="255" name="unconnected-(U2-Q4-Pad12)">
+      <node ref="U2" pin="12" pinfunction="Q4" pintype="output+no_connect"/>
+    </net>
+    <net code="256" name="unconnected-(U2-Q5-Pad15)">
+      <node ref="U2" pin="15" pinfunction="Q5" pintype="output+no_connect"/>
+    </net>
+    <net code="257" name="unconnected-(U3-Y1-Pad6)">
+      <node ref="U3" pin="6" pinfunction="Y1" pintype="output+no_connect"/>
+    </net>
+    <net code="258" name="unconnected-(U3-Y2-Pad8)">
+      <node ref="U3" pin="8" pinfunction="Y2" pintype="output+no_connect"/>
+    </net>
+    <net code="259" name="unconnected-(U3-Y3-Pad11)">
+      <node ref="U3" pin="11" pinfunction="Y3" pintype="output+no_connect"/>
+    </net>
+    <net code="260" name="unconnected-(U25-Y3-Pad11)">
+      <node ref="U25" pin="11" pinfunction="Y3" pintype="output+no_connect"/>
+    </net>
+    <net code="261" name="unconnected-(U48-Y2-Pad6)">
+      <node ref="U48" pin="6" pinfunction="Y2" pintype="output+no_connect"/>
+    </net>
+    <net code="262" name="unconnected-(U48-Y3-Pad8)">
+      <node ref="U48" pin="8" pinfunction="Y3" pintype="output+no_connect"/>
+    </net>
+    <net code="263" name="unconnected-(U48-Y4-Pad10)">
+      <node ref="U48" pin="10" pinfunction="Y4" pintype="output+no_connect"/>
+    </net>
+    <net code="264" name="unconnected-(U48-Y5-Pad12)">
+      <node ref="U48" pin="12" pinfunction="Y5" pintype="output+no_connect"/>
+    </net>
+    <net code="265" name="unconnected-(U51-Y2-Pad8)">
+      <node ref="U51" pin="8" pinfunction="Y2" pintype="output+no_connect"/>
+    </net>
+    <net code="266" name="unconnected-(U51-Y3-Pad11)">
+      <node ref="U51" pin="11" pinfunction="Y3" pintype="output+no_connect"/>
+    </net>
+  </nets>
+</export>

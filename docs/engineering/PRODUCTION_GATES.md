@@ -5,9 +5,9 @@ Este é o roteiro de evidências para chegar a uma placa produzível. Uma bancad
 | Etapa | Evidência necessária | Estado atual |
 |---|---|---|
 | Especificação | ISA, flags, mapa, reset, pilha, boot e periféricos conciliados | Modelos recuperados; divergências ainda documentadas |
-| Modelos de componentes | Funções, níveis ativos, carga/reset e comparação com datasheets identificados | Modelos funcionais de pacotes das NET-02–07; cenários temporais selecionados; memória/periféricos físicos pendentes |
-| Controle/datapath | Carga, retenção e efeitos únicos de COMMIT, inclusive reset/WAIT em fronteiras | SP/transações/microcódigo/ALU/registradores/PC/endereço integrados às 26 instruções; execução/guardas em validação NET-08; X ainda parcialmente referência |
-| Esquemático completo | Todos os pinos e alimentações, portas, inicialização e interfaces definidos | Esquemas parciais KiCad com pinos/netlists das NET-02–07; esquema global e interfaces ainda pendentes |
+| Modelos de componentes | Funções, níveis ativos, carga/reset e comparação com datasheets identificados | Modelos funcionais de pacotes das NET-02–08; cenários temporais selecionados; memória/periféricos físicos pendentes |
+| Controle/datapath | Carga, retenção e efeitos únicos de COMMIT, inclusive reset/WAIT em fronteiras | SP/transações/microcódigo/ALU/registradores/PC/endereço integrados às 26 instruções; execução/guardas NET-08 integradas; X ainda parcialmente referência |
+| Esquemático completo | Todos os pinos e alimentações, portas, inicialização e interfaces definidos | Esquemas parciais KiCad com pinos/netlists das NET-02–08; esquema global e interfaces ainda pendentes |
 | Simulação de netlist | Modelo derivado das ligações reais e regressão das 26 instruções | Netlists KiCad dos blocos integradas à CPU, com instruções/guardas/boot/quadro VGA comparados; sistema completo por pinos ainda pendente |
 | Temporização | Setup/hold com mínimos/máximos, carga, skew, duty cycle e cantos | Cenário parcial e monitores executados; fechamento completo pendente |
 | Elétrica | TTL/CMOS, drivers, DAC VGA, memória, ruído, alimentação, reset/brownout | Datasheets de candidatos arquivados; SPICE e medidas pendentes |

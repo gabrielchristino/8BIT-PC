@@ -1,5 +1,10 @@
 # Histórico preservado
 
+## NET-08 — 25/11/2026
+
+Controle de execução, guardas de pilha, fault e retire com 51 CIs derivados do esquema. Bancadas isoladas ideal/temporizada, dois negativos e regressão integrada completos. Logs preservam a falha inicial de polaridade MEM_N_0. Próximo X por pinos em trabalho separado; fabricação não liberada.
+
+
 ## NET-07 — 25/11/2026
 
 PC e caminho de endereço de 45 CIs derivados do esquema KiCad, regressão completa e testes negativos em verification/net07. Imagens/FAQ de membrana fornecidas pelo usuário preservadas com provenance e referência de contatos em docs/engineering/KEYPAD_CONNECTOR.md. Autorizada continuidade pelas etapas restantes; fabricação não liberada.

@@ -1,0 +1,128 @@
+{
+  "iteration": "NET-14A",
+  "date": "2026-11-25",
+  "base_git_commit": "9fae1298a3cd74844d294464bfdd0541241815af",
+  "scope": "Executable pre-design contract and consolidated review checklist, not physical raster or fabrication approval",
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "bytes": 13799,
+      "sha256": "11671ed068994037fe810e00f70fa927c54323e6a89694cd1bd908f8abd22301",
+      "origin": "New NET-14A work; development subdirectory preserves explicitly identified failed fixture evidence"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "bytes": 9993,
+      "sha256": "35967e70fb1a404bd4b66f0192482226c72affd885170562295f11493c9a6042",
+      "origin": "New NET-14A work; development subdirectory preserves explicitly identified failed fixture evidence"
+    },
+    {
+      "path": "DECISIONS.md",
+      "bytes": 23104,
+      "sha256": "95759b68717ed8dc6a05a6ca0a6120505c613751d954973d9219c35f6bc75150",
+      "origin": "New NET-14A work; development subdirectory preserves explicitly identified failed fixture evidence"
+    },
+    {
+      "path": "PROVENANCE.md",
+      "bytes": 15308,
+      "sha256": "1e1c15209673f41c5f3889ca05087fefeea938c8edd4d48dc7c0f0e98390e31d",
+      "origin": "New NET-14A work; development subdirectory preserves explicitly identified failed fixture evidence"
+    },
+    {
+      "path": "README.md",
+      "bytes": 6010,
+      "sha256": "b20fb433c3c3ba225303cb91ef8cb8f5fa2d5e2333ecf41b806576198cbc4a84",
+      "origin": "New NET-14A work; development subdirectory preserves explicitly identified failed fixture evidence"
+    },
+    {
+      "path": "ROADMAP.md",
+      "bytes": 13471,
+      "sha256": "838eeab6bb430991c5646ce67fa3d91ae363f9ff5639ee804dbd6d445ceb028a",
+      "origin": "New NET-14A work; development subdirectory preserves explicitly identified failed fixture evidence"
+    },
+    {
+      "path": "docs/engineering/NET14A.md",
+      "bytes": 6032,
+      "sha256": "a2cd2141478212930f2fd3d92d029560ccff1143aa40e63e142824e0cd2a2cc2",
+      "origin": "New NET-14A work; development subdirectory preserves explicitly identified failed fixture evidence"
+    },
+    {
+      "path": "docs/engineering/PRODUCTION_GATES.md",
+      "bytes": 3738,
+      "sha256": "46bec15b8aef5ac96844c65113a03539d61a5e4a5fe5a44840f1bd97e663ffb5",
+      "origin": "New NET-14A work; development subdirectory preserves explicitly identified failed fixture evidence"
+    },
+    {
+      "path": "docs/engineering/VALIDATION_STATUS.md",
+      "bytes": 6940,
+      "sha256": "b7e664b12196a8a06160618b61a76ec946fb1b7e7da47f82fc9494d334de2c50",
+      "origin": "New NET-14A work; development subdirectory preserves explicitly identified failed fixture evidence"
+    },
+    {
+      "path": "references/video-contract-2026-11-25.json",
+      "bytes": 2065,
+      "sha256": "577adf8216c1d136a9fee55502de03ed9e9b6fbaeebae543308e8c302f191109",
+      "origin": "New NET-14A work; development subdirectory preserves explicitly identified failed fixture evidence"
+    },
+    {
+      "path": "sim/net14a/tb_video_contract.sv",
+      "bytes": 4866,
+      "sha256": "7477a07db7aeb6d5bdc874ddd37bd0a1cb117ef940344f0d4d5327357ef58a55",
+      "origin": "New NET-14A work; development subdirectory preserves explicitly identified failed fixture evidence"
+    },
+    {
+      "path": "sim/net14a/video_contract.sv",
+      "bytes": 1524,
+      "sha256": "911720a0f953680ee17c392230494866d71fb04d91ab30da8f66dd9a72b48be0",
+      "origin": "New NET-14A work; development subdirectory preserves explicitly identified failed fixture evidence"
+    },
+    {
+      "path": "tools/record_net14a_manifest.py",
+      "bytes": 5629,
+      "sha256": "d235c6f499cd416336c8f1125bddcf7affac8caf6edc62713eaab691040af113",
+      "origin": "New NET-14A work; development subdirectory preserves explicitly identified failed fixture evidence"
+    },
+    {
+      "path": "tools/run_video_contract.py",
+      "bytes": 5803,
+      "sha256": "c9245902f258f98b20730149c8cd5027264f0896c67ed5b83f0f3e33eb4add97",
+      "origin": "New NET-14A work; development subdirectory preserves explicitly identified failed fixture evidence"
+    },
+    {
+      "path": "verification/net14a/baseline-integrity.json",
+      "bytes": 2260,
+      "sha256": "c50a2c7b8b99a0ecf638f2e9eca60709bcea77405615430dc51280e510383c48",
+      "origin": "New NET-14A work; development subdirectory preserves explicitly identified failed fixture evidence"
+    },
+    {
+      "path": "verification/net14a/development/initial-coverage-failure.json",
+      "bytes": 621,
+      "sha256": "b890fc9832445b59c1adca90f24eaf19e69af4427b6ca7f3b0b3d1f58231fbcb",
+      "origin": "New NET-14A work; development subdirectory preserves explicitly identified failed fixture evidence"
+    },
+    {
+      "path": "verification/net14a/development/results.json.initial.txt",
+      "bytes": 6446,
+      "sha256": "8153243b8ee506f0ca55f5c1e148ad753bbac95a36e16d94a4fb6c4e17a052cd",
+      "origin": "New NET-14A work; development subdirectory preserves explicitly identified failed fixture evidence"
+    },
+    {
+      "path": "verification/net14a/development/tb_video_contract.sv.initial.txt",
+      "bytes": 4276,
+      "sha256": "2fe9eb0bf177f279fd46b308b94bd3a65987dd3b572b20dcd4c63d1c60c58547",
+      "origin": "New NET-14A work; development subdirectory preserves explicitly identified failed fixture evidence"
+    },
+    {
+      "path": "verification/net14a/publication-preflight.json",
+      "bytes": 330,
+      "sha256": "d5914b3f4f79a705c267fdb22c17a87733c01374f06a3f68f33aa5ac54ea7b6d",
+      "origin": "New NET-14A work; development subdirectory preserves explicitly identified failed fixture evidence"
+    },
+    {
+      "path": "verification/net14a/results.json",
+      "bytes": 11668,
+      "sha256": "7862d12cd5c481f792a365330dabf4f071a2b677adde4df0dd2727efc5e5cd26",
+      "origin": "New NET-14A work; development subdirectory preserves explicitly identified failed fixture evidence"
+    }
+  ]
+}

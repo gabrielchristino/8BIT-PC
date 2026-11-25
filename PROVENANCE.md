@@ -27,6 +27,8 @@ Os downloads chegaram com nomes temporários; os nomes legíveis acima foram res
 
 ## Transformações e material novo
 
+NET-14A (25/11/2026), base 9fae1298a3cd74844d294464bfdd0541241815af: novo contrato comportamental de raster/fases e bancada em sim/net14a, ligados às netlists NET-13 preservadas. Novo runner registra ferramentas, comandos, fontes/hashes, dois quadros completos e negativos; não são dois arquivos de imagem nem novo boot de CPU. Fixture semeia VRAM explicitamente. PDFs TI já arquivados foram reutilizados sem alteração; referência primária de timing de vídeo e parâmetros derivados são identificados separadamente. Falha inicial de cobertura e fonte anterior da bancada foram preservadas. Lista consolidada distingue escopo de simulação, circuito pendente e lacunas históricas. Não há novo esquemático de raster nem validação física alegada.
+
 NET-13 (25/11/2026), base ce19e78eeb865e7787b5f913dd5a6aa6e3914547: novas folhas hardware/memory_bus e hardware/memory_bus_access, modelos em sim/net13 e novas ferramentas. Variante do controlador gerada separadamente da NET-12 adiciona janela registrada de driver. Pinagens de fabricantes -> KiCad/XML -> modelo de buses tri-state/chips/receptores/muxes. SRAM sem estado inicial garantido; fixtures explicitam inicialização e o programa completo a desabilita. Pull-ups têm ensaio RC separado, com cargas acima do orçamento rejeitadas. Novo PDF TI HCT244 original e referências anteriores têm URLs/hashes; imagem EEPROM exportada coincide com o hash do boot aceito. Fonte/log da fixture inicial e calibração negativa com controlador antigo são preservados. Nenhum dado novo é apresentado como recuperação histórica ou homologação física. Manifesto audita os treze snapshots anteriores nos respectivos commits.
 
 

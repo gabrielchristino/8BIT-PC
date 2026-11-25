@@ -1,5 +1,15 @@
 # Continuidade do ISA-1
 
+## Continuidade NET-14A
+
+- Leia docs/engineering/VALIDATION_STATUS.md e NET14A.md para o estado atual; checkboxes históricos do ROADMAP não são uma lista atualizada.
+- sim/net14a é contrato comportamental de fases/raster/captura, não netlist de CIs. Não alegar que o raster já foi mapeado ao KiCad nem que houve novo boot de CPU.
+- Teste de dois quadros usa VRAM explicitamente semeada, memória NET-13 com atrasos e escrita concorrente fora da área visível. Originais NET-13 não mudam.
+- Preservar emissão fase 0/backend fase 2/captura candidata fase 3 e alinhamento de coordenadas/RGB/sincronismos ou justificar novo contrato equivalente. SLOT ainda é ideal.
+- Orçamento de 5 ns é proposto, não medido; margem condicional de setup é pequena. Construir circuito real de clocks/contadores/captura e conferir cargas/min/max/PVT/skew/reset antes de aceitar o bloco físico.
+- HC74 e HCT574 citados não atendem clock mestre direto de 25,175 MHz nos limites selecionados. Não usar típico ou clock combinacional decodificado como aprovação.
+- verification/net14a/development registra falha de cobertura inicial; use results.json final com seus hashes e três negativos para aceitação do contrato.
+
 ## Escopo e fontes
 
 - Leia README.md, PROVENANCE.md, docs/LACUNAS.md, DECISIONS.md e ROADMAP.md antes de alterar o projeto.

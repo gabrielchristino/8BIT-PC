@@ -1,3 +1,11 @@
+## 25/11/2026 — NET-14A, contrato de vídeo e lista consolidada
+
+- Lista atual de testes, pendências e critérios de revisão, separada dos roadmaps históricos.
+- Pré-projeto de fases/raster ligado às netlists NET-13: dois quadros, 153.600 pixels visíveis, 2.012 escritas concorrentes e 32 posições de concessão.
+- Negativos de dados, setup e hold detectados; falha inicial de cobertura da fixture preservada.
+- Orçamento temporal condicional rejeita meia fase e ligação dos HC74/HCT574 citados ao mestre; captura em fase 3 ainda depende do circuito real e margens de carga/skew/reset.
+- Sem novo raster KiCad, DAC ou liberação de fabricação.
+
 ## 25/11/2026 — NET-13, chips de memória e barramento
 
 - Nova interface de 28 CIs/576 pinos com SRAM/EEPROM, buffers HCT, muxes AHCT e 24 pull-ups.

@@ -6,6 +6,8 @@ Projeto de computador pessoal com CPU própria de lógica discreta, endereçamen
 
 ## Começar
 
+**Lista atual de testes e pendências:** [VALIDATION_STATUS](docs/engineering/VALIDATION_STATUS.md), com evidências, critérios de fechamento e revisões ainda necessárias. **Bloco em andamento:** [NET-14A — contrato de relógio/raster/captura](docs/engineering/NET14A.md); dois quadros com memória NET-13 e escrita concorrente aprovados no modelo, antes de implementar o raster em CIs reais.
+
 **Desenvolvimento atual:** [NET-13 — chips de memória e barramento](docs/engineering/NET13.md), com SRAM/EEPROM, buffers TTL, muxes e troca de drivers a partir dos pinos KiCad. A variante do controlador desliga o driver antes de devolver VRAM ao vídeo. Testes cobrem todos os endereços, cenários de atraso e boot/quadro completo com SRAM inicialmente indefinida. Imagem EEPROM do diagnóstico em `firmware/net13`. Cargas reais, reset/alimentação, raster/relógios/DAC, MMIO/teclado por pinos, footprints e PCB continuam pendentes; não há liberação de fabricação.
 
 **Registradores/dados:** [NET-06](docs/engineering/NET06.md). A referência fornecida pelo usuário para as membranas está em [KEYPAD_CONNECTOR.md](docs/engineering/KEYPAD_CONNECTOR.md).

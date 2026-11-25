@@ -1,5 +1,13 @@
 # Decisões recuperadas e registro da migração
 
+## ADR E17 — Testar o contrato de fases antes do raster físico
+
+Decisão nova de 25/11/2026: criar NET-14A como pré-projeto separado, sem promover raster comportamental a circuito implementado. Preservar 160 × 120 RGB332, stride de 256 bytes, quatro repetições verticais e janela de concessão H=161..192. Emissão de endereço na fase 0, backend na fase 2 e captura candidata na fase 3 de quatro períodos do estímulo de 25,175 MHz; alinhar visível e sincronismos à captura. CIs de memória/controlador NET-13 são reutilizados sem alteração.
+
+Alternativas: meia fase não fecha o caminho atual; HC74/HCT574 diretamente no mestre não atendem frequência/pulso nos limites citados. Um pulso dividido e fase 3 são candidatos, não escolhas físicas homologadas. A margem condicional de setup é cerca de 3,66 ns após reservar 5 ns de incerteza proposta; atrasos do contador/decodificação, carga, clock e reset reais podem exigir rever componentes ou pipeline. Nenhuma função da CPU/ISA/mapa/VGA é removida e não há alegação de economia de BOM.
+
+Aceitação deste pré-projeto: dois quadros com endereço/dados/apagamento/sincronismos conferidos, escritas concorrentes fora da área visível, 32 posições de início e negativos de captura prematura/setup/hold. Aceitação do circuito posterior exige KiCad/pinos reais, relógios sem hazards, fanout, mínimos/máximos/PVT/skew, reset, alinhamento e integração CPU. Ver NET14A.md, resultados com hashes e lista consolidada de critérios; não é liberação de produção.
+
 ## ADR E16 — Barramentos locais, recepção TTL e janela registrada de escrita
 
 Decisão nova de 25/11/2026: mapear dois AS7C256A/SOJ28 e AT28C256/PDIP28 com barramentos locais separados, receptores HCT244, pull-ups de 3,3 kΩ e muxes AHCT157. A alternativa de compartilhar um único barramento de todos os chips ampliaria os riscos de disputa; aplicar diretamente VOH TTL a CMOS não fecha as margens. Preservar 96 KiB e mapa/ISA; WE da EEPROM fica alto, sem programação em circuito prometida. Seleção ainda é candidata, condicionada às cargas, alimentação e homologação de encapsulamentos/códigos.

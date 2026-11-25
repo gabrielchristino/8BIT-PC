@@ -1,5 +1,12 @@
 # Histórico preservado
 
+## 25/11/2026 — NET-02, banco SP derivado do esquema
+
+- Esquema parcial SP com 12 CIs e 12 desacoplamentos; 220 pinos conferidos, HDL derivado da netlist KiCad.
+- Armazenamento HC273 com bit 15 codificado, soma SP±1 compartilhada e direção distribuída por HC125.
+- Bancadas de todas as direções/valores, retenção, reset, atrasos selecionados, falhas intencionais e regressão da CPU integrada.
+- Base RTL-01 e snapshots históricos preservados; controle físico e liberação de placa ainda pendentes.
+
 ## 24–25/11/2026 — integração de emulação RTL-01
 
 - CPU HDL comandada pelas ROMs binárias originais, memória/MMIO, arbitragem VRAM e raster ideais.

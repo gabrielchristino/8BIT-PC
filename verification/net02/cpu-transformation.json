@@ -1,0 +1,7 @@
+{
+  "source": "sim/rtl/isa1_cpu.sv",
+  "source_sha256": "16767753b645234a563d7839c898115dac0444b53672688db15854b30637e407",
+  "output": "sim/net02/isa1_cpu_stack.sv",
+  "output_sha256": "7d75e8deb1a1116004189917e8fdab97f42df595e4db6fa76d83c54d787e5432",
+  "transformation": "Replace only SP storage/arithmetic by KiCad-exported package netlist; preserve guards, ROM and bus sequencing"
+}

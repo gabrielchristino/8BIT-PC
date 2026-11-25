@@ -1,0 +1,22 @@
+{
+  "date": "2026-11-25",
+  "kicad": "7.0.11",
+  "command": [
+    "kicad-cli",
+    "sch",
+    "export",
+    "netlist",
+    "--format",
+    "kicadxml",
+    "-o",
+    "/mnt/c/Users/gabri/projetos/isa1/verification/net02/stack_bank.xml",
+    "/mnt/c/Users/gabri/projetos/isa1/hardware/stack_bank/stack_bank.kicad_sch"
+  ],
+  "stdout": "",
+  "stderr": "",
+  "components": 24,
+  "pins": 220,
+  "no_connects": 5,
+  "failures": [],
+  "scope": "Pin netlist and functional HDL generation; not ERC or timing closure"
+}

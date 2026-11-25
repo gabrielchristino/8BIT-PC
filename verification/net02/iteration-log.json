@@ -1,0 +1,32 @@
+{
+  "iteration": "NET-02",
+  "date": "2026-11-25",
+  "events": [
+    {
+      "stage": "part identification",
+      "finding": "TI part used for the adder is CD74HC283; attempted SN74HC283 URL returned 404 and was not used as a source"
+    },
+    {
+      "stage": "initial pin graph",
+      "finding": "11-IC candidate passed initial ideal instruction/stack checks; this was not the final buffered design"
+    },
+    {
+      "stage": "load review",
+      "finding": "DOWN drove 15 adder inputs; added four permanent-enabled HC125 channels, with three/four input loads each",
+      "status": "12-IC candidate, output capacitance still a layout constraint"
+    },
+    {
+      "stage": "HDL generation",
+      "finding": "A ternary directly following a sized binary literal was rejected by the Verilog lexer; generated spacing/parentheses corrected before successful final compile",
+      "classification": "tool generation defect"
+    },
+    {
+      "stage": "selected timing",
+      "finding": "Added datasheet delay envelopes and HC273 setup/recovery/pulse monitors, with intentional negative cases"
+    },
+    {
+      "stage": "drawing review",
+      "finding": "Moved the buffer/decoupler left to keep the complete drawing within the sheet frame; regenerated and reran the final regression"
+    }
+  ]
+}

@@ -10,6 +10,8 @@
 
 ## Engenharia
 
+- NET-02 mantém sim/rtl e sim/tests da RTL-01 intactos. Leia docs/engineering/NET02.md; sim/net02/isa1_cpu_stack.sv é derivado por tools/make_stack_cpu.py, e hardware/stack_bank/stack_bank_netlist.sv deriva do XML realmente exportado pelo KiCad. Não edite esses gerados manualmente. A temporização aprovada é somente o cenário selecionado do banco isolado; a integração usa modelos funcionais.
+
 - Preserve funcionalidades da CPU, X, pilha, flags, ISA e VGA. Economias de componentes exigem equivalência funcional e justificativa.
 - Diferencie modelo simbólico, execução de microcódigo, modelo de portas, HDL, simulação elétrica e ensaio físico.
 - Preserve estabilidade de endereço/dados em WAIT e efeitos únicos em COMMIT. Não permita escritas durante reset/alimentação insegura.

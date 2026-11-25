@@ -1,5 +1,17 @@
 # Roadmap de continuidade
 
+## NET-02 — esquema e simulação do banco SP
+
+- [x] Mapear armazenamento e SP±1 a HC273, HC157, CD74HC283, HC04 e buffers HC125.
+- [x] Exportar netlist KiCad, conferir 220 pinos e gerar HDL das conexões exportadas.
+- [x] Testar retenção, reset e todos os valores/direções, ideal e com atrasos selecionados.
+- [x] Integrar SP da netlist à CPU preservando ROMs, X, ISA, flags, WAIT e guardas.
+- [x] Acrescentar falhas intencionais de ligação/entrada aberta e monitores temporais.
+- [ ] Mapear controle de transações/UPDATE e latch de endereço a CIs e ao mesmo fluxo de netlist.
+- [ ] Fechar temporização global, cargas reais, elétrica, footprints, ERC/DRC e protótipo.
+
+Ver docs/engineering/NET02.md. Esta etapa fecha a representação física e a equivalência funcional do banco SP, sem fechar a placa inteira.
+
 ## Integração RTL-01
 
 - [x] Executar na CPU RTL as palavras reconstruídas das quatro lanes binárias originais.

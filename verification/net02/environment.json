@@ -1,0 +1,54 @@
+{
+  "date_client": "2026-11-25",
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "python": "3.12.3",
+  "tools": [
+    {
+      "command": [
+        "iverilog",
+        "-V"
+      ],
+      "exit": 0,
+      "version_line": "Icarus Verilog version 12.0 (stable) ()"
+    },
+    {
+      "command": [
+        "kicad-cli",
+        "version"
+      ],
+      "exit": 0,
+      "version_line": "7.0.11"
+    },
+    {
+      "command": [
+        "pdftoppm",
+        "-v"
+      ],
+      "exit": 0,
+      "version_line": "pdftoppm version 24.02.0"
+    },
+    {
+      "command": [
+        "pdftotext",
+        "-v"
+      ],
+      "exit": 0,
+      "version_line": "pdftotext version 24.02.0"
+    },
+    {
+      "command": [
+        "curl",
+        "--version"
+      ],
+      "exit": 0,
+      "version_line": "curl 8.5.0 (x86_64-pc-linux-gnu) libcurl/8.5.0 OpenSSL/3.0.13 zlib/1.3 brotli/1.1.0 zstd/1.5.5 libidn2/2.3.7 libpsl/0.21.2 (+libidn2/2.3.7) libssh/0.10.6/openssl/zlib nghttp2/1.59.0 librtmp/2.3 OpenLDAP/2.6.7"
+    }
+  ],
+  "pdf_review": {
+    "artifact": "verification/net02/stack_bank.pdf",
+    "pages_reviewed": 1,
+    "method": "Poppler PNG render and visual inspection",
+    "result": "Final buffer and bypass capacitor within frame, labels/title visible; not ERC"
+  },
+  "dependency_change": "Installed poppler-utils and libpoppler134 from Ubuntu repositories for datasheet/drawing inspection; simulation tools already present"
+}

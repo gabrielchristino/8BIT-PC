@@ -1,0 +1,223 @@
+{
+  "iteration": "NET-02",
+  "date": "2026-11-25",
+  "base_git_commit": "6bbac525a4435f87566ccb723e733134e21d3e43",
+  "transformation": "Explicit package pin schema -> native KiCad -> KiCad XML -> pin-connected HDL -> ROM CPU adapter",
+  "scope": "SP bank only; no complete electrical/production release",
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "bytes": 3912,
+      "sha256": "cf64816a7fe4ef1054222ac20f91802ec19bb92aaf0197e286155aeab9ead705",
+      "origin": "New NET-02 design/verification, 2026-11-25"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "bytes": 3946,
+      "sha256": "4bc487370c408c6bc6a407e610435afed664be8024cc0437b065316904704e43",
+      "origin": "New NET-02 design/verification, 2026-11-25"
+    },
+    {
+      "path": "DECISIONS.md",
+      "bytes": 8263,
+      "sha256": "194c025c85fc3153ac5248f7b94c8a8cff5c97d75c66e45da483f63198e1be30",
+      "origin": "New NET-02 design/verification, 2026-11-25"
+    },
+    {
+      "path": "PROVENANCE.md",
+      "bytes": 6598,
+      "sha256": "4fdc8f66109e7aaa640f4196f73ff6805f875eb63ce012e9c19aeb8ce584f10c",
+      "origin": "New NET-02 design/verification, 2026-11-25"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4523,
+      "sha256": "17ee37b402db43bc9cc96e2a51404b04f6b015c8ed99152f984464f9220918e3",
+      "origin": "New NET-02 design/verification, 2026-11-25"
+    },
+    {
+      "path": "ROADMAP.md",
+      "bytes": 5533,
+      "sha256": "9aeb5f3501d73ede157798ebedaae6b2ce3269572456dfe16a0634607f533b5d",
+      "origin": "New NET-02 design/verification, 2026-11-25"
+    },
+    {
+      "path": "docs/engineering/NET02.md",
+      "bytes": 8310,
+      "sha256": "32d58edf063f71233e70eb207f2acce6ded5f1129de91fc4181c27eb69f7a270",
+      "origin": "New NET-02 design/verification, 2026-11-25"
+    },
+    {
+      "path": "hardware/stack_bank/README.md",
+      "bytes": 809,
+      "sha256": "f4beda83cc7a423651436d84e432bff0ec4e22eb0d7849728688e89393bfb24e",
+      "origin": "New NET-02 design/verification, 2026-11-25"
+    },
+    {
+      "path": "hardware/stack_bank/design.json",
+      "bytes": 7583,
+      "sha256": "dae5d9715dafae41fed25e84980b8fa868204e5d9ea3c3e3015a936d3b5d0be9",
+      "origin": "New NET-02 design/verification, 2026-11-25"
+    },
+    {
+      "path": "hardware/stack_bank/package-functions.json",
+      "bytes": 6797,
+      "sha256": "eee5f15b676eb4d4aa255562d5927acad15f09da9f25c90c48867a1097758a7c",
+      "origin": "New NET-02 design/verification, 2026-11-25"
+    },
+    {
+      "path": "hardware/stack_bank/pinmap.csv",
+      "bytes": 5130,
+      "sha256": "d1fe616c0e6d61c4a3a45536e8b3aecda55a319bd0d71c33da571b453fa78c40",
+      "origin": "New NET-02 design/verification, 2026-11-25"
+    },
+    {
+      "path": "hardware/stack_bank/stack_bank.kicad_sch",
+      "bytes": 65812,
+      "sha256": "85ce062bdcb0f194208f216c8c1cca9213b802c0e10799bd4911371895f8390a",
+      "origin": "New NET-02 design/verification, 2026-11-25"
+    },
+    {
+      "path": "hardware/stack_bank/stack_bank_netlist.sv",
+      "bytes": 4474,
+      "sha256": "7e81b65cc40d045f8b2a586949563f1707ddb450066c0fa09eab64e7a6658669",
+      "origin": "New NET-02 design/verification, 2026-11-25"
+    },
+    {
+      "path": "references/ti/cd74hc283.pdf",
+      "bytes": 946468,
+      "sha256": "137f6fd57ee15a143e00176ef03744be30215c8c178b421f34d036580f36b25d",
+      "origin": "Texas Instruments official datasheet",
+      "url": "https://www.ti.com/lit/ds/symlink/cd74hc283.pdf"
+    },
+    {
+      "path": "references/ti/sn74hc04.pdf",
+      "bytes": 2153970,
+      "sha256": "a48266c5ce3f22a87a30cd78b0fdb80e99820220534b215a11a9b67a35f41101",
+      "origin": "Texas Instruments official datasheet",
+      "url": "https://www.ti.com/lit/ds/symlink/sn74hc04.pdf"
+    },
+    {
+      "path": "references/ti/sn74hc125.pdf",
+      "bytes": 2110382,
+      "sha256": "45e8c22d66d6c1eaeda3f2c007e868f9a156e200ff09532fa6f7e19574c352fc",
+      "origin": "Texas Instruments official datasheet",
+      "url": "https://www.ti.com/lit/ds/symlink/sn74hc125.pdf"
+    },
+    {
+      "path": "references/ti/sn74hc273.pdf",
+      "bytes": 2179591,
+      "sha256": "8649dfa0c70096e06d579499278e668c1ee99fb9bc6057e82b0465f253e388d9",
+      "origin": "Texas Instruments official datasheet",
+      "url": "https://www.ti.com/lit/ds/symlink/sn74hc273.pdf"
+    },
+    {
+      "path": "sim/net02/isa1_cpu_stack.sv",
+      "bytes": 5652,
+      "sha256": "7d75e8deb1a1116004189917e8fdab97f42df595e4db6fa76d83c54d787e5432",
+      "origin": "New NET-02 design/verification, 2026-11-25"
+    },
+    {
+      "path": "sim/net02/package_models.sv",
+      "bytes": 1419,
+      "sha256": "de2fd5315a3809a89ba90b8f09a96a25d06d3e00b8568a8f82387b92a624199f",
+      "origin": "New NET-02 design/verification, 2026-11-25"
+    },
+    {
+      "path": "sim/net02/tb_hc273_negative.sv",
+      "bytes": 493,
+      "sha256": "ee711ed64a34ffa6ec06342de997de8c44e606b3a608aa238459b86319b5a0f8",
+      "origin": "New NET-02 design/verification, 2026-11-25"
+    },
+    {
+      "path": "sim/net02/tb_stack_bank.sv",
+      "bytes": 1548,
+      "sha256": "06e750f509434a07032c254f7a2755af8f250ff565d3aa15ad67a7b6f718af7d",
+      "origin": "New NET-02 design/verification, 2026-11-25"
+    },
+    {
+      "path": "tools/build_stack_bank.py",
+      "bytes": 14208,
+      "sha256": "342e1c06eeba20eb07bdac5ff29ae5baaf693ea86580c17dde6c2f0818356bcd",
+      "origin": "New NET-02 design/verification, 2026-11-25"
+    },
+    {
+      "path": "tools/make_stack_cpu.py",
+      "bytes": 2301,
+      "sha256": "2ad4a33195cc6790836e3b98ccf34f6fe83b486db0ef9cefd2e13d79cf843c0b",
+      "origin": "New NET-02 design/verification, 2026-11-25"
+    },
+    {
+      "path": "tools/record_net02_manifest.py",
+      "bytes": 4266,
+      "sha256": "9e90a0952b0d10a69be47cd59f8766e2632ae4d51ac2bb2d2abf201689616189",
+      "origin": "New NET-02 design/verification, 2026-11-25"
+    },
+    {
+      "path": "tools/run_stack_netlist.py",
+      "bytes": 7735,
+      "sha256": "5340debc0fb0d452318fb9ea2242dc482013358a0b9573d2bec85aa2d9d9a641",
+      "origin": "New NET-02 design/verification, 2026-11-25"
+    },
+    {
+      "path": "verification/net02/baseline-integrity.json",
+      "bytes": 327,
+      "sha256": "41a817ae9939c64e108fe157a789c6777ec8b45b8548710e536f84feeffdef3b",
+      "origin": "New NET-02 design/verification, 2026-11-25"
+    },
+    {
+      "path": "verification/net02/cpu-transformation.json",
+      "bytes": 388,
+      "sha256": "840715a76cdebc63770dd2484c727cdbf8cca55c4bf8544b7262164624bf3a11",
+      "origin": "New NET-02 design/verification, 2026-11-25"
+    },
+    {
+      "path": "verification/net02/environment.json",
+      "bytes": 1456,
+      "sha256": "21e6e0e2de41e064446b6d9e3f7f9ac864227b34ea55c40af63c44a5bb46c3e8",
+      "origin": "New NET-02 design/verification, 2026-11-25"
+    },
+    {
+      "path": "verification/net02/frame.png",
+      "bytes": 1361,
+      "sha256": "d9a8e76c001c18198f03ed53bed7864ad1043e3002e2908a94e98452b58f6375",
+      "origin": "New NET-02 design/verification, 2026-11-25"
+    },
+    {
+      "path": "verification/net02/frame.ppm",
+      "bytes": 230415,
+      "sha256": "152c217f59e4a6f05b8c75f8c17e66c1b4e01b5369e37b913f034e97d6903665",
+      "origin": "New NET-02 design/verification, 2026-11-25"
+    },
+    {
+      "path": "verification/net02/iteration-log.json",
+      "bytes": 1304,
+      "sha256": "ae12bb6c1be90e65e87319707a91b643b75fcdce258274a8e6522b092f7ac1b1",
+      "origin": "New NET-02 design/verification, 2026-11-25"
+    },
+    {
+      "path": "verification/net02/results.json",
+      "bytes": 26250,
+      "sha256": "36da18eb237239707903d45a6bbc6c1d7c350010e65a9226c3ad7a9061a05659",
+      "origin": "New NET-02 design/verification, 2026-11-25"
+    },
+    {
+      "path": "verification/net02/schematic-check.json",
+      "bytes": 509,
+      "sha256": "7dae93fcaf0b2be85131353e62bf038e615f5ba63b66ca5fece22402ffbce150",
+      "origin": "New NET-02 design/verification, 2026-11-25"
+    },
+    {
+      "path": "verification/net02/stack_bank.pdf",
+      "bytes": 319100,
+      "sha256": "46598dbfb91045680f1828ca34f3e74d11a6440bb93f2f04e2bae9d61151eb35",
+      "origin": "New NET-02 design/verification, 2026-11-25"
+    },
+    {
+      "path": "verification/net02/stack_bank.xml",
+      "bytes": 33021,
+      "sha256": "ea99c9338ade2e6c56c654d5e252cd6c849d6117e0cbdf3fed0ca16b30bf4a90",
+      "origin": "New NET-02 design/verification, 2026-11-25"
+    }
+  ]
+}

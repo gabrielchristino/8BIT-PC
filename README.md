@@ -6,6 +6,8 @@ Projeto de computador pessoal com CPU própria de lógica discreta, endereçamen
 
 ## Começar
 
+**Circuito mais recente:** [NET-02 — SP a partir do esquema](docs/engineering/NET02.md). O armazenamento de SP e o somador SP±1 são simulados da netlist exportada pelo KiCad e ligados à CPU das ROMs. Esquema nativo em `hardware/stack_bank/`; regressões em `verification/net02/`. Controle físico, restante da CPU e liberação para produção continuam pendentes.
+
 **Integração mais recente:** [RTL-01 — CPU executando as ROMs recuperadas](docs/engineering/RTL01.md), com boot, memória, VRAM, teclado simulado e comparação entre X ideal e modelos HC191/157/377. Execute `python3 tools/run_rtl.py` no Ubuntu WSL. Resultados e quadro de vídeo em `verification/rtl01/`. Ainda não é um circuito físico completo.
 
 **Desenvolvimento ativo:** [revisão 9.8.4.2](docs/engineering/REV9842.md), com modelos HDL de componentes, bancadas e primeiro esquemático parcial do banco X. As ferramentas de simulação rodam no WSL Ubuntu. Ver os [critérios de produção](docs/engineering/PRODUCTION_GATES.md) antes de interpretar uma aprovação como liberação de hardware.

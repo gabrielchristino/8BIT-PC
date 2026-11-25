@@ -1,0 +1,47 @@
+{
+  "date": "2026-11-25",
+  "base_git_commit": "ea529d0b7acac89abbbf07b42632f93006fd63af",
+  "transformation": "New native pin design; reuse schematic emitter through inspect.getsource with separate names/title/UUID namespace, preserve predecessor sources; exported XML converted to connected package models. Failed intermediate snapshots explicitly retained.",
+  "files": [
+    {
+      "path": "tools/build_video_raster.py",
+      "sha256": "dd9bcb39ea7fda5b9326f6ed29d8ebb42b35b0d427ddcb5b4c9191f4af394eaa",
+      "bytes": 15693
+    },
+    {
+      "path": "tools/build_memory_bus.py",
+      "sha256": "3836d5019a7dab5f2487b3459fe624f94b094f23568ab3d0354335924715ef0c",
+      "bytes": 19810
+    },
+    {
+      "path": "tools/build_stack_bank.py",
+      "sha256": "342e1c06eeba20eb07bdac5ff29ae5baaf693ea86580c17dde6c2f0818356bcd",
+      "bytes": 14208
+    },
+    {
+      "path": "tools/build_memory_decode.py",
+      "sha256": "0489d6dd49017fc524eb39d73fdf05a97c17b132743920ddb99b7ead3407e1b6",
+      "bytes": 12701
+    },
+    {
+      "path": "tools/build_cpu_global.py",
+      "sha256": "6f1437acaa79c78820e65151467f245a89c7177aef18836374d08098ec4dec92",
+      "bytes": 15380
+    },
+    {
+      "path": "sim/net14b/package_models.sv",
+      "sha256": "f8f84c02d57e6043d6abc8ede4483971e88d6d1b18d53ea4fce39bf748274bc8",
+      "bytes": 2944
+    },
+    {
+      "path": "sim/net14b/tb_video_raster.sv",
+      "sha256": "6b2a075d2c198140df8fd784702a7245ba9adaf0c8eb49c98074ef51d65a45d4",
+      "bytes": 4305
+    },
+    {
+      "path": "sim/net14b/tb_raster_reset.sv",
+      "sha256": "7141de200b0e53c1b0622074566cbfa6b29eb6056bb3b680b0665485e8a70b13",
+      "bytes": 1645
+    }
+  ]
+}

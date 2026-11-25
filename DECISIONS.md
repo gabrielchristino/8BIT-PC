@@ -1,5 +1,13 @@
 # Decisões recuperadas e registro da migração
 
+## ADR E18 — Anel registrado, contadores com clear assíncrono e metadados capturados
+
+Decisão nova de 25/11/2026: implementar NET-14B separada, com fases one-hot em AHC74, raster em LV161A e captura CMOS AHC574 após o receptor HCT244 da memória. O clear assíncrono evita depender de clock dividido durante reset; RUN retém H=0 na primeira emissão. Reset local usa dois FFs antes de liberar o anel, sem alegar MTBF ou brownout fechado. Clocks de runtime vêm de saídas registradas; não usar portas de decodificação como clock. O apagamento ocorre após captura, com sincronismos capturados juntos.
+
+Alternativas: LV163 síncrono exigiria outro caminho para inicializar contadores com clock parado; HCT574 deixava margem insuficiente; AHCT574 consultado tem inconsistência de título/tabela de latch no PDF e não é usado. AHC574 recebe CMOS do HCT244, preservando a recepção TTL e evitando inferir compatibilidade direta da SRAM com CMOS. SLOT inicialmente na fase 1 falhou em setup; registrar na fase 0 a previsão H anterior 160..191 conserva a janela efetiva 161..192. Comparador serial de HSYNC falhou com captura rápida; expressão balanceada preserva 164..187.
+
+Aceitação parcial: XML/pinos, três cenários de dois quadros com escrita concorrente, concessões, 16 cortes digitais/512 pixels e quatro negativos. Cortes de release excluem a abertura de recovery do primeiro sincronizador; análise de metastabilidade e liberação arbitrária permanece pendente. Cargas reais, min/max independentes, integração CPU e reset global ainda são critérios. Nenhuma função da ISA, X, pilha ou VGA é removida; não há alegação de BOM mínima ou fabricação liberada. Evidências em NET14B.md.
+
 ## ADR E17 — Testar o contrato de fases antes do raster físico
 
 Decisão nova de 25/11/2026: criar NET-14A como pré-projeto separado, sem promover raster comportamental a circuito implementado. Preservar 160 × 120 RGB332, stride de 256 bytes, quatro repetições verticais e janela de concessão H=161..192. Emissão de endereço na fase 0, backend na fase 2 e captura candidata na fase 3 de quatro períodos do estímulo de 25,175 MHz; alinhar visível e sincronismos à captura. CIs de memória/controlador NET-13 são reutilizados sem alteração.

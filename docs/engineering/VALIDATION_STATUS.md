@@ -1,6 +1,6 @@
 # Lista consolidada de testes, itens e revisões
 
-Atualizada em 25/11/2026, após NET-13 e o pré-projeto NET-14A. Esta lista substitui a leitura dos checkboxes antigos como estado atual; eles permanecem no ROADMAP como registros das respectivas etapas. Não há percentual de placa pronta: uma aprovação de modelo não equivale a aprovação elétrica ou física.
+Atualizada em 25/11/2026, após NET-14B por pinos e o pré-projeto NET-14A. Esta lista substitui a leitura dos checkboxes antigos como estado atual; eles permanecem no ROADMAP como registros das respectivas etapas. Não há percentual de placa pronta: uma aprovação de modelo não equivale a aprovação elétrica ou física.
 
 ## Evidências aprovadas no escopo de modelo
 
@@ -22,8 +22,8 @@ Evidências: [NET13](NET13.md), [integração ideal](../../verification/net13/cp
 
 | Prioridade / item | Estado atual | Critério para fechar |
 |---|---|---|
-| 1. Relógio, raster e captura de vídeo | NET-14A é um contrato executável; dois quadros com memória/controlador NET-13, escrita concorrente e monitores de captura | CIs/pinos no KiCad, clock sem hazards, reset e inicialização, cargas/setup/hold/skew, sincronismos alinhados, integração CPU |
-| 2. Concessão física da VRAM | Janela lógica e todas as 32 posições de início exercitadas | Gerar SLOT por circuito real, fechar setup/hold e comprovar devolução antes do vídeo ativo |
+| 1. Relógio, raster e captura de vídeo | NET-14B: circuito candidato por pinos/XML; três cenários de dois quadros, escrita concorrente e cortes digitais selecionados | Integração CPU/quadro, cargas/setup/hold/skew/PVT, oscilador e reset/MTBF físico |
+| 2. Concessão física da VRAM | SLOT registrado por pinos na fase 0, todas as 32 posições de início exercitadas com NET-13 | Fechar cargas/min/max/clock globais e repetir com CPU; validar placa |
 | 3. MMIO e teclado por pinos | Modelo conserva endereços A000/A001/A002/A010/A011/A012; fotos indicam conector | Registradores/muxes/drivers/proteções reais, equivalência do MMIO, varredura/bounce/ambiguidades/fila; medir unidades |
 | 4. Alimentação e reset | Bloqueio lógico de acessos testado; corrupção de escrita interrompida é explícita | Supervisor/brownout/hold-up, WE inibido antes de alterar bancos/posse/endereço, sem novas escritas inseguras; ensaiar rampas/cortes |
 | 5. Saída VGA e DAC RGB332 | Dados digitais disponíveis; DAC e conector não fechados | Níveis/correntes/impedância, cargas do monitor, sincronismos, proteção, simulação e medição |

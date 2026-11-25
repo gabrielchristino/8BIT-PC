@@ -1,3 +1,10 @@
+## 25/11/2026 — NET-14B, raster/captura por pinos
+
+- Esquema parcial de 35 CIs/582 pinos, contadores assíncronos, fases registradas, captura e SLOT derivados do XML.
+- Três cenários de dois quadros ligados à memória/controlador NET-13; 16 cortes digitais fora da abertura de recovery e quatro negativos.
+- SLOT tardio e cadeia de HSYNC corrigidos a partir das falhas preservadas. Limite do monitor AHC74 conferido/corrigido no datasheet.
+- ERC parcial: 42 violações sem exceções. CPU/quadro integrado, PVT/cargas/CDC/DAC/energia/PCB continuam pendentes.
+
 ## 25/11/2026 — NET-14A, contrato de vídeo e lista consolidada
 
 - Lista atual de testes, pendências e critérios de revisão, separada dos roadmaps históricos.

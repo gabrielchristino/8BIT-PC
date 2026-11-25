@@ -1,0 +1,21 @@
+{
+  "components": 70,
+  "ics": 35,
+  "pins": 582,
+  "no_connects": 29,
+  "max_signal_input_loads": 4,
+  "failures": [],
+  "scope": "Native pin graph; electrical and clock/PVT qualification remain open",
+  "command": [
+    "/home/gabri/.local/opt/isa1-kicad-10.0.8/squashfs-root/usr/bin/kicad-cli",
+    "sch",
+    "export",
+    "netlist",
+    "--format",
+    "kicadxml",
+    "-o",
+    "/mnt/c/Users/gabri/projetos/isa1/verification/net14b/video_raster.xml",
+    "/mnt/c/Users/gabri/projetos/isa1/hardware/video_raster/video_raster.kicad_sch"
+  ],
+  "kicad": "10.0.8"
+}

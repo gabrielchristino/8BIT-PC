@@ -1,0 +1,20 @@
+{
+  "scope": "Failed initial fixture: no explicit reset pulse; raster remained unknown, watchdog fired. No accepted run claimed.",
+  "files": [
+    {
+      "source": "sim/net14b/tb_video_raster.sv",
+      "path": "verification/net14b/development/tb_video_raster.sv.initial.txt",
+      "sha256": "51f52f6368269235ba65e49c82463f68878d0e657e4f068a5c5722e2a3219125"
+    },
+    {
+      "source": "sim/net14b/package_models.sv",
+      "path": "verification/net14b/development/package_models.sv.initial.txt",
+      "sha256": "7d519dc6288d7025dd3a5f94656e962d134eb471f55cbb80c6ad75dc8e46626d"
+    },
+    {
+      "source": "verification/net14b/results.json",
+      "path": "verification/net14b/development/results.json.initial.txt",
+      "sha256": "c41828903a282a7b40b42ba25350b5bb51bb2a0a58df7d17753b24a4aa0f8f89"
+    }
+  ]
+}

@@ -1,5 +1,15 @@
 # Continuidade do ISA-1
 
+## Continuidade NET-14B
+
+- Leia NET14B.md e a lista consolidada. hardware/video_raster é o circuito novo por pinos; NET-14A permanece contrato separado.
+- Gere com build_video_raster.py: fases one-hot AHC74, cinco LV161A de clear assíncrono, AHC574 após HCT244, apagamento após captura. Nenhum clock de runtime deve virar decodificação combinacional de fases.
+- SLOT é registrado na fase 0 a partir de H anterior 160..191, mantendo concessão efetiva 161..192. A variante anterior com fase 1 deve ser rejeitada no negativo.
+- HSYNC tem expressão balanceada equivalente a H=164..187; a cadeia serial anterior deve falhar no cenário de captura antecipada.
+- Bancada de quadros usa VRAM semeada, não boot de CPU. Cortes de relógio livre excluem abertura de recovery do primeiro sincronizador; não alegar MTBF, brownout, liberação arbitrária ou ordem global WE/bancos/posse resolvidos.
+- AHC74 hold garantido usado é 0,5 ns na condição documentada; a falha intermediária com monitor 1,5 ns permanece identificada. AHC574 usa entrada CMOS já recebida pelo HCT244, não SRAM TTL direta.
+- ERC parcial tem 42 violações, retorno nativo 5. Repetir integração CPU/quadro e fechar cargas/clock/reset/PVT/global antes de aprovar hardware.
+
 ## Continuidade NET-14A
 
 - Leia docs/engineering/VALIDATION_STATUS.md e NET14A.md para o estado atual; checkboxes históricos do ROADMAP não são uma lista atualizada.

@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-25",
+  "kicad": "7.0.11",
+  "command": [
+    "kicad-cli",
+    "sch",
+    "export",
+    "netlist",
+    "--format",
+    "kicadxml",
+    "-o",
+    "/mnt/c/Users/gabri/projetos/isa1/verification/net03/transaction_bank.xml",
+    "/mnt/c/Users/gabri/projetos/isa1/hardware/transaction_bank/transaction_bank.kicad_sch"
+  ],
+  "components": 34,
+  "pins": 304,
+  "no_connects": 13,
+  "max_signal_input_loads": 4,
+  "stdout": "",
+  "stderr": "",
+  "failures": [],
+  "scope": "Pin graph, functional model and capacitive budget. Not ERC/DRC, MTBF or board electrical approval."
+}

@@ -1,0 +1,94 @@
+{
+  "date": "2026-11-25",
+  "scope": "Digital ACK offsets around clock edges; no metastability or MTBF proof",
+  "sources": [
+    {
+      "path": "sim/hdl/hc_models.sv",
+      "sha256": "f305ff38b7e58701e9f97528de68ea8c5518a628d38bd5a8ac9e847fa87c8680"
+    },
+    {
+      "path": "sim/net03/package_models.sv",
+      "sha256": "53712265aa1d4312866135c59e73d7543069c7a3281635d43d66825790716258"
+    },
+    {
+      "path": "hardware/transaction_bank/transaction_bank_netlist.sv",
+      "sha256": "c5381deb78d25279fa4d6672779b526cbfb73d02c6478865dccb3965dc5d9b74"
+    },
+    {
+      "path": "sim/net03/tb_ack_phase.sv",
+      "sha256": "55faff329d41d1c05d444dcafd744855c58a1f49cbc97ffbb236f2f7107885ac"
+    },
+    {
+      "path": "tools/run_ack_phase.py",
+      "sha256": "2b5af92f5fc27d942d40da0df2e99148da6a01e3743661f8d74d30c06f5badda"
+    }
+  ],
+  "runs": [
+    {
+      "timed": 0,
+      "compile": {
+        "command": [
+          "iverilog",
+          "-g2012",
+          "-Wall",
+          "-s",
+          "tb_ack_phase",
+          "-Ptb_ack_phase.TIMED=0",
+          "-o",
+          "/tmp/isa1-ack-phase-s36nw6r5/phase.vvp",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/hdl/hc_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net03/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/transaction_bank/transaction_bank_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net03/tb_ack_phase.sv"
+        ],
+        "exit": 0,
+        "stdout": "",
+        "stderr": "",
+        "seconds": 0.056
+      },
+      "execution": {
+        "command": [
+          "vvp",
+          "/tmp/isa1-ack-phase-s36nw6r5/phase.vvp"
+        ],
+        "exit": 0,
+        "stdout": "RESULT timed=0 ack_phase_cases=12 failures=0\n/mnt/c/Users/gabri/projetos/isa1/sim/net03/tb_ack_phase.sv:35: $finish called at 2080000 (1ps)\n",
+        "stderr": "",
+        "seconds": 0.022
+      }
+    },
+    {
+      "timed": 1,
+      "compile": {
+        "command": [
+          "iverilog",
+          "-g2012",
+          "-Wall",
+          "-s",
+          "tb_ack_phase",
+          "-Ptb_ack_phase.TIMED=1",
+          "-o",
+          "/tmp/isa1-ack-phase-s36nw6r5/phase.vvp",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/hdl/hc_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net03/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/transaction_bank/transaction_bank_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net03/tb_ack_phase.sv"
+        ],
+        "exit": 0,
+        "stdout": "",
+        "stderr": "",
+        "seconds": 0.034
+      },
+      "execution": {
+        "command": [
+          "vvp",
+          "/tmp/isa1-ack-phase-s36nw6r5/phase.vvp"
+        ],
+        "exit": 0,
+        "stdout": "RESULT timed=1 ack_phase_cases=12 failures=0\n/mnt/c/Users/gabri/projetos/isa1/sim/net03/tb_ack_phase.sv:35: $finish called at 204000000 (1ps)\n",
+        "stderr": "",
+        "seconds": 0.016
+      }
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "iteration": "NET-03",
+  "date": "2026-11-25",
+  "events": [
+    {
+      "stage": "design",
+      "result": "Mapped transaction phases, ACK synchronizers, payload/descriptor/MDR to explicit HC packages and gates"
+    },
+    {
+      "stage": "fanout",
+      "result": "Clock and safety fanout split across HC125 channels; exported graph has at most four internal input loads per signal"
+    },
+    {
+      "stage": "CPU adapter",
+      "result": "Ordered declarations before bus instance before first compile; replaced MDR storage rather than duplicating it"
+    },
+    {
+      "stage": "preparation",
+      "result": "Quick ideal/delay and instruction/safety/guard tests passed; these were not accepted as full program validation"
+    },
+    {
+      "stage": "timing coverage",
+      "result": "Added state/synchronizer-stage-2 and HC377 timing checks; raw asynchronous stage is intentionally not assigned a synchronous setup guarantee"
+    },
+    {
+      "stage": "visual review",
+      "result": "Shortened overflowing title comment before the complete run and inspected final PDF"
+    },
+    {
+      "stage": "regression",
+      "result": "Full address sweep, instruction/safety/guard/program comparisons and expected-negative tests passed"
+    },
+    {
+      "stage": "ACK phases",
+      "result": "Independent digital before/on/after-edge tests passed; no metastability/MTBF inference"
+    }
+  ]
+}

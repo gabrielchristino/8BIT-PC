@@ -6,11 +6,13 @@ Projeto de computador pessoal com CPU própria de lógica discreta, endereçamen
 
 ## Começar
 
-**Circuito mais recente:** [NET-02 — SP a partir do esquema](docs/engineering/NET02.md). O armazenamento de SP e o somador SP±1 são simulados da netlist exportada pelo KiCad e ligados à CPU das ROMs. Esquema nativo em `hardware/stack_bank/`; regressões em `verification/net02/`. Controle físico, restante da CPU e liberação para produção continuam pendentes.
+**Desenvolvimento atual:** [NET-03 — controle de transações](docs/engineering/NET03.md). Captura de endereço/dados/modo, MDR, sincronização de ACK e fases do handshake são simulados da netlist KiCad, integrados ao SP e à CPU das ROMs. Execute `python3 tools/run_transaction_netlist.py` e `python3 tools/run_ack_phase.py` no WSL Ubuntu. Restam o sequenciador/controle das ROMs e a validação física completa.
 
-**Integração mais recente:** [RTL-01 — CPU executando as ROMs recuperadas](docs/engineering/RTL01.md), com boot, memória, VRAM, teclado simulado e comparação entre X ideal e modelos HC191/157/377. Execute `python3 tools/run_rtl.py` no Ubuntu WSL. Resultados e quadro de vídeo em `verification/rtl01/`. Ainda não é um circuito físico completo.
+**Banco SP:** [NET-02 — SP a partir do esquema](docs/engineering/NET02.md). O armazenamento de SP e o somador SP±1 são simulados da netlist exportada pelo KiCad e ligados à CPU das ROMs. Esquema nativo em `hardware/stack_bank/`; regressões em `verification/net02/`. Controle físico, restante da CPU e liberação para produção continuam pendentes.
 
-**Desenvolvimento ativo:** [revisão 9.8.4.2](docs/engineering/REV9842.md), com modelos HDL de componentes, bancadas e primeiro esquemático parcial do banco X. As ferramentas de simulação rodam no WSL Ubuntu. Ver os [critérios de produção](docs/engineering/PRODUCTION_GATES.md) antes de interpretar uma aprovação como liberação de hardware.
+**Base da CPU:** [RTL-01 — CPU executando as ROMs recuperadas](docs/engineering/RTL01.md), com boot, memória, VRAM, teclado simulado e comparação entre X ideal e modelos HC191/157/377. Execute `python3 tools/run_rtl.py` no Ubuntu WSL. Resultados e quadro de vídeo em `verification/rtl01/`. Ainda não é um circuito físico completo.
+
+**Banco X candidato:** [revisão 9.8.4.2](docs/engineering/REV9842.md), com modelos HDL de componentes, bancadas e primeiro esquemático parcial do banco X. As ferramentas de simulação rodam no WSL Ubuntu. Ver os [critérios de produção](docs/engineering/PRODUCTION_GATES.md) antes de interpretar uma aprovação como liberação de hardware.
 
 O diretório de continuidade é `C:/Users/gabri/projetos/isa1`. A nova conferência preservou arquivos locais 7.4/7.5 e a auditoria 7.6, mas os downloads pelo chat compartilhado foram bloqueados pelo Chrome. Ver [relatório da conferência](docs/RECHECK_SHARED_CHATS.md).
 

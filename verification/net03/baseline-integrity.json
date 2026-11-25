@@ -1,0 +1,20 @@
+[
+  {
+    "git_commit": "29c37359881a386644b8dcfbf4ccdd967edd159c",
+    "manifest": "verification/rev9842/manifest.json",
+    "checked": 26,
+    "failures": []
+  },
+  {
+    "git_commit": "6bbac525a4435f87566ccb723e733134e21d3e43",
+    "manifest": "verification/rtl01/manifest.json",
+    "checked": 26,
+    "failures": []
+  },
+  {
+    "git_commit": "60c097c8d5fb6a8f282fa6429347431c9f313ac8",
+    "manifest": "verification/net02/manifest.json",
+    "checked": 35,
+    "failures": []
+  }
+]

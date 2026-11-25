@@ -1,0 +1,818 @@
+{
+  "iteration": "NET-03",
+  "parts": [
+    {
+      "reference": "U1",
+      "part": "SN74HC174",
+      "nets": {
+        "1": "CLEAR_STATE_N",
+        "9": "CLK_CTRL",
+        "3": "ACCEPT",
+        "4": "P_0",
+        "6": "G_16",
+        "11": "G_18",
+        "13": "G_19",
+        "14": "G_22",
+        "2": "P_0",
+        "5": "P_1",
+        "7": "P_2",
+        "10": "P_3",
+        "12": "P_4",
+        "15": "P_5",
+        "16": "+5V",
+        "8": "GND"
+      },
+      "x": 64,
+      "y": 61
+    },
+    {
+      "reference": "U2",
+      "part": "SN74HC74",
+      "nets": {
+        "1": "CLEAR_SYNC_N",
+        "2": "ACK_RAW",
+        "3": "CLK_CTRL",
+        "4": "+5V",
+        "10": "+5V",
+        "11": "CLK_CTRL",
+        "12": "ACK1",
+        "13": "CLEAR_SYNC_N",
+        "5": "ACK1",
+        "6": null,
+        "9": "ACK2",
+        "8": null,
+        "14": "+5V",
+        "7": "GND"
+      },
+      "x": 174,
+      "y": 61
+    },
+    {
+      "reference": "U3",
+      "part": "SN74HC377",
+      "nets": {
+        "1": "CAPTURE_N",
+        "11": "CLK_ADDR",
+        "3": "ISSUE_ADDR_0",
+        "4": "ISSUE_ADDR_1",
+        "7": "ISSUE_ADDR_2",
+        "8": "ISSUE_ADDR_3",
+        "13": "ISSUE_ADDR_4",
+        "14": "ISSUE_ADDR_5",
+        "17": "ISSUE_ADDR_6",
+        "18": "ISSUE_ADDR_7",
+        "2": "ADDR_0",
+        "5": "ADDR_1",
+        "6": "ADDR_2",
+        "9": "ADDR_3",
+        "12": "ADDR_4",
+        "15": "ADDR_5",
+        "16": "ADDR_6",
+        "19": "ADDR_7",
+        "20": "+5V",
+        "10": "GND"
+      },
+      "x": 284,
+      "y": 61
+    },
+    {
+      "reference": "U4",
+      "part": "SN74HC377",
+      "nets": {
+        "1": "CAPTURE_N",
+        "11": "CLK_ADDR",
+        "3": "ISSUE_ADDR_8",
+        "4": "ISSUE_ADDR_9",
+        "7": "ISSUE_ADDR_10",
+        "8": "ISSUE_ADDR_11",
+        "13": "ISSUE_ADDR_12",
+        "14": "ISSUE_ADDR_13",
+        "17": "ISSUE_ADDR_14",
+        "18": "ISSUE_ADDR_15",
+        "2": "ADDR_8",
+        "5": "ADDR_9",
+        "6": "ADDR_10",
+        "9": "ADDR_11",
+        "12": "ADDR_12",
+        "15": "ADDR_13",
+        "16": "ADDR_14",
+        "19": "ADDR_15",
+        "20": "+5V",
+        "10": "GND"
+      },
+      "x": 394,
+      "y": 61
+    },
+    {
+      "reference": "U5",
+      "part": "SN74HC377",
+      "nets": {
+        "1": "CAPTURE_N",
+        "11": "CLK_WRITE",
+        "3": "ISSUE_DATA_0",
+        "4": "ISSUE_DATA_1",
+        "7": "ISSUE_DATA_2",
+        "8": "ISSUE_DATA_3",
+        "13": "ISSUE_DATA_4",
+        "14": "ISSUE_DATA_5",
+        "17": "ISSUE_DATA_6",
+        "18": "ISSUE_DATA_7",
+        "2": "WDATA_0",
+        "5": "WDATA_1",
+        "6": "WDATA_2",
+        "9": "WDATA_3",
+        "12": "WDATA_4",
+        "15": "WDATA_5",
+        "16": "WDATA_6",
+        "19": "WDATA_7",
+        "20": "+5V",
+        "10": "GND"
+      },
+      "x": 504,
+      "y": 61
+    },
+    {
+      "reference": "U6",
+      "part": "SN74HC377",
+      "nets": {
+        "1": "CAPTURE_N",
+        "11": "CLK_WRITE",
+        "3": "ISSUE_WRITE",
+        "4": "GND",
+        "7": "GND",
+        "8": "GND",
+        "13": "GND",
+        "14": "GND",
+        "17": "GND",
+        "18": "GND",
+        "2": "WRITE_HELD",
+        "5": null,
+        "6": null,
+        "9": null,
+        "12": null,
+        "15": null,
+        "16": null,
+        "19": null,
+        "20": "+5V",
+        "10": "GND"
+      },
+      "x": 64,
+      "y": 144
+    },
+    {
+      "reference": "U7",
+      "part": "SN74HC377",
+      "nets": {
+        "1": "READ_CAPTURE_N",
+        "11": "CLK_READ",
+        "3": "BUS_RDATA_0",
+        "4": "BUS_RDATA_1",
+        "7": "BUS_RDATA_2",
+        "8": "BUS_RDATA_3",
+        "13": "BUS_RDATA_4",
+        "14": "BUS_RDATA_5",
+        "17": "BUS_RDATA_6",
+        "18": "BUS_RDATA_7",
+        "2": "RDATA_0",
+        "5": "RDATA_1",
+        "6": "RDATA_2",
+        "9": "RDATA_3",
+        "12": "RDATA_4",
+        "15": "RDATA_5",
+        "16": "RDATA_6",
+        "19": "RDATA_7",
+        "20": "+5V",
+        "10": "GND"
+      },
+      "x": 174,
+      "y": 144
+    },
+    {
+      "reference": "U8",
+      "part": "SN74HC125",
+      "nets": {
+        "2": "CLK",
+        "5": "CLK",
+        "9": "CLK",
+        "12": "CLK",
+        "1": "GND",
+        "4": "GND",
+        "10": "GND",
+        "13": "GND",
+        "3": "CLK_CTRL",
+        "6": "CLK_ADDR",
+        "8": "CLK_WRITE",
+        "11": "CLK_READ",
+        "14": "+5V",
+        "7": "GND"
+      },
+      "x": 284,
+      "y": 144
+    },
+    {
+      "reference": "U9",
+      "part": "SN74HC125",
+      "nets": {
+        "2": "SAFE",
+        "5": "SAFE",
+        "9": "SAFE",
+        "12": "SAFE",
+        "1": "GND",
+        "4": "GND",
+        "10": "GND",
+        "13": "GND",
+        "3": "CLEAR_STATE_N",
+        "6": "CLEAR_SYNC_N",
+        "8": "SAFE_GUARD",
+        "11": "SAFE_CAPTURE",
+        "14": "+5V",
+        "7": "GND"
+      },
+      "x": 394,
+      "y": 144
+    },
+    {
+      "reference": "U10",
+      "part": "SN74HC08",
+      "nets": {
+        "1": "POWER_GOOD",
+        "4": "ACK_IDLE",
+        "9": "G_10",
+        "12": "READY",
+        "2": "RESET_N",
+        "5": "IDLE",
+        "10": "SAFE_GUARD",
+        "13": "START",
+        "3": "SAFE",
+        "6": "G_10",
+        "8": "READY",
+        "11": "ACCEPT",
+        "14": "+5V",
+        "7": "GND"
+      },
+      "x": 504,
+      "y": 144
+    },
+    {
+      "reference": "U11",
+      "part": "SN74HC08",
+      "nets": {
+        "1": "ACK2",
+        "4": "ACK2_N",
+        "9": "ACK2",
+        "12": "ACK2_N",
+        "2": "P_2",
+        "5": "P_2",
+        "10": "P_3",
+        "13": "P_3",
+        "3": "G_14",
+        "6": "G_15",
+        "8": "G_17",
+        "11": "G_19",
+        "14": "+5V",
+        "7": "GND"
+      },
+      "x": 64,
+      "y": 227
+    },
+    {
+      "reference": "U12",
+      "part": "SN74HC08",
+      "nets": {
+        "1": "G_20",
+        "4": "P_2",
+        "9": "REQUEST",
+        "12": "P_4",
+        "2": "P_5",
+        "5": "SAFE_GUARD",
+        "10": "WRITE_HELD",
+        "13": "SAFE_GUARD",
+        "3": "G_21",
+        "6": "REQUEST",
+        "8": "WRITE_ENABLE",
+        "11": "DONE",
+        "14": "+5V",
+        "7": "GND"
+      },
+      "x": 174,
+      "y": 227
+    },
+    {
+      "reference": "U13",
+      "part": "SN74HC08",
+      "nets": {
+        "1": "P_0",
+        "4": "G_14",
+        "9": "GND",
+        "12": "GND",
+        "2": "SAFE_CAPTURE",
+        "5": "SAFE_CAPTURE",
+        "10": "GND",
+        "13": "GND",
+        "3": "G_26",
+        "6": "G_28",
+        "8": null,
+        "11": null,
+        "14": "+5V",
+        "7": "GND"
+      },
+      "x": 284,
+      "y": 227
+    },
+    {
+      "reference": "U14",
+      "part": "SN74HC32",
+      "nets": {
+        "1": "P_0",
+        "4": "P_2",
+        "9": "P_4",
+        "12": "G_1",
+        "2": "P_1",
+        "5": "P_3",
+        "10": "P_5",
+        "13": "G_2",
+        "3": "G_1",
+        "6": "G_2",
+        "8": "G_3",
+        "11": "G_4",
+        "14": "+5V",
+        "7": "GND"
+      },
+      "x": 394,
+      "y": 227
+    },
+    {
+      "reference": "U15",
+      "part": "SN74HC32",
+      "nets": {
+        "1": "G_3",
+        "4": "ACK1",
+        "9": "ACK2",
+        "12": "G_15",
+        "2": "G_4",
+        "5": "ACK_RAW",
+        "10": "G_7",
+        "13": "P_1",
+        "3": "G_5",
+        "6": "G_7",
+        "8": "G_8",
+        "11": "G_16",
+        "14": "+5V",
+        "7": "GND"
+      },
+      "x": 504,
+      "y": 227
+    },
+    {
+      "reference": "U16",
+      "part": "SN74HC32",
+      "nets": {
+        "1": "G_14",
+        "4": "G_8",
+        "9": "G_21",
+        "12": "GND",
+        "2": "G_17",
+        "5": "START",
+        "10": "P_4",
+        "13": "GND",
+        "3": "G_18",
+        "6": "G_20",
+        "8": "G_22",
+        "11": null,
+        "14": "+5V",
+        "7": "GND"
+      },
+      "x": 64,
+      "y": 310
+    },
+    {
+      "reference": "U17",
+      "part": "SN74HC04",
+      "nets": {
+        "1": "G_5",
+        "3": "G_8",
+        "5": "ACK2",
+        "9": "G_26",
+        "11": "G_28",
+        "13": "GND",
+        "2": "IDLE",
+        "4": "ACK_IDLE",
+        "6": "ACK2_N",
+        "8": "CAPTURE_N",
+        "10": "READ_CAPTURE_N",
+        "12": null,
+        "14": "+5V",
+        "7": "GND"
+      },
+      "x": 174,
+      "y": 310
+    },
+    {
+      "reference": "C1",
+      "part": "C",
+      "nets": {
+        "1": "+5V",
+        "2": "GND"
+      },
+      "x": 97,
+      "y": 42
+    },
+    {
+      "reference": "C2",
+      "part": "C",
+      "nets": {
+        "1": "+5V",
+        "2": "GND"
+      },
+      "x": 207,
+      "y": 42
+    },
+    {
+      "reference": "C3",
+      "part": "C",
+      "nets": {
+        "1": "+5V",
+        "2": "GND"
+      },
+      "x": 317,
+      "y": 42
+    },
+    {
+      "reference": "C4",
+      "part": "C",
+      "nets": {
+        "1": "+5V",
+        "2": "GND"
+      },
+      "x": 427,
+      "y": 42
+    },
+    {
+      "reference": "C5",
+      "part": "C",
+      "nets": {
+        "1": "+5V",
+        "2": "GND"
+      },
+      "x": 537,
+      "y": 42
+    },
+    {
+      "reference": "C6",
+      "part": "C",
+      "nets": {
+        "1": "+5V",
+        "2": "GND"
+      },
+      "x": 97,
+      "y": 125
+    },
+    {
+      "reference": "C7",
+      "part": "C",
+      "nets": {
+        "1": "+5V",
+        "2": "GND"
+      },
+      "x": 207,
+      "y": 125
+    },
+    {
+      "reference": "C8",
+      "part": "C",
+      "nets": {
+        "1": "+5V",
+        "2": "GND"
+      },
+      "x": 317,
+      "y": 125
+    },
+    {
+      "reference": "C9",
+      "part": "C",
+      "nets": {
+        "1": "+5V",
+        "2": "GND"
+      },
+      "x": 427,
+      "y": 125
+    },
+    {
+      "reference": "C10",
+      "part": "C",
+      "nets": {
+        "1": "+5V",
+        "2": "GND"
+      },
+      "x": 537,
+      "y": 125
+    },
+    {
+      "reference": "C11",
+      "part": "C",
+      "nets": {
+        "1": "+5V",
+        "2": "GND"
+      },
+      "x": 97,
+      "y": 208
+    },
+    {
+      "reference": "C12",
+      "part": "C",
+      "nets": {
+        "1": "+5V",
+        "2": "GND"
+      },
+      "x": 207,
+      "y": 208
+    },
+    {
+      "reference": "C13",
+      "part": "C",
+      "nets": {
+        "1": "+5V",
+        "2": "GND"
+      },
+      "x": 317,
+      "y": 208
+    },
+    {
+      "reference": "C14",
+      "part": "C",
+      "nets": {
+        "1": "+5V",
+        "2": "GND"
+      },
+      "x": 427,
+      "y": 208
+    },
+    {
+      "reference": "C15",
+      "part": "C",
+      "nets": {
+        "1": "+5V",
+        "2": "GND"
+      },
+      "x": 537,
+      "y": 208
+    },
+    {
+      "reference": "C16",
+      "part": "C",
+      "nets": {
+        "1": "+5V",
+        "2": "GND"
+      },
+      "x": 97,
+      "y": 291
+    },
+    {
+      "reference": "C17",
+      "part": "C",
+      "nets": {
+        "1": "+5V",
+        "2": "GND"
+      },
+      "x": 207,
+      "y": 291
+    }
+  ],
+  "gates": [
+    {
+      "part": "SN74HC08",
+      "inputs": [
+        "POWER_GOOD",
+        "RESET_N"
+      ],
+      "output": "SAFE"
+    },
+    {
+      "part": "SN74HC32",
+      "inputs": [
+        "P_0",
+        "P_1"
+      ],
+      "output": "G_1"
+    },
+    {
+      "part": "SN74HC32",
+      "inputs": [
+        "P_2",
+        "P_3"
+      ],
+      "output": "G_2"
+    },
+    {
+      "part": "SN74HC32",
+      "inputs": [
+        "P_4",
+        "P_5"
+      ],
+      "output": "G_3"
+    },
+    {
+      "part": "SN74HC32",
+      "inputs": [
+        "G_1",
+        "G_2"
+      ],
+      "output": "G_4"
+    },
+    {
+      "part": "SN74HC32",
+      "inputs": [
+        "G_3",
+        "G_4"
+      ],
+      "output": "G_5"
+    },
+    {
+      "part": "SN74HC04",
+      "inputs": [
+        "G_5"
+      ],
+      "output": "IDLE"
+    },
+    {
+      "part": "SN74HC32",
+      "inputs": [
+        "ACK1",
+        "ACK_RAW"
+      ],
+      "output": "G_7"
+    },
+    {
+      "part": "SN74HC32",
+      "inputs": [
+        "ACK2",
+        "G_7"
+      ],
+      "output": "G_8"
+    },
+    {
+      "part": "SN74HC04",
+      "inputs": [
+        "G_8"
+      ],
+      "output": "ACK_IDLE"
+    },
+    {
+      "part": "SN74HC08",
+      "inputs": [
+        "ACK_IDLE",
+        "IDLE"
+      ],
+      "output": "G_10"
+    },
+    {
+      "part": "SN74HC08",
+      "inputs": [
+        "G_10",
+        "SAFE_GUARD"
+      ],
+      "output": "READY"
+    },
+    {
+      "part": "SN74HC08",
+      "inputs": [
+        "READY",
+        "START"
+      ],
+      "output": "ACCEPT"
+    },
+    {
+      "part": "SN74HC04",
+      "inputs": [
+        "ACK2"
+      ],
+      "output": "ACK2_N"
+    },
+    {
+      "part": "SN74HC08",
+      "inputs": [
+        "ACK2",
+        "P_2"
+      ],
+      "output": "G_14"
+    },
+    {
+      "part": "SN74HC08",
+      "inputs": [
+        "ACK2_N",
+        "P_2"
+      ],
+      "output": "G_15"
+    },
+    {
+      "part": "SN74HC32",
+      "inputs": [
+        "G_15",
+        "P_1"
+      ],
+      "output": "G_16"
+    },
+    {
+      "part": "SN74HC08",
+      "inputs": [
+        "ACK2",
+        "P_3"
+      ],
+      "output": "G_17"
+    },
+    {
+      "part": "SN74HC32",
+      "inputs": [
+        "G_14",
+        "G_17"
+      ],
+      "output": "G_18"
+    },
+    {
+      "part": "SN74HC08",
+      "inputs": [
+        "ACK2_N",
+        "P_3"
+      ],
+      "output": "G_19"
+    },
+    {
+      "part": "SN74HC32",
+      "inputs": [
+        "G_8",
+        "START"
+      ],
+      "output": "G_20"
+    },
+    {
+      "part": "SN74HC08",
+      "inputs": [
+        "G_20",
+        "P_5"
+      ],
+      "output": "G_21"
+    },
+    {
+      "part": "SN74HC32",
+      "inputs": [
+        "G_21",
+        "P_4"
+      ],
+      "output": "G_22"
+    },
+    {
+      "part": "SN74HC08",
+      "inputs": [
+        "P_2",
+        "SAFE_GUARD"
+      ],
+      "output": "REQUEST"
+    },
+    {
+      "part": "SN74HC08",
+      "inputs": [
+        "REQUEST",
+        "WRITE_HELD"
+      ],
+      "output": "WRITE_ENABLE"
+    },
+    {
+      "part": "SN74HC08",
+      "inputs": [
+        "P_4",
+        "SAFE_GUARD"
+      ],
+      "output": "DONE"
+    },
+    {
+      "part": "SN74HC08",
+      "inputs": [
+        "P_0",
+        "SAFE_CAPTURE"
+      ],
+      "output": "G_26"
+    },
+    {
+      "part": "SN74HC04",
+      "inputs": [
+        "G_26"
+      ],
+      "output": "CAPTURE_N"
+    },
+    {
+      "part": "SN74HC08",
+      "inputs": [
+        "G_14",
+        "SAFE_CAPTURE"
+      ],
+      "output": "G_28"
+    },
+    {
+      "part": "SN74HC04",
+      "inputs": [
+        "G_28"
+      ],
+      "output": "READ_CAPTURE_N"
+    }
+  ]
+}

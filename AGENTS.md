@@ -10,6 +10,8 @@
 
 ## Engenharia
 
+- NET-03 está em hardware/transaction_bank e sim/net03; leia docs/engineering/NET03.md. O controle de transação e os registradores de endereço/dados/MDR derivam da netlist KiCad. Gere com tools/build_transaction_bank.py e tools/make_transaction_cpu.py; preserve as bases anteriores. Os portos exigem níveis CMOS, a metastabilidade não é modelada e SP_UPDATE/sequenciador ROM ainda não são um circuito físico completo.
+
 - NET-02 mantém sim/rtl e sim/tests da RTL-01 intactos. Leia docs/engineering/NET02.md; sim/net02/isa1_cpu_stack.sv é derivado por tools/make_stack_cpu.py, e hardware/stack_bank/stack_bank_netlist.sv deriva do XML realmente exportado pelo KiCad. Não edite esses gerados manualmente. A temporização aprovada é somente o cenário selecionado do banco isolado; a integração usa modelos funcionais.
 
 - Preserve funcionalidades da CPU, X, pilha, flags, ISA e VGA. Economias de componentes exigem equivalência funcional e justificativa.

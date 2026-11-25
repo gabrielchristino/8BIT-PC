@@ -1,5 +1,13 @@
 # Histórico preservado
 
+## 25/11/2026 — NET-03, transações derivadas do esquema
+
+- Controle em HC174/HC74/portas, com captura e retenção de endereço/dado/modo/MDR em HC377.
+- Esquema parcial com 17 CIs e 17 desacoplamentos propostos; 304 pinos conferidos e HDL gerado do XML KiCad.
+- Rearme exige retorno de START/ACK; fontes podem mudar após captura sem alterar a transação ativa.
+- Distribuição de clock/clear, orçamento de carga, monitores e testes negativos; regressões com SP da NET-02 e CPU das ROMs.
+- Interface CMOS e validações digitais explícitas; sequenciador ROM, condicionamento elétrico e produção permanecem pendentes.
+
 ## 25/11/2026 — NET-02, banco SP derivado do esquema
 
 - Esquema parcial SP com 12 CIs e 12 desacoplamentos; 220 pinos conferidos, HDL derivado da netlist KiCad.

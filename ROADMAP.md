@@ -1,5 +1,18 @@
 # Roadmap de continuidade
 
+## NET-03 — transações e payload retido
+
+- [x] Mapear fases de captura, estabilização, pedido, drenagem, conclusão e rearme a HC174/portas.
+- [x] Capturar endereço/dado/modo e MDR em HC377, com ACK em dois HC74.
+- [x] Distribuir clock e clear/qualificadores e conferir o orçamento de entradas por sinal.
+- [x] Exportar KiCad para XML/HDL e integrar ao banco SP/CPU das ROMs.
+- [x] Testar WAIT, START mantido, reset, ACK antigo, fases de ACK, instruções e boot/VGA.
+- [ ] Mapear sequenciador de microcódigo e retenção/decodificação das ROMs a CIs.
+- [ ] Gerar SP_UPDATE e demais enables a partir desse controle físico e fechar temporização global.
+- [ ] Concluir interface elétrica de memória, reset/alimentação, VGA/teclado, esquema completo, PCB e verificações de produção.
+
+Ver docs/engineering/NET03.md. As fases do barramento agora são uma netlist de CIs; isso não equivale à liberação física de todo o computador.
+
 ## NET-02 — esquema e simulação do banco SP
 
 - [x] Mapear armazenamento e SP±1 a HC273, HC157, CD74HC283, HC04 e buffers HC125.

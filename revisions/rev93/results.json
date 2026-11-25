@@ -1,0 +1,9 @@
+{
+  "decode_cases": 1048576,
+  "vram_transactions": 1600,
+  "single_key_scan_cases": 256,
+  "ghosting_example": 1,
+  "integrated_programs": 1,
+  "raster_ticks": 105000,
+  "failures": 0
+}

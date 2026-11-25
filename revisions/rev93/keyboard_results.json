@@ -1,0 +1,6 @@
+{
+  "exhaustive_snapshots": 43745,
+  "ambiguous_snapshots": 2880,
+  "random_snapshots": 10000,
+  "debounce_sequence": "passed"
+}

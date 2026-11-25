@@ -1,0 +1,34 @@
+# Decisões recuperadas e registro da migração
+
+As decisões técnicas abaixo são registradas a partir de fontes históricas. O status «proposta» não significa aprovação de fabricação. Novas decisões da migração são identificadas explicitamente.
+
+| ID | Decisão e razão | Status e fonte |
+|---|---|---|
+| H01 | Preservar CPU própria, X, pilha, flags e todas as 26 instruções; não remover recursos para economizar CIs | Diretriz histórica; conversa principal e auditoria REV76 |
+| H02 | VGA RGB332 160 × 120 lógico, em lugar de propostas anteriores RCA/16 ou 64 cores | Direção posterior; conversa 6.x–9.x e README rev983 |
+| H03 | USB-C 5 V; retirar a necessidade anterior de 12 V | Direção histórica; análise 6.9 |
+| H04 | Banco de VRAM e EEPROM permite 96 KiB físicos com endereçamento de 16 bits | Modelo implementado; cpu.py/system.py rev983 |
+| H05 | SP=8000h vazio, PUSH em SP-1, POP em SP; preservar atualização única após transação | Modelo posterior; cpu.py/control.py e README rev984. Difere da REV33 |
+| H06 | Endereço/dados estáveis em WAIT; efeitos arquiteturais após confirmação; reset cancela operações antigas | Modelos integrated.py/control.py, revisões 9.3/9.8.3 |
+| H07 | Compartilhar somadores X/SP somente se houver economia real e retenção segura de endereço | Alternativa adiada; conversa 9.8.4: muxes podem eliminar a economia |
+| H08 | Investigar 74HC191 para X; manter circuito SP anterior até resolver SP-1 | Proposta 9.8.4.1; alternativa 74HC193 usa dois clocks; contador isolado não entrega os dois endereços |
+| H09 | Membranas prontas sem diodos; quatro linhas e 16 colunas; linhas inativas Hi-Z | Proposta ENG-KBD-01 D01–D03 |
+| H10 | Bloquear quadros acima de duas teclas, CANCEL/ALL_UP, rearme após vazio estável | Proposta ENG-KBD-01 D04; três teclas legítimas também podem ser rejeitadas |
+| H11 | MMIO sem novos opcodes; polling inicial; endereços e ABI por conciliar | Proposta ENG-KBD-01 D05–D06 |
+| H12 | Não fabricar antes da validação elétrica, temporal, integração e revisão de esquema/layout | Bloqueio histórico REV76 e ENG-KBD-01 D07 |
+
+## ADR M01 — Preservar snapshots e originais
+
+**Decisão da migração, 24/11/2026.** Guardar ZIPs sem alterações em `archive/packages/` e extrações em `revisions/`, por revisão. Não consolidar arquivos de versões diferentes sob uma falsa revisão completa. Alternativa rejeitada: copiar apenas o último simulador e perder os estudos intermediários. Consequência: duplicação deliberada, controlada por hashes.
+
+## ADR M02 — Separar evidências por nível
+
+Downloads de arquivos, texto extraído da interface e resumos editoriais têm provenance distinta. Um trecho virtualizado de JSON é um fragmento, não uma tabela completa. Números históricos são relatos até reprodução local. Nenhum código será recriado e apresentado como original para preencher ausências.
+
+## ADR M03 — Publicar a recuperação disponível com lacunas explícitas
+
+O GitHub estava vazio na inspeção inicial. Publicar materiais recuperados e documentação de continuidade sem reescrever histórico nem simular commits antigos. A existência de uma revisão citada em conversa não comprova que seu pacote foi recuperado. A migração integral permanece condicionada à recuperação das lacunas listadas.
+
+## ADR M04 — Preservar a falha da bancada do montador
+
+O pacote rev983 contém `test_assembler.py`, mas omite `diagnostic.asm`. Manter a bancada e registrar a falha de dependência. Não inventar um firmware diagnóstico ou retirar a bancada para produzir um relatório artificialmente verde. Recuperar o arquivo e executar novamente é o critério de resolução.

@@ -1,0 +1,9 @@
+[
+  {
+    "reference": "U11",
+    "pin": "1",
+    "from": "BUF_1_2",
+    "to": "+5V",
+    "reason": "Never asynchronously truncate backend clock; cleared phases are sampled on subsequent master edges"
+  }
+]

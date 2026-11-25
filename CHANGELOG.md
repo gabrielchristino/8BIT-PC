@@ -1,3 +1,11 @@
+## 25/11/2026 — NET-14C, integração CPU/vídeo e correção de clock
+
+- Variante nativa de um pino impede truncamento assíncrono do clock de backend; teste negativo reproduz o circuito anterior.
+- CPU/guardas/segurança e boot/quadro ideal completos com raster por pinos; imagem igual e SRAM inicialmente desconhecida.
+- 1.062 instruções temporizadas e 1.700 cortes em sete lotes dos 26 índices, com hipótese binária explícita na fronteira de reset.
+- Recovery estrito continua rejeitado, analógico/MTBF não aprovados. Processo monolítico interrompido sem RESULT preservado como incompleto.
+- MMIO físico, DAC/oscilador, reset global, cargas/PVT/PCB e protótipo seguem pendentes.
+
 ## 25/11/2026 — NET-14B, raster/captura por pinos
 
 - Esquema parcial de 35 CIs/582 pinos, contadores assíncronos, fases registradas, captura e SLOT derivados do XML.

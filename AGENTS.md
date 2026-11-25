@@ -1,5 +1,14 @@
 # Continuidade do ISA-1
 
+## Continuidade NET-14C
+
+- Leia NET14C.md. hardware/video_system é variante separada de um pino; BACKEND não tem clear assíncrono, evitando pulsos truncados. Preserve NET-14B e o negativo que reverte o pino.
+- make_video_cpu.py gera adaptador separado: raster/slot/captura por pinos, MMIO ainda modelo. Boot completo não semeia SRAM e compara PPM no clock de captura real.
+- Modelo AHC74 estrito deve rejeitar recovery externo. package_models_async marca somente dois FFs e testa hipótese binária imediata/uma borda depois; não é duração garantida de metastabilidade, MTBF ou liberação física. Demais monitores permanecem estritos.
+- Ideal usa estímulos escalados: master half 1,75 ns/CPU 5 ns, sem frequência física alegada. Temporizado usa mestre 25,175 MHz e CPU half 5.000 ns; instruções reduzidas, cortes dos 26 índices em sete lotes. Programa/quadro temporizado completo ainda não executado.
+- Segurança monolítica interrompida pode retornar zero sem RESULT: não aprovar. Verificar o marcador de conclusão e os sete lotes completos, sem omitir casos nem fingir que cada lote cobre 26 opcodes.
+- Membranas seguem sem resistência/capacitância medidas; usuário informou não ter como medir agora. Não repetir a pergunta sem motivo novo; avançar com envelopes condicionais e manter validação física pendente.
+
 ## Continuidade NET-14B
 
 - Leia NET14B.md e a lista consolidada. hardware/video_raster é o circuito novo por pinos; NET-14A permanece contrato separado.

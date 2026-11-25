@@ -1,6 +1,6 @@
 # Lista consolidada de testes, itens e revisões
 
-Atualizada em 25/11/2026, após NET-14B por pinos e o pré-projeto NET-14A. Esta lista substitui a leitura dos checkboxes antigos como estado atual; eles permanecem no ROADMAP como registros das respectivas etapas. Não há percentual de placa pronta: uma aprovação de modelo não equivale a aprovação elétrica ou física.
+Atualizada em 25/11/2026, após integração NET-14C de CPU/raster por pinos. Esta lista substitui a leitura dos checkboxes antigos como estado atual; eles permanecem no ROADMAP como registros das respectivas etapas. Não há percentual de placa pronta: uma aprovação de modelo não equivale a aprovação elétrica ou física.
 
 ## Evidências aprovadas no escopo de modelo
 
@@ -13,7 +13,7 @@ Atualizada em 25/11/2026, após NET-14B por pinos e o pré-projeto NET-14A. Esta
 | Mapa de memória e bancos | NET-11: 4.194.305 combinações por modo ideal/temporizado | Ligação global a MMIO e periféricos físicos |
 | Memórias e barramento | NET-13: todos os endereços; 131.072 escritas, 164.096 leituras e 65.536 leituras de vídeo por configuração isolada | Cargas reais, PVT e encapsulamentos/footprints homologados |
 | Troca de drivers | NET-13: intervalo registrado; cenário adversarial passa, controlador antigo é rejeitado | Tempos mínimos, capacitância e integridade de sinal da placa |
-| Boot e quadro | NET-13: 132.197 instruções, 232.576 transações, quadro de 76.800 pixels idêntico, SRAM inicialmente desconhecida | Programa completo temporizado e depois boot em protótipo |
+| Boot e quadro | NET-14C: 132.197 instruções, 232.576 transações, quadro de 76.800 pixels idêntico com raster por pinos e SRAM inicialmente desconhecida | Programa completo temporizado e depois boot em protótipo |
 | Detecção de falhas | Negativos de pinagem, WE, disputa, fases e monitores temporais registrados | Ampliar conforme cada circuito físico é acrescentado |
 
 Evidências: [NET13](NET13.md), [integração ideal](../../verification/net13/cpu/results-ideal.json), [integração temporizada reduzida](../../verification/net13/cpu/results-timed.json), [barramento](../../verification/net13/bus-results.json). Os números têm escopos diferentes e não devem ser somados como uma contagem única de testes. Não foi executado programa/quadro completo com atrasos na NET-13.
@@ -22,8 +22,8 @@ Evidências: [NET13](NET13.md), [integração ideal](../../verification/net13/cp
 
 | Prioridade / item | Estado atual | Critério para fechar |
 |---|---|---|
-| 1. Relógio, raster e captura de vídeo | NET-14B: circuito candidato por pinos/XML; três cenários de dois quadros, escrita concorrente e cortes digitais selecionados | Integração CPU/quadro, cargas/setup/hold/skew/PVT, oscilador e reset/MTBF físico |
-| 2. Concessão física da VRAM | SLOT registrado por pinos na fase 0, todas as 32 posições de início exercitadas com NET-13 | Fechar cargas/min/max/clock globais e repetir com CPU; validar placa |
+| 1. Relógio, raster e captura de vídeo | NET-14C: CPU/boot/quadro ideal com circuito por pinos; variante corrige clock truncado; cortes temporizados têm hipótese binária na fronteira de reset | Cargas/setup/hold/skew/PVT, oscilador e reset/MTBF físico; programa/quadro temporizado completo |
+| 2. Concessão física da VRAM | SLOT por pinos, 32 posições exercitadas e integração com CPU/quadro ideal | Fechar cargas/min/max/clock globais e validar placa |
 | 3. MMIO e teclado por pinos | Modelo conserva endereços A000/A001/A002/A010/A011/A012; fotos indicam conector | Registradores/muxes/drivers/proteções reais, equivalência do MMIO, varredura/bounce/ambiguidades/fila; medir unidades |
 | 4. Alimentação e reset | Bloqueio lógico de acessos testado; corrupção de escrita interrompida é explícita | Supervisor/brownout/hold-up, WE inibido antes de alterar bancos/posse/endereço, sem novas escritas inseguras; ensaiar rampas/cortes |
 | 5. Saída VGA e DAC RGB332 | Dados digitais disponíveis; DAC e conector não fechados | Níveis/correntes/impedância, cargas do monitor, sincronismos, proteção, simulação e medição |

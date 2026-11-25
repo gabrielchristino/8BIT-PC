@@ -1,0 +1,40 @@
+{
+  "scope": "Full instruction/guards/ideal safety passed, program fixture emitted a bus event before loading reference during warm-up. Delayed bounded-reset integration found truncated backend clock pulse on asynchronous reset. Both failures retained before native pin/fixture changes.",
+  "files": [
+    {
+      "source": "tools/make_video_cpu.py",
+      "path": "verification/net14c/development/integration-before-clock-fix/make_video_cpu.py.txt",
+      "sha256": "5756b9dcd1074c108df22bba02a2b044d3bec8e742995750038ad62bd6a18bd7"
+    },
+    {
+      "source": "tools/run_video_cpu.py",
+      "path": "verification/net14c/development/integration-before-clock-fix/run_video_cpu.py.txt",
+      "sha256": "721e085270ba3ff9459a56309044b918a9c390e8452d2f8bb4ace1e926bb248e"
+    },
+    {
+      "source": "tools/make_video_reset_model.py",
+      "path": "verification/net14c/development/integration-before-clock-fix/make_video_reset_model.py.txt",
+      "sha256": "74e74b69266caece1d8235a6d8a1d360d54ac8fe9e1df977bea190e3ed5a45de"
+    },
+    {
+      "source": "tools/run_video_cpu_async.py",
+      "path": "verification/net14c/development/integration-before-clock-fix/run_video_cpu_async.py.txt",
+      "sha256": "32be30e1ee24e6031f663ebd9218c703418d2446f7ded8e22b396e7236c75cba"
+    },
+    {
+      "source": "sim/net14c/isa1_memory_video.sv",
+      "path": "verification/net14c/development/integration-before-clock-fix/isa1_memory_video.sv.txt",
+      "sha256": "0f320709dab2009afc1cfa4b6bd24c4208c47ea82aacb6fbfe234db24c952d7b"
+    },
+    {
+      "source": "verification/net14c/cpu/results-ideal.json",
+      "path": "verification/net14c/development/integration-before-clock-fix/results-ideal.json.txt",
+      "sha256": "93ecd2422248b7db7244b62de9ed5b38707f226bd0ca34219f590db09e093342"
+    },
+    {
+      "source": "verification/net14c/cpu/results-timed-async.json",
+      "path": "verification/net14c/development/integration-before-clock-fix/results-timed-async.json.txt",
+      "sha256": "6b372864ff0894d20fa2d5227f33086d1443658489fa088e22999cc840556fc9"
+    }
+  ]
+}

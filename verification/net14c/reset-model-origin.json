@@ -1,0 +1,39 @@
+{
+  "date": "2026-11-25",
+  "transformation": "Same pin graph; mark only two external asynchronous reset synchronizer FFs as verification boundaries, count recovery events and test bounded binary resolution. All downstream recovery monitors stay strict. Strict model and its failed integration report remain preserved.",
+  "limitations": "One-cycle binary resolution is an assumption, not a vendor guarantee or MTBF proof.",
+  "references": {
+    "stage1": "U8_0",
+    "stage2": "U8_1"
+  },
+  "files": [
+    {
+      "path": "sim/net14b/package_models.sv",
+      "sha256": "f8f84c02d57e6043d6abc8ede4483971e88d6d1b18d53ea4fce39bf748274bc8"
+    },
+    {
+      "path": "hardware/video_system/video_system_netlist.sv",
+      "sha256": "0a70a3a4ee209ec188b5ff026c18c636d72d3121005500e235d54a7e73f0fd1a"
+    },
+    {
+      "path": "tools/run_video_cpu.py",
+      "sha256": "b5dc7b03df773f01e1761e5c08686f62b68a59120c1a8498372fc1854ea07a94"
+    },
+    {
+      "path": "tools/make_video_reset_model.py",
+      "sha256": "354b5f563c173105f8753b63e163d746dc0598d1411a4d864364f806a8dbbd9e"
+    },
+    {
+      "path": "sim/net14c/package_models_async.sv",
+      "sha256": "7b45346f5e25bb73deb33ba9fb02d50e2b020ab527f75fed1244e173300ccfcb"
+    },
+    {
+      "path": "sim/net14c/video_raster_async_netlist.sv",
+      "sha256": "9885b7aeeb25428fa6a25ea6157061837175d971d4f81bef11c0b5018bcca38f"
+    },
+    {
+      "path": "tools/run_video_cpu_async.py",
+      "sha256": "e319f8d51fcb96c82d3e349179cac12f3ce8fcc677084b08051b62e6b71357bf"
+    }
+  ]
+}

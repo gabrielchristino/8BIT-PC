@@ -1,0 +1,26 @@
+{
+  "date": "2026-11-25",
+  "transformation": "Separate NET-13 wrapper loses procedural raster and grant; native NET-14B pins provide counters, clock division, grant and pixel capture. MMIO preserved as model. Temporary program bench observes capture clock; ideal master is scaled 4x for functional regression only, delayed master is 25.175 MHz.",
+  "files": [
+    {
+      "path": "sim/net13/isa1_memory_bus.sv",
+      "sha256": "ae83351879729f99074387f42e702b39df50977c6b5c43eb03c1d22d98c5af98"
+    },
+    {
+      "path": "tools/run_memory_bus_cpu.py",
+      "sha256": "f36e45808b6447bfa804d086bd60cbe04fb87cdfa89df1a502a877f218dc22db"
+    },
+    {
+      "path": "tools/make_video_cpu.py",
+      "sha256": "99d4360e3202eba15c811087bb9f924dcf866af9c227e441d5308cfebb605c54"
+    },
+    {
+      "path": "sim/net14c/isa1_memory_video.sv",
+      "sha256": "86c1e44645b21b1eaa0a1eea6863d5fc8a07793a852d61ad99d3e560b097cfc4"
+    },
+    {
+      "path": "tools/run_video_cpu.py",
+      "sha256": "b5dc7b03df773f01e1761e5c08686f62b68a59120c1a8498372fc1854ea07a94"
+    }
+  ]
+}

@@ -1,5 +1,13 @@
 # Decisões recuperadas e registro da migração
 
+## ADR E19 — Backend sem clear assíncrono e fronteira de reset explícita
+
+Decisão nova de 25/11/2026: criar hardware/video_system separado e fixar alto o clear do FF de backend, mantendo suas transições em bordas mestre. O caso integrado revelou pulso truncado; o ensaio de reversão de um único pino reproduz a falha. Preservar os demais pinos/35 CIs, raster/ISA/mapa e antecessores. A alternativa de ocultar o monitor de pulsos foi rejeitada; clocks de runtime não passam a ser decodificação combinacional.
+
+Recovery externo não é digitalmente garantido: preservar a rejeição do modelo estrito. Para verificar o sistema, criar modelo separado que marca somente os dois FFs de reset como fronteira assíncrona, conta eventos e testa resolução binária imediata/uma borda depois. Isso é hipótese de verificação, não medição, limite analógico ou MTBF. Não desabilitar monitores posteriores nem apresentar o cenário como aprovação de fabricação.
+
+Aceitação de integração: instruções/guardas/segurança e boot/quadro ideal completo com SRAM não semeada, instruções temporizadas reduzidas, cortes completos dos 26 índices em lotes e negativos de clock. Processo interrompido sem RESULT continua incompleto mesmo com saída zero; somente lotes conferidos aprovam a cobertura de segurança. Firmware/imagem e funções preservados. Fechamento físico ainda exige fontes de clock, reset global/WE/bancos/posse, cargas/PVT/CDC/MTBF e protótipo. Ver NET14C.md.
+
 ## ADR E18 — Anel registrado, contadores com clear assíncrono e metadados capturados
 
 Decisão nova de 25/11/2026: implementar NET-14B separada, com fases one-hot em AHC74, raster em LV161A e captura CMOS AHC574 após o receptor HCT244 da memória. O clear assíncrono evita depender de clock dividido durante reset; RUN retém H=0 na primeira emissão. Reset local usa dois FFs antes de liberar o anel, sem alegar MTBF ou brownout fechado. Clocks de runtime vêm de saídas registradas; não usar portas de decodificação como clock. O apagamento ocorre após captura, com sincronismos capturados juntos.

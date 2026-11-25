@@ -1,0 +1,482 @@
+{
+  "iteration": "NET-14C",
+  "date": "2026-11-25",
+  "base_git_commit": "6a83d5601ff42b7a970f7d180b405094f612ba09",
+  "scope": "Native CPU/video integration and explicit bounded reset assumptions, strict recovery gap preserved; not analog/PVT/MTBF/PCB approval",
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "bytes": 16395,
+      "sha256": "1934a3b81b637de4b5249c4d718ecc9fc655ef20ff293138ce12ceb139c7aac6",
+      "origin": "New NET-14C work or identified preserved intermediate evidence; not recovered historical originals"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "bytes": 11256,
+      "sha256": "c6469dc1787345afa069829d0b6e85371fc7eaca327f0205e9990e6904fd2e97",
+      "origin": "New NET-14C work or identified preserved intermediate evidence; not recovered historical originals"
+    },
+    {
+      "path": "DECISIONS.md",
+      "bytes": 26320,
+      "sha256": "dedbce939b4fc0ded7863f7e22ab523e32de2229a9e3830a8c086847b88beb8a",
+      "origin": "New NET-14C work or identified preserved intermediate evidence; not recovered historical originals"
+    },
+    {
+      "path": "PROVENANCE.md",
+      "bytes": 16721,
+      "sha256": "022bee5090598d01f2b21add7e428564fa802174268371a2cb5a749e98cff92d",
+      "origin": "New NET-14C work or identified preserved intermediate evidence; not recovered historical originals"
+    },
+    {
+      "path": "README.md",
+      "bytes": 6235,
+      "sha256": "63845b54188362ac807ec0207a41749c6523d66f60de637e07d38fb1a7c40bdf",
+      "origin": "New NET-14C work or identified preserved intermediate evidence; not recovered historical originals"
+    },
+    {
+      "path": "ROADMAP.md",
+      "bytes": 14537,
+      "sha256": "b83536de8396520a1a7e0e1813ac952b9ae5c28fd9bdf91ebbf8106e378338c2",
+      "origin": "New NET-14C work or identified preserved intermediate evidence; not recovered historical originals"
+    },
+    {
+      "path": "docs/engineering/NET14C.md",
+      "bytes": 7441,
+      "sha256": "5710894b6ca5792fd1a16ab7d3e9b611ec21157c59b41a699ce2ffbb0ad6c647",
+      "origin": "New NET-14C work or identified preserved intermediate evidence; not recovered historical originals"
+    },
+    {
+      "path": "docs/engineering/PRODUCTION_GATES.md",
+      "bytes": 3822,
+      "sha256": "4bdae95e67a1bb0f25369506780361c76c8a782bcdb51db6c6d1a956c62733bc",
+      "origin": "New NET-14C work or identified preserved intermediate evidence; not recovered historical originals"
+    },
+    {
+      "path": "docs/engineering/VALIDATION_STATUS.md",
+      "bytes": 6946,
+      "sha256": "7c295da469ee317ad037adecb555d8d2522119f0b7809ef86f926f7554c675ff",
+      "origin": "New NET-14C work or identified preserved intermediate evidence; not recovered historical originals"
+    },
+    {
+      "path": "hardware/video_system/bus_packages.kicad_sym",
+      "bytes": 19070,
+      "sha256": "008de761399ecb965e7f0873c7ec86489e4ed19b53a817886a4666b32e9fdbb8",
+      "origin": "New NET-14C work or identified preserved intermediate evidence; not recovered historical originals"
+    },
+    {
+      "path": "hardware/video_system/design.json",
+      "bytes": 21137,
+      "sha256": "43d0ab597016d65b1f27bd8d1478cd35d3e2988b77d45e6f8c1f590c972e89c4",
+      "origin": "New NET-14C work or identified preserved intermediate evidence; not recovered historical originals"
+    },
+    {
+      "path": "hardware/video_system/package-functions.json",
+      "bytes": 9135,
+      "sha256": "9ffd21f859251424a32383695d0ee49dab2befa02830f18e17318ccef270394d",
+      "origin": "New NET-14C work or identified preserved intermediate evidence; not recovered historical originals"
+    },
+    {
+      "path": "hardware/video_system/pinmap.csv",
+      "bytes": 13885,
+      "sha256": "e0698398b59acf7ef672ed8789f780af6a2853fe4cbb8849192925f5cba2a5a2",
+      "origin": "New NET-14C work or identified preserved intermediate evidence; not recovered historical originals"
+    },
+    {
+      "path": "hardware/video_system/sym-lib-table",
+      "bytes": 157,
+      "sha256": "4a02883558d41719fca1bde676de7b2a8ae3d9111230742c9bb847b6b9a23044",
+      "origin": "New NET-14C work or identified preserved intermediate evidence; not recovered historical originals"
+    },
+    {
+      "path": "hardware/video_system/video_system.kicad_pro",
+      "bytes": 79,
+      "sha256": "b7a0d3b6f732aeab2b628776734379c5d02b99add681a7af6f0719ba1e3d6c09",
+      "origin": "New NET-14C work or identified preserved intermediate evidence; not recovered historical originals"
+    },
+    {
+      "path": "hardware/video_system/video_system.kicad_sch",
+      "bytes": 161215,
+      "sha256": "9672cc120074130abfa3028ca92c5a85f63edefc6c686b8b6e907ac641c4c45d",
+      "origin": "New NET-14C work or identified preserved intermediate evidence; not recovered historical originals"
+    },
+    {
+      "path": "hardware/video_system/video_system_netlist.sv",
+      "bytes": 9860,
+      "sha256": "0a70a3a4ee209ec188b5ff026c18c636d72d3121005500e235d54a7e73f0fd1a",
+      "origin": "New NET-14C work or identified preserved intermediate evidence; not recovered historical originals"
+    },
+    {
+      "path": "sim/net14c/isa1_memory_video.sv",
+      "bytes": 5482,
+      "sha256": "86c1e44645b21b1eaa0a1eea6863d5fc8a07793a852d61ad99d3e560b097cfc4",
+      "origin": "New NET-14C work or identified preserved intermediate evidence; not recovered historical originals"
+    },
+    {
+      "path": "sim/net14c/package_models_async.sv",
+      "bytes": 3457,
+      "sha256": "7b45346f5e25bb73deb33ba9fb02d50e2b020ab527f75fed1244e173300ccfcb",
+      "origin": "New NET-14C work or identified preserved intermediate evidence; not recovered historical originals"
+    },
+    {
+      "path": "sim/net14c/tb_reset_resolution.sv",
+      "bytes": 1936,
+      "sha256": "a23e2058d0c6a8ac25faa61ee079c17749062897322a7a322b115a444ac0757a",
+      "origin": "New NET-14C work or identified preserved intermediate evidence; not recovered historical originals"
+    },
+    {
+      "path": "sim/net14c/tb_video_clock_cuts.sv",
+      "bytes": 2159,
+      "sha256": "743b07dcd3445869ec626d5bfbb93834f0dba254d565c82d876916fe2bebaaf5",
+      "origin": "New NET-14C work or identified preserved intermediate evidence; not recovered historical originals"
+    },
+    {
+      "path": "sim/net14c/tb_video_system.sv",
+      "bytes": 4305,
+      "sha256": "4bf5b3498e3012aef5ace5ae49d7a1ea8d1742f79278857c32d1a51bfad7a006",
+      "origin": "New NET-14C work or identified preserved intermediate evidence; not recovered historical originals"
+    },
+    {
+      "path": "sim/net14c/video_raster_async_netlist.sv",
+      "bytes": 10001,
+      "sha256": "9885b7aeeb25428fa6a25ea6157061837175d971d4f81bef11c0b5018bcca38f",
+      "origin": "New NET-14C work or identified preserved intermediate evidence; not recovered historical originals"
+    },
+    {
+      "path": "tools/build_video_system.py",
+      "bytes": 2829,
+      "sha256": "1028df9ebb2975846048ee0cd0a19c7638d8cca2e51a89a19510eb9ac4a95ac6",
+      "origin": "New NET-14C work or identified preserved intermediate evidence; not recovered historical originals"
+    },
+    {
+      "path": "tools/check_video_system_erc.py",
+      "bytes": 1767,
+      "sha256": "13ee92406fcaf69d38bb29653f0fc337b734628cad92161585022d6cd03cf95c",
+      "origin": "New NET-14C work or identified preserved intermediate evidence; not recovered historical originals"
+    },
+    {
+      "path": "tools/make_video_cpu.py",
+      "bytes": 6335,
+      "sha256": "99d4360e3202eba15c811087bb9f924dcf866af9c227e441d5308cfebb605c54",
+      "origin": "New NET-14C work or identified preserved intermediate evidence; not recovered historical originals"
+    },
+    {
+      "path": "tools/make_video_reset_model.py",
+      "bytes": 4912,
+      "sha256": "354b5f563c173105f8753b63e163d746dc0598d1411a4d864364f806a8dbbd9e",
+      "origin": "New NET-14C work or identified preserved intermediate evidence; not recovered historical originals"
+    },
+    {
+      "path": "tools/prepare_video_system_checks.py",
+      "bytes": 2187,
+      "sha256": "bff4b06f26e00f5add7dedcc37c82a01109d21e774fc866ce6e44a64dcab6b42",
+      "origin": "New NET-14C work or identified preserved intermediate evidence; not recovered historical originals"
+    },
+    {
+      "path": "tools/record_net14c_manifest.py",
+      "bytes": 7422,
+      "sha256": "37ec8a3e8a42752e852176e60ea612d71756d14da557d6ebafc13ea573bb11ac",
+      "origin": "New NET-14C work or identified preserved intermediate evidence; not recovered historical originals"
+    },
+    {
+      "path": "tools/run_reset_resolution.py",
+      "bytes": 3241,
+      "sha256": "7086f759f88b28c7d27d484d3b848a65eb35defc965432a2a86c2c1c4ee40257",
+      "origin": "New NET-14C work or identified preserved intermediate evidence; not recovered historical originals"
+    },
+    {
+      "path": "tools/run_video_clock_cuts.py",
+      "bytes": 3500,
+      "sha256": "7a06f81cbdb758e8e29328fa8c1fb1ccee3ea67643a6469835c05bfbef33d649",
+      "origin": "New NET-14C work or identified preserved intermediate evidence; not recovered historical originals"
+    },
+    {
+      "path": "tools/run_video_cpu.py",
+      "bytes": 12374,
+      "sha256": "b5dc7b03df773f01e1761e5c08686f62b68a59120c1a8498372fc1854ea07a94",
+      "origin": "New NET-14C work or identified preserved intermediate evidence; not recovered historical originals"
+    },
+    {
+      "path": "tools/run_video_cpu_async.py",
+      "bytes": 12907,
+      "sha256": "e319f8d51fcb96c82d3e349179cac12f3ce8fcc677084b08051b62e6b71357bf",
+      "origin": "New NET-14C work or identified preserved intermediate evidence; not recovered historical originals"
+    },
+    {
+      "path": "tools/run_video_safety_batches.py",
+      "bytes": 4525,
+      "sha256": "9c4f9912432ae9ccb76097ffed9ecf1b333955ff7c29cd48e9a7f8d902bc3b49",
+      "origin": "New NET-14C work or identified preserved intermediate evidence; not recovered historical originals"
+    },
+    {
+      "path": "tools/run_video_system.py",
+      "bytes": 2549,
+      "sha256": "0cab111150a36f27430de45f6171dc609fb8965079d91d3de488ba222eb729ef",
+      "origin": "New NET-14C work or identified preserved intermediate evidence; not recovered historical originals"
+    },
+    {
+      "path": "verification/net14c/acceptance.json",
+      "bytes": 763,
+      "sha256": "0b5afd6e7202838ebe73ea28141048d09fc8313ec4c21aee9da37a364434d817",
+      "origin": "New NET-14C work or identified preserved intermediate evidence; not recovered historical originals"
+    },
+    {
+      "path": "verification/net14c/adapter-origin.json",
+      "bytes": 1067,
+      "sha256": "84a11f4214f3ce1fb9ced9b9ebc262485af24b8fd48420dbf09c201a08deff99",
+      "origin": "New NET-14C work or identified preserved intermediate evidence; not recovered historical originals"
+    },
+    {
+      "path": "verification/net14c/baseline-integrity.json",
+      "bytes": 2584,
+      "sha256": "2e8bafae68598fae7b281b7bb096c65164fe1ddecfb96eea23b59c0a1dc71907",
+      "origin": "New NET-14C work or identified preserved intermediate evidence; not recovered historical originals"
+    },
+    {
+      "path": "verification/net14c/baseline-quick.json",
+      "bytes": 16846,
+      "sha256": "2925af98b994d88a5f314f5b932213cd0d531b6791a16de428642ed343693a1b",
+      "origin": "New NET-14C work or identified preserved intermediate evidence; not recovered historical originals"
+    },
+    {
+      "path": "verification/net14c/clock-cuts.json",
+      "bytes": 3433,
+      "sha256": "cab2b572c06e0f02f69db9f9978d204d211c711b2ea4ef1e10041d7d5be47c5a",
+      "origin": "New NET-14C work or identified preserved intermediate evidence; not recovered historical originals"
+    },
+    {
+      "path": "verification/net14c/cpu/frame-ideal.png",
+      "bytes": 1361,
+      "sha256": "d9a8e76c001c18198f03ed53bed7864ad1043e3002e2908a94e98452b58f6375",
+      "origin": "New NET-14C work or identified preserved intermediate evidence; not recovered historical originals"
+    },
+    {
+      "path": "verification/net14c/cpu/results-ideal.json",
+      "bytes": 20903,
+      "sha256": "b589bffc05dedbcbaaa122664ff81d90eb5449715532a42b49dc5c0374eba92b",
+      "origin": "New NET-14C work or identified preserved intermediate evidence; not recovered historical originals"
+    },
+    {
+      "path": "verification/net14c/cpu/results-timed-async.json",
+      "bytes": 17551,
+      "sha256": "8165ce6dfb873c8488c94782cc3b2bda3c6dc8acf0fc8d4af90d10bf9a6d2fe5",
+      "origin": "New NET-14C work or identified preserved intermediate evidence; not recovered historical originals"
+    },
+    {
+      "path": "verification/net14c/cpu/results-timed.json",
+      "bytes": 15072,
+      "sha256": "4d07216cb77751b80d78f0d43180a83ae4860950177435cddc250fb9248d891c",
+      "origin": "New NET-14C work or identified preserved intermediate evidence; not recovered historical originals"
+    },
+    {
+      "path": "verification/net14c/development/clock-cut-fixture-startup/clock-cuts.json.txt",
+      "bytes": 3273,
+      "sha256": "10da617ff2f1f1984cebd17c66af2bbae6d20d46fca76a34b1f644e267992de7",
+      "origin": "New NET-14C work or identified preserved intermediate evidence; not recovered historical originals"
+    },
+    {
+      "path": "verification/net14c/development/clock-cut-fixture-startup/origin.json",
+      "bytes": 684,
+      "sha256": "96c8214f6386a1acb864f53972c13ae3f27960b299c427495e59b947a0b35d0a",
+      "origin": "New NET-14C work or identified preserved intermediate evidence; not recovered historical originals"
+    },
+    {
+      "path": "verification/net14c/development/clock-cut-fixture-startup/run_video_clock_cuts.py.txt",
+      "bytes": 3400,
+      "sha256": "99e7d40305ea95c0feb777e6f15bf542aab5062fca75f25051c0d96ea194dbe2",
+      "origin": "New NET-14C work or identified preserved intermediate evidence; not recovered historical originals"
+    },
+    {
+      "path": "verification/net14c/development/clock-cut-rise-only/clock-cuts.json.txt",
+      "bytes": 3616,
+      "sha256": "a2436544c3b7d93797426c86422f93318dca634d4ef10c230d97f704af948363",
+      "origin": "New NET-14C work or identified preserved intermediate evidence; not recovered historical originals"
+    },
+    {
+      "path": "verification/net14c/development/clock-cut-rise-only/origin.json",
+      "bytes": 719,
+      "sha256": "b24c9baf7927ae6989e3d81ddf2fd41b5ec74785bffd8575ea45a6020abe5b7d",
+      "origin": "New NET-14C work or identified preserved intermediate evidence; not recovered historical originals"
+    },
+    {
+      "path": "verification/net14c/development/clock-cut-rise-only/run_video_clock_cuts.py.txt",
+      "bytes": 3500,
+      "sha256": "250917431c4b08046a5f92dd4a4e338b036766e44bb8c93332547c687ca3bba2",
+      "origin": "New NET-14C work or identified preserved intermediate evidence; not recovered historical originals"
+    },
+    {
+      "path": "verification/net14c/development/initial-controller-reset/isa1_memory_video.sv.txt",
+      "bytes": 5482,
+      "sha256": "ba877981d280181a66324d10ef24eafecc7009008252d59ab1700431b05aeaf6",
+      "origin": "New NET-14C work or identified preserved intermediate evidence; not recovered historical originals"
+    },
+    {
+      "path": "verification/net14c/development/initial-controller-reset/make_video_cpu.py.txt",
+      "bytes": 5622,
+      "sha256": "9673d1dfd7d2b1826c7afac688573af65d85c09a9e8e2cbca0ef0726d13221fc",
+      "origin": "New NET-14C work or identified preserved intermediate evidence; not recovered historical originals"
+    },
+    {
+      "path": "verification/net14c/development/initial-controller-reset/origin.json",
+      "bytes": 1231,
+      "sha256": "c1f2e7ef8216a68c807c6aa6664c166a968a0c46f3190689fec3952ae5c3c02b",
+      "origin": "New NET-14C work or identified preserved intermediate evidence; not recovered historical originals"
+    },
+    {
+      "path": "verification/net14c/development/initial-controller-reset/results-ideal.json.txt",
+      "bytes": 14998,
+      "sha256": "4028c68d6cc7efbad72e04caa725c4b5a3a3f73436de961b1dc1de9010274c04",
+      "origin": "New NET-14C work or identified preserved intermediate evidence; not recovered historical originals"
+    },
+    {
+      "path": "verification/net14c/development/initial-controller-reset/run_video_cpu.py.txt",
+      "bytes": 11707,
+      "sha256": "33f5cfffadb63764ce976c35ea9fb4e18e7c937cadc55fc5b096f114aadee860",
+      "origin": "New NET-14C work or identified preserved intermediate evidence; not recovered historical originals"
+    },
+    {
+      "path": "verification/net14c/development/integration-before-clock-fix/isa1_memory_video.sv.txt",
+      "bytes": 5482,
+      "sha256": "0f320709dab2009afc1cfa4b6bd24c4208c47ea82aacb6fbfe234db24c952d7b",
+      "origin": "New NET-14C work or identified preserved intermediate evidence; not recovered historical originals"
+    },
+    {
+      "path": "verification/net14c/development/integration-before-clock-fix/make_video_cpu.py.txt",
+      "bytes": 6007,
+      "sha256": "5756b9dcd1074c108df22bba02a2b044d3bec8e742995750038ad62bd6a18bd7",
+      "origin": "New NET-14C work or identified preserved intermediate evidence; not recovered historical originals"
+    },
+    {
+      "path": "verification/net14c/development/integration-before-clock-fix/make_video_reset_model.py.txt",
+      "bytes": 4912,
+      "sha256": "74e74b69266caece1d8235a6d8a1d360d54ac8fe9e1df977bea190e3ed5a45de",
+      "origin": "New NET-14C work or identified preserved intermediate evidence; not recovered historical originals"
+    },
+    {
+      "path": "verification/net14c/development/integration-before-clock-fix/origin.json",
+      "bytes": 2067,
+      "sha256": "226416f3edc06df29649d5b7143dfc8f6c154286760a2b7f0ac344f7f6f11128",
+      "origin": "New NET-14C work or identified preserved intermediate evidence; not recovered historical originals"
+    },
+    {
+      "path": "verification/net14c/development/integration-before-clock-fix/results-ideal.json.txt",
+      "bytes": 20514,
+      "sha256": "93ecd2422248b7db7244b62de9ed5b38707f226bd0ca34219f590db09e093342",
+      "origin": "New NET-14C work or identified preserved intermediate evidence; not recovered historical originals"
+    },
+    {
+      "path": "verification/net14c/development/integration-before-clock-fix/results-timed-async.json.txt",
+      "bytes": 15594,
+      "sha256": "6b372864ff0894d20fa2d5227f33086d1443658489fa088e22999cc840556fc9",
+      "origin": "New NET-14C work or identified preserved intermediate evidence; not recovered historical originals"
+    },
+    {
+      "path": "verification/net14c/development/integration-before-clock-fix/run_video_cpu.py.txt",
+      "bytes": 12046,
+      "sha256": "721e085270ba3ff9459a56309044b918a9c390e8452d2f8bb4ace1e926bb248e",
+      "origin": "New NET-14C work or identified preserved intermediate evidence; not recovered historical originals"
+    },
+    {
+      "path": "verification/net14c/development/integration-before-clock-fix/run_video_cpu_async.py.txt",
+      "bytes": 12579,
+      "sha256": "32be30e1ee24e6031f663ebd9218c703418d2446f7ded8e22b396e7236c75cba",
+      "origin": "New NET-14C work or identified preserved intermediate evidence; not recovered historical originals"
+    },
+    {
+      "path": "verification/net14c/native/changed-pin.json",
+      "bytes": 207,
+      "sha256": "92b662cf75303b548cc8c7dc72951818783f7453fac8781230f160941694c990",
+      "origin": "New NET-14C work or identified preserved intermediate evidence; not recovered historical originals"
+    },
+    {
+      "path": "verification/net14c/native/check-origin.json",
+      "bytes": 1199,
+      "sha256": "a464e8a18c8eb3d979b8d7d7ab00973f618af003b3b2828b40df2066444f0454",
+      "origin": "New NET-14C work or identified preserved intermediate evidence; not recovered historical originals"
+    },
+    {
+      "path": "verification/net14c/native/erc-summary.json",
+      "bytes": 1472,
+      "sha256": "d0b3ab820be22ffd8f55d6eb2568728520d820e2c8cb815208f862f673b71c86",
+      "origin": "New NET-14C work or identified preserved intermediate evidence; not recovered historical originals"
+    },
+    {
+      "path": "verification/net14c/native/erc.json",
+      "bytes": 26486,
+      "sha256": "b2f50dfa4271346da2517a234ff4f45947bbb99232486495f301da947242dbf9",
+      "origin": "New NET-14C work or identified preserved intermediate evidence; not recovered historical originals"
+    },
+    {
+      "path": "verification/net14c/native/preview.png",
+      "bytes": 45384,
+      "sha256": "02eaec5d0d5377c3a8a4d691a73343a8bb610e8096f9f6dbbfe44e2c6a9fc9df",
+      "origin": "New NET-14C work or identified preserved intermediate evidence; not recovered historical originals"
+    },
+    {
+      "path": "verification/net14c/native/results.json",
+      "bytes": 8116,
+      "sha256": "206ecfab74ed99d4f490184ae22d5ca67a62061d92090687930368899500c375",
+      "origin": "New NET-14C work or identified preserved intermediate evidence; not recovered historical originals"
+    },
+    {
+      "path": "verification/net14c/native/schematic-check.json",
+      "bytes": 575,
+      "sha256": "7d16ee34b7f7de8a8f0d403743674bb68f7166b1b57389eb587c04a254d7e427",
+      "origin": "New NET-14C work or identified preserved intermediate evidence; not recovered historical originals"
+    },
+    {
+      "path": "verification/net14c/native/video_system.pdf",
+      "bytes": 256913,
+      "sha256": "81d8a5706b9f18080dd7b7cf29e6cc69729efe362213f58decd420441b2806bb",
+      "origin": "New NET-14C work or identified preserved intermediate evidence; not recovered historical originals"
+    },
+    {
+      "path": "verification/net14c/native/video_system.xml",
+      "bytes": 118240,
+      "sha256": "e519094f6d318d94f899d0ad0de802ff7bf34a14115324163d313b9b0da6c80d",
+      "origin": "New NET-14C work or identified preserved intermediate evidence; not recovered historical originals"
+    },
+    {
+      "path": "verification/net14c/publication-preflight.json",
+      "bytes": 330,
+      "sha256": "4ad1a61d3721927e0b125a1eed0580a300635cab111a3adf7c8047a5928c14b0",
+      "origin": "New NET-14C work or identified preserved intermediate evidence; not recovered historical originals"
+    },
+    {
+      "path": "verification/net14c/reset-model-origin.json",
+      "bytes": 1535,
+      "sha256": "4a1f692a5f8438beb696f91fecef856027e8aafc8110ce673fe4ef5bf346bea5",
+      "origin": "New NET-14C work or identified preserved intermediate evidence; not recovered historical originals"
+    },
+    {
+      "path": "verification/net14c/reset-resolution.json",
+      "bytes": 3615,
+      "sha256": "cbbb6f9b6039433fd413a7f342782ea628a662cc0434708bd7f86ff3c8e41759",
+      "origin": "New NET-14C work or identified preserved intermediate evidence; not recovered historical originals"
+    },
+    {
+      "path": "verification/net14c/strict-timed-recovery-rejection.json",
+      "bytes": 14924,
+      "sha256": "77859f006e474f09584580cb55553cc3b7f9f2aeff54c7ccd60bf2c37aa17c6f",
+      "origin": "New NET-14C work or identified preserved intermediate evidence; not recovered historical originals"
+    },
+    {
+      "path": "verification/net14c/timed-rescheduling.json",
+      "bytes": 317,
+      "sha256": "2f26a8a1ac21f5a2e3604941d193c265efcd0ab9e3f557f6dc1122296cad4bcf",
+      "origin": "New NET-14C work or identified preserved intermediate evidence; not recovered historical originals"
+    },
+    {
+      "path": "verification/net14c/timed-safety-batches.json",
+      "bytes": 18721,
+      "sha256": "697dc45f6791084a03d61c29e6360cac6a3a073c9e135a4266d1cc8a1fe843e1",
+      "origin": "New NET-14C work or identified preserved intermediate evidence; not recovered historical originals"
+    },
+    {
+      "path": "verification/net14c/user-measurement-status.json",
+      "bytes": 292,
+      "sha256": "362639092f022937a8145b2455c9c8c4ec74053ee3bd364789f4b0093f3636e2",
+      "origin": "New NET-14C work or identified preserved intermediate evidence; not recovered historical originals"
+    }
+  ]
+}

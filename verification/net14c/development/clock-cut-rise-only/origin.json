@@ -1,0 +1,15 @@
+{
+  "scope": "Positive circuit passed cuts after rising backend edges, but mutated old clear was not rejected. This insufficient calibration is a failed check, not approval. Extend cut arrival sweep to falling edges.",
+  "files": [
+    {
+      "source": "tools/run_video_clock_cuts.py",
+      "path": "verification/net14c/development/clock-cut-rise-only/run_video_clock_cuts.py.txt",
+      "sha256": "250917431c4b08046a5f92dd4a4e338b036766e44bb8c93332547c687ca3bba2"
+    },
+    {
+      "source": "verification/net14c/clock-cuts.json",
+      "path": "verification/net14c/development/clock-cut-rise-only/clock-cuts.json.txt",
+      "sha256": "a2436544c3b7d93797426c86422f93318dca634d4ef10c230d97f704af948363"
+    }
+  ]
+}

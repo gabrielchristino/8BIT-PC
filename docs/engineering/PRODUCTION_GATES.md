@@ -2,7 +2,7 @@
 
 Este é o roteiro de evidências para chegar a uma placa produzível. Uma bancada isolada aprovada não marca um bloco ou a placa inteira como liberado.
 
-A [lista consolidada de testes e revisões](VALIDATION_STATUS.md) mostra o estado atual por item, sem tratar listas históricas como novas pendências. NET-14A acrescenta um contrato executável de raster/captura, não o circuito físico de relógio/vídeo.
+A [lista consolidada de testes e revisões](VALIDATION_STATUS.md) mostra o estado atual por item, sem tratar listas históricas como novas pendências. NET-14C integra o raster/captura por pinos à CPU no boot/quadro ideal; recovery estrito externo continua rejeitado e o cenário binário separado não aprova metastabilidade/MTBF físicos.
 
 | Etapa | Evidência necessária | Estado atual |
 |---|---|---|

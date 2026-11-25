@@ -1,0 +1,44 @@
+[
+  {
+    "git_commit": "29c37359881a386644b8dcfbf4ccdd967edd159c",
+    "manifest": "verification/rev9842/manifest.json",
+    "checked": 26,
+    "failures": []
+  },
+  {
+    "git_commit": "6bbac525a4435f87566ccb723e733134e21d3e43",
+    "manifest": "verification/rtl01/manifest.json",
+    "checked": 26,
+    "failures": []
+  },
+  {
+    "git_commit": "60c097c8d5fb6a8f282fa6429347431c9f313ac8",
+    "manifest": "verification/net02/manifest.json",
+    "checked": 35,
+    "failures": []
+  },
+  {
+    "git_commit": "b5e46593fab55b8679254f9004e5711cd1ffa2c5",
+    "manifest": "verification/net03/manifest.json",
+    "checked": 42,
+    "failures": []
+  },
+  {
+    "git_commit": "179b06ed6aa80ab1658022657638ef571888d6a7",
+    "manifest": "verification/net04/manifest.json",
+    "checked": 40,
+    "failures": []
+  },
+  {
+    "git_commit": "18a3cdc2ab83cb8af51177b8116b0320a4a4f5b8",
+    "manifest": "verification/net05/manifest.json",
+    "checked": 37,
+    "failures": []
+  },
+  {
+    "git_commit": "d876dc6499c49b937c2dfd318abe605eea0497e3",
+    "manifest": "verification/net06/manifest.json",
+    "checked": 40,
+    "failures": []
+  }
+]

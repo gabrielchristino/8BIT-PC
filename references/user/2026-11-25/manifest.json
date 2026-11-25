@@ -1,0 +1,26 @@
+{
+  "date": "2026-11-25",
+  "scope": "User supplied reference images, not measured unit pinout or manufacturer certification",
+  "files": [
+    {
+      "path": "references/user/2026-11-25/keypad-4x4-diagram.png",
+      "original_attachment_name": "codex-clipboard-4ad35377-410f-441a-b3e6-eca4e0c4ba7e.png",
+      "bytes": 134007,
+      "sha256": "8298a7a635f0090149e980ee94007a155d289dc13ba2e932aea68106bf9cb9f3",
+      "origin": "User attachment in ISA-1 development chat, 2026-11-25",
+      "transformation": "Filename only; original image bytes preserved",
+      "credit": "Diagram visibly credits GUSTAVO MURTA 2019; photograph author not supplied",
+      "license": "Not supplied; no new license inferred"
+    },
+    {
+      "path": "references/user/2026-11-25/keypad-4x4-connector-photo.png",
+      "original_attachment_name": "codex-clipboard-cd140a64-2037-44ef-ac04-f27b9a13023e.png",
+      "bytes": 1038268,
+      "sha256": "c3659c9289f09c70a5d3ba287889a509ab22b5bed53d054432747a1813693499",
+      "origin": "User attachment in ISA-1 development chat, 2026-11-25",
+      "transformation": "Filename only; original image bytes preserved",
+      "credit": "Diagram visibly credits GUSTAVO MURTA 2019; photograph author not supplied",
+      "license": "Not supplied; no new license inferred"
+    }
+  ]
+}

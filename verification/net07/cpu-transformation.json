@@ -1,0 +1,7 @@
+{
+  "source": "sim/net06/isa1_cpu_registers.sv",
+  "source_sha256": "1ebb18921f8c9604b0b0502c285cf54d6135610b242f2cc2f50c4f34fdbe5db0",
+  "output": "sim/net07/isa1_cpu_address.sv",
+  "output_sha256": "20a9f9ae40870d242debed8514f0b32c016d7d282159f3ac434cccc6c39d5f26",
+  "transformation": "Replace PC storage/increment/branches and address mux by exported pin graph; PC_N decoder reused; execution/guards remain RTL"
+}

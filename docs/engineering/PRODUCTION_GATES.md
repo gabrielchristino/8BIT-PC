@@ -5,17 +5,19 @@ Este é o roteiro de evidências para chegar a uma placa produzível. Uma bancad
 | Etapa | Evidência necessária | Estado atual |
 |---|---|---|
 | Especificação | ISA, flags, mapa, reset, pilha, boot e periféricos conciliados | Modelos recuperados; divergências ainda documentadas |
-| Modelos de componentes | Funções, níveis ativos, carga/reset e comparação com datasheets identificados | HC191/157/377 candidatos modelados; demais CIs pendentes |
-| Controle/datapath | Carga, retenção e efeitos únicos de COMMIT, inclusive reset/WAIT em fronteiras | Banco de carga testado isoladamente; integração pendente |
-| Esquemático completo | Todos os pinos e alimentações, portas, inicialização e interfaces definidos | Primeiro esquema parcial do banco X; sem controle completo |
-| Simulação de netlist | Modelo derivado das ligações reais e regressão das 26 instruções | Pendente; HDL e mapa de pinos ainda são representações separadas |
+| Modelos de componentes | Funções, níveis ativos, carga/reset e comparação com datasheets identificados | Modelos funcionais de pacotes das NET-02–07; cenários temporais selecionados; memória/periféricos físicos pendentes |
+| Controle/datapath | Carga, retenção e efeitos únicos de COMMIT, inclusive reset/WAIT em fronteiras | SP/transações/microcódigo/ALU/registradores/PC/endereço integrados às 26 instruções; execução/guardas em validação NET-08; X ainda parcialmente referência |
+| Esquemático completo | Todos os pinos e alimentações, portas, inicialização e interfaces definidos | Esquemas parciais KiCad com pinos/netlists das NET-02–07; esquema global e interfaces ainda pendentes |
+| Simulação de netlist | Modelo derivado das ligações reais e regressão das 26 instruções | Netlists KiCad dos blocos integradas à CPU, com instruções/guardas/boot/quadro VGA comparados; sistema completo por pinos ainda pendente |
 | Temporização | Setup/hold com mínimos/máximos, carga, skew, duty cycle e cantos | Cenário parcial e monitores executados; fechamento completo pendente |
 | Elétrica | TTL/CMOS, drivers, DAC VGA, memória, ruído, alimentação, reset/brownout | Datasheets de candidatos arquivados; SPICE e medidas pendentes |
-| Teclado | Pinagem medida, corrente de linha, bounce, pares/ambiguidades e CPU/VGA | Proposta e modelos ideais; interface física pendente |
+| Teclado | Pinagem medida, corrente de linha, bounce, pares/ambiguidades e CPU/VGA | Imagens/FAQ fornecidas pelo usuário indicam pinagem; unidades não medidas, interface/proteção/debounce físicos pendentes |
 | ERC | Erros resolvidos e exceções justificadas em esquema completo | Não executado; CLI 7 disponível não tem subcomando ERC |
 | Layout | Footprints conferidos, desacoplamento, retorno, conectores e montagem | Pendente |
 | DRC e fabricação | DRC, BOM, posições, Gerbers, furos e revisão independente | Pendente |
 | Protótipo | Medições de funcionamento, margens e testes de produção | Pendente |
+
+**Atualização de 25/11/2026:** nenhuma etapa parcial autoriza emitir uma liberação de produção. O pedido atual é continuar até os critérios; não representa aprovação de medições inexistentes ou de uma PCB incompleta.
 
 Para cada iteração, registrar revisão, arquivos de entrada, hashes, ferramentas/versões, comandos, saídas, falhas e limitações. Testes negativos devem comprovar que os monitores detectam violações reais. Arquivos históricos não são corrigidos em seu lugar.
 

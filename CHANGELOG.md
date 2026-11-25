@@ -1,5 +1,10 @@
 # Histórico preservado
 
+## NET-07 — 25/11/2026
+
+PC e caminho de endereço de 45 CIs derivados do esquema KiCad, regressão completa e testes negativos em verification/net07. Imagens/FAQ de membrana fornecidas pelo usuário preservadas com provenance e referência de contatos em docs/engineering/KEYPAD_CONNECTOR.md. Autorizada continuidade pelas etapas restantes; fabricação não liberada.
+
+
 ## NET-06 — 25/11/2026
 
 Registradores A/B/EA, Z/C e mux de dados a partir do esquema KiCad, com 40 CIs e adaptador separado da NET-05. Matriz de seleção/carga/retenção nos dois modos, reset, oito violações temporais esperadas e regressões integradas em verification/net06. Preservado o ensaio inicial que falhou por ausência de pulso de reset na fixture; rodada final usa reset explícito. Fontes anteriores intactas. Relatório docs/engineering/NET06.md; sem liberação para fabricação.

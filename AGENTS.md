@@ -52,3 +52,9 @@
 - Leia docs/engineering/NET06.md e verification/net06/results.json. hardware/register_bank contém A/B/EA/Z/C e mux de dados derivados dos pinos KiCad; sim/net06 deriva da NET-05. PC/endereço/estados de execução e guardas continuam RTL.
 - Z testa o dado selecionado, não somente ZERO da ALU; C só atualiza em flags=2. Reuse as saídas físicas DST_N/FLAGS_N da NET-04. Preserve pulso explícito de reset e não inicialize Q artificialmente para ocultar falhas.
 - A matriz de 262.144 casos cobre campos de controle/padrões, não todos os estados possíveis. Ensaios negativos temporais são rejeições esperadas; o log inicial de fixture falha não é aprovação atual.
+
+## Continuidade NET-07 e produção
+
+- Leia docs/engineering/NET07.md e PRODUCTION_GATES.md. PC/endereço vêm dos pinos KiCad; fontes anteriores intactas. O usuário autorizou continuar até a preparação de produção; não parar para pedir autorização por bloco.
+- Imagens do usuário indicam L1/L2/L3/L4/C1/C2/C3/C4 na orientação da foto. Veja KEYPAD_CONNECTOR.md; não confunda referência de imagem/FAQ com continuidade ou resistência medidas.
+- Não fabricar nem declarar liberação sem fechar os critérios, incluindo placa completa, elétrica/temporização, ERC/DRC e evidência física necessária. Dados físicos faltantes devem permanecer explícitos enquanto outras partes avançam.

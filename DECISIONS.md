@@ -1,5 +1,10 @@
 # Decisões recuperadas e registro da migração
 
+## ADR E10 — PC síncrono e árvore de seleção de endereço
+
+25/11/2026: dois HC273, quatro HC283 para incremento e HC157 para próximo PC/retenção e endereço; portas reutilizam PC_N físico e Z anterior. Alternativas: contadores com carga assíncrona exigiriam novas fases de captura/liberação; barramento tri-state exigiria exclusão de drivers/turnaround. A árvore evita disputa por construção, sem alegar menor BOM. Preservam-se wrap, desvios, endereço SP/SP−1 e captura pela NET-03 antes de WAIT. Aceitação: 2.097.152 casos PC e 524.288 padrões/seletores por modo ideal/temporizado, regressões completas e rejeições intencionais. Limites: cenário temporal isolado, sem placa liberada. Ver docs/engineering/NET07.md.
+
+
 ## ADR E09 — Registradores com realimentação e Z sobre dado selecionado
 
 Decisão de 25/11/2026: quatro SN74HC273 para A/B/EA com HC157 de realimentação, HC74 para Z/C com retenção por portas e árvore HC157 para origem do dado. Reusar DST_N/FLAGS_N físicos da NET-04 e manter clock positivo comum; EXEC_ENABLE ainda deriva da qualificação RTL da execução. Alternativas: HC377 exigiria resolver clear; clock por enable foi rejeitado por introduzir hazards; bancos tri-state exigiriam exclusão/turnaround adicionais; outra codificação de flags poderia compactar pacotes, mas ampliaria a análise de reset e retenção. Z continua testando o dado selecionado, incluindo cargas de memória; C recebe carry somente em flags=2. Preservam-se ISA, ROMs, X, pilha e VGA. Aceitação: matriz de 262.144 casos por modo, quatro cortes de reset/energia digital, testes negativos de ligação e oito violações temporais esperadas, regressões de CPU/guardas/boot/VGA e auditoria de hashes. Não é BOM otimizada ou temporização global; PC e caminho de endereços permanecem RTL. Ver docs/engineering/NET06.md.

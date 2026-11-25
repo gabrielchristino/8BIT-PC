@@ -1,5 +1,18 @@
 # Roadmap de continuidade
 
+## Continuidade até a placa — NET-07
+
+- [x] PC, incremento/desvios e seleção de endereços a partir do esquema; regressões completas nas duas configurações de X.
+- [ ] NET-08: aceitar controle de execução/guardas/fault após bancadas isoladas e programa completo.
+- [ ] Concluir X sem controle simbólico e integrar todas as netlists/cargas/clock/reset.
+- [ ] Mapear memória/VRAM/arbitragem/MMIO/VGA/teclado, preservando interfaces e funções.
+- [ ] Fechar componentes/BOM, níveis garantidos, energia USB-C, supervisão, temporização global e testes elétricos.
+- [ ] Esquema completo com footprints/ERC, layout/DRC e arquivos de fabricação revisados.
+- [ ] Medições de protótipo, incluindo quatro membranas, reset/energia, barramentos e saída VGA, antes de liberação.
+
+Usuário autorizou continuar pelas etapas necessárias. As imagens fornecidas indicam a pinagem de referência do teclado; continuidade e características das unidades ainda exigem ensaio.
+
+
 ## Iteração atual — NET-06
 
 - [x] Mapear A/B/EA, flags e seleção interna de dados a CIs, com simulação derivada do XML KiCad.

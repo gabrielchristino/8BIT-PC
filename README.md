@@ -6,7 +6,9 @@ Projeto de computador pessoal com CPU própria de lógica discreta, endereçamen
 
 ## Começar
 
-**Desenvolvimento atual:** [NET-06 — A/B/EA, flags e seleção de dados](docs/engineering/NET06.md). Registradores e mux de dados derivam da netlist KiCad e integram-se aos blocos anteriores. Execute `python3 tools/run_register_netlist.py` e `python3 tools/run_register_timing_checks.py` no WSL Ubuntu. PC, caminho de endereços e controle físico restante continuam pendentes, além da validação elétrica/temporal/física.
+**Desenvolvimento atual aprovado:** [NET-07 — PC e seleção de endereços](docs/engineering/NET07.md), integrado às netlists anteriores. Execute `python3 tools/run_address_netlist.py` no WSL Ubuntu. Controle de execução físico está em validação separada; memórias/periféricos, elétrica/temporização global, ERC/DRC, PCB e protótipo continuam pendentes. Ver [critérios de produção](docs/engineering/PRODUCTION_GATES.md).
+
+**Registradores/dados:** [NET-06](docs/engineering/NET06.md). A referência fornecida pelo usuário para as membranas está em [KEYPAD_CONNECTOR.md](docs/engineering/KEYPAD_CONNECTOR.md).
 
 **ALU de 8 bits:** [NET-05](docs/engineering/NET05.md), com soma/subtração, lógica e deslocamentos da netlist.
 

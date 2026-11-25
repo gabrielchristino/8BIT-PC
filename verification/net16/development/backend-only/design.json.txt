@@ -1,0 +1,155 @@
+{
+  "iteration": "NET-16B",
+  "parts": [
+    {
+      "reference": "U1",
+      "part": "SN74AHC125",
+      "nets": {
+        "2": "RAW_SAFE_N",
+        "5": "GND",
+        "9": "GND",
+        "12": "GND",
+        "1": "GND",
+        "4": "+5V",
+        "10": "+5V",
+        "13": "+5V",
+        "3": "RAW_BUFFERED",
+        "6": null,
+        "8": null,
+        "11": null,
+        "14": "+5V",
+        "7": "GND"
+      },
+      "x": 70,
+      "y": 70
+    },
+    {
+      "reference": "U2",
+      "part": "SN74AHC14",
+      "nets": {
+        "1": "DELAY_RC",
+        "3": "DELAY_INV",
+        "5": "GND",
+        "9": "GND",
+        "11": "GND",
+        "13": "GND",
+        "2": "DELAY_INV",
+        "4": "DELAY_CLEAR_N",
+        "6": null,
+        "8": null,
+        "10": null,
+        "12": null,
+        "14": "+5V",
+        "7": "GND"
+      },
+      "x": 180,
+      "y": 70
+    },
+    {
+      "reference": "U3",
+      "part": "SN74AHC74",
+      "nets": {
+        "1": "DELAY_CLEAR_N",
+        "2": "+5V",
+        "3": "BACKEND",
+        "4": "+5V",
+        "13": "DELAY_CLEAR_N",
+        "12": "RESET_SYNC1",
+        "11": "BACKEND",
+        "10": "+5V",
+        "5": "RESET_SYNC1",
+        "6": null,
+        "9": "BANK_RESET_N",
+        "8": null,
+        "14": "+5V",
+        "7": "GND"
+      },
+      "x": 290,
+      "y": 70
+    },
+    {
+      "reference": "U4",
+      "part": "SN74AHC08",
+      "nets": {
+        "1": "RAW_SAFE_N",
+        "4": "GND",
+        "9": "GND",
+        "12": "GND",
+        "2": "BANK_RESET_N",
+        "5": "GND",
+        "10": "GND",
+        "13": "GND",
+        "3": "ACCESS_SAFE",
+        "6": null,
+        "8": null,
+        "11": null,
+        "14": "+5V",
+        "7": "GND"
+      },
+      "x": 400,
+      "y": 70
+    },
+    {
+      "reference": "C1",
+      "part": "C",
+      "nets": {
+        "1": "+5V",
+        "2": "GND"
+      },
+      "x": 100,
+      "y": 40
+    },
+    {
+      "reference": "C2",
+      "part": "C",
+      "nets": {
+        "1": "+5V",
+        "2": "GND"
+      },
+      "x": 210,
+      "y": 40
+    },
+    {
+      "reference": "C3",
+      "part": "C",
+      "nets": {
+        "1": "+5V",
+        "2": "GND"
+      },
+      "x": 320,
+      "y": 40
+    },
+    {
+      "reference": "C4",
+      "part": "C",
+      "nets": {
+        "1": "+5V",
+        "2": "GND"
+      },
+      "x": 430,
+      "y": 40
+    },
+    {
+      "reference": "R1",
+      "part": "R",
+      "nets": {
+        "1": "RAW_BUFFERED",
+        "2": "DELAY_RC"
+      },
+      "x": 70,
+      "y": 150,
+      "value": "10k"
+    },
+    {
+      "reference": "C5",
+      "part": "C",
+      "nets": {
+        "1": "DELAY_RC",
+        "2": "GND"
+      },
+      "x": 180,
+      "y": 150,
+      "value": "1n C0G"
+    }
+  ]
+}

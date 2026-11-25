@@ -1,5 +1,13 @@
 # Decisões recuperadas e registro da migração
 
+## ADR E21 — Bloqueio rápido e reset atrasado em dois domínios
+
+25/11/2026: criar hardware/reset_domains como candidato separado, com buffer e RC/Schmitt antes de afirmar reset, dois FFs por domínio para liberar CPU/backend e ACCESS_SAFE exigindo RAW_SAFE_N e ambos liberados. Preservar CPU/ISA/mapa e exigir supervisor externo com pulso/energia qualificados. Não usar o reset de backend diretamente na CPU de clock distinto.
+
+Alternativas rejeitadas: reset direto de bancos pode vencer a inibição de WE; RC sem esticamento de entrada pode ignorar pulso curto; liberação sem esperar o clock da CPU é rejeitada em bancada. Uma triagem otimista também rejeita supervisor de 4,63 V/±2% com 470 uF/−20% e carga hipotética de 0,5 A. Nenhuma escolha de supervisor/hold-up foi homologada. A hipótese binária nos FFs permite testes digitais, mas a rejeição estrita de recovery fica preservada e MTBF permanece aberto.
+
+Aceitação atual: dois envelopes RC de 128 cenários cada, dezesseis configurações de cortes/pausas e dez liberações próximas das bordas por política; ERC parcial com seis violações. Critério futuro: supervisor/regulação/isolamento/cargas/temporização fechados e integração completa CPU/MMIO/memória/raster. Ver [NET16A](docs/engineering/NET16A.md) e [NET16B](docs/engineering/NET16B.md).
+
 ## ADR E20 — MMIO por pinos e espera antes de ler colunas
 
 25/11/2026: acrescentar folhas separadas MMIO/teclado e controlador com KEY_READY, preservando endereços, valores, ISA, COMMIT único, payload e posse. Usar drivers baixo/Hi-Z, pull-ups de linha 100 kohm e coluna 150 kohm, Schmitt AHC14, duas etapas de amostragem e espera de 8.192 ciclos de backend após ROW/reset. Não alterar membranas nem adicionar diodos por tecla.

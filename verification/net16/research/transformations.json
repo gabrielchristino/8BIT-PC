@@ -1,0 +1,41 @@
+{
+  "date": "2026-11-25",
+  "transformations": [
+    {
+      "source": "references/power-candidates/tlv803e.pdf",
+      "command": [
+        "pdftotext",
+        "-layout",
+        "references/power-candidates/tlv803e.pdf",
+        "verification/net16/research/tlv803e.txt"
+      ]
+    },
+    {
+      "source": "references/ti/sn74ahc14.pdf",
+      "command": [
+        "pdftotext",
+        "-layout",
+        "references/ti/sn74ahc14.pdf",
+        "verification/net16/research/sn74ahc14.txt"
+      ]
+    }
+  ],
+  "files": [
+    {
+      "path": "references/power-candidates/tlv803e.pdf",
+      "sha256": "63952e401ebc990645372b4c55ca3a5235da84aa004d68fd91d1d9c42bf96a18"
+    },
+    {
+      "path": "verification/net16/research/tlv803e.txt",
+      "sha256": "d9b168a63c8972df0d95c792794f06cb0603998d7448088f2d877aef53b7f043"
+    },
+    {
+      "path": "verification/net16/research/sn74ahc14.txt",
+      "sha256": "aa865be1e64c429eaa209a5472564b5badb7f102e1a877de81e8f1f9d52a2cf5"
+    },
+    {
+      "path": "verification/net16/research/sources.json",
+      "sha256": "55cb4c03dbd69359823aeeffc0edf20071eb3f2f3a4b4ea09dd432e7195864f0"
+    }
+  ]
+}

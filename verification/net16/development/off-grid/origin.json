@@ -1,0 +1,30 @@
+{
+  "reason": "Fix unaligned passive endpoint positions by snapping candidate sheet positions to 1.27mm grid; earlier digital results are preserved intermediate evidence",
+  "files": [
+    {
+      "source": "tools/build_reset_domains.py",
+      "path": "verification/net16/development/off-grid/build_reset_domains.py.txt",
+      "sha256": "99350ce793bf79588cbafc4d7aad6a9149b14310ef44b5308f583be3c921e28c"
+    },
+    {
+      "source": "verification/net16/native/erc-summary.json",
+      "path": "verification/net16/development/off-grid/erc-summary.json.txt",
+      "sha256": "265ff1422f59ff83d69fd02b4009f688d215e4ee7eb1da87254a3019bfb58ed6"
+    },
+    {
+      "source": "verification/net16/native/erc.json",
+      "path": "verification/net16/development/off-grid/erc.json.txt",
+      "sha256": "374885cf866d4b66d33ffa79742b82beebb1068a3392f5432b26133a5654390b"
+    },
+    {
+      "source": "verification/net16/native/results.json",
+      "path": "verification/net16/development/off-grid/results.json.txt",
+      "sha256": "4f66af1619d8ab1b2992a2bcc1f5f3f9dac1d32e0a0f08db2b186ea1f8d157ac"
+    },
+    {
+      "source": "verification/net16/native/apertures.json",
+      "path": "verification/net16/development/off-grid/apertures.json.txt",
+      "sha256": "53f492c3cd8af678fc04ff822eff082dfe3bcd62272298863e62f8ad3ce97501"
+    }
+  ]
+}

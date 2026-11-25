@@ -1,0 +1,8 @@
+Reset-order first-order envelope 65
+VRAW source 0 0
+RDELAY source delayed 10100.0
+CDELAY delayed 0 9.5e-10 IC=4.5
+ILEAK 0 delayed -1e-06
+.tran 0.01u 100u UIC
+.measure tran crossing WHEN V(delayed)=1.35 FALL=1
+.end

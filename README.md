@@ -65,3 +65,4 @@ O primeiro comando executa as bancadas existentes em cópias temporárias, regis
 Os resultados lógicos não comprovam temporização, níveis elétricos, pinagem, consumo ou funcionamento de uma placa física. A página de teclado baseada na REV76 e os pacotes 9.x representam estágios distintos: pendências da REV76 não devem ser atribuídas automaticamente ao modelo posterior, nem o sucesso posterior pode ser aplicado retroativamente à REV76.
 
 Os ZIPs originais estão em `archive/packages/`; as extrações preservam seus bytes. Textos recuperados da interface têm identificação própria, pois não equivalem a downloads dos arquivos originais. Não foi escolhida uma licença nova durante a migração.
+**Avanço NET-16:** [ordem de reset e domínios de clock](docs/engineering/NET16B.md) em esquema candidato separado; testes isolados de cortes/pausas e envelopes RC registrados. Supervisor/energia, integração global e validação física continuam pendentes.

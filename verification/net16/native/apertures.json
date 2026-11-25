@@ -1,0 +1,137 @@
+{
+  "date": "2026-11-25",
+  "scope": "Binary reset-boundary policies only, not physical metastability or MTBF approval",
+  "sources": [
+    {
+      "path": "sim/net03/package_models.sv",
+      "sha256": "53712265aa1d4312866135c59e73d7543069c7a3281635d43d66825790716258"
+    },
+    {
+      "path": "sim/net14c/package_models_async.sv",
+      "sha256": "7b45346f5e25bb73deb33ba9fb02d50e2b020ab527f75fed1244e173300ccfcb"
+    },
+    {
+      "path": "hardware/reset_domains/reset_domains_netlist.sv",
+      "sha256": "c788935fe52f2ca91b191b4ba91c98620dcf18a7581d202ee55b341b8e24ac80"
+    },
+    {
+      "path": "sim/net16/tb_reset_apertures.sv",
+      "sha256": "01f999c187f1b1c3fdf84614de25d4a8e33f59d577a521a1c85963cc2f2189b7"
+    },
+    {
+      "path": "tools/run_reset_apertures.py",
+      "sha256": "593f9c70ee2d433c3183ca1e198243171d47377cd171c327f59f2827f5659bea"
+    }
+  ],
+  "runs": [
+    {
+      "resolution_policy": 0,
+      "strict_boundary": 0,
+      "compile": {
+        "command": [
+          "iverilog",
+          "-g2012",
+          "-Wall",
+          "-s",
+          "tb_reset_apertures",
+          "-Ptb_reset_apertures.RESOLVE_LATE=0",
+          "-o",
+          "/tmp/isa1-aperture-h88922ng/test.vvp",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net03/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net14c/package_models_async.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/reset_domains/reset_domains_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net16/tb_reset_apertures.sv"
+        ],
+        "exit": 0,
+        "stdout": "",
+        "stderr": "",
+        "seconds": 0.021
+      },
+      "execution": {
+        "command": [
+          "vvp",
+          "/tmp/isa1-aperture-h88922ng/test.vvp"
+        ],
+        "exit": 0,
+        "stdout": "RESULT policy=0 aperture_cuts=10 recovery_backend=3/3 recovery_cpu=3/3 failures=0\n/mnt/c/Users/gabri/projetos/isa1/sim/net16/tb_reset_apertures.sv:29: $finish called at 1145030500 (1ps)\n",
+        "stderr": "",
+        "seconds": 0.07
+      },
+      "passed": true
+    },
+    {
+      "resolution_policy": 1,
+      "strict_boundary": 0,
+      "compile": {
+        "command": [
+          "iverilog",
+          "-g2012",
+          "-Wall",
+          "-s",
+          "tb_reset_apertures",
+          "-Ptb_reset_apertures.RESOLVE_LATE=1",
+          "-o",
+          "/tmp/isa1-aperture-h88922ng/test.vvp",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net03/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net14c/package_models_async.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/reset_domains/reset_domains_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net16/tb_reset_apertures.sv"
+        ],
+        "exit": 0,
+        "stdout": "",
+        "stderr": "",
+        "seconds": 0.023
+      },
+      "execution": {
+        "command": [
+          "vvp",
+          "/tmp/isa1-aperture-h88922ng/test.vvp"
+        ],
+        "exit": 0,
+        "stdout": "RESULT policy=1 aperture_cuts=10 recovery_backend=3/3 recovery_cpu=3/3 failures=0\n/mnt/c/Users/gabri/projetos/isa1/sim/net16/tb_reset_apertures.sv:29: $finish called at 1175030500 (1ps)\n",
+        "stderr": "",
+        "seconds": 0.066
+      },
+      "passed": true
+    }
+  ],
+  "negative": [
+    {
+      "resolution_policy": 1,
+      "strict_boundary": 1,
+      "compile": {
+        "command": [
+          "iverilog",
+          "-g2012",
+          "-Wall",
+          "-s",
+          "tb_reset_apertures",
+          "-Ptb_reset_apertures.RESOLVE_LATE=1",
+          "-o",
+          "/tmp/isa1-aperture-h88922ng/test.vvp",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net03/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net14c/package_models_async.sv",
+          "/tmp/isa1-aperture-h88922ng/strict.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net16/tb_reset_apertures.sv"
+        ],
+        "exit": 0,
+        "stdout": "",
+        "stderr": "",
+        "seconds": 0.018
+      },
+      "execution": {
+        "command": [
+          "vvp",
+          "/tmp/isa1-aperture-h88922ng/test.vvp"
+        ],
+        "exit": 1,
+        "stdout": "FATAL: /mnt/c/Users/gabri/projetos/isa1/sim/net14c/package_models_async.sv:27: AHC74 reset recovery violation tb_reset_apertures.dut.U3_1\n       Time: 72374395  Scope: tb_reset_apertures.dut.U3_1\n",
+        "stderr": "",
+        "seconds": 0.011
+      },
+      "passed": true,
+      "expected_rejection": true
+    }
+  ],
+  "failures": []
+}

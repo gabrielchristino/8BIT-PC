@@ -1,0 +1,11 @@
+{
+  "date": "2026-11-25",
+  "isolated_model_passed": true,
+  "rc_scenarios_per_envelope": 128,
+  "digital_configs": 16,
+  "cuts_per_config": 32,
+  "strict_external_recovery": "Expected rejection; physical MTBF remains open",
+  "supervisor_qualified": false,
+  "full_cpu_integration_executed": false,
+  "production_released": false
+}

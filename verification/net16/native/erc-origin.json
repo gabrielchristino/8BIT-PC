@@ -1,0 +1,7 @@
+{
+  "base": "tools/check_video_system_erc.py",
+  "base_sha256": "13ee92406fcaf69d38bb29653f0fc337b734628cad92161585022d6cd03cf95c",
+  "generated": "tools/check_reset_domains_erc.py",
+  "generated_sha256": "b09cc85a76fb5c760f9da51da9201ba8fafe2d269d449f8b19b28e6273a46e10",
+  "transformation": "Replace video_system/build_video_system/NET-14C with reset_domains/build_reset_domains/NET-16B; retain strict ERC return and preview export"
+}

@@ -14,3 +14,4 @@ revisions/** -text
 # Preserve verbatim ngspice console evidence, including native trailing spaces.
 /verification/net13/rc/*.log -whitespace
 /verification/net15/**/*.log -whitespace
+/verification/net16/**/*.log -whitespace

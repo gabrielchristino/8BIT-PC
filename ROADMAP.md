@@ -178,3 +178,4 @@ Aceitação: cada material citado tem arquivo recuperado ou ausência identifica
 - [ ] Consolidar monitor/boot, diagnóstico, formatos da EEPROM e rotinas seguras de salvamento.
 - [ ] Biblioteca de vídeo, teclado e testes de integração de programas.
 - [ ] Retomar interpretador BASIC e recursos de uso pessoal somente com requisitos e fontes recuperados.
+Atualização NET-16 (25/11/2026): contrato de inibição antes do reset e folha candidata com liberações distintas CPU/backend. Ensaios isolados e negativos passaram sob fronteiras RC/binárias explícitas; recovery estrito continua rejeitado. Próximo: fechar supervisor/energia e conectar domínios ao sistema CPU/MMIO, repetindo regressão integrada. Não há placa liberada.

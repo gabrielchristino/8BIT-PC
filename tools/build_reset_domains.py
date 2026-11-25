@@ -1,0 +1,119 @@
+"""Native reset-order candidate; analog RC is an explicit bounded abstraction."""
+import copy
+import csv
+import inspect
+import json
+from pathlib import Path
+import subprocess
+import uuid
+import xml.etree.ElementTree as ET
+from build_cpu_global import KICAD
+from build_memory_decode import sig
+from build_stack_bank import symbol as old_symbol
+import build_memory_bus as source
+import build_mmio_keyboard as keyboard
+import build_video_raster as video
+
+ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'hardware/reset_domains';VERIFY=ROOT/'verification/net16/native'
+def uid(s):return str(uuid.uuid5(uuid.NAMESPACE_URL,'isa1/net16b/'+s))
+def definitions():
+    defs={k:copy.deepcopy(v) for k,v in keyboard.definitions().items() if k in ('SN74AHC125','SN74AHC14','SN74AHC08','R','C')}
+    defs['SN74AHC74']=copy.deepcopy(video.definitions()['SN74AHC74'])
+    defs['R']['source']='Proposed reset delay resistor 10k +/-1%; effective capacitance and source/load must be qualified'
+    return defs
+
+
+def design(defs):
+    parts=[]
+    def add(ref,kind,fs,x,y,value=None):
+        pins={p:fs.get(s['name']) for p,s in defs[kind]['pins'].items()}
+        for p,s in defs[kind]['pins'].items():
+            if s['name'] in ('VCC','GND'):pins[p]='+5V' if s['name']=='VCC' else 'GND'
+        part={'reference':ref,'part':kind,'nets':pins,'x':round(x/1.27)*1.27,'y':round(y/1.27)*1.27}
+        if value:part['value']=value
+        parts.append(part)
+    add('U1','SN74AHC125',{'A0':'RAW_SAFE_N','OE0_N':'GND','Y0':'RAW_BUFFERED',**{f'A{i}':'GND' for i in range(1,4)},**{f'OE{i}_N':'+5V' for i in range(1,4)}},70,70)
+    add('U2','SN74AHC14',{'A0':'DELAY_RC','Y0':'DELAY_INV','A1':'DELAY_INV','Y1':'DELAY_CLEAR_N',**{f'A{i}':'GND' for i in range(2,6)}},180,70)
+    add('U3','SN74AHC74',{'D0':'+5V','CLK0':'BACKEND','CLR0_N':'DELAY_CLEAR_N','PRE0_N':'+5V','Q0':'RESET_SYNC1','D1':'RESET_SYNC1','CLK1':'BACKEND','CLR1_N':'DELAY_CLEAR_N','PRE1_N':'+5V','Q1':'BANK_RESET_N'},290,70)
+    add('U4','SN74AHC08',{'A0':'BANK_RESET_N','B0':'CPU_RESET_N','Y0':'ALL_READY','A1':'RAW_SAFE_N','B1':'ALL_READY','Y1':'ACCESS_SAFE',**{f'A{i}':'GND' for i in range(2,4)},**{f'B{i}':'GND' for i in range(2,4)}},400,70)
+    add('U5','SN74AHC74',{'D0':'+5V','CLK0':'CPU_CLK','CLR0_N':'DELAY_CLEAR_N','PRE0_N':'+5V','Q0':'CPU_SYNC1','D1':'CPU_SYNC1','CLK1':'CPU_CLK','CLR1_N':'DELAY_CLEAR_N','PRE1_N':'+5V','Q1':'CPU_RESET_N'},510,70)
+    for i,x in enumerate((70,180,290,400,510)):add(f'C{i+1}','C',{'1':'+5V','2':'GND'},x+30,40)
+    add('R1','R',{'1':'RAW_BUFFERED','2':'DELAY_RC'},70,150,'10k')
+    add('C6','C',{'1':'DELAY_RC','2':'GND'},180,150,'1n C0G')
+    return parts
+
+
+def package_symbol(kind,spec):
+    if kind=='R':return tuple(x.replace('NET13:','NET16B:') if isinstance(x,str) else x for x in source.package_symbol(kind,spec))
+    return tuple(x.replace('NET02:','NET16B:') if isinstance(x,str) else x for x in old_symbol(kind,spec))
+
+
+emitter=inspect.getsource(source.emit).replace('memory_bus','reset_domains').replace('NET13','NET16B').replace('NET-13','NET-16B').replace('ISA-1 SRAM / EEPROM data front-end','ISA-1 delayed bank reset / fast inhibit candidate')
+emitter=emitter.replace("'3.3k' if kind=='R'","p['value'] if kind=='R'").replace("'100nF' if kind=='C'","p.get('value','100nF') if kind=='C'")
+exec(emitter,globals())
+
+
+def convert(path=None,destination=None):
+    path=path or VERIFY/'reset_domains.xml';destination=destination or OUT/'reset_domains_netlist.sv'
+    defs=json.loads((OUT/'package-functions.json').read_text());parts=json.loads((OUT/'design.json').read_text())['parts']
+    expected={p['reference']:p for p in parts};root=ET.parse(path).getroot();actual={};nets=set();seen=set()
+    for net in root.findall('./nets/net'):
+        n=net.get('name').removeprefix('/');nets.add(n)
+        for node in net.findall('node'):
+            key=node.get('ref'),node.get('pin')
+            if key in actual:raise ValueError('Duplicate pin '+str(key))
+            actual[key]=n
+    for comp in root.findall('./components/comp'):
+        ref=comp.get('ref');p=expected[ref];seen.add(ref)
+        value=p.get('value','100nF' if p['part']=='C' else p['part'])
+        if comp.findtext('value')!=value:raise ValueError('Changed value '+ref)
+        for pin,n in p['nets'].items():
+            got=actual.get((ref,pin))
+            if n is not None and got!=n:raise ValueError('Pin mismatch '+ref+'/'+pin)
+            if n is None and got and not got.startswith('unconnected-'):raise ValueError('Connected NC '+ref+'/'+pin)
+    if seen!=set(expected):raise ValueError('Inventory mismatch')
+    inputs={'RAW_SAFE_N':'raw_safe_n','BACKEND':'backend_clk','CPU_CLK':'cpu_clk'};outputs={'BANK_RESET_N':'bank_reset_n','CPU_RESET_N':'cpu_reset_n','ACCESS_SAFE':'access_safe'}
+    drivers={n:['external'] for n in [*inputs,'+5V','GND']};drivers['DELAY_RC']=['bounded analog RC cell'];loads={};lines=[]
+    for p in parts:
+        kind=p['part'];ref=p['reference'];fs={}
+        for pin,s in defs[kind]['pins'].items():
+            n=actual.get((ref,pin));name=s['name']
+            if n and not n.startswith('unconnected-'):fs[name]=sig(n)
+            if s['type']=='input':loads.setdefault(n,[]).append(ref+'/'+pin)
+            if s['type']=='output' and name in fs:drivers.setdefault(n,[]).append(ref+'/'+pin)
+        if kind in ('C','R'):continue
+        if kind=='SN74AHC125':lines.append(f"assign #(TIMED?10:0) {fs['Y0']}={fs['OE0_N']} ? 1'bz : {fs['A0']};")
+        elif kind=='SN74AHC14':
+            for i in range(6):
+                if f'Y{i}' in fs:lines.append(f"assign #(TIMED?12:0) {fs[f'Y{i}']}=~{fs[f'A{i}']};")
+        elif kind=='SN74AHC08':
+            for i in range(4):
+                if f'Y{i}' in fs:lines.append(f"assign #(TIMED?10:0) {fs[f'Y{i}']}={fs[f'A{i}']} & {fs[f'B{i}']};")
+        elif kind=='SN74AHC74':
+            for i in range(2):lines.append(f"net14b_ahc74 #(.TIMED(TIMED),.RESET_BOUNDARY(1),.FIRST_STAGE({1 if i==0 else 0}),.RESOLVE_LATE(RESOLVE_LATE)) {ref}_{i}({fs[f'CLK{i}']},{fs[f'CLR{i}_N']},{fs[f'PRE{i}_N']},{fs[f'D{i}']},{fs[f'Q{i}']},{ref}_unused_qb{i},1'b1);")
+        else:raise ValueError('No digital model '+kind)
+    if any(len(drivers.get(n,[]))!=1 for n in loads):raise ValueError('Floating/multiple driver')
+    header=['`timescale 1ns/1ps','// Pin-derived logic. RC delay and external recovery resolution are conditional abstractions.',
+      'module reset_domains_netlist #(parameter TIMED=0,RESOLVE_LATE=1,parameter realtime ASSERT_DELAY=1000,RELEASE_DELAY=42000)(input wire raw_safe_n,backend_clk,cpu_clk,output wire bank_reset_n,cpu_reset_n,access_safe);']
+    header+=['wire '+sig(n)+';' for n in sorted(nets) if n not in ('+5V','GND') and not n.startswith('unconnected-')]
+    header+=['wire U3_unused_qb0,U3_unused_qb1,U5_unused_qb0,U5_unused_qb1;']
+    header += [f'assign {sig(n)}={v};' for n,v in inputs.items()]
+    # Explicit abstraction derived only after exact R1/C6 endpoint checks above.
+    # Inertial delays do not model accumulated charge from short pulse trains.
+    header+=['assign #(RELEASE_DELAY,ASSERT_DELAY) n_DELAY_RC=n_RAW_BUFFERED;']
+    lines += [f'assign {v}={sig(n)};' for n,v in outputs.items()]+['endmodule']
+    destination.write_text('\n'.join(header+lines)+'\n')
+    return {'components':len(parts),'ics':5,'pins':sum(len(p['nets']) for p in parts),'no_connects':sum(n is None for p in parts for n in p['nets'].values()),'max_signal_input_loads':max(len(v) for n,v in loads.items() if n not in ('+5V','GND')),'failures':[],
+      'scope':'Exact passive/logic pin graph; RC inertial abstraction, not analog transient/short-pulse-train/MTBF/board approval'}
+
+
+def main():
+    OUT.mkdir(parents=True,exist_ok=True);VERIFY.mkdir(parents=True,exist_ok=True)
+    defs=definitions();parts=design(defs);emit(defs,parts)
+    (OUT/'package-functions.json').write_text(json.dumps(defs,indent=2)+'\n');(OUT/'design.json').write_text(json.dumps({'iteration':'NET-16B','parts':parts},indent=2)+'\n')
+    cmd=[KICAD,'sch','export','netlist','--format','kicadxml','-o',str(VERIFY/'reset_domains.xml'),str(OUT/'reset_domains.kicad_sch')]
+    subprocess.run(cmd,check=True,capture_output=True,timeout=120);report=convert();report.update(command=cmd,kicad=subprocess.check_output([KICAD,'version'],text=True).strip())
+    (VERIFY/'schematic-check.json').write_text(json.dumps(report,indent=2)+'\n');print(json.dumps(report));return 0
+
+
+if __name__=='__main__':raise SystemExit(main())

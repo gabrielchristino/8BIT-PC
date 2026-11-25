@@ -143,3 +143,9 @@
 - RC 50 pF é orçamento do ensaio de pull-up. SRAM usa condições de carga 30 pF para acesso e 5 pF para Hi-Z; não ampliar a aprovação nem ignorar carga/skew/temperatura não fechados.
 - EEPROM WE fica permanentemente alto; imagem em firmware/net13 é diagnóstico novo, não o diagnostic.asm histórico ausente nem liberação de produto. HEX é um byte por linha, não Intel HEX.
 - Integração ideal é completa; temporizada é --quick. MMIO, raster e concessão ainda são modelos. ERC de folhas separadas tem 171/129 violações, não ERC unido da placa.
+## Continuidade NET-16A/B
+
+- Leia docs/engineering/NET16A.md e NET16B.md. reset_domains é folha candidata separada, não integração CPU concluída nem supervisor aprovado.
+- RAW_SAFE_N precisa de níveis, pulso mínimo e reserva de energia físicos. Bloqueio de acessos deve preceder reset dos bancos/posse; CPU e backend têm liberações separadas. Gerador de clock não pode depender da liberação que precisa produzir.
+- HDL RC inercial não modela trens de pulsos/carga acumulada. Fronteira binária externa não aprova metastabilidade/MTBF; mantenha rejeição estrita de recovery e seis violações ERC abertas.
+- Não tratar 0,5 A da triagem como consumo medido nem pontos de retenção aprovados na fórmula como BOM qualificada. PDF ADI não foi baixado; indisponibilidade registrada, não inventar original.

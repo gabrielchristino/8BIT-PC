@@ -1,0 +1,15 @@
+{
+  "reason": "Add minimum charge-delay abstraction to native reset test coverage, retain earlier maximum-only run",
+  "files": [
+    {
+      "source": "tools/run_reset_domains.py",
+      "path": "verification/net16/development/max-release-only/run_reset_domains.py.txt",
+      "sha256": "329cac5514f13521f15bde8ea3c3aad534ed3a2d767c4e477a73b508f9fa0d98"
+    },
+    {
+      "source": "verification/net16/native/results.json",
+      "path": "verification/net16/development/max-release-only/results.json.txt",
+      "sha256": "bc823f7c4c249cbb9b88d9dc0c3e07f3dbc07d09466a17760f92aa1f733d9ce6"
+    }
+  ]
+}

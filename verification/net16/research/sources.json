@@ -1,0 +1,18 @@
+{
+  "date": "2026-11-25",
+  "files": [
+    {
+      "path": "references/power-candidates/tlv803e.pdf",
+      "url": "https://www.ti.com/lit/ds/symlink/tlv803e.pdf",
+      "sha256": "63952e401ebc990645372b4c55ca3a5235da84aa004d68fd91d1d9c42bf96a18",
+      "status": "Consulted, not selected or qualified",
+      "transformation": "Original PDF unchanged; pdftotext -layout in research/tlv803e.txt; content identifies SLVSES2J revised May 2021, independent of search-index publication metadata"
+    }
+  ],
+  "unavailable_originals": [
+    {
+      "url": "https://www.analog.com/media/en/technical-documentation/data-sheets/MAX691A-MAX800M.pdf",
+      "status": "Web reader displayed PDF; direct WSL download timed out at 60s, Windows curl lowercase endpoint reset connection at approximately 21s. No local PDF claimed or selected."
+    }
+  ]
+}

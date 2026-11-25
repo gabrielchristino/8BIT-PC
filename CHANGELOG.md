@@ -140,3 +140,4 @@ Nova conferência: acervo salvo em `C:/Users/gabri/projetos/isa1`, arquivos loca
 | 9.8.4.1 | Contadores candidatos e limites de pilha isolados; ZIP chamado rev984 preservado |
 
 Esta tabela não substitui o histórico original nem atribui data/autoria de commit às revisões. Resultados de engenharia física continuam pendentes.
+NET-16A/B — 25/11/2026: ensaios RC de ordem de reset, triagem que rejeita retenção insuficiente, esquema candidato de cinco CIs e liberações CPU/backend. Cortes/pausas e abertura de recovery testados sob hipóteses explícitas; rejeição estrita e ERC parcial de seis violações preservados.

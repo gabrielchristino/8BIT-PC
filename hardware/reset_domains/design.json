@@ -1,0 +1,187 @@
+{
+  "iteration": "NET-16B",
+  "parts": [
+    {
+      "reference": "U1",
+      "part": "SN74AHC125",
+      "nets": {
+        "2": "RAW_SAFE_N",
+        "5": "GND",
+        "9": "GND",
+        "12": "GND",
+        "1": "GND",
+        "4": "+5V",
+        "10": "+5V",
+        "13": "+5V",
+        "3": "RAW_BUFFERED",
+        "6": null,
+        "8": null,
+        "11": null,
+        "14": "+5V",
+        "7": "GND"
+      },
+      "x": 69.85,
+      "y": 69.85
+    },
+    {
+      "reference": "U2",
+      "part": "SN74AHC14",
+      "nets": {
+        "1": "DELAY_RC",
+        "3": "DELAY_INV",
+        "5": "GND",
+        "9": "GND",
+        "11": "GND",
+        "13": "GND",
+        "2": "DELAY_INV",
+        "4": "DELAY_CLEAR_N",
+        "6": null,
+        "8": null,
+        "10": null,
+        "12": null,
+        "14": "+5V",
+        "7": "GND"
+      },
+      "x": 180.34,
+      "y": 69.85
+    },
+    {
+      "reference": "U3",
+      "part": "SN74AHC74",
+      "nets": {
+        "1": "DELAY_CLEAR_N",
+        "2": "+5V",
+        "3": "BACKEND",
+        "4": "+5V",
+        "13": "DELAY_CLEAR_N",
+        "12": "RESET_SYNC1",
+        "11": "BACKEND",
+        "10": "+5V",
+        "5": "RESET_SYNC1",
+        "6": null,
+        "9": "BANK_RESET_N",
+        "8": null,
+        "14": "+5V",
+        "7": "GND"
+      },
+      "x": 289.56,
+      "y": 69.85
+    },
+    {
+      "reference": "U4",
+      "part": "SN74AHC08",
+      "nets": {
+        "1": "BANK_RESET_N",
+        "4": "RAW_SAFE_N",
+        "9": "GND",
+        "12": "GND",
+        "2": "CPU_RESET_N",
+        "5": "ALL_READY",
+        "10": "GND",
+        "13": "GND",
+        "3": "ALL_READY",
+        "6": "ACCESS_SAFE",
+        "8": null,
+        "11": null,
+        "14": "+5V",
+        "7": "GND"
+      },
+      "x": 400.05,
+      "y": 69.85
+    },
+    {
+      "reference": "U5",
+      "part": "SN74AHC74",
+      "nets": {
+        "1": "DELAY_CLEAR_N",
+        "2": "+5V",
+        "3": "CPU_CLK",
+        "4": "+5V",
+        "13": "DELAY_CLEAR_N",
+        "12": "CPU_SYNC1",
+        "11": "CPU_CLK",
+        "10": "+5V",
+        "5": "CPU_SYNC1",
+        "6": null,
+        "9": "CPU_RESET_N",
+        "8": null,
+        "14": "+5V",
+        "7": "GND"
+      },
+      "x": 510.54,
+      "y": 69.85
+    },
+    {
+      "reference": "C1",
+      "part": "C",
+      "nets": {
+        "1": "+5V",
+        "2": "GND"
+      },
+      "x": 100.33,
+      "y": 39.37
+    },
+    {
+      "reference": "C2",
+      "part": "C",
+      "nets": {
+        "1": "+5V",
+        "2": "GND"
+      },
+      "x": 209.55,
+      "y": 39.37
+    },
+    {
+      "reference": "C3",
+      "part": "C",
+      "nets": {
+        "1": "+5V",
+        "2": "GND"
+      },
+      "x": 320.04,
+      "y": 39.37
+    },
+    {
+      "reference": "C4",
+      "part": "C",
+      "nets": {
+        "1": "+5V",
+        "2": "GND"
+      },
+      "x": 430.53000000000003,
+      "y": 39.37
+    },
+    {
+      "reference": "C5",
+      "part": "C",
+      "nets": {
+        "1": "+5V",
+        "2": "GND"
+      },
+      "x": 539.75,
+      "y": 39.37
+    },
+    {
+      "reference": "R1",
+      "part": "R",
+      "nets": {
+        "1": "RAW_BUFFERED",
+        "2": "DELAY_RC"
+      },
+      "x": 69.85,
+      "y": 149.86,
+      "value": "10k"
+    },
+    {
+      "reference": "C6",
+      "part": "C",
+      "nets": {
+        "1": "DELAY_RC",
+        "2": "GND"
+      },
+      "x": 180.34,
+      "y": 149.86,
+      "value": "1n C0G"
+    }
+  ]
+}

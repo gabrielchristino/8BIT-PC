@@ -40,3 +40,9 @@
 - Não substitua a AT28HC64B-120 pela AT28C64B sem revisar VOH/VIH e margens; a seleção atual ainda não é BOM homologada. Preserve as quatro lanes históricas.
 - Preserve fontes de etapas anteriores. A versão NET-04 de X usa direção retida na palavra, evitando a amostragem anterior à captura que causou falha DEX.
 - Audite manifestos antigos nos respectivos commits, não reescreva seus hashes para acomodar a evolução dos documentos gerais.
+
+## Continuidade NET-05
+
+- Leia docs/engineering/NET05.md antes de integrar registradores/datapath. hardware/alu_bank deriva da netlist KiCad; sim/net05/isa1_cpu_alu.sv deriva da NET-04. Gere os arquivos pelas ferramentas, sem editar manualmente os gerados.
+- ALU preserva carry nas operações lógicas/inativas e usa carry sem empréstimo em SUB/CMP. A saída ZERO da ALU não equivale sempre ao Z arquitetural, que depende do valor selecionado.
+- A ALU tem 49 CIs nesta base, sem alegação de otimização; distribuição interna limita entradas por net, mas cargas entre blocos precisam de análise global. A análise de caminhos é do modelo selecionado, não STA completa ou frequência certificada.

@@ -1,5 +1,10 @@
 # Histórico preservado
 
+## NET-05 — 25/11/2026
+
+ALU de 8 bits com 49 CIs, esquema nativo, XML, mapa de pinos e simulação derivada das conexões; adapter separado da NET-04. Preserva carry sem empréstimo e flags dependentes do valor selecionado. Verificação exaustiva ideal/temporizada, análise de caminhos do modelo, regressões integradas e falhas intencionais em verification/net05. Fontes anteriores preservadas. Relatório docs/engineering/NET05.md; sem liberação para fabricação.
+
+
 ## NET-04 — 25/11/2026
 
 Banco parcial de microcódigo com 34 CIs: esquema/pinos/XML e simulação derivada, integração sem alterar as ROMs recuperadas, retenção da palavra em WAIT e decodificação de SP. Correção nova da fase de direção DEX, fontes anteriores preservadas. Regressões nas duas configurações de X, monitores temporais e casos negativos em verification/net04; relatório docs/engineering/NET04.md. Não constitui liberação para fabricação.

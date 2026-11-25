@@ -1,0 +1,184 @@
+{
+  "date": "2026-11-25",
+  "sources": [
+    {
+      "path": "verification/net05/alu_bank.xml",
+      "sha256": "35d90c63dbf1cec53c8c1d1020858348c317e6142051d15c362b6b9a56b7a8ef"
+    },
+    {
+      "path": "hardware/alu_bank/package-functions.json",
+      "sha256": "dd15269ab4e0e87407d4cf851a73cb4dcb47bf46584e79e1ba2556929cb76b1c"
+    },
+    {
+      "path": "tools/analyze_alu_paths.py",
+      "sha256": "02fbd52c7914157bdf0ff1591e1161c2d8b7a4b2991eae27ce2589e6168bcf98"
+    }
+  ],
+  "scope": "Selected constant-delay combinational envelope only; not board timing closure",
+  "assumptions": "HC at 4.5 V, -40..85 C, CL <=50 pF; package delays conservatively grouped; external input changes at time zero; no trace/skew/minimum modeling",
+  "arcs": 204,
+  "outputs": {
+    "RESULT_0": {
+      "ns": 349,
+      "path": [
+        "U1/Y2",
+        "U39/Y1",
+        "U20/Y0",
+        "U41/Y0",
+        "U35/Y0",
+        "U3/S0",
+        "U5/Y0",
+        "U20/Y3",
+        "U21/Y1",
+        "U21/Y2"
+      ]
+    },
+    "RESULT_1": {
+      "ns": 349,
+      "path": [
+        "U1/Y2",
+        "U39/Y1",
+        "U20/Y0",
+        "U41/Y0",
+        "U35/Y0",
+        "U3/S1",
+        "U6/Y2",
+        "U22/Y0",
+        "U22/Y3",
+        "U23/Y0"
+      ]
+    },
+    "RESULT_2": {
+      "ns": 349,
+      "path": [
+        "U1/Y2",
+        "U39/Y1",
+        "U20/Y0",
+        "U41/Y0",
+        "U35/Y0",
+        "U3/S2",
+        "U8/Y1",
+        "U23/Y2",
+        "U24/Y1",
+        "U24/Y2"
+      ]
+    },
+    "RESULT_3": {
+      "ns": 349,
+      "path": [
+        "U1/Y2",
+        "U39/Y1",
+        "U20/Y0",
+        "U41/Y0",
+        "U35/Y0",
+        "U3/S3",
+        "U10/Y0",
+        "U25/Y0",
+        "U25/Y3",
+        "U26/Y0"
+      ]
+    },
+    "RESULT_4": {
+      "ns": 398,
+      "path": [
+        "U1/Y2",
+        "U39/Y1",
+        "U20/Y0",
+        "U41/Y0",
+        "U35/Y0",
+        "U3/COUT",
+        "U4/S0",
+        "U11/Y3",
+        "U26/Y2",
+        "U27/Y1",
+        "U27/Y2"
+      ]
+    },
+    "RESULT_5": {
+      "ns": 398,
+      "path": [
+        "U1/Y2",
+        "U39/Y1",
+        "U20/Y0",
+        "U41/Y0",
+        "U35/Y0",
+        "U3/COUT",
+        "U4/S1",
+        "U13/Y2",
+        "U28/Y0",
+        "U28/Y3",
+        "U29/Y0"
+      ]
+    },
+    "RESULT_6": {
+      "ns": 398,
+      "path": [
+        "U1/Y2",
+        "U39/Y1",
+        "U20/Y0",
+        "U41/Y0",
+        "U35/Y0",
+        "U3/COUT",
+        "U4/S2",
+        "U15/Y1",
+        "U29/Y2",
+        "U30/Y1",
+        "U30/Y2"
+      ]
+    },
+    "RESULT_7": {
+      "ns": 398,
+      "path": [
+        "U1/Y2",
+        "U39/Y1",
+        "U20/Y0",
+        "U41/Y0",
+        "U35/Y0",
+        "U3/COUT",
+        "U4/S3",
+        "U17/Y0",
+        "U31/Y0",
+        "U31/Y2",
+        "U31/Y3"
+      ]
+    },
+    "C_OUT": {
+      "ns": 358,
+      "path": [
+        "U1/Y2",
+        "U39/Y1",
+        "U20/Y0",
+        "U41/Y0",
+        "U35/Y0",
+        "U3/COUT",
+        "U4/COUT",
+        "U18/Y2",
+        "U32/Y2",
+        "U33/Y0"
+      ]
+    },
+    "ZERO": {
+      "ns": 515,
+      "path": [
+        "U1/Y2",
+        "U39/Y1",
+        "U20/Y0",
+        "U41/Y0",
+        "U35/Y0",
+        "U3/COUT",
+        "U4/S0",
+        "U11/Y3",
+        "U26/Y2",
+        "U27/Y1",
+        "U27/Y2",
+        "U33/Y3",
+        "U34/Y2",
+        "U34/Y3",
+        "U40/Y3"
+      ]
+    }
+  },
+  "max_settle_ns": 515,
+  "bench_settle_ns": 1000,
+  "passed": true
+}

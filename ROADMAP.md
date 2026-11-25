@@ -1,5 +1,17 @@
 # Roadmap de continuidade
 
+## Iteração atual — NET-05
+
+- [x] Mapear ALU de 8 bits a somadores, portas e buffers; gerar simulação dos pinos exportados do KiCad.
+- [x] Conferir todas as entradas/operações/carry nos cenários ideal e com atrasos selecionados.
+- [x] Integrar à CPU das ROMs e comparar instruções, guardas, boot e VGA nas duas configurações de X.
+- [ ] Mapear registradores A/B/PC/EA/flags e seleção de dados/endereços, preservando captura e WAIT.
+- [ ] Comparar alternativas de seleção da ALU para reduzir CIs sem perder funções ou margem.
+- [ ] Fechar elétrica/temporização globais, energia/reset, ERC/DRC, PCB e protótipo.
+
+Evidência e limites: docs/engineering/NET05.md. As etapas anteriores abaixo são snapshots de continuidade.
+
+
 ## Iteração atual — NET-04
 
 - [x] Mapear microstep, FETCH, IR, ROMs, retenção e decodificação da palavra a pacotes com pinos e simulação da netlist KiCad.

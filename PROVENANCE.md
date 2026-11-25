@@ -27,6 +27,9 @@ Os downloads chegaram com nomes temporários; os nomes legíveis acima foram res
 
 ## Transformações e material novo
 
+NET-05 (25/11/2026), base 179b06ed6aa80ab1658022657638ef571888d6a7, cria hardware/alu_bank e sim/net05. Ferramentas novas derivam da infraestrutura anterior, sem alterá-la: pinagens já documentadas TI -> KiCad -> XML -> ALU de portas/somadores; a CPU NET-04 é adaptada substituindo apenas a ALU combinacional. Os PDFs TI existentes são reutilizados com hashes/origens explícitos. verification/net05 registra fontes, transformação, comandos/versões/saídas, limites selecionados de caminhos, testes negativos e manifesto; audita cinco snapshots anteriores nos respectivos commits. Não são materiais históricos recuperados. A primeira rodada foi interrompida para ajustar a folha gráfica; a aceitação foi reiniciada com os arquivos finais.
+
+
 NET-04 (25/11/2026), base Git b5e46593fab55b8679254f9004e5711cd1ffa2c5, acrescenta hardware/microcode_bank, sim/net04 e ferramentas novas. Esquema de pacotes -> XML KiCad -> netlist de portas/FF/ROM; CPU e candidato X derivam das bases anteriores por transformações identificadas com SHA-256. Não altera imagens de microcódigo nem fontes anteriores. Novos datasheets oficiais TI/Microchip são preservados; AT28C64B é evidência de alternativa rejeitada, AT28HC64B-120 é candidata não homologada para compra. Manifesto, logs, versões, transformações e auditoria dos quatro snapshots anteriores nos próprios commits ficam em verification/net04. A falha inicial DEX e sua correção estão registradas no relatório NET04. Arquivos novos não são recuperação de revisões históricas.
 
 

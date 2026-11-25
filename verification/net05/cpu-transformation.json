@@ -1,0 +1,7 @@
+{
+  "source": "sim/net04/isa1_cpu_microcode.sv",
+  "source_sha256": "9276f7ea2f993c962a5e9c5cdc0973f7eb028b64a875f9ab648ae5767507ab00",
+  "output": "sim/net05/isa1_cpu_alu.sv",
+  "output_sha256": "9a563464cb666de1f5a50ec848c9b16bf7c1b05a9e1609a22de467fb9c21e641",
+  "transformation": "Replace combinational ALU by XML pin-connected package bank; flags register and selected-value zero test preserved in RTL"
+}

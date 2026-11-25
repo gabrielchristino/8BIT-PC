@@ -1,5 +1,17 @@
 # Roadmap de continuidade
 
+## Iteração atual — NET-06
+
+- [x] Mapear A/B/EA, flags e seleção interna de dados a CIs, com simulação derivada do XML KiCad.
+- [x] Conferir matriz de seleção/carga/retenção, reset e cenário de atrasos; provar rejeições dos monitores.
+- [x] Regressão integrada de instruções, guardas, boot e VGA nas duas configurações de X.
+- [ ] Mapear PC, incremento/desvios e seleção de endereços, preservando captura antes de WAIT.
+- [ ] Mapear controle de execução/guardas/fault restantes e concluir integração física de X.
+- [ ] Rever BOM/cargas entre blocos; fechar energia/reset/clock/temporização, ERC/DRC, PCB e protótipo.
+
+Evidência e limites: docs/engineering/NET06.md. Os registros seguintes descrevem as etapas anteriores.
+
+
 ## Iteração atual — NET-05
 
 - [x] Mapear ALU de 8 bits a somadores, portas e buffers; gerar simulação dos pinos exportados do KiCad.

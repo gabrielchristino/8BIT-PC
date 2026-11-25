@@ -1,0 +1,296 @@
+{
+  "date": "2026-11-25",
+  "scope": "Expected-negative selected timing monitor checks; not production timing closure",
+  "sources": [
+    {
+      "path": "sim/net02/package_models.sv",
+      "sha256": "de2fd5315a3809a89ba90b8f09a96a25d06d3e00b8568a8f82387b92a624199f"
+    },
+    {
+      "path": "sim/net03/package_models.sv",
+      "sha256": "53712265aa1d4312866135c59e73d7543069c7a3281635d43d66825790716258"
+    },
+    {
+      "path": "sim/net06/tb_register_timing_negative.sv",
+      "sha256": "f3b7e96325f2d47affa9a01d18eb462d7991218ebdb5b26bf0c4c0ac3e90206d"
+    },
+    {
+      "path": "tools/run_register_timing_checks.py",
+      "sha256": "e15e66de34030380802988d869502e60e397e87662225d4b05b1d5dc46b4fdba"
+    }
+  ],
+  "checks": [
+    {
+      "case": "HC273 data setup",
+      "expected_rejection": true,
+      "passed": true,
+      "compile": {
+        "command": [
+          "iverilog",
+          "-g2012",
+          "-Wall",
+          "-s",
+          "tb_register_timing_negative",
+          "-Ptb_register_timing_negative.CASE=0",
+          "-o",
+          "/tmp/isa1-register-timing-sogk79ti/bad.vvp",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net02/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net03/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net06/tb_register_timing_negative.sv"
+        ],
+        "exit": 0,
+        "stdout": "",
+        "stderr": "",
+        "seconds": 0.017
+      },
+      "execution": {
+        "command": [
+          "vvp",
+          "/tmp/isa1-register-timing-sogk79ti/bad.vvp"
+        ],
+        "exit": 1,
+        "stdout": "FATAL: /mnt/c/Users/gabri/projetos/isa1/sim/net02/package_models.sv:20: HC273 data setup violation\n       Time: 6101000  Scope: tb_register_timing_negative.genblk1.reg8.timing\n",
+        "stderr": "",
+        "seconds": 0.006
+      }
+    },
+    {
+      "case": "HC273 clear recovery",
+      "expected_rejection": true,
+      "passed": true,
+      "compile": {
+        "command": [
+          "iverilog",
+          "-g2012",
+          "-Wall",
+          "-s",
+          "tb_register_timing_negative",
+          "-Ptb_register_timing_negative.CASE=1",
+          "-o",
+          "/tmp/isa1-register-timing-sogk79ti/bad.vvp",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net02/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net03/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net06/tb_register_timing_negative.sv"
+        ],
+        "exit": 0,
+        "stdout": "",
+        "stderr": "",
+        "seconds": 0.017
+      },
+      "execution": {
+        "command": [
+          "vvp",
+          "/tmp/isa1-register-timing-sogk79ti/bad.vvp"
+        ],
+        "exit": 1,
+        "stdout": "FATAL: /mnt/c/Users/gabri/projetos/isa1/sim/net02/package_models.sv:21: HC273 clear recovery violation\n       Time: 6201000  Scope: tb_register_timing_negative.genblk1.reg8.timing\n",
+        "stderr": "",
+        "seconds": 0.007
+      }
+    },
+    {
+      "case": "HC273 clock pulse",
+      "expected_rejection": true,
+      "passed": true,
+      "compile": {
+        "command": [
+          "iverilog",
+          "-g2012",
+          "-Wall",
+          "-s",
+          "tb_register_timing_negative",
+          "-Ptb_register_timing_negative.CASE=2",
+          "-o",
+          "/tmp/isa1-register-timing-sogk79ti/bad.vvp",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net02/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net03/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net06/tb_register_timing_negative.sv"
+        ],
+        "exit": 0,
+        "stdout": "",
+        "stderr": "",
+        "seconds": 0.016
+      },
+      "execution": {
+        "command": [
+          "vvp",
+          "/tmp/isa1-register-timing-sogk79ti/bad.vvp"
+        ],
+        "exit": 1,
+        "stdout": "FATAL: /mnt/c/Users/gabri/projetos/isa1/sim/net02/package_models.sv:16: HC273 clock pulse violation\n       Time: 6110000  Scope: tb_register_timing_negative.genblk1.reg8.timing\n",
+        "stderr": "",
+        "seconds": 0.006
+      }
+    },
+    {
+      "case": "HC273 clear pulse",
+      "expected_rejection": true,
+      "passed": true,
+      "compile": {
+        "command": [
+          "iverilog",
+          "-g2012",
+          "-Wall",
+          "-s",
+          "tb_register_timing_negative",
+          "-Ptb_register_timing_negative.CASE=3",
+          "-o",
+          "/tmp/isa1-register-timing-sogk79ti/bad.vvp",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net02/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net03/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net06/tb_register_timing_negative.sv"
+        ],
+        "exit": 0,
+        "stdout": "",
+        "stderr": "",
+        "seconds": 0.021
+      },
+      "execution": {
+        "command": [
+          "vvp",
+          "/tmp/isa1-register-timing-sogk79ti/bad.vvp"
+        ],
+        "exit": 1,
+        "stdout": "FATAL: /mnt/c/Users/gabri/projetos/isa1/sim/net02/package_models.sv:12: HC273 clear pulse violation\n       Time: 6110000  Scope: tb_register_timing_negative.genblk1.reg8.timing\n",
+        "stderr": "",
+        "seconds": 0.006
+      }
+    },
+    {
+      "case": "HC74 data setup",
+      "expected_rejection": true,
+      "passed": true,
+      "compile": {
+        "command": [
+          "iverilog",
+          "-g2012",
+          "-Wall",
+          "-s",
+          "tb_register_timing_negative",
+          "-Ptb_register_timing_negative.CASE=4",
+          "-o",
+          "/tmp/isa1-register-timing-sogk79ti/bad.vvp",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net02/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net03/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net06/tb_register_timing_negative.sv"
+        ],
+        "exit": 0,
+        "stdout": "",
+        "stderr": "",
+        "seconds": 0.017
+      },
+      "execution": {
+        "command": [
+          "vvp",
+          "/tmp/isa1-register-timing-sogk79ti/bad.vvp"
+        ],
+        "exit": 1,
+        "stdout": "FATAL: /mnt/c/Users/gabri/projetos/isa1/sim/net03/package_models.sv:22: DFF data setup violation\n       Time: 6101000  Scope: tb_register_timing_negative.genblk1.check_flag\n",
+        "stderr": "",
+        "seconds": 0.006
+      }
+    },
+    {
+      "case": "HC74 clear recovery",
+      "expected_rejection": true,
+      "passed": true,
+      "compile": {
+        "command": [
+          "iverilog",
+          "-g2012",
+          "-Wall",
+          "-s",
+          "tb_register_timing_negative",
+          "-Ptb_register_timing_negative.CASE=5",
+          "-o",
+          "/tmp/isa1-register-timing-sogk79ti/bad.vvp",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net02/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net03/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net06/tb_register_timing_negative.sv"
+        ],
+        "exit": 0,
+        "stdout": "",
+        "stderr": "",
+        "seconds": 0.015
+      },
+      "execution": {
+        "command": [
+          "vvp",
+          "/tmp/isa1-register-timing-sogk79ti/bad.vvp"
+        ],
+        "exit": 1,
+        "stdout": "FATAL: /mnt/c/Users/gabri/projetos/isa1/sim/net03/package_models.sv:23: DFF clear recovery violation\n       Time: 6201000  Scope: tb_register_timing_negative.genblk1.check_flag\n",
+        "stderr": "",
+        "seconds": 0.006
+      }
+    },
+    {
+      "case": "HC74 clock pulse",
+      "expected_rejection": true,
+      "passed": true,
+      "compile": {
+        "command": [
+          "iverilog",
+          "-g2012",
+          "-Wall",
+          "-s",
+          "tb_register_timing_negative",
+          "-Ptb_register_timing_negative.CASE=6",
+          "-o",
+          "/tmp/isa1-register-timing-sogk79ti/bad.vvp",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net02/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net03/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net06/tb_register_timing_negative.sv"
+        ],
+        "exit": 0,
+        "stdout": "",
+        "stderr": "",
+        "seconds": 0.018
+      },
+      "execution": {
+        "command": [
+          "vvp",
+          "/tmp/isa1-register-timing-sogk79ti/bad.vvp"
+        ],
+        "exit": 1,
+        "stdout": "FATAL: /mnt/c/Users/gabri/projetos/isa1/sim/net03/package_models.sv:18: DFF clock pulse violation\n       Time: 6110000  Scope: tb_register_timing_negative.genblk1.check_flag\n",
+        "stderr": "",
+        "seconds": 0.005
+      }
+    },
+    {
+      "case": "HC74 clear pulse",
+      "expected_rejection": true,
+      "passed": true,
+      "compile": {
+        "command": [
+          "iverilog",
+          "-g2012",
+          "-Wall",
+          "-s",
+          "tb_register_timing_negative",
+          "-Ptb_register_timing_negative.CASE=7",
+          "-o",
+          "/tmp/isa1-register-timing-sogk79ti/bad.vvp",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net02/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net03/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net06/tb_register_timing_negative.sv"
+        ],
+        "exit": 0,
+        "stdout": "",
+        "stderr": "",
+        "seconds": 0.017
+      },
+      "execution": {
+        "command": [
+          "vvp",
+          "/tmp/isa1-register-timing-sogk79ti/bad.vvp"
+        ],
+        "exit": 1,
+        "stdout": "FATAL: /mnt/c/Users/gabri/projetos/isa1/sim/net03/package_models.sv:14: DFF clear pulse violation\n       Time: 6110000  Scope: tb_register_timing_negative.genblk1.check_flag\n",
+        "stderr": "",
+        "seconds": 0.006
+      }
+    }
+  ]
+}

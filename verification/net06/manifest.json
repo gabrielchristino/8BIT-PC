@@ -1,0 +1,256 @@
+{
+  "iteration": "NET-06",
+  "date": "2026-11-25",
+  "base_git_commit": "18a3cdc2ab83cb8af51177b8116b0320a4a4f5b8",
+  "transformation": "Package pin schema -> KiCad schematic -> exported XML -> gate/FF/mux netlist -> CPU register adapter",
+  "scope": "A/B/EA/Z/C storage and internal data selector only; no complete-board timing/electrical/production release",
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "bytes": 6443,
+      "sha256": "6a30915ed0656e27c9f64e74e38622a9d35c03867b9a93462c9f65a80dbbe011",
+      "origin": "NET-06 design/verification, 2026-11-25"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "bytes": 6029,
+      "sha256": "57c3c7626be63b551eb1b196ec79dd484b2dc759bcf8c7a6252e54f951bff849",
+      "origin": "NET-06 design/verification, 2026-11-25"
+    },
+    {
+      "path": "DECISIONS.md",
+      "bytes": 13179,
+      "sha256": "59cb090c8d41aaa8ca973ab1effe0b92db0e38512ad41bf5e80796b72356b75e",
+      "origin": "NET-06 design/verification, 2026-11-25"
+    },
+    {
+      "path": "PROVENANCE.md",
+      "bytes": 9872,
+      "sha256": "acf675385996f44536410635d09be11d680dda01c29d90280836677d50e1b3ff",
+      "origin": "NET-06 design/verification, 2026-11-25"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5274,
+      "sha256": "0980e8feffbc32c7d150613dbe0107d2c88dc839ccea7493a90115fa46808d41",
+      "origin": "NET-06 design/verification, 2026-11-25"
+    },
+    {
+      "path": "ROADMAP.md",
+      "bytes": 8702,
+      "sha256": "03dddbc7a05aaa5ca1c03f78de745646e6785a9bd71993ac96b9522f1452c843",
+      "origin": "NET-06 design/verification, 2026-11-25"
+    },
+    {
+      "path": "docs/engineering/NET06.md",
+      "bytes": 7829,
+      "sha256": "324e51c7bd08eadc8450430f15b5327829eb073e1e2c94664075714c86bc0a3e",
+      "origin": "NET-06 design/verification, 2026-11-25"
+    },
+    {
+      "path": "hardware/register_bank/README.md",
+      "bytes": 536,
+      "sha256": "6cbf1ea47d480abe9313c906dba8e6e1bf8c05f179f8379c508439e6a57fa641",
+      "origin": "NET-06 design/verification, 2026-11-25"
+    },
+    {
+      "path": "hardware/register_bank/design.json",
+      "bytes": 28449,
+      "sha256": "e69ab82cd869c81c6c6bb500f1d55e882f6dbe1cb8ca20fd3ce9ef3e5d02df1a",
+      "origin": "NET-06 design/verification, 2026-11-25"
+    },
+    {
+      "path": "hardware/register_bank/package-functions.json",
+      "bytes": 8951,
+      "sha256": "2686189de0e204d3ce3dcec50793d689757382940f880e869967c3c72e5844e7",
+      "origin": "NET-06 design/verification, 2026-11-25"
+    },
+    {
+      "path": "hardware/register_bank/pinmap.csv",
+      "bytes": 17079,
+      "sha256": "94776384c47285c7092cbb1a50f90917786c72828cf907a9732858786e8ccba7",
+      "origin": "NET-06 design/verification, 2026-11-25"
+    },
+    {
+      "path": "hardware/register_bank/register_bank.kicad_sch",
+      "bytes": 183216,
+      "sha256": "20b5aa0cfcf90a3b7f8ab405b2a9205b735cd8a7fd95393ac567557a3deaeef5",
+      "origin": "NET-06 design/verification, 2026-11-25"
+    },
+    {
+      "path": "hardware/register_bank/register_bank_netlist.sv",
+      "bytes": 13812,
+      "sha256": "7f5f3acf94e3c146370a05c217c40e833f9dc56a91c3017fa23a349673a990f7",
+      "origin": "NET-06 design/verification, 2026-11-25"
+    },
+    {
+      "path": "references/ti/sn74hc04.pdf",
+      "bytes": 2153970,
+      "sha256": "a48266c5ce3f22a87a30cd78b0fdb80e99820220534b215a11a9b67a35f41101",
+      "origin": "Texas Instruments official datasheet; existing or newly retrieved, original bytes retained",
+      "url": "https://www.ti.com/lit/ds/symlink/sn74hc04.pdf"
+    },
+    {
+      "path": "references/ti/sn74hc08.pdf",
+      "bytes": 2048028,
+      "sha256": "0d125beb415972726a34eb93fbb7ce093909319f4252593fab37a7e77541e363",
+      "origin": "Texas Instruments official datasheet; existing or newly retrieved, original bytes retained",
+      "url": "https://www.ti.com/lit/ds/symlink/sn74hc08.pdf"
+    },
+    {
+      "path": "references/ti/sn74hc125.pdf",
+      "bytes": 2110382,
+      "sha256": "45e8c22d66d6c1eaeda3f2c007e868f9a156e200ff09532fa6f7e19574c352fc",
+      "origin": "Texas Instruments official datasheet; existing or newly retrieved, original bytes retained",
+      "url": "https://www.ti.com/lit/ds/symlink/sn74hc125.pdf"
+    },
+    {
+      "path": "references/ti/sn74hc157.pdf",
+      "bytes": 2003071,
+      "sha256": "b538506b021f7c25c9a5f76e014b69ac9ff9fcb9a8a031ba989d8a8989e40fe3",
+      "origin": "Texas Instruments official datasheet; existing or newly retrieved, original bytes retained",
+      "url": "https://www.ti.com/lit/ds/symlink/sn74hc157.pdf"
+    },
+    {
+      "path": "references/ti/sn74hc273.pdf",
+      "bytes": 2179591,
+      "sha256": "8649dfa0c70096e06d579499278e668c1ee99fb9bc6057e82b0465f253e388d9",
+      "origin": "Texas Instruments official datasheet; existing or newly retrieved, original bytes retained",
+      "url": "https://www.ti.com/lit/ds/symlink/sn74hc273.pdf"
+    },
+    {
+      "path": "references/ti/sn74hc32.pdf",
+      "bytes": 2124679,
+      "sha256": "18adcf7e59d693f9857a32200c28faf72bc84ac64f619411001bececd4fa96f0",
+      "origin": "Texas Instruments official datasheet; existing or newly retrieved, original bytes retained",
+      "url": "https://www.ti.com/lit/ds/symlink/sn74hc32.pdf"
+    },
+    {
+      "path": "references/ti/sn74hc74.pdf",
+      "bytes": 2256700,
+      "sha256": "a4043d37d693a2997900a0542dd226b9b61285794f3c1a541adb99cc7dcb1ae2",
+      "origin": "Texas Instruments official datasheet; existing or newly retrieved, original bytes retained",
+      "url": "https://www.ti.com/lit/ds/symlink/sn74hc74.pdf"
+    },
+    {
+      "path": "sim/net06/isa1_cpu_registers.sv",
+      "bytes": 5976,
+      "sha256": "1ebb18921f8c9604b0b0502c285cf54d6135610b242f2cc2f50c4f34fdbe5db0",
+      "origin": "NET-06 design/verification, 2026-11-25"
+    },
+    {
+      "path": "sim/net06/tb_register_bank.sv",
+      "bytes": 2712,
+      "sha256": "9fbae101c8a1ed1d28afaa51878c546fdff19d18933429e3a9ff1bdab86be3f3",
+      "origin": "NET-06 design/verification, 2026-11-25"
+    },
+    {
+      "path": "sim/net06/tb_register_timing_negative.sv",
+      "bytes": 710,
+      "sha256": "f3b7e96325f2d47affa9a01d18eb462d7991218ebdb5b26bf0c4c0ac3e90206d",
+      "origin": "NET-06 design/verification, 2026-11-25"
+    },
+    {
+      "path": "tools/build_register_bank.py",
+      "bytes": 15397,
+      "sha256": "1a6c0bf584adaba0bf79b3412d6a7c6a253ba668fe39298c75b9fc7ffbb2dec0",
+      "origin": "NET-06 design/verification, 2026-11-25"
+    },
+    {
+      "path": "tools/make_register_cpu.py",
+      "bytes": 2885,
+      "sha256": "1db0ed7198274e387b89d72b457dfc8e49fec49484334be967be8ca7d0d515a9",
+      "origin": "NET-06 design/verification, 2026-11-25"
+    },
+    {
+      "path": "tools/record_net06_manifest.py",
+      "bytes": 5994,
+      "sha256": "c981324731f3ded74e5d137cde711db1e24d56fd7b528bcad0fcaaa21c6139a9",
+      "origin": "NET-06 design/verification, 2026-11-25"
+    },
+    {
+      "path": "tools/run_register_netlist.py",
+      "bytes": 8547,
+      "sha256": "03058a922d59a7f41c1b48e16e101ccda103ab815190e504745b0532acbff675",
+      "origin": "NET-06 design/verification, 2026-11-25"
+    },
+    {
+      "path": "tools/run_register_timing_checks.py",
+      "bytes": 2079,
+      "sha256": "e15e66de34030380802988d869502e60e397e87662225d4b05b1d5dc46b4fdba",
+      "origin": "NET-06 design/verification, 2026-11-25"
+    },
+    {
+      "path": "verification/net06/baseline-integrity.json",
+      "bytes": 971,
+      "sha256": "b9271ca7cf2dcc0ea4b1f772a79cc5680c930e79bce74c5b538b9b9778da6307",
+      "origin": "NET-06 design/verification, 2026-11-25"
+    },
+    {
+      "path": "verification/net06/cpu-transformation.json",
+      "bytes": 433,
+      "sha256": "ad3f43d7559aea151e56e490a91831b7976c56840545744eb63a15fabea09ef4",
+      "origin": "NET-06 design/verification, 2026-11-25"
+    },
+    {
+      "path": "verification/net06/fanout.json",
+      "bytes": 28513,
+      "sha256": "c38b8e14d6c1fff5c601ba317ab4173e6644f8d6fb4e449d27138c305c30d85c",
+      "origin": "NET-06 design/verification, 2026-11-25"
+    },
+    {
+      "path": "verification/net06/frame.png",
+      "bytes": 1361,
+      "sha256": "d9a8e76c001c18198f03ed53bed7864ad1043e3002e2908a94e98452b58f6375",
+      "origin": "NET-06 design/verification, 2026-11-25"
+    },
+    {
+      "path": "verification/net06/frame.ppm",
+      "bytes": 230415,
+      "sha256": "152c217f59e4a6f05b8c75f8c17e66c1b4e01b5369e37b913f034e97d6903665",
+      "origin": "NET-06 design/verification, 2026-11-25"
+    },
+    {
+      "path": "verification/net06/initial-reset-fixture-failure.json",
+      "bytes": 13193,
+      "sha256": "ef7486dbbfb561cb6e99be9be66eb904e33fad1616ebbf63b0a82890e5dfe468",
+      "origin": "NET-06 intermediate reset-fixture failure evidence, retained separately from final acceptance"
+    },
+    {
+      "path": "verification/net06/initial-reset-fixture.sv",
+      "bytes": 2707,
+      "sha256": "6491ee2aaac7b6d8facfaac516d9f0c35a840dc8f6b0d30bfabcae37e8dc4690",
+      "origin": "NET-06 intermediate reset-fixture failure evidence, retained separately from final acceptance"
+    },
+    {
+      "path": "verification/net06/register_bank.pdf",
+      "bytes": 937314,
+      "sha256": "7b4650bd0fd951db72f829f712f3a3d6b9b55a6b5681ec3c5e2586ad35b95757",
+      "origin": "NET-06 design/verification, 2026-11-25"
+    },
+    {
+      "path": "verification/net06/register_bank.xml",
+      "bytes": 95084,
+      "sha256": "9b5183a61f166761a60601c1ad8b4b9ebc588a351a1e9f2ebbc538806539e25d",
+      "origin": "NET-06 design/verification, 2026-11-25"
+    },
+    {
+      "path": "verification/net06/results.json",
+      "bytes": 30605,
+      "sha256": "2271df9c60b432cd2b4f7735393b9b1cf9fdd6c18a0444cd3d7755cd9401e4ba",
+      "origin": "NET-06 design/verification, 2026-11-25"
+    },
+    {
+      "path": "verification/net06/schematic-check.json",
+      "bytes": 560,
+      "sha256": "7131571b194745b4a28a26d04254529ceda979f8a2fb412aabd31a4ef84ed8c1",
+      "origin": "NET-06 design/verification, 2026-11-25"
+    },
+    {
+      "path": "verification/net06/timing-negative.json",
+      "bytes": 9743,
+      "sha256": "b50d4b73949476d80ee913bf21f229251b6c1b0cd7b8b4d69af6d958dbfd53ca",
+      "origin": "NET-06 design/verification, 2026-11-25"
+    }
+  ]
+}

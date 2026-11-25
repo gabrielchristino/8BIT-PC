@@ -27,6 +27,9 @@ Os downloads chegaram com nomes temporários; os nomes legíveis acima foram res
 
 ## Transformações e material novo
 
+NET-06 (25/11/2026), base 18a3cdc2ab83cb8af51177b8116b0320a4a4f5b8, acrescenta hardware/register_bank, sim/net06 e ferramentas novas derivadas da infraestrutura anterior. Pinagens TI existentes -> esquema KiCad -> XML -> banco de pacotes conectados. A CPU NET-05 é transformada substituindo A/B/EA/Z/C e seleção de dados; fixtures temporárias semeiam Q dos pacotes correspondentes, sem modificar as bancadas originais. verification/net06 registra fonte/hashes/transformação, versão/comandos/saídas, testes normais e negativos e audita seis snapshots anteriores. initial-reset-fixture-failure.json preserva uma falha intermediária de preparo; seus hashes identificam aquele ensaio, não as fontes finais. Datasheets são reutilizados byte a byte. Nenhum arquivo novo é apresentado como revisão histórica recuperada.
+
+
 NET-05 (25/11/2026), base 179b06ed6aa80ab1658022657638ef571888d6a7, cria hardware/alu_bank e sim/net05. Ferramentas novas derivam da infraestrutura anterior, sem alterá-la: pinagens já documentadas TI -> KiCad -> XML -> ALU de portas/somadores; a CPU NET-04 é adaptada substituindo apenas a ALU combinacional. Os PDFs TI existentes são reutilizados com hashes/origens explícitos. verification/net05 registra fontes, transformação, comandos/versões/saídas, limites selecionados de caminhos, testes negativos e manifesto; audita cinco snapshots anteriores nos respectivos commits. Não são materiais históricos recuperados. A primeira rodada foi interrompida para ajustar a folha gráfica; a aceitação foi reiniciada com os arquivos finais.
 
 

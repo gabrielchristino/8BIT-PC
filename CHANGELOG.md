@@ -1,5 +1,10 @@
 # Histórico preservado
 
+## NET-06 — 25/11/2026
+
+Registradores A/B/EA, Z/C e mux de dados a partir do esquema KiCad, com 40 CIs e adaptador separado da NET-05. Matriz de seleção/carga/retenção nos dois modos, reset, oito violações temporais esperadas e regressões integradas em verification/net06. Preservado o ensaio inicial que falhou por ausência de pulso de reset na fixture; rodada final usa reset explícito. Fontes anteriores intactas. Relatório docs/engineering/NET06.md; sem liberação para fabricação.
+
+
 ## NET-05 — 25/11/2026
 
 ALU de 8 bits com 49 CIs, esquema nativo, XML, mapa de pinos e simulação derivada das conexões; adapter separado da NET-04. Preserva carry sem empréstimo e flags dependentes do valor selecionado. Verificação exaustiva ideal/temporizada, análise de caminhos do modelo, regressões integradas e falhas intencionais em verification/net05. Fontes anteriores preservadas. Relatório docs/engineering/NET05.md; sem liberação para fabricação.

@@ -46,3 +46,9 @@
 - Leia docs/engineering/NET05.md antes de integrar registradores/datapath. hardware/alu_bank deriva da netlist KiCad; sim/net05/isa1_cpu_alu.sv deriva da NET-04. Gere os arquivos pelas ferramentas, sem editar manualmente os gerados.
 - ALU preserva carry nas operações lógicas/inativas e usa carry sem empréstimo em SUB/CMP. A saída ZERO da ALU não equivale sempre ao Z arquitetural, que depende do valor selecionado.
 - A ALU tem 49 CIs nesta base, sem alegação de otimização; distribuição interna limita entradas por net, mas cargas entre blocos precisam de análise global. A análise de caminhos é do modelo selecionado, não STA completa ou frequência certificada.
+
+## Continuidade NET-06
+
+- Leia docs/engineering/NET06.md e verification/net06/results.json. hardware/register_bank contém A/B/EA/Z/C e mux de dados derivados dos pinos KiCad; sim/net06 deriva da NET-05. PC/endereço/estados de execução e guardas continuam RTL.
+- Z testa o dado selecionado, não somente ZERO da ALU; C só atualiza em flags=2. Reuse as saídas físicas DST_N/FLAGS_N da NET-04. Preserve pulso explícito de reset e não inicialize Q artificialmente para ocultar falhas.
+- A matriz de 262.144 casos cobre campos de controle/padrões, não todos os estados possíveis. Ensaios negativos temporais são rejeições esperadas; o log inicial de fixture falha não é aprovação atual.

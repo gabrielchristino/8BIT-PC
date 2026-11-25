@@ -6,7 +6,9 @@ Projeto de computador pessoal com CPU própria de lógica discreta, endereçamen
 
 ## Começar
 
-**Desenvolvimento atual:** [NET-05 — ALU de 8 bits](docs/engineering/NET05.md). Soma/subtração compartilhada, lógica e deslocamentos são simulados da netlist KiCad e integrados à CPU. Execute `python3 tools/run_alu_netlist.py` e `python3 tools/analyze_alu_paths.py` no WSL Ubuntu. Registradores/controle restantes e validação elétrica, temporal e física continuam pendentes.
+**Desenvolvimento atual:** [NET-06 — A/B/EA, flags e seleção de dados](docs/engineering/NET06.md). Registradores e mux de dados derivam da netlist KiCad e integram-se aos blocos anteriores. Execute `python3 tools/run_register_netlist.py` e `python3 tools/run_register_timing_checks.py` no WSL Ubuntu. PC, caminho de endereços e controle físico restante continuam pendentes, além da validação elétrica/temporal/física.
+
+**ALU de 8 bits:** [NET-05](docs/engineering/NET05.md), com soma/subtração, lógica e deslocamentos da netlist.
 
 **Microcódigo:** [NET-04](docs/engineering/NET04.md), com microstep, FETCH, IR, EEPROMs, retenção e decodificação da palavra de controle.
 

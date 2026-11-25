@@ -1,0 +1,1 @@
+(sym_lib_table (version 7) (lib (name "NET10") (type "KiCad") (uri "${KIPRJMOD}/cpu_packages.kicad_sym") (options "") (descr "ISA-1 explicit package pin definitions")))

@@ -6,7 +6,7 @@ Projeto de computador pessoal com CPU própria de lógica discreta, endereçamen
 
 ## Começar
 
-**Desenvolvimento atual aprovado:** [NET-09 — X síncrono e ligações de controle](docs/engineering/NET09.md). CPU principal usa armazenamento/execução/datapath dos bancos KiCad, com alternativa HC191 para comparação. Execute `python3 tools/run_x_register_netlist.py` no WSL Ubuntu. NET-10 une as ligações e verifica cargas globais; memória/periféricos, alimentação, temporização, ERC/DRC e PCB ainda não estão aprovados.
+**Desenvolvimento atual:** [NET-10 — CPU unificada por pinos](docs/engineering/NET10.md). O esquema global reúne oito bancos e distribui sinais entre 283 CIs. Regressões ideal e com atrasos em `verification/net10`; ERC conserva 56 violações nas interfaces ainda incompletas. Memória/periféricos, alimentação, fechamento temporal e PCB continuam pendentes. A base anterior [NET-09](docs/engineering/NET09.md) permanece preservada.
 
 **Registradores/dados:** [NET-06](docs/engineering/NET06.md). A referência fornecida pelo usuário para as membranas está em [KEYPAD_CONNECTOR.md](docs/engineering/KEYPAD_CONNECTOR.md).
 

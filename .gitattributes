@@ -9,3 +9,5 @@ revisions/** -text
 /isa1_rev*.py -text
 /isa1_rev*.json -text
 /counter.py -text
+# Keep the exact NET-10 tested runner bytes; reports hash this CRLF source.
+/tools/run_cpu_global.py -text whitespace=cr-at-eol

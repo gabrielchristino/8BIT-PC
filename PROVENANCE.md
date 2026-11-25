@@ -27,6 +27,9 @@ Os downloads chegaram com nomes temporários; os nomes legíveis acima foram res
 
 ## Transformações e material novo
 
+NET-10 (25/11/2026), base 5020e30394303971c4c0c1852a81d635365b4fee: nova CPU global em hardware/cpu_global, sem alterar os oito bancos de origem. Adicionados 17 buffers HC125; XML exportado e verificado pino a pino. Modelos ideal/com atrasos e falhas intermediárias preservados por suas fontes. KiCad 10.0.8 instalado separadamente, com origem/hash em docs/engineering/KICAD_ENVIRONMENT.md; ERC ainda apresenta 56 violações, sem exceções adicionadas. Manifesto audita os dez snapshots anteriores nos respectivos commits.
+
+
 NET-09 (25/11/2026), base 4f2584e7e3d07b0872ecb62eae694eae13a7fd4c: hardware/x_register_bank e sim/net09 são novos; hardware/cpu_execution_glue é variante nativa separada de NET-08. X procedural é substituído por pinos; ligações EXEC_ACCEPT/WRITE_MODE são exportadas/checadas em XML. A rodada anterior à explicitação dessas ligações é preservada como baseline-before-pin-glue.json, identificada por suas próprias fontes/hashes. A rodada final foi repetida. Manifesto audita nove snapshots anteriores e preserva datasheets existentes. Instalação separada de KiCad 10 para trabalhos posteriores não altera registros das exportações desta etapa feitas no KiCad 7.
 
 

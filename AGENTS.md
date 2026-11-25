@@ -70,3 +70,11 @@
 - Leia NET09.md. USE_HC191=0 agora usa X síncrono por pinos; USE_HC191=1 é alternativa de referência e não BOM principal. Não confunda o nome antigo do parâmetro com X ideal.
 - hardware/cpu_execution_glue é variante separada, com EXEC_ACCEPT e WRITE_MODE físicos. A qualificação de reset do adaptador deve ser associada a uma porta real na união global.
 - A rodada baseline-before-pin-glue é intermediária. Use results.json final e negative.json como evidências de aceitação, com seus hashes.
+
+## Continuidade NET-10
+
+- Leia docs/engineering/NET10.md e results-ideal/results-timed em verification/net10. CPU global principal não inclui a variante HC191; preserve snapshots anteriores.
+- Gere pelo builder/conversor. A simulação vem do XML exportado; SAFE_CORE é uma porta física e distribuição adiciona 17 HC125.
+- A bancada temporizada usa CPU_HALF=5000 e VIDEO_HALF=7000 ns, memória/periféricos ainda comportamentais. Não alegue VGA físico ou fechamento PVT.
+- O ERC retorna 5 com 56 violações registradas; não adicione exceções para obter zero. O script transmite o retorno nativo, embora o lançador WSL possa reportar 1 ao host.
+- Resposta digital a reset/POWER_GOOD de 1 us não substitui supervisor/hold-up físico; contador de efeitos deve começar antes da afirmação.

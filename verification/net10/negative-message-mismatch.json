@@ -1,0 +1,31 @@
+{
+  "date": "2026-11-25",
+  "sources": [
+    {
+      "path": "verification/net10/cpu_global.xml",
+      "sha256": "f59474a95235c34b33314cb54ed7beb52da55651cde3e4f455b9a7c5da6b20c7"
+    },
+    {
+      "path": "tools/check_cpu_global_negative.py",
+      "sha256": "78e3c8fe1ca9f69de5c9b0d8bd3b61357810261a80ce03b162a3733ce660999b"
+    },
+    {
+      "path": "tools/convert_cpu_global.py",
+      "sha256": "7910d0ea62a6274b12a903270f480b2771dafafb5179a2838de9e88c0f6b0a4e"
+    }
+  ],
+  "checks": [
+    {
+      "case": "Floating SP clock",
+      "expected_rejection": true,
+      "message": "Floating input U1/11",
+      "passed": true
+    },
+    {
+      "case": "SP output shorted to supply",
+      "expected_rejection": true,
+      "message": "Driver count U4/6: +5V",
+      "passed": false
+    }
+  ]
+}

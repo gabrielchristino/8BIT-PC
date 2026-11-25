@@ -1,0 +1,81 @@
+{
+  "date": "2026-11-25",
+  "kicad": "10.0.8",
+  "command": [
+    "/home/gabri/.local/opt/isa1-kicad-10.0.8/squashfs-root/usr/bin/kicad-cli",
+    "sch",
+    "erc",
+    "--format",
+    "json",
+    "--severity-all",
+    "--exit-code-violations",
+    "-o",
+    "/mnt/c/Users/gabri/projetos/isa1/verification/net10/erc-cpu-only.json",
+    "/mnt/c/Users/gabri/projetos/isa1/hardware/cpu_global/cpu_global.kicad_sch"
+  ],
+  "exit": 5,
+  "stdout": "Found 56 violations\nSaved ERC Report to /mnt/c/Users/gabri/projetos/isa1/verification/net10/erc-cpu-only.json\n",
+  "stderr": "",
+  "sources": [
+    {
+      "path": "hardware/cpu_global/address.kicad_sch",
+      "sha256": "4854f7820b8c1e45d02a84d3d4a57bf3cd83ef010a5875d49ba8d1accf965ee9"
+    },
+    {
+      "path": "hardware/cpu_global/alu.kicad_sch",
+      "sha256": "71a6a6dc7869cdf5955e9c90455de7baf5e3ae32377af72f021f827d71d92da4"
+    },
+    {
+      "path": "hardware/cpu_global/bus.kicad_sch",
+      "sha256": "f3565d522de579276f73981d8ce7557e5ff0ed3afbfafc68f3b8384a81ae99cd"
+    },
+    {
+      "path": "hardware/cpu_global/cpu_global.kicad_sch",
+      "sha256": "fdd70e742f642169067d5f35815f6ea0c24e9f77711177d278857df8a8b84515"
+    },
+    {
+      "path": "hardware/cpu_global/distribution.kicad_sch",
+      "sha256": "9387d70a33228260582ba7a56a1a15dd3617086168539113560d26d95f7874a2"
+    },
+    {
+      "path": "hardware/cpu_global/execution.kicad_sch",
+      "sha256": "3f9d7f3bebe3dc3042fc24fd0e90d513c19f6f4d6435e89e040e323d797a6396"
+    },
+    {
+      "path": "hardware/cpu_global/micro.kicad_sch",
+      "sha256": "381fd07dbcc916d83d2bdd9a823cdce0721db309acdb14e3b6a60233c1d190f5"
+    },
+    {
+      "path": "hardware/cpu_global/registers.kicad_sch",
+      "sha256": "60e92e49871c172f53200e60bc503d2260c239fe421cf2e345684affa1d1348d"
+    },
+    {
+      "path": "hardware/cpu_global/sp.kicad_sch",
+      "sha256": "5317955820fe3df39d7b4e75379be31c34f381168afb8b637a633886c698b4d3"
+    },
+    {
+      "path": "hardware/cpu_global/x.kicad_sch",
+      "sha256": "4dc45ae0e01ad6a982d42a040db46b876a07069b66b40aeb284b30725c544ef3"
+    },
+    {
+      "path": "hardware/cpu_global/cpu_packages.kicad_sym",
+      "sha256": "484093786e16dc93ef295557e057fa0715477e1628ba60f217eea0eb83c8d504"
+    },
+    {
+      "path": "hardware/cpu_global/sym-lib-table",
+      "sha256": "2720f6f475a4a5ee0ddff8145a999ea58dc65ed19f9b6e69a5ea1400f036da41"
+    },
+    {
+      "path": "hardware/cpu_global/cpu_global.kicad_pro",
+      "sha256": "81ffc91a2faef6a04005036ae79411108cd8f15cc3c8fb42f5c34fef42aae4bd"
+    }
+  ],
+  "violation_counts": {
+    "isolated_pin_label": 40,
+    "power_pin_not_driven": 2,
+    "pin_not_driven": 14
+  },
+  "erc_passed": false,
+  "board_release": false,
+  "reason": "CPU-only boundary lacks external power/clock/reset/ack/data/boot/run and consumers; violations retained, no waivers inserted"
+}

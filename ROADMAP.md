@@ -1,3 +1,5 @@
+Atualização NET-10 (25/11/2026): CPU global por pinos em hardware/cpu_global, com distribuição entre blocos e 4.892 pinos conferidos. O ERC tem 56 violações registradas; não há placa liberada. Próximo fechamento: memória/VRAM/MMIO, relógios de vídeo e interfaces elétricas. As listas históricas abaixo não equivalem a módulos físicos concluídos; use os relatórios de cada etapa para distinguir evidências.
+
 # Roadmap de continuidade
 
 ## Continuidade — NET-09

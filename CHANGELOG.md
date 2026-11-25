@@ -1,3 +1,9 @@
+## 25/11/2026 — NET-10, união global da CPU
+
+- Nova hierarquia KiCad e simulação do XML, com 17 HC125 adicionais para distribuição: 283 CIs, 566 componentes, 4.892 pinos.
+- Regressões ideal/com atrasos, negativos de pinagem e registros das falhas intermediárias; sem alterar snapshots anteriores.
+- KiCad 10.0.8 separado; ERC com 56 violações retidas. Sem liberação de fabricação.
+
 # Histórico preservado
 
 ## NET-09 — 25/11/2026

@@ -1,5 +1,9 @@
 # Decisões recuperadas e registro da migração
 
+## ADR E13 — Unificar pinos e distribuir cargas antes dos periféricos
+
+Decisão nova de 25/11/2026. Construir uma nova hierarquia KiCad a partir dos oito bancos preservados e gerar a CPU do XML exportado. Usar a saída física SAFE_CORE e distribuir sinais com HC125 quando ultrapassarem quatro entradas. A alternativa de ligar somente módulos HDL esconderia cargas entre blocos; otimizar a contagem de CIs antes da equivalência dificultaria localizar regressões. Impacto: nenhum opcode, flag, mapa ou convenção de pilha válido muda; acrescentam-se 17 CIs de distribuição, sem alegar otimização. Aceitação digital: correspondência de 4.892 pinos, ausência de drivers conflitantes/entradas flutuantes internas, negativos detectados e regressões completas ideal/com atrasos, incluindo quadro. ERC com 56 violações e ausência de memória/periféricos físicos impedem liberação da placa; quatro entradas por net não substituem análise capacitiva/temporal. Evidência em docs/engineering/NET10.md.
+
 ## ADR E12 — X síncrono e controle explícito nas interfaces
 
 25/11/2026: X principal em HC273/283/157, com carga EA e ±1 síncronos; preservar HC191 como alternativa de referência. Não se alega economia contra dez pacotes sem o respectivo controle físico. A escolha fecha uma implementação sem carga assíncrona adicional, mantendo funções/ISA/ROMs. Expor EXEC_ACCEPT já físico e usar um inversor livre para WRITE_MODE em variante separada do controle. Aceitação: todos os valores X/modos/enables ideal/temporizado, negativos de ligação, instruções/segurança/guardas e boot/VGA nas duas variantes; revisão global de fanout/clock ainda exigida. Ver NET09.md.

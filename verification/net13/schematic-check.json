@@ -1,0 +1,22 @@
+{
+  "date": "2026-11-25",
+  "components": 80,
+  "ics": 28,
+  "pins": 576,
+  "no_connects": 7,
+  "max_signal_input_loads": 4,
+  "failures": [],
+  "scope": "Pin graph and digital fanout; electrical load/PCB/analog/PVT closure pending",
+  "command": [
+    "/home/gabri/.local/opt/isa1-kicad-10.0.8/squashfs-root/usr/bin/kicad-cli",
+    "sch",
+    "export",
+    "netlist",
+    "--format",
+    "kicadxml",
+    "-o",
+    "/mnt/c/Users/gabri/projetos/isa1/verification/net13/memory_bus.xml",
+    "/mnt/c/Users/gabri/projetos/isa1/hardware/memory_bus/memory_bus.kicad_sch"
+  ],
+  "kicad": "10.0.8"
+}

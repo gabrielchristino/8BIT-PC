@@ -6,7 +6,7 @@ Projeto de computador pessoal com CPU própria de lógica discreta, endereçamen
 
 ## Começar
 
-**Desenvolvimento atual:** [NET-12 — controlador de acesso à memória](docs/engineering/NET12.md), com payload retido, leitura/escrita, confirmação única e posse de VRAM liberada antes de ACK baixar. Esquema de 28 CIs/478 pinos, três cenários isolados e integração ideal completa aprovados; integração temporizada é reduzida. Usa a [CPU global NET-10](docs/engineering/NET10.md) e o [decoder NET-11](docs/engineering/NET11.md). Chips de memória, barramento físico, MMIO/raster/saída VGA, alimentação, fechamento temporal e PCB continuam pendentes; ERC parcial conserva violações explícitas.
+**Desenvolvimento atual:** [NET-13 — chips de memória e barramento](docs/engineering/NET13.md), com SRAM/EEPROM, buffers TTL, muxes e troca de drivers a partir dos pinos KiCad. A variante do controlador desliga o driver antes de devolver VRAM ao vídeo. Testes cobrem todos os endereços, cenários de atraso e boot/quadro completo com SRAM inicialmente indefinida. Imagem EEPROM do diagnóstico em `firmware/net13`. Cargas reais, reset/alimentação, raster/relógios/DAC, MMIO/teclado por pinos, footprints e PCB continuam pendentes; não há liberação de fabricação.
 
 **Registradores/dados:** [NET-06](docs/engineering/NET06.md). A referência fornecida pelo usuário para as membranas está em [KEYPAD_CONNECTOR.md](docs/engineering/KEYPAD_CONNECTOR.md).
 

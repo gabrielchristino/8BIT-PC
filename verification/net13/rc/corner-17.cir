@@ -1,0 +1,12 @@
+ISA1 NET13 pull-up model: R tolerance, lumped C and worst sink leakage
+VCC supply 0 5.5
+RPU supply data 3135
+CLOAD data 0 1e-10
+ILEAK data 0 1.1e-05
+VCTRL ctrl 0 PULSE(1 0 10n .1n .1n 5u 10u)
+SLOW data 0 ctrl 0 SW
+.model SW SW(Ron=.1 Roff=1e15 Vt=.5 Vh=0)
+.tran .5n 5u
+.meas tran vh FIND v(data) AT=4.9u
+.meas tran rise1090 TRIG v(data) VAL=0.5465515 RISE=1 TARG v(data) VAL=4.9189635 RISE=1
+.end

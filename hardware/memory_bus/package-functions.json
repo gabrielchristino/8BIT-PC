@@ -1,0 +1,670 @@
+{
+  "C": {
+    "datasheet": "",
+    "pins": {
+      "1": {
+        "name": "1",
+        "type": "passive"
+      },
+      "2": {
+        "name": "2",
+        "type": "passive"
+      }
+    },
+    "source": "Proposed 100nF bypass; not electrically sized"
+  },
+  "SN74AHC08": {
+    "datasheet": "https://www.ti.com/lit/ds/symlink/sn74ahc08.pdf",
+    "pins": {
+      "1": {
+        "name": "A0",
+        "type": "input"
+      },
+      "4": {
+        "name": "A1",
+        "type": "input"
+      },
+      "9": {
+        "name": "A2",
+        "type": "input"
+      },
+      "12": {
+        "name": "A3",
+        "type": "input"
+      },
+      "2": {
+        "name": "B0",
+        "type": "input"
+      },
+      "5": {
+        "name": "B1",
+        "type": "input"
+      },
+      "10": {
+        "name": "B2",
+        "type": "input"
+      },
+      "13": {
+        "name": "B3",
+        "type": "input"
+      },
+      "3": {
+        "name": "Y0",
+        "type": "output"
+      },
+      "6": {
+        "name": "Y1",
+        "type": "output"
+      },
+      "8": {
+        "name": "Y2",
+        "type": "output"
+      },
+      "11": {
+        "name": "Y3",
+        "type": "output"
+      },
+      "14": {
+        "name": "VCC",
+        "type": "power_in"
+      },
+      "7": {
+        "name": "GND",
+        "type": "power_in"
+      }
+    },
+    "source": "TI AHC package pin functions; same channel/power pin numbering as corresponding HC package; 14-pin package"
+  },
+  "SN74AHC32": {
+    "datasheet": "https://www.ti.com/lit/ds/symlink/sn74ahc32.pdf",
+    "pins": {
+      "1": {
+        "name": "A0",
+        "type": "input"
+      },
+      "4": {
+        "name": "A1",
+        "type": "input"
+      },
+      "9": {
+        "name": "A2",
+        "type": "input"
+      },
+      "12": {
+        "name": "A3",
+        "type": "input"
+      },
+      "2": {
+        "name": "B0",
+        "type": "input"
+      },
+      "5": {
+        "name": "B1",
+        "type": "input"
+      },
+      "10": {
+        "name": "B2",
+        "type": "input"
+      },
+      "13": {
+        "name": "B3",
+        "type": "input"
+      },
+      "3": {
+        "name": "Y0",
+        "type": "output"
+      },
+      "6": {
+        "name": "Y1",
+        "type": "output"
+      },
+      "8": {
+        "name": "Y2",
+        "type": "output"
+      },
+      "11": {
+        "name": "Y3",
+        "type": "output"
+      },
+      "14": {
+        "name": "VCC",
+        "type": "power_in"
+      },
+      "7": {
+        "name": "GND",
+        "type": "power_in"
+      }
+    },
+    "source": "TI AHC package pin functions; same channel/power pin numbering as corresponding HC package; 14-pin package"
+  },
+  "SN74AHC04": {
+    "datasheet": "https://www.ti.com/lit/ds/symlink/sn74ahc04.pdf",
+    "pins": {
+      "1": {
+        "name": "A0",
+        "type": "input"
+      },
+      "3": {
+        "name": "A1",
+        "type": "input"
+      },
+      "5": {
+        "name": "A2",
+        "type": "input"
+      },
+      "9": {
+        "name": "A3",
+        "type": "input"
+      },
+      "11": {
+        "name": "A4",
+        "type": "input"
+      },
+      "13": {
+        "name": "A5",
+        "type": "input"
+      },
+      "2": {
+        "name": "Y0",
+        "type": "output"
+      },
+      "4": {
+        "name": "Y1",
+        "type": "output"
+      },
+      "6": {
+        "name": "Y2",
+        "type": "output"
+      },
+      "8": {
+        "name": "Y3",
+        "type": "output"
+      },
+      "10": {
+        "name": "Y4",
+        "type": "output"
+      },
+      "12": {
+        "name": "Y5",
+        "type": "output"
+      },
+      "14": {
+        "name": "VCC",
+        "type": "power_in"
+      },
+      "7": {
+        "name": "GND",
+        "type": "power_in"
+      }
+    },
+    "source": "TI AHC package pin functions; same channel/power pin numbering as corresponding HC package; 14-pin package"
+  },
+  "SN74AHC125": {
+    "datasheet": "https://www.ti.com/lit/ds/symlink/sn74ahc125.pdf",
+    "pins": {
+      "2": {
+        "name": "A0",
+        "type": "input"
+      },
+      "5": {
+        "name": "A1",
+        "type": "input"
+      },
+      "9": {
+        "name": "A2",
+        "type": "input"
+      },
+      "12": {
+        "name": "A3",
+        "type": "input"
+      },
+      "1": {
+        "name": "OE0_N",
+        "type": "input"
+      },
+      "4": {
+        "name": "OE1_N",
+        "type": "input"
+      },
+      "10": {
+        "name": "OE2_N",
+        "type": "input"
+      },
+      "13": {
+        "name": "OE3_N",
+        "type": "input"
+      },
+      "3": {
+        "name": "Y0",
+        "type": "output"
+      },
+      "6": {
+        "name": "Y1",
+        "type": "output"
+      },
+      "8": {
+        "name": "Y2",
+        "type": "output"
+      },
+      "11": {
+        "name": "Y3",
+        "type": "output"
+      },
+      "14": {
+        "name": "VCC",
+        "type": "power_in"
+      },
+      "7": {
+        "name": "GND",
+        "type": "power_in"
+      }
+    },
+    "source": "TI AHC package pin functions; same channel/power pin numbering as corresponding HC package; 14-pin package"
+  },
+  "SN74AHCT157": {
+    "datasheet": "https://www.ti.com/lit/ds/symlink/sn74ahct157.pdf",
+    "pins": {
+      "1": {
+        "name": "SELECT",
+        "type": "input"
+      },
+      "15": {
+        "name": "G_N",
+        "type": "input"
+      },
+      "2": {
+        "name": "A0",
+        "type": "input"
+      },
+      "5": {
+        "name": "A1",
+        "type": "input"
+      },
+      "11": {
+        "name": "A2",
+        "type": "input"
+      },
+      "14": {
+        "name": "A3",
+        "type": "input"
+      },
+      "3": {
+        "name": "B0",
+        "type": "input"
+      },
+      "6": {
+        "name": "B1",
+        "type": "input"
+      },
+      "10": {
+        "name": "B2",
+        "type": "input"
+      },
+      "13": {
+        "name": "B3",
+        "type": "input"
+      },
+      "4": {
+        "name": "Y0",
+        "type": "output"
+      },
+      "7": {
+        "name": "Y1",
+        "type": "output"
+      },
+      "9": {
+        "name": "Y2",
+        "type": "output"
+      },
+      "12": {
+        "name": "Y3",
+        "type": "output"
+      },
+      "16": {
+        "name": "VCC",
+        "type": "power_in"
+      },
+      "8": {
+        "name": "GND",
+        "type": "power_in"
+      }
+    },
+    "source": "TI package pin configuration; channels renamed to zero-based indices"
+  },
+  "AS7C256A_28SOJ": {
+    "datasheet": "https://www.alliancememory.com/wp-content/uploads/as7c256av.1.2.pdf",
+    "pins": {
+      "1": {
+        "name": "A14",
+        "type": "input"
+      },
+      "2": {
+        "name": "A12",
+        "type": "input"
+      },
+      "3": {
+        "name": "A7",
+        "type": "input"
+      },
+      "4": {
+        "name": "A6",
+        "type": "input"
+      },
+      "5": {
+        "name": "A5",
+        "type": "input"
+      },
+      "6": {
+        "name": "A4",
+        "type": "input"
+      },
+      "7": {
+        "name": "A3",
+        "type": "input"
+      },
+      "8": {
+        "name": "A2",
+        "type": "input"
+      },
+      "9": {
+        "name": "A1",
+        "type": "input"
+      },
+      "10": {
+        "name": "A0",
+        "type": "input"
+      },
+      "21": {
+        "name": "A10",
+        "type": "input"
+      },
+      "23": {
+        "name": "A11",
+        "type": "input"
+      },
+      "24": {
+        "name": "A9",
+        "type": "input"
+      },
+      "25": {
+        "name": "A8",
+        "type": "input"
+      },
+      "26": {
+        "name": "A13",
+        "type": "input"
+      },
+      "20": {
+        "name": "CE_N",
+        "type": "input"
+      },
+      "22": {
+        "name": "OE_N",
+        "type": "input"
+      },
+      "27": {
+        "name": "WE_N",
+        "type": "input"
+      },
+      "11": {
+        "name": "IO0",
+        "type": "bidirectional"
+      },
+      "12": {
+        "name": "IO1",
+        "type": "bidirectional"
+      },
+      "13": {
+        "name": "IO2",
+        "type": "bidirectional"
+      },
+      "15": {
+        "name": "IO3",
+        "type": "bidirectional"
+      },
+      "16": {
+        "name": "IO4",
+        "type": "bidirectional"
+      },
+      "17": {
+        "name": "IO5",
+        "type": "bidirectional"
+      },
+      "18": {
+        "name": "IO6",
+        "type": "bidirectional"
+      },
+      "19": {
+        "name": "IO7",
+        "type": "bidirectional"
+      },
+      "28": {
+        "name": "VCC",
+        "type": "power_in"
+      },
+      "14": {
+        "name": "GND",
+        "type": "power_in"
+      }
+    },
+    "source": "Explicit manufacturer package pin functions; package variant is part of symbol name"
+  },
+  "AT28C256_28PDIP": {
+    "datasheet": "https://ww1.microchip.com/downloads/en/DeviceDoc/Industrial-Grade-256-Kbit-%2832%2C768-x-8%29-Paged-Parallel-EEPROM.pdf",
+    "pins": {
+      "1": {
+        "name": "A14",
+        "type": "input"
+      },
+      "2": {
+        "name": "A12",
+        "type": "input"
+      },
+      "3": {
+        "name": "A7",
+        "type": "input"
+      },
+      "4": {
+        "name": "A6",
+        "type": "input"
+      },
+      "5": {
+        "name": "A5",
+        "type": "input"
+      },
+      "6": {
+        "name": "A4",
+        "type": "input"
+      },
+      "7": {
+        "name": "A3",
+        "type": "input"
+      },
+      "8": {
+        "name": "A2",
+        "type": "input"
+      },
+      "9": {
+        "name": "A1",
+        "type": "input"
+      },
+      "10": {
+        "name": "A0",
+        "type": "input"
+      },
+      "21": {
+        "name": "A10",
+        "type": "input"
+      },
+      "23": {
+        "name": "A11",
+        "type": "input"
+      },
+      "24": {
+        "name": "A9",
+        "type": "input"
+      },
+      "25": {
+        "name": "A8",
+        "type": "input"
+      },
+      "26": {
+        "name": "A13",
+        "type": "input"
+      },
+      "20": {
+        "name": "CE_N",
+        "type": "input"
+      },
+      "22": {
+        "name": "OE_N",
+        "type": "input"
+      },
+      "27": {
+        "name": "WE_N",
+        "type": "input"
+      },
+      "11": {
+        "name": "IO0",
+        "type": "bidirectional"
+      },
+      "12": {
+        "name": "IO1",
+        "type": "bidirectional"
+      },
+      "13": {
+        "name": "IO2",
+        "type": "bidirectional"
+      },
+      "15": {
+        "name": "IO3",
+        "type": "bidirectional"
+      },
+      "16": {
+        "name": "IO4",
+        "type": "bidirectional"
+      },
+      "17": {
+        "name": "IO5",
+        "type": "bidirectional"
+      },
+      "18": {
+        "name": "IO6",
+        "type": "bidirectional"
+      },
+      "19": {
+        "name": "IO7",
+        "type": "bidirectional"
+      },
+      "28": {
+        "name": "VCC",
+        "type": "power_in"
+      },
+      "14": {
+        "name": "GND",
+        "type": "power_in"
+      }
+    },
+    "source": "Explicit manufacturer package pin functions; package variant is part of symbol name"
+  },
+  "SN74HCT244": {
+    "datasheet": "https://www.ti.com/lit/ds/symlink/sn74hct244.pdf",
+    "pins": {
+      "1": {
+        "name": "OE0_N",
+        "type": "input"
+      },
+      "19": {
+        "name": "OE1_N",
+        "type": "input"
+      },
+      "2": {
+        "name": "A0",
+        "type": "input"
+      },
+      "4": {
+        "name": "A1",
+        "type": "input"
+      },
+      "6": {
+        "name": "A2",
+        "type": "input"
+      },
+      "8": {
+        "name": "A3",
+        "type": "input"
+      },
+      "11": {
+        "name": "A4",
+        "type": "input"
+      },
+      "13": {
+        "name": "A5",
+        "type": "input"
+      },
+      "15": {
+        "name": "A6",
+        "type": "input"
+      },
+      "17": {
+        "name": "A7",
+        "type": "input"
+      },
+      "18": {
+        "name": "Y0",
+        "type": "output"
+      },
+      "16": {
+        "name": "Y1",
+        "type": "output"
+      },
+      "14": {
+        "name": "Y2",
+        "type": "output"
+      },
+      "12": {
+        "name": "Y3",
+        "type": "output"
+      },
+      "9": {
+        "name": "Y4",
+        "type": "output"
+      },
+      "7": {
+        "name": "Y5",
+        "type": "output"
+      },
+      "5": {
+        "name": "Y6",
+        "type": "output"
+      },
+      "3": {
+        "name": "Y7",
+        "type": "output"
+      },
+      "20": {
+        "name": "VCC",
+        "type": "power_in"
+      },
+      "10": {
+        "name": "GND",
+        "type": "power_in"
+      }
+    },
+    "source": "Explicit manufacturer package pin functions; package variant is part of symbol name"
+  },
+  "R": {
+    "datasheet": "",
+    "pins": {
+      "1": {
+        "name": "1",
+        "type": "passive"
+      },
+      "2": {
+        "name": "2",
+        "type": "passive"
+      }
+    },
+    "source": "Proposed 3.3k pull-up, tolerance budget +/-5%; not a capacitor/rise-time proof"
+  }
+}

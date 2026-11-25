@@ -1,0 +1,27 @@
+{
+  "date": "2026-11-25",
+  "base": "NET-12 ce19e78eeb865e7787b5f913dd5a6aa6e3914547",
+  "transformation": "Separate controller variant adds DRIVE_WINDOW FF in previously spare HC174 channel: set entering ACCESS, clear entering RELEASE. DATA_DRIVE now uses this window; BUS_ACTIVE/VRAM_OWNER retain RELEASE for break-before-make.",
+  "files": [
+    {
+      "path": "tools/build_memory_access.py",
+      "sha256": "86a66e1a71248c7277a2e6f1e5d1fbf9af61864adc9010c7037d435fbbacf7e2"
+    },
+    {
+      "path": "tools/run_memory_access.py",
+      "sha256": "13b6fcadf6656a345e54d18e4eaec439def5062d8cde033920776578f1f2e9db"
+    },
+    {
+      "path": "tools/prepare_memory_bus_access.py",
+      "sha256": "2444b288aebf931579e3003ef83c80a4c5ee316014e8e6e4d3c3571d017fb721"
+    },
+    {
+      "path": "tools/build_memory_bus_access.py",
+      "sha256": "e33d3b548f867f6f7331d2430f67cda289422b81f29c16c971d16d16b129f860"
+    },
+    {
+      "path": "tools/run_memory_bus_control.py",
+      "sha256": "5100ec83b9f5c1b7dca17734c385add68ad444179816abb0338f210569f43eff"
+    }
+  ]
+}

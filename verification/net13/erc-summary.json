@@ -1,0 +1,92 @@
+{
+  "date": "2026-11-25",
+  "kicad": "10.0.8",
+  "schematics": [
+    {
+      "name": "bus",
+      "command": [
+        "/home/gabri/.local/opt/isa1-kicad-10.0.8/squashfs-root/usr/bin/kicad-cli",
+        "sch",
+        "erc",
+        "--format",
+        "json",
+        "--severity-all",
+        "--exit-code-violations",
+        "-o",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net13/bus-erc.json",
+        "/mnt/c/Users/gabri/projetos/isa1/hardware/memory_bus/memory_bus.kicad_sch"
+      ],
+      "exit": 5,
+      "stdout": "Found 171 violations\nSaved ERC Report to /mnt/c/Users/gabri/projetos/isa1/verification/net13/bus-erc.json\n",
+      "stderr": "",
+      "violation_counts": {
+        "pin_not_driven": 88,
+        "power_pin_not_driven": 2,
+        "isolated_pin_label": 81
+      },
+      "sources": [
+        {
+          "path": "hardware/memory_bus/memory_bus.kicad_sch",
+          "sha256": "793350cf2b38511baab93c891002f54d77809f61e48cd00d9998c6b73ea775b7"
+        },
+        {
+          "path": "hardware/memory_bus/bus_packages.kicad_sym",
+          "sha256": "2e65b8ffdf344193116e1a07b03690cca06e576211998d31dfef1ee68b837136"
+        },
+        {
+          "path": "hardware/memory_bus/sym-lib-table",
+          "sha256": "4bb4c9547aba5555c7139d82c447d53226320908dab828c0d393d2389b055e6e"
+        },
+        {
+          "path": "hardware/memory_bus/memory_bus.kicad_pro",
+          "sha256": "7397fb2ff555b54d1f8eedf0d6c1c58643eb2db0e85eae1b9089cb3f9d7e445a"
+        }
+      ],
+      "erc_passed": false
+    },
+    {
+      "name": "access",
+      "command": [
+        "/home/gabri/.local/opt/isa1-kicad-10.0.8/squashfs-root/usr/bin/kicad-cli",
+        "sch",
+        "erc",
+        "--format",
+        "json",
+        "--severity-all",
+        "--exit-code-violations",
+        "-o",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net13/access-erc.json",
+        "/mnt/c/Users/gabri/projetos/isa1/hardware/memory_bus_access/memory_access.kicad_sch"
+      ],
+      "exit": 5,
+      "stdout": "Found 129 violations\nSaved ERC Report to /mnt/c/Users/gabri/projetos/isa1/verification/net13/access-erc.json\n",
+      "stderr": "",
+      "violation_counts": {
+        "pin_not_driven": 42,
+        "power_pin_not_driven": 2,
+        "isolated_pin_label": 85
+      },
+      "sources": [
+        {
+          "path": "hardware/memory_bus_access/memory_access.kicad_sch",
+          "sha256": "0473e59c64f53966c48cdae4a0e43b6a3112170262ba06b687f0255222c6197c"
+        },
+        {
+          "path": "hardware/memory_bus_access/access_packages.kicad_sym",
+          "sha256": "a9d6b6cb924a279603d186572f16e9751a9e7a2763ee6c5b8018af5470b51343"
+        },
+        {
+          "path": "hardware/memory_bus_access/sym-lib-table",
+          "sha256": "8715d8af2657cd676f25ed8e433add0fbbef9ff463f5d2d0e6a80638e76952e5"
+        },
+        {
+          "path": "hardware/memory_bus_access/memory_access.kicad_pro",
+          "sha256": "53febadfbe33ff3fc957cf2a54968ecc060afe109d76bd2f093e15d311efc295"
+        }
+      ],
+      "erc_passed": false
+    }
+  ],
+  "scope": "Separate partial sheets, not joined board ERC. No waivers inserted; external sources/consumers/power remain absent.",
+  "board_release": false
+}

@@ -1,5 +1,15 @@
 # Decisões recuperadas e registro da migração
 
+## ADR E16 — Barramentos locais, recepção TTL e janela registrada de escrita
+
+Decisão nova de 25/11/2026: mapear dois AS7C256A/SOJ28 e AT28C256/PDIP28 com barramentos locais separados, receptores HCT244, pull-ups de 3,3 kΩ e muxes AHCT157. A alternativa de compartilhar um único barramento de todos os chips ampliaria os riscos de disputa; aplicar diretamente VOH TTL a CMOS não fecha as margens. Preservar 96 KiB e mapa/ISA; WE da EEPROM fica alto, sem programação em circuito prometida. Seleção ainda é candidata, condicionada às cargas, alimentação e homologação de encapsulamentos/códigos.
+
+O retorno ao vídeo revelou sobreposição de drivers com o controlador NET-12 original, reproduzida por teste negativo. Criar variante separada com DRIVE_WINDOW registrado: escrita habilitada em ACCESS/HOLD, desligada em RELEASE, posse mantida até DONE. Não recombinar fases para criar enable sem analisar hazards. Aproveita canal de FF livre, mas acrescenta dois CIs de lógica/distribuição. Sem alteração de resultados arquiteturais; fontes anteriores preservadas.
+
+Modelar bytes nos CIs, não em arrays paralelos ocultos do adaptador; SRAM inicia indefinida. Fixtures de instruções explicitam padrões, e o boot completo usa FIXTURE_DEFAULTS=0. Abortos de escrita são contados e produzem X, sem rollback ou precisão analógica de toda corrupção. O reset físico deve inibir WE antes de alterar bancos/posse/endereço no chip; isso depende do sequenciamento e de mínimos/skew, ainda não fechados.
+
+Aceitação: pinagem/XML, todos os endereços/offsets e padrões baixa/alta, leituras de vídeo, janelas de concessão/ACK prolongado, cenários adversariais de enable/Hi-Z, negativos, regressão ideal completa e temporizada reduzida. RC separado comprova somente o modelo de pull-up nos orçamentos testados. Carga de leitura SRAM 30 pF/Hi-Z 5 pF e análise real de placa permanecem critérios; não usar orçamento RC 50 pF como homologação temporal. Evidências em docs/engineering/NET13.md.
+
 ## ADR E15 — Reter payload no reset e desocupar VRAM antes de esperar o produtor
 
 Decisão nova de 25/11/2026. Controlar memória no domínio do backend/vídeo, sincronizando o pedido por dois HC74 e mantendo a sincronização de ACK existente na CPU. Após reset, aquecimento e observação de pedido baixo impedem replay do pedido antigo. Três HC377 sem clear capturam endereço/dados; flags de leitura/escrita separadas zeram juntas. A alternativa de apagar payload no reset foi rejeitada porque poderia mudar o endereço com WE ainda ativo. Não se promete atomicidade de uma escrita truncada por reset/energia.

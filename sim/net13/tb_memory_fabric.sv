@@ -1,0 +1,71 @@
+`timescale 1ns/1ps
+module tb_memory_fabric;
+ parameter integer TIMED=1,EARLY_ON=1,SMOKE=0;
+ parameter realtime HALF=79.445;
+ reg clk=0,reset_n=0,power_good=1,request=0,write_request=0;
+ reg [15:0] address=0;reg [7:0] write_data=0;
+ reg boot=0,eb=0;reg [1:0] vb=0;
+ reg [7:0] h=0;reg [9:0] v=0;
+ always #HALF clk=~clk;
+ always @(negedge clk)if(h==199)begin h<=0;v<=v==524?0:v+1;end else h<=h+1;
+ wire safe=reset_n && power_good,vram_slot=h>=161 && h<=192;
+ wire ack,accept,armed,held_write,bus_active,vram_owner,data_drive,oe_n,we_n,io_commit,read_capture;
+ wire [15:0] held_address;wire [7:0] held_data,read_data,read_bus,video_data,phase;
+ wire [3:0] select,cs_n;wire [5:0] io_select;wire [14:0] ram_address,vram_address,rom_address;
+ wire [14:0] video_address={v[8:2],h};wire [7:0] io_data=8'h96;
+ memory_decode_netlist #(.TIMED(TIMED)) decode(held_address,boot,eb,vb,1'b1,safe,select,io_select,ram_address,vram_address,rom_address);
+ memory_access_netlist #(.TIMED(TIMED)) controller(.clk(clk),.reset_n(reset_n),.power_good(power_good),.request(request),.write_request(write_request),.vram_slot(vram_slot),.address(address),.write_data(write_data),.read_bus(read_bus),.select(select),.ack(ack),.accept(accept),.armed(armed),.held_write(held_write),.bus_active(bus_active),.vram_owner(vram_owner),.data_drive(data_drive),.oe_n(oe_n),.we_n(we_n),.io_commit(io_commit),.read_capture(read_capture),.held_address(held_address),.held_data(held_data),.read_data(read_data),.cs_n(cs_n),.phase(phase));
+ memory_bus_netlist #(.TIMED(TIMED),.EARLY_ON(EARLY_ON)) frontend(.reset_n(reset_n),.power_good(power_good),.vram_owner(vram_owner),.data_drive(data_drive),.oe_n(oe_n),.we_n(we_n),.ram_address(ram_address),.vram_address(vram_address),.rom_address(rom_address),.video_address(video_address),.write_data(held_data),.io_data(io_data),.cs_n(cs_n),.select(select),.read_data(read_bus),.video_data(video_data));
+ integer tests=0,limit,k,r,op,commits=0,pixels=0;reg [31:0] starts=0;
+ reg [14:0] pixel_address;reg [7:0] expected;realtime safe_rise=0;
+ always @(posedge safe)safe_rise=$realtime;
+ function [7:0] seeded(input integer addr,input integer seed);seeded=(addr*17+(addr>>8)+seed)&255;endfunction
+ always @(posedge clk)if(safe && phase[2] && vram_slot && select[1])starts[h-161]=1;
+ // Compare settled asynchronous video data, not a physical pixel FF aperture.
+ always @(posedge clk)begin
+   #30;
+   if(safe && $realtime-safe_rise>500 && h<160 && v<480)begin
+     if(vram_owner)$fatal(1,"CPU reached visible VRAM");
+     if(video_data!==frontend.U2.peek(video_address))$fatal(1,"visible video path mismatch");
+     pixels=pixels+1;
+   end
+ end
+ task ready;
+ begin limit=0;while(!armed)begin @(negedge clk);limit=limit+1;if(limit>50)$fatal(1,"arm timeout");end end
+ endtask
+ task transaction(input [15:0] a,input bit wr,input [7:0] d,input integer hold_cycles);
+ begin
+   request=0;ready();@(negedge clk);#30;address=a;write_data=d;write_request=wr;
+   if(boot && a<16'h4000)expected=frontend.U3.peek(a);
+   else if(a<16'h8000)expected=frontend.U1.peek(a);
+   else if(a<16'ha000)expected=frontend.U2.peek({vb,a[12:0]});
+   else if(a<16'hc000)expected=io_data;
+   else expected=frontend.U3.peek({eb,a[13:0]});
+   request=1;limit=0;while(!ack)begin @(negedge clk);limit=limit+1;if(limit>250)$fatal(1,"memory fabric ACK timeout");end
+   #30;
+   if(!wr && read_data!==expected)$fatal(1,"memory fabric read mismatch addr=%h got=%h expected=%h",a,read_data,expected);
+   if(wr && a<16'h8000 && !(boot && a<16'h4000) && frontend.U1.peek(a)!==d)$fatal(1,"RAM write missing");
+   if(wr && a>=16'h8000 && a<16'ha000 && frontend.U2.peek({vb,a[12:0]})!==d)$fatal(1,"VRAM write missing");
+   repeat(hold_cycles)@(negedge clk);
+   if(!ack || vram_owner || bus_active)$fatal(1,"held request retained memory ownership");
+   request=0;ready();tests=tests+1;
+ end
+ endtask
+ initial begin
+   frontend.U1.fixture_seeded=1;frontend.U2.fixture_seeded=1;frontend.U3.fixture_seeded=1;
+   frontend.U1.patterned_default=1;frontend.U2.patterned_default=1;frontend.U3.patterned_default=1;
+   repeat(12)@(negedge clk);reset_n=1;ready();
+   // This first VRAM write is also the break-before-make negative calibration.
+   transaction(16'h8123,1,8'h39,3);
+   if(SMOKE)begin $display("RESULT smoke failures=0");$finish;end
+   for(op=0;op<2;op=op+1)for(r=0;r<4;r=r+1)for(k=0;k<64;k=k+1)begin
+     boot=k[0];eb=k[1];vb=k[3:2];
+     transaction((r==0?16'h0120:r==1?16'h8120:r==2?16'hc120:16'ha000)+k,op,k,1+k%5);
+   end
+   boot=0;
+   for(k=0;k<200;k=k+1)begin while(h!=k)@(negedge clk);transaction(16'h8abc,k[0],k,1);end
+   if(starts!==32'hffffffff)$fatal(1,"grant boundary coverage missing");
+   transaction(16'h8432,1,8'ha9,105100);
+   $display("RESULT timed=%0d early_on=%0d transactions=%0d video_samples=%0d all_slot_starts=32 ram_writes=%0d vram_writes=%0d failures=0",TIMED,EARLY_ON,tests,pixels,frontend.U1.normal_writes,frontend.U2.normal_writes);$finish;
+ end
+endmodule

@@ -97,3 +97,13 @@
 - CPU WAIT continua estável; mudanças de MMIO da transação pendente são permitidas somente em IO_COMMIT físico, antes de ACK. Fixtures originais não foram alteradas; o estado completo é comparado na retirada.
 - A integração ideal é completa e a temporizada é --quick. Arrays, barramento de dados, MMIO e raster ainda são comportamentais. latency/ack_hold antigos não comandam esta implementação.
 - ERC parcial conserva 129 violações e retorno 5. Não ocultar falhas de produção. Reset pode truncar escrita já iniciada; não alegar rollback ou cancelamento físico definido.
+
+## Continuidade NET-13
+
+- Leia docs/engineering/NET13.md. As novas folhas são memory_bus e memory_bus_access; não modifique NET-12 para acomodar a variante.
+- DRIVE_WINDOW registrado desliga os buffers em RELEASE; BUS_ACTIVE/OWNER continuam até DONE. O controlador antigo é um negativo esperado por disputa de VRAM na interface nova.
+- SRAM/EEPROM são modelos de componentes por pinos; arrays/tags estão nos chips. Fixtures explicitam padrões. O boot completo tem FIXTURE_DEFAULTS=0 e não presume SRAM zerada.
+- Abortos são contados e produzem X. O modelo não prevê toda corrupção analógica; reset deve bloquear WE antes de alterar bancos/posse/endereço no chip. Payload retido sozinho não fecha a ordem física.
+- RC 50 pF é orçamento do ensaio de pull-up. SRAM usa condições de carga 30 pF para acesso e 5 pF para Hi-Z; não ampliar a aprovação nem ignorar carga/skew/temperatura não fechados.
+- EEPROM WE fica permanentemente alto; imagem em firmware/net13 é diagnóstico novo, não o diagnostic.asm histórico ausente nem liberação de produto. HEX é um byte por linha, não Intel HEX.
+- Integração ideal é completa; temporizada é --quick. MMIO, raster e concessão ainda são modelos. ERC de folhas separadas tem 171/129 violações, não ERC unido da placa.

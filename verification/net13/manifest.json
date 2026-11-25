@@ -1,0 +1,730 @@
+{
+  "iteration": "NET-13",
+  "date": "2026-11-25",
+  "base_git_commit": "ce19e78eeb865e7787b5f913dd5a6aa6e3914547",
+  "transformation": "Physical package pin maps -> KiCad XML -> tri-state chip/buffer/mux models; separate controller driver-window variant; explicit chip-array fixtures and raw EEPROM artifact matched to accepted boot",
+  "scope": "Digital component scenarios + first-order pull-up RC; full ideal CPU boot with unseeded SRAM, reduced delayed CPU; partial ERC and electrical/PCB/PVT/reset-ordering criteria remain open",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 471,
+      "sha256": "52480b2c01051836aa56fde6b41b62dc3105ddc781381bc02666fa13fe4e27d1",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 12583,
+      "sha256": "fa668b5cbd586cbbedad6c9ca991199120ad6d6de342611ce3db9040160f16fa",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "bytes": 9332,
+      "sha256": "61a58e27fa2938db85c46d2ec9795efd8ff264f6a4f4e494df62c5264126e349",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "DECISIONS.md",
+      "bytes": 21554,
+      "sha256": "7e0476652eba12b862fef92db710abe6fcb783e555b1ea9d4db98e7a9c241ebd",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "PROVENANCE.md",
+      "bytes": 14545,
+      "sha256": "d08bd20c4fb6e43b70aab665e9ee5c4094ceb731282ec3f1b028348a69c8adb7",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5611,
+      "sha256": "e2aab69b8cf87cfdb6f2d23dd921adcb512cba61ee08df5b7662b9889a6424f9",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "ROADMAP.md",
+      "bytes": 12679,
+      "sha256": "f3f015914825747c7fa12a133382211a002babf47eebd8b3e852895aaf63d00e",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "docs/engineering/NET13.md",
+      "bytes": 10175,
+      "sha256": "e11d147d33f962a6eaf9c542843a83250cb8d99e98c646cd3dd7badb4d6b8539",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "docs/engineering/PRODUCTION_GATES.md",
+      "bytes": 3423,
+      "sha256": "c9520c39ddc6f862ea308ca0b4034bbdaf62ae4552ca0839bf2a7917f34c3eff",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "firmware/net13/README.md",
+      "bytes": 805,
+      "sha256": "23004d137771de5556a9106d504cbd737c35421273e8f74d17f44931f6e9373a",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "firmware/net13/integration-diagnostic-eeprom.bin",
+      "bytes": 32768,
+      "sha256": "f55d63d70b2da8150b0586e665823639374734ac181f1aefa801a06b8f6b1393",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "firmware/net13/integration-diagnostic-eeprom.hex",
+      "bytes": 98304,
+      "sha256": "e43d8596c75134e2461e15d0c4a71045d56f663d8198ce58e218d788e8692ab1",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "firmware/net13/origin.json",
+      "bytes": 1404,
+      "sha256": "f0958b74d796cf44992d56e47c094721d3f1d65b6b714ac1eb1b8ec264d4de93",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "hardware/memory_access/memory_access_netlist.sv",
+      "bytes": 13230,
+      "sha256": "d19babac52f68cb4c547d17a1352a9d92a3c6a23fd8899911602299bd3be459a",
+      "origin": "Preserved NET-12 source at base commit, used as contention negative calibration"
+    },
+    {
+      "path": "hardware/memory_bus/bus_packages.kicad_sym",
+      "bytes": 26382,
+      "sha256": "2e65b8ffdf344193116e1a07b03690cca06e576211998d31dfef1ee68b837136",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "hardware/memory_bus/design.json",
+      "bytes": 23790,
+      "sha256": "9268aeb42cffa542d2cf68e0c4007f35e2137bd44cff9dbb362a3ace9f1ff7a5",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "hardware/memory_bus/memory_bus.kicad_pro",
+      "bytes": 77,
+      "sha256": "7397fb2ff555b54d1f8eedf0d6c1c58643eb2db0e85eae1b9089cb3f9d7e445a",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "hardware/memory_bus/memory_bus.kicad_sch",
+      "bytes": 173625,
+      "sha256": "793350cf2b38511baab93c891002f54d77809f61e48cd00d9998c6b73ea775b7",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "hardware/memory_bus/memory_bus_netlist.sv",
+      "bytes": 18251,
+      "sha256": "d8730776c4166a2b1a5df1e314d8148f66ed970ff513379401392329d8722ea3",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "hardware/memory_bus/package-functions.json",
+      "bytes": 12837,
+      "sha256": "4f1431e6efbe7bf3267227b623ec36b23a903d749679a7fb6a6a0659f6ed43c2",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "hardware/memory_bus/pinmap.csv",
+      "bytes": 15788,
+      "sha256": "84eb460f3370d181e14b360038673a328af7791dfcca680088a94a0ac1787c20",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "hardware/memory_bus/sym-lib-table",
+      "bytes": 156,
+      "sha256": "4bb4c9547aba5555c7139d82c447d53226320908dab828c0d393d2389b055e6e",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "hardware/memory_bus_access/access_packages.kicad_sym",
+      "bytes": 22467,
+      "sha256": "a9d6b6cb924a279603d186572f16e9751a9e7a2763ee6c5b8018af5470b51343",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "hardware/memory_bus_access/design.json",
+      "bytes": 19037,
+      "sha256": "f641fc37d50caeddc4da335eaf4d54e313a4d5dcfb04cd80d437e2ec63bf5990",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "hardware/memory_bus_access/memory_access.kicad_pro",
+      "bytes": 80,
+      "sha256": "53febadfbe33ff3fc957cf2a54968ecc060afe109d76bd2f093e15d311efc295",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "hardware/memory_bus_access/memory_access.kicad_sch",
+      "bytes": 147901,
+      "sha256": "0473e59c64f53966c48cdae4a0e43b6a3112170262ba06b687f0255222c6197c",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "hardware/memory_bus_access/memory_access_netlist.sv",
+      "bytes": 13738,
+      "sha256": "0a31bba786c46ed6715c861c61087b740580f72a4af924436fd20b66c611847a",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "hardware/memory_bus_access/package-functions.json",
+      "bytes": 10682,
+      "sha256": "1fa0c621cecdf1ed5f2eb78977a2f03887e9c73950d2a478766cc0b377411ab3",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "hardware/memory_bus_access/pinmap.csv",
+      "bytes": 12653,
+      "sha256": "2412ff401450e7f8649a10e38cc4ff9dfd29b0476059965683f429b720533aba",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "hardware/memory_bus_access/sym-lib-table",
+      "bytes": 159,
+      "sha256": "8715d8af2657cd676f25ed8e433add0fbbef9ff463f5d2d0e6a80638e76952e5",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "references/memory-bus-2026-11-25.json",
+      "bytes": 2348,
+      "sha256": "dccaa411c433d3902bcfcc83dafe43524eee6961077108099ff19d1025ba9a88",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "references/ti/sn74hct244.pdf",
+      "bytes": 2198431,
+      "sha256": "b56f89788b6de9b76361cd55fba37afbaf69ae06e12ef09be5054f019c0eca30",
+      "origin": "TI original PDF, unchanged, retrieved 2026-11-25; notices retained; candidate reference",
+      "url": "https://www.ti.com/lit/ds/symlink/sn74hct244.pdf"
+    },
+    {
+      "path": "sim/net13/isa1_memory_bus.sv",
+      "bytes": 5505,
+      "sha256": "ae83351879729f99074387f42e702b39df50977c6b5c43eb03c1d22d98c5af98",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "sim/net13/memory_devices.sv",
+      "bytes": 3394,
+      "sha256": "cf166183d3ffc7a94fd722ad6e6b2ea00c9fa02f3f8405efe4600f37427a4af1",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "sim/net13/tb_memory_bus.sv",
+      "bytes": 3286,
+      "sha256": "9c5d7b8b77674786930931ea3666049688fd747e61cfac630839d434d7e28604",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "sim/net13/tb_memory_fabric.sv",
+      "bytes": 4940,
+      "sha256": "4907fb127b817fcd1c6204e84d98413669bb08d10051da288e3982ce73974111",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "tools/build_memory_bus.py",
+      "bytes": 19810,
+      "sha256": "3836d5019a7dab5f2487b3459fe624f94b094f23568ab3d0354335924715ef0c",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "tools/build_memory_bus_access.py",
+      "bytes": 16728,
+      "sha256": "e33d3b548f867f6f7331d2430f67cda289422b81f29c16c971d16d16b129f860",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "tools/check_memory_bus_erc.py",
+      "bytes": 1839,
+      "sha256": "82eaf10b966f518a73b89870f3302da39f9efbe4487ec71325b92d32bfbe99c9",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "tools/export_memory_diagnostic.py",
+      "bytes": 2113,
+      "sha256": "7f17df54b5508d8b5fcd9324915e38f28c20f49c377449c27e5d274132cae7e7",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "tools/make_memory_bus_cpu.py",
+      "bytes": 6993,
+      "sha256": "660c434b2bdc60774b5f35a33395357dde806518e753b98cf07c15b7a5eb0520",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "tools/prepare_memory_bus_access.py",
+      "bytes": 2736,
+      "sha256": "2444b288aebf931579e3003ef83c80a4c5ee316014e8e6e4d3c3571d017fb721",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "tools/record_net13_manifest.py",
+      "bytes": 7258,
+      "sha256": "dc707aea3abfbb6ebfe5c6a1c0d9d601d38b011946ef051bd7c7b9b9d6cb088a",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "tools/run_memory_bus.py",
+      "bytes": 4445,
+      "sha256": "9d97a8b58631654a5e59ad7c555113f817f209b6e1e83759e4a73567553b73a5",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "tools/run_memory_bus_control.py",
+      "bytes": 5120,
+      "sha256": "5100ec83b9f5c1b7dca17734c385add68ad444179816abb0338f210569f43eff",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "tools/run_memory_bus_cpu.py",
+      "bytes": 9645,
+      "sha256": "f36e45808b6447bfa804d086bd60cbe04fb87cdfa89df1a502a877f218dc22db",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "tools/run_memory_pullups.py",
+      "bytes": 3680,
+      "sha256": "6cc64c3edb56839f9f0978d4cd320a865648842161718947d16dbb70e1471720",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "verification/net13/access/controller-preview.png",
+      "bytes": 86652,
+      "sha256": "937ad9e76016df51653117d9ca06a7823bddbf003e9e9062cc255e2590becc3b",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "verification/net13/access/memory_access.pdf",
+      "bytes": 234858,
+      "sha256": "2c1dea544d4d9d4f4ed898b2b8c658665c102262c0bdce1a3e2b54b241676ef2",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "verification/net13/access/memory_access.xml",
+      "bytes": 107649,
+      "sha256": "9edf1825f0fd17089affa2549ba8319b9dd01b434c7159160e1701a9d73038e1",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "verification/net13/access/schematic-check.json",
+      "bytes": 509,
+      "sha256": "c3a4d4ced8218f6b3547f77a255b6e4a7735747a94046e9e7c692600154796a8",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "verification/net13/access/unit-results.json",
+      "bytes": 10323,
+      "sha256": "eb8587c1d0db0306e7af6fb3a4ee194c78636783509dbcf8fcb220febf7a042c",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "verification/net13/access-erc.json",
+      "bytes": 79288,
+      "sha256": "c46d7cbbedc3acee85e8d159221b76e3b769701545251d7899944d493ee09600",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "verification/net13/adapter-origin.json",
+      "bytes": 1061,
+      "sha256": "38dee221eeb789bea26beaf511995a069899504f0ae190a956ff2409beb4fba6",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "verification/net13/baseline-cpu-quick.json",
+      "bytes": 15092,
+      "sha256": "16a74d7d3a794aa20c87d8302097d6b024da4f0cbd36d48f6ba517f1b2a4ad0e",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "verification/net13/baseline-integrity.json",
+      "bytes": 2098,
+      "sha256": "2813a4878bb5c620a051d98de2b9a23efbb4cd23174a46b12ad6405f2a7d9160",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "verification/net13/bus-erc.json",
+      "bytes": 105261,
+      "sha256": "5475756cc21d9cb2a8dc79afe43cee67f6217ab8fd162e8fe193bf64c2fb706e",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "verification/net13/bus-preview.png",
+      "bytes": 109802,
+      "sha256": "e01f1aa2b01ef12b2185202e7e33f18d826babb30adc7be27f9d0746bc539921",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "verification/net13/bus-results.json",
+      "bytes": 11367,
+      "sha256": "de7aab6778590e2a4fd0ee7d4c4336282923ec8249777826814bc8964228ea5d",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "verification/net13/control-origin.json",
+      "bytes": 1071,
+      "sha256": "50363ba7eecba10bd95b7903571bc893da03fb29f5d8ab73965d834ea2315af2",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "verification/net13/cpu/frame-ideal.png",
+      "bytes": 1361,
+      "sha256": "d9a8e76c001c18198f03ed53bed7864ad1043e3002e2908a94e98452b58f6375",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "verification/net13/cpu/results-ideal.json",
+      "bytes": 18658,
+      "sha256": "bbabd63833710014ae31eb1393271c891ed04149f1a224f697a4778b527dacbc",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "verification/net13/cpu/results-timed.json",
+      "bytes": 15097,
+      "sha256": "adc37d49be5a896be8e54e20229a8bcab901891c2a9412a78faae0316d4faf3a",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "verification/net13/development/tb_fabric_before_startup_guard.sv.txt",
+      "bytes": 4803,
+      "sha256": "9bf69021736a3d0edf6f2ae3cd623e952165f47b8c4846f1efa591e6d22c33b1",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "verification/net13/erc-summary.json",
+      "bytes": 3230,
+      "sha256": "88565dc9efb71a05b4b1c747d2348c47582a822834db5aedfcd9aa548af93f9f",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "verification/net13/initial-fabric-startup-sample-failure.json",
+      "bytes": 1093,
+      "sha256": "ede0d4f9131e8158226e55ccabbf03336cf2caae6ed1f679f8cb2ebcb8ccfc28",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "verification/net13/memory_bus.pdf",
+      "bytes": 266893,
+      "sha256": "74bd1538b89d953102808fb2f56a3c995b22d84587f13bab499e5cced4e92a37",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "verification/net13/memory_bus.xml",
+      "bytes": 128591,
+      "sha256": "929bc581e722101b511549fbfd97c2ad60991a6f6962664d01d11bd368f21bdc",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "verification/net13/negative-origin.json",
+      "bytes": 401,
+      "sha256": "f6cdcd0d9a4c3b879aaaf4659355699b10f093852b5a3d392a2a579eec6cec75",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "verification/net13/publication-preflight.json",
+      "bytes": 300,
+      "sha256": "f1c219eeb5be703f64f417df0cd138c23321a09e1b8910e69684fdfdda9454bf",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "verification/net13/rc/corner-00.cir",
+      "bytes": 415,
+      "sha256": "194f0226325c8ad5fb7717c1816cf6d05fb35d6705f167b7f9a7a2d68925201b",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "verification/net13/rc/corner-00.log",
+      "bytes": 1145,
+      "sha256": "2b759e1d8090890bcfe133f7a301f4f2ebe40a2e7dd36575bf211aaff8a0fb77",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "verification/net13/rc/corner-01.cir",
+      "bytes": 397,
+      "sha256": "9b63090c60a9eb0752c692651f473ccd9efd828ebc0d655a54fafb328a76f1e4",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "verification/net13/rc/corner-01.log",
+      "bytes": 1145,
+      "sha256": "42248e24fa9032bec09da7b269611cdbd0ffac026ed4781bc916a1d60b579cb1",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "verification/net13/rc/corner-02.cir",
+      "bytes": 415,
+      "sha256": "c9ff022c2e1e608487f009f94b196785521609c1a6581b0e33cb19b9fde45af2",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "verification/net13/rc/corner-02.log",
+      "bytes": 1145,
+      "sha256": "3c29674ae6036e7abcb23fb67331ccd152b449ae6007f59f4105d32e7eb432ac",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "verification/net13/rc/corner-03.cir",
+      "bytes": 397,
+      "sha256": "45f4ea6b8330253f1afe71e58655446b1096e32bcbde8ee9130e63c43e067efe",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "verification/net13/rc/corner-03.log",
+      "bytes": 1145,
+      "sha256": "57e4627c6d4b7c1ec5a9cb07cae2c4aa1ae07c2740e141f0c5c57dde52591fd9",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "verification/net13/rc/corner-04.cir",
+      "bytes": 415,
+      "sha256": "d83a0111d6c06d2be532333e5dafd001aa0f45f7a68a62315f97c6572eb03ffb",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "verification/net13/rc/corner-04.log",
+      "bytes": 1145,
+      "sha256": "0edd1d5ade5bd79d86ff340af7f897c6049da8e1eefb4ab5523e199ab4661601",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "verification/net13/rc/corner-05.cir",
+      "bytes": 397,
+      "sha256": "13199c5c116f72b6edc593ea4370801e3141f4653ae742f1f90a0aa386974b40",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "verification/net13/rc/corner-05.log",
+      "bytes": 1145,
+      "sha256": "814287cbf3fdd87e89814dffb0d6fde1f4cd42942f0aa207041c290fa5c65836",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "verification/net13/rc/corner-06.cir",
+      "bytes": 399,
+      "sha256": "b9779a1e87ac47d3b26a15937e9ee9bab5108c8bd8a7b1d325e477bee57a7bc7",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "verification/net13/rc/corner-06.log",
+      "bytes": 1144,
+      "sha256": "985b53573b3f9311092906415e8731a49ae2e666f06237eea5997094bbc66053",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "verification/net13/rc/corner-07.cir",
+      "bytes": 397,
+      "sha256": "90664143f352aac0f237d6eba5f404a6195f0747b69314587c8b7be52035d613",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "verification/net13/rc/corner-07.log",
+      "bytes": 1145,
+      "sha256": "de7987f65828032100a849215050a7efd217dfaab7b86306ab00097887063d5d",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "verification/net13/rc/corner-08.cir",
+      "bytes": 399,
+      "sha256": "0edb254220660cc9a164e071ffc98d943becdea6311999caafc7b63081ef098d",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "verification/net13/rc/corner-08.log",
+      "bytes": 1145,
+      "sha256": "4106e523311dcffad27b38e695a6baf085e749c8a494f1f99e8a0d80d0c857f9",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "verification/net13/rc/corner-09.cir",
+      "bytes": 397,
+      "sha256": "649aea99284c307fdb2b9f179286676930d6629146e80c09f6e08dc48f4e66ef",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "verification/net13/rc/corner-09.log",
+      "bytes": 1144,
+      "sha256": "d86d263d7ca42b04ec40f94a6fe44e8deaadc15303467cad3ee9266f668d8cf7",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "verification/net13/rc/corner-10.cir",
+      "bytes": 399,
+      "sha256": "d057270abb944f211dcba8d3a8a4e47d709dfd2a5e73341e80172ad933ec3a81",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "verification/net13/rc/corner-10.log",
+      "bytes": 1145,
+      "sha256": "9f90913d0e40627750f665a6c42471ccf40974157619d1bce5dc324950cbda65",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "verification/net13/rc/corner-11.cir",
+      "bytes": 397,
+      "sha256": "54ddb132384b08d59424d81f9d30e983fc85eb32af063950ecc9b7494fab4ca8",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "verification/net13/rc/corner-11.log",
+      "bytes": 1145,
+      "sha256": "4e04ac9c78310d4303ce4d0ac8124cd716aa4bc300f46bc7cc3fe6e15bab231e",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "verification/net13/rc/corner-12.cir",
+      "bytes": 399,
+      "sha256": "abdb6e0a0fa8eb995a2ca54cf298fa51eab211dc2a687b4df9405c0c52c1d1ef",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "verification/net13/rc/corner-12.log",
+      "bytes": 1144,
+      "sha256": "521109ea004391bf6b221ce58b4f885d4f714f2328f8121bf4ec17da76979cc8",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "verification/net13/rc/corner-13.cir",
+      "bytes": 397,
+      "sha256": "d36e9533aeb2839724d1ffcdcefab50d872f737cebb591cc810829d28421d2cb",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "verification/net13/rc/corner-13.log",
+      "bytes": 1145,
+      "sha256": "759e9d95db626cb157649e6f298e5a63cc77b44cce3786c152d25d6de6bd5a93",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "verification/net13/rc/corner-14.cir",
+      "bytes": 399,
+      "sha256": "abbcee3b3a6b16fa383f568da32fd4c5329c8cd83969b958fea6b9075fd1ce9b",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "verification/net13/rc/corner-14.log",
+      "bytes": 1145,
+      "sha256": "026af2bc09f72b18a279edba0d5b03d73aeaf2c76156bdc988c46ff8cbab5471",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "verification/net13/rc/corner-15.cir",
+      "bytes": 397,
+      "sha256": "64b13955171911a58211145d64c3043dc71b5ef3ad44c29a843225c4f49d402c",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "verification/net13/rc/corner-15.log",
+      "bytes": 1145,
+      "sha256": "523abc365f25bc704dca2e8710fb994aa94d76c9ac29a01d4bc33e2f14960e52",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "verification/net13/rc/corner-16.cir",
+      "bytes": 399,
+      "sha256": "a2cbfa1ed7c526848ec20212531439debbc5ba122e3f1ca2bb726118df91ebf4",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "verification/net13/rc/corner-16.log",
+      "bytes": 1145,
+      "sha256": "76dee2a93883ba6abdf82f077d4a72377e96959210ebc58dab8fe516a682f631",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "verification/net13/rc/corner-17.cir",
+      "bytes": 397,
+      "sha256": "3565c6f16043f34f254990186a005caff77ab34b9565d51d3ff84e5403df30a9",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "verification/net13/rc/corner-17.log",
+      "bytes": 1145,
+      "sha256": "1599e89def4150ce43ceacb3dc0527248c7c0a3644e5458c2cde0fb5b382696f",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "verification/net13/rc/corner-18.cir",
+      "bytes": 407,
+      "sha256": "44316bd7f854939abdcda76d512064098a493c378d8bd18b8f64d524cbc67354",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "verification/net13/rc/corner-18.log",
+      "bytes": 1145,
+      "sha256": "f8fce0ef4320ac0e311d97c582341542b5cf3ca1d436f9d8eb5200872fd2cb8e",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "verification/net13/rc/corner-19.cir",
+      "bytes": 397,
+      "sha256": "edc49242635f704371a0628f724317bb1f65e68f83bed67166991b392f198597",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "verification/net13/rc/corner-19.log",
+      "bytes": 1145,
+      "sha256": "c1cb1a8f28738736b4b2ee174f01a3c2defe4b8e7e691cb5a967b44fc2bc97ee",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "verification/net13/rc/corner-20.cir",
+      "bytes": 407,
+      "sha256": "becc8e75bb7b2ddc41afb1f9d79f38e9b5c8af38aebb34a1a4227df8638dcaeb",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "verification/net13/rc/corner-20.log",
+      "bytes": 1145,
+      "sha256": "efb2aafaf33f6dd790fb3d144a619b5b3722df9503f8207fdfbc1c521fa54fae",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "verification/net13/rc/corner-21.cir",
+      "bytes": 397,
+      "sha256": "3bea37f27db4b0382a275b8a3fe2211e6a143cee8bc2ccce38033d31587e5bb5",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "verification/net13/rc/corner-21.log",
+      "bytes": 1145,
+      "sha256": "0ef40fde5f2d4544415d3c02e45451c89057ef642d4ef18fc5ec75880228bc21",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "verification/net13/rc/corner-22.cir",
+      "bytes": 407,
+      "sha256": "c477236ab9fdb7c76807cc68d0b9665111b1aa44bd6ce7e22c0f9ee4a5b3cf98",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "verification/net13/rc/corner-22.log",
+      "bytes": 1145,
+      "sha256": "070f0eed6b2535079cb2238332a7e15a79d464cd58db766e7fb35c84a3759212",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "verification/net13/rc/corner-23.cir",
+      "bytes": 397,
+      "sha256": "bfe0fe72b3e8bfc9e405115fa420321b4f08197fff4c7670cb27e4bc76edcf0b",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "verification/net13/rc/corner-23.log",
+      "bytes": 1145,
+      "sha256": "ba9d191094c2e92f883dc6b81c616d9e526b759054bceeaba81b4a3045a3c724",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "verification/net13/rc-results.json",
+      "bytes": 15390,
+      "sha256": "ba1aa15a494fae1b1849ae38e777141cff20d65d98c11052b1c035a884b4952a",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    },
+    {
+      "path": "verification/net13/schematic-check.json",
+      "bytes": 592,
+      "sha256": "816bb67415c467b4903b76747fad96ff9c438fa003a4e41d8e20e36dc99d27a1",
+      "origin": "NET-13 original design/model/verification work, 2026-11-25; not recovered historical originals"
+    }
+  ]
+}

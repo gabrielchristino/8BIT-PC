@@ -27,6 +27,9 @@ Os downloads chegaram com nomes temporários; os nomes legíveis acima foram res
 
 ## Transformações e material novo
 
+NET-13 (25/11/2026), base ce19e78eeb865e7787b5f913dd5a6aa6e3914547: novas folhas hardware/memory_bus e hardware/memory_bus_access, modelos em sim/net13 e novas ferramentas. Variante do controlador gerada separadamente da NET-12 adiciona janela registrada de driver. Pinagens de fabricantes -> KiCad/XML -> modelo de buses tri-state/chips/receptores/muxes. SRAM sem estado inicial garantido; fixtures explicitam inicialização e o programa completo a desabilita. Pull-ups têm ensaio RC separado, com cargas acima do orçamento rejeitadas. Novo PDF TI HCT244 original e referências anteriores têm URLs/hashes; imagem EEPROM exportada coincide com o hash do boot aceito. Fonte/log da fixture inicial e calibração negativa com controlador antigo são preservados. Nenhum dado novo é apresentado como recuperação histórica ou homologação física. Manifesto audita os treze snapshots anteriores nos respectivos commits.
+
+
 NET-12 (25/11/2026), base 3cac9fca256377186960d106d08d7ccd0ca6c6dc: novo hardware/memory_access e sim/net12. XML KiCad gera o controlador com HC/HCT/AHC; PDFs anteriores preservados. Adaptador conserva interface/funções de memória da RTL-01 e troca as FSMs de acesso/arbitragem por pinos; armazenamento, MMIO, raster, concessão e retorno de dados continuam modelos. Fixtures novas distinguem commit físico MMIO da confirmação à CPU. Falha inicial do monitor na preparação da fixture e rodada anterior ao cache de colunas estão preservadas, com fontes anteriores identificadas por hashes em verification/net12/development. Nenhum material novo é apresentado como original recuperado. Manifesto audita os doze snapshots anteriores nos respectivos commits.
 
 

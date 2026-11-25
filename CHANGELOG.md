@@ -1,3 +1,11 @@
+## 25/11/2026 — NET-13, chips de memória e barramento
+
+- Nova interface de 28 CIs/576 pinos com SRAM/EEPROM, buffers HCT, muxes AHCT e 24 pull-ups.
+- Variante separada de controlador com janela registrada: 30 CIs/510 pinos; controle anterior reproduz disputa no teste negativo da nova interface.
+- Percurso de todos os endereços, cenários temporizados/Hi-Z, dados de vídeo e RC com carga excessiva rejeitada.
+- Boot completo com SRAM inicialmente indefinida e imagem EEPROM exportada por hash; sem abortos nessa execução.
+- Critérios de carga, reset sequenciado e ERC parcial permanecem explícitos; sem produção liberada.
+
 ## 25/11/2026 — NET-12, controlador de acesso à memória
 
 - Novo esquema de 28 CIs/478 pinos, pedido sincronizado, payload retido no reset, MDR e strobes físicos.

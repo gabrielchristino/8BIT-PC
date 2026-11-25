@@ -1,0 +1,36 @@
+{
+  "iteration": "RTL-01",
+  "started": "2026-11-24",
+  "continued": "2026-11-25",
+  "events": [
+    {
+      "stage": "oracle adapter preparation",
+      "finding": "Initial bus tracing wrapper lost generator return value; corrected before passing differential tests",
+      "classification": "test infrastructure"
+    },
+    {
+      "stage": "integration baseline",
+      "finding": "Original ROM lanes executed by new RTL; initial direct-X program passed",
+      "evidence": "baseline-rtl-results.json"
+    },
+    {
+      "stage": "X integration",
+      "finding": "HC191/157/377 functional models passed instruction and program comparisons with a reference controller",
+      "limitation": "No integrated propagation delays or physical controller mapping"
+    },
+    {
+      "stage": "stack bounds",
+      "finding": "Recovered CALL/RET could complete one stack byte before rejecting the second at a bound",
+      "decision": "ADR E04: preflight two bytes; no change to valid instructions; no rollback after power loss"
+    },
+    {
+      "stage": "exhaustive stack fixture",
+      "finding": "First fixture started without a clock edge under reset, yielding unknown state; corrected fixture, then all 524288 cases passed",
+      "classification": "test infrastructure"
+    },
+    {
+      "stage": "compile checks",
+      "finding": "Declarations ordered to eliminate implicit-net warnings before the final complete regression"
+    }
+  ]
+}

@@ -22,6 +22,7 @@
 
 - Execute ferramentas de simulação e construção no WSL Ubuntu, conforme preferência do usuário. Mantenha os arquivos em C:/Users/gabri/projetos/isa1 e use diretórios temporários Linux para binários e testes que geram saídas.
 - A revisão ativa 9.8.4.2 está em sim/hdl e hardware/counter_load_candidate. Leia docs/engineering/REV9842.md antes de integrar esse candidato à CPU; o sequenciador HDL ainda não foi mapeado a controle físico.
+- A integração RTL-01 está em sim/rtl, sim/tests e firmware/rtl01_diagnostic.asm. Leia docs/engineering/RTL01.md e seus resultados antes de continuar; o X candidato já tem adaptador funcional para a CPU, mas ainda não há controle físico completo ou temporização integrada aprovada. O novo diagnóstico não substitui o original ausente.
 
 - Execute as bancadas relevantes à mudança e registre comandos, versão das ferramentas, saídas, falhas e limitações. Use cópias temporárias para código histórico que gera arquivos.
 - `python scripts/verify_recovered.py` registra a ausência de diagnostic.asm como falha conhecida; não suprima nem marque essa falha como aprovação.

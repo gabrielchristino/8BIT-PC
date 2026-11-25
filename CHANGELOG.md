@@ -1,5 +1,13 @@
 # Histórico preservado
 
+## 24–25/11/2026 — integração de emulação RTL-01
+
+- CPU HDL comandada pelas ROMs binárias originais, memória/MMIO, arbitragem VRAM e raster ideais.
+- Adaptador de carga e seleção entre X RTL e banco funcional HC191/157/377, preservando o esquema parcial anterior.
+- Diagnóstico novo com boot EEPROM → RAM e imagem VGA; bancadas de instruções, ALU, reset/energia, WAIT e pausas de RUN.
+- CALL/RET verificam dois bytes antes do primeiro acesso de pilha; os limites foram exauridos para todos os valores de SP e boot.
+- Validação funcional separada de netlist física, temporização integrada e liberação de produção.
+
 ## 24/11/2026 — desenvolvimento 9.8.4.2
 
 - Ferramentas Icarus Verilog 12.0, ngspice 42 e KiCad CLI 7.0.11 preparadas no WSL Ubuntu.

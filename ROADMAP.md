@@ -1,5 +1,17 @@
 # Roadmap de continuidade
 
+## Integração RTL-01
+
+- [x] Executar na CPU RTL as palavras reconstruídas das quatro lanes binárias originais.
+- [x] Integrar memória/MMIO, arbitragem VRAM, clocks distintos e raster ideais.
+- [x] Criar diagnóstico novo com boot EEPROM → RAM e uso dos 26 opcodes.
+- [x] Acrescentar comparação de transações/estado, ALU exaustiva e cortes de reset/energia.
+- [x] Concluir regressão do X candidato integrado e registrar a rodada completa.
+- [x] Checar dois bytes de CALL/RET antes do primeiro acesso e exaurir os limites de SP/boot nas quatro operações.
+- [ ] Mapear datapath/sequenciador a CIs e compartilhar netlist entre esquema e simulação.
+
+Ver docs/engineering/RTL01.md. As listas anteriores abaixo preservam o contexto da recuperação; o resultado mais recente deve ser interpretado com o nível de modelo explicitado nessa integração.
+
 ## Iteração ativa — 9.8.4.2
 
 - [x] Preparar Icarus Verilog, ngspice e KiCad CLI no WSL Ubuntu.

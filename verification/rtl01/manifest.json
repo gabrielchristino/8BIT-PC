@@ -1,0 +1,165 @@
+{
+  "iteration": "RTL-01",
+  "date": "2026-11-24",
+  "continuation_date_client": "2026-11-25",
+  "base_git_commit": "29c37359881a386644b8dcfbf4ccdd967edd159c",
+  "transformation": "Original binary control lanes drive new RTL; architectural model supplies comparisons; frame rendered from verified HDL output",
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "bytes": 3508,
+      "sha256": "1fd43ea3e5b782c62dca7476455b88da2da6a3738b8781a929afeea84d64b151",
+      "origin": "New RTL-01 integration, 2026-11-24 to 2026-11-25; historical dependencies identified in results.json"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "bytes": 3433,
+      "sha256": "490dcd30c51457c806bcadb6646feeb71bf680fe6450bb43bbda40a6ce11e7d9",
+      "origin": "New RTL-01 integration, 2026-11-24 to 2026-11-25; historical dependencies identified in results.json"
+    },
+    {
+      "path": "DECISIONS.md",
+      "bytes": 7235,
+      "sha256": "279d082dd9cf2e05c47a63f8fbfe399227300173e4f8cb1ca61687d9eb2a1e9d",
+      "origin": "New RTL-01 integration, 2026-11-24 to 2026-11-25; historical dependencies identified in results.json"
+    },
+    {
+      "path": "PROVENANCE.md",
+      "bytes": 5806,
+      "sha256": "97825de1a25d89385192542ebdcc4edf347264a4d482add255e16971ecc6eaeb",
+      "origin": "New RTL-01 integration, 2026-11-24 to 2026-11-25; historical dependencies identified in results.json"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4152,
+      "sha256": "5f7c2622f1e8a1b57248a703582f7a477caffcba5ac9d1938b0f3722a88f67f9",
+      "origin": "New RTL-01 integration, 2026-11-24 to 2026-11-25; historical dependencies identified in results.json"
+    },
+    {
+      "path": "ROADMAP.md",
+      "bytes": 4702,
+      "sha256": "7f51b6f71c4e6117ac2c49c61e85b04307457bd7f2352b91be75eebaa71d6223",
+      "origin": "New RTL-01 integration, 2026-11-24 to 2026-11-25; historical dependencies identified in results.json"
+    },
+    {
+      "path": "docs/engineering/RTL01.md",
+      "bytes": 9209,
+      "sha256": "8415a77453b44578f315f6b27218665f4cf285b34635f909aeb4cd4c88438fd7",
+      "origin": "New RTL-01 integration, 2026-11-24 to 2026-11-25; historical dependencies identified in results.json"
+    },
+    {
+      "path": "firmware/rtl01_diagnostic.asm",
+      "bytes": 984,
+      "sha256": "ee198751b959ff6580176842de245699e57476b5e66d49eabece0fd53e38c046",
+      "origin": "New RTL-01 integration, 2026-11-24 to 2026-11-25; historical dependencies identified in results.json"
+    },
+    {
+      "path": "sim/rtl/isa1_cpu.sv",
+      "bytes": 5268,
+      "sha256": "16767753b645234a563d7839c898115dac0444b53672688db15854b30637e407",
+      "origin": "New RTL-01 integration, 2026-11-24 to 2026-11-25; historical dependencies identified in results.json"
+    },
+    {
+      "path": "sim/rtl/isa1_memory.sv",
+      "bytes": 5886,
+      "sha256": "1b4e568ffc3162d1ba1e67f71ead2a9e887351d50d55f89b454e719be98f4e3d",
+      "origin": "New RTL-01 integration, 2026-11-24 to 2026-11-25; historical dependencies identified in results.json"
+    },
+    {
+      "path": "sim/tests/tb_rtl_alu.sv",
+      "bytes": 1193,
+      "sha256": "0e8abb26f392eafffc5f960af1e35e908a77480a1c741d5ad16a41a67f8edb78",
+      "origin": "New RTL-01 integration, 2026-11-24 to 2026-11-25; historical dependencies identified in results.json"
+    },
+    {
+      "path": "sim/tests/tb_rtl_cpu.sv",
+      "bytes": 4736,
+      "sha256": "eebade88cd0e3366b9331d7044b535758889f227d1e4603fcb05001e981842bb",
+      "origin": "New RTL-01 integration, 2026-11-24 to 2026-11-25; historical dependencies identified in results.json"
+    },
+    {
+      "path": "sim/tests/tb_rtl_program.sv",
+      "bytes": 4421,
+      "sha256": "370d9fb77fed927a03ebfe06554b17d66094dd841b0f1ba1d44deb505828dcab",
+      "origin": "New RTL-01 integration, 2026-11-24 to 2026-11-25; historical dependencies identified in results.json"
+    },
+    {
+      "path": "sim/tests/tb_rtl_safety.sv",
+      "bytes": 3232,
+      "sha256": "89333bb30bf2d9a84be32b4784098b2b3a14f5183768e13eef5b3468ae0d7b68",
+      "origin": "New RTL-01 integration, 2026-11-24 to 2026-11-25; historical dependencies identified in results.json"
+    },
+    {
+      "path": "sim/tests/tb_stack_guards.sv",
+      "bytes": 1692,
+      "sha256": "2edb147909f2aaddbcd51c09e821d3e39db8e08742325b4b9232673b78e9d162",
+      "origin": "New RTL-01 integration, 2026-11-24 to 2026-11-25; historical dependencies identified in results.json"
+    },
+    {
+      "path": "tools/record_rtl_manifest.py",
+      "bytes": 3296,
+      "sha256": "3357a84774ba74231e594cb974ad6a11025aa348f5d55cf1e6c9facabe1cbb65",
+      "origin": "New RTL-01 integration, 2026-11-24 to 2026-11-25; historical dependencies identified in results.json"
+    },
+    {
+      "path": "tools/render_rtl_frame.py",
+      "bytes": 1030,
+      "sha256": "ed5719ac8eb2d174ca3d57ecae87e81b5bcca5791f6381d31ab55b696594defb",
+      "origin": "New RTL-01 integration, 2026-11-24 to 2026-11-25; historical dependencies identified in results.json"
+    },
+    {
+      "path": "tools/run_rtl.py",
+      "bytes": 12405,
+      "sha256": "f9b071d1009109cf115977562734881a826a61e046715f5580cee50b746077dd",
+      "origin": "New RTL-01 integration, 2026-11-24 to 2026-11-25; historical dependencies identified in results.json"
+    },
+    {
+      "path": "tools/run_stack_guards.py",
+      "bytes": 1620,
+      "sha256": "375ef09d2528f3d49b38d2cea9780e87537c01e644ae1f6ca8708059f14454d3",
+      "origin": "New RTL-01 integration, 2026-11-24 to 2026-11-25; historical dependencies identified in results.json"
+    },
+    {
+      "path": "verification/rtl01/baseline-rtl-results.json",
+      "bytes": 10583,
+      "sha256": "f31182a8416f37433cb20b1a226d2208f6fd213cf1a104975440e2e509900287",
+      "origin": "New RTL-01 integration, 2026-11-24 to 2026-11-25; historical dependencies identified in results.json"
+    },
+    {
+      "path": "verification/rtl01/frame-display.png",
+      "bytes": 5248,
+      "sha256": "3c3babab99f001464e8804265d430de1dccaf17ca0e2dd532f718bec42913b34",
+      "origin": "New RTL-01 integration, 2026-11-24 to 2026-11-25; historical dependencies identified in results.json"
+    },
+    {
+      "path": "verification/rtl01/frame.png",
+      "bytes": 1361,
+      "sha256": "d9a8e76c001c18198f03ed53bed7864ad1043e3002e2908a94e98452b58f6375",
+      "origin": "New RTL-01 integration, 2026-11-24 to 2026-11-25; historical dependencies identified in results.json"
+    },
+    {
+      "path": "verification/rtl01/frame.ppm",
+      "bytes": 230415,
+      "sha256": "152c217f59e4a6f05b8c75f8c17e66c1b4e01b5369e37b913f034e97d6903665",
+      "origin": "New RTL-01 integration, 2026-11-24 to 2026-11-25; historical dependencies identified in results.json"
+    },
+    {
+      "path": "verification/rtl01/iteration-log.json",
+      "bytes": 1443,
+      "sha256": "f13ab1f4965510b51945d2c37318d7c5a265ee7fc99d9b1e45de3f5fe5e2ef34",
+      "origin": "New RTL-01 integration, 2026-11-24 to 2026-11-25; historical dependencies identified in results.json"
+    },
+    {
+      "path": "verification/rtl01/results.json",
+      "bytes": 15061,
+      "sha256": "e05f2b77c7fd618cc15d6e6455e92f6fb5ecb84d5cebab943138fba63805efec",
+      "origin": "New RTL-01 integration, 2026-11-24 to 2026-11-25; historical dependencies identified in results.json"
+    },
+    {
+      "path": "verification/rtl01/stack-guards.json",
+      "bytes": 1865,
+      "sha256": "6943b0ca4defe2670729325acf040218044f5c866c3b525921b9f142ca4bb5c8",
+      "origin": "New RTL-01 integration, 2026-11-24 to 2026-11-25; historical dependencies identified in results.json"
+    }
+  ]
+}

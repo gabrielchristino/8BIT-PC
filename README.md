@@ -6,6 +6,8 @@ Projeto de computador pessoal com CPU própria de lógica discreta, endereçamen
 
 ## Começar
 
+**Integração mais recente:** [RTL-01 — CPU executando as ROMs recuperadas](docs/engineering/RTL01.md), com boot, memória, VRAM, teclado simulado e comparação entre X ideal e modelos HC191/157/377. Execute `python3 tools/run_rtl.py` no Ubuntu WSL. Resultados e quadro de vídeo em `verification/rtl01/`. Ainda não é um circuito físico completo.
+
 **Desenvolvimento ativo:** [revisão 9.8.4.2](docs/engineering/REV9842.md), com modelos HDL de componentes, bancadas e primeiro esquemático parcial do banco X. As ferramentas de simulação rodam no WSL Ubuntu. Ver os [critérios de produção](docs/engineering/PRODUCTION_GATES.md) antes de interpretar uma aprovação como liberação de hardware.
 
 O diretório de continuidade é `C:/Users/gabri/projetos/isa1`. A nova conferência preservou arquivos locais 7.4/7.5 e a auditoria 7.6, mas os downloads pelo chat compartilhado foram bloqueados pelo Chrome. Ver [relatório da conferência](docs/RECHECK_SHARED_CHATS.md).

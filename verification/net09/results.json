@@ -1,0 +1,1007 @@
+{
+  "iteration": "NET-09",
+  "date": "2026-11-25",
+  "quick": false,
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "python": "3.12.3",
+  "iverilog": "Icarus Verilog version 12.0 (stable) ()",
+  "scope": "Main CPU state/control/datapath from package pin netlists; USE_HC191 alternative and memory/peripherals are separate reference models. Not complete-board release.",
+  "sources": [
+    {
+      "path": "sim/hdl/hc_models.sv",
+      "sha256": "f305ff38b7e58701e9f97528de68ea8c5518a628d38bd5a8ac9e847fa87c8680"
+    },
+    {
+      "path": "sim/net04/counter_word_candidate.sv",
+      "sha256": "ed2ff4d867c151af8eb9eef0339aa37b4dcb7decfd3cacededf4ace1812543f5"
+    },
+    {
+      "path": "sim/net02/package_models.sv",
+      "sha256": "de2fd5315a3809a89ba90b8f09a96a25d06d3e00b8568a8f82387b92a624199f"
+    },
+    {
+      "path": "hardware/stack_bank/stack_bank_netlist.sv",
+      "sha256": "7e81b65cc40d045f8b2a586949563f1707ddb450066c0fa09eab64e7a6658669"
+    },
+    {
+      "path": "sim/net03/package_models.sv",
+      "sha256": "53712265aa1d4312866135c59e73d7543069c7a3281635d43d66825790716258"
+    },
+    {
+      "path": "hardware/transaction_bank/transaction_bank_netlist.sv",
+      "sha256": "c5381deb78d25279fa4d6672779b526cbfb73d02c6478865dccb3965dc5d9b74"
+    },
+    {
+      "path": "sim/net04/package_models.sv",
+      "sha256": "85b00a3b6b0307d68b53e4ea1ae97ba5cbf83c20685544bb12fde333efa07d63"
+    },
+    {
+      "path": "hardware/microcode_bank/microcode_bank_netlist.sv",
+      "sha256": "d761d3d5284cf025548ee7421f7c3e0fb6764acbd2283a6358714877485e85b8"
+    },
+    {
+      "path": "hardware/alu_bank/alu_bank_netlist.sv",
+      "sha256": "48db8630b4cf713259fedbedb262dfca0769066b97449e05014ad86dd6ed2cdd"
+    },
+    {
+      "path": "hardware/register_bank/register_bank_netlist.sv",
+      "sha256": "7f5f3acf94e3c146370a05c217c40e833f9dc56a91c3017fa23a349673a990f7"
+    },
+    {
+      "path": "hardware/address_bank/address_bank_netlist.sv",
+      "sha256": "a557cbe3916f7378838581376942c9f768cd40fcf558a7c2e0960281f46845b0"
+    },
+    {
+      "path": "hardware/cpu_execution_glue/execution_bank_net09.sv",
+      "sha256": "8ddf0b264c1ce5a93b882ea677c3c26cb7e2869cbd9c013df0d6de16f672206a"
+    },
+    {
+      "path": "hardware/x_register_bank/x_register_bank_netlist.sv",
+      "sha256": "53bf653d7a5f9beeab3497233e239469ee4bc520eeea2abe8fe0b3cfa39cf6d8"
+    },
+    {
+      "path": "sim/net09/isa1_cpu_pins.sv",
+      "sha256": "724f44404e8c2f257b963d0cb5ab48a030c2aacf2988954c6b133d78e83b40e2"
+    },
+    {
+      "path": "sim/rtl/isa1_memory.sv",
+      "sha256": "1b4e568ffc3162d1ba1e67f71ead2a9e887351d50d55f89b454e719be98f4e3d"
+    },
+    {
+      "path": "tools/run_x_register_netlist.py",
+      "sha256": "13b824f6fae934ca9b061e35bdb1b86b1d21e8e4ebe66c06fbaeba7c5d93ba18"
+    },
+    {
+      "path": "tools/run_rtl.py",
+      "sha256": "f9b071d1009109cf115977562734881a826a61e046715f5580cee50b746077dd"
+    },
+    {
+      "path": "tools/make_stack_cpu.py",
+      "sha256": "2ad4a33195cc6790836e3b98ccf34f6fe83b486db0ef9cefd2e13d79cf843c0b"
+    },
+    {
+      "path": "tools/build_stack_bank.py",
+      "sha256": "342e1c06eeba20eb07bdac5ff29ae5baaf693ea86580c17dde6c2f0818356bcd"
+    },
+    {
+      "path": "tools/build_transaction_bank.py",
+      "sha256": "6669a557cff10d93b9fd82afd07b06f713d0ea3b531157ea65228b805fbb10f1"
+    },
+    {
+      "path": "tools/build_microcode_bank.py",
+      "sha256": "215629ddcd79fed68a0abd15d6e8bb67383f331ca3b85876ec3804e05f3990a0"
+    },
+    {
+      "path": "tools/make_microcode_cpu.py",
+      "sha256": "11ffc54c909d748be8bac3f89ad161acb8a9d5565ff1febbdb6c2dd6ad46b463"
+    },
+    {
+      "path": "tools/build_alu_bank.py",
+      "sha256": "93d320a3fa9c123af19bd002f121f25b27bb4fc6f4267469eaec92b249bb5ec1"
+    },
+    {
+      "path": "tools/make_alu_cpu.py",
+      "sha256": "76c193c8c05962a8cef1d04241cca799d0b3782a5f94f03822b374244bdfbdc6"
+    },
+    {
+      "path": "tools/build_register_bank.py",
+      "sha256": "1a6c0bf584adaba0bf79b3412d6a7c6a253ba668fe39298c75b9fc7ffbb2dec0"
+    },
+    {
+      "path": "tools/make_register_cpu.py",
+      "sha256": "1db0ed7198274e387b89d72b457dfc8e49fec49484334be967be8ca7d0d515a9"
+    },
+    {
+      "path": "tools/build_address_bank.py",
+      "sha256": "5de29633fc7dc44bd150e0f5ac0892d6b8307410c942675cb2b09e4d402d2af5"
+    },
+    {
+      "path": "tools/make_address_cpu.py",
+      "sha256": "d0d9a52a74d18eb7abaf69a03df92e35d521a5c60de446ce1d9bf0231754f3ae"
+    },
+    {
+      "path": "tools/build_execution_bank.py",
+      "sha256": "8eb3c0df1c34521826bf52decb83fccc75bd972b069339e7ea66ba766bbf5415"
+    },
+    {
+      "path": "tools/make_execution_cpu.py",
+      "sha256": "19c88f979e866737bb5cb6a02a452b16cb0533c8575183054dd700747d0a7aa0"
+    },
+    {
+      "path": "tools/build_cpu_execution_glue.py",
+      "sha256": "3eab19f181b3a87df8e8cc2e0da835576e11f290618f007fc1a9aa555dc19690"
+    },
+    {
+      "path": "tools/build_x_register_bank.py",
+      "sha256": "aa4af4feec1e34885a09bed00b3229285e929cc403d17140ee13541e06c3d14f"
+    },
+    {
+      "path": "tools/make_x_register_cpu.py",
+      "sha256": "275bd4f7180d61db761d670c9365ff3926806a8965d76f99bf0f884e560f1aad"
+    },
+    {
+      "path": "sim/hdl/counter_load_candidate.sv",
+      "sha256": "3651b6f7534de18a7e78df660649a7ffdcfae29f0729721ff84e91e13182840d"
+    },
+    {
+      "path": "sim/net04/tb_microcode_bank.sv",
+      "sha256": "1a402293a67e1fe8aca850fd7f158c8185047ab7407a42cc2a7a6683c73f0fcf"
+    },
+    {
+      "path": "hardware/microcode_bank/microcode_bank.kicad_sch",
+      "sha256": "a750154a41c0d55f2bcf220dbec176709adb521d7de31aee18a634f1cebb8b71"
+    },
+    {
+      "path": "verification/net04/microcode_bank.xml",
+      "sha256": "ca1fe6a40793070e7868a8df7095fc1d6f2ff9cde46b6f902ffa651fc7ed884e"
+    },
+    {
+      "path": "hardware/alu_bank/alu_bank.kicad_sch",
+      "sha256": "7fd6dc0e823059612e4a8e1fc67e4529c631de90307237f4532b782f51fa243a"
+    },
+    {
+      "path": "verification/net05/alu_bank.xml",
+      "sha256": "35d90c63dbf1cec53c8c1d1020858348c317e6142051d15c362b6b9a56b7a8ef"
+    },
+    {
+      "path": "hardware/register_bank/register_bank.kicad_sch",
+      "sha256": "20b5aa0cfcf90a3b7f8ab405b2a9205b735cd8a7fd95393ac567557a3deaeef5"
+    },
+    {
+      "path": "verification/net06/register_bank.xml",
+      "sha256": "9b5183a61f166761a60601c1ad8b4b9ebc588a351a1e9f2ebbc538806539e25d"
+    },
+    {
+      "path": "hardware/address_bank/address_bank.kicad_sch",
+      "sha256": "5dc9c05d93f2b8d7227721e5c4dc860ea026000375f9b88d9a0bd49890712c6c"
+    },
+    {
+      "path": "verification/net07/address_bank.xml",
+      "sha256": "fb829fa6b0e7b3d85df2acc7333492e76a2de18e9d623d38833d9348a4e2c9df"
+    },
+    {
+      "path": "hardware/execution_bank/execution_bank.kicad_sch",
+      "sha256": "3738412b72a91aac487c0b6e6c79f6036826cab13c78de9c6f5c29c2722b4cbe"
+    },
+    {
+      "path": "verification/net08/execution_bank.xml",
+      "sha256": "4ae06db5a23ff37489d9e05c00517ae33dd66b2d43ab223e843b68d97bd91ca5"
+    },
+    {
+      "path": "hardware/x_register_bank/x_register_bank.kicad_sch",
+      "sha256": "6b9287cfb97d1d6a8d8c36486af2d28c75add3047fda932ae7242ff5aa7aac0a"
+    },
+    {
+      "path": "verification/net09/execution_glue.xml",
+      "sha256": "bcfb962b4f4efc68eb99cec72cd25df115cdb43b87e157dceb78501c5bf2e9ca"
+    },
+    {
+      "path": "hardware/cpu_execution_glue/execution_bank.kicad_sch",
+      "sha256": "e939336f2d462c11fe92a825c1cd50acb21231726b4640e4d7a2c03963eed717"
+    },
+    {
+      "path": "verification/net09/x_register_bank.xml",
+      "sha256": "ed0f151893332de2a2b97147b6259a38a74da398a4f0fbb70ae15fc79730125b"
+    },
+    {
+      "path": "sim/net09/tb_x_register_bank.sv",
+      "sha256": "44c259852ab023ef2873202a708a76c5305f00ae2cab2b1da420174410ebc3d1"
+    },
+    {
+      "path": "firmware/rtl01_diagnostic.asm",
+      "sha256": "ee198751b959ff6580176842de245699e57476b5e66d49eabece0fd53e38c046"
+    },
+    {
+      "path": "sim/tests/tb_rtl_cpu.sv",
+      "sha256": "eebade88cd0e3366b9331d7044b535758889f227d1e4603fcb05001e981842bb"
+    },
+    {
+      "path": "sim/tests/tb_rtl_safety.sv",
+      "sha256": "89333bb30bf2d9a84be32b4784098b2b3a14f5183768e13eef5b3468ae0d7b68"
+    },
+    {
+      "path": "sim/tests/tb_stack_guards.sv",
+      "sha256": "2edb147909f2aaddbcd51c09e821d3e39db8e08742325b4b9232673b78e9d162"
+    },
+    {
+      "path": "sim/tests/tb_rtl_program.sv",
+      "sha256": "370d9fb77fed927a03ebfe06554b17d66094dd841b0f1ba1d44deb505828dcab"
+    },
+    {
+      "path": "revisions/rev983/control_lane0.bin",
+      "sha256": "d8e4a90ed70b376c12cda278f659b32decb14e0b588bda475932124dc5c576f2"
+    },
+    {
+      "path": "revisions/rev983/control_lane1.bin",
+      "sha256": "e403962ad102f2018347fbc1f9c8ba01b7ad71c23d29824eee33248ee29f2da6"
+    },
+    {
+      "path": "revisions/rev983/control_lane2.bin",
+      "sha256": "1cb7101341d7b4e13bb615695d4e5bbeb55b4de5132ad8e408033c8effceefe6"
+    },
+    {
+      "path": "revisions/rev983/control_lane3.bin",
+      "sha256": "20cca3fa9b9106e433062a0fd4001f8d3575200708c5b1e2ff3758f3ed962461"
+    },
+    {
+      "path": "revisions/rev983/cpu.py",
+      "sha256": "92d7f858d89c26a906422f4995a25b9a079a1470eca792bfa44d7507f3c33eb5"
+    },
+    {
+      "path": "revisions/rev983/system.py",
+      "sha256": "950f7e491f852d0cf469725f279645fdb3a57923a6cef3b4a9b05eb8d7f9f438"
+    },
+    {
+      "path": "revisions/rev983/control.py",
+      "sha256": "2b2da7d45ed55ecc8bcd1720a4c99f6f134bd856b7d7f32065643765a458f19e"
+    },
+    {
+      "path": "revisions/rev983/microcode.py",
+      "sha256": "47a28fff88566794bf616a75ca394219d2243da1ddb8d6492c5033f3c06a514f"
+    },
+    {
+      "path": "revisions/rev983/sequencer.py",
+      "sha256": "612239002cb3644800d1dfc43430a15b3d46836e750ca01560e6ea10bffc195b"
+    },
+    {
+      "path": "revisions/rev983/assembler.py",
+      "sha256": "144c037cb92db216d6ec85d33c7f668e8dd20993c14552acf5cbb9316e186c08"
+    }
+  ],
+  "runs": [
+    {
+      "bench": "tb_x_register_bank",
+      "configuration": {
+        "timed": 0
+      },
+      "compile": {
+        "command": [
+          "iverilog",
+          "-g2012",
+          "-Wall",
+          "-s",
+          "tb_x_register_bank",
+          "-Ptb_x_register_bank.TIMED=0",
+          "-o",
+          "/tmp/isa1-net09-zarzracb/bench.vvp",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/hdl/hc_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net04/counter_word_candidate.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net02/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/stack_bank/stack_bank_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net03/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/transaction_bank/transaction_bank_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net04/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/microcode_bank/microcode_bank_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/alu_bank/alu_bank_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/register_bank/register_bank_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/address_bank/address_bank_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/cpu_execution_glue/execution_bank_net09.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/x_register_bank/x_register_bank_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net09/isa1_cpu_pins.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/rtl/isa1_memory.sv",
+          "/tmp/isa1-net09-zarzracb/tb_x_register_bank.sv"
+        ],
+        "exit": 0,
+        "stdout": "",
+        "stderr": "",
+        "seconds": 0.142
+      },
+      "execution": {
+        "command": [
+          "vvp",
+          "/tmp/isa1-net09-zarzracb/bench.vvp"
+        ],
+        "exit": 0,
+        "stdout": "RESULT timed=0 x_cases=524288 failures=0\n/tmp/isa1-net09-zarzracb/tb_x_register_bank.sv:20: $finish called at 1048585000 (1ps)\n",
+        "stderr": "",
+        "seconds": 5.012
+      }
+    },
+    {
+      "bench": "tb_x_register_bank",
+      "configuration": {
+        "timed": 1
+      },
+      "compile": {
+        "command": [
+          "iverilog",
+          "-g2012",
+          "-Wall",
+          "-s",
+          "tb_x_register_bank",
+          "-Ptb_x_register_bank.TIMED=1",
+          "-o",
+          "/tmp/isa1-net09-zarzracb/bench.vvp",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/hdl/hc_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net04/counter_word_candidate.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net02/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/stack_bank/stack_bank_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net03/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/transaction_bank/transaction_bank_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net04/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/microcode_bank/microcode_bank_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/alu_bank/alu_bank_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/register_bank/register_bank_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/address_bank/address_bank_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/cpu_execution_glue/execution_bank_net09.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/x_register_bank/x_register_bank_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net09/isa1_cpu_pins.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/rtl/isa1_memory.sv",
+          "/tmp/isa1-net09-zarzracb/tb_x_register_bank.sv"
+        ],
+        "exit": 0,
+        "stdout": "",
+        "stderr": "",
+        "seconds": 0.083
+      },
+      "execution": {
+        "command": [
+          "vvp",
+          "/tmp/isa1-net09-zarzracb/bench.vvp"
+        ],
+        "exit": 0,
+        "stdout": "RESULT timed=1 x_cases=524288 failures=0\n/tmp/isa1-net09-zarzracb/tb_x_register_bank.sv:20: $finish called at 1048585000000 (1ps)\n",
+        "stderr": "",
+        "seconds": 9.013
+      }
+    },
+    {
+      "bench": "tb_rtl_cpu",
+      "configuration": {
+        "hc191": 0
+      },
+      "compile": {
+        "command": [
+          "iverilog",
+          "-g2012",
+          "-Wall",
+          "-s",
+          "tb_rtl_cpu",
+          "-Ptb_rtl_cpu.USE_HC191=0",
+          "-Ptb_rtl_cpu.CASES=6886",
+          "-o",
+          "/tmp/isa1-net09-zarzracb/bench.vvp",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/hdl/hc_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net04/counter_word_candidate.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net02/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/stack_bank/stack_bank_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net03/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/transaction_bank/transaction_bank_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net04/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/microcode_bank/microcode_bank_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/alu_bank/alu_bank_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/register_bank/register_bank_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/address_bank/address_bank_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/cpu_execution_glue/execution_bank_net09.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/x_register_bank/x_register_bank_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net09/isa1_cpu_pins.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/rtl/isa1_memory.sv",
+          "/tmp/isa1-net09-zarzracb/tb_rtl_cpu.sv"
+        ],
+        "exit": 0,
+        "stdout": "",
+        "stderr": "",
+        "seconds": 0.161
+      },
+      "execution": {
+        "command": [
+          "vvp",
+          "/tmp/isa1-net09-zarzracb/bench.vvp"
+        ],
+        "exit": 0,
+        "stdout": "RESULT hc191=0 instruction_cases=6886 transactions=13406 wait_checks=114801 failures=0\n/tmp/isa1-net09-zarzracb/tb_rtl_cpu.sv:91: $finish called at 3940536000 (1ps)\n",
+        "stderr": "",
+        "seconds": 9.239
+      }
+    },
+    {
+      "bench": "tb_rtl_cpu",
+      "configuration": {
+        "hc191": 1
+      },
+      "compile": {
+        "command": [
+          "iverilog",
+          "-g2012",
+          "-Wall",
+          "-s",
+          "tb_rtl_cpu",
+          "-Ptb_rtl_cpu.USE_HC191=1",
+          "-Ptb_rtl_cpu.CASES=6886",
+          "-o",
+          "/tmp/isa1-net09-zarzracb/bench.vvp",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/hdl/hc_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net04/counter_word_candidate.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net02/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/stack_bank/stack_bank_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net03/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/transaction_bank/transaction_bank_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net04/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/microcode_bank/microcode_bank_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/alu_bank/alu_bank_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/register_bank/register_bank_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/address_bank/address_bank_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/cpu_execution_glue/execution_bank_net09.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/x_register_bank/x_register_bank_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net09/isa1_cpu_pins.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/rtl/isa1_memory.sv",
+          "/tmp/isa1-net09-zarzracb/tb_rtl_cpu.sv"
+        ],
+        "exit": 0,
+        "stdout": "",
+        "stderr": "",
+        "seconds": 0.084
+      },
+      "execution": {
+        "command": [
+          "vvp",
+          "/tmp/isa1-net09-zarzracb/bench.vvp"
+        ],
+        "exit": 0,
+        "stdout": "RESULT hc191=1 instruction_cases=6886 transactions=13406 wait_checks=114806 failures=0\n/tmp/isa1-net09-zarzracb/tb_rtl_cpu.sv:91: $finish called at 3950826000 (1ps)\n",
+        "stderr": "",
+        "seconds": 11.183
+      }
+    },
+    {
+      "bench": "tb_rtl_safety",
+      "configuration": {
+        "hc191": 0
+      },
+      "compile": {
+        "command": [
+          "iverilog",
+          "-g2012",
+          "-Wall",
+          "-s",
+          "tb_rtl_safety",
+          "-Ptb_rtl_safety.USE_HC191=0",
+          "-o",
+          "/tmp/isa1-net09-zarzracb/bench.vvp",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/hdl/hc_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net04/counter_word_candidate.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net02/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/stack_bank/stack_bank_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net03/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/transaction_bank/transaction_bank_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net04/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/microcode_bank/microcode_bank_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/alu_bank/alu_bank_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/register_bank/register_bank_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/address_bank/address_bank_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/cpu_execution_glue/execution_bank_net09.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/x_register_bank/x_register_bank_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net09/isa1_cpu_pins.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/rtl/isa1_memory.sv",
+          "/tmp/isa1-net09-zarzracb/tb_rtl_safety.sv"
+        ],
+        "exit": 0,
+        "stdout": "",
+        "stderr": "",
+        "seconds": 0.082
+      },
+      "execution": {
+        "command": [
+          "vvp",
+          "/tmp/isa1-net09-zarzracb/bench.vvp"
+        ],
+        "exit": 0,
+        "stdout": "RESULT hc191=0 reset_power_cases=3780 opcodes=26 failures=0\n/tmp/isa1-net09-zarzracb/tb_rtl_safety.sv:68: $finish called at 3357327000 (1ps)\n",
+        "stderr": "",
+        "seconds": 5.484
+      }
+    },
+    {
+      "bench": "tb_rtl_safety",
+      "configuration": {
+        "hc191": 1
+      },
+      "compile": {
+        "command": [
+          "iverilog",
+          "-g2012",
+          "-Wall",
+          "-s",
+          "tb_rtl_safety",
+          "-Ptb_rtl_safety.USE_HC191=1",
+          "-o",
+          "/tmp/isa1-net09-zarzracb/bench.vvp",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/hdl/hc_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net04/counter_word_candidate.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net02/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/stack_bank/stack_bank_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net03/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/transaction_bank/transaction_bank_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net04/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/microcode_bank/microcode_bank_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/alu_bank/alu_bank_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/register_bank/register_bank_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/address_bank/address_bank_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/cpu_execution_glue/execution_bank_net09.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/x_register_bank/x_register_bank_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net09/isa1_cpu_pins.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/rtl/isa1_memory.sv",
+          "/tmp/isa1-net09-zarzracb/tb_rtl_safety.sv"
+        ],
+        "exit": 0,
+        "stdout": "",
+        "stderr": "",
+        "seconds": 0.083
+      },
+      "execution": {
+        "command": [
+          "vvp",
+          "/tmp/isa1-net09-zarzracb/bench.vvp"
+        ],
+        "exit": 0,
+        "stdout": "RESULT hc191=1 reset_power_cases=3786 opcodes=26 failures=0\n/tmp/isa1-net09-zarzracb/tb_rtl_safety.sv:68: $finish called at 3358477000 (1ps)\n",
+        "stderr": "",
+        "seconds": 7.162
+      }
+    },
+    {
+      "bench": "tb_stack_guards",
+      "configuration": {},
+      "compile": {
+        "command": [
+          "iverilog",
+          "-g2012",
+          "-Wall",
+          "-s",
+          "tb_stack_guards",
+          "-o",
+          "/tmp/isa1-net09-zarzracb/bench.vvp",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/hdl/hc_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net04/counter_word_candidate.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net02/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/stack_bank/stack_bank_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net03/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/transaction_bank/transaction_bank_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net04/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/microcode_bank/microcode_bank_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/alu_bank/alu_bank_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/register_bank/register_bank_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/address_bank/address_bank_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/cpu_execution_glue/execution_bank_net09.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/x_register_bank/x_register_bank_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net09/isa1_cpu_pins.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/rtl/isa1_memory.sv",
+          "/tmp/isa1-net09-zarzracb/tb_stack_guards.sv"
+        ],
+        "exit": 0,
+        "stdout": "",
+        "stderr": "",
+        "seconds": 0.087
+      },
+      "execution": {
+        "command": [
+          "vvp",
+          "/tmp/isa1-net09-zarzracb/bench.vvp"
+        ],
+        "exit": 0,
+        "stdout": "RESULT stack_bound_cases=524288 rejected_cases=327684 failures=0\n/tmp/isa1-net09-zarzracb/tb_stack_guards.sv:32: $finish called at 3670018000 (1ps)\n",
+        "stderr": "",
+        "seconds": 97.76
+      }
+    },
+    {
+      "bench": "tb_rtl_program",
+      "configuration": {
+        "hc191": 0
+      },
+      "compile": {
+        "command": [
+          "iverilog",
+          "-g2012",
+          "-Wall",
+          "-s",
+          "tb_rtl_program",
+          "-Ptb_rtl_program.USE_HC191=0",
+          "-Ptb_rtl_program.RETIREMENTS=132197",
+          "-Ptb_rtl_program.BUS_COUNT=232576",
+          "-o",
+          "/tmp/isa1-net09-zarzracb/bench.vvp",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/hdl/hc_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net04/counter_word_candidate.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net02/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/stack_bank/stack_bank_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net03/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/transaction_bank/transaction_bank_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net04/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/microcode_bank/microcode_bank_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/alu_bank/alu_bank_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/register_bank/register_bank_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/address_bank/address_bank_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/cpu_execution_glue/execution_bank_net09.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/x_register_bank/x_register_bank_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net09/isa1_cpu_pins.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/rtl/isa1_memory.sv",
+          "/tmp/isa1-net09-zarzracb/tb_rtl_program.sv"
+        ],
+        "exit": 0,
+        "stdout": "",
+        "stderr": "",
+        "seconds": 0.083
+      },
+      "execution": {
+        "command": [
+          "vvp",
+          "/tmp/isa1-net09-zarzracb/bench.vvp"
+        ],
+        "exit": 0,
+        "stdout": "RESULT hc191=0 cpu_half=5 video_half=7 retirements=132197 transactions=232576 vram_transactions=32771 frame_pixels=76800 wait_checks=4852848 pause_checks=46120 failures=0\n/tmp/isa1-net09-zarzracb/tb_rtl_program.sv:99: $finish called at 94080014000 (1ps)\n",
+        "stderr": "",
+        "seconds": 165.496
+      },
+      "frame_matches_reference": true
+    },
+    {
+      "bench": "tb_rtl_program",
+      "configuration": {
+        "hc191": 1
+      },
+      "compile": {
+        "command": [
+          "iverilog",
+          "-g2012",
+          "-Wall",
+          "-s",
+          "tb_rtl_program",
+          "-Ptb_rtl_program.USE_HC191=1",
+          "-Ptb_rtl_program.RETIREMENTS=132197",
+          "-Ptb_rtl_program.BUS_COUNT=232576",
+          "-Ptb_rtl_program.CPU_HALF=7",
+          "-Ptb_rtl_program.VIDEO_HALF=5",
+          "-o",
+          "/tmp/isa1-net09-zarzracb/bench.vvp",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/hdl/hc_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net04/counter_word_candidate.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net02/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/stack_bank/stack_bank_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net03/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/transaction_bank/transaction_bank_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net04/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/microcode_bank/microcode_bank_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/alu_bank/alu_bank_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/register_bank/register_bank_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/address_bank/address_bank_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/cpu_execution_glue/execution_bank_net09.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/x_register_bank/x_register_bank_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net09/isa1_cpu_pins.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/rtl/isa1_memory.sv",
+          "/tmp/isa1-net09-zarzracb/tb_rtl_program.sv"
+        ],
+        "exit": 0,
+        "stdout": "",
+        "stderr": "",
+        "seconds": 0.126
+      },
+      "execution": {
+        "command": [
+          "vvp",
+          "/tmp/isa1-net09-zarzracb/bench.vvp"
+        ],
+        "exit": 0,
+        "stdout": "RESULT hc191=1 cpu_half=7 video_half=5 retirements=132197 transactions=232576 vram_transactions=32771 frame_pixels=76800 wait_checks=5040426 pause_checks=47055 failures=0\n/tmp/isa1-net09-zarzracb/tb_rtl_program.sv:99: $finish called at 133350030000 (1ps)\n",
+        "stderr": "",
+        "seconds": 244.065
+      },
+      "frame_matches_reference": true
+    }
+  ],
+  "negative_checks": [],
+  "opcode_cases": {
+    "00": 256,
+    "01": 1,
+    "02": 1,
+    "03": 1,
+    "04": 1,
+    "05": 1,
+    "06": 1,
+    "07": 1,
+    "08": 1,
+    "09": 1,
+    "0a": 1,
+    "0b": 1,
+    "0c": 1,
+    "0d": 1,
+    "0e": 1,
+    "0f": 1,
+    "10": 256,
+    "11": 256,
+    "12": 1,
+    "13": 1,
+    "14": 1,
+    "15": 1,
+    "16": 1,
+    "17": 1,
+    "18": 1,
+    "19": 1,
+    "1a": 1,
+    "1b": 1,
+    "1c": 1,
+    "1d": 1,
+    "1e": 1,
+    "1f": 1,
+    "20": 256,
+    "21": 256,
+    "22": 256,
+    "23": 256,
+    "24": 256,
+    "25": 256,
+    "26": 256,
+    "27": 1,
+    "28": 1,
+    "29": 1,
+    "2a": 1,
+    "2b": 1,
+    "2c": 1,
+    "2d": 1,
+    "2e": 1,
+    "2f": 1,
+    "30": 256,
+    "31": 256,
+    "32": 256,
+    "33": 256,
+    "34": 256,
+    "35": 256,
+    "36": 256,
+    "37": 1,
+    "38": 1,
+    "39": 1,
+    "3a": 1,
+    "3b": 1,
+    "3c": 1,
+    "3d": 1,
+    "3e": 1,
+    "3f": 1,
+    "40": 256,
+    "41": 256,
+    "42": 256,
+    "43": 1,
+    "44": 1,
+    "45": 1,
+    "46": 1,
+    "47": 1,
+    "48": 1,
+    "49": 1,
+    "4a": 1,
+    "4b": 1,
+    "4c": 1,
+    "4d": 1,
+    "4e": 1,
+    "4f": 1,
+    "50": 256,
+    "51": 256,
+    "52": 256,
+    "53": 256,
+    "54": 256,
+    "55": 1,
+    "56": 1,
+    "57": 1,
+    "58": 1,
+    "59": 1,
+    "5a": 1,
+    "5b": 1,
+    "5c": 1,
+    "5d": 1,
+    "5e": 1,
+    "5f": 1,
+    "60": 1,
+    "61": 1,
+    "62": 1,
+    "63": 1,
+    "64": 1,
+    "65": 1,
+    "66": 1,
+    "67": 1,
+    "68": 1,
+    "69": 1,
+    "6a": 1,
+    "6b": 1,
+    "6c": 1,
+    "6d": 1,
+    "6e": 1,
+    "6f": 1,
+    "70": 1,
+    "71": 1,
+    "72": 1,
+    "73": 1,
+    "74": 1,
+    "75": 1,
+    "76": 1,
+    "77": 1,
+    "78": 1,
+    "79": 1,
+    "7a": 1,
+    "7b": 1,
+    "7c": 1,
+    "7d": 1,
+    "7e": 1,
+    "7f": 1,
+    "80": 1,
+    "81": 1,
+    "82": 1,
+    "83": 1,
+    "84": 1,
+    "85": 1,
+    "86": 1,
+    "87": 1,
+    "88": 1,
+    "89": 1,
+    "8a": 1,
+    "8b": 1,
+    "8c": 1,
+    "8d": 1,
+    "8e": 1,
+    "8f": 1,
+    "90": 1,
+    "91": 1,
+    "92": 1,
+    "93": 1,
+    "94": 1,
+    "95": 1,
+    "96": 1,
+    "97": 1,
+    "98": 1,
+    "99": 1,
+    "9a": 1,
+    "9b": 1,
+    "9c": 1,
+    "9d": 1,
+    "9e": 1,
+    "9f": 1,
+    "a0": 1,
+    "a1": 1,
+    "a2": 1,
+    "a3": 1,
+    "a4": 1,
+    "a5": 1,
+    "a6": 1,
+    "a7": 1,
+    "a8": 1,
+    "a9": 1,
+    "aa": 1,
+    "ab": 1,
+    "ac": 1,
+    "ad": 1,
+    "ae": 1,
+    "af": 1,
+    "b0": 1,
+    "b1": 1,
+    "b2": 1,
+    "b3": 1,
+    "b4": 1,
+    "b5": 1,
+    "b6": 1,
+    "b7": 1,
+    "b8": 1,
+    "b9": 1,
+    "ba": 1,
+    "bb": 1,
+    "bc": 1,
+    "bd": 1,
+    "be": 1,
+    "bf": 1,
+    "c0": 1,
+    "c1": 1,
+    "c2": 1,
+    "c3": 1,
+    "c4": 1,
+    "c5": 1,
+    "c6": 1,
+    "c7": 1,
+    "c8": 1,
+    "c9": 1,
+    "ca": 1,
+    "cb": 1,
+    "cc": 1,
+    "cd": 1,
+    "ce": 1,
+    "cf": 1,
+    "d0": 1,
+    "d1": 1,
+    "d2": 1,
+    "d3": 1,
+    "d4": 1,
+    "d5": 1,
+    "d6": 1,
+    "d7": 1,
+    "d8": 1,
+    "d9": 1,
+    "da": 1,
+    "db": 1,
+    "dc": 1,
+    "dd": 1,
+    "de": 1,
+    "df": 1,
+    "e0": 1,
+    "e1": 1,
+    "e2": 1,
+    "e3": 1,
+    "e4": 1,
+    "e5": 1,
+    "e6": 1,
+    "e7": 1,
+    "e8": 1,
+    "e9": 1,
+    "ea": 1,
+    "eb": 1,
+    "ec": 1,
+    "ed": 1,
+    "ee": 1,
+    "ef": 1,
+    "f0": 1,
+    "f1": 1,
+    "f2": 1,
+    "f3": 1,
+    "f4": 1,
+    "f5": 1,
+    "f6": 1,
+    "f7": 1,
+    "f8": 1,
+    "f9": 1,
+    "fa": 1,
+    "fb": 1,
+    "fc": 1,
+    "fd": 1,
+    "fe": 1,
+    "ff": 256
+  },
+  "vector_sha256": "7b6ef060fbb1f47e16d94a78f2ca9a524282c9bc1243fa45963e69c3f3ea5e64",
+  "program": {
+    "retirements": 132197,
+    "transactions": 232576,
+    "opcodes": [
+      0,
+      16,
+      17,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      64,
+      65,
+      66,
+      80,
+      81,
+      82,
+      83,
+      84,
+      255
+    ],
+    "assembled_bytes": 194,
+    "firmware_sha256": "add3a0d59064d91c80b729504a364143e36b7d8dd88ba7a004e66da83e536d90",
+    "boot_image_sha256": "f55d63d70b2da8150b0586e665823639374734ac181f1aefa801a06b8f6b1393"
+  }
+}

@@ -1,0 +1,316 @@
+{
+  "iteration": "NET-09",
+  "date": "2026-11-25",
+  "base_git_commit": "4f2584e7e3d07b0872ecb62eae694eae13a7fd4c",
+  "transformation": "Package pin schema -> KiCad schematic -> exported XML -> gate/FF/adder/mux netlist -> CPU X/glue adapter",
+  "scope": "Main synchronous X and explicit execution glue; no complete-board timing/electrical/production release",
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "bytes": 8190,
+      "sha256": "19fe27fd620b758417014a0158b5411aa09de7c3b2289c76b1018e4438c61f83",
+      "origin": "NET-09 design/verification, 2026-11-25"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "bytes": 7135,
+      "sha256": "8527250ba1fc1f4df28f32ca59d6acd0a3f7deddb507497dac2751e770166a31",
+      "origin": "NET-09 design/verification, 2026-11-25"
+    },
+    {
+      "path": "DECISIONS.md",
+      "bytes": 15421,
+      "sha256": "770c6eeeb3d8c3dc20d1442e092970f24a198df3aededd978f02ec7bf040e80d",
+      "origin": "NET-09 design/verification, 2026-11-25"
+    },
+    {
+      "path": "PROVENANCE.md",
+      "bytes": 11714,
+      "sha256": "23dc79bbd3521fbd1545b97ebd460e1466920496f4ad10ec9bc91b2de09fedb7",
+      "origin": "NET-09 design/verification, 2026-11-25"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5473,
+      "sha256": "a23625c9a6e2747a8b906f9f887239f1af443cafc533641d4d8af64cb05f9f28",
+      "origin": "NET-09 design/verification, 2026-11-25"
+    },
+    {
+      "path": "ROADMAP.md",
+      "bytes": 10705,
+      "sha256": "7a7a6271f7bd18bb5b717095e270fc79ee39a340a50922a3d9e74f1dbef8b16a",
+      "origin": "NET-09 design/verification, 2026-11-25"
+    },
+    {
+      "path": "docs/engineering/KEYPAD_CONNECTOR.md",
+      "bytes": 2326,
+      "sha256": "0fedd5b3cd0a1a7f797baf0c0e6d96bbab9892a8edfdb7d2d2271f3758417958",
+      "origin": "NET-09 design/verification, 2026-11-25"
+    },
+    {
+      "path": "docs/engineering/NET09.md",
+      "bytes": 4416,
+      "sha256": "34b69b1f7d10b00b0df615a9e92658142772de160cb8519c1f45de4a10f45970",
+      "origin": "NET-09 design/verification, 2026-11-25"
+    },
+    {
+      "path": "docs/engineering/PRODUCTION_GATES.md",
+      "bytes": 3162,
+      "sha256": "503d05e9c1b3b63b0662988fbc7a3eea1bbe389cf736566256b679625302f15c",
+      "origin": "NET-09 design/verification, 2026-11-25"
+    },
+    {
+      "path": "hardware/cpu_execution_glue/README.md",
+      "bytes": 385,
+      "sha256": "c936b2085de36593ef08f9f0bcbd3c8fb7d10a4813a08c55ab1c435d2ff509cf",
+      "origin": "NET-09 design/verification, 2026-11-25"
+    },
+    {
+      "path": "hardware/cpu_execution_glue/design.json",
+      "bytes": 29962,
+      "sha256": "3c1f301a0d4d2583fb795da8dbd9025ada9ef7549d3d3dc82d62e0f12ee2e33b",
+      "origin": "NET-09 design/verification, 2026-11-25"
+    },
+    {
+      "path": "hardware/cpu_execution_glue/execution_bank.kicad_sch",
+      "bytes": 207622,
+      "sha256": "e939336f2d462c11fe92a825c1cd50acb21231726b4640e4d7a2c03963eed717",
+      "origin": "NET-09 design/verification, 2026-11-25"
+    },
+    {
+      "path": "hardware/cpu_execution_glue/execution_bank_net09.sv",
+      "bytes": 15107,
+      "sha256": "8ddf0b264c1ce5a93b882ea677c3c26cb7e2869cbd9c013df0d6de16f672206a",
+      "origin": "NET-09 design/verification, 2026-11-25"
+    },
+    {
+      "path": "hardware/cpu_execution_glue/package-functions.json",
+      "bytes": 6182,
+      "sha256": "45b8c5f3bca33b853b6fdbd8e9e201c4942665aa7d6d5a32e346bbbc4b54ee30",
+      "origin": "NET-09 design/verification, 2026-11-25"
+    },
+    {
+      "path": "hardware/cpu_execution_glue/pinmap.csv",
+      "bytes": 18846,
+      "sha256": "0e3bcd6bd30b6675b68eea0656ce8437498de8957b8e830bd32d3746f036e547",
+      "origin": "NET-09 design/verification, 2026-11-25"
+    },
+    {
+      "path": "hardware/x_register_bank/README.md",
+      "bytes": 418,
+      "sha256": "68c5efc6bcbf1d40806f69105ad27b7a03a22fd75ab1ed2fbd095ddbaaf7ddf0",
+      "origin": "NET-09 design/verification, 2026-11-25"
+    },
+    {
+      "path": "hardware/x_register_bank/design.json",
+      "bytes": 11936,
+      "sha256": "0445953997b91070042448ad83c6f08060650f26e30bf98d23b18d937b1731f4",
+      "origin": "NET-09 design/verification, 2026-11-25"
+    },
+    {
+      "path": "hardware/x_register_bank/package-functions.json",
+      "bytes": 9089,
+      "sha256": "556047a7ab6dca90cc7c60e7dc296f96467928177b9ef217dc5cf02c6c9b1d45",
+      "origin": "NET-09 design/verification, 2026-11-25"
+    },
+    {
+      "path": "hardware/x_register_bank/pinmap.csv",
+      "bytes": 7718,
+      "sha256": "0e8351dc3fcd7b0234d54a253854f3edb431057aa0eaada6e469f14cd1b0f732",
+      "origin": "NET-09 design/verification, 2026-11-25"
+    },
+    {
+      "path": "hardware/x_register_bank/x_register_bank.kicad_sch",
+      "bytes": 94512,
+      "sha256": "6b9287cfb97d1d6a8d8c36486af2d28c75add3047fda932ae7242ff5aa7aac0a",
+      "origin": "NET-09 design/verification, 2026-11-25"
+    },
+    {
+      "path": "hardware/x_register_bank/x_register_bank_netlist.sv",
+      "bytes": 6322,
+      "sha256": "53bf653d7a5f9beeab3497233e239469ee4bc520eeea2abe8fe0b3cfa39cf6d8",
+      "origin": "NET-09 design/verification, 2026-11-25"
+    },
+    {
+      "path": "references/ti/cd74hc283.pdf",
+      "bytes": 946468,
+      "sha256": "137f6fd57ee15a143e00176ef03744be30215c8c178b421f34d036580f36b25d",
+      "origin": "Texas Instruments official datasheet; existing or newly retrieved, original bytes retained",
+      "url": "https://www.ti.com/lit/ds/symlink/cd74hc283.pdf"
+    },
+    {
+      "path": "references/ti/sn74hc04.pdf",
+      "bytes": 2153970,
+      "sha256": "a48266c5ce3f22a87a30cd78b0fdb80e99820220534b215a11a9b67a35f41101",
+      "origin": "Texas Instruments official datasheet; existing or newly retrieved, original bytes retained",
+      "url": "https://www.ti.com/lit/ds/symlink/sn74hc04.pdf"
+    },
+    {
+      "path": "references/ti/sn74hc08.pdf",
+      "bytes": 2048028,
+      "sha256": "0d125beb415972726a34eb93fbb7ce093909319f4252593fab37a7e77541e363",
+      "origin": "Texas Instruments official datasheet; existing or newly retrieved, original bytes retained",
+      "url": "https://www.ti.com/lit/ds/symlink/sn74hc08.pdf"
+    },
+    {
+      "path": "references/ti/sn74hc125.pdf",
+      "bytes": 2110382,
+      "sha256": "45e8c22d66d6c1eaeda3f2c007e868f9a156e200ff09532fa6f7e19574c352fc",
+      "origin": "Texas Instruments official datasheet; existing or newly retrieved, original bytes retained",
+      "url": "https://www.ti.com/lit/ds/symlink/sn74hc125.pdf"
+    },
+    {
+      "path": "references/ti/sn74hc157.pdf",
+      "bytes": 2003071,
+      "sha256": "b538506b021f7c25c9a5f76e014b69ac9ff9fcb9a8a031ba989d8a8989e40fe3",
+      "origin": "Texas Instruments official datasheet; existing or newly retrieved, original bytes retained",
+      "url": "https://www.ti.com/lit/ds/symlink/sn74hc157.pdf"
+    },
+    {
+      "path": "references/ti/sn74hc273.pdf",
+      "bytes": 2179591,
+      "sha256": "8649dfa0c70096e06d579499278e668c1ee99fb9bc6057e82b0465f253e388d9",
+      "origin": "Texas Instruments official datasheet; existing or newly retrieved, original bytes retained",
+      "url": "https://www.ti.com/lit/ds/symlink/sn74hc273.pdf"
+    },
+    {
+      "path": "references/ti/sn74hc32.pdf",
+      "bytes": 2124679,
+      "sha256": "18adcf7e59d693f9857a32200c28faf72bc84ac64f619411001bececd4fa96f0",
+      "origin": "Texas Instruments official datasheet; existing or newly retrieved, original bytes retained",
+      "url": "https://www.ti.com/lit/ds/symlink/sn74hc32.pdf"
+    },
+    {
+      "path": "sim/net09/isa1_cpu_pins.sv",
+      "bytes": 4423,
+      "sha256": "724f44404e8c2f257b963d0cb5ab48a030c2aacf2988954c6b133d78e83b40e2",
+      "origin": "NET-09 design/verification, 2026-11-25"
+    },
+    {
+      "path": "sim/net09/tb_x_register_bank.sv",
+      "bytes": 1098,
+      "sha256": "44c259852ab023ef2873202a708a76c5305f00ae2cab2b1da420174410ebc3d1",
+      "origin": "NET-09 design/verification, 2026-11-25"
+    },
+    {
+      "path": "tools/build_cpu_execution_glue.py",
+      "bytes": 3602,
+      "sha256": "3eab19f181b3a87df8e8cc2e0da835576e11f290618f007fc1a9aa555dc19690",
+      "origin": "NET-09 design/verification, 2026-11-25"
+    },
+    {
+      "path": "tools/build_x_register_bank.py",
+      "bytes": 13692,
+      "sha256": "aa4af4feec1e34885a09bed00b3229285e929cc403d17140ee13541e06c3d14f",
+      "origin": "NET-09 design/verification, 2026-11-25"
+    },
+    {
+      "path": "tools/make_x_register_cpu.py",
+      "bytes": 2145,
+      "sha256": "275bd4f7180d61db761d670c9365ff3926806a8965d76f99bf0f884e560f1aad",
+      "origin": "NET-09 design/verification, 2026-11-25"
+    },
+    {
+      "path": "tools/record_net09_manifest.py",
+      "bytes": 6213,
+      "sha256": "f88c35e1d7c7fe5fb1071a215bebcc8caa510b55282010b413d21cd9b5874e72",
+      "origin": "NET-09 design/verification, 2026-11-25"
+    },
+    {
+      "path": "tools/run_x_register_negative.py",
+      "bytes": 2693,
+      "sha256": "50c719bbffd6059315143966d97656f831b837af9a26cde26ac3fffbf52dcab1",
+      "origin": "NET-09 design/verification, 2026-11-25"
+    },
+    {
+      "path": "tools/run_x_register_netlist.py",
+      "bytes": 8317,
+      "sha256": "13b824f6fae934ca9b061e35bdb1b86b1d21e8e4ebe66c06fbaeba7c5d93ba18",
+      "origin": "NET-09 design/verification, 2026-11-25"
+    },
+    {
+      "path": "verification/net09/baseline-before-pin-glue.json",
+      "bytes": 33385,
+      "sha256": "9f0633084183a11efd70738732b52fb7f1dabc8a75438faa826c2fbb193f9736",
+      "origin": "NET-09 earlier accepted trial before explicit glue; hashes identify that trial, not final acceptance"
+    },
+    {
+      "path": "verification/net09/baseline-integrity.json",
+      "bytes": 1454,
+      "sha256": "295bee25a5b8fe61a9aebdb2261ac30dc6e54620d7536f962530dc90f6e73058",
+      "origin": "NET-09 design/verification, 2026-11-25"
+    },
+    {
+      "path": "verification/net09/cpu-transformation.json",
+      "bytes": 488,
+      "sha256": "c5a10f76ef42f773059e9fe4d66e437678d01ccca0c0a331d458e0673a9c4b0d",
+      "origin": "NET-09 design/verification, 2026-11-25"
+    },
+    {
+      "path": "verification/net09/execution-glue-check.json",
+      "bytes": 748,
+      "sha256": "473130a2f0b91a5d844cb5880faa4e63f56e7bf013cfc73c9a015a244b40c71f",
+      "origin": "NET-09 design/verification, 2026-11-25"
+    },
+    {
+      "path": "verification/net09/execution_glue.pdf",
+      "bytes": 1114680,
+      "sha256": "89e05240608cd54e1660be77c4f58aaab59f21c5d0b369dfe27d91b18c16416d",
+      "origin": "NET-09 design/verification, 2026-11-25"
+    },
+    {
+      "path": "verification/net09/execution_glue.xml",
+      "bytes": 110343,
+      "sha256": "bcfb962b4f4efc68eb99cec72cd25df115cdb43b87e157dceb78501c5bf2e9ca",
+      "origin": "NET-09 design/verification, 2026-11-25"
+    },
+    {
+      "path": "verification/net09/fanout.json",
+      "bytes": 13387,
+      "sha256": "639f75bc44f791c4b3cdc19a3bf93303bbbfff5847bed31a2806de826959c38e",
+      "origin": "NET-09 design/verification, 2026-11-25"
+    },
+    {
+      "path": "verification/net09/frame.png",
+      "bytes": 1361,
+      "sha256": "d9a8e76c001c18198f03ed53bed7864ad1043e3002e2908a94e98452b58f6375",
+      "origin": "NET-09 design/verification, 2026-11-25"
+    },
+    {
+      "path": "verification/net09/frame.ppm",
+      "bytes": 230415,
+      "sha256": "152c217f59e4a6f05b8c75f8c17e66c1b4e01b5369e37b913f034e97d6903665",
+      "origin": "NET-09 design/verification, 2026-11-25"
+    },
+    {
+      "path": "verification/net09/negative.json",
+      "bytes": 2259,
+      "sha256": "65ec25e6d2f75880627d150addbc71a28cd2f9abf9e95d0ac13f1ed45bea3e13",
+      "origin": "NET-09 design/verification, 2026-11-25"
+    },
+    {
+      "path": "verification/net09/results.json",
+      "bytes": 33869,
+      "sha256": "1cb94801adfb5959e2ba398f63b602b3a02e379ae6599f56e6789683eebf42ff",
+      "origin": "NET-09 design/verification, 2026-11-25"
+    },
+    {
+      "path": "verification/net09/schematic-check.json",
+      "bytes": 565,
+      "sha256": "18ef643dfa6f7ad563c82b946d5b026ac3be6d939f22da24fe0ecb42c9f6f138",
+      "origin": "NET-09 design/verification, 2026-11-25"
+    },
+    {
+      "path": "verification/net09/x_register_bank.pdf",
+      "bytes": 429663,
+      "sha256": "53623fcba3632d6318f454126111219e20e22a3007f1ea032f61cc8b1328fc8b",
+      "origin": "NET-09 design/verification, 2026-11-25"
+    },
+    {
+      "path": "verification/net09/x_register_bank.xml",
+      "bytes": 47656,
+      "sha256": "ed0f151893332de2a2b97147b6259a38a74da398a4f0fbb70ae15fc79730125b",
+      "origin": "NET-09 design/verification, 2026-11-25"
+    }
+  ]
+}

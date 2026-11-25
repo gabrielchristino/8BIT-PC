@@ -1,5 +1,10 @@
 # Decisões recuperadas e registro da migração
 
+## ADR E12 — X síncrono e controle explícito nas interfaces
+
+25/11/2026: X principal em HC273/283/157, com carga EA e ±1 síncronos; preservar HC191 como alternativa de referência. Não se alega economia contra dez pacotes sem o respectivo controle físico. A escolha fecha uma implementação sem carga assíncrona adicional, mantendo funções/ISA/ROMs. Expor EXEC_ACCEPT já físico e usar um inversor livre para WRITE_MODE em variante separada do controle. Aceitação: todos os valores X/modos/enables ideal/temporizado, negativos de ligação, instruções/segurança/guardas e boot/VGA nas duas variantes; revisão global de fanout/clock ainda exigida. Ver NET09.md.
+
+
 ## ADR E11 — Execução one-hot, pedidos retidos e guardas por portas
 
 25/11/2026: HC174 mantém RESPONSE/DROP/X_LOAD e flags, EXEC implícito; portas geram retenção e transições, guardas por limites binários de SP, fault/retire. Alternativa de FSM binária economiza bits mas acrescenta decodificação/hazards; START combinacional direto de microcódigo não preserva a transação. Aceitam-se 51 CIs sem alegar economia. Preservam-se ISA, semântica de WAIT/COMMIT, preflight de dois bytes e conclusão durante pausa. Aceitação: guardas todo SP/overlay/checked, HALT/handshake, falhas introduzidas, CPU/segurança/guardas/boot/VGA nas duas configurações. O erro inicial de polaridade MEM_N_0 é preservado e corrigido no trabalho novo. Sem fechamento temporal global. Ver docs/engineering/NET08.md.

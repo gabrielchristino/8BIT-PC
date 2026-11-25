@@ -1,5 +1,10 @@
 # Histórico preservado
 
+## NET-09 — 25/11/2026
+
+X síncrono de 18 CIs e variante nativa do controle com EXEC_ACCEPT/WRITE_MODE explícitos; mesmas funções, fontes anteriores intactas. Matriz ideal/temporizada, negativos e regressão completa repetida após explicitar as ligações. Variante HC191 preservada para comparação. União global da CPU e sistema físico seguem em trabalho, sem liberação para fabricação.
+
+
 ## NET-08 — 25/11/2026
 
 Controle de execução, guardas de pilha, fault e retire com 51 CIs derivados do esquema. Bancadas isoladas ideal/temporizada, dois negativos e regressão integrada completos. Logs preservam a falha inicial de polaridade MEM_N_0. Próximo X por pinos em trabalho separado; fabricação não liberada.

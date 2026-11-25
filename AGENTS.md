@@ -64,3 +64,9 @@
 - Leia docs/engineering/NET08.md e relatórios antes de alterar controle. Estados de execução/guardas/fault/retire vêm de HC174/portas; X ainda tem alternativa de referência até NET-09.
 - MEM_N_0 é baixo para mem=0 e alto para operação de memória. Preserve pedidos retidos, conclusão de DROP durante pausa e X_COMPLETED até retomada.
 - Logs initial-integration-failure e memory-decode-trace-failure são evidências intermediárias, não resultados de aceitação atuais.
+
+## Continuidade NET-09
+
+- Leia NET09.md. USE_HC191=0 agora usa X síncrono por pinos; USE_HC191=1 é alternativa de referência e não BOM principal. Não confunda o nome antigo do parâmetro com X ideal.
+- hardware/cpu_execution_glue é variante separada, com EXEC_ACCEPT e WRITE_MODE físicos. A qualificação de reset do adaptador deve ser associada a uma porta real na união global.
+- A rodada baseline-before-pin-glue é intermediária. Use results.json final e negative.json como evidências de aceitação, com seus hashes.

@@ -1,0 +1,27 @@
+{
+  "date": "2026-11-25",
+  "base_schema_source": "tools/build_execution_bank.py",
+  "base_schema_sha256": "8eb3c0df1c34521826bf52decb83fccc75bd972b069339e7ea66ba766bbf5415",
+  "command": [
+    "kicad-cli",
+    "sch",
+    "export",
+    "netlist",
+    "--format",
+    "kicadxml",
+    "-o",
+    "/mnt/c/Users/gabri/projetos/isa1/verification/net09/execution_glue.xml",
+    "/mnt/c/Users/gabri/projetos/isa1/hardware/cpu_execution_glue/execution_bank.kicad_sch"
+  ],
+  "kicad": "7.0.11",
+  "components": 102,
+  "pins": 820,
+  "spare": {
+    "reference": "U48",
+    "input_pin": "5",
+    "output_pin": "6"
+  },
+  "max_signal_input_loads": 4,
+  "failures": [],
+  "scope": "Separate NET-09 execution schematic variant, same IC count; no board release"
+}

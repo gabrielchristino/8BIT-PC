@@ -6,7 +6,7 @@ Projeto de computador pessoal com CPU própria de lógica discreta, endereçamen
 
 ## Começar
 
-**Desenvolvimento atual aprovado:** [NET-08 — execução, guardas e falhas](docs/engineering/NET08.md), integrado às netlists de PC, dados, ALU, microcódigo, transações e SP. Execute `python3 tools/run_execution_unit.py` e `python3 tools/run_execution_netlist.py` no WSL Ubuntu. X síncrono está em validação separada; sistema físico de memória/periféricos e liberação de produção continuam pendentes.
+**Desenvolvimento atual aprovado:** [NET-09 — X síncrono e ligações de controle](docs/engineering/NET09.md). CPU principal usa armazenamento/execução/datapath dos bancos KiCad, com alternativa HC191 para comparação. Execute `python3 tools/run_x_register_netlist.py` no WSL Ubuntu. NET-10 une as ligações e verifica cargas globais; memória/periféricos, alimentação, temporização, ERC/DRC e PCB ainda não estão aprovados.
 
 **Registradores/dados:** [NET-06](docs/engineering/NET06.md). A referência fornecida pelo usuário para as membranas está em [KEYPAD_CONNECTOR.md](docs/engineering/KEYPAD_CONNECTOR.md).
 

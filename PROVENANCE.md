@@ -27,6 +27,9 @@ Os downloads chegaram com nomes temporários; os nomes legíveis acima foram res
 
 ## Transformações e material novo
 
+NET-09 (25/11/2026), base 4f2584e7e3d07b0872ecb62eae694eae13a7fd4c: hardware/x_register_bank e sim/net09 são novos; hardware/cpu_execution_glue é variante nativa separada de NET-08. X procedural é substituído por pinos; ligações EXEC_ACCEPT/WRITE_MODE são exportadas/checadas em XML. A rodada anterior à explicitação dessas ligações é preservada como baseline-before-pin-glue.json, identificada por suas próprias fontes/hashes. A rodada final foi repetida. Manifesto audita nove snapshots anteriores e preserva datasheets existentes. Instalação separada de KiCad 10 para trabalhos posteriores não altera registros das exportações desta etapa feitas no KiCad 7.
+
+
 NET-08 (25/11/2026), base 50a923cd3d60bb4943030934140d8336be4ddf42: hardware/execution_bank e sim/net08 são novos. Guardas/estados/fault da NET-07 viram HC174/portas a partir de XML KiCad. Fixtures temporárias semeiam STACK_CHECKED físico. Relatórios final/isolado têm fontes/hashes; logs de integração e rastreamento anteriores preservam o erro de polaridade corrigido, não alegam aprovação atual. Datasheets reutilizados, fontes anteriores intactas. Manifesto audita oito snapshots anteriores nos respectivos commits.
 
 

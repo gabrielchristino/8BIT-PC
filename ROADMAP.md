@@ -1,5 +1,13 @@
 # Roadmap de continuidade
 
+## Continuidade — NET-09
+
+- [x] X principal síncrono por pinos e ligações explícitas EXEC_ACCEPT/WRITE_MODE, com regressões completas.
+- [ ] NET-10: validar união de todas as netlists da CPU, distribuição global de sinais/clocks e cenário temporal integrado.
+- [ ] Mapear sistema físico de memória/VGA/MMIO/teclado e alimentação/reset/clock.
+- [ ] Esquema global/footprints/ERC, layout/DRC e arquivos de fabricação; ensaiar protótipo antes de liberar.
+
+
 ## Continuidade — NET-08
 
 - [x] Execução/guardas/fault/retire a partir dos pinos KiCad; testes isolados e programa completo aprovados.

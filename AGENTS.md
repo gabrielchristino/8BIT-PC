@@ -1,3 +1,15 @@
+## Continuidade NET-25
+
+- Hipótese combinada somenteHDL (dupla localP1 com buffer e controlador diretoBACKEND) passou156 casos com monitor estrito original e dois negativos; não instancia teclado/SRAM/CPU. Teclado U1HC174 recebe CLK BUF_1_0, IO_COMMIT é autorização de dados. Opção seguinte considera U1AHC174 real + controlador sem dois buffers intermediários, um pacote local extra; não confundir com esquema construído ou aprovação global.
+- Leia docs/engineering/NET25.md. Variante experimental hardware/phase_drain_video/reset não foi promovida. Vídeo36CIs; reset7digitais+1supervisor+2osciladores. Warm U8 AHC164/Q3, clearRC independente, U9 serial condicionado, armamento sticky dos bancos.
+-32 cortes selecionados passam, mas cold pattern4 produz7,722ns sob CLR0 no monitor estrito e RAW50ns/offset39 rejeita recovery em U36_1. Preservar ambas falhas, não transformar coleta em aprovação.
+- package_models_cold_diagnostic só registra CLK curto quando CLR conhecido0; CLR alto/indefinido continua fatal. OPEN_RESET_CLOCK continua restrição não qualificada, mesmo que contenção funcional passe. Não usar esse modelo para aprovar clock ativo ou fabricação.
+- local_sync_hypothesis é SOMENTEHDL com pacote extra AHC74 emP1;156 casos funcionais passaram, ainda incluindo clock frio aberto e sem esquema próprio. CLOCK_TREE_STUDY é proposta não implementada. Não atribuir resultados NET25 à próxima variante.
+- Modelo warm tem default estrito calibrado e fronteiras binárias separadas de dados/clear; não é transistor/MTBF nem limite real de duração de metastabilidade. Hold observado captura a escolha binária antiga; duas políticas não esgotam todas resoluções analógicas.
+- Não alterar fontes/scripts listados enquanto trabalhos estiverem ativos. Registros intermediários de calibração/counters/metadados/partida ficam preservados em development; só rodadas finais com fontes congeladas são regressões aceitas.
+
+
+
 ## Continuidade NET-24
 
 - Leia docs/engineering/NET24.md. hardware/common_request tem31CIs/62componentes/526pinos/9NC, só U4.3 e U4.11 mudam para BUF_4_1. Três grupos de três CLK; sem mudança de lógica ou famílias. Modelo do primeiro estágio HC74 ainda não é analógico.

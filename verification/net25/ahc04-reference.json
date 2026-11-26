@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-26",
+  "source_url": "https://www.ti.com/lit/ds/symlink/sn74ahc04.pdf",
+  "revision": "SCLS231P June2023 preserved original PDF",
+  "command": [
+    "pdftotext",
+    "-layout",
+    "references/ti/sn74ahc04.pdf",
+    "verification/net25/ahc04-research.txt"
+  ],
+  "transformation": "Unchanged original PDF to separate layout extraction",
+  "selected_condition": "5V+/-0.5V, -40..85C, CL50pF",
+  "rise_and_fall_min_ns": 1,
+  "rise_and_fall_max_ns": 8.5,
+  "scope": "Research only, no new clock distribution implemented. Q/QB single gate bound still needs native pin budget and strict regressions.",
+  "sources": [
+    {
+      "path": "references/ti/sn74ahc04.pdf",
+      "sha256": "da1e18e887be71dfe3b2f69341cd7ab969b75a7a1929aec4346fdc32e2c24962"
+    },
+    {
+      "path": "verification/net25/ahc04-research.txt",
+      "sha256": "4a353d85d172a164c62ace1b5cfdd1ba1ac8a730c478256ad8347c589cb35f0b"
+    },
+    {
+      "path": "tools/record_drain_environment.py",
+      "sha256": "fd1d4751e54f7f628c6136003b23a5c97eefbb8880bde9a7b146be0f133e30e7"
+    }
+  ]
+}

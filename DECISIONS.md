@@ -314,3 +314,14 @@ da linha RC e quatro negativos de janela. Proxy Ron/leakage não é modelo do
 supervisor. ERC parcial12 violações, sem exceções. Produção exige fonte/POR e
 transientes reais, capacitâncias extraídas, consumo, clocks/PVT/CDC/MTBF, DAC,
 esquema global/footprints, PCB/DRC e protótipo. Ver docs/engineering/NET21.md.
+
+
+## ADR E30 — Drenagem síncrona experimental, ainda sem promoção
+
+26/11/2026. Base5a871ff3ddc58986ae1fb7998690bb9ec3711d5b. Status: experimento com falhas abertas.
+
+Trocar U8 vídeo AHC74 por AHC164 de quatro estágios, clear RC independente, condicionar serial do shift de fases e armar bancos por READY|BANK_SYNC1. Mantém36CIs de vídeo e não mexe em CPU/ISA/SP/ROMs. Alternativas: apagar fases assincronamente (reproduz runt ativo), aumentar duty (backend já50%), relaxar guardas ativas (rejeitado), sincronizar reset local em fase distante e reduzir distribuição de clocks (próximas hipóteses).
+
+Evidência:32 cortes selecionados passam, mas padrão frio4 rejeita7,722ns/20ns sob CLR0. RAW50ns/offset39 rejeita recovery em U36_1. Projeção cold diagnóstica permite observar apenas contenção conhecida sob CLR0 e conserva restrição aberta. Hipótese de pacote AHC74 extra local emP1 passou156 casos funcionais com essa mesma restrição fria; não tem esquema próprio e não substitui a variante nativa.
+
+Impacto: fronteira warm de dados/clear passa a ter hipótese binária explícita; não é MTBF/POR qualificado. Futuro pacote local aumentaria vídeo para37CIs. Aceitar somente após esquema real, XML/cargas/guardas estritas, glitches/pausas/partidas, pinos SRAM/CPU/teclado, quadros/boot e orçamento completo. Não promover o experimento pelo sucesso nominal. Ver NET25.md e CLOCK_TREE_STUDY.md.

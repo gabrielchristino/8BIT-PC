@@ -173,3 +173,10 @@ Nova conferência: acervo salvo em `C:/Users/gabri/projetos/isa1`, arquivos loca
 Esta tabela não substitui o histórico original nem atribui data/autoria de commit às revisões. Resultados de engenharia física continuam pendentes.
 NET-16A/B — 25/11/2026: ensaios RC de ordem de reset, triagem que rejeita retenção insuficiente, esquema candidato de cinco CIs e liberações CPU/backend. Cortes/pausas e abertura de recovery testados sob hipóteses explícitas; rejeição estrita e ERC parcial de seis violações preservados.
 NET-17 — 26/11/2026: acrescentada variante para alvo condicional de 500 Ω, com quatro resistores série, pull-ups recalculados, espera de 2,60 ms e proteção da habilitação tardia por AHC74. Bancadas elétricas/digitais e contrato host de cancelamento/debounce/fila registrados. Originais, hipóteses físicas e rejeição estrita de recovery preservados; sem liberação de placa.
+
+
+## 2026-11-26 — NET-25 experimental
+
+- Novas folhas de drenagem/armamento e modelo warm calibrado;32 cortes selecionados e vetores ideais passam.
+- Preservadas falhas de clock frio sob CLR0 e recovery de reset breve. Variante não promovida.
+- Hipótese apenasHDL de reset local emP1 passa156 cenários funcionais; clock frio continua aberto. Estudos de próxima variante não contam como implementação.

@@ -1,0 +1,43 @@
+{
+  "date": "2026-11-26",
+  "command": [
+    "/home/gabri/.local/opt/isa1-kicad-10.0.8/squashfs-root/usr/bin/kicad-cli",
+    "sch",
+    "erc",
+    "--format",
+    "json",
+    "--severity-all",
+    "--exit-code-violations",
+    "-o",
+    "/mnt/c/Users/gabri/projetos/isa1/verification/net25/native/reset/erc.json",
+    "/mnt/c/Users/gabri/projetos/isa1/hardware/phase_drain_reset/phase_drain_reset.kicad_sch"
+  ],
+  "exit": 5,
+  "stdout": "Found 14 violations\nSaved ERC Report to /mnt/c/Users/gabri/projetos/isa1/verification/net25/native/reset/erc.json\n",
+  "stderr": "",
+  "violation_counts": {
+    "power_pin_not_driven": 2,
+    "pin_not_driven": 2,
+    "isolated_pin_label": 10
+  },
+  "erc_passed": false,
+  "production_released": false,
+  "sources": [
+    {
+      "path": "tools/check_phase_drain_native.py",
+      "sha256": "a75c1555cf6f5a60a2b05e2b459d67c758e0b457679b4aee53454e8f289dd831"
+    },
+    {
+      "path": "hardware/phase_drain_reset/phase_drain_reset.kicad_sch",
+      "sha256": "520829fa1f477643fdc6c3879da3d75d0452d1a79ec680d93032acb1611d186e"
+    },
+    {
+      "path": "hardware/phase_drain_reset/phase_drain_reset.kicad_pro",
+      "sha256": "2305a0947344cce87490b45ec7572040afd9dca47e141c5bf384d7c4bee60811"
+    },
+    {
+      "path": "hardware/phase_drain_reset/bus_packages.kicad_sym",
+      "sha256": "7c2ad9af6b7174daabec107ed7dc6360598ac92cdf3d4034cd944d87b1701c93"
+    }
+  ]
+}

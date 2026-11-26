@@ -1,0 +1,43 @@
+{
+  "date": "2026-11-26",
+  "command": [
+    "/home/gabri/.local/opt/isa1-kicad-10.0.8/squashfs-root/usr/bin/kicad-cli",
+    "sch",
+    "erc",
+    "--format",
+    "json",
+    "--severity-all",
+    "--exit-code-violations",
+    "-o",
+    "/mnt/c/Users/gabri/projetos/isa1/verification/net25/native/video/erc.json",
+    "/mnt/c/Users/gabri/projetos/isa1/hardware/phase_drain_video/phase_drain_video.kicad_sch"
+  ],
+  "exit": 5,
+  "stdout": "Found 49 violations\nSaved ERC Report to /mnt/c/Users/gabri/projetos/isa1/verification/net25/native/video/erc.json\n",
+  "stderr": "",
+  "violation_counts": {
+    "power_pin_not_driven": 2,
+    "pin_not_driven": 13,
+    "isolated_pin_label": 34
+  },
+  "erc_passed": false,
+  "production_released": false,
+  "sources": [
+    {
+      "path": "tools/check_phase_drain_native.py",
+      "sha256": "a75c1555cf6f5a60a2b05e2b459d67c758e0b457679b4aee53454e8f289dd831"
+    },
+    {
+      "path": "hardware/phase_drain_video/phase_drain_video.kicad_sch",
+      "sha256": "a7f7ba965a7994826fd7e68885cc282729b8c1903cf47396586cd11db2611b8e"
+    },
+    {
+      "path": "hardware/phase_drain_video/phase_drain_video.kicad_pro",
+      "sha256": "d6cc9d51e1950e86d631466b947791bb91e33e0007b6f271de32abef11cc210e"
+    },
+    {
+      "path": "hardware/phase_drain_video/bus_packages.kicad_sym",
+      "sha256": "3747e41a98e021fd031691dad7847c17b5f9f22226fa77d42c862a18d84c57b3"
+    }
+  ]
+}

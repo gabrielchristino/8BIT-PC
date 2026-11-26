@@ -1,0 +1,68 @@
+{
+  "components": 26,
+  "ics": 8,
+  "pins": 144,
+  "no_connects": 7,
+  "max_signal_input_loads": 4,
+  "failures": [],
+  "scope": "Exact native configured oscillator/reset pin graph. Qualified VDD plus behavioral oscillator projection; supervisor/RC remain abstractions. Full PN, PCB capacitance, jitter/POR/global PVT/MTBF and fabrication unqualified.",
+  "date": "2026-11-26",
+  "logic_ics": 7,
+  "oscillator_modules": 2,
+  "active_packages": 10,
+  "command": [
+    "/home/gabri/.local/opt/isa1-kicad-10.0.8/squashfs-root/usr/bin/kicad-cli",
+    "sch",
+    "export",
+    "netlist",
+    "--format",
+    "kicadxml",
+    "-o",
+    "/mnt/c/Users/gabri/projetos/isa1/verification/net23/native/clocked_reset.xml",
+    "/mnt/c/Users/gabri/projetos/isa1/hardware/clocked_reset/clocked_reset.kicad_sch"
+  ],
+  "kicad": "10.0.8",
+  "sources": [
+    {
+      "path": "tools/build_clocked_reset.py",
+      "sha256": "fa5c808daebf6382a725b7ce544ffdabb1ff088353ad538d8123a55899affbe9"
+    },
+    {
+      "path": "hardware/schmitt_reset/design.json",
+      "sha256": "1ebd5fb2dfe997aa75c42e4ca8d01da16f392c5fdcfd66e229d133edef210668"
+    },
+    {
+      "path": "hardware/schmitt_reset/package-functions.json",
+      "sha256": "7a499ec38fcb4d5ffbd35ea3125ee3593df4315f90cf494bf67ffa6983712708"
+    },
+    {
+      "path": "tools/build_schmitt_reset.py",
+      "sha256": "75778e597d9dbbb32c6765e56136e791a53465e9e19d398e4be37786873055c5"
+    },
+    {
+      "path": "references/net22/abracon-ach.pdf",
+      "sha256": "2f4606e8cee9cc822e4e0a551dda82ae3fd24c31855b039a84646f26b443da86"
+    },
+    {
+      "path": "references/ti/sn74ahc14.pdf",
+      "sha256": "4ef53e806a952722b71c3ba94590f0b41099f86022ed5bd5fb37bc4a704bebe7"
+    },
+    {
+      "path": "tools/annotate_clock_counts.py",
+      "sha256": "46ca472ce3fb1468243eb144eb27d5ba310957de9aab79c5a6922a1e79891d2c"
+    },
+    {
+      "path": "hardware/clocked_reset/design.json",
+      "sha256": "0329e5962da72605c51c8deff818222da129a75e6dab0c930d9966d5fa5f1637"
+    }
+  ],
+  "production_released": false,
+  "supervisor_ics": 1,
+  "package_count_correction": {
+    "date": "2026-11-26",
+    "original_logic_ics": 8,
+    "reason": "Eight original IC packages comprise seven SN74 logic ICs plus one TPS3808 supervisor; two oscillator modules are separate. Classification-only correction, no rebuild or repeated simulation.",
+    "original_report": "verification/net23/development/package-count-metadata/schematic-check-original.json",
+    "original_sha256": "f093367b79a671630932bfd0293e948a8473f1ea7a5ca4ec4ae2a49aa2839448"
+  }
+}

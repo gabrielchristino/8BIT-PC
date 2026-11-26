@@ -1,0 +1,191 @@
+{
+  "date": "2026-11-26",
+  "scope": "Intermediate NET23 configuration with standard AHC125 CPU receiver. Preserved before change to two idle AHC14 gates; do not attribute these results to the subsequent circuit.",
+  "source": {
+    "path": "tools/snapshot_clock_input_variant.py",
+    "sha256": "a0886998279778ba9e7d8f3a977c9b5ef7dc818977bcb2977f42c4a6b12e6f6a"
+  },
+  "files": [
+    {
+      "original_path": "tools/build_clocked_reset.py",
+      "snapshot": "verification/net23/development/pre-cpu-schmitt/tools/build_clocked_reset.py",
+      "sha256": "465e549b153765c3839e51a4b2c99de6738419b583276925ef1f274bc7a4db91",
+      "copied_sha256": "465e549b153765c3839e51a4b2c99de6738419b583276925ef1f274bc7a4db91"
+    },
+    {
+      "original_path": "tools/check_clock_source_loads.py",
+      "snapshot": "verification/net23/development/pre-cpu-schmitt/tools/check_clock_source_loads.py",
+      "sha256": "293cfcf1e8036cd67e937efb2ca8dbfec31e938979a65b7248b1f52a54b725b6",
+      "copied_sha256": "293cfcf1e8036cd67e937efb2ca8dbfec31e938979a65b7248b1f52a54b725b6"
+    },
+    {
+      "original_path": "docs/engineering/NET23.md",
+      "snapshot": "verification/net23/development/pre-cpu-schmitt/docs/engineering/NET23.md",
+      "sha256": "c94737011036dbbceb778f70e5af6c17080cda0267431811151c6caeecda74cb",
+      "copied_sha256": "c94737011036dbbceb778f70e5af6c17080cda0267431811151c6caeecda74cb"
+    },
+    {
+      "original_path": "hardware/clocked_reset/bus_packages.kicad_sym",
+      "snapshot": "verification/net23/development/pre-cpu-schmitt/hardware/clocked_reset/bus_packages.kicad_sym",
+      "sha256": "7c2ad9af6b7174daabec107ed7dc6360598ac92cdf3d4034cd944d87b1701c93",
+      "copied_sha256": "7c2ad9af6b7174daabec107ed7dc6360598ac92cdf3d4034cd944d87b1701c93"
+    },
+    {
+      "original_path": "hardware/clocked_reset/clocked_reset.kicad_pro",
+      "snapshot": "verification/net23/development/pre-cpu-schmitt/hardware/clocked_reset/clocked_reset.kicad_pro",
+      "sha256": "843878dc671f75161fc5f6384aa7ae1f4874acd22c133d50f5fa47868dbb1dc5",
+      "copied_sha256": "843878dc671f75161fc5f6384aa7ae1f4874acd22c133d50f5fa47868dbb1dc5"
+    },
+    {
+      "original_path": "hardware/clocked_reset/clocked_reset.kicad_sch",
+      "snapshot": "verification/net23/development/pre-cpu-schmitt/hardware/clocked_reset/clocked_reset.kicad_sch",
+      "sha256": "e12279f792a445b617ec31b4df208b757962a5b8ea4d2b3db053ddb3e53e4281",
+      "copied_sha256": "e12279f792a445b617ec31b4df208b757962a5b8ea4d2b3db053ddb3e53e4281"
+    },
+    {
+      "original_path": "hardware/clocked_reset/clocked_reset_netlist.sv",
+      "snapshot": "verification/net23/development/pre-cpu-schmitt/hardware/clocked_reset/clocked_reset_netlist.sv",
+      "sha256": "a674a75becda40c5e41e9d5348f300c35e017d1a3f7d786a85286441a6487de2",
+      "copied_sha256": "a674a75becda40c5e41e9d5348f300c35e017d1a3f7d786a85286441a6487de2"
+    },
+    {
+      "original_path": "hardware/clocked_reset/design.json",
+      "snapshot": "verification/net23/development/pre-cpu-schmitt/hardware/clocked_reset/design.json",
+      "sha256": "99ddf45aea4f5a04bfc35bb74f3e44c80c034c6d7ee74fc331323392674f6d89",
+      "copied_sha256": "99ddf45aea4f5a04bfc35bb74f3e44c80c034c6d7ee74fc331323392674f6d89"
+    },
+    {
+      "original_path": "hardware/clocked_reset/package-functions.json",
+      "snapshot": "verification/net23/development/pre-cpu-schmitt/hardware/clocked_reset/package-functions.json",
+      "sha256": "de662a4bdd0630496670ff19093d5ec3b313deb22f39c4c857fd725661aa0eef",
+      "copied_sha256": "de662a4bdd0630496670ff19093d5ec3b313deb22f39c4c857fd725661aa0eef"
+    },
+    {
+      "original_path": "hardware/clocked_reset/pinmap.csv",
+      "snapshot": "verification/net23/development/pre-cpu-schmitt/hardware/clocked_reset/pinmap.csv",
+      "sha256": "5653cae472bde14bca8f40308df558ff31c731fad33c2ed4980b92717acfa81e",
+      "copied_sha256": "5653cae472bde14bca8f40308df558ff31c731fad33c2ed4980b92717acfa81e"
+    },
+    {
+      "original_path": "hardware/clocked_reset/sym-lib-table",
+      "snapshot": "verification/net23/development/pre-cpu-schmitt/hardware/clocked_reset/sym-lib-table",
+      "sha256": "708889d930ec06c75337f2f4d803f2cf90b88ca4828916e47752d65f2c0041aa",
+      "copied_sha256": "708889d930ec06c75337f2f4d803f2cf90b88ca4828916e47752d65f2c0041aa"
+    },
+    {
+      "original_path": "verification/net23/actual-cpu-write-reset.json",
+      "snapshot": "verification/net23/development/pre-cpu-schmitt/verification/net23/actual-cpu-write-reset.json",
+      "sha256": "702e8f6bf8f00e165aae9305b89971a606706f8ed5788a343a41a1d759b94cb8",
+      "copied_sha256": "702e8f6bf8f00e165aae9305b89971a606706f8ed5788a343a41a1d759b94cb8"
+    },
+    {
+      "original_path": "verification/net23/clock-loads.json",
+      "snapshot": "verification/net23/development/pre-cpu-schmitt/verification/net23/clock-loads.json",
+      "sha256": "e110afe8b8cbbef9b8c49cf1800dba6cd00f50ab2fad0df69fd4a43e9d3f2867",
+      "copied_sha256": "e110afe8b8cbbef9b8c49cf1800dba6cd00f50ab2fad0df69fd4a43e9d3f2867"
+    },
+    {
+      "original_path": "verification/net23/clock-model-calibration.json",
+      "snapshot": "verification/net23/development/pre-cpu-schmitt/verification/net23/clock-model-calibration.json",
+      "sha256": "50113b1023b3ade60e25ee08c6ca54972a33ce310ffc88eaed81be6b25bd1ce6",
+      "copied_sha256": "50113b1023b3ade60e25ee08c6ca54972a33ce310ffc88eaed81be6b25bd1ce6"
+    },
+    {
+      "original_path": "verification/net23/clock-source-results.json",
+      "snapshot": "verification/net23/development/pre-cpu-schmitt/verification/net23/clock-source-results.json",
+      "sha256": "f70253a9d562c5f7e015a43eeea8d7bc2898297e7e4af8d303945df0f89b289e",
+      "copied_sha256": "f70253a9d562c5f7e015a43eeea8d7bc2898297e7e4af8d303945df0f89b289e"
+    },
+    {
+      "original_path": "verification/net23/cpu-adapter-origin.json",
+      "snapshot": "verification/net23/development/pre-cpu-schmitt/verification/net23/cpu-adapter-origin.json",
+      "sha256": "ba700e25fc6a7aafdde07dd15d870771930c01bc9644b7e6ea7bd11c75322bc7",
+      "copied_sha256": "ba700e25fc6a7aafdde07dd15d870771930c01bc9644b7e6ea7bd11c75322bc7"
+    },
+    {
+      "original_path": "verification/net23/environment.json",
+      "snapshot": "verification/net23/development/pre-cpu-schmitt/verification/net23/environment.json",
+      "sha256": "2832587b4440266e818587baeae30ba9a6cb37e8a9bc6a9a2b17fb2da5780ac9",
+      "copied_sha256": "2832587b4440266e818587baeae30ba9a6cb37e8a9bc6a9a2b17fb2da5780ac9"
+    },
+    {
+      "original_path": "verification/net23/source-memory-results.json",
+      "snapshot": "verification/net23/development/pre-cpu-schmitt/verification/net23/source-memory-results.json",
+      "sha256": "2255af9f52e8c5e97206495666bfdc9d3c3883d62b4cacd10cd6110bf8ed3229",
+      "copied_sha256": "2255af9f52e8c5e97206495666bfdc9d3c3883d62b4cacd10cd6110bf8ed3229"
+    },
+    {
+      "original_path": "verification/net23/frequency-corners/actual-cpu-write-reset.json",
+      "snapshot": "verification/net23/development/pre-cpu-schmitt/verification/net23/frequency-corners/actual-cpu-write-reset.json",
+      "sha256": "395504ccb256104d73ff5d0cfdada5baec0b55d3bc50e84eab4efe3251146961",
+      "copied_sha256": "395504ccb256104d73ff5d0cfdada5baec0b55d3bc50e84eab4efe3251146961"
+    },
+    {
+      "original_path": "verification/net23/frequency-corners/compiled-policy0.sv",
+      "snapshot": "verification/net23/development/pre-cpu-schmitt/verification/net23/frequency-corners/compiled-policy0.sv",
+      "sha256": "50bd35762367da83ee3a8f214747cd727c1abdb4d93af46fba0212682a9c8eea",
+      "copied_sha256": "50bd35762367da83ee3a8f214747cd727c1abdb4d93af46fba0212682a9c8eea"
+    },
+    {
+      "original_path": "verification/net23/frequency-corners/compiled-policy1.sv",
+      "snapshot": "verification/net23/development/pre-cpu-schmitt/verification/net23/frequency-corners/compiled-policy1.sv",
+      "sha256": "a668e46276a3ecf5853bbbfc0e07c5db046827120220edf1a3b11a2b812e26e5",
+      "copied_sha256": "a668e46276a3ecf5853bbbfc0e07c5db046827120220edf1a3b11a2b812e26e5"
+    },
+    {
+      "original_path": "verification/net23/native/clocked_reset.pdf",
+      "snapshot": "verification/net23/development/pre-cpu-schmitt/verification/net23/native/clocked_reset.pdf",
+      "sha256": "e23e0e130ece6bdf40c299a7a31c3f8e1858c1bfd0f0549b6a1565e46b775039",
+      "copied_sha256": "e23e0e130ece6bdf40c299a7a31c3f8e1858c1bfd0f0549b6a1565e46b775039"
+    },
+    {
+      "original_path": "verification/net23/native/clocked_reset.xml",
+      "snapshot": "verification/net23/development/pre-cpu-schmitt/verification/net23/native/clocked_reset.xml",
+      "sha256": "6c2d186cb1796901a25fae00d75c7af8db9d7e88a6a6570619383f13305c79ab",
+      "copied_sha256": "6c2d186cb1796901a25fae00d75c7af8db9d7e88a6a6570619383f13305c79ab"
+    },
+    {
+      "original_path": "verification/net23/native/erc-summary.json",
+      "snapshot": "verification/net23/development/pre-cpu-schmitt/verification/net23/native/erc-summary.json",
+      "sha256": "2e6201ef537f605e9475337799c055b36d9d6ddcd9e6546dfbe23e6519768c9e",
+      "copied_sha256": "2e6201ef537f605e9475337799c055b36d9d6ddcd9e6546dfbe23e6519768c9e"
+    },
+    {
+      "original_path": "verification/net23/native/erc.json",
+      "snapshot": "verification/net23/development/pre-cpu-schmitt/verification/net23/native/erc.json",
+      "sha256": "a5adc9b7dced83fbd1065efffba71ad4e71a477ae7700a1bcbb84415ad1ac79d",
+      "copied_sha256": "a5adc9b7dced83fbd1065efffba71ad4e71a477ae7700a1bcbb84415ad1ac79d"
+    },
+    {
+      "original_path": "verification/net23/native/preview.png",
+      "snapshot": "verification/net23/development/pre-cpu-schmitt/verification/net23/native/preview.png",
+      "sha256": "1c0d99db43bb2ceccb0bf2b9172b576dae99141194403d5a1b1d3c7514ff65a8",
+      "copied_sha256": "1c0d99db43bb2ceccb0bf2b9172b576dae99141194403d5a1b1d3c7514ff65a8"
+    },
+    {
+      "original_path": "verification/net23/native/schematic-check.json",
+      "snapshot": "verification/net23/development/pre-cpu-schmitt/verification/net23/native/schematic-check.json",
+      "sha256": "b73da618eacbcc7f5dcc19bd1cab48b3462115b2f927172701834059a3514518",
+      "copied_sha256": "b73da618eacbcc7f5dcc19bd1cab48b3462115b2f927172701834059a3514518"
+    },
+    {
+      "original_path": "verification/net23/research/sn74ahc125.txt",
+      "snapshot": "verification/net23/development/pre-cpu-schmitt/verification/net23/research/sn74ahc125.txt",
+      "sha256": "a11ba71cbe445c73425f72fc750e0bb884022e6cad07f9126b54eea844c4eae9",
+      "copied_sha256": "a11ba71cbe445c73425f72fc750e0bb884022e6cad07f9126b54eea844c4eae9"
+    },
+    {
+      "original_path": "verification/net23/research/sn74lvc2g125.txt",
+      "snapshot": "verification/net23/development/pre-cpu-schmitt/verification/net23/research/sn74lvc2g125.txt",
+      "sha256": "442a6c2aca0be9e12693774a579e66dc2f4b14d58f85e49ecb1dacacf6d39f1f",
+      "copied_sha256": "442a6c2aca0be9e12693774a579e66dc2f4b14d58f85e49ecb1dacacf6d39f1f"
+    },
+    {
+      "original_path": "verification/net23/research/source.json",
+      "snapshot": "verification/net23/development/pre-cpu-schmitt/verification/net23/research/source.json",
+      "sha256": "4fdccb9db3e5cf4813cd6226437010f698b21566bb2f7db5a93b3c686fa96a14",
+      "copied_sha256": "4fdccb9db3e5cf4813cd6226437010f698b21566bb2f7db5a93b3c686fa96a14"
+    }
+  ],
+  "failures": []
+}

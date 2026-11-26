@@ -1,0 +1,92 @@
+{
+  "date": "2026-11-26",
+  "sources": [
+    {
+      "path": "hardware/clocked_reset/design.json",
+      "sha256": "99ddf45aea4f5a04bfc35bb74f3e44c80c034c6d7ee74fc331323392674f6d89"
+    },
+    {
+      "path": "hardware/clocked_reset/package-functions.json",
+      "sha256": "de662a4bdd0630496670ff19093d5ec3b313deb22f39c4c857fd725661aa0eef"
+    },
+    {
+      "path": "hardware/video_common_clock/design.json",
+      "sha256": "4b41faab4534fde94e21808ef1adc97fd913b7e79373ec38cd4fd0c63c1db5c3"
+    },
+    {
+      "path": "hardware/video_common_clock/package-functions.json",
+      "sha256": "d6fcea117a33208088f717a6e554b7fdef50342096bb0c8abcca6f7e6652968c"
+    },
+    {
+      "path": "tools/check_clock_source_loads.py",
+      "sha256": "293cfcf1e8036cd67e937efb2ca8dbfec31e938979a65b7248b1f52a54b725b6"
+    },
+    {
+      "path": "references/net22/abracon-ach.pdf",
+      "sha256": "2f4606e8cee9cc822e4e0a551dda82ae3fd24c31855b039a84646f26b443da86"
+    },
+    {
+      "path": "references/ti/sn74ahc125.pdf",
+      "sha256": "c2ca226688e5704e94755fb20907c970ba7e2bac3a18fd6b2c28ce73295d0a3f"
+    }
+  ],
+  "nets": [
+    {
+      "net": "CPU_OSC",
+      "input_pins": [
+        "reset/U1.2"
+      ],
+      "input_budget_pf_each": 10,
+      "routing_budget_pf": 5,
+      "total_budget_pf": 15,
+      "selected_source_cl_pf": 15,
+      "budget_fits": true
+    },
+    {
+      "net": "MASTER",
+      "input_pins": [
+        "video/U34.9"
+      ],
+      "input_budget_pf_each": 10,
+      "routing_budget_pf": 5,
+      "total_budget_pf": 15,
+      "selected_source_cl_pf": 15,
+      "budget_fits": true
+    },
+    {
+      "net": "CPU_CLK",
+      "input_pins": [
+        "reset/U7.9",
+        "reset/U7.12"
+      ],
+      "input_budget_pf_each": 10,
+      "routing_budget_pf": 10,
+      "total_budget_pf": 30,
+      "selected_source_cl_pf": 50,
+      "budget_fits": true
+    }
+  ],
+  "negative": [
+    {
+      "mutation": "bypass_cpu_prebuffer",
+      "expected_rejection": true,
+      "reasons": [
+        "Load budget CPU_OSC",
+        "Load budget CPU_CLK"
+      ],
+      "passed": true
+    },
+    {
+      "mutation": "raw_gated_enable",
+      "expected_rejection": true,
+      "reasons": [
+        "Oscillator enable must remain VDD, never RAW-gated"
+      ],
+      "passed": true
+    }
+  ],
+  "failures": [],
+  "scope": "Joined source consumer pin budgets: AHC125 Ci max10pF at5V plus explicit trace allowance. Not extracted capacitance or all-VDD/temperature/transition qualification. Standard ACH15pF timing configuration, full ordering PN open.",
+  "oscillator_output_load_qualified": false,
+  "production_released": false
+}

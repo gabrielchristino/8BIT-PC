@@ -40,3 +40,6 @@ revisions/** -text
 /verification/net22/**/*.sv -whitespace
 /verification/net22/**/*.log -whitespace
 /verification/net22/development/missing-et/output.txt -text whitespace=cr-at-eol
+/verification/net23/**/*.sv -whitespace
+/verification/net23/**/*.log -whitespace
+/verification/net23/development/oscillator-value/output.txt -text whitespace=cr-at-eol

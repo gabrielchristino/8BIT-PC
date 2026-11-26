@@ -1,0 +1,22 @@
+{
+  "date": "2026-11-26",
+  "transformation": "Replace external clock generators with native source outputs, same CPU reset/core CLK and off-edge fixture seed protocol. Timed source defaults100kHz/25.175MHz/start10ms; ideal periods10/3.5ns and start100ns are scaled bench parameters only.",
+  "files": [
+    {
+      "path": "tools/prepare_clocked_vectors.py",
+      "sha256": "8f5e16943f6b09898b72079945f07244601d630b9636f88e018c94b175fde8cc"
+    },
+    {
+      "path": "tools/run_common_vectors.py",
+      "sha256": "07aab5e169c247144aa21c7e449c379a179c2854398f051ccd581670e8047fb7"
+    },
+    {
+      "path": "tools/run_clocked_vectors.py",
+      "sha256": "4d37d34601d284420a64a9d969bc5e507a113c07f0e97d133fe6ad293366e79a"
+    },
+    {
+      "path": "sim/net23/isa1_clocked_memory.sv",
+      "sha256": "dea398d005f992c0cdde7831afe2358e79a6949e07c454be2cece538e1d888f8"
+    }
+  ]
+}

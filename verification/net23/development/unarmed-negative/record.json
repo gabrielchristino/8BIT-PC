@@ -1,0 +1,7 @@
+{
+  "date": "2026-11-26",
+  "classification": "Negative fixture did not reach the intended physical write path",
+  "observation": "Forcing SAFE_MEMORY high alone was not detected with REQ held high before controller reset release; the handshake requires idle low before arming",
+  "preserved": ["tb_clocked_memory_start.sv", "results.json"],
+  "correction": "For missing CPU clock with live MASTER, leave REQ low through bank reset release and twenty backend cycles, then assert it. Missing MASTER case still has no backend edges. Keep independent physical WE monitor and same forced SAFE negative."
+}

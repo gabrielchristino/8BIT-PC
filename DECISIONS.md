@@ -1,3 +1,27 @@
+## ADR E28 — Fontes ACH candidatas e recepção Schmitt da CPU
+
+26/11/2026. Base NET22; detalhes em [NET23](docs/engineering/NET23.md).
+Construir variante separada com dois módulos configurados ACH25,175MHz/100kHz,
+L/C/T/A, carga padrão15pF. Enable em VDD, sem gate por RAW. Uma entrada por
+oscilador exige10pF de Ci a5V mais5pF de trilha; confirmar na PCB e na BOM.
+Dois Schmitt livres de U2 recebem CPU_OSC e formam CPU_CLK não inversor,
+alimentando U7. Oito CIs existentes (sete digitais/um supervisor) preservados,
+dois módulos osciladores/capacitores acrescentados; mesma ISA/X/SP/flags/VGA.
+
+Alternativas: dois pinos diretos na fonte da CPU excedem15pF; AHC125 livre
+requer qualificar a forma da borda40ns frente ao limite20ns/V. Schmitt evita
+essa hipótese sem pacote adicional. Opção ACH50pF não herda automaticamente
+tempos da tabela15pF; LVC2G125 tem Ci típico3,5pF em3,3V e não máximo em5V.
+Fontes3,3V acrescentam regulação/tradução e outra análise de pulsos. Não se
+declara código de compra/carga/jitter/POR homologado por construir o símbolo.
+
+Aceitação digital da etapa: pinos/XML/carga, fonte iniciando desconhecida,
+partida interrompida, clock ausente mantendo WE bloqueado, oito cortes/scans
+reais nominais/corners, instruções com clocks do circuito, negativos e hashes
+conferidos. Não há novo boot completo; os resultados NET22 mantêm seu escopo.
+Próxima revisão deve fechar duração de pulsos acumulada, clocks CPU/controlador,
+energia/POR/consumo/DAC, firmware de eventos e união/ERC/PCB/protótipo.
+
 ## ADR E27 — Compartilhar fases no shift e registrar carry de linha
 
 26/11/2026. Base NET21, decisão e resultados em [NET22](docs/engineering/NET22.md).

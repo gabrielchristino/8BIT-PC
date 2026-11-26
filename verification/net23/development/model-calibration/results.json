@@ -1,0 +1,61 @@
+{
+  "date": "2026-11-26",
+  "scope": "Behavioral model calibration with enable held high as in native circuit. Power interruption during startup/repeated start and invalid parameter guards. Not analog startup/jitter, disabled Hi-Z timing or vendor model qualification.",
+  "sources": [
+    {
+      "path": "sim/net23/clock_models.sv",
+      "sha256": "9bdf1c41d5698a46cc3e7fb5c3f9e9b3b16c6f8476ea364226790fed625c0af6"
+    },
+    {
+      "path": "sim/net23/tb_clock_model.sv",
+      "sha256": "8946c5259221a4c04284498394e52d16109e0b8151356371b20827e0bf234041"
+    },
+    {
+      "path": "tools/check_clock_model.py",
+      "sha256": "837b0145cb35a0128ed695e841a9f082165a0684cb840fd403e284d9bfb92fc9"
+    }
+  ],
+  "runs": [
+    {
+      "mode": 0,
+      "duty": 0.475,
+      "compile": {
+        "command": [
+          "iverilog",
+          "-g2012",
+          "-Wall",
+          "-s",
+          "tb_clock_model",
+          "-Ptb_clock_model.MODE=0",
+          "-Ptb_clock_model.DUTY=0.475",
+          "-o",
+          "/tmp/isa1-clock-model-5qqzxc_o/test.vvp",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net23/clock_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net23/tb_clock_model.sv"
+        ],
+        "exit": 0,
+        "stdout": "",
+        "stderr": "",
+        "seconds": 0.013
+      },
+      "execution": {
+        "command": [
+          "vvp",
+          "/tmp/isa1-clock-model-5qqzxc_o/test.vvp"
+        ],
+        "exit": 1,
+        "stdout": "FATAL: /mnt/c/Users/gabri/projetos/isa1/sim/net23/tb_clock_model.sv:26: model calibration coverage\n       Time: 1172001  Scope: tb_clock_model\n",
+        "stderr": "",
+        "seconds": 0.006
+      },
+      "passed": false
+    }
+  ],
+  "negative": [],
+  "failures": [
+    [
+      0,
+      0.475
+    ]
+  ]
+}

@@ -1,0 +1,196 @@
+{
+  "date": "2026-11-26",
+  "scope": "Behavioral model calibration with enable held high as in native circuit. Power interruption during startup/repeated start and invalid parameter guards. Not analog startup/jitter, disabled Hi-Z timing or vendor model qualification.",
+  "sources": [
+    {
+      "path": "sim/net23/clock_models.sv",
+      "sha256": "9bdf1c41d5698a46cc3e7fb5c3f9e9b3b16c6f8476ea364226790fed625c0af6"
+    },
+    {
+      "path": "sim/net23/tb_clock_model.sv",
+      "sha256": "67935d1696da4a5b759a328a3f45188c55a313231005464cefc601b7317d5aa4"
+    },
+    {
+      "path": "tools/check_clock_model.py",
+      "sha256": "837b0145cb35a0128ed695e841a9f082165a0684cb840fd403e284d9bfb92fc9"
+    }
+  ],
+  "runs": [
+    {
+      "mode": 0,
+      "duty": 0.475,
+      "compile": {
+        "command": [
+          "iverilog",
+          "-g2012",
+          "-Wall",
+          "-s",
+          "tb_clock_model",
+          "-Ptb_clock_model.MODE=0",
+          "-Ptb_clock_model.DUTY=0.475",
+          "-o",
+          "/tmp/isa1-clock-model-ndlbibfq/test.vvp",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net23/clock_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net23/tb_clock_model.sv"
+        ],
+        "exit": 0,
+        "stdout": "",
+        "stderr": "",
+        "seconds": 0.014
+      },
+      "execution": {
+        "command": [
+          "vvp",
+          "/tmp/isa1-clock-model-ndlbibfq/test.vvp"
+        ],
+        "exit": 0,
+        "stdout": "RESULT power_glitch_restart=1 repeated_start=1 edges=48 failures=0\n/mnt/c/Users/gabri/projetos/isa1/sim/net23/tb_clock_model.sv:28: $finish called at 1172002 (1ps)\n",
+        "stderr": "",
+        "seconds": 0.006
+      },
+      "passed": true
+    },
+    {
+      "mode": 0,
+      "duty": 0.525,
+      "compile": {
+        "command": [
+          "iverilog",
+          "-g2012",
+          "-Wall",
+          "-s",
+          "tb_clock_model",
+          "-Ptb_clock_model.MODE=0",
+          "-Ptb_clock_model.DUTY=0.525",
+          "-o",
+          "/tmp/isa1-clock-model-ndlbibfq/test.vvp",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net23/clock_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net23/tb_clock_model.sv"
+        ],
+        "exit": 0,
+        "stdout": "",
+        "stderr": "",
+        "seconds": 0.018
+      },
+      "execution": {
+        "command": [
+          "vvp",
+          "/tmp/isa1-clock-model-ndlbibfq/test.vvp"
+        ],
+        "exit": 0,
+        "stdout": "RESULT power_glitch_restart=1 repeated_start=1 edges=48 failures=0\n/mnt/c/Users/gabri/projetos/isa1/sim/net23/tb_clock_model.sv:28: $finish called at 1176002 (1ps)\n",
+        "stderr": "",
+        "seconds": 0.006
+      },
+      "passed": true
+    }
+  ],
+  "negative": [
+    {
+      "mode": 1,
+      "duty": 0.5,
+      "compile": {
+        "command": [
+          "iverilog",
+          "-g2012",
+          "-Wall",
+          "-s",
+          "tb_clock_model",
+          "-Ptb_clock_model.MODE=1",
+          "-Ptb_clock_model.DUTY=0.5",
+          "-o",
+          "/tmp/isa1-clock-model-ndlbibfq/test.vvp",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net23/clock_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net23/tb_clock_model.sv"
+        ],
+        "exit": 0,
+        "stdout": "",
+        "stderr": "",
+        "seconds": 0.016
+      },
+      "execution": {
+        "command": [
+          "vvp",
+          "/tmp/isa1-clock-model-ndlbibfq/test.vvp"
+        ],
+        "exit": 1,
+        "stdout": "FATAL: /mnt/c/Users/gabri/projetos/isa1/sim/net23/clock_models.sv:9: invalid oscillator configuration\n       Time: 0  Scope: tb_clock_model.dut\n",
+        "stderr": "",
+        "seconds": 0.006
+      },
+      "passed": true,
+      "expected_rejection": "invalid oscillator configuration"
+    },
+    {
+      "mode": 2,
+      "duty": 0.5,
+      "compile": {
+        "command": [
+          "iverilog",
+          "-g2012",
+          "-Wall",
+          "-s",
+          "tb_clock_model",
+          "-Ptb_clock_model.MODE=2",
+          "-Ptb_clock_model.DUTY=0.5",
+          "-o",
+          "/tmp/isa1-clock-model-ndlbibfq/test.vvp",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net23/clock_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net23/tb_clock_model.sv"
+        ],
+        "exit": 0,
+        "stdout": "",
+        "stderr": "",
+        "seconds": 0.015
+      },
+      "execution": {
+        "command": [
+          "vvp",
+          "/tmp/isa1-clock-model-ndlbibfq/test.vvp"
+        ],
+        "exit": 1,
+        "stdout": "FATAL: /mnt/c/Users/gabri/projetos/isa1/sim/net23/clock_models.sv:9: invalid oscillator configuration\n       Time: 0  Scope: tb_clock_model.dut\n",
+        "stderr": "",
+        "seconds": 0.006
+      },
+      "passed": true,
+      "expected_rejection": "invalid oscillator configuration"
+    },
+    {
+      "mode": 3,
+      "duty": 0.5,
+      "compile": {
+        "command": [
+          "iverilog",
+          "-g2012",
+          "-Wall",
+          "-s",
+          "tb_clock_model",
+          "-Ptb_clock_model.MODE=3",
+          "-Ptb_clock_model.DUTY=0.5",
+          "-o",
+          "/tmp/isa1-clock-model-ndlbibfq/test.vvp",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net23/clock_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net23/tb_clock_model.sv"
+        ],
+        "exit": 0,
+        "stdout": "",
+        "stderr": "",
+        "seconds": 0.018
+      },
+      "execution": {
+        "command": [
+          "vvp",
+          "/tmp/isa1-clock-model-ndlbibfq/test.vvp"
+        ],
+        "exit": 1,
+        "stdout": "FATAL: /mnt/c/Users/gabri/projetos/isa1/sim/net23/clock_models.sv:9: invalid oscillator configuration\n       Time: 0  Scope: tb_clock_model.dut\n",
+        "stderr": "",
+        "seconds": 0.006
+      },
+      "passed": true,
+      "expected_rejection": "invalid oscillator configuration"
+    }
+  ],
+  "failures": []
+}

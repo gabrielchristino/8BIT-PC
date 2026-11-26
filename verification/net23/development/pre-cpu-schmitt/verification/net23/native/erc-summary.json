@@ -1,0 +1,45 @@
+{
+  "date": "2026-11-26",
+  "kicad": "10.0.8",
+  "command": [
+    "/home/gabri/.local/opt/isa1-kicad-10.0.8/squashfs-root/usr/bin/kicad-cli",
+    "sch",
+    "erc",
+    "--format",
+    "json",
+    "--severity-all",
+    "--exit-code-violations",
+    "-o",
+    "/mnt/c/Users/gabri/projetos/isa1/verification/net23/native/erc.json",
+    "/mnt/c/Users/gabri/projetos/isa1/hardware/clocked_reset/clocked_reset.kicad_sch"
+  ],
+  "exit": 5,
+  "stdout": "Found 12 violations\nSaved ERC Report to /mnt/c/Users/gabri/projetos/isa1/verification/net23/native/erc.json\n",
+  "stderr": "",
+  "violation_counts": {
+    "power_pin_not_driven": 2,
+    "pin_not_driven": 1,
+    "isolated_pin_label": 9
+  },
+  "sources": [
+    {
+      "path": "hardware/clocked_reset/clocked_reset.kicad_sch",
+      "sha256": "e12279f792a445b617ec31b4df208b757962a5b8ea4d2b3db053ddb3e53e4281"
+    },
+    {
+      "path": "hardware/clocked_reset/clocked_reset.kicad_pro",
+      "sha256": "843878dc671f75161fc5f6384aa7ae1f4874acd22c133d50f5fa47868dbb1dc5"
+    },
+    {
+      "path": "hardware/clocked_reset/bus_packages.kicad_sym",
+      "sha256": "7c2ad9af6b7174daabec107ed7dc6360598ac92cdf3d4034cd944d87b1701c93"
+    },
+    {
+      "path": "tools/check_clocked_reset_erc.py",
+      "sha256": "4e3a921437f487d8aac042e1296d0b4379f0ca69e56ab728ef363fa4616affa7"
+    }
+  ],
+  "erc_passed": false,
+  "board_release": false,
+  "scope": "Partial sheet; inputs/outputs/power sources need global union, no waivers added"
+}

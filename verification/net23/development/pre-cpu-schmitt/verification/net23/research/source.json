@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-26",
+  "url": "https://www.ti.com/lit/ds/symlink/sn74lvc2g125.pdf",
+  "path": "references/net23/sn74lvc2g125.pdf",
+  "sha256": "15dab14095892f561bc7407dde6c7fb2fb75d92c6bdafc34e949e5dca1fed340",
+  "extraction": "verification/net23/research/sn74lvc2g125.txt",
+  "extraction_sha256": "442a6c2aca0be9e12693774a579e66dc2f4b14d58f85e49ecb1dacacf6d39f1f",
+  "transformation": "Original PDF unchanged; separate pdftotext -layout",
+  "command": [
+    "pdftotext",
+    "-layout",
+    "/mnt/c/Users/gabri/projetos/isa1/references/net23/sn74lvc2g125.pdf",
+    "/mnt/c/Users/gabri/projetos/isa1/verification/net23/research/sn74lvc2g125.txt"
+  ],
+  "exit": 0,
+  "stdout": "",
+  "stderr": "",
+  "selected_for_bom": false,
+  "source": {
+    "path": "tools/collect_source_clock_reference.py",
+    "sha256": "869de3b8151e6abd437c06674f5543d374f27f7f2c5d0c9644715485a90f4375"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "date": "2026-11-26",
+  "scope": "Fixture-only correction; oscillator model unchanged",
+  "failure": "Coverage assertion resumed on the same negedge as the independent edge counter, before the counter update",
+  "preserved": ["tb_clock_model.sv", "results.json"],
+  "correction": "Observe edge total one picosecond after the final negedge; keep the same minimum48-edge requirement and all power/startup/pulse checks"
+}

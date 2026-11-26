@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/mnt/c/Users/gabri/projetos/isa1/tools/build_clocked_reset.py", line 112, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/mnt/c/Users/gabri/projetos/isa1/tools/build_clocked_reset.py", line 96, in main
+    report = digital_convert()
+             ^^^^^^^^^^^^^^^^^
+  File "<string>", line 14, in convert
+ValueError: Changed value X1

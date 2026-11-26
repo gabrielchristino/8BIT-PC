@@ -1,0 +1,74 @@
+{
+  "date": "2026-11-26",
+  "sources": [
+    {
+      "path": "tools/record_clock_input_limits.py",
+      "sha256": "85176388064089507e87145ca84211b622923e92bfdb97be2a0aebe0c939290a"
+    },
+    {
+      "path": "references/ti/sn74ahc125.pdf",
+      "sha256": "c2ca226688e5704e94755fb20907c970ba7e2bac3a18fd6b2c28ce73295d0a3f"
+    },
+    {
+      "path": "verification/net23/research/sn74ahc125.txt",
+      "sha256": "a11ba71cbe445c73425f72fc750e0bb884022e6cad07f9126b54eea844c4eae9"
+    },
+    {
+      "path": "references/ti/sn74ahc14.pdf",
+      "sha256": "4ef53e806a952722b71c3ba94590f0b41099f86022ed5bd5fb37bc4a704bebe7"
+    },
+    {
+      "path": "verification/net23/research/sn74ahc14.txt",
+      "sha256": "aa865be1e64c429eaa209a5472564b5badb7f102e1a877de81e8f1f9d52a2cf5"
+    },
+    {
+      "path": "references/net23/sn74lvc2g125.pdf",
+      "sha256": "15dab14095892f561bc7407dde6c7fb2fb75d92c6bdafc34e949e5dca1fed340"
+    },
+    {
+      "path": "verification/net23/research/sn74lvc2g125.txt",
+      "sha256": "442a6c2aca0be9e12693774a579e66dc2f4b14d58f85e49ecb1dacacf6d39f1f"
+    },
+    {
+      "path": "references/net22/abracon-ach.pdf",
+      "sha256": "2f4606e8cee9cc822e4e0a551dda82ae3fd24c31855b039a84646f26b443da86"
+    }
+  ],
+  "extractions": [
+    {
+      "source": "references/ti/sn74ahc125.pdf",
+      "source_sha256": "c2ca226688e5704e94755fb20907c970ba7e2bac3a18fd6b2c28ce73295d0a3f",
+      "extraction": "verification/net23/research/sn74ahc125.txt",
+      "extraction_sha256": "a11ba71cbe445c73425f72fc750e0bb884022e6cad07f9126b54eea844c4eae9",
+      "transformation": "Original PDF unchanged, separate pdftotext -layout",
+      "command": [
+        "pdftotext",
+        "-layout",
+        "references/ti/sn74ahc125.pdf",
+        "verification/net23/research/sn74ahc125.txt"
+      ]
+    },
+    {
+      "source": "references/ti/sn74ahc14.pdf",
+      "source_sha256": "4ef53e806a952722b71c3ba94590f0b41099f86022ed5bd5fb37bc4a704bebe7",
+      "extraction": "verification/net23/research/sn74ahc14.txt",
+      "extraction_sha256": "aa865be1e64c429eaa209a5472564b5badb7f102e1a877de81e8f1f9d52a2cf5",
+      "transformation": "Original PDF unchanged, separate pdftotext -layout",
+      "command": [
+        "pdftotext",
+        "-layout",
+        "references/ti/sn74ahc14.pdf",
+        "verification/net23/research/sn74ahc14.txt"
+      ]
+    }
+  ],
+  "ahc125_input_transition_ns_per_v_at5v_pm0_5": 20,
+  "ahc14_recommended_table_has_no_input_transition_rate_row": true,
+  "lvc2g125_ci_pf": 3.5,
+  "lvc2g125_ci_kind": "typical at3.3V, not maximum at5V",
+  "ach_cpu_tr_tf_max_ns": 40,
+  "ach_master_tr_tf_max_ns": 5,
+  "scope": "Primary table interpretation, not waveform simulation or slew qualification. No linear/exponential edge shape assumed. Schmitt pair chosen to avoid inferring local slew from an unspecified40ns waveform.",
+  "failures": [],
+  "physical_input_interface_qualified": false
+}

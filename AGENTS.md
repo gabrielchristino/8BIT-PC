@@ -1,3 +1,13 @@
+## Continuidade NET-23
+
+- Leia docs/engineering/NET23.md. hardware/clocked_reset tem26 componentes/144pinos/7NC: sete CIs digitais, um supervisor e dois módulos ACH configurados, sem código completo homologado. Não confundir módulo configurado com BOM aprovada.
+- CPU_OSC entra em U2A4, passa por dois Schmitt livres4/5 e alimenta U7. U1ch0 permanece desabilitado. AHC125 limita entrada a20ns/V em5V, não100; não supor borda linear do ACH40ns. MASTER recebe uma entrada AHC125. Fonte15pF exige Ci10pF a5V+trilhas5pF, ainda não extraídas.
+- Fontes da sim/net23 usam modelo comportamental de startup, X antes de VDD válido/start. Alimentação qualificada do oscilador é distinta de RAW do supervisor; não afirmar POR/VDD inválido/jitter/MTBF aprovados. Enable é VDD; Hi-Z desabilitado não foi caracterizado pelo modelo.
+- Oito cortes de escrita da CPU dividem-se em quatro nominais e quatro com frequências opostas±50ppm; não somar resultados da variante intermediária U1, preservada em development/pre-cpu-schmitt. Diagnóstico novo não substitui diagnostic.asm histórico ausente.
+- Vetores ideais usam run_clocked_vectors_ideal.py; temporizados usam run_clocked_vectors.py --timed --quick. Ideal altera explicitamente período/startup do modelo, sem frequência física alegada. Não regenerar/modificar entradas durante execuções ativas.
+- Depois do builder, annotate_clock_counts.py corrige somente classificação de metadados7digitais/1supervisor, preservando relatório original. Não atribuir essa anotação a uma segunda execução de simulação.
+- ERC parcial12 violações sem exceções. Fechar largura de pulso através dos buffers do backend, ramos CPU/controlador, energia/consumo/POR/USB-C/DAC, firmware de eventos e união/ERC/footprints/PCB/DRC/protótipo antes de fabricação.
+
 ## Continuidade NET-22
 
 - Leia docs/engineering/NET22.md. hardware/video_common_clock é variante separada com36CIs, +1 sobre vídeo anterior. U9 AHC164/U10 LVC1G27 reais, U36 registra H/V emP3. Não inventar AHC27 nem código comercial completo de oscilador.

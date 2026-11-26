@@ -1,0 +1,58 @@
+{
+  "date": "2026-11-26",
+  "scope": "Separate native video phase/counter variant with existing Schmitt/reset/CPU/keyboard and unchanged firmware. Clock source remains explicit bench stimulus, not an oscillator model.",
+  "files": [
+    {
+      "path": "tools/prepare_common_cpu_checks.py",
+      "sha256": "ce12ca15a7130bb1f539b88d067901f0e5ee8c3ff2722cab10d0834f3e3ee73b"
+    },
+    {
+      "path": "sim/net21/isa1_memory_schmitt.sv",
+      "sha256": "e5a38125cad5bf8cf781f06d68ae4275ee49d0a45415ed136a15bbc6710539bf"
+    },
+    {
+      "path": "sim/net22/isa1_memory_video_common.sv",
+      "sha256": "efbfa3f3f25524262b58b5894df920955e0f4f5f34310123440a4434970a4773"
+    },
+    {
+      "path": "tools/check_video_system_erc.py",
+      "sha256": "13ee92406fcaf69d38bb29653f0fc337b734628cad92161585022d6cd03cf95c"
+    },
+    {
+      "path": "tools/check_video_common_clock_erc.py",
+      "sha256": "3fda9f9d4c45b221f01b91e4904228ea4ff9da5ac2e99d55667473eadd87bc34"
+    }
+  ],
+  "transformations": [
+    {
+      "source": "tools/run_schmitt_scan.py",
+      "source_sha256": "9cf51417aedda1306ba8b3cbfa6361b1bb0b70a3dd34a455504158c252388aec",
+      "target": "tools/run_common_scan.py",
+      "target_sha256": "8c70c0692abd2e108d47217244f186ae257509be34e4109d501a557b2706cb0b"
+    },
+    {
+      "source": "tools/run_schmitt_memory.py",
+      "source_sha256": "618bae3d7e2b056146b2ac4faf0034a9bcd4771590d0eb2dbc1deb5bb72833da",
+      "target": "tools/run_common_memory.py",
+      "target_sha256": "ea5f2a3337df82b0cb110d6937a0052f9c06e43b88fdee2ce9cdeeaf557c9289"
+    },
+    {
+      "source": "tools/run_schmitt_cpu_fault.py",
+      "source_sha256": "8129eeabc3a3ce6cad14ab69a9d77f78ff3e0cd9173db7f769eded7c6fd6cbd5",
+      "target": "tools/run_common_cpu_fault.py",
+      "target_sha256": "69df5b4a588670992ac6cdd299d68424fbc490c9f1e5d6f18ef14e088296bdbc"
+    },
+    {
+      "source": "tools/run_reset_vectors.py",
+      "source_sha256": "70cee23eb45f676500c4d86c3c25b1221b263dfc4b4029c90f0027a38842c8d3",
+      "target": "tools/run_common_vectors.py",
+      "target_sha256": "07aab5e169c247144aa21c7e449c379a179c2854398f051ccd581670e8047fb7"
+    },
+    {
+      "source": "tools/run_reset_program.py",
+      "source_sha256": "df6286720f50a2f048bb30fcc39a199d2b8c29ea4ab18f8deec9b9014c6da03e",
+      "target": "tools/run_common_program.py",
+      "target_sha256": "28657e2e8c47b1728c6b1c3e931ba8ce4d2d91e141e7553a6113a00887639ef4"
+    }
+  ]
+}

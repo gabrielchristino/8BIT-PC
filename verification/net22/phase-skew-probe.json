@@ -1,0 +1,399 @@
+{
+  "date": "2026-11-26",
+  "scope": "Adversarial branch delay probe, then simulation-only phase-clock regrouping. Selected AHC model, not complete min/max/PVT or native changed schematic.",
+  "sources": [
+    {
+      "path": "sim/net14c/package_models_async.sv",
+      "sha256": "7b45346f5e25bb73deb33ba9fb02d50e2b020ab527f75fed1244e173300ccfcb"
+    },
+    {
+      "path": "sim/net22/video_skew_probe.sv",
+      "sha256": "b689b05b38234464c7ad843d01c5b53849c2f01b80cd879fedab5cdb7056ffae"
+    },
+    {
+      "path": "sim/net22/tb_phase_skew.sv",
+      "sha256": "33e4f9f347451118854d6a5809dc68d420435e2a4be3899d5ee883c99247d886"
+    },
+    {
+      "path": "tools/run_phase_skew_probe.py",
+      "sha256": "335b810de784991eb2b8739e5978860cc10ae9be889f6bc0dc8ad8b7f4e08c5d"
+    },
+    {
+      "path": "sim/net14c/video_raster_async_netlist.sv",
+      "sha256": "9885b7aeeb25428fa6a25ea6157061837175d971d4f81bef11c0b5018bcca38f"
+    }
+  ],
+  "runs": [
+    {
+      "fix_group_hypothesis": 0,
+      "policy": 1,
+      "clock_a_ns": 8.5,
+      "clock_b_ns": 8.5,
+      "compile": {
+        "command": [
+          "iverilog",
+          "-g2012",
+          "-Wall",
+          "-s",
+          "tb_phase_skew",
+          "-Ptb_phase_skew.FIX_GROUP=0",
+          "-Ptb_phase_skew.POLICY=1",
+          "-Ptb_phase_skew.CLOCK_A_NS=8.5",
+          "-Ptb_phase_skew.CLOCK_B_NS=8.5",
+          "-o",
+          "/tmp/isa1-phase-skew-m9bq2c2y/test.vvp",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net14c/package_models_async.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net22/video_skew_probe.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net22/tb_phase_skew.sv"
+        ],
+        "exit": 0,
+        "stdout": "",
+        "stderr": "",
+        "seconds": 0.048
+      },
+      "execution": {
+        "command": [
+          "vvp",
+          "/tmp/isa1-phase-skew-m9bq2c2y/test.vvp"
+        ],
+        "exit": 0,
+        "stdout": "RESULT fix_group=0 policy=1 clock_a_ns=8.500 clock_b_ns=8.500 phase_samples=10000 each_phase=2500 failures=0\n/mnt/c/Users/gabri/projetos/isa1/sim/net22/tb_phase_skew.sv:36: $finish called at 427701774 (1ps)\n",
+        "stderr": "",
+        "seconds": 0.461
+      },
+      "execution_completed": true,
+      "rejection": false,
+      "passed": true
+    },
+    {
+      "fix_group_hypothesis": 1,
+      "policy": 0,
+      "clock_a_ns": 8.5,
+      "clock_b_ns": 8.5,
+      "compile": {
+        "command": [
+          "iverilog",
+          "-g2012",
+          "-Wall",
+          "-s",
+          "tb_phase_skew",
+          "-Ptb_phase_skew.FIX_GROUP=1",
+          "-Ptb_phase_skew.POLICY=0",
+          "-Ptb_phase_skew.CLOCK_A_NS=8.5",
+          "-Ptb_phase_skew.CLOCK_B_NS=8.5",
+          "-o",
+          "/tmp/isa1-phase-skew-m9bq2c2y/test.vvp",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net14c/package_models_async.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net22/video_skew_probe.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net22/tb_phase_skew.sv"
+        ],
+        "exit": 0,
+        "stdout": "",
+        "stderr": "",
+        "seconds": 0.026
+      },
+      "execution": {
+        "command": [
+          "vvp",
+          "/tmp/isa1-phase-skew-m9bq2c2y/test.vvp"
+        ],
+        "exit": 0,
+        "stdout": "RESULT fix_group=1 policy=0 clock_a_ns=8.500 clock_b_ns=8.500 phase_samples=10000 each_phase=2500 failures=0\n/mnt/c/Users/gabri/projetos/isa1/sim/net22/tb_phase_skew.sv:36: $finish called at 427701774 (1ps)\n",
+        "stderr": "",
+        "seconds": 0.415
+      },
+      "execution_completed": true,
+      "rejection": false,
+      "passed": true
+    },
+    {
+      "fix_group_hypothesis": 1,
+      "policy": 0,
+      "clock_a_ns": 8.5,
+      "clock_b_ns": 1,
+      "compile": {
+        "command": [
+          "iverilog",
+          "-g2012",
+          "-Wall",
+          "-s",
+          "tb_phase_skew",
+          "-Ptb_phase_skew.FIX_GROUP=1",
+          "-Ptb_phase_skew.POLICY=0",
+          "-Ptb_phase_skew.CLOCK_A_NS=8.5",
+          "-Ptb_phase_skew.CLOCK_B_NS=1",
+          "-o",
+          "/tmp/isa1-phase-skew-m9bq2c2y/test.vvp",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net14c/package_models_async.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net22/video_skew_probe.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net22/tb_phase_skew.sv"
+        ],
+        "exit": 0,
+        "stdout": "",
+        "stderr": "",
+        "seconds": 0.026
+      },
+      "execution": {
+        "command": [
+          "vvp",
+          "/tmp/isa1-phase-skew-m9bq2c2y/test.vvp"
+        ],
+        "exit": 0,
+        "stdout": "RESULT fix_group=1 policy=0 clock_a_ns=8.500 clock_b_ns=1.000 phase_samples=10000 each_phase=2500 failures=0\n/mnt/c/Users/gabri/projetos/isa1/sim/net22/tb_phase_skew.sv:36: $finish called at 427701774 (1ps)\n",
+        "stderr": "",
+        "seconds": 0.409
+      },
+      "execution_completed": true,
+      "rejection": false,
+      "passed": true
+    },
+    {
+      "fix_group_hypothesis": 1,
+      "policy": 0,
+      "clock_a_ns": 1,
+      "clock_b_ns": 8.5,
+      "compile": {
+        "command": [
+          "iverilog",
+          "-g2012",
+          "-Wall",
+          "-s",
+          "tb_phase_skew",
+          "-Ptb_phase_skew.FIX_GROUP=1",
+          "-Ptb_phase_skew.POLICY=0",
+          "-Ptb_phase_skew.CLOCK_A_NS=1",
+          "-Ptb_phase_skew.CLOCK_B_NS=8.5",
+          "-o",
+          "/tmp/isa1-phase-skew-m9bq2c2y/test.vvp",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net14c/package_models_async.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net22/video_skew_probe.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net22/tb_phase_skew.sv"
+        ],
+        "exit": 0,
+        "stdout": "",
+        "stderr": "",
+        "seconds": 0.025
+      },
+      "execution": {
+        "command": [
+          "vvp",
+          "/tmp/isa1-phase-skew-m9bq2c2y/test.vvp"
+        ],
+        "exit": 0,
+        "stdout": "RESULT fix_group=1 policy=0 clock_a_ns=1.000 clock_b_ns=8.500 phase_samples=10000 each_phase=2500 failures=0\n/mnt/c/Users/gabri/projetos/isa1/sim/net22/tb_phase_skew.sv:36: $finish called at 427701774 (1ps)\n",
+        "stderr": "",
+        "seconds": 0.409
+      },
+      "execution_completed": true,
+      "rejection": false,
+      "passed": true
+    },
+    {
+      "fix_group_hypothesis": 1,
+      "policy": 1,
+      "clock_a_ns": 8.5,
+      "clock_b_ns": 8.5,
+      "compile": {
+        "command": [
+          "iverilog",
+          "-g2012",
+          "-Wall",
+          "-s",
+          "tb_phase_skew",
+          "-Ptb_phase_skew.FIX_GROUP=1",
+          "-Ptb_phase_skew.POLICY=1",
+          "-Ptb_phase_skew.CLOCK_A_NS=8.5",
+          "-Ptb_phase_skew.CLOCK_B_NS=8.5",
+          "-o",
+          "/tmp/isa1-phase-skew-m9bq2c2y/test.vvp",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net14c/package_models_async.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net22/video_skew_probe.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net22/tb_phase_skew.sv"
+        ],
+        "exit": 0,
+        "stdout": "",
+        "stderr": "",
+        "seconds": 0.025
+      },
+      "execution": {
+        "command": [
+          "vvp",
+          "/tmp/isa1-phase-skew-m9bq2c2y/test.vvp"
+        ],
+        "exit": 0,
+        "stdout": "RESULT fix_group=1 policy=1 clock_a_ns=8.500 clock_b_ns=8.500 phase_samples=10000 each_phase=2500 failures=0\n/mnt/c/Users/gabri/projetos/isa1/sim/net22/tb_phase_skew.sv:36: $finish called at 427701774 (1ps)\n",
+        "stderr": "",
+        "seconds": 0.409
+      },
+      "execution_completed": true,
+      "rejection": false,
+      "passed": true
+    },
+    {
+      "fix_group_hypothesis": 1,
+      "policy": 1,
+      "clock_a_ns": 8.5,
+      "clock_b_ns": 1,
+      "compile": {
+        "command": [
+          "iverilog",
+          "-g2012",
+          "-Wall",
+          "-s",
+          "tb_phase_skew",
+          "-Ptb_phase_skew.FIX_GROUP=1",
+          "-Ptb_phase_skew.POLICY=1",
+          "-Ptb_phase_skew.CLOCK_A_NS=8.5",
+          "-Ptb_phase_skew.CLOCK_B_NS=1",
+          "-o",
+          "/tmp/isa1-phase-skew-m9bq2c2y/test.vvp",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net14c/package_models_async.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net22/video_skew_probe.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net22/tb_phase_skew.sv"
+        ],
+        "exit": 0,
+        "stdout": "",
+        "stderr": "",
+        "seconds": 0.026
+      },
+      "execution": {
+        "command": [
+          "vvp",
+          "/tmp/isa1-phase-skew-m9bq2c2y/test.vvp"
+        ],
+        "exit": 0,
+        "stdout": "RESULT fix_group=1 policy=1 clock_a_ns=8.500 clock_b_ns=1.000 phase_samples=10000 each_phase=2500 failures=0\n/mnt/c/Users/gabri/projetos/isa1/sim/net22/tb_phase_skew.sv:36: $finish called at 427701774 (1ps)\n",
+        "stderr": "",
+        "seconds": 0.415
+      },
+      "execution_completed": true,
+      "rejection": false,
+      "passed": true
+    },
+    {
+      "fix_group_hypothesis": 1,
+      "policy": 1,
+      "clock_a_ns": 1,
+      "clock_b_ns": 8.5,
+      "compile": {
+        "command": [
+          "iverilog",
+          "-g2012",
+          "-Wall",
+          "-s",
+          "tb_phase_skew",
+          "-Ptb_phase_skew.FIX_GROUP=1",
+          "-Ptb_phase_skew.POLICY=1",
+          "-Ptb_phase_skew.CLOCK_A_NS=1",
+          "-Ptb_phase_skew.CLOCK_B_NS=8.5",
+          "-o",
+          "/tmp/isa1-phase-skew-m9bq2c2y/test.vvp",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net14c/package_models_async.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net22/video_skew_probe.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net22/tb_phase_skew.sv"
+        ],
+        "exit": 0,
+        "stdout": "",
+        "stderr": "",
+        "seconds": 0.026
+      },
+      "execution": {
+        "command": [
+          "vvp",
+          "/tmp/isa1-phase-skew-m9bq2c2y/test.vvp"
+        ],
+        "exit": 0,
+        "stdout": "RESULT fix_group=1 policy=1 clock_a_ns=1.000 clock_b_ns=8.500 phase_samples=10000 each_phase=2500 failures=0\n/mnt/c/Users/gabri/projetos/isa1/sim/net22/tb_phase_skew.sv:36: $finish called at 427701774 (1ps)\n",
+        "stderr": "",
+        "seconds": 0.406
+      },
+      "execution_completed": true,
+      "rejection": false,
+      "passed": true
+    }
+  ],
+  "investigations": [
+    {
+      "fix_group_hypothesis": 0,
+      "policy": 1,
+      "clock_a_ns": 8.5,
+      "clock_b_ns": 1,
+      "compile": {
+        "command": [
+          "iverilog",
+          "-g2012",
+          "-Wall",
+          "-s",
+          "tb_phase_skew",
+          "-Ptb_phase_skew.FIX_GROUP=0",
+          "-Ptb_phase_skew.POLICY=1",
+          "-Ptb_phase_skew.CLOCK_A_NS=8.5",
+          "-Ptb_phase_skew.CLOCK_B_NS=1",
+          "-o",
+          "/tmp/isa1-phase-skew-m9bq2c2y/test.vvp",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net14c/package_models_async.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net22/video_skew_probe.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net22/tb_phase_skew.sv"
+        ],
+        "exit": 0,
+        "stdout": "",
+        "stderr": "",
+        "seconds": 0.025
+      },
+      "execution": {
+        "command": [
+          "vvp",
+          "/tmp/isa1-phase-skew-m9bq2c2y/test.vvp"
+        ],
+        "exit": 1,
+        "stdout": "FATAL: /mnt/c/Users/gabri/projetos/isa1/sim/net22/tb_phase_skew.sv:24: video phase token lost or duplicated\n       Time: 30521496  Scope: tb_phase_skew\n",
+        "stderr": "",
+        "seconds": 0.019
+      },
+      "execution_completed": false,
+      "rejection": true
+    },
+    {
+      "fix_group_hypothesis": 0,
+      "policy": 1,
+      "clock_a_ns": 1,
+      "clock_b_ns": 8.5,
+      "compile": {
+        "command": [
+          "iverilog",
+          "-g2012",
+          "-Wall",
+          "-s",
+          "tb_phase_skew",
+          "-Ptb_phase_skew.FIX_GROUP=0",
+          "-Ptb_phase_skew.POLICY=1",
+          "-Ptb_phase_skew.CLOCK_A_NS=1",
+          "-Ptb_phase_skew.CLOCK_B_NS=8.5",
+          "-o",
+          "/tmp/isa1-phase-skew-m9bq2c2y/test.vvp",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net14c/package_models_async.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net22/video_skew_probe.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net22/tb_phase_skew.sv"
+        ],
+        "exit": 0,
+        "stdout": "",
+        "stderr": "",
+        "seconds": 0.025
+      },
+      "execution": {
+        "command": [
+          "vvp",
+          "/tmp/isa1-phase-skew-m9bq2c2y/test.vvp"
+        ],
+        "exit": 0,
+        "stdout": "RESULT fix_group=0 policy=1 clock_a_ns=1.000 clock_b_ns=8.500 phase_samples=10000 each_phase=2500 failures=0\n/mnt/c/Users/gabri/projetos/isa1/sim/net22/tb_phase_skew.sv:36: $finish called at 427701774 (1ps)\n",
+        "stderr": "",
+        "seconds": 0.406
+      },
+      "execution_completed": true,
+      "rejection": false
+    }
+  ],
+  "failures": [],
+  "production_released": false
+}

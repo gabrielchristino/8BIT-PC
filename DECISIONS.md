@@ -1,3 +1,26 @@
+## ADR E27 — Compartilhar fases no shift e registrar carry de linha
+
+26/11/2026. Base NET21, decisão e resultados em [NET22](docs/engineering/NET22.md).
+O anel anterior falha no modelo com atrasos independentes admissíveis dos
+buffers. Adotar variante separada com AHC164, NOR3 LVC1G27 e um novo AHC74:
+36 CIs no vídeo, um a mais. Contadores H/RUN/SLOT compartilham ramo, contadores
+V compartilham outro; terminais de linha/quadro registrados em P3, clock de
+captura exportado depois do buffer. Backend continua sem clear assíncrono.
+
+Alternativas: manter atrasos iguais na simulação não fecha skew; reagrupar só
+o anel passou nos ensaios intermediários mas deixa outros caminhos a resolver;
+um clock driver diferente exige fonte, carga e condições garantidas próprias.
+Preservar CPU/ISA/X/SP/flags/VGA/WAIT/COMMIT e firmware. Fase de reset passa de
+P3=1 para quatro zeros, com auto-injeção na primeira borda válida e saídas
+inibidas durante partida. Custo de mais um CI aceito por equivalência funcional
+e redução da dependência entre ramos. Não remove requisito de análise global.
+
+Aceitação desta etapa: XML/pinos conferidos, fases/raster/SLOT/quadros e reset,
+matriz digital selecionada com monitores estritos downstream, regressões
+CPU/boot/teclado/WE com marcadores completos e negativos detectados, fontes e
+hashes auditados. Não equivale a slew/MTBF/PVT completo ou fabricação. ERC44
+sem exceções, oscilador/BOM/energia/DAC/PCB/protótipo permanecem abertos.
+
 ## ADR E24 — Integrar teclado por pinos e usar AHC174 no estado do controlador
 
 26/11/2026: integrar o periférico NET17 à CPU/raster/memórias, substituindo MMIO/colunas procedurais; preservar mapa, 26 instruções, X, SP, flags, VGA, WAIT, payload e COMMIT único. Criar hardware/system_access separado, trocando apenas os três HC174 de estado por AHC174 de mesma pinagem. Não acrescentar nem remover CIs: 31 pacotes/526 pinos.

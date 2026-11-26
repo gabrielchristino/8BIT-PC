@@ -36,3 +36,7 @@ revisions/** -text
 /verification/net21/**/*.log -whitespace
 # Exact PowerShell capture of the intermediate builder error.
 /verification/net21/development/missing-csv/output.txt -text whitespace=cr-at-eol
+# Exact NET22 compiled fixtures and native console evidence.
+/verification/net22/**/*.sv -whitespace
+/verification/net22/**/*.log -whitespace
+/verification/net22/development/missing-et/output.txt -text whitespace=cr-at-eol

@@ -1,3 +1,12 @@
+## Continuidade NET-22
+
+- Leia docs/engineering/NET22.md. hardware/video_common_clock é variante separada com36CIs, +1 sobre vídeo anterior. U9 AHC164/U10 LVC1G27 reais, U36 registra H/V emP3. Não inventar AHC27 nem código comercial completo de oscilador.
+- Reset das fases agora0000, auto-injeção pela NOR; saídas inibidas na partida. MASTER quatro pinos comuns; H/RUN/SLOT comuns, V comum, captura após buffer. Backend sem clear assíncrono. Manter V_EN em ENP, sem recadear ENT.
+- Matriz384 varia atrasos digitais selecionados/CQ/NOR/duty; não é slew elétrico, jitter, MTBF ou todo PVT. Outros ramos CPU/controlador continuam abertos. Orçamento50pF não é extração de PCB.
+- Relatório de quadros teve somente data corrigida, original e anotador preservados. Log tardio missing-et é sucesso após correção, não log do erro original. Não reclassificar evidências.
+- Fontes de clock ainda são estímulos. Abracon ACH é pesquisa/configuração candidata, sem código completo homologado/circuito físico. Não adotar ECS2100X direto no trilho5,392V, LVC125A em5V ou CL150pF do AC125 sem resolver conflito do datasheet.
+- ERC parcial44 violações sem exceções. Produção exige energia/POR/consumo, DAC, firmware de eventos, união global/ERC, footprints/PCB/DRC e protótipo; manter diagnostic.asm como falha histórica conhecida.
+
 ## Continuidade NET-21A
 
 - Leia docs/engineering/NET21.md. hardware/schmitt_reset é variante separada de NET20: TPS3808G01DBVR (pinagem DBV), pull-up100k, sense1120/100, duas portas Schmitt antes de RAW_BUFFERED, oito CIs/132pinos/9NC. Não misturar pinagem DRV/TPS3703.

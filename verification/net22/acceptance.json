@@ -1,0 +1,28 @@
+{
+  "date": "2026-11-26",
+  "native_video_ics": 36,
+  "video_ic_delta": 1,
+  "phase_delay_combinations": 384,
+  "pulse_asymmetry_combinations": 256,
+  "frame_scenarios": 3,
+  "frames_per_scenario": 2,
+  "reset_clock_cuts": 160,
+  "master_active_write_cuts": 48,
+  "actual_cpu_write_cuts": 4,
+  "instruction_cases_ideal": 6886,
+  "instruction_cases_per_timed_scenario": 1062,
+  "timed_controller_cq_scenarios": 2,
+  "timed_scan_policies": [
+    0,
+    1
+  ],
+  "ideal_boot_retirements": 132197,
+  "ideal_boot_transactions": 232576,
+  "ideal_boot_frame_pixels": 76800,
+  "ideal_boot_sram_seeded": false,
+  "full_timed_boot_executed": false,
+  "partial_erc_violations": 44,
+  "physical_oscillators_qualified": false,
+  "all_clock_paths_qualified": false,
+  "production_released": false
+}

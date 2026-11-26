@@ -1,0 +1,2106 @@
+{
+  "date": "2026-11-26",
+  "base_git_commit": "03e224b48ec1657ea2adfd8330c9d3bf4d262255",
+  "scope": "Read-only clock pin/buffer topology audit. Direct D-Q split branches identified, not yet a reproduced timing failure or complete STA.",
+  "modules": [
+    {
+      "module": "cpu_global",
+      "clock_load_nets": {
+        "GLOBAL_BUF_1_2": [
+          {
+            "reference": "U1",
+            "part": "SN74HC273",
+            "function": "CLK"
+          },
+          {
+            "reference": "U2",
+            "part": "SN74HC273",
+            "function": "CLK"
+          }
+        ],
+        "bus__CLK_CTRL": [
+          {
+            "reference": "U13",
+            "part": "SN74HC174",
+            "function": "CLK"
+          },
+          {
+            "reference": "U14",
+            "part": "SN74HC74",
+            "function": "CLK0"
+          },
+          {
+            "reference": "U14",
+            "part": "SN74HC74",
+            "function": "CLK1"
+          }
+        ],
+        "bus__CLK_ADDR": [
+          {
+            "reference": "U15",
+            "part": "SN74HC377",
+            "function": "CLK"
+          },
+          {
+            "reference": "U16",
+            "part": "SN74HC377",
+            "function": "CLK"
+          }
+        ],
+        "bus__CLK_WRITE": [
+          {
+            "reference": "U17",
+            "part": "SN74HC377",
+            "function": "CLK"
+          },
+          {
+            "reference": "U18",
+            "part": "SN74HC377",
+            "function": "CLK"
+          }
+        ],
+        "bus__CLK_READ": [
+          {
+            "reference": "U19",
+            "part": "SN74HC377",
+            "function": "CLK"
+          }
+        ],
+        "GLOBAL_BUF_11_1": [
+          {
+            "reference": "U30",
+            "part": "SN74HC161",
+            "function": "CLK"
+          },
+          {
+            "reference": "U31",
+            "part": "SN74HC74",
+            "function": "CLK0"
+          },
+          {
+            "reference": "U31",
+            "part": "SN74HC74",
+            "function": "CLK1"
+          }
+        ],
+        "micro__CLK_WORD1": [
+          {
+            "reference": "U32",
+            "part": "SN74HC74",
+            "function": "CLK0"
+          },
+          {
+            "reference": "U40",
+            "part": "SN74HCT377",
+            "function": "CLK"
+          },
+          {
+            "reference": "U42",
+            "part": "SN74HCT377",
+            "function": "CLK"
+          }
+        ],
+        "micro__CLK_IR": [
+          {
+            "reference": "U33",
+            "part": "SN74HC377",
+            "function": "CLK"
+          }
+        ],
+        "micro__CLK_WORD0": [
+          {
+            "reference": "U36",
+            "part": "SN74HCT377",
+            "function": "CLK"
+          },
+          {
+            "reference": "U38",
+            "part": "SN74HCT377",
+            "function": "CLK"
+          }
+        ],
+        "registers__CLK_REG": [
+          {
+            "reference": "U113",
+            "part": "SN74HC273",
+            "function": "CLK"
+          },
+          {
+            "reference": "U114",
+            "part": "SN74HC273",
+            "function": "CLK"
+          },
+          {
+            "reference": "U115",
+            "part": "SN74HC273",
+            "function": "CLK"
+          },
+          {
+            "reference": "U116",
+            "part": "SN74HC273",
+            "function": "CLK"
+          }
+        ],
+        "registers__CLK_FLAGS": [
+          {
+            "reference": "U117",
+            "part": "SN74HC74",
+            "function": "CLK0"
+          },
+          {
+            "reference": "U117",
+            "part": "SN74HC74",
+            "function": "CLK1"
+          }
+        ],
+        "address__CLK_PC": [
+          {
+            "reference": "U153",
+            "part": "SN74HC273",
+            "function": "CLK"
+          },
+          {
+            "reference": "U154",
+            "part": "SN74HC273",
+            "function": "CLK"
+          }
+        ],
+        "execution__CLK_CORE": [
+          {
+            "reference": "U198",
+            "part": "SN74HC174",
+            "function": "CLK"
+          },
+          {
+            "reference": "U199",
+            "part": "SN74HC174",
+            "function": "CLK"
+          }
+        ],
+        "x__CLK_X": [
+          {
+            "reference": "U249",
+            "part": "SN74HC273",
+            "function": "CLK"
+          },
+          {
+            "reference": "U250",
+            "part": "SN74HC273",
+            "function": "CLK"
+          }
+        ]
+      },
+      "routes": [
+        {
+          "root": "CLK",
+          "clock_net": "GLOBAL_BUF_1_2",
+          "buffers": [
+            {
+              "reference": "U267",
+              "part": "SN74HC125",
+              "channel": 2,
+              "output": "GLOBAL_BUF_1_2"
+            }
+          ],
+          "load": {
+            "reference": "U1",
+            "part": "SN74HC273",
+            "function": "CLK"
+          }
+        },
+        {
+          "root": "CLK",
+          "clock_net": "GLOBAL_BUF_1_2",
+          "buffers": [
+            {
+              "reference": "U267",
+              "part": "SN74HC125",
+              "channel": 2,
+              "output": "GLOBAL_BUF_1_2"
+            }
+          ],
+          "load": {
+            "reference": "U2",
+            "part": "SN74HC273",
+            "function": "CLK"
+          }
+        },
+        {
+          "root": "CLK",
+          "clock_net": "bus__CLK_CTRL",
+          "buffers": [
+            {
+              "reference": "U267",
+              "part": "SN74HC125",
+              "channel": 2,
+              "output": "GLOBAL_BUF_1_2"
+            },
+            {
+              "reference": "U20",
+              "part": "SN74HC125",
+              "channel": 0,
+              "output": "bus__CLK_CTRL"
+            }
+          ],
+          "load": {
+            "reference": "U13",
+            "part": "SN74HC174",
+            "function": "CLK"
+          }
+        },
+        {
+          "root": "CLK",
+          "clock_net": "bus__CLK_CTRL",
+          "buffers": [
+            {
+              "reference": "U267",
+              "part": "SN74HC125",
+              "channel": 2,
+              "output": "GLOBAL_BUF_1_2"
+            },
+            {
+              "reference": "U20",
+              "part": "SN74HC125",
+              "channel": 0,
+              "output": "bus__CLK_CTRL"
+            }
+          ],
+          "load": {
+            "reference": "U14",
+            "part": "SN74HC74",
+            "function": "CLK0"
+          }
+        },
+        {
+          "root": "CLK",
+          "clock_net": "bus__CLK_CTRL",
+          "buffers": [
+            {
+              "reference": "U267",
+              "part": "SN74HC125",
+              "channel": 2,
+              "output": "GLOBAL_BUF_1_2"
+            },
+            {
+              "reference": "U20",
+              "part": "SN74HC125",
+              "channel": 0,
+              "output": "bus__CLK_CTRL"
+            }
+          ],
+          "load": {
+            "reference": "U14",
+            "part": "SN74HC74",
+            "function": "CLK1"
+          }
+        },
+        {
+          "root": "CLK",
+          "clock_net": "bus__CLK_ADDR",
+          "buffers": [
+            {
+              "reference": "U267",
+              "part": "SN74HC125",
+              "channel": 2,
+              "output": "GLOBAL_BUF_1_2"
+            },
+            {
+              "reference": "U20",
+              "part": "SN74HC125",
+              "channel": 1,
+              "output": "bus__CLK_ADDR"
+            }
+          ],
+          "load": {
+            "reference": "U15",
+            "part": "SN74HC377",
+            "function": "CLK"
+          }
+        },
+        {
+          "root": "CLK",
+          "clock_net": "bus__CLK_ADDR",
+          "buffers": [
+            {
+              "reference": "U267",
+              "part": "SN74HC125",
+              "channel": 2,
+              "output": "GLOBAL_BUF_1_2"
+            },
+            {
+              "reference": "U20",
+              "part": "SN74HC125",
+              "channel": 1,
+              "output": "bus__CLK_ADDR"
+            }
+          ],
+          "load": {
+            "reference": "U16",
+            "part": "SN74HC377",
+            "function": "CLK"
+          }
+        },
+        {
+          "root": "CLK",
+          "clock_net": "bus__CLK_WRITE",
+          "buffers": [
+            {
+              "reference": "U267",
+              "part": "SN74HC125",
+              "channel": 3,
+              "output": "GLOBAL_BUF_1_3"
+            },
+            {
+              "reference": "U20",
+              "part": "SN74HC125",
+              "channel": 2,
+              "output": "bus__CLK_WRITE"
+            }
+          ],
+          "load": {
+            "reference": "U17",
+            "part": "SN74HC377",
+            "function": "CLK"
+          }
+        },
+        {
+          "root": "CLK",
+          "clock_net": "bus__CLK_WRITE",
+          "buffers": [
+            {
+              "reference": "U267",
+              "part": "SN74HC125",
+              "channel": 3,
+              "output": "GLOBAL_BUF_1_3"
+            },
+            {
+              "reference": "U20",
+              "part": "SN74HC125",
+              "channel": 2,
+              "output": "bus__CLK_WRITE"
+            }
+          ],
+          "load": {
+            "reference": "U18",
+            "part": "SN74HC377",
+            "function": "CLK"
+          }
+        },
+        {
+          "root": "CLK",
+          "clock_net": "bus__CLK_READ",
+          "buffers": [
+            {
+              "reference": "U267",
+              "part": "SN74HC125",
+              "channel": 3,
+              "output": "GLOBAL_BUF_1_3"
+            },
+            {
+              "reference": "U20",
+              "part": "SN74HC125",
+              "channel": 3,
+              "output": "bus__CLK_READ"
+            }
+          ],
+          "load": {
+            "reference": "U19",
+            "part": "SN74HC377",
+            "function": "CLK"
+          }
+        },
+        {
+          "root": "CLK",
+          "clock_net": "GLOBAL_BUF_11_1",
+          "buffers": [
+            {
+              "reference": "U267",
+              "part": "SN74HC125",
+              "channel": 3,
+              "output": "GLOBAL_BUF_1_3"
+            },
+            {
+              "reference": "U44",
+              "part": "SN74HC125",
+              "channel": 0,
+              "output": "CLK_EXEC"
+            },
+            {
+              "reference": "U277",
+              "part": "SN74HC125",
+              "channel": 1,
+              "output": "GLOBAL_BUF_11_1"
+            }
+          ],
+          "load": {
+            "reference": "U30",
+            "part": "SN74HC161",
+            "function": "CLK"
+          }
+        },
+        {
+          "root": "CLK",
+          "clock_net": "GLOBAL_BUF_11_1",
+          "buffers": [
+            {
+              "reference": "U267",
+              "part": "SN74HC125",
+              "channel": 3,
+              "output": "GLOBAL_BUF_1_3"
+            },
+            {
+              "reference": "U44",
+              "part": "SN74HC125",
+              "channel": 0,
+              "output": "CLK_EXEC"
+            },
+            {
+              "reference": "U277",
+              "part": "SN74HC125",
+              "channel": 1,
+              "output": "GLOBAL_BUF_11_1"
+            }
+          ],
+          "load": {
+            "reference": "U31",
+            "part": "SN74HC74",
+            "function": "CLK0"
+          }
+        },
+        {
+          "root": "CLK",
+          "clock_net": "GLOBAL_BUF_11_1",
+          "buffers": [
+            {
+              "reference": "U267",
+              "part": "SN74HC125",
+              "channel": 3,
+              "output": "GLOBAL_BUF_1_3"
+            },
+            {
+              "reference": "U44",
+              "part": "SN74HC125",
+              "channel": 0,
+              "output": "CLK_EXEC"
+            },
+            {
+              "reference": "U277",
+              "part": "SN74HC125",
+              "channel": 1,
+              "output": "GLOBAL_BUF_11_1"
+            }
+          ],
+          "load": {
+            "reference": "U31",
+            "part": "SN74HC74",
+            "function": "CLK1"
+          }
+        },
+        {
+          "root": "CLK",
+          "clock_net": "registers__CLK_REG",
+          "buffers": [
+            {
+              "reference": "U267",
+              "part": "SN74HC125",
+              "channel": 3,
+              "output": "GLOBAL_BUF_1_3"
+            },
+            {
+              "reference": "U44",
+              "part": "SN74HC125",
+              "channel": 0,
+              "output": "CLK_EXEC"
+            },
+            {
+              "reference": "U277",
+              "part": "SN74HC125",
+              "channel": 1,
+              "output": "GLOBAL_BUF_11_1"
+            },
+            {
+              "reference": "U138",
+              "part": "SN74HC125",
+              "channel": 0,
+              "output": "registers__CLK_REG"
+            }
+          ],
+          "load": {
+            "reference": "U113",
+            "part": "SN74HC273",
+            "function": "CLK"
+          }
+        },
+        {
+          "root": "CLK",
+          "clock_net": "registers__CLK_REG",
+          "buffers": [
+            {
+              "reference": "U267",
+              "part": "SN74HC125",
+              "channel": 3,
+              "output": "GLOBAL_BUF_1_3"
+            },
+            {
+              "reference": "U44",
+              "part": "SN74HC125",
+              "channel": 0,
+              "output": "CLK_EXEC"
+            },
+            {
+              "reference": "U277",
+              "part": "SN74HC125",
+              "channel": 1,
+              "output": "GLOBAL_BUF_11_1"
+            },
+            {
+              "reference": "U138",
+              "part": "SN74HC125",
+              "channel": 0,
+              "output": "registers__CLK_REG"
+            }
+          ],
+          "load": {
+            "reference": "U114",
+            "part": "SN74HC273",
+            "function": "CLK"
+          }
+        },
+        {
+          "root": "CLK",
+          "clock_net": "registers__CLK_REG",
+          "buffers": [
+            {
+              "reference": "U267",
+              "part": "SN74HC125",
+              "channel": 3,
+              "output": "GLOBAL_BUF_1_3"
+            },
+            {
+              "reference": "U44",
+              "part": "SN74HC125",
+              "channel": 0,
+              "output": "CLK_EXEC"
+            },
+            {
+              "reference": "U277",
+              "part": "SN74HC125",
+              "channel": 1,
+              "output": "GLOBAL_BUF_11_1"
+            },
+            {
+              "reference": "U138",
+              "part": "SN74HC125",
+              "channel": 0,
+              "output": "registers__CLK_REG"
+            }
+          ],
+          "load": {
+            "reference": "U115",
+            "part": "SN74HC273",
+            "function": "CLK"
+          }
+        },
+        {
+          "root": "CLK",
+          "clock_net": "registers__CLK_REG",
+          "buffers": [
+            {
+              "reference": "U267",
+              "part": "SN74HC125",
+              "channel": 3,
+              "output": "GLOBAL_BUF_1_3"
+            },
+            {
+              "reference": "U44",
+              "part": "SN74HC125",
+              "channel": 0,
+              "output": "CLK_EXEC"
+            },
+            {
+              "reference": "U277",
+              "part": "SN74HC125",
+              "channel": 1,
+              "output": "GLOBAL_BUF_11_1"
+            },
+            {
+              "reference": "U138",
+              "part": "SN74HC125",
+              "channel": 0,
+              "output": "registers__CLK_REG"
+            }
+          ],
+          "load": {
+            "reference": "U116",
+            "part": "SN74HC273",
+            "function": "CLK"
+          }
+        },
+        {
+          "root": "CLK",
+          "clock_net": "registers__CLK_FLAGS",
+          "buffers": [
+            {
+              "reference": "U267",
+              "part": "SN74HC125",
+              "channel": 3,
+              "output": "GLOBAL_BUF_1_3"
+            },
+            {
+              "reference": "U44",
+              "part": "SN74HC125",
+              "channel": 0,
+              "output": "CLK_EXEC"
+            },
+            {
+              "reference": "U277",
+              "part": "SN74HC125",
+              "channel": 2,
+              "output": "GLOBAL_BUF_11_2"
+            },
+            {
+              "reference": "U138",
+              "part": "SN74HC125",
+              "channel": 1,
+              "output": "registers__CLK_FLAGS"
+            }
+          ],
+          "load": {
+            "reference": "U117",
+            "part": "SN74HC74",
+            "function": "CLK0"
+          }
+        },
+        {
+          "root": "CLK",
+          "clock_net": "registers__CLK_FLAGS",
+          "buffers": [
+            {
+              "reference": "U267",
+              "part": "SN74HC125",
+              "channel": 3,
+              "output": "GLOBAL_BUF_1_3"
+            },
+            {
+              "reference": "U44",
+              "part": "SN74HC125",
+              "channel": 0,
+              "output": "CLK_EXEC"
+            },
+            {
+              "reference": "U277",
+              "part": "SN74HC125",
+              "channel": 2,
+              "output": "GLOBAL_BUF_11_2"
+            },
+            {
+              "reference": "U138",
+              "part": "SN74HC125",
+              "channel": 1,
+              "output": "registers__CLK_FLAGS"
+            }
+          ],
+          "load": {
+            "reference": "U117",
+            "part": "SN74HC74",
+            "function": "CLK1"
+          }
+        },
+        {
+          "root": "CLK",
+          "clock_net": "address__CLK_PC",
+          "buffers": [
+            {
+              "reference": "U267",
+              "part": "SN74HC125",
+              "channel": 3,
+              "output": "GLOBAL_BUF_1_3"
+            },
+            {
+              "reference": "U44",
+              "part": "SN74HC125",
+              "channel": 0,
+              "output": "CLK_EXEC"
+            },
+            {
+              "reference": "U277",
+              "part": "SN74HC125",
+              "channel": 2,
+              "output": "GLOBAL_BUF_11_2"
+            },
+            {
+              "reference": "U191",
+              "part": "SN74HC125",
+              "channel": 0,
+              "output": "address__CLK_PC"
+            }
+          ],
+          "load": {
+            "reference": "U153",
+            "part": "SN74HC273",
+            "function": "CLK"
+          }
+        },
+        {
+          "root": "CLK",
+          "clock_net": "address__CLK_PC",
+          "buffers": [
+            {
+              "reference": "U267",
+              "part": "SN74HC125",
+              "channel": 3,
+              "output": "GLOBAL_BUF_1_3"
+            },
+            {
+              "reference": "U44",
+              "part": "SN74HC125",
+              "channel": 0,
+              "output": "CLK_EXEC"
+            },
+            {
+              "reference": "U277",
+              "part": "SN74HC125",
+              "channel": 2,
+              "output": "GLOBAL_BUF_11_2"
+            },
+            {
+              "reference": "U191",
+              "part": "SN74HC125",
+              "channel": 0,
+              "output": "address__CLK_PC"
+            }
+          ],
+          "load": {
+            "reference": "U154",
+            "part": "SN74HC273",
+            "function": "CLK"
+          }
+        },
+        {
+          "root": "CLK",
+          "clock_net": "execution__CLK_CORE",
+          "buffers": [
+            {
+              "reference": "U267",
+              "part": "SN74HC125",
+              "channel": 3,
+              "output": "GLOBAL_BUF_1_3"
+            },
+            {
+              "reference": "U44",
+              "part": "SN74HC125",
+              "channel": 0,
+              "output": "CLK_EXEC"
+            },
+            {
+              "reference": "U277",
+              "part": "SN74HC125",
+              "channel": 2,
+              "output": "GLOBAL_BUF_11_2"
+            },
+            {
+              "reference": "U200",
+              "part": "SN74HC125",
+              "channel": 0,
+              "output": "execution__CLK_CORE"
+            }
+          ],
+          "load": {
+            "reference": "U198",
+            "part": "SN74HC174",
+            "function": "CLK"
+          }
+        },
+        {
+          "root": "CLK",
+          "clock_net": "execution__CLK_CORE",
+          "buffers": [
+            {
+              "reference": "U267",
+              "part": "SN74HC125",
+              "channel": 3,
+              "output": "GLOBAL_BUF_1_3"
+            },
+            {
+              "reference": "U44",
+              "part": "SN74HC125",
+              "channel": 0,
+              "output": "CLK_EXEC"
+            },
+            {
+              "reference": "U277",
+              "part": "SN74HC125",
+              "channel": 2,
+              "output": "GLOBAL_BUF_11_2"
+            },
+            {
+              "reference": "U200",
+              "part": "SN74HC125",
+              "channel": 0,
+              "output": "execution__CLK_CORE"
+            }
+          ],
+          "load": {
+            "reference": "U199",
+            "part": "SN74HC174",
+            "function": "CLK"
+          }
+        },
+        {
+          "root": "CLK",
+          "clock_net": "x__CLK_X",
+          "buffers": [
+            {
+              "reference": "U267",
+              "part": "SN74HC125",
+              "channel": 3,
+              "output": "GLOBAL_BUF_1_3"
+            },
+            {
+              "reference": "U44",
+              "part": "SN74HC125",
+              "channel": 0,
+              "output": "CLK_EXEC"
+            },
+            {
+              "reference": "U277",
+              "part": "SN74HC125",
+              "channel": 2,
+              "output": "GLOBAL_BUF_11_2"
+            },
+            {
+              "reference": "U263",
+              "part": "SN74HC125",
+              "channel": 0,
+              "output": "x__CLK_X"
+            }
+          ],
+          "load": {
+            "reference": "U249",
+            "part": "SN74HC273",
+            "function": "CLK"
+          }
+        },
+        {
+          "root": "CLK",
+          "clock_net": "x__CLK_X",
+          "buffers": [
+            {
+              "reference": "U267",
+              "part": "SN74HC125",
+              "channel": 3,
+              "output": "GLOBAL_BUF_1_3"
+            },
+            {
+              "reference": "U44",
+              "part": "SN74HC125",
+              "channel": 0,
+              "output": "CLK_EXEC"
+            },
+            {
+              "reference": "U277",
+              "part": "SN74HC125",
+              "channel": 2,
+              "output": "GLOBAL_BUF_11_2"
+            },
+            {
+              "reference": "U263",
+              "part": "SN74HC125",
+              "channel": 0,
+              "output": "x__CLK_X"
+            }
+          ],
+          "load": {
+            "reference": "U250",
+            "part": "SN74HC273",
+            "function": "CLK"
+          }
+        },
+        {
+          "root": "CLK",
+          "clock_net": "micro__CLK_IR",
+          "buffers": [
+            {
+              "reference": "U267",
+              "part": "SN74HC125",
+              "channel": 3,
+              "output": "GLOBAL_BUF_1_3"
+            },
+            {
+              "reference": "U44",
+              "part": "SN74HC125",
+              "channel": 1,
+              "output": "micro__CLK_IR"
+            }
+          ],
+          "load": {
+            "reference": "U33",
+            "part": "SN74HC377",
+            "function": "CLK"
+          }
+        },
+        {
+          "root": "micro__NEG_CLK_RAW",
+          "clock_net": "micro__CLK_WORD0",
+          "buffers": [
+            {
+              "reference": "U44",
+              "part": "SN74HC125",
+              "channel": 2,
+              "output": "micro__CLK_WORD0"
+            }
+          ],
+          "load": {
+            "reference": "U36",
+            "part": "SN74HCT377",
+            "function": "CLK"
+          }
+        },
+        {
+          "root": "micro__NEG_CLK_RAW",
+          "clock_net": "micro__CLK_WORD0",
+          "buffers": [
+            {
+              "reference": "U44",
+              "part": "SN74HC125",
+              "channel": 2,
+              "output": "micro__CLK_WORD0"
+            }
+          ],
+          "load": {
+            "reference": "U38",
+            "part": "SN74HCT377",
+            "function": "CLK"
+          }
+        },
+        {
+          "root": "micro__NEG_CLK_RAW",
+          "clock_net": "micro__CLK_WORD1",
+          "buffers": [
+            {
+              "reference": "U44",
+              "part": "SN74HC125",
+              "channel": 3,
+              "output": "micro__CLK_WORD1"
+            }
+          ],
+          "load": {
+            "reference": "U32",
+            "part": "SN74HC74",
+            "function": "CLK0"
+          }
+        },
+        {
+          "root": "micro__NEG_CLK_RAW",
+          "clock_net": "micro__CLK_WORD1",
+          "buffers": [
+            {
+              "reference": "U44",
+              "part": "SN74HC125",
+              "channel": 3,
+              "output": "micro__CLK_WORD1"
+            }
+          ],
+          "load": {
+            "reference": "U40",
+            "part": "SN74HCT377",
+            "function": "CLK"
+          }
+        },
+        {
+          "root": "micro__NEG_CLK_RAW",
+          "clock_net": "micro__CLK_WORD1",
+          "buffers": [
+            {
+              "reference": "U44",
+              "part": "SN74HC125",
+              "channel": 3,
+              "output": "micro__CLK_WORD1"
+            }
+          ],
+          "load": {
+            "reference": "U42",
+            "part": "SN74HCT377",
+            "function": "CLK"
+          }
+        }
+      ],
+      "direct_ff_feedback_across_clock_branches": [
+        {
+          "source": {
+            "reference": "U31",
+            "bit": 1,
+            "clock": "GLOBAL_BUF_11_1",
+            "d": "micro__G_19",
+            "q": "micro__ADDRESS_TOKEN"
+          },
+          "target": {
+            "reference": "U32",
+            "bit": 0,
+            "clock": "micro__CLK_WORD1",
+            "d": "micro__ADDRESS_TOKEN",
+            "q": "micro__WORD_TOKEN"
+          },
+          "clock_skew_bound_ns": null,
+          "status": "OPEN: nominal equal buffer delays do not bound independent branch skew"
+        }
+      ]
+    },
+    {
+      "module": "video_system",
+      "clock_load_nets": {
+        "BUF_2_0": [
+          {
+            "reference": "U1",
+            "part": "SN74LV161A",
+            "function": "CLK"
+          },
+          {
+            "reference": "U2",
+            "part": "SN74LV161A",
+            "function": "CLK"
+          },
+          {
+            "reference": "U3",
+            "part": "SN74LV161A",
+            "function": "CLK"
+          },
+          {
+            "reference": "U4",
+            "part": "SN74LV161A",
+            "function": "CLK"
+          }
+        ],
+        "BUF_2_1": [
+          {
+            "reference": "U5",
+            "part": "SN74LV161A",
+            "function": "CLK"
+          },
+          {
+            "reference": "U11",
+            "part": "SN74AHC74",
+            "function": "CLK1"
+          },
+          {
+            "reference": "U12",
+            "part": "SN74AHC74",
+            "function": "CLK1"
+          }
+        ],
+        "P3": [
+          {
+            "reference": "U6",
+            "part": "SN74AHC574",
+            "function": "CLK"
+          },
+          {
+            "reference": "U7",
+            "part": "SN74AHC574",
+            "function": "CLK"
+          },
+          {
+            "reference": "U12",
+            "part": "SN74AHC74",
+            "function": "CLK0"
+          }
+        ],
+        "BUF_2_2": [
+          {
+            "reference": "U8",
+            "part": "SN74AHC74",
+            "function": "CLK0"
+          },
+          {
+            "reference": "U8",
+            "part": "SN74AHC74",
+            "function": "CLK1"
+          },
+          {
+            "reference": "U9",
+            "part": "SN74AHC74",
+            "function": "CLK0"
+          },
+          {
+            "reference": "U9",
+            "part": "SN74AHC74",
+            "function": "CLK1"
+          }
+        ],
+        "BUF_2_3": [
+          {
+            "reference": "U10",
+            "part": "SN74AHC74",
+            "function": "CLK0"
+          },
+          {
+            "reference": "U10",
+            "part": "SN74AHC74",
+            "function": "CLK1"
+          },
+          {
+            "reference": "U11",
+            "part": "SN74AHC74",
+            "function": "CLK0"
+          }
+        ]
+      },
+      "routes": [
+        {
+          "root": "MASTER",
+          "clock_net": "BUF_2_2",
+          "buffers": [
+            {
+              "reference": "U34",
+              "part": "SN74AHC125",
+              "channel": 2,
+              "output": "BUF_2_2"
+            }
+          ],
+          "load": {
+            "reference": "U8",
+            "part": "SN74AHC74",
+            "function": "CLK0"
+          }
+        },
+        {
+          "root": "MASTER",
+          "clock_net": "BUF_2_2",
+          "buffers": [
+            {
+              "reference": "U34",
+              "part": "SN74AHC125",
+              "channel": 2,
+              "output": "BUF_2_2"
+            }
+          ],
+          "load": {
+            "reference": "U8",
+            "part": "SN74AHC74",
+            "function": "CLK1"
+          }
+        },
+        {
+          "root": "MASTER",
+          "clock_net": "BUF_2_2",
+          "buffers": [
+            {
+              "reference": "U34",
+              "part": "SN74AHC125",
+              "channel": 2,
+              "output": "BUF_2_2"
+            }
+          ],
+          "load": {
+            "reference": "U9",
+            "part": "SN74AHC74",
+            "function": "CLK0"
+          }
+        },
+        {
+          "root": "MASTER",
+          "clock_net": "BUF_2_2",
+          "buffers": [
+            {
+              "reference": "U34",
+              "part": "SN74AHC125",
+              "channel": 2,
+              "output": "BUF_2_2"
+            }
+          ],
+          "load": {
+            "reference": "U9",
+            "part": "SN74AHC74",
+            "function": "CLK1"
+          }
+        },
+        {
+          "root": "MASTER",
+          "clock_net": "BUF_2_3",
+          "buffers": [
+            {
+              "reference": "U34",
+              "part": "SN74AHC125",
+              "channel": 3,
+              "output": "BUF_2_3"
+            }
+          ],
+          "load": {
+            "reference": "U10",
+            "part": "SN74AHC74",
+            "function": "CLK0"
+          }
+        },
+        {
+          "root": "MASTER",
+          "clock_net": "BUF_2_3",
+          "buffers": [
+            {
+              "reference": "U34",
+              "part": "SN74AHC125",
+              "channel": 3,
+              "output": "BUF_2_3"
+            }
+          ],
+          "load": {
+            "reference": "U10",
+            "part": "SN74AHC74",
+            "function": "CLK1"
+          }
+        },
+        {
+          "root": "MASTER",
+          "clock_net": "BUF_2_3",
+          "buffers": [
+            {
+              "reference": "U34",
+              "part": "SN74AHC125",
+              "channel": 3,
+              "output": "BUF_2_3"
+            }
+          ],
+          "load": {
+            "reference": "U11",
+            "part": "SN74AHC74",
+            "function": "CLK0"
+          }
+        },
+        {
+          "root": "P0",
+          "clock_net": "BUF_2_0",
+          "buffers": [
+            {
+              "reference": "U34",
+              "part": "SN74AHC125",
+              "channel": 0,
+              "output": "BUF_2_0"
+            }
+          ],
+          "load": {
+            "reference": "U1",
+            "part": "SN74LV161A",
+            "function": "CLK"
+          }
+        },
+        {
+          "root": "P0",
+          "clock_net": "BUF_2_0",
+          "buffers": [
+            {
+              "reference": "U34",
+              "part": "SN74AHC125",
+              "channel": 0,
+              "output": "BUF_2_0"
+            }
+          ],
+          "load": {
+            "reference": "U2",
+            "part": "SN74LV161A",
+            "function": "CLK"
+          }
+        },
+        {
+          "root": "P0",
+          "clock_net": "BUF_2_0",
+          "buffers": [
+            {
+              "reference": "U34",
+              "part": "SN74AHC125",
+              "channel": 0,
+              "output": "BUF_2_0"
+            }
+          ],
+          "load": {
+            "reference": "U3",
+            "part": "SN74LV161A",
+            "function": "CLK"
+          }
+        },
+        {
+          "root": "P0",
+          "clock_net": "BUF_2_0",
+          "buffers": [
+            {
+              "reference": "U34",
+              "part": "SN74AHC125",
+              "channel": 0,
+              "output": "BUF_2_0"
+            }
+          ],
+          "load": {
+            "reference": "U4",
+            "part": "SN74LV161A",
+            "function": "CLK"
+          }
+        },
+        {
+          "root": "P0",
+          "clock_net": "BUF_2_1",
+          "buffers": [
+            {
+              "reference": "U34",
+              "part": "SN74AHC125",
+              "channel": 1,
+              "output": "BUF_2_1"
+            }
+          ],
+          "load": {
+            "reference": "U5",
+            "part": "SN74LV161A",
+            "function": "CLK"
+          }
+        },
+        {
+          "root": "P0",
+          "clock_net": "BUF_2_1",
+          "buffers": [
+            {
+              "reference": "U34",
+              "part": "SN74AHC125",
+              "channel": 1,
+              "output": "BUF_2_1"
+            }
+          ],
+          "load": {
+            "reference": "U11",
+            "part": "SN74AHC74",
+            "function": "CLK1"
+          }
+        },
+        {
+          "root": "P0",
+          "clock_net": "BUF_2_1",
+          "buffers": [
+            {
+              "reference": "U34",
+              "part": "SN74AHC125",
+              "channel": 1,
+              "output": "BUF_2_1"
+            }
+          ],
+          "load": {
+            "reference": "U12",
+            "part": "SN74AHC74",
+            "function": "CLK1"
+          }
+        },
+        {
+          "root": "P3",
+          "clock_net": "P3",
+          "buffers": [],
+          "load": {
+            "reference": "U6",
+            "part": "SN74AHC574",
+            "function": "CLK"
+          }
+        },
+        {
+          "root": "P3",
+          "clock_net": "P3",
+          "buffers": [],
+          "load": {
+            "reference": "U7",
+            "part": "SN74AHC574",
+            "function": "CLK"
+          }
+        },
+        {
+          "root": "P3",
+          "clock_net": "P3",
+          "buffers": [],
+          "load": {
+            "reference": "U12",
+            "part": "SN74AHC74",
+            "function": "CLK0"
+          }
+        }
+      ],
+      "direct_ff_feedback_across_clock_branches": [
+        {
+          "source": {
+            "reference": "U9",
+            "bit": 1,
+            "clock": "BUF_2_2",
+            "d": "BUF_2_1",
+            "q": "P1"
+          },
+          "target": {
+            "reference": "U10",
+            "bit": 0,
+            "clock": "BUF_2_3",
+            "d": "P1",
+            "q": "P2"
+          },
+          "clock_skew_bound_ns": null,
+          "status": "OPEN: nominal equal buffer delays do not bound independent branch skew"
+        },
+        {
+          "source": {
+            "reference": "U10",
+            "bit": 1,
+            "clock": "BUF_2_3",
+            "d": "P2",
+            "q": "P3"
+          },
+          "target": {
+            "reference": "U9",
+            "bit": 0,
+            "clock": "BUF_2_2",
+            "d": "P3",
+            "q": "P0"
+          },
+          "clock_skew_bound_ns": null,
+          "status": "OPEN: nominal equal buffer delays do not bound independent branch skew"
+        }
+      ]
+    },
+    {
+      "module": "system_access",
+      "clock_load_nets": {
+        "BUF_3_3": [
+          {
+            "reference": "U1",
+            "part": "SN74AHC174",
+            "function": "CLK"
+          },
+          {
+            "reference": "U2",
+            "part": "SN74AHC174",
+            "function": "CLK"
+          },
+          {
+            "reference": "U3",
+            "part": "SN74AHC174",
+            "function": "CLK"
+          },
+          {
+            "reference": "U4",
+            "part": "SN74HC74",
+            "function": "CLK0"
+          }
+        ],
+        "BUF_3_4": [
+          {
+            "reference": "U4",
+            "part": "SN74HC74",
+            "function": "CLK1"
+          },
+          {
+            "reference": "U5",
+            "part": "SN74HC377",
+            "function": "CLK"
+          },
+          {
+            "reference": "U6",
+            "part": "SN74HC377",
+            "function": "CLK"
+          },
+          {
+            "reference": "U7",
+            "part": "SN74HC377",
+            "function": "CLK"
+          }
+        ],
+        "BUF_4_1": [
+          {
+            "reference": "U8",
+            "part": "SN74HCT377",
+            "function": "CLK"
+          }
+        ]
+      },
+      "routes": [
+        {
+          "root": "CLK",
+          "clock_net": "BUF_3_3",
+          "buffers": [
+            {
+              "reference": "U29",
+              "part": "SN74AHC125",
+              "channel": 3,
+              "output": "BUF_3_3"
+            }
+          ],
+          "load": {
+            "reference": "U1",
+            "part": "SN74AHC174",
+            "function": "CLK"
+          }
+        },
+        {
+          "root": "CLK",
+          "clock_net": "BUF_3_3",
+          "buffers": [
+            {
+              "reference": "U29",
+              "part": "SN74AHC125",
+              "channel": 3,
+              "output": "BUF_3_3"
+            }
+          ],
+          "load": {
+            "reference": "U2",
+            "part": "SN74AHC174",
+            "function": "CLK"
+          }
+        },
+        {
+          "root": "CLK",
+          "clock_net": "BUF_3_3",
+          "buffers": [
+            {
+              "reference": "U29",
+              "part": "SN74AHC125",
+              "channel": 3,
+              "output": "BUF_3_3"
+            }
+          ],
+          "load": {
+            "reference": "U3",
+            "part": "SN74AHC174",
+            "function": "CLK"
+          }
+        },
+        {
+          "root": "CLK",
+          "clock_net": "BUF_3_3",
+          "buffers": [
+            {
+              "reference": "U29",
+              "part": "SN74AHC125",
+              "channel": 3,
+              "output": "BUF_3_3"
+            }
+          ],
+          "load": {
+            "reference": "U4",
+            "part": "SN74HC74",
+            "function": "CLK0"
+          }
+        },
+        {
+          "root": "CLK",
+          "clock_net": "BUF_3_4",
+          "buffers": [
+            {
+              "reference": "U30",
+              "part": "SN74AHC125",
+              "channel": 0,
+              "output": "BUF_3_4"
+            }
+          ],
+          "load": {
+            "reference": "U4",
+            "part": "SN74HC74",
+            "function": "CLK1"
+          }
+        },
+        {
+          "root": "CLK",
+          "clock_net": "BUF_3_4",
+          "buffers": [
+            {
+              "reference": "U30",
+              "part": "SN74AHC125",
+              "channel": 0,
+              "output": "BUF_3_4"
+            }
+          ],
+          "load": {
+            "reference": "U5",
+            "part": "SN74HC377",
+            "function": "CLK"
+          }
+        },
+        {
+          "root": "CLK",
+          "clock_net": "BUF_3_4",
+          "buffers": [
+            {
+              "reference": "U30",
+              "part": "SN74AHC125",
+              "channel": 0,
+              "output": "BUF_3_4"
+            }
+          ],
+          "load": {
+            "reference": "U6",
+            "part": "SN74HC377",
+            "function": "CLK"
+          }
+        },
+        {
+          "root": "CLK",
+          "clock_net": "BUF_3_4",
+          "buffers": [
+            {
+              "reference": "U30",
+              "part": "SN74AHC125",
+              "channel": 0,
+              "output": "BUF_3_4"
+            }
+          ],
+          "load": {
+            "reference": "U7",
+            "part": "SN74HC377",
+            "function": "CLK"
+          }
+        },
+        {
+          "root": "CLK",
+          "clock_net": "BUF_4_1",
+          "buffers": [
+            {
+              "reference": "U30",
+              "part": "SN74AHC125",
+              "channel": 1,
+              "output": "BUF_4_1"
+            }
+          ],
+          "load": {
+            "reference": "U8",
+            "part": "SN74HCT377",
+            "function": "CLK"
+          }
+        }
+      ],
+      "direct_ff_feedback_across_clock_branches": [
+        {
+          "source": {
+            "reference": "U4",
+            "bit": 0,
+            "clock": "BUF_3_3",
+            "d": "REQUEST_RAW",
+            "q": "REQ1"
+          },
+          "target": {
+            "reference": "U4",
+            "bit": 1,
+            "clock": "BUF_3_4",
+            "d": "REQ1",
+            "q": "REQ2"
+          },
+          "clock_skew_bound_ns": null,
+          "status": "OPEN: nominal equal buffer delays do not bound independent branch skew"
+        }
+      ]
+    },
+    {
+      "module": "keyboard_500",
+      "clock_load_nets": {
+        "BUF_1_0": [
+          {
+            "reference": "U1",
+            "part": "SN74HC174",
+            "function": "CLK"
+          },
+          {
+            "reference": "U7",
+            "part": "SN74AHC574",
+            "function": "CLK"
+          },
+          {
+            "reference": "U8",
+            "part": "SN74AHC574",
+            "function": "CLK"
+          },
+          {
+            "reference": "U9",
+            "part": "SN74AHC574",
+            "function": "CLK"
+          }
+        ],
+        "BUF_1_1": [
+          {
+            "reference": "U10",
+            "part": "SN74AHC574",
+            "function": "CLK"
+          },
+          {
+            "reference": "U11",
+            "part": "SN74LV161A",
+            "function": "CLK"
+          },
+          {
+            "reference": "U12",
+            "part": "SN74LV161A",
+            "function": "CLK"
+          },
+          {
+            "reference": "U13",
+            "part": "SN74LV161A",
+            "function": "CLK"
+          }
+        ],
+        "BUF_1_2": [
+          {
+            "reference": "U14",
+            "part": "SN74LV161A",
+            "function": "CLK"
+          },
+          {
+            "reference": "U41",
+            "part": "SN74AHC74",
+            "function": "CLK0"
+          },
+          {
+            "reference": "U41",
+            "part": "SN74AHC74",
+            "function": "CLK1"
+          }
+        ]
+      },
+      "routes": [
+        {
+          "root": "CLK",
+          "clock_net": "BUF_1_0",
+          "buffers": [
+            {
+              "reference": "U39",
+              "part": "SN74AHC125",
+              "channel": 0,
+              "output": "BUF_1_0"
+            }
+          ],
+          "load": {
+            "reference": "U1",
+            "part": "SN74HC174",
+            "function": "CLK"
+          }
+        },
+        {
+          "root": "CLK",
+          "clock_net": "BUF_1_0",
+          "buffers": [
+            {
+              "reference": "U39",
+              "part": "SN74AHC125",
+              "channel": 0,
+              "output": "BUF_1_0"
+            }
+          ],
+          "load": {
+            "reference": "U7",
+            "part": "SN74AHC574",
+            "function": "CLK"
+          }
+        },
+        {
+          "root": "CLK",
+          "clock_net": "BUF_1_0",
+          "buffers": [
+            {
+              "reference": "U39",
+              "part": "SN74AHC125",
+              "channel": 0,
+              "output": "BUF_1_0"
+            }
+          ],
+          "load": {
+            "reference": "U8",
+            "part": "SN74AHC574",
+            "function": "CLK"
+          }
+        },
+        {
+          "root": "CLK",
+          "clock_net": "BUF_1_0",
+          "buffers": [
+            {
+              "reference": "U39",
+              "part": "SN74AHC125",
+              "channel": 0,
+              "output": "BUF_1_0"
+            }
+          ],
+          "load": {
+            "reference": "U9",
+            "part": "SN74AHC574",
+            "function": "CLK"
+          }
+        },
+        {
+          "root": "CLK",
+          "clock_net": "BUF_1_1",
+          "buffers": [
+            {
+              "reference": "U39",
+              "part": "SN74AHC125",
+              "channel": 1,
+              "output": "BUF_1_1"
+            }
+          ],
+          "load": {
+            "reference": "U10",
+            "part": "SN74AHC574",
+            "function": "CLK"
+          }
+        },
+        {
+          "root": "CLK",
+          "clock_net": "BUF_1_1",
+          "buffers": [
+            {
+              "reference": "U39",
+              "part": "SN74AHC125",
+              "channel": 1,
+              "output": "BUF_1_1"
+            }
+          ],
+          "load": {
+            "reference": "U11",
+            "part": "SN74LV161A",
+            "function": "CLK"
+          }
+        },
+        {
+          "root": "CLK",
+          "clock_net": "BUF_1_1",
+          "buffers": [
+            {
+              "reference": "U39",
+              "part": "SN74AHC125",
+              "channel": 1,
+              "output": "BUF_1_1"
+            }
+          ],
+          "load": {
+            "reference": "U12",
+            "part": "SN74LV161A",
+            "function": "CLK"
+          }
+        },
+        {
+          "root": "CLK",
+          "clock_net": "BUF_1_1",
+          "buffers": [
+            {
+              "reference": "U39",
+              "part": "SN74AHC125",
+              "channel": 1,
+              "output": "BUF_1_1"
+            }
+          ],
+          "load": {
+            "reference": "U13",
+            "part": "SN74LV161A",
+            "function": "CLK"
+          }
+        },
+        {
+          "root": "CLK",
+          "clock_net": "BUF_1_2",
+          "buffers": [
+            {
+              "reference": "U39",
+              "part": "SN74AHC125",
+              "channel": 2,
+              "output": "BUF_1_2"
+            }
+          ],
+          "load": {
+            "reference": "U14",
+            "part": "SN74LV161A",
+            "function": "CLK"
+          }
+        },
+        {
+          "root": "CLK",
+          "clock_net": "BUF_1_2",
+          "buffers": [
+            {
+              "reference": "U39",
+              "part": "SN74AHC125",
+              "channel": 2,
+              "output": "BUF_1_2"
+            }
+          ],
+          "load": {
+            "reference": "U41",
+            "part": "SN74AHC74",
+            "function": "CLK0"
+          }
+        },
+        {
+          "root": "CLK",
+          "clock_net": "BUF_1_2",
+          "buffers": [
+            {
+              "reference": "U39",
+              "part": "SN74AHC125",
+              "channel": 2,
+              "output": "BUF_1_2"
+            }
+          ],
+          "load": {
+            "reference": "U41",
+            "part": "SN74AHC74",
+            "function": "CLK1"
+          }
+        }
+      ],
+      "direct_ff_feedback_across_clock_branches": []
+    },
+    {
+      "module": "schmitt_reset",
+      "clock_load_nets": {
+        "BANK_RESET_CLK": [
+          {
+            "reference": "U3",
+            "part": "SN74AHC74",
+            "function": "CLK0"
+          },
+          {
+            "reference": "U3",
+            "part": "SN74AHC74",
+            "function": "CLK1"
+          }
+        ],
+        "CPU_RESET_CLK": [
+          {
+            "reference": "U5",
+            "part": "SN74AHC74",
+            "function": "CLK0"
+          },
+          {
+            "reference": "U5",
+            "part": "SN74AHC74",
+            "function": "CLK1"
+          }
+        ]
+      },
+      "routes": [
+        {
+          "root": "BACKEND",
+          "clock_net": "BANK_RESET_CLK",
+          "buffers": [
+            {
+              "reference": "U8",
+              "part": "SN74AHC125",
+              "channel": 0,
+              "output": "BACKEND_ROOT"
+            },
+            {
+              "reference": "U8",
+              "part": "SN74AHC125",
+              "channel": 3,
+              "output": "BANK_RESET_CLK"
+            }
+          ],
+          "load": {
+            "reference": "U3",
+            "part": "SN74AHC74",
+            "function": "CLK0"
+          }
+        },
+        {
+          "root": "BACKEND",
+          "clock_net": "BANK_RESET_CLK",
+          "buffers": [
+            {
+              "reference": "U8",
+              "part": "SN74AHC125",
+              "channel": 0,
+              "output": "BACKEND_ROOT"
+            },
+            {
+              "reference": "U8",
+              "part": "SN74AHC125",
+              "channel": 3,
+              "output": "BANK_RESET_CLK"
+            }
+          ],
+          "load": {
+            "reference": "U3",
+            "part": "SN74AHC74",
+            "function": "CLK1"
+          }
+        },
+        {
+          "root": "CPU_CLK",
+          "clock_net": "CPU_RESET_CLK",
+          "buffers": [
+            {
+              "reference": "U7",
+              "part": "SN74AHC125",
+              "channel": 3,
+              "output": "CPU_RESET_CLK"
+            }
+          ],
+          "load": {
+            "reference": "U5",
+            "part": "SN74AHC74",
+            "function": "CLK0"
+          }
+        },
+        {
+          "root": "CPU_CLK",
+          "clock_net": "CPU_RESET_CLK",
+          "buffers": [
+            {
+              "reference": "U7",
+              "part": "SN74AHC125",
+              "channel": 3,
+              "output": "CPU_RESET_CLK"
+            }
+          ],
+          "load": {
+            "reference": "U5",
+            "part": "SN74AHC74",
+            "function": "CLK1"
+          }
+        }
+      ],
+      "direct_ff_feedback_across_clock_branches": []
+    }
+  ],
+  "sources": [
+    {
+      "path": "tools/inventory_clock_tree.py",
+      "sha256": "a2d0fa80713fc052796e63c71b50a1c4146c2d5c0a27b188a238ff5da5a7b89e"
+    },
+    {
+      "path": "hardware/cpu_global/design.json",
+      "sha256": "c36f95f6ef151b8efd92005b65f04163829196471786bae48b039852086de922"
+    },
+    {
+      "path": "hardware/cpu_global/package-functions.json",
+      "sha256": "d2560e3a7ba43386b0a162d3f01cdbba30559aa79d315bc4a30aebbda7354765"
+    },
+    {
+      "path": "hardware/video_system/design.json",
+      "sha256": "43d0ab597016d65b1f27bd8d1478cd35d3e2988b77d45e6f8c1f590c972e89c4"
+    },
+    {
+      "path": "hardware/video_system/package-functions.json",
+      "sha256": "9ffd21f859251424a32383695d0ee49dab2befa02830f18e17318ccef270394d"
+    },
+    {
+      "path": "hardware/system_access/design.json",
+      "sha256": "aeb4be9eed1372cd4b22be78d20dcb659ec387520306f45fa1cd15bd1cdb64a2"
+    },
+    {
+      "path": "hardware/system_access/package-functions.json",
+      "sha256": "def621da744c3c611af720ca3ce761c5b0215bf9fd69ba7aea1aba86413227fd"
+    },
+    {
+      "path": "hardware/keyboard_500/design.json",
+      "sha256": "483c1b3caacd92302ffaad80fb69ec59a635f9f7b4bb10488fcbcec82ab51af5"
+    },
+    {
+      "path": "hardware/keyboard_500/package-functions.json",
+      "sha256": "6ecb5839b7753a8d697238670d390e9fd63fba1521f1efe00c4cf33f85f8544a"
+    },
+    {
+      "path": "hardware/schmitt_reset/design.json",
+      "sha256": "1ebd5fb2dfe997aa75c42e4ca8d01da16f392c5fdcfd66e229d133edef210668"
+    },
+    {
+      "path": "hardware/schmitt_reset/package-functions.json",
+      "sha256": "7a499ec38fcb4d5ffbd35ea3125ee3593df4315f90cf494bf67ffa6983712708"
+    }
+  ],
+  "all_clock_paths_qualified": false,
+  "physical_oscillators_selected": false,
+  "production_released": false
+}

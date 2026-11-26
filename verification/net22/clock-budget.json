@@ -1,0 +1,124 @@
+{
+  "date": "2026-11-26",
+  "sources": [
+    {
+      "path": "tools/check_common_clock_budget.py",
+      "sha256": "205aa0ad1d061835592b154b34485789bc36e69fe62f678ae75e521d2ce08482"
+    },
+    {
+      "path": "references/net22/abracon-ach.pdf",
+      "sha256": "2f4606e8cee9cc822e4e0a551dda82ae3fd24c31855b039a84646f26b443da86"
+    },
+    {
+      "path": "references/net22/sn74ahc164.pdf",
+      "sha256": "e05c6fd9d8a61a9141bc427586a7cf3a2e2109fe9ed2ba2e3378333a4a690cc4"
+    },
+    {
+      "path": "references/net22/sn74lvc1g27.pdf",
+      "sha256": "a569fc21b4fa29cbcf909d803fb5b5ea6fbb08f3983492aebe28669e5911626d"
+    },
+    {
+      "path": "references/ti/sn74ahc125.pdf",
+      "sha256": "c2ca226688e5704e94755fb20907c970ba7e2bac3a18fd6b2c28ce73295d0a3f"
+    },
+    {
+      "path": "references/ti/sn74ahc74.pdf",
+      "sha256": "48edcc29fc5a6fa517a0d54a5f4459c0a784fc3342cb01ce100c75b4befb8db4"
+    },
+    {
+      "path": "references/ti/sn74lv161a.pdf",
+      "sha256": "80d50ee4c3745eb8a94f7ea3aa2a8ae0d95a70a638933406d8e2cb35033f5182"
+    },
+    {
+      "path": "references/ti/sn74ahc08.pdf",
+      "sha256": "5b2bcbcf6b40a36fe9ddccda528bd5bb5ab7516356f540d879129a7d5c3f9036"
+    },
+    {
+      "path": "verification/net22/research/sn74ahc08-budget.txt",
+      "sha256": "a8883282562e1b7366860a20e389044cc3a9d5cfdfb24df7f08fc15edf7e490f"
+    },
+    {
+      "path": "hardware/video_common_clock/design.json",
+      "sha256": "4b41faab4534fde94e21808ef1adc97fd913b7e79373ec38cd4fd0c63c1db5c3"
+    },
+    {
+      "path": "sim/net14c/package_models_async.sv",
+      "sha256": "7b45346f5e25bb73deb33ba9fb02d50e2b020ab527f75fed1244e173300ccfcb"
+    }
+  ],
+  "period_at_initial_temperature_plus50ppm_ns": 39.71996037735352,
+  "cases": [
+    {
+      "path": "MASTER high/low after one buffer",
+      "available_ns": 11.366981179242924,
+      "required_ns": 5,
+      "conditional_margin_ns": 6.366981179242924,
+      "arithmetic_passed": true
+    },
+    {
+      "path": "Phase clock high after shift and buffer",
+      "available_ns": 20.719960377353523,
+      "required_ns": 5,
+      "conditional_margin_ns": 15.719960377353523,
+      "arithmetic_passed": true
+    },
+    {
+      "path": "Shift serial setup: CQ plus NOR plus setup",
+      "available_ns": 23.61996037735352,
+      "required_ns": 4.5,
+      "conditional_margin_ns": 19.11996037735352,
+      "arithmetic_passed": true
+    },
+    {
+      "path": "Shift serial hold: minimum CQ plus NOR",
+      "available_ns": 2,
+      "required_ns": 0.5,
+      "conditional_margin_ns": 1.5,
+      "arithmetic_passed": true
+    },
+    {
+      "path": "Backend D hold on common MASTER branch",
+      "available_ns": 1,
+      "required_ns": 0.5,
+      "conditional_margin_ns": 0.5,
+      "arithmetic_passed": true
+    },
+    {
+      "path": "Vertical enable/load before next P0 branch",
+      "available_ns": 18.719960377353523,
+      "required_ns": 6,
+      "conditional_margin_ns": 12.719960377353523,
+      "arithmetic_passed": true
+    },
+    {
+      "path": "Horizontal enable hold: RUN CQ plus AND",
+      "available_ns": 2,
+      "required_ns": 1,
+      "conditional_margin_ns": 1,
+      "arithmetic_passed": true
+    }
+  ],
+  "reference_extraction": {
+    "source": "references/ti/sn74ahc08.pdf",
+    "revision": "SCLS236L February2024",
+    "transformation": "pdftotext -layout; PDF bytes unchanged",
+    "command": [
+      "pdftotext",
+      "-layout",
+      "references/ti/sn74ahc08.pdf",
+      "verification/net22/research/sn74ahc08-budget.txt"
+    ]
+  },
+  "assumptions": [
+    "ACH duty option T47.5/52.5%, option C50ppm, loading option50pF; configuration only, no full PN approved",
+    "Zero cycle jitter and zero extracted within-branch PCB skew are assumptions, not guarantees",
+    "Digital timing-reference edges, not analog slew/threshold conversion or ringing model",
+    "Selected datasheet/model limits at5V+/-0.5V,CL50pF,-40..85C",
+    "Clock-buffer rise/fall can independently span1..8.5ns; shift output edges1..12.5ns",
+    "Other gate/counter/data/cascade/reset paths are not all included in this selected-path calculation"
+  ],
+  "failures": [],
+  "all_clock_paths_qualified": false,
+  "oscillator_qualified": false,
+  "production_released": false
+}

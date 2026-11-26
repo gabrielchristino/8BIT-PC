@@ -1,0 +1,27 @@
+{
+  "date": "2026-11-26",
+  "files": [
+    {
+      "path": "references/net22/sn74ahc164.pdf",
+      "url": "https://www.ti.com/lit/ds/symlink/sn74ahc164.pdf",
+      "sha256": "e05c6fd9d8a61a9141bc427586a7cf3a2e2109fe9ed2ba2e3378333a4a690cc4",
+      "extraction": "verification/net22/research/sn74ahc164.txt",
+      "extraction_sha256": "b2a52d732d83665031a58dfba56bee28f6570c8e2ab7da03a15622664f7d6f0f",
+      "transformation": "Original PDF unchanged; separate pdftotext -layout; candidate not qualified BOM"
+    },
+    {
+      "path": "references/net22/sn74lvc1g27.pdf",
+      "url": "https://www.ti.com/lit/ds/symlink/sn74lvc1g27.pdf",
+      "sha256": "a569fc21b4fa29cbcf909d803fb5b5ea6fbb08f3983492aebe28669e5911626d",
+      "extraction": "verification/net22/research/sn74lvc1g27.txt",
+      "extraction_sha256": "b8928613acff47b69d1b02b6728dfb9f950f6b0d3af23bb967ac59433f924b9a",
+      "transformation": "Original PDF unchanged; separate pdftotext -layout; candidate not qualified BOM"
+    }
+  ],
+  "sources": [
+    {
+      "path": "tools/collect_phase_references.py",
+      "sha256": "3f17063482b787bd30c2db77eb0929a2860f3bd6ad85df1e8beea018c1a50ce2"
+    }
+  ]
+}

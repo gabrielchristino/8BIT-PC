@@ -1,0 +1,524 @@
+                                                                      Share Feedback                      DATA SHEET
+                                                                      Your Opinion Matters             www.onsemi.com
+
+
+Quad 3-State Buffer with
+Low Enable
+                                                                                           14
+                                                                                                 1
+High‐Performance Silicon‐Gate                                                              SOIC-14 NB
+CMOS                                                                                        D SUFFIX
+                                                                                          CASE 751A-03
+
+MC74AC125, MC74ACT125
+Features
+                                                                                          1
+ Outputs Source/Sink
+ ACT125 Has TTL Compatible Inputs                                                               14
+
+ These are Pb-Free Devices                                                               TSSOP-14
+                                                                                          DT SUFFIX
+                                                                                          CASE 948G
+
+
+            VCC    A2        B2    O2     A3       B3   O3
+                                                                                MARKING DIAGRAMS
+            14     13        12    11     10       9     8
+                                                                                     14
+
+                                                                                               XXXXXXG
+                                                                                               AWLYWW
+
+
+             1      2        3     4       5       6     7                            1
+            A0     B0        O0    A1     B1       O1   GND                               14
+
+                                                                                                 XXX
+  Figure 1. Pinout: 14-Lead Packages Conductors                                                  XXX
+                      (Top View)                                                                ALYWG
+                                                                                                  G
+
+                                                                                          1
+ PIN ASSIGNMENT
+                                                                             XXXXXX = Specific Device Code
+ PIN                FUNCTION
+                                                                             A       = Assembly Location
+ An, Bn             Inputs                                                   WL or L = Wafer Lot
+                                                                             Y       = Year
+ On                 Outputs
+                                                                             WW or W = Work Week
+                                                                             G or G  = Pb-Free Package
+FUNCTION TABLE                                                         (Note: Microdot may be in either location)
+             Inputs                            Output
+       An               Bn                         On
+                                                                             ORDERING INFORMATION
+       L                 L                         L              See detailed ordering and shipping information in the package
+       L                 H                         H              dimensions section on page 5 of this data sheet.
+       H                 X                         Z
+NOTE: H = High Voltage Level;
+      L = Low Voltage Level;
+      Z = High Impedance;
+      X = Immaterial
+
+
+
+
+ Semiconductor Components Industries, LLC, 2015              1                                  Publication Order Number:
+September, 2026 − Rev. 10                                                                                    MC74AC125/D
+                                                MC74AC125, MC74ACT125
+
+ MAXIMUM RATINGS
+  Symbol                                     Parameter                                                    Value                     Unit
+    VCC       DC Supply Voltage                                                                        *0.5 to +6.5                   V
+     VI       DC Input Voltage                                                                    *0.5 v VI v VCC )0.5                V
+     VO       DC Output Voltage                                               (Note 1)            *0.5 v VO v VCC )0.5                V
+     IIK      DC Input Diode Current                                                                      $20                        mA
+     IOK      DC Output Diode Current                                                                     $50                        mA
+     IO       DC Output Sink/Source Current                                                               $50                        mA
+     ICC      DC Supply Current per Output Pin                                                            $50                        mA
+    IGND      DC Ground Current per Output Pin                                                            $50                        mA
+    TSTG      Storage Temperature Range                                                               *65 to )150                    C
+     TL       Lead temperature, 1 mm from Case for 10 Seconds                                              260                       C
+     TJ       Junction temperature under Bias                                                             )150                       C
+     qJA      Thermal Resistance (Note 2)                                 SOIC-14 NB                       116                      C/W
+                                                                           TSSOP-14                        150
+     PD       Power Dissipation in Still Air at 25 C                     SOIC-14 NB                      1077                      mW
+                                                                           TSSOP-14                       833
+    MSL       Moisture Sensitivity                                                                       Level 1
+     FR       Flammability Rating                          Oxygen Index: 30% − 35%                 UL 94 V−0 @ 0.125 in
+    VESD      ESD Withstand Voltage                      Human Body Model (Note 3)                       > 2000                       V
+                Charged Device Model (Note 4)                                                            > 1000
+  ILatch-Up   Latch-Up Performance      Above VCC and Below GND at 85 C (Note 5)                         $100                       mA
+Stresses exceeding those listed in the Maximum Ratings table may damage the device. If any of these limits are exceeded, device functionality
+should not be assumed, damage may occur and reliability may be affected.
+1. IO absolute maximum rating must be observed.
+2. The package thermal impedance is calculated in accordance with JESD51-7.
+3. Tested to EIA/JESD22-A114-A.
+4. Tested to JESD22-C101-A.
+5. Tested to EIA/JESD78.
+
+
+ RECOMMENDED OPERATING CONDITIONS
+  Symbol                                     Parameter                                      Min            Typ            Max       Unit
+                                                                             AC             2.0           5.0            6.0
+    VCC       Supply Voltage                                                                                                          V
+                                                                            ACT             4.5           5.0            5.5
+  Vin, Vout   DC Input Voltage, Output Voltage (Ref. to GND)                                  0                           VCC         V
+                                                                         VCC @ 3.0 V                       150
+              Input Rise and Fall Time (Note 1)
+    tr, tf                                                               VCC @ 4.5 V                       40                       ns/V
+              AC Devices except Schmitt Inputs
+                                                                         VCC @ 5.5 V                       25
+     TA       Operating Ambient Temperature Range                                           −40            25             85         C
+     IOH      Output Current − HIGH                                                                                       −24        mA
+     IOL      Output Current − LOW                                                                                        24         mA
+Functional operation above the stresses listed in the Recommended Operating Ranges is not implied. Extended exposure to stresses beyond
+the Recommended Operating Ranges limits may affect device reliability.
+1. Vin from 30% to 70% VCC; see individual Data Sheets for devices that differ from the typical input rise and fall times.
+2. Vin from 0.8 V to 2.0 V; see individual Data Sheets for devices that differ from the typical input rise and fall times.
+
+
+
+
+                                                           www.onsemi.com                                             Share Feedback
+                                                                     2                                                Your Opinion Matters
+                                                 MC74AC125, MC74ACT125
+
+    DC CHARACTERISTICS
+                                                                            74AC           74AC
+                                                                                        TA = −40 C
+                                                                         TA = +25 C     to +85 C
+                                                             VCC
+    Symbol                  Parameter                        (V)         Typ     Guaranteed Limits            Unit         Conditions
+      VIH    Minimum High Level                              3.0         1.5    2.1        2.1                       VOUT = 0.1 V
+             Input Voltage                                   4.5         2.25   3.15       3.15                V     or VCC − 0.1 V
+                                                             5.5         2.75   3.85       3.85
+     VIL     Maximum Low Level                               3.0         1.5    0.9        0.9                       VOUT = 0.1 V
+             Input Voltage                                   4.5         2.25   1.35       1.35                V     or VCC − 0.1 V
+                                                             5.5         2.75   1.65       1.65
+     VOH     Minimum High Level                              3.0         2.99   2.9        2.9                       IOUT = − 50 mA
+             Output Voltage                                  4.5         4.46   4.4        4.4                 V
+                                                             5.5         5.49   5.4        5.4
+                                                                                                                     *VIN = VIL or VIH
+                                                             3.0                2.56          2.46                              −12 mA
+                                                                                                               V
+                                                             4.5                3.86          3.76                   IOH        − 24 mA
+                                                             5.5                4.86          4.76                              − 24 mA
+     VOL     Minimum Low Level                               3.0      0.002     0.1           0.1                    IOUT = 50 mA
+             Output Voltage                                  4.5      0.001     0.1           0.1              V
+                                                             5.5      0.001     0.1           0.1
+                                                                                                                     *VIN = VIL or VIH
+                                                             3.0                0.36          0.44                              12 mA
+                                                                                                               V
+                                                             4.5                0.36          0.44                   IOL        24 mA
+                                                             5.5                0.36          0.44                              24 mA
+      IIN    Maximum Input                                                                                           VI = VCC, GND
+                                                             5.5                0.1          1.0            mA
+             Leakage Current
+     IOZ     VI (OE) = VIL, VIH                                                                                      VI (OE) = VIL, VIH
+             VI = VCC, GND                                   5.5                0.5          5.0            mA     VI = VCC, GND
+             VO = VCC , GND                                                                                          VO = VCC, GND
+     IOLD    †Minimum Dynamic                                5.5                              75              mA     VOLD = 1.65 V Max
+     IOHD    Output Current                                  5.5                              −75             mA     VOHD = 3.85 V Min
+      ICC    Maximum Quiescent                                                                                       VIN = VCC or GND
+             Supply Current                                  5.5                8.0           80              mA
+
+* All outputs loaded; thresholds on input associated with output under test.
+† Maximum test duration 2.0 ms, one input loaded at a time.
+NOTE: IIN and ICC @ 3.0 V are guaranteed to be less than or equal
+        to the respective limit @ 5.5 V.
+
+
+    AC CHARACTERISTICS
+                                                                                                       74AC            74AC
+                                                                                                                     TA = −40 C
+                                                                                                     TA = +25 C      to +85 C
+                                                                                                     CL = 50 pF      CL = 50 pF
+                                                                                       VCC*
+    Symbol                                  Parameter                                   (V)         Min     Max      Min      Max        Unit
+             Propagation Delay                                                          3.3         1.0     9.0      1.0       10
+     tPLH                                                                                                                                ns
+             Data to Output                                                             5.0         1.0     7.0      1.0       7.5
+             Propagation Delay                                                          3.3         1.0     9.0      1.0       10
+     tPHL                                                                                                                                ns
+             Data to Output                                                             5.0         1.0     7.0      1.0       7.5
+             Output Enable                                                              3.3         1.0     10.5     1.0       11
+     tPZH                                                                                                                                ns
+             Time                                                                       5.0         1.0     7.0      1.0       8.0
+             Output Enable                                                              3.3         1.0      10      1.0       11
+     tPZL                                                                                                                                ns
+             Time                                                                       5.0         1.0     8.0      1.0       8.5
+             Output Disable                                                             3.3         1.0      10      1.0      10.5
+     tPHZ                                                                                                                                ns
+             Time                                                                       5.0         1.0     9.0      1.0       9.5
+             Output Disable                                                             3.3         1.0     10.5     1.0      11.5
+     tPLZ                                                                                                                                ns
+             Time                                                                       5.0         1.0     9.0      1.0       9.5
+*    Voltage Range 3.3 V is 3.3 V 0.3 V.
+     Voltage Range 5.0 V is 5.0 V 0.5 V.
+
+
+
+                                                           www.onsemi.com                                                  Share Feedback
+                                                                     3                                                     Your Opinion Matters
+                                                   MC74AC125, MC74ACT125
+
+    DC CHARACTERISTICS
+                                                                           74ACT                    74ACT
+                                                                                                TA = −40 C
+                                                                         TA = +25 C             to +85 C
+                                                             VCC
+    Symbol                    Parameter                      (V)         Typ          Guaranteed Limits         Unit             Conditions
+      VIH      Minimum High Level                            4.5         1.5          2.2       2.0                        VOUT = 0.1 V
+                                                                                                                    V
+               Input Voltage                                 5.5         1.5          2.0       2.0                        or VCC − 0.1 V
+     VIL       Maximum Low Level                             4.5         1.5          0.8       0.8                        VOUT = 0.1 V
+                                                                                                                    V
+               Input Voltage                                 5.5         1.5          0.8       0.8                        or VCC − 0.1 V
+     VOH       Minimum High Level                            4.5         4.49         4.4       4.4                        IOUT = − 50 mA
+                                                                                                                    V
+               Output Voltage                                5.5         5.49         5.4       5.4
+                                                                                                                           *VIN = VIL or VIH
+                                                             4.5                      3.86          3.76            V                 − 24 mA
+                                                                                                                           IOH
+                                                             5.5                      4.86          4.76                              − 24 mA
+     VOL       Minimum Low Level                             4.5      0.001           0.1           0.1                    IOUT = − 50 mA
+                                                                                                                    V
+               Output Voltage                                5.5      0.001           0.1           0.1
+                                                                                                                           *VIN = VIL or VIH
+                                                             4.5                      0.36          0.44            V      IOH       − 24 mA
+                                                             5.5                      0.36          0.44                             − 24 mA
+      IIN      Maximum Input                                                                                               VI = VCC, GND
+                                                             5.5                      0.1          1.0            mA
+               Leakage Current
+     IOZ       VI (OE) = VIL, VIH                                                                                          VI (OE) = VIL, VIH
+               VI = VCC, GND                                 5.5                      0.5          5.0            mA     VI = VCC, GND
+               VO = VCC , GND                                                                                              VO = VCC, GND
+    DICCT      Additional Max. ICC/Input                     5.5         0.6                         1.5        mA         VI = VCC − 2.1 V
+     IOLD      †Minimum Dynamic                              5.5                                     75         mA         VOLD = 1.65 V Max
+     IOHD      Output Current                                5.5                                     −75        mA         VOHD = 3.85 V Min
+     ICC       Maximum Quiescent Supply Current              5.5                      8.0            80             mA     VIN = VCC or GND
+* All outputs loaded; thresholds on input associated with output under test.
+† Maximum test duration 2.0 ms, one input loaded at a time.
+
+    AC CHARACTERISTICS
+                                                                                                74ACT           74ACT
+                                                                                                              TA = −40 C
+                                                                                              TA = +25 C      to +85 C
+                                                                                              CL = 50 pF      CL = 50 pF
+                                                                               VCC*
+     Symbol                                Parameter                            (V)          Min     Max      Min        Max            Unit
+                    Propagation Delay
+        tPLH                                                                    5.0           1.0     9.0     1.0        10                 ns
+                    Data to Output
+                    Propagation Delay
+        tPHL                                                                    5.0           1.0     9.0     1.0        10                 ns
+                    Data to Output
+                    Output Enable
+        tPZH                                                                    5.0           1.0     8.5     1.0        9.5                ns
+                    Time
+                    Output Enable
+        tPZL                                                                    5.0           1.0     9.5     1.0        10.5               ns
+                    Time
+                    Output Disable
+        tPHZ                                                                    5.0           1.0     9.5     1.0        10.5               ns
+                    Time
+                    Output Disable
+        tPLZ                                                                    5.0           1.0     10      1.0        10.5               ns
+                    Time
+*    Voltage Range 5.0 V is 5.0 V 0.5 V.
+
+
+    CAPACITANCE
+                                                                                       Value
+     Symbol                                 Parameter                                   Typ           Unit                Test Conditions
+       CIN         Input Capacitance                                                    4.5             pF                    VCC = 5.0 V
+       CPD         Power Dissipation Capacitance                                        45              pF                    VCC = 5.0 V
+
+
+
+
+                                                           www.onsemi.com                                                       Share Feedback
+                                                                     4                                                          Your Opinion Matters
+                                               MC74AC125, MC74ACT125
+
+ ORDERING INFORMATION
+             Device                            Marking                           Package                          Shipping†
+ MC74AC125DG                                   AC125                           SOIC-14 NB                       55 Units / Rail
+ MC74AC125DR2G                                 AC125                            (Pb-Free)                     2,500 / Tape & Reel
+ MC74AC125DTR2G                                  AC                             TSSOP-14
+                                                                                                              2,500 / Tape & Reel
+                                                 125                            (Pb-Free)
+ MC74ACT125DG                                  ACT125                          SOIC-14 NB                       55 Units / Rail
+ MC74ACT125DR2G                                ACT125                           (Pb-Free)                     2,500 / Tape & Reel
+ MC74ACT125DTR2G                                 ACT                            TSSOP-14
+                                                                                                              2,500 / Tape & Reel
+                                                 125                            (Pb-Free)
+† For information on tape and reel specifications, including part orientation and tape sizes, please refer to our Tape and Reel Packaging
+  Specifications Brochure, BRD8011/D.
+
+
+
+
+                                                         www.onsemi.com                                            Share Feedback
+                                                                   5                                               Your Opinion Matters
+                                                MC74AC125, MC74ACT125
+
+ REVISION HISTORY
+   Revision                                          Description of Changes                                                  Date
+       10         Update case outline numbers/names on the front page, Maximum Rating and in the Ordering                  9/25/2026
+                  Information table; made minor formatting updates across the document.
+This document has undergone updates prior to the inclusion of this revision history table. The changes tracked here only reflect updates made
+on the noted approval dates.
+
+
+
+
+                                                           www.onsemi.com                                             Share Feedback
+                                                                     6                                                Your Opinion Matters
+                                                                                                                    MECHANICAL CASE OUTLINE
+                                                                                                                                                   PACKAGE DIMENSIONS
+
+
+
+                                                                                   SOIC−14 NB
+14                                                                                CASE 751A−03
+     1
+                                                                                    ISSUE L
+                                                                                                                                                                DATE 03 FEB 2016
+  SCALE 1:1
+
+
+                               D                          A                                                                    NOTES:
+                                                                                                                                1. DIMENSIONING AND TOLERANCING PER
+                                                          B                                                                        ASME Y14.5M, 1994.
+                                                                                                                                2. CONTROLLING DIMENSION: MILLIMETERS.
+            14                                     8                                                                            3. DIMENSION b DOES NOT INCLUDE DAMBAR
+                                                                                                               A3                  PROTRUSION. ALLOWABLE PROTRUSION
+                                                                                                                                   SHALL BE 0.13 TOTAL IN EXCESS OF AT
+                                                                                                                                   MAXIMUM MATERIAL CONDITION.
+      H                                                   E                                                                     4. DIMENSIONS D AND E DO NOT INCLUDE
+                                                                                                                                   MOLD PROTRUSIONS.
+                                                                                                       L                        5. MAXIMUM MOLD PROTRUSION 0.15 PER
+                                                                                                                                   SIDE.
+             1                                     7                                       DETAIL A
+                                                                                                                                           MILLIMETERS     INCHES
+     0.25 M B M                             13X b                                                                                    DIM   MIN     MAX   MIN    MAX
+                                                                                                                                      A     1.35   1.75 0.054 0.068
+                                                  0.25 M C A S            B S                                                        A1     0.10   0.25 0.004 0.010
+                                                                                                                                     A3     0.19   0.25 0.008 0.010
+                                                                                                                   DETAIL A           b     0.35   0.49 0.014 0.019
+                                                                                          h
+                                                              A                          X 45 _
+                                                                                                                                      D     8.55   8.75 0.337 0.344
+                                                                                                                                      E     3.80   4.00 0.150 0.157
+                                                                                                                                      e      1.27 BSC     0.050 BSC
+                                                                                                                                      H     5.80   6.20 0.228 0.244
+                                                                                                                                      h     0.25   0.50 0.010 0.019
+     0.10                                                                                                                             L     0.40   1.25 0.016 0.049
+                           e                            A1                                    M
+                                                                  SEATING                                                             M       0_     7_    0_     7_
+                                                                C PLANE
+
+                                                                                                                                                   GENERIC
+                    SOLDERING FOOTPRINT*                                                                                                       MARKING DIAGRAM*
+                                       6.50                             14X                                                                      14
+                                                                        1.18
+                                                                                                                                                       XXXXXXXXXG
+             1                                                                                                                                           AWLYWW
+
+                                                                                                                                                   1
+
+                                                                                                                                           XXXXX = Specific Device Code
+                                                                                                                                           A     = Assembly Location
+                                                                                 1.27
+                                                                                                                                           WL    = Wafer Lot
+                                                                                 PITCH
+                                                                                                                                           Y     = Year
+                                                                                                                                           WW    = Work Week
+                                                                                                                                           G     = Pb−Free Package
+      14X                                                                                                                      *This information is generic. Please refer to
+     0.58                                                                                                                       device data sheet for actual part marking.
+                                                                                                                                Pb−Free indicator, “G” or microdot “G”, may
+                                                                                                                                or may not be present. Some products may
+                                                                                                                                not follow the Generic Marking.
+
+                                                       DIMENSIONS: MILLIMETERS
+  *For additional information on our Pb−Free strategy and soldering
+   details, please download the onsemi Soldering and Mounting
+   Techniques Reference Manual, SOLDERRM/D.
+
+                                                                            STYLES ON PAGE 2
+
+
+
+
+                                                                                         Electronic versions are uncontrolled except when accessed directly from the Document Repository.
+ DOCUMENT NUMBER:                          98ASB42565B                                   Printed versions are uncontrolled except when stamped “CONTROLLED COPY” in red.
+
+             DESCRIPTION:                  SOIC−14 NB                                                                                                                  PAGE 1 OF 2
+
+ onsemi and               are trademarks of Semiconductor Components Industries, LLC dba onsemi or its subsidiaries in the United States and/or other countries. onsemi reserves
+ the right to make changes without further notice to any products herein. onsemi makes no warranty, representation or guarantee regarding the suitability of its products for any particular
+ purpose, nor does onsemi assume any liability arising out of the application or use of any product or circuit, and specifically disclaims any and all liability, including without limitation
+ special, consequential or incidental damages. onsemi does not convey any license under its patent rights nor the rights of others.
+
+
+
+© Semiconductor Components Industries, LLC, 2019                                                                                                                       www.onsemi.com
+                                                                                    SOIC−14
+                                                                                  CASE 751A−03
+                                                                                    ISSUE L
+                                                                                                                                                                DATE 03 FEB 2016
+
+        STYLE 1:                                     STYLE 2:                                 STYLE 3:                                          STYLE 4:
+         PIN 1. COMMON CATHODE                              CANCELLED                          PIN 1. NO CONNECTION                              PIN 1. NO CONNECTION
+             2. ANODE/CATHODE                                                                      2. ANODE                                          2. CATHODE
+             3. ANODE/CATHODE                                                                      3. ANODE                                          3. CATHODE
+             4. NO CONNECTION                                                                      4. NO CONNECTION                                  4. NO CONNECTION
+             5. ANODE/CATHODE                                                                      5. ANODE                                          5. CATHODE
+             6. NO CONNECTION                                                                      6. NO CONNECTION                                  6. NO CONNECTION
+             7. ANODE/CATHODE                                                                      7. ANODE                                          7. CATHODE
+             8. ANODE/CATHODE                                                                      8. ANODE                                          8. CATHODE
+             9. ANODE/CATHODE                                                                      9. ANODE                                          9. CATHODE
+            10. NO CONNECTION                                                                     10. NO CONNECTION                                 10. NO CONNECTION
+            11. ANODE/CATHODE                                                                     11. ANODE                                         11. CATHODE
+            12. ANODE/CATHODE                                                                     12. ANODE                                         12. CATHODE
+            13. NO CONNECTION                                                                     13. NO CONNECTION                                 13. NO CONNECTION
+            14. COMMON ANODE                                                                      14. COMMON CATHODE                                14. COMMON ANODE
+
+        STYLE 5:                                     STYLE 6:                                 STYLE 7:                                          STYLE 8:
+         PIN 1. COMMON CATHODE                        PIN 1. CATHODE                           PIN 1. ANODE/CATHODE                              PIN 1. COMMON CATHODE
+             2. ANODE/CATHODE                             2. CATHODE                               2. COMMON ANODE                                   2. ANODE/CATHODE
+             3. ANODE/CATHODE                             3. CATHODE                               3. COMMON CATHODE                                 3. ANODE/CATHODE
+             4. ANODE/CATHODE                             4. CATHODE                               4. ANODE/CATHODE                                  4. NO CONNECTION
+             5. ANODE/CATHODE                             5. CATHODE                               5. ANODE/CATHODE                                  5. ANODE/CATHODE
+             6. NO CONNECTION                             6. CATHODE                               6. ANODE/CATHODE                                  6. ANODE/CATHODE
+             7. COMMON ANODE                              7. CATHODE                               7. ANODE/CATHODE                                  7. COMMON ANODE
+             8. COMMON CATHODE                            8. ANODE                                 8. ANODE/CATHODE                                  8. COMMON ANODE
+             9. ANODE/CATHODE                             9. ANODE                                 9. ANODE/CATHODE                                  9. ANODE/CATHODE
+            10. ANODE/CATHODE                            10. ANODE                                10. ANODE/CATHODE                                 10. ANODE/CATHODE
+            11. ANODE/CATHODE                            11. ANODE                                11. COMMON CATHODE                                11. NO CONNECTION
+            12. ANODE/CATHODE                            12. ANODE                                12. COMMON ANODE                                  12. ANODE/CATHODE
+            13. NO CONNECTION                            13. ANODE                                13. ANODE/CATHODE                                 13. ANODE/CATHODE
+            14. COMMON ANODE                             14. ANODE                                14. ANODE/CATHODE                                 14. COMMON CATHODE
+
+
+
+
+                                                                                         Electronic versions are uncontrolled except when accessed directly from the Document Repository.
+ DOCUMENT NUMBER:                          98ASB42565B                                   Printed versions are uncontrolled except when stamped “CONTROLLED COPY” in red.
+
+             DESCRIPTION:                  SOIC−14 NB                                                                                                                  PAGE 2 OF 2
+
+ onsemi and               are trademarks of Semiconductor Components Industries, LLC dba onsemi or its subsidiaries in the United States and/or other countries. onsemi reserves
+ the right to make changes without further notice to any products herein. onsemi makes no warranty, representation or guarantee regarding the suitability of its products for any particular
+ purpose, nor does onsemi assume any liability arising out of the application or use of any product or circuit, and specifically disclaims any and all liability, including without limitation
+ special, consequential or incidental damages. onsemi does not convey any license under its patent rights nor the rights of others.
+
+                                                                                www.onsemi.com
+                                                                                              2
+© Semiconductor Components Industries, LLC, 2019                                                                                                                       www.onsemi.com
+                                                                                                                   MECHANICAL CASE OUTLINE
+                                                                                                                                                   PACKAGE DIMENSIONS
+
+
+
+                                                                   TSSOP−14 5.00x4.40x0.95, 0.65P
+                                                                           CASE 948G
+14
+                                                                             ISSUE D
+                                                                                                                                                                DATE 30 JUN 2026
+               1
+
+
+
+
+                                                                                                                                     GENERIC
+                                                                                                                                 MARKING DIAGRAM*
+                                                                           A        = Assembly Location                              14
+                                                                           L        = Wafer Lot                                               XXXX
+     *This information is generic. Please refer to
+      device data sheet for actual part marking.                           Y        = Year                                                    XXXX
+      Pb−Free indicator, “G” or microdot “G”, may                          W        = Work Week                                               ALYWG
+      or may not be present. Some products may                             G        = Pb−Free Package                                           G
+      not follow the Generic Marking.                                 (Note: Microdot may be in either location)                       1
+                                                                                         Electronic versions are uncontrolled except when accessed directly from the Document Repository.
+ DOCUMENT NUMBER:                          98ASH70246A                                   Printed versions are uncontrolled except when stamped “CONTROLLED COPY” in red.
+
+             DESCRIPTION:                  TSSOP−14 5.00x4.40x0.95, 0.65P                                                                                              PAGE 1 OF 1
+
+ onsemi and               are trademarks of Semiconductor Components Industries, LLC dba onsemi or its subsidiaries in the United States and/or other countries. onsemi reserves
+ the right to make changes without further notice to any products herein. onsemi makes no warranty, representation or guarantee regarding the suitability of its products for any particular
+ purpose, nor does onsemi assume any liability arising out of the application or use of any product or circuit, and specifically disclaims any and all liability, including without limitation
+ special, consequential or incidental damages. onsemi does not convey any license under its patent rights nor the rights of others.
+
+
+
+© Semiconductor Components Industries, LLC, 2019                                                                                                                       www.onsemi.com
+ onsemi,                , and other names, marks, and brands are registered and/or common law trademarks of Semiconductor Components Industries, LLC dba “onsemi” or its affiliates
+ and/or subsidiaries in the United States and/or other countries. onsemi owns the rights to a number of patents, trademarks, copyrights, trade secrets, and other intellectual property.
+ A listing of onsemi’s product/patent coverage may be accessed at www.onsemi.com/site/pdf/Patent−Marking.pdf. onsemi reserves the right to make changes at any time to any
+ products or information herein, without notice. The information herein is provided “as−is” and onsemi makes no warranty, representation or guarantee regarding the accuracy of the
+ information, product features, availability, functionality, or suitability of its products for any particular purpose, nor does onsemi assume any liability arising out of the application or use
+ of any product or circuit, and specifically disclaims any and all liability, including without limitation special, consequential or incidental damages. Buyer is responsible for its products
+ and applications using onsemi products, including compliance with all laws, regulations and safety requirements or standards, regardless of any support or applications information
+ provided by onsemi. “Typical” parameters which may be provided in onsemi data sheets and/or specifications can and do vary in different applications and actual performance may
+ vary over time. All operating parameters, including “Typicals” must be validated for each customer application by customer’s technical experts. onsemi does not convey any license
+ under any of its intellectual property rights nor the rights of others. onsemi products are not designed, intended, or authorized for use as a critical component in life support systems
+ or any FDA Class 3 medical devices or medical devices with a same or similar classification in a foreign jurisdiction or any devices intended for implantation in the human body. Should
+ Buyer purchase or use onsemi products for any such unintended or unauthorized application, Buyer shall indemnify and hold onsemi and its officers, employees, subsidiaries, affiliates,
+ and distributors harmless against all claims, costs, damages, and expenses, and reasonable attorney fees arising out of, directly or indirectly, any claim of personal injury or death
+ associated with such unintended or unauthorized use, even if such claim alleges that onsemi was negligent regarding the design or manufacture of the part. onsemi is an Equal
+ Opportunity/Affirmative Action Employer. This literature is subject to all applicable copyright laws and is not for resale in any manner.
+
+
+ADDITIONAL INFORMATION
+    TECHNICAL PUBLICATIONS:                                                                               ONLINE SUPPORT: www.onsemi.com/support
+    Technical Library: www.onsemi.com/design/resources/technical−documentation                            For additional information, please contact your local Sales Representative at
+    onsemi Website: www.onsemi.com                                                                        www.onsemi.com/support/sales
+
+
+
+
+

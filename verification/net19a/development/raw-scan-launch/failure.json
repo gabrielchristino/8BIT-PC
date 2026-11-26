@@ -1,0 +1,3 @@
+{
+  "status": "Timed scan fixture sampled source payload 1ps after REQUEST instead of after bounded launch propagation; use predecessor 500ns settling window, retaining strict WAIT checks afterward. Negative settling bypass already detected."
+}

@@ -1,3 +1,10 @@
+## 26/11/2026 — NET-19A, integração CPU/teclado e correção temporal
+
+- MMIO/colunas procedurais substituídos por pinos e temporizador real da NET17; arquitetura e mapa preservados.
+- Nova folha de controlador com três AHC174 no lugar de HC174, mesma lógica, 31 CIs e 526 pinos; retorno aos HC174 reproduz a violação temporal.
+- 6.886 vetores ideais, dois cenários temporizados reduzidos, programa/quadro completo e raw scan na CPU passaram; negativos e falhas intermediárias preservados.
+- Monitor de COMMIT confere permissão amostrada no registrador; seed de epoch e snapshot de lançamento corrigidos com evidências. Reset/energia global e produção permanecem pendentes.
+
 ## 26/11/2026 — Exportação local e fechamento das lacunas REV33/REV76
 
 - Quatro registros JSON de conversa, leituras derivadas, 240 arquivos em bytes originais e duas Pages, com origem/hashes e preservação das cópias anteriores.

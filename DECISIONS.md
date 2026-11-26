@@ -1,3 +1,13 @@
+## ADR E24 — Integrar teclado por pinos e usar AHC174 no estado do controlador
+
+26/11/2026: integrar o periférico NET17 à CPU/raster/memórias, substituindo MMIO/colunas procedurais; preservar mapa, 26 instruções, X, SP, flags, VGA, WAIT, payload e COMMIT único. Criar hardware/system_access separado, trocando apenas os três HC174 de estado por AHC174 de mesma pinagem. Não acrescentar nem remover CIs: 31 pacotes/526 pinos.
+
+A espera de KEY_READY acrescentou profundidade ao caminho de SLOT. A integração encontrou setup observado de 18,944ns, menor que 25ns do HC174 selecionado. AHC174 tem requisito de 4,5ns nas condições documentadas e melhora também a margem dos outros pacotes de estado, mantendo classe uniforme. Alternativas rejeitadas: esconder a violação, reduzir o requisito do CI antigo, remover espera do teclado, reduzir funções ou alterar frequência VGA para mascarar o caminho. Não é escolha de BOM homologada.
+
+Separar também falha de monitor: saídas de FF podem mudar depois da queda de IO_COMMIT se a captura anterior foi autorizada. Verificar permissão no CLK físico de U1 e rejeitar alteração não autorizada; manter comparação de transações/estados. Bancadas de vetores semeiam fora da borda e antes do epoch; programas completo/scan não recebem estado artificial. Negativos reproduzem atualização inválida, bypass de acomodação e retorno aos HC174.
+
+Aceitação digital: vetores completos ideais, dois cenários reduzidos temporizados, boot/quadro ideal e scan com pausas/cancelamento, sob hipóteses binárias explícitas. Temporização/cargas/clock globais, integração NET18, conversão/POR, firmware de eventos, esquema/PCB e ensaio físico continuam critérios. [Evidências e limites](docs/engineering/NET19A.md).
+
 ## ADR M05 — Publicar somente o recorte ISA-1 da exportação de conta
 
 26/11/2026: a exportação local possui 58 conversas. Preservar o pacote original local e publicar quatro registros identificados do ISA-1, conteúdos vinculados por origination_thread_id e as duas Pages já conhecidas. Manter 240 conteúdos byte a byte em diretórios por file ID; conversas são JSON reserializado identificado, com Markdown derivado do caminho atual. Excluir campos de conta da metadata das Pages e não publicar o restante da conta.

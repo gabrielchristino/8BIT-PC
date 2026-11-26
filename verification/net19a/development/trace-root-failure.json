@@ -1,0 +1,5 @@
+{
+  "exit": 1,
+  "error": "ModuleNotFoundError: No module named run_keyboard_cpu",
+  "cause": "Incorrect diagnostic runner root ancestor index; no simulation executed"
+}

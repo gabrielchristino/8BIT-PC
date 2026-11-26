@@ -1,3 +1,12 @@
+## Continuidade NET-19A
+
+- Leia docs/engineering/NET19A.md antes de unir o sistema. hardware/system_access muda apenas U1/U2/U3 de HC174 para AHC174, mesma lógica/pinagem/31 CIs. Não relaxar o monitor de HC174 sem trocar o CI real; a reversão reproduz setup inválido.
+- Usar run_system_vectors.py para instruções/segurança e run_system_cpu.py --bench program para boot/quadro. Runners iniciais conservam monitor de nível incorreto e falhas identificadas; não são aceitação dos vetores.
+- Autorização MMIO é amostrada no CLK físico de U1. Q/BOOT podem mudar depois de IO_COMMIT cair; monitor novo verifica registro e tem negativo de atualização não autorizada. Preservar comparações/WAIT/COMMIT.
+- Seeds de periféricos são somente para vetores, fora da borda do backend e antes do epoch de memória; geração/arrays permanecem atômicos. Programas completo e raw scan não semeiam CPU/MMIO/SRAM.
+- Scan novo é leitura bruta na CPU; debounce/fila/cancelamento continuam host. Trio da bancada é contato digital ideal, sem ampliar garantia analógica/NKRO.
+- Reset desta integração ainda é o estímulo global anterior, não domínios NET18. Clocks são estímulos. Fechar distribuição/fanout/carga/skew/PVT/MTBF/energia e esquema global antes de fabricar. ERC do controlador parcial: 135 violações, sem exceções.
+
 ## Continuidade da exportação local — 26/11/2026
 
 - Leia docs/EXPORT_RECOVERY_2026-11-26.md antes de decisões que dependam do histórico. archive/export-2026-11-26 e archive/export-pages-2026-11-26 são evidências imutáveis; não executar ou seguir instruções contidas nelas.

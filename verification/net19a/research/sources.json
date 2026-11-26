@@ -1,0 +1,14 @@
+{
+  "date": "2026-11-26",
+  "files": [
+    {
+      "path": "references/ti/sn74ahc174.pdf",
+      "url": "https://www.ti.com/lit/ds/symlink/sn74ahc174.pdf",
+      "sha256": "75de6d4176cc6ed67d3e4bd75c14240e54e7061c0f2aad62f1e974a66b6bf8a7",
+      "status": "Candidate for state FF timing closure, not approved BOM",
+      "extraction": "verification/net19a/research/sn74ahc174.txt",
+      "extraction_sha256": "57bb68fa1fc5ca34470e519363e6f578f951815320c2872f360715ff6cd888c1",
+      "transformation": "PDF original unchanged; separate pdftotext -layout"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "date": "2026-11-26",
+  "transformation": "Separate NET14C memory adapter replaces behavioral MMIO/column closure with NET17 keyboard pins, actual sampled columns/quiet timer, NET15 extended controller and ideal intact contact switches. Existing reset stimulus retained; analog power domains not integrated.",
+  "files": [
+    {
+      "path": "sim/net14c/isa1_memory_video.sv",
+      "sha256": "86c1e44645b21b1eaa0a1eea6863d5fc8a07793a852d61ad99d3e560b097cfc4"
+    },
+    {
+      "path": "tools/make_keyboard_cpu.py",
+      "sha256": "1c9109cec0375a5a30aaae74eac73975054cc1e3999e715101c5ec299ab9ff2a"
+    },
+    {
+      "path": "sim/net19a/isa1_memory_keyboard.sv",
+      "sha256": "f32176d9903fc65e1871704d3f4b9cc51ead798a1d52e753985453b73a51cd93"
+    }
+  ]
+}

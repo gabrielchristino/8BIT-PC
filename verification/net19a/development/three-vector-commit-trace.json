@@ -1,0 +1,50 @@
+{
+  "scope": "Diagnostic trace, not acceptance",
+  "original_vector_indices": [
+    2864,
+    2865,
+    2866
+  ],
+  "adapted_bench_sha256": "b1d5fcfeb263d355e14e84cefbd0b2072401536af1ac031a4d0c91b5264d528c",
+  "compile": {
+    "command": [
+      "iverilog",
+      "-g2012",
+      "-Wall",
+      "-s",
+      "tb_rtl_cpu",
+      "-Ptb_rtl_cpu.CASES=3",
+      "-o",
+      "/tmp/isa1-commit-trace-31fpv9um/test.vvp",
+      "/mnt/c/Users/gabri/projetos/isa1/sim/hdl/hc_models.sv",
+      "/mnt/c/Users/gabri/projetos/isa1/sim/net02/package_models.sv",
+      "/mnt/c/Users/gabri/projetos/isa1/sim/net03/package_models.sv",
+      "/mnt/c/Users/gabri/projetos/isa1/sim/net04/package_models.sv",
+      "/mnt/c/Users/gabri/projetos/isa1/hardware/cpu_global/cpu_global_netlist.sv",
+      "/mnt/c/Users/gabri/projetos/isa1/hardware/memory_decode/memory_decode_netlist.sv",
+      "/mnt/c/Users/gabri/projetos/isa1/sim/net19a/package_models.sv",
+      "/mnt/c/Users/gabri/projetos/isa1/hardware/system_access/system_access_netlist.sv",
+      "/mnt/c/Users/gabri/projetos/isa1/sim/net13/memory_devices.sv",
+      "/mnt/c/Users/gabri/projetos/isa1/hardware/memory_bus/memory_bus_netlist.sv",
+      "/mnt/c/Users/gabri/projetos/isa1/sim/net14c/package_models_async.sv",
+      "/mnt/c/Users/gabri/projetos/isa1/sim/net14c/video_raster_async_netlist.sv",
+      "/mnt/c/Users/gabri/projetos/isa1/hardware/keyboard_500/keyboard_500_netlist.sv",
+      "/mnt/c/Users/gabri/projetos/isa1/sim/net19a/isa1_memory_system.sv",
+      "/tmp/isa1-commit-trace-31fpv9um/bench.sv"
+    ],
+    "exit": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.1
+  },
+  "execution": {
+    "command": [
+      "vvp",
+      "/tmp/isa1-commit-trace-31fpv9um/test.vvp"
+    ],
+    "exit": 0,
+    "stdout": "RESULT hc191=0 instruction_cases=3 transactions=12 wait_checks=166 failures=0\nMEMORY_MODEL ram_valid_writes=0 vram_valid_writes=0 ram_aborts=0 vram_aborts=0 fixture_defaults=1\nRESET_BOUNDARY stage1_recovery_events=0 stage2_recovery_events=0 binary_resolution_late=1 analog_metastability_approved=0\n/tmp/isa1-commit-trace-31fpv9um/bench.sv:91: $finish called at 4726000 (1ps)\n",
+    "stderr": "",
+    "seconds": 0.147
+  }
+}

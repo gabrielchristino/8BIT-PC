@@ -1,0 +1,718 @@
+{
+  "iteration": "NET-19A",
+  "date": "2026-11-26",
+  "base_git_commit": "9a21166ebdcd8d0dd118345e27b735ee75296984",
+  "scope": "Native MMIO/keyboard/CPU digital integration, matched AHC174 state candidate and selected timing scenarios. Explicit failed intermediate fixtures, no global power/clock/load/PCB/physical signoff.",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 1207,
+      "sha256": "3e282e9c3010743d5e8af34a451912ec1c9645d1a4d62732bac766615280e2f5"
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 22938,
+      "sha256": "ad04e76c809799c69b53139ab0f7793a1fca6a99c677057902f7f13d72b6641b"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "bytes": 14109,
+      "sha256": "2bc6bded5712be3b8d5b98c0dd63e15c0c603d2c60289def19a5f54a39383cfb"
+    },
+    {
+      "path": "DECISIONS.md",
+      "bytes": 35906,
+      "sha256": "229be53efb4e57c77a227f02dfb505a577071f7540eb5f94861a99e3912b9d26"
+    },
+    {
+      "path": "PROVENANCE.md",
+      "bytes": 21238,
+      "sha256": "202695094d9c2847fff54528f675b83076eda807fc542cad895616bac666c2e4"
+    },
+    {
+      "path": "README.md",
+      "bytes": 8323,
+      "sha256": "87b1c1e0700c6df582ab97a306243e2014b1310251c9d2f9296c35d416b95094"
+    },
+    {
+      "path": "ROADMAP.md",
+      "bytes": 17140,
+      "sha256": "b61e0623fc1b7dd38af47b6590ef6f242f7822ad79fe906e76fc336c5696de64"
+    },
+    {
+      "path": "docs/engineering/NET19A.md",
+      "bytes": 10215,
+      "sha256": "7497031a4c4cb08b32cd5249473ea9b7909ce8ad10b8e4f591d2d561c988a846"
+    },
+    {
+      "path": "docs/engineering/PRODUCTION_GATES.md",
+      "bytes": 5617,
+      "sha256": "a01f3263dee948d8cfec8095c0ac9d833b5a86f59ef987f0ca48eb9008f2dd8b"
+    },
+    {
+      "path": "docs/engineering/VALIDATION_STATUS.md",
+      "bytes": 8357,
+      "sha256": "31b7b48c95ce137ba7be0a64cc916c508a22f05601c3142596dab306e20b76bd"
+    },
+    {
+      "path": "firmware/net19a/keyboard_scan.asm",
+      "bytes": 441,
+      "sha256": "da2569d1c68eb00bc97ab8067afe3f1259c3d00bd5930440aef2146a58357896"
+    },
+    {
+      "path": "hardware/system_access/access_packages.kicad_sym",
+      "bytes": 25235,
+      "sha256": "bbe8df153d42de75088c3d7617e6908ae4224eacfb3e36dd51b3ea3d05e69275"
+    },
+    {
+      "path": "hardware/system_access/design.json",
+      "bytes": 19728,
+      "sha256": "aeb4be9eed1372cd4b22be78d20dcb659ec387520306f45fa1cd15bd1cdb64a2"
+    },
+    {
+      "path": "hardware/system_access/package-functions.json",
+      "bytes": 12009,
+      "sha256": "def621da744c3c611af720ca3ce761c5b0215bf9fd69ba7aea1aba86413227fd"
+    },
+    {
+      "path": "hardware/system_access/pinmap.csv",
+      "bytes": 13101,
+      "sha256": "ebfaa14a947dd4cb0cf225d3fcee6e57d47d2ff3aff1f124be71be05bd07442f"
+    },
+    {
+      "path": "hardware/system_access/sym-lib-table",
+      "bytes": 159,
+      "sha256": "aa51900c369c66bd8da59395070549719cc291d75da3aeaecb6b1051b43f0e64"
+    },
+    {
+      "path": "hardware/system_access/system_access.kicad_pro",
+      "bytes": 80,
+      "sha256": "68b74cd5a0dcc3d997c9c4cd0668d81477d8c5aece6d2a4bce280ccb925fee94"
+    },
+    {
+      "path": "hardware/system_access/system_access.kicad_sch",
+      "bytes": 154731,
+      "sha256": "91d6cd2aae14bb6c4c7c06036284c52ac92b379912e5ff6279535248df8a32e4"
+    },
+    {
+      "path": "hardware/system_access/system_access_netlist.sv",
+      "bytes": 14117,
+      "sha256": "afac84baef3304ebfd6575dcb5fbdb8d9441a2ef0a20f0e842b16e485dd98b13"
+    },
+    {
+      "path": "references/ti/sn74ahc174.pdf",
+      "bytes": 1092242,
+      "sha256": "75de6d4176cc6ed67d3e4bd75c14240e54e7061c0f2aad62f1e974a66b6bf8a7"
+    },
+    {
+      "path": "revisions/rev983/control_lane0.bin",
+      "bytes": 8192,
+      "sha256": "d8e4a90ed70b376c12cda278f659b32decb14e0b588bda475932124dc5c576f2"
+    },
+    {
+      "path": "revisions/rev983/control_lane1.bin",
+      "bytes": 8192,
+      "sha256": "e403962ad102f2018347fbc1f9c8ba01b7ad71c23d29824eee33248ee29f2da6"
+    },
+    {
+      "path": "revisions/rev983/control_lane2.bin",
+      "bytes": 8192,
+      "sha256": "1cb7101341d7b4e13bb615695d4e5bbeb55b4de5132ad8e408033c8effceefe6"
+    },
+    {
+      "path": "revisions/rev983/control_lane3.bin",
+      "bytes": 8192,
+      "sha256": "20cca3fa9b9106e433062a0fd4001f8d3575200708c5b1e2ff3758f3ed962461"
+    },
+    {
+      "path": "sim/net19a/isa1_memory_keyboard.sv",
+      "bytes": 4993,
+      "sha256": "f32176d9903fc65e1871704d3f4b9cc51ead798a1d52e753985453b73a51cd93"
+    },
+    {
+      "path": "sim/net19a/isa1_memory_system.sv",
+      "bytes": 5041,
+      "sha256": "d0bc0bca43ed55dcb96e2bb4f3c4c650894deb5e35a07b1774b73c17475c51e5"
+    },
+    {
+      "path": "sim/net19a/package_models.sv",
+      "bytes": 1489,
+      "sha256": "dc71d5b1f5bcefcf7e20dc9a930de79c4ebc7fec145961dcbabd79a4766ac957"
+    },
+    {
+      "path": "sim/net19a/tb_ahc174_limits.sv",
+      "bytes": 1223,
+      "sha256": "c38f0274c39036265316dcc9ade4b8326a16ed9c33114b713ef25e0069e2e618"
+    },
+    {
+      "path": "sim/net19a/tb_keyboard_scan.sv",
+      "bytes": 5350,
+      "sha256": "58fa94520c14e0ea4a1c9e0de87bf8e109642cc70e821bb881ffbbf7d52ac8b3"
+    },
+    {
+      "path": "tools/build_system_access.py",
+      "bytes": 3507,
+      "sha256": "416b291b436f94f3b7aa3ca6c197b4ec9959c250bd67c81574a735e5ab82c49a"
+    },
+    {
+      "path": "tools/check_ahc174_limits.py",
+      "bytes": 2265,
+      "sha256": "0d64120d28fbc80c4d05654c0860719f728807357e683a632d4c39d3685a2d8d"
+    },
+    {
+      "path": "tools/check_system_access.py",
+      "bytes": 2988,
+      "sha256": "9aba45d89550c6bf2b3bc425dea2e21815908f3838586edf0e92b25cdd20bd5f"
+    },
+    {
+      "path": "tools/check_system_access_erc.py",
+      "bytes": 1851,
+      "sha256": "889808e419e5ef7990e03a68f744e7d69c9118106e6779d42f2d7c5b536eed53"
+    },
+    {
+      "path": "tools/inventory_system_loads.py",
+      "bytes": 2375,
+      "sha256": "f3b89e8d917f758223bda375834afab1841922f220b19e7ee58f38475ec0bc38"
+    },
+    {
+      "path": "tools/make_keyboard_cpu.py",
+      "bytes": 3121,
+      "sha256": "1c9109cec0375a5a30aaae74eac73975054cc1e3999e715101c5ec299ab9ff2a"
+    },
+    {
+      "path": "tools/make_system_cpu.py",
+      "bytes": 5080,
+      "sha256": "5729b5b88b1538ea0151e79beeac0aa38c98a078ab9562c4ac05a7c84950b88d"
+    },
+    {
+      "path": "tools/prepare_system_vectors.py",
+      "bytes": 6192,
+      "sha256": "81e9a903fb20bbbc58ace1aa4e716be03f6bd369cc79aecaa669830154c96f90"
+    },
+    {
+      "path": "tools/record_net19_manifest.py",
+      "bytes": 11380,
+      "sha256": "5e378185d9e081488473bd280de42da30bfeca85d32a2de6c5a4fddf434941f4"
+    },
+    {
+      "path": "tools/record_system_environment.py",
+      "bytes": 1817,
+      "sha256": "3e37a4e63d8c90345b8a4185a86fb07f97f05f83c1b1bd3baedb92ce9912f351"
+    },
+    {
+      "path": "tools/run_keyboard_cpu.py",
+      "bytes": 6723,
+      "sha256": "d2b23c9e72a74c207d900b70453e9a122d4605b96cd4c66e231c9177c83589e8"
+    },
+    {
+      "path": "tools/run_keyboard_scan.py",
+      "bytes": 3844,
+      "sha256": "d59f9fae945cee8900385eada22600b6ff22867fdc3b443c035c5de456b6176c"
+    },
+    {
+      "path": "tools/run_system_cpu.py",
+      "bytes": 8144,
+      "sha256": "c106d0c2d457074718f556a012ead2fcb959163027cdd53d1beebd72408a9438"
+    },
+    {
+      "path": "tools/run_system_safety_batches.py",
+      "bytes": 4181,
+      "sha256": "f12fc82d9b8134fa70c274d7c2c901c5e3e76a689d310e93ce31bbfea51b2d7c"
+    },
+    {
+      "path": "tools/run_system_scan.py",
+      "bytes": 4001,
+      "sha256": "f8904635419835ef7bb70911cc592519f4c024144c8636a53a85f47cc588faac"
+    },
+    {
+      "path": "tools/run_system_scan_policy0.py",
+      "bytes": 1812,
+      "sha256": "641015ba59199cb964557884df8a11da14af56828f0e909953c260dc88e40178"
+    },
+    {
+      "path": "tools/run_system_vectors.py",
+      "bytes": 11347,
+      "sha256": "be3e692af7abf301cf66af0c6c6f551ca964e259c7a7edcdb1a912b5c6fc78d2"
+    },
+    {
+      "path": "verification/net19a/README.md",
+      "bytes": 3347,
+      "sha256": "78db9f5859c3680a6a08c96367c350d56898989b590e38bde5e092ad4d00eece"
+    },
+    {
+      "path": "verification/net19a/acceptance.json",
+      "bytes": 655,
+      "sha256": "4e756600bf65a94a78fded08dc40eb31dbfee3553a73f29cfd4c3edbfe31ab41"
+    },
+    {
+      "path": "verification/net19a/adapter-origin.json",
+      "bytes": 765,
+      "sha256": "f6f1237b52918b6569f207b99d51a96f98c04fd3c4a746d646905dda32a92651"
+    },
+    {
+      "path": "verification/net19a/baseline-integrity.json",
+      "bytes": 3569,
+      "sha256": "57ac0e9f3f32332ab7603930bb380a99d444bfe694e1cd7bc9523855d146f6c5"
+    },
+    {
+      "path": "verification/net19a/cpu-ideal-quick.json",
+      "bytes": 10743,
+      "sha256": "f961c99fe448166f083ef32723b00881a62559ed45b6f1615408b43e11be7bc3"
+    },
+    {
+      "path": "verification/net19a/cpu-ideal.json",
+      "bytes": 10533,
+      "sha256": "161980db4eddfc8c21249eb07b14e3487418233f5fc1310afdf66b5cf47ca3b1"
+    },
+    {
+      "path": "verification/net19a/cpu-timed-quick.json",
+      "bytes": 10559,
+      "sha256": "ad2a70b134a593051bcc55224e470210a3ad8d9718f9f24beeb76480aab63d34"
+    },
+    {
+      "path": "verification/net19a/development/commit-trace-bench.sv",
+      "bytes": 5747,
+      "sha256": "b1d5fcfeb263d355e14e84cefbd0b2072401536af1ac031a4d0c91b5264d528c"
+    },
+    {
+      "path": "verification/net19a/development/commit-trace.json",
+      "bytes": 69797,
+      "sha256": "85f97631f57675d2e3a5023131588685818201f676065514c7afe040f23d2e26"
+    },
+    {
+      "path": "verification/net19a/development/debug-model.sv",
+      "bytes": 2686,
+      "sha256": "fc0f6cc2f68ea7af4f42c4ef221ef24b4dc769785a606f3e069426115960bfeb"
+    },
+    {
+      "path": "verification/net19a/development/epoch-seed-order/failure.json",
+      "bytes": 318,
+      "sha256": "7e4320a95bce95687f02103e895f355fa268a74acae90f8dd280f13116abf54c"
+    },
+    {
+      "path": "verification/net19a/development/epoch-seed-order/make_system_cpu.py",
+      "bytes": 4791,
+      "sha256": "3c40588cf6f17df12a24d59c7989cf4104c6fa65295acc9b210028f1d8ccec06"
+    },
+    {
+      "path": "verification/net19a/development/epoch-seed-order/run_system_cpu.py",
+      "bytes": 7855,
+      "sha256": "99c16b7469003244107391c80ec979a0951453c6df1dd406fe1cb361ce212a7a"
+    },
+    {
+      "path": "verification/net19a/development/epoch-seed-order/system-cpu-ideal-quick.json",
+      "bytes": 11737,
+      "sha256": "bf8c780601581eac092deb906921e20e128259bb8592896f468b3922ebdc149c"
+    },
+    {
+      "path": "verification/net19a/development/epoch-seed-order/system-tb_rtl_cpu-ideal.sv",
+      "bytes": 5340,
+      "sha256": "a1be56f01e386b7c1ad5d85b3e8b2b4f47120f15a140237a88d09e9cd3d6bfbd"
+    },
+    {
+      "path": "verification/net19a/development/erc-symbol-name/check_system_access_erc.py",
+      "bytes": 1848,
+      "sha256": "bf1e41c127e12e36407e1f15ba710463090b40b804e75ce534850748fe69b993"
+    },
+    {
+      "path": "verification/net19a/development/erc-symbol-name/failure.json",
+      "bytes": 239,
+      "sha256": "b2baea5106307c6086b10e359171b7e42768e821b25eeab5c6f234e8c4aa978b"
+    },
+    {
+      "path": "verification/net19a/development/git-format-evidence/failure.json",
+      "bytes": 1337,
+      "sha256": "787a02c572c07fc2189d00773837e3e08bb73a4f6637e01aeae21e6b3923ffef"
+    },
+    {
+      "path": "verification/net19a/development/initial-integration/adapter-origin.json",
+      "bytes": 765,
+      "sha256": "f6f1237b52918b6569f207b99d51a96f98c04fd3c4a746d646905dda32a92651"
+    },
+    {
+      "path": "verification/net19a/development/initial-integration/cpu-ideal-quick.json",
+      "bytes": 10743,
+      "sha256": "f961c99fe448166f083ef32723b00881a62559ed45b6f1615408b43e11be7bc3"
+    },
+    {
+      "path": "verification/net19a/development/initial-integration/cpu-ideal.json",
+      "bytes": 10533,
+      "sha256": "161980db4eddfc8c21249eb07b14e3487418233f5fc1310afdf66b5cf47ca3b1"
+    },
+    {
+      "path": "verification/net19a/development/initial-integration/cpu-timed-quick.json",
+      "bytes": 10559,
+      "sha256": "ad2a70b134a593051bcc55224e470210a3ad8d9718f9f24beeb76480aab63d34"
+    },
+    {
+      "path": "verification/net19a/development/initial-integration/isa1_memory_keyboard.sv",
+      "bytes": 4993,
+      "sha256": "f32176d9903fc65e1871704d3f4b9cc51ead798a1d52e753985453b73a51cd93"
+    },
+    {
+      "path": "verification/net19a/development/initial-integration/make_keyboard_cpu.py",
+      "bytes": 3121,
+      "sha256": "1c9109cec0375a5a30aaae74eac73975054cc1e3999e715101c5ec299ab9ff2a"
+    },
+    {
+      "path": "verification/net19a/development/initial-integration/origin.json",
+      "bytes": 2349,
+      "sha256": "c9577c6b5e716ea89fce4511a26235e1838aa715c13609e4a51ee0e37f3c342b"
+    },
+    {
+      "path": "verification/net19a/development/initial-integration/run_keyboard_cpu.py",
+      "bytes": 6723,
+      "sha256": "d2b23c9e72a74c207d900b70453e9a122d4605b96cd4c66e231c9177c83589e8"
+    },
+    {
+      "path": "verification/net19a/development/initial-integration/tb_rtl_cpu-ideal.sv",
+      "bytes": 5271,
+      "sha256": "bdf51ba5860c76d63cd1b2b0b3f1d201d3c4e7d61f45cd7cebbf8d024121dd37"
+    },
+    {
+      "path": "verification/net19a/development/initial-integration/tb_rtl_cpu-timed.sv",
+      "bytes": 5302,
+      "sha256": "5f509914d0f2a859983fc584f5723fea8af59ee12c59958319f9634f02e5e5ae"
+    },
+    {
+      "path": "verification/net19a/development/initial-setup-trace.json",
+      "bytes": 2207,
+      "sha256": "a69bf5ab23982fdc206a23322a4b25a3a25d1de3caddcaa1ab05693d08ff9e80"
+    },
+    {
+      "path": "verification/net19a/development/negative-bench-hash/prepare_system_vectors.py",
+      "bytes": 5534,
+      "sha256": "67dab9694d6e47837c5fc9a655627d7027fec3d9c9212d1b82330a48849b95aa"
+    },
+    {
+      "path": "verification/net19a/development/negative-bench-hash/run_system_vectors.py",
+      "bytes": 11347,
+      "sha256": "2b5c7f8a42de2c37dfd951d01ef622a3429bd297934bf63dd4154933e2cc5a7d"
+    },
+    {
+      "path": "verification/net19a/development/negative-bench-hash/status.json",
+      "bytes": 186,
+      "sha256": "e92f29ca81db3479dc2f042c5c66d4dcfedadd29f1cc9048cc95a4ec2f369ee3"
+    },
+    {
+      "path": "verification/net19a/development/negative-bench-hash/verified-cpu-negative-bank-ideal-quick.json",
+      "bytes": 12055,
+      "sha256": "21c31e70ae33ca370619b71790b66250905cf79ba025729b4a7492e6fc24567d"
+    },
+    {
+      "path": "verification/net19a/development/raw-scan-launch/failure.json",
+      "bytes": 245,
+      "sha256": "e75e0796f3940e7e3a7659633436e18aa6383658cafd46d8d4a202323a04cb22"
+    },
+    {
+      "path": "verification/net19a/development/raw-scan-launch/scan-ideal.json",
+      "bytes": 5637,
+      "sha256": "65af342d92f58595ce8b0fcbf35da45040a0e02a065a5c9be8814f60f8f5d37e"
+    },
+    {
+      "path": "verification/net19a/development/raw-scan-launch/system-scan-ideal-negative.json",
+      "bytes": 6113,
+      "sha256": "d7b4335718cfa3efa47c71d4ebaee5efb9e9c4476c1486d64896dd29d57b132a"
+    },
+    {
+      "path": "verification/net19a/development/raw-scan-launch/system-scan-timed.json",
+      "bytes": 6132,
+      "sha256": "615b19ff2e9874c63a066fca9b4fd5859bd565d43cd5750ca4bcd0c9544fa4fb"
+    },
+    {
+      "path": "verification/net19a/development/raw-scan-launch/tb_keyboard_scan.sv",
+      "bytes": 5334,
+      "sha256": "d32014b2334dfb034d616f1572cc0326f08bc3bc0a2817160c0444b6ea9a385a"
+    },
+    {
+      "path": "verification/net19a/development/scan-syntax/run_keyboard_scan.py",
+      "bytes": 3844,
+      "sha256": "d59f9fae945cee8900385eada22600b6ff22867fdc3b443c035c5de456b6176c"
+    },
+    {
+      "path": "verification/net19a/development/scan-syntax/scan-ideal.json",
+      "bytes": 6067,
+      "sha256": "07d12170f6b95cffbf59b5d89ceecd746eed1443f631b951be9923f95b2ee85d"
+    },
+    {
+      "path": "verification/net19a/development/scan-syntax/tb_keyboard_scan.sv",
+      "bytes": 5322,
+      "sha256": "45eab608af8214c0b6edd978ac3595e8d0f18a0e1fb269c51d3d2b8c51286f22"
+    },
+    {
+      "path": "verification/net19a/development/three-vector-commit-trace-bench.sv",
+      "bytes": 5747,
+      "sha256": "b1d5fcfeb263d355e14e84cefbd0b2072401536af1ac031a4d0c91b5264d528c"
+    },
+    {
+      "path": "verification/net19a/development/three-vector-commit-trace.json",
+      "bytes": 2189,
+      "sha256": "8b7c388586c65586fc1a16988a19b42e890270c11ad422b0bf7f18aa48b41d06"
+    },
+    {
+      "path": "verification/net19a/development/three-vector-trace_commit.py",
+      "bytes": 2336,
+      "sha256": "fe4a6235e6807a0bd4dbe9f70485d86f2709a3e2538289a821b81b5df12ec126"
+    },
+    {
+      "path": "verification/net19a/development/trace-root-failure.json",
+      "bytes": 170,
+      "sha256": "b3b5455a6484ffa7929612ebd0df175d1676e22a5ffd6e9ea7a95c68270db958"
+    },
+    {
+      "path": "verification/net19a/development/trace_commit.py",
+      "bytes": 2343,
+      "sha256": "9d6012fcb4228e658fb417b9fcd2b51f09ae580e0757e673a3a6c70132e8796f"
+    },
+    {
+      "path": "verification/net19a/development/trace_initial-wrong-root.py",
+      "bytes": 2824,
+      "sha256": "09107dec001820cb0e20b0ae579e6a098a55476dd7171f77086ce64f28143b6e"
+    },
+    {
+      "path": "verification/net19a/development/trace_initial.py",
+      "bytes": 2824,
+      "sha256": "104cb0b3cc060c3bd6af82d5a77f67712bde79cd7463fdfb7cb787bffaf4428c"
+    },
+    {
+      "path": "verification/net19a/environment.json",
+      "bytes": 6803,
+      "sha256": "019a11d485152356da7c59a8e6516b984c57ee8d2453a6fd3f11323451fc60d7"
+    },
+    {
+      "path": "verification/net19a/frame-ideal.png",
+      "bytes": 1361,
+      "sha256": "d9a8e76c001c18198f03ed53bed7864ad1043e3002e2908a94e98452b58f6375"
+    },
+    {
+      "path": "verification/net19a/frame-system-ideal.png",
+      "bytes": 1361,
+      "sha256": "d9a8e76c001c18198f03ed53bed7864ad1043e3002e2908a94e98452b58f6375"
+    },
+    {
+      "path": "verification/net19a/keyboard-scan-eeprom.bin",
+      "bytes": 32768,
+      "sha256": "eb21c2f51a6202292a2cc7c1f10842f28304fe5b1daab7cb5fa46eae48e5fde2"
+    },
+    {
+      "path": "verification/net19a/load-inventory.json",
+      "bytes": 12266,
+      "sha256": "45445760c9a5c8ac59b903693ab9885d5c9b7b49c905fc2ffb3b05348717004c"
+    },
+    {
+      "path": "verification/net19a/native/ahc174-model-results.json",
+      "bytes": 8179,
+      "sha256": "1fd9b7c43441a087a87cb41137dc64e8483c266369721669bc993c409b70283f"
+    },
+    {
+      "path": "verification/net19a/native/equivalence-check.json",
+      "bytes": 2075,
+      "sha256": "c0eb229c85205d010524eddf5919a02d15814476219099b5cf847b58c1a3697f"
+    },
+    {
+      "path": "verification/net19a/native/erc-summary.json",
+      "bytes": 1484,
+      "sha256": "7e0abf93720b4861a874e266edd4d0eb0f93615425191c6d81263bca63562dfb"
+    },
+    {
+      "path": "verification/net19a/native/erc.json",
+      "bytes": 82957,
+      "sha256": "3ec2eca6555586b4c3e112f53eb002efa3944a6698bc7086b664d2fee800901c"
+    },
+    {
+      "path": "verification/net19a/native/preview.png",
+      "bytes": 66495,
+      "sha256": "49eebd52aff522fd0fe97f827b33ae12887ca3e5775a5f2f209d3dc9b324f28e"
+    },
+    {
+      "path": "verification/net19a/native/schematic-check.json",
+      "bytes": 1244,
+      "sha256": "4b739c86f3470ea3fb8d48fb5e82af84cf29765c2f1d79886a5612f94af3800e"
+    },
+    {
+      "path": "verification/net19a/native/system_access.pdf",
+      "bytes": 240499,
+      "sha256": "3511b59559caabca2bc3cb44e16f5204dc9b4fc2bd7986b0a452f5608044ace3"
+    },
+    {
+      "path": "verification/net19a/native/system_access.xml",
+      "bytes": 110743,
+      "sha256": "c9a0b2d7384e8145b569858d5aabe8581d9bbbe388e86f9afcd27ac7913689b4"
+    },
+    {
+      "path": "verification/net19a/policy0/compiled-bench.sv",
+      "bytes": 5434,
+      "sha256": "6cf36e51a015d73672b273ae8183e971081cea80f857debff16522b1c1ca783e"
+    },
+    {
+      "path": "verification/net19a/policy0/system-keyboard-scan-eeprom.bin",
+      "bytes": 32768,
+      "sha256": "eb21c2f51a6202292a2cc7c1f10842f28304fe5b1daab7cb5fa46eae48e5fde2"
+    },
+    {
+      "path": "verification/net19a/policy0/system-scan-timed.json",
+      "bytes": 6707,
+      "sha256": "55e6ea4de86acc5c9cdeefc7c342beb7c11bf38e03a665935c5dd5bfd457bd36"
+    },
+    {
+      "path": "verification/net19a/program-ideal.json",
+      "bytes": 10981,
+      "sha256": "c39ce621f9deed8b325a92dda2e6cc8c66e3ac2097fbae3c9831372cb6248fb2"
+    },
+    {
+      "path": "verification/net19a/research/sn74ahc174.txt",
+      "bytes": 75211,
+      "sha256": "57bb68fa1fc5ca34470e519363e6f578f951815320c2872f360715ff6cd888c1"
+    },
+    {
+      "path": "verification/net19a/research/sources.json",
+      "bytes": 566,
+      "sha256": "e04e71dd3a481b8e3adcdf10ea12ddec06203c1aac7bb7d70eb82dbf9ebfcff9"
+    },
+    {
+      "path": "verification/net19a/scan-ideal.json",
+      "bytes": 5637,
+      "sha256": "65af342d92f58595ce8b0fcbf35da45040a0e02a065a5c9be8814f60f8f5d37e"
+    },
+    {
+      "path": "verification/net19a/system-adapter-origin.json",
+      "bytes": 1349,
+      "sha256": "c504fef082fa22acefbeb977736052a1fa379f10a29d1d3ddbebdcab05ee559c"
+    },
+    {
+      "path": "verification/net19a/system-cpu-ideal-quick.json",
+      "bytes": 11896,
+      "sha256": "8be6b44575122111d2074a458883b893d1760b09348360d11be897ac9a130b22"
+    },
+    {
+      "path": "verification/net19a/system-cpu-ideal.json",
+      "bytes": 11686,
+      "sha256": "918f089c76b13bd5a71c7ec71b7541b7c7f0db66c70c7017b1b110b7a46e21e5"
+    },
+    {
+      "path": "verification/net19a/system-cpu-timed-quick.json",
+      "bytes": 11661,
+      "sha256": "4a7dfbfe4afc44daf5908414218a2fcb2c65d9d94bb89407ae9e82520c4367e2"
+    },
+    {
+      "path": "verification/net19a/system-keyboard-scan-eeprom.bin",
+      "bytes": 32768,
+      "sha256": "eb21c2f51a6202292a2cc7c1f10842f28304fe5b1daab7cb5fa46eae48e5fde2"
+    },
+    {
+      "path": "verification/net19a/system-program-ideal.json",
+      "bytes": 12134,
+      "sha256": "2258ef105a6fe8bb5fc567e0ec67e7e857a23a851cc0cad6b63b568e195feac2"
+    },
+    {
+      "path": "verification/net19a/system-scan-ideal-negative.json",
+      "bytes": 6113,
+      "sha256": "bf98f54c8c66e1196d1d4afa2bb9d35bc13b2a39cfe768f7369924191d61a73f"
+    },
+    {
+      "path": "verification/net19a/system-scan-timed.json",
+      "bytes": 6256,
+      "sha256": "d2d63f1593f009a7d136dfb619e6e2550aecf602589a18e9ee8607e95464f345"
+    },
+    {
+      "path": "verification/net19a/system-tb_rtl_cpu-ideal.sv",
+      "bytes": 5340,
+      "sha256": "a5634918309f9e11d835d96b4490c0bac95ac542cdd5b872e5d70d0d88295a9d"
+    },
+    {
+      "path": "verification/net19a/system-tb_rtl_cpu-timed.sv",
+      "bytes": 5371,
+      "sha256": "a7438cbff6879e2f54e0c76b93f2d3371943cc9c875cfe68f1a9b1ac6cd75d54"
+    },
+    {
+      "path": "verification/net19a/system-tb_rtl_program-ideal.sv",
+      "bytes": 5109,
+      "sha256": "e438ed54173204ee400390bf5d38763ac5d59089dd9dbb6c0695af84f470b453"
+    },
+    {
+      "path": "verification/net19a/tb_rtl_cpu-ideal.sv",
+      "bytes": 5271,
+      "sha256": "bdf51ba5860c76d63cd1b2b0b3f1d201d3c4e7d61f45cd7cebbf8d024121dd37"
+    },
+    {
+      "path": "verification/net19a/tb_rtl_cpu-timed.sv",
+      "bytes": 5302,
+      "sha256": "5f509914d0f2a859983fc584f5723fea8af59ee12c59958319f9634f02e5e5ae"
+    },
+    {
+      "path": "verification/net19a/tb_rtl_program-ideal.sv",
+      "bytes": 5109,
+      "sha256": "e438ed54173204ee400390bf5d38763ac5d59089dd9dbb6c0695af84f470b453"
+    },
+    {
+      "path": "verification/net19a/timed-safety-batches.json",
+      "bytes": 19742,
+      "sha256": "121143697d360cdaf1e416e5227c0f6cdbf141eadd74fea5e89f65556f731e05"
+    },
+    {
+      "path": "verification/net19a/vector-origin.json",
+      "bytes": 742,
+      "sha256": "ad9ef3a97d5c84fdb1347b43ca444c8305bda394f5208085e7ba8cefff640bed"
+    },
+    {
+      "path": "verification/net19a/verified-cpu-early-timed-quick.json",
+      "bytes": 12287,
+      "sha256": "f048866fdc96759f092f8aa7c8a1a96935b95a8ce382c33e6528c793bd34d657"
+    },
+    {
+      "path": "verification/net19a/verified-cpu-ideal.json",
+      "bytes": 12262,
+      "sha256": "d215fcac1f699edead17387728b48d7bb7028fc8875e20974a880c6cea35220b"
+    },
+    {
+      "path": "verification/net19a/verified-cpu-legacy-state-timed-quick.json",
+      "bytes": 12338,
+      "sha256": "38f21db04fc809f27aba20f4d2bc5e5963cd1d74aa2a6750e9aeb95104fc671b"
+    },
+    {
+      "path": "verification/net19a/verified-cpu-negative-bank-ideal-quick.json",
+      "bytes": 12055,
+      "sha256": "aa11e294f14891af2077609f92099ff05b1b29e39a03bf08dd9d3110e2164765"
+    },
+    {
+      "path": "verification/net19a/verified-cpu-timed-quick.json",
+      "bytes": 12288,
+      "sha256": "53cb9e19a47308355fcf6ae2761241bbffdf8a31347db77e0bc48b36cb43ec33"
+    },
+    {
+      "path": "verification/net19a/verified-safety-ideal.json",
+      "bytes": 12214,
+      "sha256": "4edd96ac9a20f092fcc4ca9d426d16aaefd8c5730e5cd9822d393e33c2f2ea0b"
+    },
+    {
+      "path": "verification/net19a/verified-tb_rtl_cpu-early-timed.sv",
+      "bytes": 5754,
+      "sha256": "1a746c893ba55de3de8881c3c557cd121997dc69d205bbe79e2ff3bfa5464c14"
+    },
+    {
+      "path": "verification/net19a/verified-tb_rtl_cpu-ideal.sv",
+      "bytes": 5530,
+      "sha256": "2436ec664c42ed2009a70f8267140f33691a8148e7d6242f3dd6e7f12f43af2f"
+    },
+    {
+      "path": "verification/net19a/verified-tb_rtl_cpu-legacy-state-timed.sv",
+      "bytes": 5561,
+      "sha256": "9185532f7508316862c4c37d3d5df9c808dfb5c8a18d8a44d347c614be672254"
+    },
+    {
+      "path": "verification/net19a/verified-tb_rtl_cpu-negative-bank-ideal.sv",
+      "bytes": 5625,
+      "sha256": "5bec07a89c56073ab24da9eba0c74dbff8575a21d9116ad446f83f678518eda6"
+    },
+    {
+      "path": "verification/net19a/verified-tb_rtl_cpu-timed.sv",
+      "bytes": 5736,
+      "sha256": "f00187b61c3243b97a410cb8d28dc68b9a264f295ffb13b67dc77476dae6266e"
+    },
+    {
+      "path": "verification/net19a/verified-tb_rtl_safety-ideal.sv",
+      "bytes": 3803,
+      "sha256": "3f5917b96610082b8fbd7e33fd2761f7c79e99751aad89fdaa8acd38927c8dde"
+    }
+  ]
+}

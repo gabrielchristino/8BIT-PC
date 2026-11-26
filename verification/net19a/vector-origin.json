@@ -1,0 +1,18 @@
+{
+  "date": "2026-11-26",
+  "transformation": "Keep off-edge/epoch-atomic vector seeds; replace instantaneous output-level MMIO permission with permission sampled at actual peripheral FF clock. Add genuine unauthorized D input and legacy HC174 negative cases. Program runner/native graph unchanged.",
+  "files": [
+    {
+      "path": "tools/run_system_cpu.py",
+      "sha256": "c106d0c2d457074718f556a012ead2fcb959163027cdd53d1beebd72408a9438"
+    },
+    {
+      "path": "tools/prepare_system_vectors.py",
+      "sha256": "81e9a903fb20bbbc58ace1aa4e716be03f6bd369cc79aecaa669830154c96f90"
+    },
+    {
+      "path": "tools/run_system_vectors.py",
+      "sha256": "be3e692af7abf301cf66af0c6c6f551ca964e259c7a7edcdb1a912b5c6fc78d2"
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+[
+  {
+    "git_commit": "29c37359881a386644b8dcfbf4ccdd967edd159c",
+    "manifest": "verification/rev9842/manifest.json",
+    "checked": 26,
+    "failures": []
+  },
+  {
+    "git_commit": "6bbac525a4435f87566ccb723e733134e21d3e43",
+    "manifest": "verification/rtl01/manifest.json",
+    "checked": 26,
+    "failures": []
+  },
+  {
+    "git_commit": "60c097c8d5fb6a8f282fa6429347431c9f313ac8",
+    "manifest": "verification/net02/manifest.json",
+    "checked": 35,
+    "failures": []
+  },
+  {
+    "git_commit": "b5e46593fab55b8679254f9004e5711cd1ffa2c5",
+    "manifest": "verification/net03/manifest.json",
+    "checked": 42,
+    "failures": []
+  },
+  {
+    "git_commit": "179b06ed6aa80ab1658022657638ef571888d6a7",
+    "manifest": "verification/net04/manifest.json",
+    "checked": 40,
+    "failures": []
+  },
+  {
+    "git_commit": "18a3cdc2ab83cb8af51177b8116b0320a4a4f5b8",
+    "manifest": "verification/net05/manifest.json",
+    "checked": 37,
+    "failures": []
+  },
+  {
+    "git_commit": "d876dc6499c49b937c2dfd318abe605eea0497e3",
+    "manifest": "verification/net06/manifest.json",
+    "checked": 40,
+    "failures": []
+  },
+  {
+    "git_commit": "50a923cd3d60bb4943030934140d8336be4ddf42",
+    "manifest": "verification/net07/manifest.json",
+    "checked": 40,
+    "failures": []
+  },
+  {
+    "git_commit": "4f2584e7e3d07b0872ecb62eae694eae13a7fd4c",
+    "manifest": "verification/net08/manifest.json",
+    "checked": 39,
+    "failures": []
+  },
+  {
+    "git_commit": "5020e30394303971c4c0c1852a81d635365b4fee",
+    "manifest": "verification/net09/manifest.json",
+    "checked": 50,
+    "failures": []
+  },
+  {
+    "git_commit": "52bb48901fda92848add95f01097b704472d397e",
+    "manifest": "verification/net10/manifest.json",
+    "checked": 57,
+    "failures": []
+  },
+  {
+    "git_commit": "3cac9fca256377186960d106d08d7ccd0ca6c6dc",
+    "manifest": "verification/net11/manifest.json",
+    "checked": 51,
+    "failures": []
+  },
+  {
+    "git_commit": "ce19e78eeb865e7787b5f913dd5a6aa6e3914547",
+    "manifest": "verification/net12/manifest.json",
+    "checked": 52,
+    "failures": []
+  },
+  {
+    "git_commit": "9fae1298a3cd74844d294464bfdd0541241815af",
+    "manifest": "verification/net13/manifest.json",
+    "checked": 120,
+    "failures": []
+  },
+  {
+    "git_commit": "ea529d0b7acac89abbbf07b42632f93006fd63af",
+    "manifest": "verification/net14a/manifest.json",
+    "checked": 20,
+    "failures": []
+  },
+  {
+    "git_commit": "6a83d5601ff42b7a970f7d180b405094f612ba09",
+    "manifest": "verification/net14b/manifest.json",
+    "checked": 55,
+    "failures": []
+  },
+  {
+    "git_commit": "c1eac2581f8c08b92aff576c700a6465e16056d2",
+    "manifest": "verification/net14c/manifest.json",
+    "checked": 79,
+    "failures": []
+  },
+  {
+    "git_commit": "f297efb645a7cbaf75f7deee03ce805acce2dd32",
+    "manifest": "verification/net15/manifest.json",
+    "checked": 275,
+    "failures": []
+  },
+  {
+    "git_commit": "30648b94d7529fe577d1984f3a8f8ccf108c1acf",
+    "manifest": "verification/net16/manifest.json",
+    "checked": 580,
+    "failures": []
+  },
+  {
+    "git_commit": "b439a3aa84505654ea064e0ccd6bc1e3636b4c0b",
+    "manifest": "verification/net17/manifest.json",
+    "checked": 3936,
+    "failures": []
+  },
+  {
+    "git_commit": "332fd31b743d6a61e5f8d691364454f47ce6ab52",
+    "manifest": "verification/net18/manifest.json",
+    "checked": 245,
+    "failures": []
+  },
+  {
+    "git_commit": "9a21166ebdcd8d0dd118345e27b735ee75296984",
+    "manifest": "verification/export-2026-11-26/manifest.json",
+    "checked": 279,
+    "failures": []
+  }
+]

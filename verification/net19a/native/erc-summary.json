@@ -1,0 +1,45 @@
+{
+  "date": "2026-11-26",
+  "kicad": "10.0.8",
+  "command": [
+    "/home/gabri/.local/opt/isa1-kicad-10.0.8/squashfs-root/usr/bin/kicad-cli",
+    "sch",
+    "erc",
+    "--format",
+    "json",
+    "--severity-all",
+    "--exit-code-violations",
+    "-o",
+    "/mnt/c/Users/gabri/projetos/isa1/verification/net19a/native/erc.json",
+    "/mnt/c/Users/gabri/projetos/isa1/hardware/system_access/system_access.kicad_sch"
+  ],
+  "exit": 5,
+  "stdout": "Found 135 violations\nSaved ERC Report to /mnt/c/Users/gabri/projetos/isa1/verification/net19a/native/erc.json\n",
+  "stderr": "",
+  "violation_counts": {
+    "power_pin_not_driven": 2,
+    "pin_not_driven": 45,
+    "isolated_pin_label": 88
+  },
+  "sources": [
+    {
+      "path": "hardware/system_access/system_access.kicad_sch",
+      "sha256": "91d6cd2aae14bb6c4c7c06036284c52ac92b379912e5ff6279535248df8a32e4"
+    },
+    {
+      "path": "hardware/system_access/system_access.kicad_pro",
+      "sha256": "68b74cd5a0dcc3d997c9c4cd0668d81477d8c5aece6d2a4bce280ccb925fee94"
+    },
+    {
+      "path": "hardware/system_access/access_packages.kicad_sym",
+      "sha256": "bbe8df153d42de75088c3d7617e6908ae4224eacfb3e36dd51b3ea3d05e69275"
+    },
+    {
+      "path": "tools/check_system_access_erc.py",
+      "sha256": "889808e419e5ef7990e03a68f744e7d69c9118106e6779d42f2d7c5b536eed53"
+    }
+  ],
+  "erc_passed": false,
+  "board_release": false,
+  "scope": "Partial sheet; inputs/outputs/power sources need global union, no waivers added"
+}

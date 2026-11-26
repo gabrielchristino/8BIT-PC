@@ -1,0 +1,28 @@
+; NEW ISA-1 raw scan diagnostic, 2026-11-26, origin C040H.
+; Hardware KEY_READY stretches reads; this is not debounce/event firmware.
+; Four rows, low/high bytes stored at RAM 6000H..6007H. Membranes intact.
+LDA #0
+STA A010H
+LDA A011H
+STA 6000H
+LDA A012H
+STA 6001H
+LDA #1
+STA A010H
+LDA A011H
+STA 6002H
+LDA A012H
+STA 6003H
+LDA #2
+STA A010H
+LDA A011H
+STA 6004H
+LDA A012H
+STA 6005H
+LDA #3
+STA A010H
+LDA A011H
+STA 6006H
+LDA A012H
+STA 6007H
+HALT

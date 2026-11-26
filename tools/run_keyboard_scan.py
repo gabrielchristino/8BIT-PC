@@ -1,0 +1,55 @@
+"""Execute a new raw keyboard scan firmware on the pin CPU, no state seeding."""
+import argparse
+import hashlib
+import json
+from pathlib import Path
+import tempfile
+from run_rtl import BASE, assemble, run
+from run_keyboard_cpu import MODELS
+
+ROOT=Path(__file__).resolve().parents[1]
+OUT=ROOT/'verification/net19a'
+
+
+def columns(keys, selected):
+    rows={selected};cols=set()
+    while True:
+        nr=rows|{r for r in range(4) for c in cols if keys>>(r*16+c)&1}
+        nc=cols|{c for c in range(16) for r in rows if keys>>(r*16+c)&1}
+        if (nr,nc)==(rows,cols):return 65535^sum(1<<c for c in cols)
+        rows,cols=nr,nc
+
+
+def main():
+    parser=argparse.ArgumentParser();parser.add_argument('--timed',action='store_true');parser.add_argument('--negative',action='store_true');args=parser.parse_args()
+    OUT.mkdir(parents=True,exist_ok=True)
+    patterns=[0,(1<<0)|(1<<63),(1<<0)|(1<<8)|(1<<16),(1<<15)|(1<<32),(1<<19)|(1<<46)]
+    source=ROOT/'firmware/net19a/keyboard_scan.asm';code=assemble(source.read_text(),0xc040)
+    image=bytearray(32768);image[:3]=bytes.fromhex('40 40 c0');image[0x40:0x40+len(code)]=code
+    names=MODELS+['sim/net19a/tb_keyboard_scan.sv','firmware/net19a/keyboard_scan.asm','tools/run_keyboard_scan.py','tools/run_keyboard_cpu.py']
+    report={'date':'2026-11-26','scope':'New raw scan firmware executed on pin CPU/memory/MMIO/raster; 5 static frames including a ghost rectangle, CPU clock pause and pending-read reset. Ideal contacts; no debounce/host-policy CPU firmware/NET18 analog-power signoff',
+            'timed':args.timed,'negative':args.negative,'image_sha256':hashlib.sha256(image).hexdigest(),'assembled_bytes':len(code),
+            'patterns':[{'keys':f'{x:016x}','expected_rows':[columns(x,r) for r in range(4)]} for x in patterns],
+            'sources':[{'path':n,'sha256':hashlib.sha256((ROOT/n).read_bytes()).hexdigest()} for n in names],'failures':[],'production_released':False}
+    with tempfile.TemporaryDirectory(prefix='isa1-scan-') as tmp:
+        work=Path(tmp)
+        for lane in range(4):
+            data=(BASE/f'control_lane{lane}.bin').read_bytes();(work/f'control_lane{lane}.hex').write_text(''.join(f'{x:02x}\n' for x in data))
+        (work/'scan_image.hex').write_text(''.join(f'{x:02x}\n' for x in image))
+        (work/'scan_patterns.hex').write_text(''.join(f'{x:016x}\n' for x in patterns))
+        (work/'scan_expected.hex').write_text(''.join(f'{columns(x,r):04x}\n' for x in patterns for r in range(4)))
+        cmd=['iverilog','-g2012','-Wall','-s','tb_keyboard_scan',f'-Ptb_keyboard_scan.TIMED={int(args.timed)}',f'-Ptb_keyboard_scan.BYPASS_READY={int(args.negative)}','-o',str(work/'test.vvp'),*[str(ROOT/n) for n in MODELS],str(ROOT/'sim/net19a/tb_keyboard_scan.sv')]
+        report['compile']=run(cmd,work)
+        if not report['compile']['exit']:report['execution']=run(['vvp',str(work/'test.vvp')],work,timeout=600)
+        output=report.get('execution',{})
+        passed=report['compile']['exit']==0 and (output.get('exit')!=0 and 'CPU column read before hardware settling' in output.get('stdout','') if args.negative else output.get('exit')==0 and 'scan_frames=5 completed_column_reads=40' in output.get('stdout','') and 'failures=0' in output['stdout'])
+        report['passed']=passed
+        if not passed:report['failures'].append('scan firmware')
+        target=OUT/('scan-'+('timed' if args.timed else 'ideal')+('-negative' if args.negative else '')+'.json');target.write_text(json.dumps(report,indent=2)+'\n')
+        if passed and not args.negative:
+            (OUT/'keyboard-scan-eeprom.bin').write_bytes(image)
+        print(json.dumps({'timed':args.timed,'negative':args.negative,'passed':passed,'compile':report['compile'],'execution':output}),flush=True)
+    return int(not passed)
+
+
+if __name__=='__main__':raise SystemExit(main())

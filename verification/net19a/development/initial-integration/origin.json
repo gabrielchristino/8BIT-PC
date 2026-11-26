@@ -1,0 +1,50 @@
+{
+  "status": "Initial separate integration; ideal quick passes but full ideal MMIO monitor and timed controller setup fail. Not accepted.",
+  "files": [
+    {
+      "path": "tools/make_keyboard_cpu.py",
+      "preserved": "verification/net19a/development/initial-integration/make_keyboard_cpu.py",
+      "sha256": "1c9109cec0375a5a30aaae74eac73975054cc1e3999e715101c5ec299ab9ff2a"
+    },
+    {
+      "path": "tools/run_keyboard_cpu.py",
+      "preserved": "verification/net19a/development/initial-integration/run_keyboard_cpu.py",
+      "sha256": "d2b23c9e72a74c207d900b70453e9a122d4605b96cd4c66e231c9177c83589e8"
+    },
+    {
+      "path": "sim/net19a/isa1_memory_keyboard.sv",
+      "preserved": "verification/net19a/development/initial-integration/isa1_memory_keyboard.sv",
+      "sha256": "f32176d9903fc65e1871704d3f4b9cc51ead798a1d52e753985453b73a51cd93"
+    },
+    {
+      "path": "verification/net19a/adapter-origin.json",
+      "preserved": "verification/net19a/development/initial-integration/adapter-origin.json",
+      "sha256": "f6f1237b52918b6569f207b99d51a96f98c04fd3c4a746d646905dda32a92651"
+    },
+    {
+      "path": "verification/net19a/cpu-ideal-quick.json",
+      "preserved": "verification/net19a/development/initial-integration/cpu-ideal-quick.json",
+      "sha256": "f961c99fe448166f083ef32723b00881a62559ed45b6f1615408b43e11be7bc3"
+    },
+    {
+      "path": "verification/net19a/cpu-ideal.json",
+      "preserved": "verification/net19a/development/initial-integration/cpu-ideal.json",
+      "sha256": "161980db4eddfc8c21249eb07b14e3487418233f5fc1310afdf66b5cf47ca3b1"
+    },
+    {
+      "path": "verification/net19a/cpu-timed-quick.json",
+      "preserved": "verification/net19a/development/initial-integration/cpu-timed-quick.json",
+      "sha256": "ad2a70b134a593051bcc55224e470210a3ad8d9718f9f24beeb76480aab63d34"
+    },
+    {
+      "path": "verification/net19a/tb_rtl_cpu-ideal.sv",
+      "preserved": "verification/net19a/development/initial-integration/tb_rtl_cpu-ideal.sv",
+      "sha256": "bdf51ba5860c76d63cd1b2b0b3f1d201d3c4e7d61f45cd7cebbf8d024121dd37"
+    },
+    {
+      "path": "verification/net19a/tb_rtl_cpu-timed.sv",
+      "preserved": "verification/net19a/development/initial-integration/tb_rtl_cpu-timed.sv",
+      "sha256": "5f509914d0f2a859983fc584f5723fea8af59ee12c59958319f9634f02e5e5ae"
+    }
+  ]
+}

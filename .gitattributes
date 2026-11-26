@@ -26,3 +26,6 @@ revisions/** -text
 # Byte-preserved historical export evidence, including original line endings.
 /archive/export-2026-11-26/** -text -whitespace
 /archive/export-pages-2026-11-26/** -text -whitespace
+
+# Exact generated bench snapshots are compiled evidence, including emitter spacing.
+/verification/net19a/**/*.sv -whitespace

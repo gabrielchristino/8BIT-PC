@@ -1,3 +1,5 @@
+**Avanço NET-19A:** [CPU com MMIO e teclado por pinos](docs/engineering/NET19A.md): 6.886 casos ideais, dois cenários temporizados de 1.062 casos e boot/quadro completo passaram. Diagnóstico de varredura executa na CPU; três pacotes do controlador passam a AHC174, mantendo lógica e quantidade. Energia/reset global, clock/DAC, firmware de eventos e placa física continuam pendentes.
+
 **Nova recuperação, 26/11/2026:** [exportação local do ISA-1](docs/EXPORT_RECOVERY_2026-11-26.md), com quatro registros de conversa, 240 arquivos disponíveis e duas Pages. REV33 e REV76 completas foram recuperadas e suas auditorias reproduzidas. Permanecem 33 anexos sem conteúdo nesta exportação e 72 IDs de mensagens de origem ausentes; não se declara recuperação integral.
 
 **Avanço NET-18:** [alimentação e supervisão](docs/engineering/NET18.md): nova folha candidata de seis CIs/100 pinos, 64 cenários condicionais de reserva de energia e regressões de reset passaram. Consumo real, conversor/USB-C/POR e integração global permanecem abertos; o modelo oficial do regulador não concluiu a simulação.

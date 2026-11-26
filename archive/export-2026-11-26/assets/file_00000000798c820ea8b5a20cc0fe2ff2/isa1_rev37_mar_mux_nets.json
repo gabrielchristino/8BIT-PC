@@ -1,0 +1,290 @@
+[
+  {
+    "ic": "U_MAR_1_0",
+    "channel": 1,
+    "a": "PC[0]",
+    "b": "SP[0]",
+    "y": "MUX1[0]",
+    "select": "MUX_S1",
+    "enable_n": "GND"
+  },
+  {
+    "ic": "U_MAR_1_0",
+    "channel": 2,
+    "a": "PC[1]",
+    "b": "SP[1]",
+    "y": "MUX1[1]",
+    "select": "MUX_S1",
+    "enable_n": "GND"
+  },
+  {
+    "ic": "U_MAR_1_0",
+    "channel": 3,
+    "a": "PC[2]",
+    "b": "SP[2]",
+    "y": "MUX1[2]",
+    "select": "MUX_S1",
+    "enable_n": "GND"
+  },
+  {
+    "ic": "U_MAR_1_0",
+    "channel": 4,
+    "a": "PC[3]",
+    "b": "SP[3]",
+    "y": "MUX1[3]",
+    "select": "MUX_S1",
+    "enable_n": "GND"
+  },
+  {
+    "ic": "U_MAR_1_1",
+    "channel": 1,
+    "a": "PC[4]",
+    "b": "SP[4]",
+    "y": "MUX1[4]",
+    "select": "MUX_S1",
+    "enable_n": "GND"
+  },
+  {
+    "ic": "U_MAR_1_1",
+    "channel": 2,
+    "a": "PC[5]",
+    "b": "SP[5]",
+    "y": "MUX1[5]",
+    "select": "MUX_S1",
+    "enable_n": "GND"
+  },
+  {
+    "ic": "U_MAR_1_1",
+    "channel": 3,
+    "a": "PC[6]",
+    "b": "SP[6]",
+    "y": "MUX1[6]",
+    "select": "MUX_S1",
+    "enable_n": "GND"
+  },
+  {
+    "ic": "U_MAR_1_1",
+    "channel": 4,
+    "a": "PC[7]",
+    "b": "SP[7]",
+    "y": "MUX1[7]",
+    "select": "MUX_S1",
+    "enable_n": "GND"
+  },
+  {
+    "ic": "U_MAR_1_2",
+    "channel": 1,
+    "a": "PC[8]",
+    "b": "SP[8]",
+    "y": "MUX1[8]",
+    "select": "MUX_S1",
+    "enable_n": "GND"
+  },
+  {
+    "ic": "U_MAR_1_2",
+    "channel": 2,
+    "a": "PC[9]",
+    "b": "SP[9]",
+    "y": "MUX1[9]",
+    "select": "MUX_S1",
+    "enable_n": "GND"
+  },
+  {
+    "ic": "U_MAR_1_2",
+    "channel": 3,
+    "a": "PC[10]",
+    "b": "SP[10]",
+    "y": "MUX1[10]",
+    "select": "MUX_S1",
+    "enable_n": "GND"
+  },
+  {
+    "ic": "U_MAR_1_2",
+    "channel": 4,
+    "a": "PC[11]",
+    "b": "SP[11]",
+    "y": "MUX1[11]",
+    "select": "MUX_S1",
+    "enable_n": "GND"
+  },
+  {
+    "ic": "U_MAR_1_3",
+    "channel": 1,
+    "a": "PC[12]",
+    "b": "SP[12]",
+    "y": "MUX1[12]",
+    "select": "MUX_S1",
+    "enable_n": "GND"
+  },
+  {
+    "ic": "U_MAR_1_3",
+    "channel": 2,
+    "a": "PC[13]",
+    "b": "SP[13]",
+    "y": "MUX1[13]",
+    "select": "MUX_S1",
+    "enable_n": "GND"
+  },
+  {
+    "ic": "U_MAR_1_3",
+    "channel": 3,
+    "a": "PC[14]",
+    "b": "SP[14]",
+    "y": "MUX1[14]",
+    "select": "MUX_S1",
+    "enable_n": "GND"
+  },
+  {
+    "ic": "U_MAR_1_3",
+    "channel": 4,
+    "a": "PC[15]",
+    "b": "SP[15]",
+    "y": "MUX1[15]",
+    "select": "MUX_S1",
+    "enable_n": "GND"
+  },
+  {
+    "ic": "U_MAR_2_0",
+    "channel": 1,
+    "a": "MUX1[0]",
+    "b": "EA[0]",
+    "y": "MUX2[0]",
+    "select": "MUX_S2",
+    "enable_n": "GND"
+  },
+  {
+    "ic": "U_MAR_2_0",
+    "channel": 2,
+    "a": "MUX1[1]",
+    "b": "EA[1]",
+    "y": "MUX2[1]",
+    "select": "MUX_S2",
+    "enable_n": "GND"
+  },
+  {
+    "ic": "U_MAR_2_0",
+    "channel": 3,
+    "a": "MUX1[2]",
+    "b": "EA[2]",
+    "y": "MUX2[2]",
+    "select": "MUX_S2",
+    "enable_n": "GND"
+  },
+  {
+    "ic": "U_MAR_2_0",
+    "channel": 4,
+    "a": "MUX1[3]",
+    "b": "EA[3]",
+    "y": "MUX2[3]",
+    "select": "MUX_S2",
+    "enable_n": "GND"
+  },
+  {
+    "ic": "U_MAR_2_1",
+    "channel": 1,
+    "a": "MUX1[4]",
+    "b": "EA[4]",
+    "y": "MUX2[4]",
+    "select": "MUX_S2",
+    "enable_n": "GND"
+  },
+  {
+    "ic": "U_MAR_2_1",
+    "channel": 2,
+    "a": "MUX1[5]",
+    "b": "EA[5]",
+    "y": "MUX2[5]",
+    "select": "MUX_S2",
+    "enable_n": "GND"
+  },
+  {
+    "ic": "U_MAR_2_1",
+    "channel": 3,
+    "a": "MUX1[6]",
+    "b": "EA[6]",
+    "y": "MUX2[6]",
+    "select": "MUX_S2",
+    "enable_n": "GND"
+  },
+  {
+    "ic": "U_MAR_2_1",
+    "channel": 4,
+    "a": "MUX1[7]",
+    "b": "EA[7]",
+    "y": "MUX2[7]",
+    "select": "MUX_S2",
+    "enable_n": "GND"
+  },
+  {
+    "ic": "U_MAR_2_2",
+    "channel": 1,
+    "a": "MUX1[8]",
+    "b": "EA[8]",
+    "y": "MUX2[8]",
+    "select": "MUX_S2",
+    "enable_n": "GND"
+  },
+  {
+    "ic": "U_MAR_2_2",
+    "channel": 2,
+    "a": "MUX1[9]",
+    "b": "EA[9]",
+    "y": "MUX2[9]",
+    "select": "MUX_S2",
+    "enable_n": "GND"
+  },
+  {
+    "ic": "U_MAR_2_2",
+    "channel": 3,
+    "a": "MUX1[10]",
+    "b": "EA[10]",
+    "y": "MUX2[10]",
+    "select": "MUX_S2",
+    "enable_n": "GND"
+  },
+  {
+    "ic": "U_MAR_2_2",
+    "channel": 4,
+    "a": "MUX1[11]",
+    "b": "EA[11]",
+    "y": "MUX2[11]",
+    "select": "MUX_S2",
+    "enable_n": "GND"
+  },
+  {
+    "ic": "U_MAR_2_3",
+    "channel": 1,
+    "a": "MUX1[12]",
+    "b": "EA[12]",
+    "y": "MUX2[12]",
+    "select": "MUX_S2",
+    "enable_n": "GND"
+  },
+  {
+    "ic": "U_MAR_2_3",
+    "channel": 2,
+    "a": "MUX1[13]",
+    "b": "EA[13]",
+    "y": "MUX2[13]",
+    "select": "MUX_S2",
+    "enable_n": "GND"
+  },
+  {
+    "ic": "U_MAR_2_3",
+    "channel": 3,
+    "a": "MUX1[14]",
+    "b": "EA[14]",
+    "y": "MUX2[14]",
+    "select": "MUX_S2",
+    "enable_n": "GND"
+  },
+  {
+    "ic": "U_MAR_2_3",
+    "channel": 4,
+    "a": "MUX1[15]",
+    "b": "EA[15]",
+    "y": "MUX2[15]",
+    "select": "MUX_S2",
+    "enable_n": "GND"
+  }
+]

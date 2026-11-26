@@ -1,0 +1,9 @@
+2 {'video_setup': 0.722, 'video_hold': 28.722, 'sram_release': 25.722, 'address_before_WE': 57.944, 'data_before_WE_end': 45.444, 'write_pulse': 20.722, 'address_to_end': 87.666, 'write_hold': 29.722, 'cpu_release': -26.5, 'cpu_read_setup': 40.444, 'cpu_read_hold': 28.722}
+sensitivity 0 /45
+4 {'video_setup': 0.722, 'video_hold': 28.722, 'sram_release': 25.722, 'address_before_WE': 57.944, 'data_before_WE_end': 45.444, 'write_pulse': 20.722, 'address_to_end': 87.666, 'write_hold': 29.722, 'cpu_release': 132.388, 'cpu_read_setup': 40.444, 'cpu_read_hold': 28.722}
+sensitivity 31 /45
+8 {'video_setup': 0.722, 'video_hold': 28.722, 'sram_release': 25.722, 'address_before_WE': 57.944, 'data_before_WE_end': 45.444, 'write_pulse': 20.722, 'address_to_end': 87.666, 'write_hold': 29.722, 'cpu_release': 450.163, 'cpu_read_setup': 40.444, 'cpu_read_hold': 28.722}
+sensitivity 31 /45
+raster 2 52500 76800 52500
+raster 4 26250 76800 26250
+raster 8 13125 76800 13125

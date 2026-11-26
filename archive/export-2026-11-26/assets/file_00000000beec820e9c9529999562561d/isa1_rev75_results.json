@@ -1,0 +1,6 @@
+{
+  "scenarios": 28672,
+  "wait_cycles": 1118208,
+  "memory_commits": 114688,
+  "failures": 0
+}

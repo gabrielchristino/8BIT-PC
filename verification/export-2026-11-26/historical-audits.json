@@ -1,0 +1,105 @@
+{
+  "date": "2026-11-26",
+  "python": "Python 3.12.3",
+  "scope": "Recovered REV33/REV76 symbolic structural generators. No gate, microcode execution, electrical or current ISA26 signoff",
+  "sources": [
+    {
+      "path": "archive/export-2026-11-26/assets/file_000000008fb4820ebbbed7cdb8e2625c/isa1_rev33_microcode.py",
+      "sha256": "0538cc7c68d9c4f2c61ffe71351699fa96dbac6e720e617544acaba52873dfdd"
+    },
+    {
+      "path": "archive/export-2026-11-26/assets/file_00000000894c820e8f2695522a4ebe73/isa1_rev33_microcode.json",
+      "sha256": "edd57843834c9c21f1356a5e2746b76d5f53acf21e0107ab54d975c8330c2b53"
+    },
+    {
+      "path": "archive/export-2026-11-26/assets/file_000000003408820e8d410ff699ea4331/isa1_rev76.py",
+      "sha256": "283c606df0186b41730dc07a7bd232704e63c4b140c1accb3269e97d0ee9dd4d"
+    },
+    {
+      "path": "archive/export-2026-11-26/assets/file_000000009c80820e8ace27b0af06d015/isa1_rev76_microcode.json",
+      "sha256": "826aa9bed1d4b8ef9d132aa788141799ccd271e791242a492db80f88db65291b"
+    },
+    {
+      "path": "tools/verify_export_audits.py",
+      "sha256": "9463442e9a0b4defd8860f9da289138c6c6c54f78c43fb96a4b86f9474686723"
+    }
+  ],
+  "runs": [
+    {
+      "script": "isa1_rev33_microcode.py",
+      "command": [
+        "python3",
+        "/tmp/isa1-recovered-history-192e2zyb/isa1_rev33_microcode.py"
+      ],
+      "exit": 0,
+      "stdout": "{\n  \"status\": \"PASS symbolic structural checks\",\n  \"opcode_count\": 19,\n  \"max_abstract_steps\": 13,\n  \"total_abstract_steps\": 101,\n  \"excluded_unimplemented_opcodes\": [\n    \"32\",\n    \"33\",\n    \"34\",\n    \"35\",\n    \"36\",\n    \"42\",\n    \"54\"\n  ],\n  \"limitations\": [\n    \"no gate-level simulation\",\n    \"no electrical timing\",\n    \"no verified pin-level schematic\",\n    \"conditional jump timing not optimized\",\n    \"memory access sequencing and SP updates require physical datapath\"\n  ]\n}\n",
+      "stderr": "",
+      "generated_sha256": "edd57843834c9c21f1356a5e2746b76d5f53acf21e0107ab54d975c8330c2b53",
+      "original_sha256": "edd57843834c9c21f1356a5e2746b76d5f53acf21e0107ab54d975c8330c2b53",
+      "json_semantically_equal": true,
+      "bytes_identical": true,
+      "audit": {
+        "status": "PASS symbolic structural checks",
+        "opcode_count": 19,
+        "max_abstract_steps": 13,
+        "total_abstract_steps": 101,
+        "excluded_unimplemented_opcodes": [
+          "32",
+          "33",
+          "34",
+          "35",
+          "36",
+          "42",
+          "54"
+        ],
+        "limitations": [
+          "no gate-level simulation",
+          "no electrical timing",
+          "no verified pin-level schematic",
+          "conditional jump timing not optimized",
+          "memory access sequencing and SP updates require physical datapath"
+        ]
+      },
+      "passed": true
+    },
+    {
+      "script": "isa1_rev76.py",
+      "command": [
+        "python3",
+        "/tmp/isa1-recovered-history-192e2zyb/isa1_rev76.py"
+      ],
+      "exit": 0,
+      "stdout": "{'stack_roundtrips': 196608, 'expanded_instructions': 15, 'deferred_stack_instructions': ['CALL', 'RET', 'PUSH_A', 'POP_A'], 'missing_opcodes': ['32', '33', '34', '35', '36', '42', '54'], 'limitations': 'Structural expansion only; no execution of expanded microcode, no electrical simulation.'}\n",
+      "stderr": "",
+      "generated_sha256": "826aa9bed1d4b8ef9d132aa788141799ccd271e791242a492db80f88db65291b",
+      "original_sha256": "826aa9bed1d4b8ef9d132aa788141799ccd271e791242a492db80f88db65291b",
+      "json_semantically_equal": true,
+      "bytes_identical": true,
+      "audit": {
+        "stack_roundtrips": 196608,
+        "expanded_instructions": 15,
+        "deferred_stack_instructions": [
+          "CALL",
+          "RET",
+          "PUSH_A",
+          "POP_A"
+        ],
+        "missing_opcodes": [
+          "32",
+          "33",
+          "34",
+          "35",
+          "36",
+          "42",
+          "54"
+        ],
+        "limitations": "Structural expansion only; no execution of expanded microcode, no electrical simulation."
+      },
+      "passed": true
+    }
+  ],
+  "expected_counts": true,
+  "historical_rev983_diagnostic_asm_still_missing": true,
+  "failures": [],
+  "production_released": false
+}

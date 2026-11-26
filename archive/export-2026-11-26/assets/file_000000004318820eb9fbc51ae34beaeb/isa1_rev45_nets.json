@@ -1,0 +1,328 @@
+{
+  "revision": "4.5",
+  "parts": {
+    "SN74HC163D": 4,
+    "SN74HC157D": 4
+  },
+  "checks": 131112,
+  "nets": {
+    "PC_CLR_N": [
+      "U_PC0.1",
+      "U_PC1.1",
+      "U_PC2.1",
+      "U_PC3.1"
+    ],
+    "PC_CLK": [
+      "U_PC0.2",
+      "U_PC1.2",
+      "U_PC2.2",
+      "U_PC3.2"
+    ],
+    "GND": [
+      "U_PC0.8",
+      "U_PC1.8",
+      "U_PC2.8",
+      "U_PC3.8",
+      "U_MUX0.8",
+      "U_MUX0.15",
+      "U_MUX1.8",
+      "U_MUX1.15",
+      "U_MUX2.8",
+      "U_MUX2.15",
+      "U_MUX3.8",
+      "U_MUX3.15"
+    ],
+    "PC_LOAD_N": [
+      "U_PC0.9",
+      "U_PC1.9",
+      "U_PC2.9",
+      "U_PC3.9"
+    ],
+    "VCC_5V": [
+      "U_PC0.16",
+      "U_PC1.16",
+      "U_PC2.16",
+      "U_PC3.16",
+      "U_MUX0.16",
+      "U_MUX1.16",
+      "U_MUX2.16",
+      "U_MUX3.16"
+    ],
+    "PC_COUNT": [
+      "U_PC0.7",
+      "U_PC0.10",
+      "U_PC1.7",
+      "U_PC2.7",
+      "U_PC3.7"
+    ],
+    "PC_RCO0": [
+      "U_PC0.15",
+      "U_PC1.10"
+    ],
+    "PC_LOAD_D0": [
+      "U_PC0.3",
+      "U_MUX0.4"
+    ],
+    "PC_Q0": [
+      "U_PC0.14"
+    ],
+    "PC_LOAD_D1": [
+      "U_PC0.4",
+      "U_MUX0.7"
+    ],
+    "PC_Q1": [
+      "U_PC0.13"
+    ],
+    "PC_LOAD_D2": [
+      "U_PC0.5",
+      "U_MUX0.9"
+    ],
+    "PC_Q2": [
+      "U_PC0.12"
+    ],
+    "PC_LOAD_D3": [
+      "U_PC0.6",
+      "U_MUX0.12"
+    ],
+    "PC_Q3": [
+      "U_PC0.11"
+    ],
+    "PC_RCO1": [
+      "U_PC1.15",
+      "U_PC2.10"
+    ],
+    "PC_LOAD_D4": [
+      "U_PC1.3",
+      "U_MUX1.4"
+    ],
+    "PC_Q4": [
+      "U_PC1.14"
+    ],
+    "PC_LOAD_D5": [
+      "U_PC1.4",
+      "U_MUX1.7"
+    ],
+    "PC_Q5": [
+      "U_PC1.13"
+    ],
+    "PC_LOAD_D6": [
+      "U_PC1.5",
+      "U_MUX1.9"
+    ],
+    "PC_Q6": [
+      "U_PC1.12"
+    ],
+    "PC_LOAD_D7": [
+      "U_PC1.6",
+      "U_MUX1.12"
+    ],
+    "PC_Q7": [
+      "U_PC1.11"
+    ],
+    "PC_RCO2": [
+      "U_PC2.15",
+      "U_PC3.10"
+    ],
+    "PC_LOAD_D8": [
+      "U_PC2.3",
+      "U_MUX2.4"
+    ],
+    "PC_Q8": [
+      "U_PC2.14"
+    ],
+    "PC_LOAD_D9": [
+      "U_PC2.4",
+      "U_MUX2.7"
+    ],
+    "PC_Q9": [
+      "U_PC2.13"
+    ],
+    "PC_LOAD_D10": [
+      "U_PC2.5",
+      "U_MUX2.9"
+    ],
+    "PC_Q10": [
+      "U_PC2.12"
+    ],
+    "PC_LOAD_D11": [
+      "U_PC2.6",
+      "U_MUX2.12"
+    ],
+    "PC_Q11": [
+      "U_PC2.11"
+    ],
+    "PC_RCO3_MON": [
+      "U_PC3.15"
+    ],
+    "PC_LOAD_D12": [
+      "U_PC3.3",
+      "U_MUX3.4"
+    ],
+    "PC_Q12": [
+      "U_PC3.14"
+    ],
+    "PC_LOAD_D13": [
+      "U_PC3.4",
+      "U_MUX3.7"
+    ],
+    "PC_Q13": [
+      "U_PC3.13"
+    ],
+    "PC_LOAD_D14": [
+      "U_PC3.5",
+      "U_MUX3.9"
+    ],
+    "PC_Q14": [
+      "U_PC3.12"
+    ],
+    "PC_LOAD_D15": [
+      "U_PC3.6",
+      "U_MUX3.12"
+    ],
+    "PC_Q15": [
+      "U_PC3.11"
+    ],
+    "PC_SEL_RET": [
+      "U_MUX0.1",
+      "U_MUX1.1",
+      "U_MUX2.1",
+      "U_MUX3.1"
+    ],
+    "EA_Q0": [
+      "U_MUX0.2"
+    ],
+    "RET_Q0": [
+      "U_MUX0.3"
+    ],
+    "EA_Q1": [
+      "U_MUX0.5"
+    ],
+    "RET_Q1": [
+      "U_MUX0.6"
+    ],
+    "EA_Q2": [
+      "U_MUX0.11"
+    ],
+    "RET_Q2": [
+      "U_MUX0.10"
+    ],
+    "EA_Q3": [
+      "U_MUX0.14"
+    ],
+    "RET_Q3": [
+      "U_MUX0.13"
+    ],
+    "EA_Q4": [
+      "U_MUX1.2"
+    ],
+    "RET_Q4": [
+      "U_MUX1.3"
+    ],
+    "EA_Q5": [
+      "U_MUX1.5"
+    ],
+    "RET_Q5": [
+      "U_MUX1.6"
+    ],
+    "EA_Q6": [
+      "U_MUX1.11"
+    ],
+    "RET_Q6": [
+      "U_MUX1.10"
+    ],
+    "EA_Q7": [
+      "U_MUX1.14"
+    ],
+    "RET_Q7": [
+      "U_MUX1.13"
+    ],
+    "EA_Q8": [
+      "U_MUX2.2"
+    ],
+    "RET_Q8": [
+      "U_MUX2.3"
+    ],
+    "EA_Q9": [
+      "U_MUX2.5"
+    ],
+    "RET_Q9": [
+      "U_MUX2.6"
+    ],
+    "EA_Q10": [
+      "U_MUX2.11"
+    ],
+    "RET_Q10": [
+      "U_MUX2.10"
+    ],
+    "EA_Q11": [
+      "U_MUX2.14"
+    ],
+    "RET_Q11": [
+      "U_MUX2.13"
+    ],
+    "EA_Q12": [
+      "U_MUX3.2"
+    ],
+    "RET_Q12": [
+      "U_MUX3.3"
+    ],
+    "EA_Q13": [
+      "U_MUX3.5"
+    ],
+    "RET_Q13": [
+      "U_MUX3.6"
+    ],
+    "EA_Q14": [
+      "U_MUX3.11"
+    ],
+    "RET_Q14": [
+      "U_MUX3.10"
+    ],
+    "EA_Q15": [
+      "U_MUX3.14"
+    ],
+    "RET_Q15": [
+      "U_MUX3.13"
+    ]
+  },
+  "assigned_pins": 128,
+  "status": "functional and pin-assignment checks only; no electrical timing simulation",
+  "pinouts": {
+    "SN74HC163D": {
+      "1": "/CLR",
+      "2": "CLK",
+      "3": "A",
+      "4": "B",
+      "5": "C",
+      "6": "D",
+      "7": "ENP",
+      "8": "GND",
+      "9": "/LOAD",
+      "10": "ENT",
+      "11": "QD",
+      "12": "QC",
+      "13": "QB",
+      "14": "QA",
+      "15": "RCO",
+      "16": "VCC"
+    },
+    "SN74HC157D": {
+      "1": "SEL",
+      "2": "1A",
+      "3": "1B",
+      "4": "1Y",
+      "5": "2A",
+      "6": "2B",
+      "7": "2Y",
+      "8": "GND",
+      "9": "3Y",
+      "10": "3B",
+      "11": "3A",
+      "12": "4Y",
+      "13": "4B",
+      "14": "4A",
+      "15": "/G",
+      "16": "VCC"
+    }
+  }
+}

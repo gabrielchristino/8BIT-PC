@@ -1,0 +1,6 @@
+{
+  "cases": 12800,
+  "cycles": 2479018,
+  "failures": 0,
+  "scope": "integer tick behavioral model; no metastability, reset interruption or analog timing modeled"
+}

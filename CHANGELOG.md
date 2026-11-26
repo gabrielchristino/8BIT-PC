@@ -1,3 +1,10 @@
+## 26/11/2026 — Exportação local e fechamento das lacunas REV33/REV76
+
+- Quatro registros JSON de conversa, leituras derivadas, 240 arquivos em bytes originais e duas Pages, com origem/hashes e preservação das cópias anteriores.
+- REV33 e REV76 executadas em cópias temporárias: saídas JSON idênticas; 196.608 roundtrips históricos reproduzidos.
+- 33 conteúdos ausentes e 171 registros com 72 IDs de origem não exportados mantidos como lacunas. diagnostic.asm original continua ausente.
+- Outros dados da conta permanecem locais; fontes exploratórias posteriores não foram promovidas a circuito ou revisão completa.
+
 ## 26/11/2026 — NET-18, supervisor candidato e energia condicional
 
 - Variante nativa de seis CIs/100 pinos limita RESET a uma entrada e mantém inibição antes dos bancos nos testes digitais.

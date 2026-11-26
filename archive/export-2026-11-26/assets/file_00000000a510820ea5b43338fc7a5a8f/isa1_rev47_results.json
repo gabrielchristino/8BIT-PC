@@ -1,0 +1,8 @@
+{
+  "revision": "4.7",
+  "model": "behavioral contract only",
+  "checks": 327680,
+  "negative_test_pass": true,
+  "electrical_verified": false,
+  "pcb_ready": false
+}

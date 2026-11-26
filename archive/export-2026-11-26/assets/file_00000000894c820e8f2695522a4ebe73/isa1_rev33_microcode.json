@@ -1,0 +1,241 @@
+{
+  "instructions": [
+    {
+      "opcode": "00",
+      "mnemonic": "NOP",
+      "steps": [
+        "FETCH: MAR<-PC",
+        "READ: IR<-MEM[MAR], PC<-PC+1"
+      ]
+    },
+    {
+      "opcode": "10",
+      "mnemonic": "LDA_IMM",
+      "steps": [
+        "FETCH: MAR<-PC",
+        "READ: IR<-MEM[MAR], PC<-PC+1",
+        "FETCH: MAR<-PC",
+        "READ: TMP<-MEM[MAR], PC<-PC+1",
+        "INTERNAL: A<-TMP, Z<-(A==0)"
+      ]
+    },
+    {
+      "opcode": "11",
+      "mnemonic": "LDB_IMM",
+      "steps": [
+        "FETCH: MAR<-PC",
+        "READ: IR<-MEM[MAR], PC<-PC+1",
+        "FETCH: MAR<-PC",
+        "READ: TMP<-MEM[MAR], PC<-PC+1",
+        "INTERNAL: B<-TMP"
+      ]
+    },
+    {
+      "opcode": "20",
+      "mnemonic": "ADD",
+      "steps": [
+        "FETCH: MAR<-PC",
+        "READ: IR<-MEM[MAR], PC<-PC+1",
+        "INTERNAL: {C,A,Z}<-A+B"
+      ]
+    },
+    {
+      "opcode": "21",
+      "mnemonic": "SUB",
+      "steps": [
+        "FETCH: MAR<-PC",
+        "READ: IR<-MEM[MAR], PC<-PC+1",
+        "INTERNAL: {C,A,Z}<-A-B; C=no-borrow"
+      ]
+    },
+    {
+      "opcode": "22",
+      "mnemonic": "AND",
+      "steps": [
+        "FETCH: MAR<-PC",
+        "READ: IR<-MEM[MAR], PC<-PC+1",
+        "INTERNAL: A,Z<-A&B; C preserved"
+      ]
+    },
+    {
+      "opcode": "23",
+      "mnemonic": "OR",
+      "steps": [
+        "FETCH: MAR<-PC",
+        "READ: IR<-MEM[MAR], PC<-PC+1",
+        "INTERNAL: A,Z<-A|B; C preserved"
+      ]
+    },
+    {
+      "opcode": "24",
+      "mnemonic": "XOR",
+      "steps": [
+        "FETCH: MAR<-PC",
+        "READ: IR<-MEM[MAR], PC<-PC+1",
+        "INTERNAL: A,Z<-A^B; C preserved"
+      ]
+    },
+    {
+      "opcode": "25",
+      "mnemonic": "SHL",
+      "steps": [
+        "FETCH: MAR<-PC",
+        "READ: IR<-MEM[MAR], PC<-PC+1",
+        "INTERNAL: C<-A7, A<-A<<1, Z<-zero"
+      ]
+    },
+    {
+      "opcode": "26",
+      "mnemonic": "SHR",
+      "steps": [
+        "FETCH: MAR<-PC",
+        "READ: IR<-MEM[MAR], PC<-PC+1",
+        "INTERNAL: C<-A0, A<-A>>1, Z<-zero"
+      ]
+    },
+    {
+      "opcode": "30",
+      "mnemonic": "LDA_ABS",
+      "steps": [
+        "FETCH: MAR<-PC",
+        "READ: IR<-MEM[MAR], PC<-PC+1",
+        "FETCH: MAR<-PC",
+        "READ: TMP<-MEM[MAR], PC<-PC+1",
+        "FETCH: MAR<-PC",
+        "READ: TPH<-MEM[MAR], PC<-PC+1",
+        "INTERNAL: EA<-TPH:TMP",
+        "FETCH: MAR<-EA",
+        "READ: A<-MEM[MAR], Z<-(A==0)"
+      ]
+    },
+    {
+      "opcode": "31",
+      "mnemonic": "STA_ABS",
+      "steps": [
+        "FETCH: MAR<-PC",
+        "READ: IR<-MEM[MAR], PC<-PC+1",
+        "FETCH: MAR<-PC",
+        "READ: TMP<-MEM[MAR], PC<-PC+1",
+        "FETCH: MAR<-PC",
+        "READ: TPH<-MEM[MAR], PC<-PC+1",
+        "INTERNAL: EA<-TPH:TMP",
+        "FETCH: MAR<-EA, MDR<-A",
+        "WRITE: MEM[MAR]<-MDR"
+      ]
+    },
+    {
+      "opcode": "40",
+      "mnemonic": "JMP",
+      "steps": [
+        "FETCH: MAR<-PC",
+        "READ: IR<-MEM[MAR], PC<-PC+1",
+        "FETCH: MAR<-PC",
+        "READ: TMP<-MEM[MAR], PC<-PC+1",
+        "FETCH: MAR<-PC",
+        "READ: TPH<-MEM[MAR], PC<-PC+1",
+        "INTERNAL: EA<-TPH:TMP",
+        "INTERNAL: PC<-EA"
+      ]
+    },
+    {
+      "opcode": "41",
+      "mnemonic": "JZ",
+      "steps": [
+        "FETCH: MAR<-PC",
+        "READ: IR<-MEM[MAR], PC<-PC+1",
+        "FETCH: MAR<-PC",
+        "READ: TMP<-MEM[MAR], PC<-PC+1",
+        "FETCH: MAR<-PC",
+        "READ: TPH<-MEM[MAR], PC<-PC+1",
+        "INTERNAL: EA<-TPH:TMP",
+        "INTERNAL: if Z then PC<-EA"
+      ]
+    },
+    {
+      "opcode": "50",
+      "mnemonic": "CALL",
+      "steps": [
+        "FETCH: MAR<-PC",
+        "READ: IR<-MEM[MAR], PC<-PC+1",
+        "FETCH: MAR<-PC",
+        "READ: TMP<-MEM[MAR], PC<-PC+1",
+        "FETCH: MAR<-PC",
+        "READ: TPH<-MEM[MAR], PC<-PC+1",
+        "INTERNAL: EA<-TPH:TMP",
+        "INTERNAL: RETADDR<-PC",
+        "FETCH: MAR<-SP, MDR<-RETADDR.high",
+        "WRITE: MEM[MAR]<-MDR, SP<-SP-1",
+        "FETCH: MAR<-SP, MDR<-RETADDR.low",
+        "WRITE: MEM[MAR]<-MDR, SP<-SP-1",
+        "INTERNAL: PC<-EA"
+      ]
+    },
+    {
+      "opcode": "51",
+      "mnemonic": "RET",
+      "steps": [
+        "FETCH: MAR<-PC",
+        "READ: IR<-MEM[MAR], PC<-PC+1",
+        "INTERNAL: SP<-SP+1",
+        "FETCH: MAR<-SP",
+        "READ: TMP<-MEM[MAR]",
+        "INTERNAL: SP<-SP+1",
+        "FETCH: MAR<-SP",
+        "READ: TPH<-MEM[MAR]",
+        "INTERNAL: PC<-TPH:TMP"
+      ]
+    },
+    {
+      "opcode": "52",
+      "mnemonic": "PUSH_A",
+      "steps": [
+        "FETCH: MAR<-PC",
+        "READ: IR<-MEM[MAR], PC<-PC+1",
+        "FETCH: MAR<-SP, MDR<-A",
+        "WRITE: MEM[MAR]<-MDR, SP<-SP-1"
+      ]
+    },
+    {
+      "opcode": "53",
+      "mnemonic": "POP_A",
+      "steps": [
+        "FETCH: MAR<-PC",
+        "READ: IR<-MEM[MAR], PC<-PC+1",
+        "INTERNAL: SP<-SP+1",
+        "FETCH: MAR<-SP",
+        "READ: A<-MEM[MAR], Z<-(A==0)"
+      ]
+    },
+    {
+      "opcode": "FF",
+      "mnemonic": "HALT",
+      "steps": [
+        "FETCH: MAR<-PC",
+        "READ: IR<-MEM[MAR], PC<-PC+1",
+        "INTERNAL: HALTED<-1"
+      ]
+    }
+  ],
+  "audit": {
+    "status": "PASS symbolic structural checks",
+    "opcode_count": 19,
+    "max_abstract_steps": 13,
+    "total_abstract_steps": 101,
+    "excluded_unimplemented_opcodes": [
+      "32",
+      "33",
+      "34",
+      "35",
+      "36",
+      "42",
+      "54"
+    ],
+    "limitations": [
+      "no gate-level simulation",
+      "no electrical timing",
+      "no verified pin-level schematic",
+      "conditional jump timing not optimized",
+      "memory access sequencing and SP updates require physical datapath"
+    ]
+  }
+}

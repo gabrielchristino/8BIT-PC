@@ -1,0 +1,7 @@
+{
+  "revision": "4.8",
+  "assertions": 851973,
+  "status": "PASS",
+  "scope": "abstract behavioral model only",
+  "known_gap": "power-up clock validity, analog supply ramps, pin-level circuit, timing, reset sequencing hardware"
+}

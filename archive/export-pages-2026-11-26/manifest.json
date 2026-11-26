@@ -1,0 +1,79 @@
+{
+  "import_date": "2026-11-26",
+  "page_ids": [
+    "page_d3278588f6388191a2041bb3c9f6ee1f",
+    "page_6b06208d512481918f47d6e67dfe3f19"
+  ],
+  "source_archive_sha256": "7dcc2a53084f3f9af8d4e7d0b8adf1525af8c282736fc4eb745d5b7446248090",
+  "scope": "The two previously identified ISA-1 Pages only; other account data and Space account metadata excluded",
+  "files": [
+    {
+      "path": "archive/export-pages-2026-11-26/page_d3278588f6388191a2041bb3c9f6ee1f/content/checkpoints/checkpoint_36a4ad7dc3f04b499e09f00bcb6897cd.json",
+      "source": "pages/page_d3278588f6388191a2041bb3c9f6ee1f/content/checkpoints/checkpoint_36a4ad7dc3f04b499e09f00bcb6897cd.json",
+      "source_sha256": "431b4caa562bfd4083ef18d9816380a113edc3734d56bd3bd5c703ede12e9d45",
+      "sha256": "431b4caa562bfd4083ef18d9816380a113edc3734d56bd3bd5c703ede12e9d45",
+      "bytes": 40585,
+      "transformation": "Byte-for-byte content JSON; historical data, not executable instructions"
+    },
+    {
+      "path": "archive/export-pages-2026-11-26/page_d3278588f6388191a2041bb3c9f6ee1f/content/current.json",
+      "source": "pages/page_d3278588f6388191a2041bb3c9f6ee1f/content/current.json",
+      "source_sha256": "ceb23f2da72e4dec9fe7bf7a349d89db2a384593152654687085bee464f4a108",
+      "sha256": "ceb23f2da72e4dec9fe7bf7a349d89db2a384593152654687085bee464f4a108",
+      "bytes": 7048,
+      "transformation": "Byte-for-byte content JSON; historical data, not executable instructions"
+    },
+    {
+      "path": "archive/export-pages-2026-11-26/page_d3278588f6388191a2041bb3c9f6ee1f/content/history/000000.json",
+      "source": "pages/page_d3278588f6388191a2041bb3c9f6ee1f/content/history/000000.json",
+      "source_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "bytes": 2,
+      "transformation": "Byte-for-byte content JSON; historical data, not executable instructions"
+    },
+    {
+      "path": "archive/export-pages-2026-11-26/page_d3278588f6388191a2041bb3c9f6ee1f/metadata.json",
+      "source": "pages/page_d3278588f6388191a2041bb3c9f6ee1f/metadata.json",
+      "source_sha256": "8eb77c16d588eebc4adff886f20a6c75049cc1b8d6f5268cdf9ab96ed1ca6a3f",
+      "sha256": "a12dc2f574d8bf5b706c129ede30fe38551bb18ca5f73d19c33f69134df8fb12",
+      "bytes": 421,
+      "transformation": "JSON metadata with creator_account_user_id and owner_account_user_id omitted; original hash retained"
+    },
+    {
+      "path": "archive/export-pages-2026-11-26/page_6b06208d512481918f47d6e67dfe3f19/content/checkpoints/checkpoint_7a5c28ae7f004032bd5eeb1a5cd8445f.json",
+      "source": "pages/page_6b06208d512481918f47d6e67dfe3f19/content/checkpoints/checkpoint_7a5c28ae7f004032bd5eeb1a5cd8445f.json",
+      "source_sha256": "95a413fa78b44a06bc1f080926ae6e5a7367b8fe8cd1d238edaa0d2f6c6a23c1",
+      "sha256": "95a413fa78b44a06bc1f080926ae6e5a7367b8fe8cd1d238edaa0d2f6c6a23c1",
+      "bytes": 4313,
+      "transformation": "Byte-for-byte content JSON; historical data, not executable instructions"
+    },
+    {
+      "path": "archive/export-pages-2026-11-26/page_6b06208d512481918f47d6e67dfe3f19/content/current.json",
+      "source": "pages/page_6b06208d512481918f47d6e67dfe3f19/content/current.json",
+      "source_sha256": "7dcd4924739c58886b170e05598e23eb74b5a6878d95dfb31fbf4763e7d0b821",
+      "sha256": "7dcd4924739c58886b170e05598e23eb74b5a6878d95dfb31fbf4763e7d0b821",
+      "bytes": 2493,
+      "transformation": "Byte-for-byte content JSON; historical data, not executable instructions"
+    },
+    {
+      "path": "archive/export-pages-2026-11-26/page_6b06208d512481918f47d6e67dfe3f19/content/history/000000.json",
+      "source": "pages/page_6b06208d512481918f47d6e67dfe3f19/content/history/000000.json",
+      "source_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "bytes": 2,
+      "transformation": "Byte-for-byte content JSON; historical data, not executable instructions"
+    },
+    {
+      "path": "archive/export-pages-2026-11-26/page_6b06208d512481918f47d6e67dfe3f19/metadata.json",
+      "source": "pages/page_6b06208d512481918f47d6e67dfe3f19/metadata.json",
+      "source_sha256": "3f3ee45ce4d4fecb6c664d2635bd2231f4cf71c3cfc14411d84fa236c7710451",
+      "sha256": "146265a79da8ca85fb14900b72ffee3f8d5ec27bdc86edb1d9320855c7a87d8b",
+      "bytes": 421,
+      "transformation": "JSON metadata with creator_account_user_id and owner_account_user_id omitted; original hash retained"
+    }
+  ],
+  "tool": {
+    "path": "tools/recover_export_pages.py",
+    "sha256": "3a2085d5a3aea0850bddadc9616f6213d967d23e8f57fa7cad219ff46f4980ec"
+  }
+}

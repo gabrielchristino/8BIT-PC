@@ -1,0 +1,15 @@
+{
+  "revision": "6.5",
+  "checks": 68884,
+  "failures": 0,
+  "palette_entries": 16,
+  "framebuffer_bytes": 6144,
+  "test_scope": "functional model of 4bpp decode, RGB565, rectangular transfers, hypothetical bandwidth and logical write sequence",
+  "limitations": [
+    "not transistor or propagation delay simulation",
+    "no physical module validated",
+    "no delivered price or pinout confirmation",
+    "no full CPU or DMA implementation"
+  ],
+  "rates_are_hypothetical": true
+}

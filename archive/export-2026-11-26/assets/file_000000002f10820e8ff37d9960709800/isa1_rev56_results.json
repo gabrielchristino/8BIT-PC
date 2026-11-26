@@ -1,0 +1,18 @@
+{
+  "revision": "5.6",
+  "scenarios": 72,
+  "pass_by_usb_current": {
+    "2.0": 9,
+    "3.0": 31
+  },
+  "example": {
+    "usb_limit_A": 3.0,
+    "cpu_assumed_A": 0.9,
+    "display_12V_assumed_A": 0.4,
+    "boost_efficiency": 0.85,
+    "boost_5V_input_A": 1.1294,
+    "total_5V_A": 2.1794,
+    "within_current_budget": true
+  },
+  "caveat": "Illustrative DC current budget only. Not measured loads, not USB-C current negotiation, not electrical simulation."
+}

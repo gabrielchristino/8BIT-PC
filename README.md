@@ -1,3 +1,5 @@
+**Nova recuperação, 26/11/2026:** [exportação local do ISA-1](docs/EXPORT_RECOVERY_2026-11-26.md), com quatro registros de conversa, 240 arquivos disponíveis e duas Pages. REV33 e REV76 completas foram recuperadas e suas auditorias reproduzidas. Permanecem 33 anexos sem conteúdo nesta exportação e 72 IDs de mensagens de origem ausentes; não se declara recuperação integral.
+
 **Avanço NET-18:** [alimentação e supervisão](docs/engineering/NET18.md): nova folha candidata de seis CIs/100 pinos, 64 cenários condicionais de reserva de energia e regressões de reset passaram. Consumo real, conversor/USB-C/POR e integração global permanecem abertos; o modelo oficial do regulador não concluiu a simulação.
 
 **Avanço NET-17:** [teclado com alvo de contato de 500 Ω](docs/engineering/NET17.md): variante nativa com resistores nas linhas, espera de 2,60 ms e proteção da retomada. Passaram 768 cenários elétricos condicionais e regressões digitais; a política de até duas teclas ainda é referência no host. Medições das membranas, integração CPU/energia e fabricação continuam pendentes.

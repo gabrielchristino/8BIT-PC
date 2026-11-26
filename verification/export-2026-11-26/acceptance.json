@@ -1,0 +1,11 @@
+{
+  "date": "2026-11-26",
+  "available_payloads": 240,
+  "unique_payload_hashes": 228,
+  "missing_payloads": 33,
+  "missing_message_origin_ids": 72,
+  "historical_generators_reproduced_byte_identical": 2,
+  "all_history_recovered": false,
+  "account_export_published": false,
+  "production_released": false
+}

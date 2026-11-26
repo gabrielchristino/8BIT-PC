@@ -1,0 +1,24 @@
+{
+  "revision": "5.1",
+  "audit": "behavioral fault injection and net coverage",
+  "rev50_counterexample": {
+    "initial": 0,
+    "load_n": 0,
+    "count": 0,
+    "edge": 3,
+    "pc": 48879,
+    "cpu_run_before_edge": 0
+  },
+  "missing_safety_nets": [
+    "SRAM_WE_N",
+    "EEPROM_WE_N",
+    "POWER_GOOD",
+    "OSC_VALID",
+    "PC_COUNT_SAFE",
+    "PC_LOAD_N_SAFE"
+  ],
+  "revised_contract_checks": 1048576,
+  "revised_contract_pass": true,
+  "electrical_simulation": false,
+  "kicad_erc": false
+}

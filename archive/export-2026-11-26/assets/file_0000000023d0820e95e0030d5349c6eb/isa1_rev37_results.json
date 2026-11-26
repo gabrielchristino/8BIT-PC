@@ -1,0 +1,12 @@
+{
+  "revision": "3.7",
+  "mux_devices_74HC157": 8,
+  "mar_registers_74HC377": 2,
+  "mux_channels": 32,
+  "random_mux_cases": 400000,
+  "random_load_hold_cases": 10000,
+  "logical_tests": "PASS",
+  "electrical_tests": "NOT_RUN",
+  "pinout_verified": "NO",
+  "pcb_ready": false
+}

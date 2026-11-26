@@ -1,0 +1,52 @@
+{
+  "deltas": [],
+  "head": {
+    "append_manifest": {
+      "adoption_sequence": 0,
+      "gc_through_sequence": -1,
+      "initial_empty_generation": 1,
+      "maintenance_close_not_before": null,
+      "maintenance_generation": 1,
+      "maintenance_lifecycle_generation": 0,
+      "maintenance_open": false,
+      "retained_attribution_bytes": 0,
+      "retained_batch_count": 0,
+      "retained_delta_count": 0,
+      "retained_update_bytes": 0,
+      "retired_through_sequence": 0,
+      "version": 4
+    },
+    "artifact_schema_version": null,
+    "checkpoint_id": "checkpoint_36a4ad7dc3f04b499e09f00bcb6897cd",
+    "checkpoint_sequence": 0,
+    "compaction_generation": 0,
+    "crdt_identity_preserving_checkpoints": null,
+    "current_sequence": 0,
+    "editor_tail": [],
+    "effective_compaction_policy_version": "default",
+    "last_checkpoint_at": "2026-11-24T23:42:00.088877Z",
+    "page_id": "page_d3278588f6388191a2041bb3c9f6ee1f",
+    "persistence_state": null,
+    "preview_cleanup_checkpoint_id": null,
+    "preview_pending_checkpoint_id": null,
+    "preview_pending_generation": null,
+    "preview_ready_checkpoint_id": null,
+    "preview_ready_generation": null,
+    "projection_through_sequence": 0,
+    "revision": 0,
+    "schema_version": 2,
+    "stream_kind": "content"
+  },
+  "includes_current_sequence": true,
+  "projection": {
+    "materialized_search_text": "## 1. Escopo e estado\n\nProposta de engenharia, n\u00e3o liberada para fabrica\u00e7\u00e3o. Quatro membranas comerciais 4\u00d74, 64 teclas, at\u00e9 duas simult\u00e2neas garantidas no modelo ideal, sem diodos nas teclas. PCB principal \u00fanica, teclado separado, l\u00f3gica SOIC quando poss\u00edvel. Preservar CPU, X, flags, pilha, endere\u00e7amento de 16 bits, RAM/ROM/VRAM e VGA. Nenhuma altera\u00e7\u00e3o nos arquivos REV76.\n\n## 2. Evid\u00eancias e rastreabilidade\n\nConversa \u00abConstruir computador 8 bits\u00bb: quatro matrizes formando 4\u00d716, aceita\u00e7\u00e3o de ghosting tratado por software e duas teclas simult\u00e2neas. Foto 1795536264623.jpg: matriz 1 2 3 A / 4 5 6 B / 7 8 9 C / * 0 # D, conector aparentemente de oito vias; ordem el\u00e9trica n\u00e3o demonstrada pela foto. Medir continuidade de todas as 16 teclas antes de ligar. ISA-1_REV76_AUDITORIA.md: fabrica\u00e7\u00e3o bloqueada; SP inicial 8000h, predecremento/posincremento propostos; sete opcodes pendentes. isa1_rev76.py depende de isa1_rev33_microcode.json n\u00e3o fornecido e expande opera\u00e7\u00f5es simbolicamente; n\u00e3o \u00e9 emulador. isa1_rev76_microcode.json: 15 instru\u00e7\u00f5es expandidas, 196608 roundtrips de pilha reportados, CALL/RET/PUSH_A/POP_A adiados, opcodes 32,33,34,35,36,42,54 pendentes. N\u00e3o confundir resultado estrutural com execu\u00e7\u00e3o. Revis\u00f5es anteriores divergem no mapa de mem\u00f3ria e v\u00eddeo; nenhum endere\u00e7o definitivo ser\u00e1 imposto.\n\n## 3. Arquitetura recomendada\n\nManter quatro linhas comuns R0\u2013R3 e 16 colunas independentes C0\u2013C15. Selecionar uma linha por vez em n\u00edvel baixo, demais em alta imped\u00e2ncia. Nunca dirigir linhas inativas em n\u00edvel alto. Ler todas as colunas em dois bytes. Uma matriz compartilhada 4\u00d716 pode apresentar ghosting entre m\u00f3dulos: n\u00e3o analisar cada m\u00f3dulo isoladamente. Alternativa de isolamento completo por m\u00f3dulo exigiria 16 linhas selecion\u00e1veis, mais ciclos e controle; n\u00e3o adotada inicialmente.\n\n## 4. Circuito proposto (n\u00edvel de redes)\n\nAssumindo l\u00f3gica 5 V, confirmar alimenta\u00e7\u00e3o real. U1 74HC273: D0\u2013D2 do barramento, Q0/Q1 sele\u00e7\u00e3o de linha, Q2 ENABLE; demais D fixados a zero. /MR no reset, clock na borda final de escrita qualificada KBD_SEL (validar setup/hold e polaridade). U2 74HC139: A/B=Q0/Q1, /G=0, Y0\u2013Y3 ativos baixos. U3 74HC125: quatro entradas ligadas a GND, /OE de cada canal ligado ao Y correspondente; para desabilita\u00e7\u00e3o global usar /G do HC139 = NOT Q2, por uma porta inversora existente ou HC04 adicional. Cada sa\u00edda passa por resistor 220 \u03a9 at\u00e9 Rn. Em reset Q2=0, todas as linhas em alta imped\u00e2ncia. C0\u2013C15 com pull-up individual 10 k\u03a9 para VCC. U4/U5 74HC244 leem oito colunas cada, ambos /OE de cada CI ligados ao respectivo /KBD_RD_LO ou /KBD_RD_HI; sa\u00eddas no barramento D0\u2013D7. Opcional HC14 em colunas se bordas lentas exigirem, com invers\u00e3o l\u00f3gica correspondente; n\u00e3o adicionar sem medi\u00e7\u00e3o. 100 nF por CI, 10 \u00b5F local, conectores polarizados, GND de refer\u00eancia e prote\u00e7\u00e3o ESD junto \u00e0 entrada conforme ensaio. Entradas CMOS nunca flutuantes. N\u00e3o ligar cabo com alimenta\u00e7\u00e3o ligada sem prote\u00e7\u00e3o validada.\nSequ\u00eancia: escrever ENABLE=0; escrever sele\u00e7\u00e3o com ENABLE=0; escrever ENABLE=1 mantendo sele\u00e7\u00e3o; aguardar acomoda\u00e7\u00e3o; ler LO e HI; desabilitar. Evita glitch do decodificador durante troca de endere\u00e7o. Reset deve tamb\u00e9m impedir leitura indevida no barramento.\n\n## 5. Recursos e or\u00e7amento el\u00e9trico\n\n5 CIs principais (273,139,125,2\u00d7244), mais inversor e decodifica\u00e7\u00e3o de I/O se n\u00e3o houver portas dispon\u00edveis; 16 pull-ups, 4 resistores s\u00e9rie, desacoplamento. Sem ROM adicional nem controlador dedicado. Com 5 V e 10 k\u03a9, uma coluna baixa consome aproximadamente 0,5 mA; duas ~1 mA; 16 ~8 mA, condi\u00e7\u00e3o de falha/m\u00faltiplas teclas que exige verificar VOL e corrente total do HC125. Com 220 \u03a9 e 16 pull-ups em paralelo, tens\u00e3o ideal na linha ~1,30 V antes de resist\u00eancia de contato e VOL; margem pode ser insuficiente. Portanto avaliar 47\u2013100 \u03a9 ou driver open-drain dimensionado (por exemplo MOSFET l\u00f3gico por linha), sem diodos nas teclas; escolha final depende de datasheets, ESD e medi\u00e7\u00f5es. Para 2 teclas e 220 \u03a9, queda ideal ~0,21 V. N\u00e3o declarar compatibilidade garantida para 16 teclas at\u00e9 ensaio. Pull-ups de 10 k\u03a9 e capacit\u00e2ncia hipot\u00e9tica de 200 pF d\u00e3o ",
+    "page_id": "page_d3278588f6388191a2041bb3c9f6ee1f",
+    "preview": "## 1. Escopo e estado\n\nProposta de engenharia, n\u00e3o liberada para fabrica\u00e7\u00e3o. Quatro membranas comerciais 4\u00d74, 64 teclas, at\u00e9 duas simult\u00e2neas garantidas no modelo ideal, sem diodos nas teclas. PCB principal \u00fanica, teclado separado, l\u00f3gica S",
+    "projection_through_sequence": 0,
+    "symbol": null,
+    "title": "ENG-KBD-01 \u2014 Interface de teclado de membrana | ISA-1",
+    "title_preview_casefold_v1": "eng-kbd-01 \u2014 interface de teclado de membrana | isa-1\n## 1. escopo e estado\n\nproposta de engenharia, n\u00e3o liberada para fabrica\u00e7\u00e3o. quatro membranas comerciais 4\u00d74, 64 teclas, at\u00e9 duas simult\u00e2neas garantidas no modelo ideal, sem diodos nas teclas. pcb principal \u00fanica, teclado separado, l\u00f3gica s",
+    "updated_at": "2026-11-24T23:42:00.464656Z"
+  },
+  "through_sequence": 0
+}

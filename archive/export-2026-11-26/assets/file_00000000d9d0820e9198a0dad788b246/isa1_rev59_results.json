@@ -1,0 +1,14 @@
+{
+  "revision": "5.9",
+  "checks": 210744,
+  "failures": 0,
+  "scope": "abstract bus owner FSM and break-before-make; not electrical timing",
+  "pending": [
+    "address map",
+    "real decode",
+    "output disable propagation",
+    "EEPROM write enable",
+    "video arbitration",
+    "brownout protection"
+  ]
+}

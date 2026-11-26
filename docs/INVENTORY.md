@@ -1,3 +1,5 @@
+Atualização de 26/11/2026: [recuperação adicional da exportação](EXPORT_RECOVERY_2026-11-26.md), com 240 conteúdos/228 hashes e duas Pages. Manifestos próprios discriminam arquivos e ausências. As tabelas abaixo preservam o inventário da migração anterior e não são a contagem cumulativa atual.
+
 # Inventário do acervo
 
 O inventário detalhado por caminho, tamanho, SHA-256 e origem fica em [archive/manifest.json](../archive/manifest.json). Esta visão explica os grupos e seu estado.

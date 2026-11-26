@@ -1,0 +1,132 @@
+{
+  "pixel_ns": 158.88778550148956,
+  "scenarios": [
+    {
+      "mux": 38,
+      "ram": 25,
+      "counter": 35,
+      "setup_budget": 20,
+      "margin_budget": 10,
+      "total_ns": 128,
+      "slack_ns": 30.88778550148956,
+      "passes": true
+    },
+    {
+      "mux": 38,
+      "ram": 25,
+      "counter": 50,
+      "setup_budget": 20,
+      "margin_budget": 10,
+      "total_ns": 143,
+      "slack_ns": 15.88778550148956,
+      "passes": true
+    },
+    {
+      "mux": 38,
+      "ram": 45,
+      "counter": 35,
+      "setup_budget": 20,
+      "margin_budget": 10,
+      "total_ns": 148,
+      "slack_ns": 10.88778550148956,
+      "passes": true
+    },
+    {
+      "mux": 38,
+      "ram": 45,
+      "counter": 50,
+      "setup_budget": 20,
+      "margin_budget": 10,
+      "total_ns": 163,
+      "slack_ns": -4.11221449851044,
+      "passes": false
+    },
+    {
+      "mux": 38,
+      "ram": 55,
+      "counter": 35,
+      "setup_budget": 20,
+      "margin_budget": 10,
+      "total_ns": 158,
+      "slack_ns": 0.8877855014895601,
+      "passes": true
+    },
+    {
+      "mux": 38,
+      "ram": 55,
+      "counter": 50,
+      "setup_budget": 20,
+      "margin_budget": 10,
+      "total_ns": 173,
+      "slack_ns": -14.11221449851044,
+      "passes": false
+    },
+    {
+      "mux": 47,
+      "ram": 25,
+      "counter": 35,
+      "setup_budget": 20,
+      "margin_budget": 10,
+      "total_ns": 137,
+      "slack_ns": 21.88778550148956,
+      "passes": true
+    },
+    {
+      "mux": 47,
+      "ram": 25,
+      "counter": 50,
+      "setup_budget": 20,
+      "margin_budget": 10,
+      "total_ns": 152,
+      "slack_ns": 6.88778550148956,
+      "passes": true
+    },
+    {
+      "mux": 47,
+      "ram": 45,
+      "counter": 35,
+      "setup_budget": 20,
+      "margin_budget": 10,
+      "total_ns": 157,
+      "slack_ns": 1.8877855014895601,
+      "passes": true
+    },
+    {
+      "mux": 47,
+      "ram": 45,
+      "counter": 50,
+      "setup_budget": 20,
+      "margin_budget": 10,
+      "total_ns": 172,
+      "slack_ns": -13.11221449851044,
+      "passes": false
+    },
+    {
+      "mux": 47,
+      "ram": 55,
+      "counter": 35,
+      "setup_budget": 20,
+      "margin_budget": 10,
+      "total_ns": 167,
+      "slack_ns": -8.11221449851044,
+      "passes": false
+    },
+    {
+      "mux": 47,
+      "ram": 55,
+      "counter": 50,
+      "setup_budget": 20,
+      "margin_budget": 10,
+      "total_ns": 182,
+      "slack_ns": -23.11221449851044,
+      "passes": false
+    }
+  ],
+  "failed": 5,
+  "raster_ticks": 105000,
+  "fetches": 76800,
+  "cpu_ticks_per_line": 36,
+  "slots_per_frame": 4725,
+  "bytes_per_second": 283218.75,
+  "scope": "Arithmetic and raster model only; no electrical or CDC validation"
+}

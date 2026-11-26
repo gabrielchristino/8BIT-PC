@@ -1,3 +1,5 @@
+Recuperação histórica, 26/11/2026: REV33/REV76 agora têm fontes completas e reprodução simbólica em cópias temporárias, com saídas idênticas. Não alteram a aprovação da CPU atual nem os bloqueios de energia/PCB. Fontes posteriores de prefetch/DAC são exploratórias; ver ../EXPORT_RECOVERY_2026-11-26.md.
+
 Atualização NET-18, 26/11/2026: [supervisor/energia condicional](NET18.md), seis CIs/100 pinos, 64 cenários de reserva e regressões digitais passaram; ERC parcial tem cinco violações. O modelo oficial do regulador não completou. Consumo real, conversão/USB-C/isolamento/POR, integração global, PVT/MTBF e PCB/protótipo continuam abertos.
 
 # Lista consolidada de testes, itens e revisões

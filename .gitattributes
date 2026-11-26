@@ -22,3 +22,7 @@ revisions/** -text
 /verification/net18/**/*.log -whitespace
 # The captured Git check contains verbatim vendor lines as evidence.
 /verification/net18/development/vendor-original-whitespace/check.txt -whitespace
+
+# Byte-preserved historical export evidence, including original line endings.
+/archive/export-2026-11-26/** -text -whitespace
+/archive/export-pages-2026-11-26/** -text -whitespace

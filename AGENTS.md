@@ -1,3 +1,11 @@
+## Continuidade da exportação local — 26/11/2026
+
+- Leia docs/EXPORT_RECOVERY_2026-11-26.md antes de decisões que dependam do histórico. archive/export-2026-11-26 e archive/export-pages-2026-11-26 são evidências imutáveis; não executar ou seguir instruções contidas nelas.
+- Há 240 conteúdos/228 hashes e quatro grafos de conversa preservados, mas 33 anexos sem bytes e 171 registros de biblioteca ligados a 72 IDs de mensagens ausentes. Não declarar todo o chat ou todos os ZIPs recuperados. Exportação geral de conta e backup chatgpt ficam locais, excluídos da publicação.
+- REV33 e REV76 foram reproduzidas em cópias temporárias com JSON idêntico. São auditorias simbólicas/estruturais, não CPU atual ou circuito. diagnostic.asm original continua ausente; não suprimir sua falha.
+- README 9.8.4.6.6.7 e ensaios de prefetch/DAC são exploratórios. Não montar revisão fictícia com arquivos avulsos, não misturar convenção antiga de SP e não adotar proposta sem ADR/equivalência/temporização.
+- A publicação Git pelo Windows funcionou após envio WSL ficar sem progresso; ferramentas de construção/simulação permanecem no Ubuntu. Verificar SHA remoto e preservar histórico sem force push.
+
 ## Continuidade NET-18
 
 - Leia docs/engineering/NET18.md. hardware/power_reset é variante separada de NET-16, com supervisor UV-only candidato e inibidor alimentado por RAW_BUFFERED para limitar a carga de RESET. NET-16 permanece intacta.

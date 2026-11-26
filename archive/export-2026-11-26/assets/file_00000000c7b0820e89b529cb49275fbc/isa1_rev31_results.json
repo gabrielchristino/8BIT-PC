@@ -1,0 +1,15 @@
+{
+  "revision": "3.1",
+  "status": "behavioral_tests_passed",
+  "assertions": 1015818,
+  "hardware_approved": false,
+  "known_gaps": [
+    "no microcode",
+    "no gate-level netlist",
+    "no physical timing",
+    "no RCA color encoder",
+    "no keyboard circuit",
+    "no EEPROM writer sequencer",
+    "no reset/power supervisor selection"
+  ]
+}

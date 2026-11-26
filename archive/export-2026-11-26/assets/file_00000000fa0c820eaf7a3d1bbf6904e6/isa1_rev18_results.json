@@ -1,0 +1,68 @@
+{
+  "architecture_comparison": {
+    "instructions": 50000,
+    "same_architectural_state": true,
+    "instruction_counts": {
+      "ADD": 4210,
+      "XOR": 4220,
+      "AND": 4097,
+      "SUB": 4167,
+      "CALL": 4190,
+      "OR": 4185,
+      "MOV": 4139,
+      "BRZ": 4148,
+      "STORE": 4244,
+      "RET": 4120,
+      "LOAD": 4116,
+      "ADC": 4164
+    },
+    "shared_bus_events": {
+      "tri_state_source_change": 41713,
+      "tri_state_drive": 95852,
+      "external_access": 16670
+    },
+    "split_bus_events": {
+      "mux_select": 95852,
+      "external_access": 16670
+    }
+  },
+  "abstract_turnaround": [
+    {
+      "guard_ticks": 0,
+      "unsafe_cases": 231,
+      "cases": 441
+    },
+    {
+      "guard_ticks": 5,
+      "unsafe_cases": 136,
+      "cases": 441
+    },
+    {
+      "guard_ticks": 10,
+      "unsafe_cases": 66,
+      "cases": 441
+    },
+    {
+      "guard_ticks": 15,
+      "unsafe_cases": 21,
+      "cases": 441
+    },
+    {
+      "guard_ticks": 20,
+      "unsafe_cases": 1,
+      "cases": 441
+    },
+    {
+      "guard_ticks": 21,
+      "unsafe_cases": 0,
+      "cases": 441
+    }
+  ],
+  "sram_controller_state_checks": 40034,
+  "limits": [
+    "No real gate timing, metastability, fanout, or analog behavior",
+    "Bus events are a conceptual cost proxy, NOT chip count or speed",
+    "Controller checks static states, not real pin transitions",
+    "ISA encoding and actual netlist are not frozen"
+  ]
+}

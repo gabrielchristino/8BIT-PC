@@ -1,0 +1,20 @@
+{
+  "rev": "2.6",
+  "model": "logical/static; no SPICE/physical timing",
+  "hc377_pin_positions": 20,
+  "hc245_pin_positions": 20,
+  "register_cases": 131072,
+  "register_load_cases": 65536,
+  "register_hold_cases": 65536,
+  "control_cases": 144,
+  "authorized_write_cases": 1,
+  "negative_contention_test": "detected",
+  "eeprom_pages": 512,
+  "passed": true,
+  "limits": [
+    "unverified real signal skew",
+    "no actual power ramp",
+    "no real EEPROM programming waveform",
+    "no supervisor pinout verified"
+  ]
+}

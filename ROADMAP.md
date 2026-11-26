@@ -1,3 +1,5 @@
+Recuperação adicional, 26/11/2026: quatro registros de conversa, 240 conteúdos e duas Pages preservados; REV33/REV76 reproduzidas sem modificar originais. A recuperação não é integral: 33 conteúdos ausentes e 72 IDs de mensagens de origem não estão nos grafos. Considerar materiais exploratórios posteriores antes de novas decisões; não tratar como implementação pronta. Ver docs/EXPORT_RECOVERY_2026-11-26.md.
+
 Atualização NET-18 (26/11/2026): folha candidata com supervisor e reset de seis CIs/100 pinos, cantos DC, 64 cenários condicionais de hold-up e regressões digitais passaram. Modelo oficial do conversor não completou; consumo/isolamento/POR/USB-C e integração CPU/MMIO/raster continuam abertos. Ver docs/engineering/NET18.md; nenhuma placa liberada.
 
 Atualização NET-15 (25/11/2026): MMIO/teclado e controlador com espera KEY_READY por pinos; 5.681 padrões por modo e 48 cantos elétricos dentro de orçamento condicional passaram. As membranas reais não foram medidas. Próximo: reset/energia e integração CPU/teclado; depois proteção, firmware de teclado, DAC e união da placa. Ver docs/engineering/NET15.md.

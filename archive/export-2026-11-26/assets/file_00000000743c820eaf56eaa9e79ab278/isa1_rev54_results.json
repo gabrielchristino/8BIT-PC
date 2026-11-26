@@ -1,0 +1,13 @@
+{
+  "revision": "5.4",
+  "checks": 577702,
+  "errors": 0,
+  "scope": "behavioral edge model + partial netlist checks; not ERC, SPICE, or timing",
+  "caveats": [
+    "asynchronous supervisor assertion must be modeled between edges",
+    "74HC163 reset synchronous; PC cannot be guaranteed zero without clock",
+    "CPU_RUN combinational changes after edge; physical timing unverified",
+    "memory write protection not implemented",
+    "supervisor and oscillator still not connected"
+  ]
+}

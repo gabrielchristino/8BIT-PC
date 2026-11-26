@@ -1,0 +1,48 @@
+{
+  "revision": "4.6",
+  "status": "structural pass; physical timing NOT verified",
+  "count_checks": 131072,
+  "clock_common": true,
+  "rco_is_not_clock": true,
+  "illustrative_only_scenarios": [
+    {
+      "name": "EXAMPLE_A_not_datasheet",
+      "clock_period_ns": 1000,
+      "clk_to_q_ns": 40,
+      "rco_stage_ns": 35,
+      "setup_ent_ns": 25,
+      "skew_ns": 15,
+      "margin_ns": 50,
+      "cascade_path_ns": 235,
+      "example_pass": true
+    },
+    {
+      "name": "EXAMPLE_B_not_datasheet",
+      "clock_period_ns": 200,
+      "clk_to_q_ns": 40,
+      "rco_stage_ns": 35,
+      "setup_ent_ns": 25,
+      "skew_ns": 15,
+      "margin_ns": 50,
+      "cascade_path_ns": 235,
+      "example_pass": false
+    }
+  ],
+  "required_datasheet_parameters": [
+    "74HC163 clock-to-Q max",
+    "74HC163 ENT-to-RCO max (or appropriate propagation)",
+    "74HC163 ENT setup/hold",
+    "74HC163 /LOAD setup/hold",
+    "74HC163 /CLR setup/hold",
+    "74HC157 select-to-Y max",
+    "74HC157 input-to-Y max",
+    "74HC163 D setup/hold",
+    "actual clock skew, fanout, PCB capacitance, temperature and VCC"
+  ],
+  "blocking_issues": [
+    "EA and RET sources not yet electrically specified",
+    "reset supervisor and guaranteed startup clock not designed",
+    "timing not verified against manufacturer worst-case limits",
+    "control signals must be registered or hazard-free before sampling"
+  ]
+}

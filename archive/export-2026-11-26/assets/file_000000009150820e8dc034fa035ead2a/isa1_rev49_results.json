@@ -1,0 +1,16 @@
+{
+  "revision": "4.9",
+  "checks": 1310736,
+  "status": "PASS",
+  "scope": "event-driven behavioral contract, not pin-level or analog",
+  "supervisor_candidate": "TPS3808G50DBVR (pinout/threshold still require review)",
+  "logic_candidate": "SN74HC74D (2 ICs for 3 FFs)",
+  "architecture": "3 asynchronous-clear flip-flops, PC synchronous clear sampled for first two clocks; RUN after third",
+  "limitations": [
+    "no analog power ramp",
+    "no oscillator startup proof",
+    "no output propagation delay or setup/hold",
+    "no low-VCC write-inhibit guarantee",
+    "no complete schematics"
+  ]
+}

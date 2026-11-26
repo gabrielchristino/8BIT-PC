@@ -1,0 +1,89 @@
+{
+  "checkpoint": {
+    "actor_summaries": [
+      {
+        "account_user_id": "user-BRSws5zTXEJyEqGxzUwTAJo1",
+        "actor_type": "agent",
+        "conversation_id": null,
+        "tool_call_id": null,
+        "turn_id": null
+      }
+    ],
+    "blob_id": "file_00000000b0e8820eacea44795d346479",
+    "byte_size": 2529,
+    "checkpoint_id": "checkpoint_7a5c28ae7f004032bd5eeb1a5cd8445f",
+    "compacted_by": null,
+    "content_hash": "98e51e1745da9c7f586a86b36f9f4633612850dbb573dc13c0ab62e06c11fc09",
+    "covered_append_batches": [],
+    "created_at": "2026-11-24T23:41:01.936574Z",
+    "created_by": {
+      "account_user_id": "user-BRSws5zTXEJyEqGxzUwTAJo1",
+      "actor_type": "agent",
+      "agent_kind": null,
+      "conversation_id": "unavailable",
+      "legacy_agent_idempotency_scope": false,
+      "tool_call_id": "01a20fef-27a3-7a3c-b693-f6cb1e0d6e7e",
+      "turn_id": "df6c78f8-8992-45d3-a4e6-26e67f7e8af7"
+    },
+    "editor_summary_version": 1,
+    "editors_after_sequence": null,
+    "effective_compaction_policy_version": "default",
+    "lite_blob_id": null,
+    "lite_byte_size": null,
+    "lite_content_hash": null,
+    "page_id": "page_6b06208d512481918f47d6e67dfe3f19",
+    "state_vector": "ApLlrucLowIAAw==",
+    "stream_kind": "content",
+    "through_sequence": 0,
+    "trigger_reason": "initial"
+  },
+  "document": {
+    "block_attributions": [
+      {
+        "actor": {
+          "account_user_id": "user-BRSws5zTXEJyEqGxzUwTAJo1",
+          "actor_type": "agent",
+          "conversation_id": "unavailable",
+          "tool_call_id": "01a20fef-27a3-7a3c-b693-f6cb1e0d6e7e",
+          "turn_id": "df6c78f8-8992-45d3-a4e6-26e67f7e8af7"
+        },
+        "block_id": "51598c54-74a6-4af5-ab27-93b415343c1c",
+        "changed_at": "2026-11-24T23:41:01.748649Z",
+        "hash": "f0c43ac9c4e8a3df58502f3ab071c03b573f9d962b089733933adbc16f400d0e",
+        "sequence": 0
+      },
+      {
+        "actor": {
+          "account_user_id": "user-BRSws5zTXEJyEqGxzUwTAJo1",
+          "actor_type": "agent",
+          "conversation_id": "unavailable",
+          "tool_call_id": "01a20fef-27a3-7a3c-b693-f6cb1e0d6e7e",
+          "turn_id": "df6c78f8-8992-45d3-a4e6-26e67f7e8af7"
+        },
+        "block_id": "bc3a498d-3f71-4a36-8cde-0c49fb2fe47c",
+        "changed_at": "2026-11-24T23:41:01.748649Z",
+        "hash": "be530cad95c36affea4338c86a321a5356a60e79d6e32950518ab84a55894ac7",
+        "sequence": 0
+      },
+      {
+        "actor": {
+          "account_user_id": "user-BRSws5zTXEJyEqGxzUwTAJo1",
+          "actor_type": "agent",
+          "conversation_id": "unavailable",
+          "tool_call_id": "01a20fef-27a3-7a3c-b693-f6cb1e0d6e7e",
+          "turn_id": "df6c78f8-8992-45d3-a4e6-26e67f7e8af7"
+        },
+        "block_id": "c3860cf2-3cf1-4ad5-b8a4-d20d017a388e",
+        "changed_at": "2026-11-24T23:41:01.748649Z",
+        "hash": "5528b5ef2057b76211c0b181b518b79345749b57df388fa1de5a39a7af4d4cfe",
+        "sequence": 0
+      }
+    ],
+    "format": "openai.page.yjs",
+    "page_id": "page_6b06208d512481918f47d6e67dfe3f19",
+    "schema_version": 2,
+    "state_vector": "ApLlrucLowIAAw==",
+    "through_sequence": 0,
+    "yjs_state_update": "AhGS5a7nCwCEAAAeSVNBLTEg4oCUIENvbXB1dGFkb3IgZGUgOCBiaXRzJwEKYmxvY2tzQnlJZCRjMzg2MGNmMi0zY2YxLTRhZDUtYjhhNC1kMjBkMDE3YTM4OGUBKACS5a7nCxwEa2luZAF3CG1hcmtkb3duJwCS5a7nCxwIbWFya2Rvd24CJwCS5a7nCxwIbWV0YWRhdGEBBACS5a7nCx4oIyMgQWJvdXQgSVNBXC0xIOKAlCBDb21wdXRhZG9yIGRlIDggYml0cycBCmJsb2Nrc0J5SWQkYmMzYTQ5OGQtM2Y3MS00YTM2LThjZGUtMGM0OWZiMmZlNDdjASgAkuWu5wtGBGtpbmQBdwhtYXJrZG93bicAkuWu5wtGCG1hcmtkb3duAicAkuWu5wtGCG1ldGFkYXRhAQQAkuWu5wtISERlc2NyaWJlIHdoYXQgdGhpcyBzcGFjZSBpcyBmb3JcLCBvciBhc2sgQ2hhdEdQVCB0byBoZWxwIHlvdSBnZXQgc3RhcnRlZCcBCmJsb2Nrc0J5SWQkNTE1OThjNTQtNzRhNi00YWY1LWFiMjctOTNiNDE1MzQzYzFjASgAkuWu5wuSAQRraW5kAXcIbWFya2Rvd24nAJLlrucLkgEIbWFya2Rvd24CJwCS5a7nC5IBCG1ldGFkYXRhAQQAkuWu5wuUAYoBYGBgY29kZXgtcHJvbXB0CkhlbHAgbWUgd3JpdGUgYSBzaG9ydCBpbnRyb2R1Y3Rpb24gZm9yIHRoaXMgc3BhY2UuIEZpcnN0IGFzayBtZSB3aGF0IGl0IGlzIGZvciwgdGhlbiB1c2UgbXkgYW5zd2VyIHRvIHVwZGF0ZSB0aGlzIHBhZ2UKYGBgSAACA3ckYzM4NjBjZjItM2NmMS00YWQ1LWI4YTQtZDIwZDAxN2EzODhldyRiYzNhNDk4ZC0zZjcxLTRhMzYtOGNkZS0wYzQ5ZmIyZmU0N2N3JDUxNTk4YzU0LTc0YTYtNGFmNS1hYjI3LTkzYjQxNTM0M2MxYwMAAAEBBXRpdGxlASEBCmJsb2Nrc0J5SWQPX19wYWdlc19lbXB0eV9fAQEBEHRvcExldmVsQmxvY2tJZHMBAQABAAM="
+  }
+}

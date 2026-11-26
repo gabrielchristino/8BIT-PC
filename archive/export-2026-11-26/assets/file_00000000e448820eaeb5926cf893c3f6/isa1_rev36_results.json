@@ -1,0 +1,20 @@
+{
+  "revision": "3.6",
+  "status": "PASS architectural constraints only",
+  "opcodes_reference": 19,
+  "bus_sources_proposed": 14,
+  "bus_single_driver_cases": 15,
+  "forced_conflict_detected": true,
+  "increment_decrement_16bit_values": 65536,
+  "call_ret_stack_scenarios": 60,
+  "not_verified": [
+    "physical bus ownership",
+    "74HC fanout/timing",
+    "pin mapping",
+    "ROM encoding",
+    "complete instruction microoperations",
+    "memory address decode",
+    "power-up reset",
+    "video/keyboard/ZIF"
+  ]
+}

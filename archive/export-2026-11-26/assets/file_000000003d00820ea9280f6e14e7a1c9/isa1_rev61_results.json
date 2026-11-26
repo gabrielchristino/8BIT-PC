@@ -1,0 +1,17 @@
+{
+  "revision": "6.1",
+  "checks": 67127,
+  "failures": 0,
+  "framebuffer_bytes": 6144,
+  "vram_bytes": 8192,
+  "slots_per_logical_row": 256,
+  "video_reads_per_logical_row": 64,
+  "cpu_slots_per_logical_row": 192,
+  "max_queued_writes_synthetic": 7,
+  "limitations": [
+    "synthetic slots are not real NTSC/PAL timing",
+    "no actual SRAM tAA/tOE/tHZ",
+    "no composite encoder verified",
+    "no analog or ERC simulation"
+  ]
+}

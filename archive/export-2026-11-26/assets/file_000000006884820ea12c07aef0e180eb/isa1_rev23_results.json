@@ -1,0 +1,17 @@
+{
+  "model": "abstract image format, no physical EEPROM emulation",
+  "eeprom_bytes": 32768,
+  "header_bytes": 64,
+  "program_max_bytes": 30656,
+  "save_slot_bytes": 1024,
+  "save_payload_max_bytes": 1008,
+  "power_cut_prefix_cases": 2053,
+  "corrupted_payload_cases": 12,
+  "checks": "passed",
+  "limitations": [
+    "byte-prefix tear model, not actual EEPROM write semantics",
+    "CRC32 detects typical corruption, not guaranteed",
+    "generation wraparound not implemented",
+    "real AT28C256 page write, polling, endurance, write-protection and pinout unverified"
+  ]
+}

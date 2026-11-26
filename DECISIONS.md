@@ -1,3 +1,11 @@
+## ADR M05 — Publicar somente o recorte ISA-1 da exportação de conta
+
+26/11/2026: a exportação local possui 58 conversas. Preservar o pacote original local e publicar quatro registros identificados do ISA-1, conteúdos vinculados por origination_thread_id e as duas Pages já conhecidas. Manter 240 conteúdos byte a byte em diretórios por file ID; conversas são JSON reserializado identificado, com Markdown derivado do caminho atual. Excluir campos de conta da metadata das Pages e não publicar o restante da conta.
+
+Alternativas rejeitadas: enviar a exportação geral; substituir versões de mesmo nome; reconstruir ZIPs ausentes e chamá-los originais; usar metadata de biblioteca para inventar mensagens ausentes ou revisão completa. 171 registros apontam a 72 IDs de origem que não constam dos grafos; 33 conteúdos continuam ausentes nessa exportação. As cópias dos ZIPs já recuperados por outra fonte permanecem válidas.
+
+REV33/REV76 foram inspecionadas e reproduzidas em cópias temporárias, com JSON idêntico. Isso fecha lacunas de fonte e reprodução histórica, sem misturar SP antigo ou reduzir as 26 instruções modernas. README 9.8.4.6.6.7 é explicitamente exploratório; qualquer adoção técnica exige decisão e validação novas. diagnostic.asm da rev983 não foi recuperado e sua falha fica preservada. [Inventário, evidências e limites](docs/EXPORT_RECOVERY_2026-11-26.md).
+
 ## ADR E23 — Separar supervisão rápida, reserva isolada e qualificação do conversor
 
 26/11/2026: criar hardware/power_reset separada da NET-16, incluindo TPS3703F6050DSER candidato e divisor 950/100 ohm; mover entrada do inibidor rápido para RAW_BUFFERED. A saída open-drain do supervisor deve carregar somente uma entrada CMOS mais pull-up/trilha, sob orçamento total de 10pF. Pinagem e regressão digital são verificadas; o supervisor é ponto de injeção externo no modelo, sem simulação analógica interna aprovada.

@@ -1,0 +1,1018 @@
+{
+  "assumptions": [
+    "one 74HC244 per eight-bit source",
+    "both active-low enables tied to registered decode",
+    "MEM_READ buffer only from isolated memory read bus",
+    "source registers must be independently latched"
+  ],
+  "nets": [
+    {
+      "source": "A",
+      "buffer": "U_DB_01",
+      "bit": 0,
+      "input": "A[0]",
+      "output": "DB[0]",
+      "enable": "DB_EN_A",
+      "group": 0
+    },
+    {
+      "source": "A",
+      "buffer": "U_DB_01",
+      "bit": 1,
+      "input": "A[1]",
+      "output": "DB[1]",
+      "enable": "DB_EN_A",
+      "group": 0
+    },
+    {
+      "source": "A",
+      "buffer": "U_DB_01",
+      "bit": 2,
+      "input": "A[2]",
+      "output": "DB[2]",
+      "enable": "DB_EN_A",
+      "group": 0
+    },
+    {
+      "source": "A",
+      "buffer": "U_DB_01",
+      "bit": 3,
+      "input": "A[3]",
+      "output": "DB[3]",
+      "enable": "DB_EN_A",
+      "group": 0
+    },
+    {
+      "source": "A",
+      "buffer": "U_DB_01",
+      "bit": 4,
+      "input": "A[4]",
+      "output": "DB[4]",
+      "enable": "DB_EN_A",
+      "group": 1
+    },
+    {
+      "source": "A",
+      "buffer": "U_DB_01",
+      "bit": 5,
+      "input": "A[5]",
+      "output": "DB[5]",
+      "enable": "DB_EN_A",
+      "group": 1
+    },
+    {
+      "source": "A",
+      "buffer": "U_DB_01",
+      "bit": 6,
+      "input": "A[6]",
+      "output": "DB[6]",
+      "enable": "DB_EN_A",
+      "group": 1
+    },
+    {
+      "source": "A",
+      "buffer": "U_DB_01",
+      "bit": 7,
+      "input": "A[7]",
+      "output": "DB[7]",
+      "enable": "DB_EN_A",
+      "group": 1
+    },
+    {
+      "source": "B",
+      "buffer": "U_DB_02",
+      "bit": 0,
+      "input": "B[0]",
+      "output": "DB[0]",
+      "enable": "DB_EN_B",
+      "group": 0
+    },
+    {
+      "source": "B",
+      "buffer": "U_DB_02",
+      "bit": 1,
+      "input": "B[1]",
+      "output": "DB[1]",
+      "enable": "DB_EN_B",
+      "group": 0
+    },
+    {
+      "source": "B",
+      "buffer": "U_DB_02",
+      "bit": 2,
+      "input": "B[2]",
+      "output": "DB[2]",
+      "enable": "DB_EN_B",
+      "group": 0
+    },
+    {
+      "source": "B",
+      "buffer": "U_DB_02",
+      "bit": 3,
+      "input": "B[3]",
+      "output": "DB[3]",
+      "enable": "DB_EN_B",
+      "group": 0
+    },
+    {
+      "source": "B",
+      "buffer": "U_DB_02",
+      "bit": 4,
+      "input": "B[4]",
+      "output": "DB[4]",
+      "enable": "DB_EN_B",
+      "group": 1
+    },
+    {
+      "source": "B",
+      "buffer": "U_DB_02",
+      "bit": 5,
+      "input": "B[5]",
+      "output": "DB[5]",
+      "enable": "DB_EN_B",
+      "group": 1
+    },
+    {
+      "source": "B",
+      "buffer": "U_DB_02",
+      "bit": 6,
+      "input": "B[6]",
+      "output": "DB[6]",
+      "enable": "DB_EN_B",
+      "group": 1
+    },
+    {
+      "source": "B",
+      "buffer": "U_DB_02",
+      "bit": 7,
+      "input": "B[7]",
+      "output": "DB[7]",
+      "enable": "DB_EN_B",
+      "group": 1
+    },
+    {
+      "source": "TMP",
+      "buffer": "U_DB_03",
+      "bit": 0,
+      "input": "TMP[0]",
+      "output": "DB[0]",
+      "enable": "DB_EN_TMP",
+      "group": 0
+    },
+    {
+      "source": "TMP",
+      "buffer": "U_DB_03",
+      "bit": 1,
+      "input": "TMP[1]",
+      "output": "DB[1]",
+      "enable": "DB_EN_TMP",
+      "group": 0
+    },
+    {
+      "source": "TMP",
+      "buffer": "U_DB_03",
+      "bit": 2,
+      "input": "TMP[2]",
+      "output": "DB[2]",
+      "enable": "DB_EN_TMP",
+      "group": 0
+    },
+    {
+      "source": "TMP",
+      "buffer": "U_DB_03",
+      "bit": 3,
+      "input": "TMP[3]",
+      "output": "DB[3]",
+      "enable": "DB_EN_TMP",
+      "group": 0
+    },
+    {
+      "source": "TMP",
+      "buffer": "U_DB_03",
+      "bit": 4,
+      "input": "TMP[4]",
+      "output": "DB[4]",
+      "enable": "DB_EN_TMP",
+      "group": 1
+    },
+    {
+      "source": "TMP",
+      "buffer": "U_DB_03",
+      "bit": 5,
+      "input": "TMP[5]",
+      "output": "DB[5]",
+      "enable": "DB_EN_TMP",
+      "group": 1
+    },
+    {
+      "source": "TMP",
+      "buffer": "U_DB_03",
+      "bit": 6,
+      "input": "TMP[6]",
+      "output": "DB[6]",
+      "enable": "DB_EN_TMP",
+      "group": 1
+    },
+    {
+      "source": "TMP",
+      "buffer": "U_DB_03",
+      "bit": 7,
+      "input": "TMP[7]",
+      "output": "DB[7]",
+      "enable": "DB_EN_TMP",
+      "group": 1
+    },
+    {
+      "source": "TPH",
+      "buffer": "U_DB_04",
+      "bit": 0,
+      "input": "TPH[0]",
+      "output": "DB[0]",
+      "enable": "DB_EN_TPH",
+      "group": 0
+    },
+    {
+      "source": "TPH",
+      "buffer": "U_DB_04",
+      "bit": 1,
+      "input": "TPH[1]",
+      "output": "DB[1]",
+      "enable": "DB_EN_TPH",
+      "group": 0
+    },
+    {
+      "source": "TPH",
+      "buffer": "U_DB_04",
+      "bit": 2,
+      "input": "TPH[2]",
+      "output": "DB[2]",
+      "enable": "DB_EN_TPH",
+      "group": 0
+    },
+    {
+      "source": "TPH",
+      "buffer": "U_DB_04",
+      "bit": 3,
+      "input": "TPH[3]",
+      "output": "DB[3]",
+      "enable": "DB_EN_TPH",
+      "group": 0
+    },
+    {
+      "source": "TPH",
+      "buffer": "U_DB_04",
+      "bit": 4,
+      "input": "TPH[4]",
+      "output": "DB[4]",
+      "enable": "DB_EN_TPH",
+      "group": 1
+    },
+    {
+      "source": "TPH",
+      "buffer": "U_DB_04",
+      "bit": 5,
+      "input": "TPH[5]",
+      "output": "DB[5]",
+      "enable": "DB_EN_TPH",
+      "group": 1
+    },
+    {
+      "source": "TPH",
+      "buffer": "U_DB_04",
+      "bit": 6,
+      "input": "TPH[6]",
+      "output": "DB[6]",
+      "enable": "DB_EN_TPH",
+      "group": 1
+    },
+    {
+      "source": "TPH",
+      "buffer": "U_DB_04",
+      "bit": 7,
+      "input": "TPH[7]",
+      "output": "DB[7]",
+      "enable": "DB_EN_TPH",
+      "group": 1
+    },
+    {
+      "source": "MDR",
+      "buffer": "U_DB_05",
+      "bit": 0,
+      "input": "MDR[0]",
+      "output": "DB[0]",
+      "enable": "DB_EN_MDR",
+      "group": 0
+    },
+    {
+      "source": "MDR",
+      "buffer": "U_DB_05",
+      "bit": 1,
+      "input": "MDR[1]",
+      "output": "DB[1]",
+      "enable": "DB_EN_MDR",
+      "group": 0
+    },
+    {
+      "source": "MDR",
+      "buffer": "U_DB_05",
+      "bit": 2,
+      "input": "MDR[2]",
+      "output": "DB[2]",
+      "enable": "DB_EN_MDR",
+      "group": 0
+    },
+    {
+      "source": "MDR",
+      "buffer": "U_DB_05",
+      "bit": 3,
+      "input": "MDR[3]",
+      "output": "DB[3]",
+      "enable": "DB_EN_MDR",
+      "group": 0
+    },
+    {
+      "source": "MDR",
+      "buffer": "U_DB_05",
+      "bit": 4,
+      "input": "MDR[4]",
+      "output": "DB[4]",
+      "enable": "DB_EN_MDR",
+      "group": 1
+    },
+    {
+      "source": "MDR",
+      "buffer": "U_DB_05",
+      "bit": 5,
+      "input": "MDR[5]",
+      "output": "DB[5]",
+      "enable": "DB_EN_MDR",
+      "group": 1
+    },
+    {
+      "source": "MDR",
+      "buffer": "U_DB_05",
+      "bit": 6,
+      "input": "MDR[6]",
+      "output": "DB[6]",
+      "enable": "DB_EN_MDR",
+      "group": 1
+    },
+    {
+      "source": "MDR",
+      "buffer": "U_DB_05",
+      "bit": 7,
+      "input": "MDR[7]",
+      "output": "DB[7]",
+      "enable": "DB_EN_MDR",
+      "group": 1
+    },
+    {
+      "source": "IR",
+      "buffer": "U_DB_06",
+      "bit": 0,
+      "input": "IR[0]",
+      "output": "DB[0]",
+      "enable": "DB_EN_IR",
+      "group": 0
+    },
+    {
+      "source": "IR",
+      "buffer": "U_DB_06",
+      "bit": 1,
+      "input": "IR[1]",
+      "output": "DB[1]",
+      "enable": "DB_EN_IR",
+      "group": 0
+    },
+    {
+      "source": "IR",
+      "buffer": "U_DB_06",
+      "bit": 2,
+      "input": "IR[2]",
+      "output": "DB[2]",
+      "enable": "DB_EN_IR",
+      "group": 0
+    },
+    {
+      "source": "IR",
+      "buffer": "U_DB_06",
+      "bit": 3,
+      "input": "IR[3]",
+      "output": "DB[3]",
+      "enable": "DB_EN_IR",
+      "group": 0
+    },
+    {
+      "source": "IR",
+      "buffer": "U_DB_06",
+      "bit": 4,
+      "input": "IR[4]",
+      "output": "DB[4]",
+      "enable": "DB_EN_IR",
+      "group": 1
+    },
+    {
+      "source": "IR",
+      "buffer": "U_DB_06",
+      "bit": 5,
+      "input": "IR[5]",
+      "output": "DB[5]",
+      "enable": "DB_EN_IR",
+      "group": 1
+    },
+    {
+      "source": "IR",
+      "buffer": "U_DB_06",
+      "bit": 6,
+      "input": "IR[6]",
+      "output": "DB[6]",
+      "enable": "DB_EN_IR",
+      "group": 1
+    },
+    {
+      "source": "IR",
+      "buffer": "U_DB_06",
+      "bit": 7,
+      "input": "IR[7]",
+      "output": "DB[7]",
+      "enable": "DB_EN_IR",
+      "group": 1
+    },
+    {
+      "source": "PC_LO",
+      "buffer": "U_DB_07",
+      "bit": 0,
+      "input": "PC_LO[0]",
+      "output": "DB[0]",
+      "enable": "DB_EN_PC_LO",
+      "group": 0
+    },
+    {
+      "source": "PC_LO",
+      "buffer": "U_DB_07",
+      "bit": 1,
+      "input": "PC_LO[1]",
+      "output": "DB[1]",
+      "enable": "DB_EN_PC_LO",
+      "group": 0
+    },
+    {
+      "source": "PC_LO",
+      "buffer": "U_DB_07",
+      "bit": 2,
+      "input": "PC_LO[2]",
+      "output": "DB[2]",
+      "enable": "DB_EN_PC_LO",
+      "group": 0
+    },
+    {
+      "source": "PC_LO",
+      "buffer": "U_DB_07",
+      "bit": 3,
+      "input": "PC_LO[3]",
+      "output": "DB[3]",
+      "enable": "DB_EN_PC_LO",
+      "group": 0
+    },
+    {
+      "source": "PC_LO",
+      "buffer": "U_DB_07",
+      "bit": 4,
+      "input": "PC_LO[4]",
+      "output": "DB[4]",
+      "enable": "DB_EN_PC_LO",
+      "group": 1
+    },
+    {
+      "source": "PC_LO",
+      "buffer": "U_DB_07",
+      "bit": 5,
+      "input": "PC_LO[5]",
+      "output": "DB[5]",
+      "enable": "DB_EN_PC_LO",
+      "group": 1
+    },
+    {
+      "source": "PC_LO",
+      "buffer": "U_DB_07",
+      "bit": 6,
+      "input": "PC_LO[6]",
+      "output": "DB[6]",
+      "enable": "DB_EN_PC_LO",
+      "group": 1
+    },
+    {
+      "source": "PC_LO",
+      "buffer": "U_DB_07",
+      "bit": 7,
+      "input": "PC_LO[7]",
+      "output": "DB[7]",
+      "enable": "DB_EN_PC_LO",
+      "group": 1
+    },
+    {
+      "source": "PC_HI",
+      "buffer": "U_DB_08",
+      "bit": 0,
+      "input": "PC_HI[0]",
+      "output": "DB[0]",
+      "enable": "DB_EN_PC_HI",
+      "group": 0
+    },
+    {
+      "source": "PC_HI",
+      "buffer": "U_DB_08",
+      "bit": 1,
+      "input": "PC_HI[1]",
+      "output": "DB[1]",
+      "enable": "DB_EN_PC_HI",
+      "group": 0
+    },
+    {
+      "source": "PC_HI",
+      "buffer": "U_DB_08",
+      "bit": 2,
+      "input": "PC_HI[2]",
+      "output": "DB[2]",
+      "enable": "DB_EN_PC_HI",
+      "group": 0
+    },
+    {
+      "source": "PC_HI",
+      "buffer": "U_DB_08",
+      "bit": 3,
+      "input": "PC_HI[3]",
+      "output": "DB[3]",
+      "enable": "DB_EN_PC_HI",
+      "group": 0
+    },
+    {
+      "source": "PC_HI",
+      "buffer": "U_DB_08",
+      "bit": 4,
+      "input": "PC_HI[4]",
+      "output": "DB[4]",
+      "enable": "DB_EN_PC_HI",
+      "group": 1
+    },
+    {
+      "source": "PC_HI",
+      "buffer": "U_DB_08",
+      "bit": 5,
+      "input": "PC_HI[5]",
+      "output": "DB[5]",
+      "enable": "DB_EN_PC_HI",
+      "group": 1
+    },
+    {
+      "source": "PC_HI",
+      "buffer": "U_DB_08",
+      "bit": 6,
+      "input": "PC_HI[6]",
+      "output": "DB[6]",
+      "enable": "DB_EN_PC_HI",
+      "group": 1
+    },
+    {
+      "source": "PC_HI",
+      "buffer": "U_DB_08",
+      "bit": 7,
+      "input": "PC_HI[7]",
+      "output": "DB[7]",
+      "enable": "DB_EN_PC_HI",
+      "group": 1
+    },
+    {
+      "source": "SP_LO",
+      "buffer": "U_DB_09",
+      "bit": 0,
+      "input": "SP_LO[0]",
+      "output": "DB[0]",
+      "enable": "DB_EN_SP_LO",
+      "group": 0
+    },
+    {
+      "source": "SP_LO",
+      "buffer": "U_DB_09",
+      "bit": 1,
+      "input": "SP_LO[1]",
+      "output": "DB[1]",
+      "enable": "DB_EN_SP_LO",
+      "group": 0
+    },
+    {
+      "source": "SP_LO",
+      "buffer": "U_DB_09",
+      "bit": 2,
+      "input": "SP_LO[2]",
+      "output": "DB[2]",
+      "enable": "DB_EN_SP_LO",
+      "group": 0
+    },
+    {
+      "source": "SP_LO",
+      "buffer": "U_DB_09",
+      "bit": 3,
+      "input": "SP_LO[3]",
+      "output": "DB[3]",
+      "enable": "DB_EN_SP_LO",
+      "group": 0
+    },
+    {
+      "source": "SP_LO",
+      "buffer": "U_DB_09",
+      "bit": 4,
+      "input": "SP_LO[4]",
+      "output": "DB[4]",
+      "enable": "DB_EN_SP_LO",
+      "group": 1
+    },
+    {
+      "source": "SP_LO",
+      "buffer": "U_DB_09",
+      "bit": 5,
+      "input": "SP_LO[5]",
+      "output": "DB[5]",
+      "enable": "DB_EN_SP_LO",
+      "group": 1
+    },
+    {
+      "source": "SP_LO",
+      "buffer": "U_DB_09",
+      "bit": 6,
+      "input": "SP_LO[6]",
+      "output": "DB[6]",
+      "enable": "DB_EN_SP_LO",
+      "group": 1
+    },
+    {
+      "source": "SP_LO",
+      "buffer": "U_DB_09",
+      "bit": 7,
+      "input": "SP_LO[7]",
+      "output": "DB[7]",
+      "enable": "DB_EN_SP_LO",
+      "group": 1
+    },
+    {
+      "source": "SP_HI",
+      "buffer": "U_DB_10",
+      "bit": 0,
+      "input": "SP_HI[0]",
+      "output": "DB[0]",
+      "enable": "DB_EN_SP_HI",
+      "group": 0
+    },
+    {
+      "source": "SP_HI",
+      "buffer": "U_DB_10",
+      "bit": 1,
+      "input": "SP_HI[1]",
+      "output": "DB[1]",
+      "enable": "DB_EN_SP_HI",
+      "group": 0
+    },
+    {
+      "source": "SP_HI",
+      "buffer": "U_DB_10",
+      "bit": 2,
+      "input": "SP_HI[2]",
+      "output": "DB[2]",
+      "enable": "DB_EN_SP_HI",
+      "group": 0
+    },
+    {
+      "source": "SP_HI",
+      "buffer": "U_DB_10",
+      "bit": 3,
+      "input": "SP_HI[3]",
+      "output": "DB[3]",
+      "enable": "DB_EN_SP_HI",
+      "group": 0
+    },
+    {
+      "source": "SP_HI",
+      "buffer": "U_DB_10",
+      "bit": 4,
+      "input": "SP_HI[4]",
+      "output": "DB[4]",
+      "enable": "DB_EN_SP_HI",
+      "group": 1
+    },
+    {
+      "source": "SP_HI",
+      "buffer": "U_DB_10",
+      "bit": 5,
+      "input": "SP_HI[5]",
+      "output": "DB[5]",
+      "enable": "DB_EN_SP_HI",
+      "group": 1
+    },
+    {
+      "source": "SP_HI",
+      "buffer": "U_DB_10",
+      "bit": 6,
+      "input": "SP_HI[6]",
+      "output": "DB[6]",
+      "enable": "DB_EN_SP_HI",
+      "group": 1
+    },
+    {
+      "source": "SP_HI",
+      "buffer": "U_DB_10",
+      "bit": 7,
+      "input": "SP_HI[7]",
+      "output": "DB[7]",
+      "enable": "DB_EN_SP_HI",
+      "group": 1
+    },
+    {
+      "source": "EA_LO",
+      "buffer": "U_DB_11",
+      "bit": 0,
+      "input": "EA_LO[0]",
+      "output": "DB[0]",
+      "enable": "DB_EN_EA_LO",
+      "group": 0
+    },
+    {
+      "source": "EA_LO",
+      "buffer": "U_DB_11",
+      "bit": 1,
+      "input": "EA_LO[1]",
+      "output": "DB[1]",
+      "enable": "DB_EN_EA_LO",
+      "group": 0
+    },
+    {
+      "source": "EA_LO",
+      "buffer": "U_DB_11",
+      "bit": 2,
+      "input": "EA_LO[2]",
+      "output": "DB[2]",
+      "enable": "DB_EN_EA_LO",
+      "group": 0
+    },
+    {
+      "source": "EA_LO",
+      "buffer": "U_DB_11",
+      "bit": 3,
+      "input": "EA_LO[3]",
+      "output": "DB[3]",
+      "enable": "DB_EN_EA_LO",
+      "group": 0
+    },
+    {
+      "source": "EA_LO",
+      "buffer": "U_DB_11",
+      "bit": 4,
+      "input": "EA_LO[4]",
+      "output": "DB[4]",
+      "enable": "DB_EN_EA_LO",
+      "group": 1
+    },
+    {
+      "source": "EA_LO",
+      "buffer": "U_DB_11",
+      "bit": 5,
+      "input": "EA_LO[5]",
+      "output": "DB[5]",
+      "enable": "DB_EN_EA_LO",
+      "group": 1
+    },
+    {
+      "source": "EA_LO",
+      "buffer": "U_DB_11",
+      "bit": 6,
+      "input": "EA_LO[6]",
+      "output": "DB[6]",
+      "enable": "DB_EN_EA_LO",
+      "group": 1
+    },
+    {
+      "source": "EA_LO",
+      "buffer": "U_DB_11",
+      "bit": 7,
+      "input": "EA_LO[7]",
+      "output": "DB[7]",
+      "enable": "DB_EN_EA_LO",
+      "group": 1
+    },
+    {
+      "source": "EA_HI",
+      "buffer": "U_DB_12",
+      "bit": 0,
+      "input": "EA_HI[0]",
+      "output": "DB[0]",
+      "enable": "DB_EN_EA_HI",
+      "group": 0
+    },
+    {
+      "source": "EA_HI",
+      "buffer": "U_DB_12",
+      "bit": 1,
+      "input": "EA_HI[1]",
+      "output": "DB[1]",
+      "enable": "DB_EN_EA_HI",
+      "group": 0
+    },
+    {
+      "source": "EA_HI",
+      "buffer": "U_DB_12",
+      "bit": 2,
+      "input": "EA_HI[2]",
+      "output": "DB[2]",
+      "enable": "DB_EN_EA_HI",
+      "group": 0
+    },
+    {
+      "source": "EA_HI",
+      "buffer": "U_DB_12",
+      "bit": 3,
+      "input": "EA_HI[3]",
+      "output": "DB[3]",
+      "enable": "DB_EN_EA_HI",
+      "group": 0
+    },
+    {
+      "source": "EA_HI",
+      "buffer": "U_DB_12",
+      "bit": 4,
+      "input": "EA_HI[4]",
+      "output": "DB[4]",
+      "enable": "DB_EN_EA_HI",
+      "group": 1
+    },
+    {
+      "source": "EA_HI",
+      "buffer": "U_DB_12",
+      "bit": 5,
+      "input": "EA_HI[5]",
+      "output": "DB[5]",
+      "enable": "DB_EN_EA_HI",
+      "group": 1
+    },
+    {
+      "source": "EA_HI",
+      "buffer": "U_DB_12",
+      "bit": 6,
+      "input": "EA_HI[6]",
+      "output": "DB[6]",
+      "enable": "DB_EN_EA_HI",
+      "group": 1
+    },
+    {
+      "source": "EA_HI",
+      "buffer": "U_DB_12",
+      "bit": 7,
+      "input": "EA_HI[7]",
+      "output": "DB[7]",
+      "enable": "DB_EN_EA_HI",
+      "group": 1
+    },
+    {
+      "source": "ALU",
+      "buffer": "U_DB_13",
+      "bit": 0,
+      "input": "ALU[0]",
+      "output": "DB[0]",
+      "enable": "DB_EN_ALU",
+      "group": 0
+    },
+    {
+      "source": "ALU",
+      "buffer": "U_DB_13",
+      "bit": 1,
+      "input": "ALU[1]",
+      "output": "DB[1]",
+      "enable": "DB_EN_ALU",
+      "group": 0
+    },
+    {
+      "source": "ALU",
+      "buffer": "U_DB_13",
+      "bit": 2,
+      "input": "ALU[2]",
+      "output": "DB[2]",
+      "enable": "DB_EN_ALU",
+      "group": 0
+    },
+    {
+      "source": "ALU",
+      "buffer": "U_DB_13",
+      "bit": 3,
+      "input": "ALU[3]",
+      "output": "DB[3]",
+      "enable": "DB_EN_ALU",
+      "group": 0
+    },
+    {
+      "source": "ALU",
+      "buffer": "U_DB_13",
+      "bit": 4,
+      "input": "ALU[4]",
+      "output": "DB[4]",
+      "enable": "DB_EN_ALU",
+      "group": 1
+    },
+    {
+      "source": "ALU",
+      "buffer": "U_DB_13",
+      "bit": 5,
+      "input": "ALU[5]",
+      "output": "DB[5]",
+      "enable": "DB_EN_ALU",
+      "group": 1
+    },
+    {
+      "source": "ALU",
+      "buffer": "U_DB_13",
+      "bit": 6,
+      "input": "ALU[6]",
+      "output": "DB[6]",
+      "enable": "DB_EN_ALU",
+      "group": 1
+    },
+    {
+      "source": "ALU",
+      "buffer": "U_DB_13",
+      "bit": 7,
+      "input": "ALU[7]",
+      "output": "DB[7]",
+      "enable": "DB_EN_ALU",
+      "group": 1
+    },
+    {
+      "source": "MEM_READ",
+      "buffer": "U_DB_14",
+      "bit": 0,
+      "input": "MEM_READ[0]",
+      "output": "DB[0]",
+      "enable": "DB_EN_MEM_READ",
+      "group": 0
+    },
+    {
+      "source": "MEM_READ",
+      "buffer": "U_DB_14",
+      "bit": 1,
+      "input": "MEM_READ[1]",
+      "output": "DB[1]",
+      "enable": "DB_EN_MEM_READ",
+      "group": 0
+    },
+    {
+      "source": "MEM_READ",
+      "buffer": "U_DB_14",
+      "bit": 2,
+      "input": "MEM_READ[2]",
+      "output": "DB[2]",
+      "enable": "DB_EN_MEM_READ",
+      "group": 0
+    },
+    {
+      "source": "MEM_READ",
+      "buffer": "U_DB_14",
+      "bit": 3,
+      "input": "MEM_READ[3]",
+      "output": "DB[3]",
+      "enable": "DB_EN_MEM_READ",
+      "group": 0
+    },
+    {
+      "source": "MEM_READ",
+      "buffer": "U_DB_14",
+      "bit": 4,
+      "input": "MEM_READ[4]",
+      "output": "DB[4]",
+      "enable": "DB_EN_MEM_READ",
+      "group": 1
+    },
+    {
+      "source": "MEM_READ",
+      "buffer": "U_DB_14",
+      "bit": 5,
+      "input": "MEM_READ[5]",
+      "output": "DB[5]",
+      "enable": "DB_EN_MEM_READ",
+      "group": 1
+    },
+    {
+      "source": "MEM_READ",
+      "buffer": "U_DB_14",
+      "bit": 6,
+      "input": "MEM_READ[6]",
+      "output": "DB[6]",
+      "enable": "DB_EN_MEM_READ",
+      "group": 1
+    },
+    {
+      "source": "MEM_READ",
+      "buffer": "U_DB_14",
+      "bit": 7,
+      "input": "MEM_READ[7]",
+      "output": "DB[7]",
+      "enable": "DB_EN_MEM_READ",
+      "group": 1
+    }
+  ]
+}

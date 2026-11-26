@@ -1,0 +1,52 @@
+{
+  "deltas": [],
+  "head": {
+    "append_manifest": {
+      "adoption_sequence": 0,
+      "gc_through_sequence": -1,
+      "initial_empty_generation": 1,
+      "maintenance_close_not_before": null,
+      "maintenance_generation": 1,
+      "maintenance_lifecycle_generation": 0,
+      "maintenance_open": false,
+      "retained_attribution_bytes": 0,
+      "retained_batch_count": 0,
+      "retained_delta_count": 0,
+      "retained_update_bytes": 0,
+      "retired_through_sequence": 0,
+      "version": 4
+    },
+    "artifact_schema_version": null,
+    "checkpoint_id": "checkpoint_7a5c28ae7f004032bd5eeb1a5cd8445f",
+    "checkpoint_sequence": 0,
+    "compaction_generation": 0,
+    "crdt_identity_preserving_checkpoints": null,
+    "current_sequence": 0,
+    "editor_tail": [],
+    "effective_compaction_policy_version": "default",
+    "last_checkpoint_at": "2026-11-24T23:41:01.748649Z",
+    "page_id": "page_6b06208d512481918f47d6e67dfe3f19",
+    "persistence_state": null,
+    "preview_cleanup_checkpoint_id": null,
+    "preview_pending_checkpoint_id": null,
+    "preview_pending_generation": null,
+    "preview_ready_checkpoint_id": null,
+    "preview_ready_generation": null,
+    "projection_through_sequence": 0,
+    "revision": 0,
+    "schema_version": 2,
+    "stream_kind": "content"
+  },
+  "includes_current_sequence": true,
+  "projection": {
+    "materialized_search_text": "## About ISA\\-1 \u2014 Computador de 8 bits\n\nDescribe what this space is for\\, or ask ChatGPT to help you get started\n\n```codex-prompt\nHelp me write a short introduction for this space. First ask me what it is for, then use my answer to update this page\n```",
+    "page_id": "page_6b06208d512481918f47d6e67dfe3f19",
+    "preview": "## About ISA\\-1 \u2014 Computador de 8 bits\n\nDescribe what this space is for\\, or ask ChatGPT to help you get started\n\n```codex-prompt\nHelp me write a short introduction for this space. First ask me what it is for, then use my answer to update t",
+    "projection_through_sequence": 0,
+    "symbol": null,
+    "title": "ISA-1 \u2014 Computador de 8 bits",
+    "title_preview_casefold_v1": "isa-1 \u2014 computador de 8 bits\n## about isa\\-1 \u2014 computador de 8 bits\n\ndescribe what this space is for\\, or ask chatgpt to help you get started\n\n```codex-prompt\nhelp me write a short introduction for this space. first ask me what it is for, then use my answer to update t",
+    "updated_at": "2026-11-24T23:41:02.125936Z"
+  },
+  "through_sequence": 0
+}

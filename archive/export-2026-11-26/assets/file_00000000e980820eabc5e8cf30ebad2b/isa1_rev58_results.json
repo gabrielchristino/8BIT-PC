@@ -1,0 +1,15 @@
+{
+  "revision": "5.8",
+  "checks": 35087,
+  "failures": [],
+  "status": "PASS",
+  "scope": "Python behavioral model of 32KB SRAM and bus protocol",
+  "limitations": [
+    "no electrical simulation",
+    "no SRAM datasheet timing",
+    "no video DMA arbitration",
+    "no KiCad ERC",
+    "no real 74HC output enable timing"
+  ],
+  "example_trace_cycles": 6
+}

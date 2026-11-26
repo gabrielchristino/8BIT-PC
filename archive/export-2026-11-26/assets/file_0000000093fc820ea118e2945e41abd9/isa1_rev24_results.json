@@ -1,0 +1,22 @@
+{
+  "pin_positions_checked": 28,
+  "control_combinations_checked": 80,
+  "address_locations_checked": 32768,
+  "page_partition_cases_checked": 1928,
+  "sdp_sequence_hex": [
+    [
+      "0x5555",
+      "0xaa"
+    ],
+    [
+      "0x2aaa",
+      "0x55"
+    ],
+    [
+      "0x5555",
+      "0xa0"
+    ]
+  ],
+  "model": "logic and transaction checks only; not IC propagation, power-fail or analog simulation",
+  "status": "passed"
+}

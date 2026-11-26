@@ -1,0 +1,17 @@
+{
+  "revision": "2.7-2.9",
+  "status": "logical model passed; hardware NOT stable",
+  "hc244_pins_checked": 20,
+  "state_count": 14,
+  "static_control_cases": 48384,
+  "eeprom_locations_checked": 32768,
+  "sdp_unlock_exception_verified": true,
+  "negative_contention_tests": 2,
+  "limitations": [
+    "No datasheet-timing simulation",
+    "No power-ramp analog test",
+    "No full CPU or video implementation",
+    "No netlist ERC/PCB DRC",
+    "No hardware prototype"
+  ]
+}

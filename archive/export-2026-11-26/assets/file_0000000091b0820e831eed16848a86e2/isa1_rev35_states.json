@@ -1,0 +1,1946 @@
+[
+  {
+    "opcode": "00",
+    "mnemonic": "NOP",
+    "states": [
+      {
+        "phase": "ADDRESS_CAPTURE",
+        "addr_source": "PC",
+        "mar_load": true,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "MAR<-PC"
+      },
+      {
+        "phase": "READ_ACCESS",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": true,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "IR<-MEM[MAR], PC<-PC+1"
+      },
+      {
+        "phase": "READ_CAPTURE",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": true,
+        "mem_we": false,
+        "read_capture": true,
+        "write_data_drive": false,
+        "operation": "IR<-MEM[MAR], PC<-PC+1"
+      },
+      {
+        "phase": "READ_RELEASE",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "release memory output"
+      }
+    ]
+  },
+  {
+    "opcode": "10",
+    "mnemonic": "LDA_IMM",
+    "states": [
+      {
+        "phase": "ADDRESS_CAPTURE",
+        "addr_source": "PC",
+        "mar_load": true,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "MAR<-PC"
+      },
+      {
+        "phase": "READ_ACCESS",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": true,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "IR<-MEM[MAR], PC<-PC+1"
+      },
+      {
+        "phase": "READ_CAPTURE",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": true,
+        "mem_we": false,
+        "read_capture": true,
+        "write_data_drive": false,
+        "operation": "IR<-MEM[MAR], PC<-PC+1"
+      },
+      {
+        "phase": "READ_RELEASE",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "release memory output"
+      },
+      {
+        "phase": "ADDRESS_CAPTURE",
+        "addr_source": "PC",
+        "mar_load": true,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "MAR<-PC"
+      },
+      {
+        "phase": "READ_ACCESS",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": true,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "TMP<-MEM[MAR], PC<-PC+1"
+      },
+      {
+        "phase": "READ_CAPTURE",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": true,
+        "mem_we": false,
+        "read_capture": true,
+        "write_data_drive": false,
+        "operation": "TMP<-MEM[MAR], PC<-PC+1"
+      },
+      {
+        "phase": "READ_RELEASE",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "release memory output"
+      },
+      {
+        "phase": "INTERNAL",
+        "addr_source": "NONE",
+        "mar_load": false,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "A<-TMP, Z<-(A==0)"
+      }
+    ]
+  },
+  {
+    "opcode": "11",
+    "mnemonic": "LDB_IMM",
+    "states": [
+      {
+        "phase": "ADDRESS_CAPTURE",
+        "addr_source": "PC",
+        "mar_load": true,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "MAR<-PC"
+      },
+      {
+        "phase": "READ_ACCESS",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": true,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "IR<-MEM[MAR], PC<-PC+1"
+      },
+      {
+        "phase": "READ_CAPTURE",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": true,
+        "mem_we": false,
+        "read_capture": true,
+        "write_data_drive": false,
+        "operation": "IR<-MEM[MAR], PC<-PC+1"
+      },
+      {
+        "phase": "READ_RELEASE",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "release memory output"
+      },
+      {
+        "phase": "ADDRESS_CAPTURE",
+        "addr_source": "PC",
+        "mar_load": true,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "MAR<-PC"
+      },
+      {
+        "phase": "READ_ACCESS",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": true,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "TMP<-MEM[MAR], PC<-PC+1"
+      },
+      {
+        "phase": "READ_CAPTURE",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": true,
+        "mem_we": false,
+        "read_capture": true,
+        "write_data_drive": false,
+        "operation": "TMP<-MEM[MAR], PC<-PC+1"
+      },
+      {
+        "phase": "READ_RELEASE",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "release memory output"
+      },
+      {
+        "phase": "INTERNAL",
+        "addr_source": "NONE",
+        "mar_load": false,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "B<-TMP"
+      }
+    ]
+  },
+  {
+    "opcode": "20",
+    "mnemonic": "ADD",
+    "states": [
+      {
+        "phase": "ADDRESS_CAPTURE",
+        "addr_source": "PC",
+        "mar_load": true,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "MAR<-PC"
+      },
+      {
+        "phase": "READ_ACCESS",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": true,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "IR<-MEM[MAR], PC<-PC+1"
+      },
+      {
+        "phase": "READ_CAPTURE",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": true,
+        "mem_we": false,
+        "read_capture": true,
+        "write_data_drive": false,
+        "operation": "IR<-MEM[MAR], PC<-PC+1"
+      },
+      {
+        "phase": "READ_RELEASE",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "release memory output"
+      },
+      {
+        "phase": "INTERNAL",
+        "addr_source": "NONE",
+        "mar_load": false,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "{C,A,Z}<-A+B"
+      }
+    ]
+  },
+  {
+    "opcode": "21",
+    "mnemonic": "SUB",
+    "states": [
+      {
+        "phase": "ADDRESS_CAPTURE",
+        "addr_source": "PC",
+        "mar_load": true,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "MAR<-PC"
+      },
+      {
+        "phase": "READ_ACCESS",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": true,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "IR<-MEM[MAR], PC<-PC+1"
+      },
+      {
+        "phase": "READ_CAPTURE",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": true,
+        "mem_we": false,
+        "read_capture": true,
+        "write_data_drive": false,
+        "operation": "IR<-MEM[MAR], PC<-PC+1"
+      },
+      {
+        "phase": "READ_RELEASE",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "release memory output"
+      },
+      {
+        "phase": "INTERNAL",
+        "addr_source": "NONE",
+        "mar_load": false,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "{C,A,Z}<-A-B; C=no-borrow"
+      }
+    ]
+  },
+  {
+    "opcode": "22",
+    "mnemonic": "AND",
+    "states": [
+      {
+        "phase": "ADDRESS_CAPTURE",
+        "addr_source": "PC",
+        "mar_load": true,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "MAR<-PC"
+      },
+      {
+        "phase": "READ_ACCESS",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": true,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "IR<-MEM[MAR], PC<-PC+1"
+      },
+      {
+        "phase": "READ_CAPTURE",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": true,
+        "mem_we": false,
+        "read_capture": true,
+        "write_data_drive": false,
+        "operation": "IR<-MEM[MAR], PC<-PC+1"
+      },
+      {
+        "phase": "READ_RELEASE",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "release memory output"
+      },
+      {
+        "phase": "INTERNAL",
+        "addr_source": "NONE",
+        "mar_load": false,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "A,Z<-A&B; C preserved"
+      }
+    ]
+  },
+  {
+    "opcode": "23",
+    "mnemonic": "OR",
+    "states": [
+      {
+        "phase": "ADDRESS_CAPTURE",
+        "addr_source": "PC",
+        "mar_load": true,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "MAR<-PC"
+      },
+      {
+        "phase": "READ_ACCESS",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": true,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "IR<-MEM[MAR], PC<-PC+1"
+      },
+      {
+        "phase": "READ_CAPTURE",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": true,
+        "mem_we": false,
+        "read_capture": true,
+        "write_data_drive": false,
+        "operation": "IR<-MEM[MAR], PC<-PC+1"
+      },
+      {
+        "phase": "READ_RELEASE",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "release memory output"
+      },
+      {
+        "phase": "INTERNAL",
+        "addr_source": "NONE",
+        "mar_load": false,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "A,Z<-A|B; C preserved"
+      }
+    ]
+  },
+  {
+    "opcode": "24",
+    "mnemonic": "XOR",
+    "states": [
+      {
+        "phase": "ADDRESS_CAPTURE",
+        "addr_source": "PC",
+        "mar_load": true,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "MAR<-PC"
+      },
+      {
+        "phase": "READ_ACCESS",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": true,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "IR<-MEM[MAR], PC<-PC+1"
+      },
+      {
+        "phase": "READ_CAPTURE",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": true,
+        "mem_we": false,
+        "read_capture": true,
+        "write_data_drive": false,
+        "operation": "IR<-MEM[MAR], PC<-PC+1"
+      },
+      {
+        "phase": "READ_RELEASE",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "release memory output"
+      },
+      {
+        "phase": "INTERNAL",
+        "addr_source": "NONE",
+        "mar_load": false,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "A,Z<-A^B; C preserved"
+      }
+    ]
+  },
+  {
+    "opcode": "25",
+    "mnemonic": "SHL",
+    "states": [
+      {
+        "phase": "ADDRESS_CAPTURE",
+        "addr_source": "PC",
+        "mar_load": true,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "MAR<-PC"
+      },
+      {
+        "phase": "READ_ACCESS",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": true,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "IR<-MEM[MAR], PC<-PC+1"
+      },
+      {
+        "phase": "READ_CAPTURE",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": true,
+        "mem_we": false,
+        "read_capture": true,
+        "write_data_drive": false,
+        "operation": "IR<-MEM[MAR], PC<-PC+1"
+      },
+      {
+        "phase": "READ_RELEASE",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "release memory output"
+      },
+      {
+        "phase": "INTERNAL",
+        "addr_source": "NONE",
+        "mar_load": false,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "C<-A7, A<-A<<1, Z<-zero"
+      }
+    ]
+  },
+  {
+    "opcode": "26",
+    "mnemonic": "SHR",
+    "states": [
+      {
+        "phase": "ADDRESS_CAPTURE",
+        "addr_source": "PC",
+        "mar_load": true,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "MAR<-PC"
+      },
+      {
+        "phase": "READ_ACCESS",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": true,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "IR<-MEM[MAR], PC<-PC+1"
+      },
+      {
+        "phase": "READ_CAPTURE",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": true,
+        "mem_we": false,
+        "read_capture": true,
+        "write_data_drive": false,
+        "operation": "IR<-MEM[MAR], PC<-PC+1"
+      },
+      {
+        "phase": "READ_RELEASE",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "release memory output"
+      },
+      {
+        "phase": "INTERNAL",
+        "addr_source": "NONE",
+        "mar_load": false,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "C<-A0, A<-A>>1, Z<-zero"
+      }
+    ]
+  },
+  {
+    "opcode": "30",
+    "mnemonic": "LDA_ABS",
+    "states": [
+      {
+        "phase": "ADDRESS_CAPTURE",
+        "addr_source": "PC",
+        "mar_load": true,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "MAR<-PC"
+      },
+      {
+        "phase": "READ_ACCESS",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": true,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "IR<-MEM[MAR], PC<-PC+1"
+      },
+      {
+        "phase": "READ_CAPTURE",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": true,
+        "mem_we": false,
+        "read_capture": true,
+        "write_data_drive": false,
+        "operation": "IR<-MEM[MAR], PC<-PC+1"
+      },
+      {
+        "phase": "READ_RELEASE",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "release memory output"
+      },
+      {
+        "phase": "ADDRESS_CAPTURE",
+        "addr_source": "PC",
+        "mar_load": true,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "MAR<-PC"
+      },
+      {
+        "phase": "READ_ACCESS",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": true,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "TMP<-MEM[MAR], PC<-PC+1"
+      },
+      {
+        "phase": "READ_CAPTURE",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": true,
+        "mem_we": false,
+        "read_capture": true,
+        "write_data_drive": false,
+        "operation": "TMP<-MEM[MAR], PC<-PC+1"
+      },
+      {
+        "phase": "READ_RELEASE",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "release memory output"
+      },
+      {
+        "phase": "ADDRESS_CAPTURE",
+        "addr_source": "PC",
+        "mar_load": true,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "MAR<-PC"
+      },
+      {
+        "phase": "READ_ACCESS",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": true,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "TPH<-MEM[MAR], PC<-PC+1"
+      },
+      {
+        "phase": "READ_CAPTURE",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": true,
+        "mem_we": false,
+        "read_capture": true,
+        "write_data_drive": false,
+        "operation": "TPH<-MEM[MAR], PC<-PC+1"
+      },
+      {
+        "phase": "READ_RELEASE",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "release memory output"
+      },
+      {
+        "phase": "INTERNAL",
+        "addr_source": "NONE",
+        "mar_load": false,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "EA<-TPH:TMP"
+      },
+      {
+        "phase": "ADDRESS_CAPTURE",
+        "addr_source": "PC",
+        "mar_load": true,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "MAR<-EA"
+      },
+      {
+        "phase": "READ_ACCESS",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": true,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "A<-MEM[MAR], Z<-(A==0)"
+      },
+      {
+        "phase": "READ_CAPTURE",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": true,
+        "mem_we": false,
+        "read_capture": true,
+        "write_data_drive": false,
+        "operation": "A<-MEM[MAR], Z<-(A==0)"
+      },
+      {
+        "phase": "READ_RELEASE",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "release memory output"
+      }
+    ]
+  },
+  {
+    "opcode": "31",
+    "mnemonic": "STA_ABS",
+    "states": [
+      {
+        "phase": "ADDRESS_CAPTURE",
+        "addr_source": "PC",
+        "mar_load": true,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "MAR<-PC"
+      },
+      {
+        "phase": "READ_ACCESS",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": true,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "IR<-MEM[MAR], PC<-PC+1"
+      },
+      {
+        "phase": "READ_CAPTURE",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": true,
+        "mem_we": false,
+        "read_capture": true,
+        "write_data_drive": false,
+        "operation": "IR<-MEM[MAR], PC<-PC+1"
+      },
+      {
+        "phase": "READ_RELEASE",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "release memory output"
+      },
+      {
+        "phase": "ADDRESS_CAPTURE",
+        "addr_source": "PC",
+        "mar_load": true,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "MAR<-PC"
+      },
+      {
+        "phase": "READ_ACCESS",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": true,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "TMP<-MEM[MAR], PC<-PC+1"
+      },
+      {
+        "phase": "READ_CAPTURE",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": true,
+        "mem_we": false,
+        "read_capture": true,
+        "write_data_drive": false,
+        "operation": "TMP<-MEM[MAR], PC<-PC+1"
+      },
+      {
+        "phase": "READ_RELEASE",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "release memory output"
+      },
+      {
+        "phase": "ADDRESS_CAPTURE",
+        "addr_source": "PC",
+        "mar_load": true,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "MAR<-PC"
+      },
+      {
+        "phase": "READ_ACCESS",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": true,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "TPH<-MEM[MAR], PC<-PC+1"
+      },
+      {
+        "phase": "READ_CAPTURE",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": true,
+        "mem_we": false,
+        "read_capture": true,
+        "write_data_drive": false,
+        "operation": "TPH<-MEM[MAR], PC<-PC+1"
+      },
+      {
+        "phase": "READ_RELEASE",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "release memory output"
+      },
+      {
+        "phase": "INTERNAL",
+        "addr_source": "NONE",
+        "mar_load": false,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "EA<-TPH:TMP"
+      },
+      {
+        "phase": "ADDRESS_CAPTURE",
+        "addr_source": "PC",
+        "mar_load": true,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "MAR<-EA, MDR<-A"
+      },
+      {
+        "phase": "WRITE_SETUP",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": true,
+        "operation": "MEM[MAR]<-MDR"
+      },
+      {
+        "phase": "WRITE_PULSE",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": false,
+        "mem_we": true,
+        "read_capture": false,
+        "write_data_drive": true,
+        "operation": "MEM[MAR]<-MDR"
+      },
+      {
+        "phase": "WRITE_HOLD",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": true,
+        "operation": "MEM[MAR]<-MDR"
+      },
+      {
+        "phase": "WRITE_RELEASE",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "release write driver"
+      }
+    ]
+  },
+  {
+    "opcode": "40",
+    "mnemonic": "JMP",
+    "states": [
+      {
+        "phase": "ADDRESS_CAPTURE",
+        "addr_source": "PC",
+        "mar_load": true,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "MAR<-PC"
+      },
+      {
+        "phase": "READ_ACCESS",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": true,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "IR<-MEM[MAR], PC<-PC+1"
+      },
+      {
+        "phase": "READ_CAPTURE",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": true,
+        "mem_we": false,
+        "read_capture": true,
+        "write_data_drive": false,
+        "operation": "IR<-MEM[MAR], PC<-PC+1"
+      },
+      {
+        "phase": "READ_RELEASE",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "release memory output"
+      },
+      {
+        "phase": "ADDRESS_CAPTURE",
+        "addr_source": "PC",
+        "mar_load": true,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "MAR<-PC"
+      },
+      {
+        "phase": "READ_ACCESS",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": true,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "TMP<-MEM[MAR], PC<-PC+1"
+      },
+      {
+        "phase": "READ_CAPTURE",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": true,
+        "mem_we": false,
+        "read_capture": true,
+        "write_data_drive": false,
+        "operation": "TMP<-MEM[MAR], PC<-PC+1"
+      },
+      {
+        "phase": "READ_RELEASE",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "release memory output"
+      },
+      {
+        "phase": "ADDRESS_CAPTURE",
+        "addr_source": "PC",
+        "mar_load": true,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "MAR<-PC"
+      },
+      {
+        "phase": "READ_ACCESS",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": true,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "TPH<-MEM[MAR], PC<-PC+1"
+      },
+      {
+        "phase": "READ_CAPTURE",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": true,
+        "mem_we": false,
+        "read_capture": true,
+        "write_data_drive": false,
+        "operation": "TPH<-MEM[MAR], PC<-PC+1"
+      },
+      {
+        "phase": "READ_RELEASE",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "release memory output"
+      },
+      {
+        "phase": "INTERNAL",
+        "addr_source": "NONE",
+        "mar_load": false,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "EA<-TPH:TMP"
+      },
+      {
+        "phase": "INTERNAL",
+        "addr_source": "NONE",
+        "mar_load": false,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "PC<-EA"
+      }
+    ]
+  },
+  {
+    "opcode": "41",
+    "mnemonic": "JZ",
+    "states": [
+      {
+        "phase": "ADDRESS_CAPTURE",
+        "addr_source": "PC",
+        "mar_load": true,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "MAR<-PC"
+      },
+      {
+        "phase": "READ_ACCESS",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": true,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "IR<-MEM[MAR], PC<-PC+1"
+      },
+      {
+        "phase": "READ_CAPTURE",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": true,
+        "mem_we": false,
+        "read_capture": true,
+        "write_data_drive": false,
+        "operation": "IR<-MEM[MAR], PC<-PC+1"
+      },
+      {
+        "phase": "READ_RELEASE",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "release memory output"
+      },
+      {
+        "phase": "ADDRESS_CAPTURE",
+        "addr_source": "PC",
+        "mar_load": true,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "MAR<-PC"
+      },
+      {
+        "phase": "READ_ACCESS",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": true,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "TMP<-MEM[MAR], PC<-PC+1"
+      },
+      {
+        "phase": "READ_CAPTURE",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": true,
+        "mem_we": false,
+        "read_capture": true,
+        "write_data_drive": false,
+        "operation": "TMP<-MEM[MAR], PC<-PC+1"
+      },
+      {
+        "phase": "READ_RELEASE",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "release memory output"
+      },
+      {
+        "phase": "ADDRESS_CAPTURE",
+        "addr_source": "PC",
+        "mar_load": true,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "MAR<-PC"
+      },
+      {
+        "phase": "READ_ACCESS",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": true,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "TPH<-MEM[MAR], PC<-PC+1"
+      },
+      {
+        "phase": "READ_CAPTURE",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": true,
+        "mem_we": false,
+        "read_capture": true,
+        "write_data_drive": false,
+        "operation": "TPH<-MEM[MAR], PC<-PC+1"
+      },
+      {
+        "phase": "READ_RELEASE",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "release memory output"
+      },
+      {
+        "phase": "INTERNAL",
+        "addr_source": "NONE",
+        "mar_load": false,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "EA<-TPH:TMP"
+      },
+      {
+        "phase": "INTERNAL",
+        "addr_source": "NONE",
+        "mar_load": false,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "if Z then PC<-EA"
+      }
+    ]
+  },
+  {
+    "opcode": "50",
+    "mnemonic": "CALL",
+    "states": [
+      {
+        "phase": "ADDRESS_CAPTURE",
+        "addr_source": "PC",
+        "mar_load": true,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "MAR<-PC"
+      },
+      {
+        "phase": "READ_ACCESS",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": true,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "IR<-MEM[MAR], PC<-PC+1"
+      },
+      {
+        "phase": "READ_CAPTURE",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": true,
+        "mem_we": false,
+        "read_capture": true,
+        "write_data_drive": false,
+        "operation": "IR<-MEM[MAR], PC<-PC+1"
+      },
+      {
+        "phase": "READ_RELEASE",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "release memory output"
+      },
+      {
+        "phase": "ADDRESS_CAPTURE",
+        "addr_source": "PC",
+        "mar_load": true,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "MAR<-PC"
+      },
+      {
+        "phase": "READ_ACCESS",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": true,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "TMP<-MEM[MAR], PC<-PC+1"
+      },
+      {
+        "phase": "READ_CAPTURE",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": true,
+        "mem_we": false,
+        "read_capture": true,
+        "write_data_drive": false,
+        "operation": "TMP<-MEM[MAR], PC<-PC+1"
+      },
+      {
+        "phase": "READ_RELEASE",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "release memory output"
+      },
+      {
+        "phase": "ADDRESS_CAPTURE",
+        "addr_source": "PC",
+        "mar_load": true,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "MAR<-PC"
+      },
+      {
+        "phase": "READ_ACCESS",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": true,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "TPH<-MEM[MAR], PC<-PC+1"
+      },
+      {
+        "phase": "READ_CAPTURE",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": true,
+        "mem_we": false,
+        "read_capture": true,
+        "write_data_drive": false,
+        "operation": "TPH<-MEM[MAR], PC<-PC+1"
+      },
+      {
+        "phase": "READ_RELEASE",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "release memory output"
+      },
+      {
+        "phase": "INTERNAL",
+        "addr_source": "NONE",
+        "mar_load": false,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "EA<-TPH:TMP"
+      },
+      {
+        "phase": "INTERNAL",
+        "addr_source": "NONE",
+        "mar_load": false,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "RETADDR<-PC"
+      },
+      {
+        "phase": "ADDRESS_CAPTURE",
+        "addr_source": "PC",
+        "mar_load": true,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "MAR<-SP, MDR<-RETADDR.high"
+      },
+      {
+        "phase": "WRITE_SETUP",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": true,
+        "operation": "MEM[MAR]<-MDR, SP<-SP-1"
+      },
+      {
+        "phase": "WRITE_PULSE",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": false,
+        "mem_we": true,
+        "read_capture": false,
+        "write_data_drive": true,
+        "operation": "MEM[MAR]<-MDR, SP<-SP-1"
+      },
+      {
+        "phase": "WRITE_HOLD",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": true,
+        "operation": "MEM[MAR]<-MDR, SP<-SP-1"
+      },
+      {
+        "phase": "WRITE_RELEASE",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "release write driver"
+      },
+      {
+        "phase": "ADDRESS_CAPTURE",
+        "addr_source": "PC",
+        "mar_load": true,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "MAR<-SP, MDR<-RETADDR.low"
+      },
+      {
+        "phase": "WRITE_SETUP",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": true,
+        "operation": "MEM[MAR]<-MDR, SP<-SP-1"
+      },
+      {
+        "phase": "WRITE_PULSE",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": false,
+        "mem_we": true,
+        "read_capture": false,
+        "write_data_drive": true,
+        "operation": "MEM[MAR]<-MDR, SP<-SP-1"
+      },
+      {
+        "phase": "WRITE_HOLD",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": true,
+        "operation": "MEM[MAR]<-MDR, SP<-SP-1"
+      },
+      {
+        "phase": "WRITE_RELEASE",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "release write driver"
+      },
+      {
+        "phase": "INTERNAL",
+        "addr_source": "NONE",
+        "mar_load": false,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "PC<-EA"
+      }
+    ]
+  },
+  {
+    "opcode": "51",
+    "mnemonic": "RET",
+    "states": [
+      {
+        "phase": "ADDRESS_CAPTURE",
+        "addr_source": "PC",
+        "mar_load": true,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "MAR<-PC"
+      },
+      {
+        "phase": "READ_ACCESS",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": true,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "IR<-MEM[MAR], PC<-PC+1"
+      },
+      {
+        "phase": "READ_CAPTURE",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": true,
+        "mem_we": false,
+        "read_capture": true,
+        "write_data_drive": false,
+        "operation": "IR<-MEM[MAR], PC<-PC+1"
+      },
+      {
+        "phase": "READ_RELEASE",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "release memory output"
+      },
+      {
+        "phase": "INTERNAL",
+        "addr_source": "NONE",
+        "mar_load": false,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "SP<-SP+1"
+      },
+      {
+        "phase": "ADDRESS_CAPTURE",
+        "addr_source": "PC",
+        "mar_load": true,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "MAR<-SP"
+      },
+      {
+        "phase": "READ_ACCESS",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": true,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "TMP<-MEM[MAR]"
+      },
+      {
+        "phase": "READ_CAPTURE",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": true,
+        "mem_we": false,
+        "read_capture": true,
+        "write_data_drive": false,
+        "operation": "TMP<-MEM[MAR]"
+      },
+      {
+        "phase": "READ_RELEASE",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "release memory output"
+      },
+      {
+        "phase": "INTERNAL",
+        "addr_source": "NONE",
+        "mar_load": false,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "SP<-SP+1"
+      },
+      {
+        "phase": "ADDRESS_CAPTURE",
+        "addr_source": "PC",
+        "mar_load": true,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "MAR<-SP"
+      },
+      {
+        "phase": "READ_ACCESS",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": true,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "TPH<-MEM[MAR]"
+      },
+      {
+        "phase": "READ_CAPTURE",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": true,
+        "mem_we": false,
+        "read_capture": true,
+        "write_data_drive": false,
+        "operation": "TPH<-MEM[MAR]"
+      },
+      {
+        "phase": "READ_RELEASE",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "release memory output"
+      },
+      {
+        "phase": "INTERNAL",
+        "addr_source": "NONE",
+        "mar_load": false,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "PC<-TPH:TMP"
+      }
+    ]
+  },
+  {
+    "opcode": "52",
+    "mnemonic": "PUSH_A",
+    "states": [
+      {
+        "phase": "ADDRESS_CAPTURE",
+        "addr_source": "PC",
+        "mar_load": true,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "MAR<-PC"
+      },
+      {
+        "phase": "READ_ACCESS",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": true,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "IR<-MEM[MAR], PC<-PC+1"
+      },
+      {
+        "phase": "READ_CAPTURE",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": true,
+        "mem_we": false,
+        "read_capture": true,
+        "write_data_drive": false,
+        "operation": "IR<-MEM[MAR], PC<-PC+1"
+      },
+      {
+        "phase": "READ_RELEASE",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "release memory output"
+      },
+      {
+        "phase": "ADDRESS_CAPTURE",
+        "addr_source": "PC",
+        "mar_load": true,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "MAR<-SP, MDR<-A"
+      },
+      {
+        "phase": "WRITE_SETUP",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": true,
+        "operation": "MEM[MAR]<-MDR, SP<-SP-1"
+      },
+      {
+        "phase": "WRITE_PULSE",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": false,
+        "mem_we": true,
+        "read_capture": false,
+        "write_data_drive": true,
+        "operation": "MEM[MAR]<-MDR, SP<-SP-1"
+      },
+      {
+        "phase": "WRITE_HOLD",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": true,
+        "operation": "MEM[MAR]<-MDR, SP<-SP-1"
+      },
+      {
+        "phase": "WRITE_RELEASE",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "release write driver"
+      }
+    ]
+  },
+  {
+    "opcode": "53",
+    "mnemonic": "POP_A",
+    "states": [
+      {
+        "phase": "ADDRESS_CAPTURE",
+        "addr_source": "PC",
+        "mar_load": true,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "MAR<-PC"
+      },
+      {
+        "phase": "READ_ACCESS",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": true,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "IR<-MEM[MAR], PC<-PC+1"
+      },
+      {
+        "phase": "READ_CAPTURE",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": true,
+        "mem_we": false,
+        "read_capture": true,
+        "write_data_drive": false,
+        "operation": "IR<-MEM[MAR], PC<-PC+1"
+      },
+      {
+        "phase": "READ_RELEASE",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "release memory output"
+      },
+      {
+        "phase": "INTERNAL",
+        "addr_source": "NONE",
+        "mar_load": false,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "SP<-SP+1"
+      },
+      {
+        "phase": "ADDRESS_CAPTURE",
+        "addr_source": "PC",
+        "mar_load": true,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "MAR<-SP"
+      },
+      {
+        "phase": "READ_ACCESS",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": true,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "A<-MEM[MAR], Z<-(A==0)"
+      },
+      {
+        "phase": "READ_CAPTURE",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": true,
+        "mem_we": false,
+        "read_capture": true,
+        "write_data_drive": false,
+        "operation": "A<-MEM[MAR], Z<-(A==0)"
+      },
+      {
+        "phase": "READ_RELEASE",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "release memory output"
+      }
+    ]
+  },
+  {
+    "opcode": "FF",
+    "mnemonic": "HALT",
+    "states": [
+      {
+        "phase": "ADDRESS_CAPTURE",
+        "addr_source": "PC",
+        "mar_load": true,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "MAR<-PC"
+      },
+      {
+        "phase": "READ_ACCESS",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": true,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "IR<-MEM[MAR], PC<-PC+1"
+      },
+      {
+        "phase": "READ_CAPTURE",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": true,
+        "mem_we": false,
+        "read_capture": true,
+        "write_data_drive": false,
+        "operation": "IR<-MEM[MAR], PC<-PC+1"
+      },
+      {
+        "phase": "READ_RELEASE",
+        "addr_source": "MAR",
+        "mar_load": false,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "release memory output"
+      },
+      {
+        "phase": "INTERNAL",
+        "addr_source": "NONE",
+        "mar_load": false,
+        "mem_oe": false,
+        "mem_we": false,
+        "read_capture": false,
+        "write_data_drive": false,
+        "operation": "HALTED<-1"
+      }
+    ]
+  }
+]

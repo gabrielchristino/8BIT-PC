@@ -1,0 +1,157 @@
+{
+  "date": "2026-11-26",
+  "sources": [
+    {
+      "path": "hardware/system_access/design.json",
+      "sha256": "aeb4be9eed1372cd4b22be78d20dcb659ec387520306f45fa1cd15bd1cdb64a2"
+    },
+    {
+      "path": "hardware/common_request/design.json",
+      "sha256": "7c9a0572f308efa2169fb6bdf81764aa2b74baab49aaf61a376961ad7527aead"
+    },
+    {
+      "path": "hardware/common_request/package-functions.json",
+      "sha256": "def621da744c3c611af720ca3ce761c5b0215bf9fd69ba7aea1aba86413227fd"
+    },
+    {
+      "path": "hardware/video_common_clock/design.json",
+      "sha256": "4b41faab4534fde94e21808ef1adc97fd913b7e79373ec38cd4fd0c63c1db5c3"
+    },
+    {
+      "path": "hardware/video_common_clock/package-functions.json",
+      "sha256": "d6fcea117a33208088f717a6e554b7fdef50342096bb0c8abcca6f7e6652968c"
+    },
+    {
+      "path": "hardware/clocked_reset/design.json",
+      "sha256": "0329e5962da72605c51c8deff818222da129a75e6dab0c930d9966d5fa5f1637"
+    },
+    {
+      "path": "hardware/clocked_reset/package-functions.json",
+      "sha256": "de662a4bdd0630496670ff19093d5ec3b313deb22f39c4c857fd725661aa0eef"
+    },
+    {
+      "path": "tools/check_common_request_topology.py",
+      "sha256": "e2dc9819d5d5e0199032a9a6673430eee2abcc2d32f9528b9a76bd9df519492b"
+    },
+    {
+      "path": "references/ti/sn74hc74.pdf",
+      "sha256": "a4043d37d693a2997900a0542dd226b9b61285794f3c1a541adb99cc7dcb1ae2"
+    },
+    {
+      "path": "references/ti/sn74ahc125.pdf",
+      "sha256": "c2ca226688e5704e94755fb20907c970ba7e2bac3a18fd6b2c28ce73295d0a3f"
+    },
+    {
+      "path": "references/ti/sn74ahc74.pdf",
+      "sha256": "48edcc29fc5a6fa517a0d54a5f4459c0a784fc3342cb01ce100c75b4befb8db4"
+    }
+  ],
+  "ics": 31,
+  "components": 62,
+  "changed_pins": [
+    {
+      "reference": "U4",
+      "pin": "3",
+      "from": "BUF_3_3",
+      "to": "BUF_4_1"
+    },
+    {
+      "reference": "U4",
+      "pin": "11",
+      "from": "BUF_3_4",
+      "to": "BUF_4_1"
+    }
+  ],
+  "clock_groups": [
+    {
+      "net": "BUF_3_3",
+      "clock_pins": [
+        [
+          "U1",
+          "CLK"
+        ],
+        [
+          "U2",
+          "CLK"
+        ],
+        [
+          "U3",
+          "CLK"
+        ]
+      ],
+      "input_count": 3,
+      "conditional_ci_pf_each": 10,
+      "trace_budget_pf": 10,
+      "total_budget_pf": 40
+    },
+    {
+      "net": "BUF_3_4",
+      "clock_pins": [
+        [
+          "U5",
+          "CLK"
+        ],
+        [
+          "U6",
+          "CLK"
+        ],
+        [
+          "U7",
+          "CLK"
+        ]
+      ],
+      "input_count": 3,
+      "conditional_ci_pf_each": 10,
+      "trace_budget_pf": 10,
+      "total_budget_pf": 40
+    },
+    {
+      "net": "BUF_4_1",
+      "clock_pins": [
+        [
+          "U4",
+          "CLK0"
+        ],
+        [
+          "U4",
+          "CLK1"
+        ],
+        [
+          "U8",
+          "CLK"
+        ]
+      ],
+      "input_count": 3,
+      "conditional_ci_pf_each": 10,
+      "trace_budget_pf": 10,
+      "total_budget_pf": 40
+    }
+  ],
+  "backend_source": {
+    "ff": "video/U11_0",
+    "d_net": "G_2",
+    "or_driver": {
+      "reference": "U25",
+      "channel": 0,
+      "inputs": [
+        "P1",
+        "P2"
+      ]
+    },
+    "asynchronous_clear_disabled": true,
+    "steady_duty": 0.5
+  },
+  "conditional_steady_pulse_budget": {
+    "source_high_low_ns": 79.4399200039998,
+    "backend_ahc74_cq_spread_ns": 9.5,
+    "ahc125_buffer_stages_to_controller": 3,
+    "each_buffer_rise_fall_spread_ns": 7.5,
+    "steady_high_low_lower_ns": 47.4399200039998,
+    "hc74_required_clock_pulse_ns_at4v5_minus40_to85": 20,
+    "scope": "Selected edge bounds, zero source jitter/PCB skew and valid steady phase sequence. Reset transition pulse shape has NOT been bounded; do not apply steady duty formula to reset cuts."
+  },
+  "first_stage_metastability_modeled": false,
+  "extracted_pin_skew_qualified": false,
+  "failures": [],
+  "production_released": false
+}

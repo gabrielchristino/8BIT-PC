@@ -43,3 +43,5 @@ revisions/** -text
 /verification/net23/**/*.sv -whitespace
 /verification/net23/**/*.log -whitespace
 /verification/net23/development/oscillator-value/output.txt -text whitespace=cr-at-eol
+/verification/net24/**/*.sv -whitespace
+/verification/net24/**/*.log -whitespace

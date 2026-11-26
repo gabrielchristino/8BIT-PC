@@ -1,3 +1,12 @@
+## Continuidade NET-24
+
+- Leia docs/engineering/NET24.md. hardware/common_request tem31CIs/62componentes/526pinos/9NC, só U4.3 e U4.11 mudam para BUF_4_1. Três grupos de três CLK; sem mudança de lógica ou famílias. Modelo do primeiro estágio HC74 ainda não é analógico.
+- HC74 SCLS094F dá44ns máximo, sem mínimo; CQ0/1/6 são hipóteses ilustrativas, não limites garantidos ou silício medido.32 cenários locais e negativo passam no agrupamento; não chamar de STA/MTBF/PVT completo.
+- Backend real já usa G_2=OR(P1,P2), não P0, e tem50% em regime. Conta selecionada47,44ns não vale durante reset. run_reset_pulse_probe.py registra quatro rejeições7,722ns/20ns nos offsets30/39/40/60; failures vazio no coletor só significa coleta/classificação correta, não aprovação desses casos. Nunca suprimir o monitor para aceitar runt ativo.
+- CLOCK_DRAIN_STUDY.md é proposta NÃO implementada. Considera U8 AHC164/4estágios, serial síncrono, clear RC independente, máscaras rápidas e armamento sticky dos bancos; investigar e provar antes de adotar. Não ligar warm clear ao banco sincronizado criando deadlock, nem apagar bancos via READY antes de WE alto.
+- Instruções6886 ideais/dois1062 temporizados, oito cortes/scans e novo boot132197/76800pixels passaram. Boot ideal escala clocks/startup e usa SRAM desconhecida; programa completo temporizado não foi executado. ROMs originais permanecem iguais.
+- SRC/modelos de uma execução ativa ficam congelados. ERC parcial135 violações sem exceções; primeiro estágio/clock/PVT/energia/POR/consumo/USB-C/DAC/firmware/união/ERC/footprints/PCB/DRC/protótipo e diagnostic.asm histórico permanecem com seus critérios próprios.
+
 ## Continuidade NET-23
 
 - Leia docs/engineering/NET23.md. hardware/clocked_reset tem26 componentes/144pinos/7NC: sete CIs digitais, um supervisor e dois módulos ACH configurados, sem código completo homologado. Não confundir módulo configurado com BOM aprovada.

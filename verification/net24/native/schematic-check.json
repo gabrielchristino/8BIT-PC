@@ -1,0 +1,49 @@
+{
+  "date": "2026-11-26",
+  "components": 62,
+  "pins": 526,
+  "no_connects": 9,
+  "max_signal_input_loads": 4,
+  "failures": [],
+  "command": [
+    "/home/gabri/.local/opt/isa1-kicad-10.0.8/squashfs-root/usr/bin/kicad-cli",
+    "sch",
+    "export",
+    "netlist",
+    "--format",
+    "kicadxml",
+    "-o",
+    "/mnt/c/Users/gabri/projetos/isa1/verification/net24/native/common_request.xml",
+    "/mnt/c/Users/gabri/projetos/isa1/hardware/common_request/common_request.kicad_sch"
+  ],
+  "kicad": "10.0.8",
+  "transformation": "Exactly two clock pin connections U4.3/U4.11 regroup request FFs with MDR on BUF_4_1. Old state/payload branches now three CLK inputs each; new common request/MDR branch three. No part or logic removal.",
+  "sources": [
+    {
+      "path": "tools/build_common_request.py",
+      "sha256": "fad453adce792d27ac51f6713ce5f76471abe3c41b96f74240eb47a44f7669bd"
+    },
+    {
+      "path": "tools/build_system_access.py",
+      "sha256": "416b291b436f94f3b7aa3ca6c197b4ec9959c250bd67c81574a735e5ab82c49a"
+    },
+    {
+      "path": "hardware/system_access/design.json",
+      "sha256": "aeb4be9eed1372cd4b22be78d20dcb659ec387520306f45fa1cd15bd1cdb64a2"
+    },
+    {
+      "path": "hardware/system_access/package-functions.json",
+      "sha256": "def621da744c3c611af720ca3ce761c5b0215bf9fd69ba7aea1aba86413227fd"
+    },
+    {
+      "path": "references/ti/sn74hc74.pdf",
+      "sha256": "a4043d37d693a2997900a0542dd226b9b61285794f3c1a541adb99cc7dcb1ae2"
+    },
+    {
+      "path": "references/ti/sn74ahc125.pdf",
+      "sha256": "c2ca226688e5704e94755fb20907c970ba7e2bac3a18fd6b2c28ce73295d0a3f"
+    }
+  ],
+  "scope": "Native request clock regrouping candidate. Original HC74 second-stage monitor preserved, first-stage analog metastability still unmodeled; no global PVT/skew/MTBF or fabrication qualification.",
+  "production_released": false
+}

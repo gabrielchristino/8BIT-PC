@@ -1,0 +1,45 @@
+{
+  "date": "2026-11-26",
+  "kicad": "10.0.8",
+  "command": [
+    "/home/gabri/.local/opt/isa1-kicad-10.0.8/squashfs-root/usr/bin/kicad-cli",
+    "sch",
+    "erc",
+    "--format",
+    "json",
+    "--severity-all",
+    "--exit-code-violations",
+    "-o",
+    "/mnt/c/Users/gabri/projetos/isa1/verification/net21/native/erc.json",
+    "/mnt/c/Users/gabri/projetos/isa1/hardware/schmitt_reset/schmitt_reset.kicad_sch"
+  ],
+  "exit": 5,
+  "stdout": "Found 12 violations\nSaved ERC Report to /mnt/c/Users/gabri/projetos/isa1/verification/net21/native/erc.json\n",
+  "stderr": "",
+  "violation_counts": {
+    "power_pin_not_driven": 2,
+    "pin_not_driven": 2,
+    "isolated_pin_label": 8
+  },
+  "sources": [
+    {
+      "path": "hardware/schmitt_reset/schmitt_reset.kicad_sch",
+      "sha256": "27c4adb5292d1b279096a8003193a184d8df073e6f76857c114eee315d8a1120"
+    },
+    {
+      "path": "hardware/schmitt_reset/schmitt_reset.kicad_pro",
+      "sha256": "b97b3b54d6634bdcc819cf36d6cf29d6d289e9fe526bd6ce43c529e7f7988c78"
+    },
+    {
+      "path": "hardware/schmitt_reset/bus_packages.kicad_sym",
+      "sha256": "a5d90275c025de923bfa0d2f45d42c9a1726332374f1772e46ab4e3e01fffa71"
+    },
+    {
+      "path": "tools/check_schmitt_reset_erc.py",
+      "sha256": "36e848c9cd810e5848cdf2c8b5527633474402866536717fffdd4ebec66fd936"
+    }
+  ],
+  "erc_passed": false,
+  "board_release": false,
+  "scope": "Partial sheet; inputs/outputs/power sources need global union, no waivers added"
+}

@@ -1,3 +1,5 @@
+Atualização NET-21A, 26/11/2026: TPS3808G01DBVR, pull-up 100 kohm, dois Schmitt em portas livres, divisor de sense 1120/100 ohm e proposta de feedback 57,4k/10k para 5,392 V internos. Oito CIs/132 pinos; 48 cortes do mestre de teste, quatro escritas reais da CPU interrompidas e retomadas, scan, 64 cenários de hold-up e 24 de linha RC. Hipóteses, negativos e ERC parcial não aprovado em docs/engineering/NET21.md.
+
 Atualização NET-20A, 26/11/2026: oito CIs de reset/distribuição, integração digital de domínios, monitores SRAM independentes de SAFE, 48 cortes em RAM/VRAM, CPU/relógios/teclado e hold-up condicional revisado. Registrada lacuna de CL do supervisor; nenhuma aprovação física inferida. Ver docs/engineering/NET20.md.
 
 ## 26/11/2026 — NET-19A, integração CPU/teclado e correção temporal

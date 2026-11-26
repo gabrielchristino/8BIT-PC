@@ -1,0 +1,49 @@
+{
+  "components": 22,
+  "ics": 8,
+  "pins": 132,
+  "no_connects": 9,
+  "max_signal_input_loads": 4,
+  "failures": [],
+  "scope": "Exact pin graph with TPS3808 supervisor and Schmitt pair; qualified external RAW forcepoint, not analog supervisor/POR or fabrication/PVT/MTBF proof.",
+  "supervisor_cmos_inputs": 1,
+  "receiver": "two SN74AHC14 inverters",
+  "supervisor_test_cl_pf": 50,
+  "input_ci_max_at_5v_pf": 10,
+  "routing_budget_pf": 10,
+  "raw_load_budget_pf": 20,
+  "raw_load_budget_within_test_cl": true,
+  "analog_supervisor_implemented": false,
+  "production_released": false,
+  "date": "2026-11-26",
+  "command": [
+    "/home/gabri/.local/opt/isa1-kicad-10.0.8/squashfs-root/usr/bin/kicad-cli",
+    "sch",
+    "export",
+    "netlist",
+    "--format",
+    "kicadxml",
+    "-o",
+    "/mnt/c/Users/gabri/projetos/isa1/verification/net21/native/schmitt_reset.xml",
+    "/mnt/c/Users/gabri/projetos/isa1/hardware/schmitt_reset/schmitt_reset.kicad_sch"
+  ],
+  "kicad": "10.0.8",
+  "sources": [
+    {
+      "path": "tools/build_schmitt_reset.py",
+      "sha256": "75778e597d9dbbb32c6765e56136e791a53465e9e19d398e4be37786873055c5"
+    },
+    {
+      "path": "tools/build_system_reset.py",
+      "sha256": "d50598869d6248f2c2111d999ae9583319913ecac0c4cb3e61886edbe71a4c2f"
+    },
+    {
+      "path": "references/net20/tps3808.pdf",
+      "sha256": "b25476cfb25be6ec75733b5a468123cc01a57996e4d75981cef11523876b0c83"
+    },
+    {
+      "path": "references/ti/sn74ahc14.pdf",
+      "sha256": "4ef53e806a952722b71c3ba94590f0b41099f86022ed5bd5fb37bc4a704bebe7"
+    }
+  ]
+}

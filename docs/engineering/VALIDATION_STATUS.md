@@ -1,3 +1,5 @@
+Atualização NET-21A, 26/11/2026: [supervisor/Schmitt candidato](NET21.md) acomoda orçamento de 20 pF contra CL=50 pF especificado, preservando oito CIs. 48 cortes ativos, quatro com CPU real, scan temporizado em políticas 0/1 e SPICE condicional passaram. A janela DC proposta de 5,392 V tem margens pequenas; consumo, regulador/isolamento/POR e circuito físico não qualificados. Próximo: fontes de clock e fechamento global de energia/DAC/cargas, firmware de eventos, ERC/PCB/protótipo.
+
 Atualização NET-20A, 26/11/2026: [reset integrado](NET20.md) por pinos, CPU rápida e bancos atrasados; 48 cortes ativos, dois negativos e raw scan ideal/com atrasos, com parada de clocks. WE bloqueado em até 80 ns nos cenários executados. A condição CL=10 pF do supervisor não comporta Ci máximo do AHC125 mais trilhas; hold-up permanece condicional. ERC parcial: 12 violações. Energia analógica, clock/skew/PVT global, DAC, firmware de eventos, PCB/protótipo abertos.
 
 Atualização NET-19A, 26/11/2026: [CPU/MMIO/teclado integrados por pinos](NET19A.md), com vetores ideais completos, dois cenários reduzidos temporizados e boot/quadro ideal. Raw scan executado na CPU, inclusive relógio parado e leitura cancelada. Três AHC174 corrigem setup do controlador; ERC parcial continua com 135 violações. Reset NET18, distribuição/cargas globais, clock/DAC, firmware de eventos e placa permanecem pendentes.
@@ -8,20 +10,20 @@ Atualização NET-18, 26/11/2026: [supervisor/energia condicional](NET18.md), se
 
 # Lista consolidada de testes, itens e revisões
 
-Atualizada em 26/11/2026, após NET-17 de teclado candidato para 500 Ω e NET-16A/B de reset, ainda separados da integração CPU/raster NET-14C. Esta lista substitui a leitura dos checkboxes antigos como estado atual; eles permanecem no ROADMAP como registros das respectivas etapas. Não há percentual de placa pronta: uma aprovação de modelo não equivale a aprovação elétrica ou física.
+Atualizada em 26/11/2026, após NET-21 de supervisor/Schmitt e NET-20 de domínios digitais integrados à CPU/MMIO/memórias. Esta lista substitui a leitura dos checkboxes antigos como estado atual; eles permanecem no ROADMAP como registros das respectivas etapas. Não há percentual de placa pronta: uma aprovação de modelo não equivale a aprovação elétrica ou física.
 
 ## Evidências aprovadas no escopo de modelo
 
 | Item | Evidência atual | Revisão ainda necessária |
 |---|---|---|
-| CPU, ISA e datapath | NET-10–13: CPU por pinos, 26 instruções; NET-13 tem 6.886 casos na integração ideal | Temporização global, cargas e circuito completo |
+| CPU, ISA e datapath | NET-20: 6.886 casos ideais e 1.062 temporizados reduzidos, 26 instruções, com domínios de reset ligados | Temporização global, cargas e circuito completo; regressão correspondente a cada nova variante |
 | Pilha e guardas | 524.288 casos na integração ideal; SP vazio 8000h, dois bytes de CALL/RET verificados antes do acesso | Margens temporais e ensaio físico |
-| WAIT, COMMIT e handshake | Payload retido, efeitos únicos, pedido/ACK prolongados e cortes digitais; NET-12/13 | CDC/MTBF, mínimos/skew e reset elétrico |
+| WAIT, COMMIT e handshake | NET-19/20/21: payload retido, efeitos únicos, ACK prolongado, pausa de CPU e cortes nos pinos SRAM; quatro cortes de escrita da CPU real na NET21 | CDC/MTBF, mínimos/skew e reset elétrico; escopos de cortes preservados separadamente |
 | Microcódigo e registradores | ROMs históricas preservadas; sequenciador/ALU/PC/X/flags mapeados em etapas anteriores | União de fontes, cargas, clocks e alimentação |
 | Mapa de memória e bancos | NET-11: 4.194.305 combinações por modo ideal/temporizado | Ligação global a MMIO e periféricos físicos |
 | Memórias e barramento | NET-13: todos os endereços; 131.072 escritas, 164.096 leituras e 65.536 leituras de vídeo por configuração isolada | Cargas reais, PVT e encapsulamentos/footprints homologados |
 | Troca de drivers | NET-13: intervalo registrado; cenário adversarial passa, controlador antigo é rejeitado | Tempos mínimos, capacitância e integridade de sinal da placa |
-| Boot e quadro | NET-14C: 132.197 instruções, 232.576 transações, quadro de 76.800 pixels idêntico com raster por pinos e SRAM inicialmente desconhecida | Programa completo temporizado e depois boot em protótipo |
+| Boot e quadro | NET-20: 132.197 instruções, 232.576 transações, 76.800 pixels idênticos com resets ligados e SRAM inicialmente desconhecida | Repetir nas variantes seguintes; programa completo temporizado e depois boot em protótipo |
 | Detecção de falhas | Negativos de pinagem, WE, disputa, fases e monitores temporais registrados | Ampliar conforme cada circuito físico é acrescentado |
 
 Evidências: [NET13](NET13.md), [integração ideal](../../verification/net13/cpu/results-ideal.json), [integração temporizada reduzida](../../verification/net13/cpu/results-timed.json), [barramento](../../verification/net13/bus-results.json). Os números têm escopos diferentes e não devem ser somados como uma contagem única de testes. Não foi executado programa/quadro completo com atrasos na NET-13.
@@ -32,11 +34,11 @@ Evidências: [NET13](NET13.md), [integração ideal](../../verification/net13/cp
 |---|---|---|
 | 1. Relógio, raster e captura de vídeo | NET-14C: CPU/boot/quadro ideal com circuito por pinos; variante corrige clock truncado; cortes temporizados têm hipótese binária na fronteira de reset | Cargas/setup/hold/skew/PVT, oscilador e reset/MTBF físico; programa/quadro temporizado completo |
 | 2. Concessão física da VRAM | SLOT por pinos, 32 posições exercitadas e integração com CPU/quadro ideal | Fechar cargas/min/max/clock globais e validar placa |
-| 3. MMIO e teclado por pinos | NET-19A: CPU/raster/memórias usam periférico NET17 e controlador AHC174 por pinos; raw scan na CPU passou. NET17 conserva alvo condicional de 500 Ω, 16.384 ciclos e política host | Integrar domínios de energia/reset globais; implementar debounce/fila/cancelamento na CPU, fechar MTBF/proteções/cargas e medir unidades |
-| 4. Alimentação e reset | NET-18: supervisor/hold-up/DC condicionais e folha de seis CIs; modelo oficial do conversor não completou. NET16 conserva ordem WE/bancos e liberações sob hipóteses explícitas | Supervisor/brownout/hold-up e integração global; níveis/cargas/min/max/MTBF e rampas/cortes físicos. Escrita interrompida continua desconhecida |
+| 3. MMIO e teclado por pinos | NET-21: raw scan na CPU com domínios digitais, pausa/reset e escrita interrompida retomada; alvo NET17 de 500 Ω/16.384 ciclos e política host preservados | Implementar debounce/fila/cancelamento na CPU, fechar MTBF/proteções/cargas e medir unidades |
+| 4. Alimentação e reset | NET-20/21: domínios digitais ligados, WE/bancos observados nos pinos, oito CIs. TPS3808/Schmitt acomoda orçamento20pF/CL50pF e exige proposta5,392V. Hold-up/DC condicionais; regulador oficial não completou | Qualificar fonte/consumo/isolamento/POR/transientes e cargas extraídas, min/max/MTBF e rampas/cortes físicos; byte interrompido continua desconhecido |
 | 5. Saída VGA e DAC RGB332 | Dados digitais disponíveis; DAC e conector não fechados | Níveis/correntes/impedância, cargas do monitor, sincronismos, proteção, simulação e medição |
-| 6. Temporização global | Cenários de atrasos selecionados e orçamento de captura NET-14A | Setup/hold/recovery/removal, mínimos/máximos, temperatura/tensão, skew/jitter/duty cycle e MTBF; regressão integrada correspondente |
-| 7. Elétrica e cargas | Compatibilidade TTL/CMOS estudada; 24 cantos RC de pull-ups com calibração fora do orçamento | Fanout/capacitância por net, SRAM acesso 30 pF/Hi-Z 5 pF, ruído/overshoot, consumo/Delta-ICC e temperatura |
+| 6. Temporização global | Cenários selecionados até NET-21, controlador AHC174 e distribuição parcial; WE até94ns no modelo | Setup/hold/recovery/removal, mínimos/máximos, temperatura/tensão, skew/jitter/duty cycle e MTBF; regressão integrada correspondente |
+| 7. Elétrica e cargas | TTL/CMOS estudados; NET21 conta16 redes selecionadas, até4 entradas/saída; RC e reservas condicionais | Fanout/capacitância global extraída, SRAM acesso30pF/Hi-Z5pF, ruído/overshoot, consumo/Delta-ICC e temperatura; budgets não são medidas |
 | 8. Esquema global e ERC | CPU e folhas de memória existem; ERC parcial com violações abertas | Unir todos os blocos/pinos/alimentações e resolver erros; não inserir exceções para esconder entradas sem fonte |
 | 9. BOM e footprints | CIs candidatos e PDFs identificados; códigos completos não homologados | Conferir função, pinagem, encapsulamento, faixa garantida, montagem e footprint de cada componente |
 | 10. Entrada USB-C e distribuição | Requisito de 5 V; circuito completo pendente | Orçamento de corrente, CC/proteção, queda de tensão, desacoplamento/retornos e comportamento ao conectar/desconectar |

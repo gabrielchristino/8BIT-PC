@@ -1,0 +1,42 @@
+{
+  "date": "2026-11-26",
+  "transformations": [
+    {
+      "source": "sim/net20/isa1_memory_reset.sv",
+      "source_sha256": "c0bf6e94911e28c873d6baa4cfa9faf0bd3bcf73a4fe0cbc2300d306faaccbfe",
+      "target": "sim/net21/isa1_memory_schmitt.sv",
+      "target_sha256": "e5a38125cad5bf8cf781f06d68ae4275ee49d0a45415ed136a15bbc6710539bf"
+    },
+    {
+      "source": "sim/net20/tb_reset_memory.sv",
+      "source_sha256": "133f2a6d71d89721fe8600caf884259087ac25e482aea29f56b31f86eacf4b9a",
+      "target": "sim/net21/tb_reset_memory.sv",
+      "target_sha256": "133f2a6d71d89721fe8600caf884259087ac25e482aea29f56b31f86eacf4b9a"
+    },
+    {
+      "source": "tools/run_reset_memory.py",
+      "source_sha256": "ffff31385f41d7506be6d8636651e37b5c9077759ccd4fe9f54a2e25eb8ad307",
+      "target": "tools/run_schmitt_memory.py",
+      "target_sha256": "618bae3d7e2b056146b2ac4faf0034a9bcd4771590d0eb2dbc1deb5bb72833da"
+    },
+    {
+      "source": "tools/run_reset_scan.py",
+      "source_sha256": "797107a7c3748f5b2952fbb49b5dca7709355f951ad85130592b1a6c5b97b5cd",
+      "target": "tools/run_schmitt_scan.py",
+      "target_sha256": "9cf51417aedda1306ba8b3cbfa6361b1bb0b70a3dd34a455504158c252388aec"
+    },
+    {
+      "source": "tools/run_system_hold_up.py",
+      "source_sha256": "102961b379abb417f298da7518dcf3b40b1aac0a76cec4983bfb2856fe3018f2",
+      "target": "tools/run_schmitt_hold_up.py",
+      "target_sha256": "f118eab42eaea6fc657d6c8016a33d0b80838f261011a619c501b7c2a79008ec"
+    },
+    {
+      "source": "tools/check_system_reset_erc.py",
+      "source_sha256": "2dc732bfa4fe8835c79247e7921f9b22bdf80af5b17128de4a9e53d6d0e859f5",
+      "target": "tools/check_schmitt_reset_erc.py",
+      "target_sha256": "36e848c9cd810e5848cdf2c8b5527633474402866536717fffdd4ebec66fd936"
+    }
+  ],
+  "scope": "NET21 Schmitt/supervisor variant: same native CPU/MMIO/raster/payload graph; new reset package. Conditional hold-up changes detection to20us, divider1120/100 and threshold.405V +/-2%. No analog supervisor model or board approval."
+}

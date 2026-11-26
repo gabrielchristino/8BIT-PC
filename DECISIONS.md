@@ -217,3 +217,31 @@ Ci máximo AHC125=10 pF não deixa margem para trilhas no teste CL=10 pF do
 TPS3703; não promover o prazo analógico anterior a garantia. Alternativas de
 datasheet preservadas são pesquisa e exigem novo cálculo/circuito/ADR.
 Detalhes e comandos: docs/engineering/NET20.md.
+
+
+## ADR E26 — Supervisor com CL50pF e recepção Schmitt em portas livres
+
+26/11/2026. Base NET-20A, variante NET-21A candidata, sem liberação física.
+Decisão: TPS3808G01DBVR com CT aberto/MR alto, pull-up100k, sense1120/100 ohm,
+dois inversores AHC14 antes de RAW_BUFFERED. Mesmos oito pacotes de reset;
+reutilizar U2 e desabilitar o canal antigo U1. Pinagem DBV explícita; preservar
+payload/CPU/ISA/X/SP/flags/VGA e sequência rápida/demorada anterior.
+Alternativas: AHC1G125 também tem Ci máximo10pF e não deixa margem no teste do
+TPS3703; capacitância típica LVC não demonstra limite garantido menor. Aumento
+arbitrário de atraso analógico ou declaração de trilha zero foram rejeitados.
+O TPS3808 admite orçamento20pF contra CL50pF e Schmitt recebe subida lenta.
+
+Impacto elétrico: dispersão/histerese do supervisor exige proposta de feedback
+TPS63070 57,4k/10k, saída nominal5,392V interna; USB preservado5V. Margens DC de
+retomada20,179mV e teto19,049mV dependem dos orçamentos de referência/resistores,
+carga/ripple/caminho, ainda não qualificados. Não reutilizar o valor5,232V de
+NET18 como se tivesse passado nesta variante. Não alterar o modelo oficial
+anterior para declarar uma simulação do regulador aprovada.
+
+Aceitação no escopo executado: XML22componentes/8CIs/132pinos/9NC, 48 cortes
+ativos com WE até94ns, quatro cortes de escrita da CPU com reinício completo,
+rawscan em duas políticas binárias, 64+3 reservas condicionais, 24+1 cenários
+da linha RC e quatro negativos de janela. Proxy Ron/leakage não é modelo do
+supervisor. ERC parcial12 violações, sem exceções. Produção exige fonte/POR e
+transientes reais, capacitâncias extraídas, consumo, clocks/PVT/CDC/MTBF, DAC,
+esquema global/footprints, PCB/DRC e protótipo. Ver docs/engineering/NET21.md.

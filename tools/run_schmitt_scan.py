@@ -1,0 +1,59 @@
+"""Run existing raw CPU scan through new reset/clock domains; retain snapshots."""
+import argparse
+import hashlib
+import json
+from pathlib import Path
+import sys
+import run_system_scan as base
+
+ROOT = Path(__file__).resolve().parents[1]
+
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--timed', action='store_true')
+    parser.add_argument('--policy', type=int, choices=[0, 1], default=1)
+    args = parser.parse_args()
+    out = ROOT / 'verification/net21' / ('scan-policy' + str(args.policy) + ('-timed' if args.timed else '-ideal'))
+    out.mkdir(parents=True, exist_ok=True)
+    base.OUT = out
+    base.MODELS = [p for p in base.MODELS if p != 'sim/net19a/isa1_memory_system.sv'] + [
+        'hardware/schmitt_reset/schmitt_reset_netlist.sv', 'sim/net21/isa1_memory_schmitt.sv']
+    original_run = base.run
+    evidence = {}
+
+    def run(command, work, timeout=240):
+        command = list(command)
+        if command[0] == 'iverilog':
+            text = Path(command[-1]).read_text()
+            old = 'dut(clk,reset_n,power_good,run,boot'
+            assert text.count(old) == 1
+            text = text.replace(old, "dut(memory.cpu_core_clk,memory.cpu_reset_n,1'b1,run,boot")
+            text = text.replace('.FIXTURE_DEFAULTS(0)', f'.FIXTURE_DEFAULTS(0),.RESET_POLICY({args.policy})')
+            text = text.replace('repeat(20)@(negedge memory.backend_clk);',
+                                'wait(memory.safe === 1); repeat(20)@(negedge memory.backend_clk);')
+            # Count CPU retirement on the clock actually reaching its packages.
+            text = text.replace('always @(posedge clk)if(monitoring)', 'always @(posedge memory.cpu_core_clk)if(monitoring)')
+            path = work / 'tb_reset_scan.sv'
+            path.write_text(text)
+            saved = out / 'compiled-bench.sv'
+            saved.write_text(text)
+            command[-1] = str(path)
+            evidence.update(path=saved.relative_to(ROOT).as_posix(), sha256=hashlib.sha256(text.encode()).hexdigest())
+        return original_run(command, work, timeout)
+
+    base.run = run
+    sys.argv = [sys.argv[0]] + (['--timed'] if args.timed else [])
+    result = base.main()
+    report_path = out / ('system-scan-' + ('timed' if args.timed else 'ideal') + '.json')
+    report = json.loads(report_path.read_text())
+    report.update(scope='Raw scan executed by native CPU with separate fast CPU/delayed memory reset and buffered clocks. Qualified RAW forcepoint, not analog supervisor, power, PVT/skew or physical proof.',
+                  binary_reset_policy=args.policy, compiled_bench=evidence, supervisor_output_load_qualified=False)
+    for name in ['tools/run_schmitt_scan.py', 'tools/prepare_schmitt_checks.py', 'tools/build_schmitt_reset.py', 'verification/net21/native/schmitt_reset.xml']:
+        report['sources'].append({'path': name, 'sha256': hashlib.sha256((ROOT / name).read_bytes()).hexdigest()})
+    report_path.write_text(json.dumps(report, indent=2) + '\n')
+    return result
+
+
+if __name__ == '__main__':
+    raise SystemExit(main())

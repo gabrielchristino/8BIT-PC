@@ -1,0 +1,623 @@
+{
+  "date": "2026-11-26",
+  "scope": "Conditional pullup/trace/input-C RC model after supervisor sink command. Ron400ohm is an engineering proxy from DC VOL=.4V/1mA, NOT a guaranteed transient output impedance or vendor analog model. Leakage across intermediate VI is a qualification budget.",
+  "assumptions": {
+    "supply_v": [
+      4.5,
+      5.5
+    ],
+    "pullup_ohm": 100000,
+    "pullup_tolerance": 0.01,
+    "receiver_leak_abs_a": 1e-06,
+    "supervisor_off_leak_max_a": 3e-07,
+    "receiver_leak_toward_vdd_model": "5.5Mohm passive path to supply, not a constant current source above VDD",
+    "sink_ron_proxy_ohm": 400,
+    "input_cap_max_at_5v_pf": 10,
+    "candidate_routing_budget_pf": 10,
+    "maximum_test_load_pf": 50,
+    "schmitt_rising_threshold_global_max_v": 3.85,
+    "schmitt_falling_threshold_global_min_v": 1.35
+  },
+  "sources": [
+    {
+      "path": "tools/check_schmitt_interface.py",
+      "sha256": "c6e53d1531b5de6463e97deceef34275f87c5b1edbd21eecc69408281b497dfe"
+    },
+    {
+      "path": "references/net20/tps3808.pdf",
+      "sha256": "b25476cfb25be6ec75733b5a468123cc01a57996e4d75981cef11523876b0c83"
+    },
+    {
+      "path": "references/ti/sn74ahc14.pdf",
+      "sha256": "4ef53e806a952722b71c3ba94590f0b41099f86022ed5bd5fb37bc4a704bebe7"
+    }
+  ],
+  "ngspice": "******\n** ngspice-42 : Circuit level simulation program\n** Compiled with KLU Direct Linear Solver\n** The U. C. Berkeley CAD Group\n** Copyright 1985-1994, Regents of the University of California.\n** Copyright 2001-2023, The ngspice team.\n** Please get your ngspice manual from https://ngspice.sourceforge.io/docs.html\n** Please file your bug-reports at http://ngspice.sourceforge.net/bugrep.html\n** Creation Date: Sun Mar 31 20:15:14 UTC 2024\n******\n",
+  "runs": [
+    {
+      "index": 0,
+      "supply_v": 4.5,
+      "pullup_ohm": 99000.0,
+      "receiver_leak_a": -1e-06,
+      "cap_pf": 10,
+      "command": [
+        "ngspice",
+        "-b",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net21/reset-line/line-000.cir"
+      ],
+      "exit": 0,
+      "deck": "verification/net21/reset-line/line-000.cir",
+      "log": "verification/net21/reset-line/line-000.log",
+      "measures": {
+        "high": 4.470825,
+        "low": 0.01831376,
+        "fall": 2.00042e-05,
+        "rise": 0.000101915
+      },
+      "analytic_high_v": 4.470825147347741,
+      "passed": true
+    },
+    {
+      "index": 1,
+      "supply_v": 4.5,
+      "pullup_ohm": 99000.0,
+      "receiver_leak_a": -1e-06,
+      "cap_pf": 20,
+      "command": [
+        "ngspice",
+        "-b",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net21/reset-line/line-001.cir"
+      ],
+      "exit": 0,
+      "deck": "verification/net21/reset-line/line-001.cir",
+      "log": "verification/net21/reset-line/line-001.log",
+      "measures": {
+        "high": 4.470825,
+        "low": 0.01831376,
+        "fall": 2.0009e-05,
+        "rise": 0.000103831
+      },
+      "analytic_high_v": 4.470825147347741,
+      "passed": true
+    },
+    {
+      "index": 2,
+      "supply_v": 4.5,
+      "pullup_ohm": 99000.0,
+      "receiver_leak_a": -1e-06,
+      "cap_pf": 50,
+      "command": [
+        "ngspice",
+        "-b",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net21/reset-line/line-002.cir"
+      ],
+      "exit": 0,
+      "deck": "verification/net21/reset-line/line-002.cir",
+      "log": "verification/net21/reset-line/line-002.log",
+      "measures": {
+        "high": 4.470825,
+        "low": 0.01831376,
+        "fall": 2.00234e-05,
+        "rise": 0.000109579
+      },
+      "analytic_high_v": 4.470825147347741,
+      "passed": true
+    },
+    {
+      "index": 3,
+      "supply_v": 4.5,
+      "pullup_ohm": 99000.0,
+      "receiver_leak_a": 1e-06,
+      "cap_pf": 10,
+      "command": [
+        "ngspice",
+        "-b",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net21/reset-line/line-003.cir"
+      ],
+      "exit": 0,
+      "deck": "verification/net21/reset-line/line-003.cir",
+      "log": "verification/net21/reset-line/line-003.log",
+      "measures": {
+        "high": 4.3713,
+        "low": 0.01759074,
+        "fall": 2.00042e-05,
+        "rise": 0.000102101
+      },
+      "analytic_high_v": 4.3713,
+      "passed": true
+    },
+    {
+      "index": 4,
+      "supply_v": 4.5,
+      "pullup_ohm": 99000.0,
+      "receiver_leak_a": 1e-06,
+      "cap_pf": 20,
+      "command": [
+        "ngspice",
+        "-b",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net21/reset-line/line-004.cir"
+      ],
+      "exit": 0,
+      "deck": "verification/net21/reset-line/line-004.cir",
+      "log": "verification/net21/reset-line/line-004.log",
+      "measures": {
+        "high": 4.3713,
+        "low": 0.01759074,
+        "fall": 2.00088e-05,
+        "rise": 0.000104202
+      },
+      "analytic_high_v": 4.3713,
+      "passed": true
+    },
+    {
+      "index": 5,
+      "supply_v": 4.5,
+      "pullup_ohm": 99000.0,
+      "receiver_leak_a": 1e-06,
+      "cap_pf": 50,
+      "command": [
+        "ngspice",
+        "-b",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net21/reset-line/line-005.cir"
+      ],
+      "exit": 0,
+      "deck": "verification/net21/reset-line/line-005.cir",
+      "log": "verification/net21/reset-line/line-005.log",
+      "measures": {
+        "high": 4.3713,
+        "low": 0.01759074,
+        "fall": 2.0023e-05,
+        "rise": 0.000110506
+      },
+      "analytic_high_v": 4.3713,
+      "passed": true
+    },
+    {
+      "index": 6,
+      "supply_v": 4.5,
+      "pullup_ohm": 101000.0,
+      "receiver_leak_a": -1e-06,
+      "cap_pf": 10,
+      "command": [
+        "ngspice",
+        "-b",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net21/reset-line/line-006.cir"
+      ],
+      "exit": 0,
+      "deck": "verification/net21/reset-line/line-006.cir",
+      "log": "verification/net21/reset-line/line-006.log",
+      "measures": {
+        "high": 4.470246,
+        "low": 0.01795663,
+        "fall": 2.00042e-05,
+        "rise": 0.000101954
+      },
+      "analytic_high_v": 4.4702463845741836,
+      "passed": true
+    },
+    {
+      "index": 7,
+      "supply_v": 4.5,
+      "pullup_ohm": 101000.0,
+      "receiver_leak_a": -1e-06,
+      "cap_pf": 20,
+      "command": [
+        "ngspice",
+        "-b",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net21/reset-line/line-007.cir"
+      ],
+      "exit": 0,
+      "deck": "verification/net21/reset-line/line-007.cir",
+      "log": "verification/net21/reset-line/line-007.log",
+      "measures": {
+        "high": 4.470246,
+        "low": 0.01795663,
+        "fall": 2.0009e-05,
+        "rise": 0.000103909
+      },
+      "analytic_high_v": 4.4702463845741836,
+      "passed": true
+    },
+    {
+      "index": 8,
+      "supply_v": 4.5,
+      "pullup_ohm": 101000.0,
+      "receiver_leak_a": -1e-06,
+      "cap_pf": 50,
+      "command": [
+        "ngspice",
+        "-b",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net21/reset-line/line-008.cir"
+      ],
+      "exit": 0,
+      "deck": "verification/net21/reset-line/line-008.cir",
+      "log": "verification/net21/reset-line/line-008.log",
+      "measures": {
+        "high": 4.470246,
+        "low": 0.01795663,
+        "fall": 2.00234e-05,
+        "rise": 0.000109774
+      },
+      "analytic_high_v": 4.4702463845741836,
+      "passed": true
+    },
+    {
+      "index": 9,
+      "supply_v": 4.5,
+      "pullup_ohm": 101000.0,
+      "receiver_leak_a": 1e-06,
+      "cap_pf": 10,
+      "command": [
+        "ngspice",
+        "-b",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net21/reset-line/line-009.cir"
+      ],
+      "exit": 0,
+      "deck": "verification/net21/reset-line/line-009.cir",
+      "log": "verification/net21/reset-line/line-009.log",
+      "measures": {
+        "high": 4.3687,
+        "low": 0.01723353,
+        "fall": 2.00041e-05,
+        "rise": 0.000102148
+      },
+      "analytic_high_v": 4.3687000000000005,
+      "passed": true
+    },
+    {
+      "index": 10,
+      "supply_v": 4.5,
+      "pullup_ohm": 101000.0,
+      "receiver_leak_a": 1e-06,
+      "cap_pf": 20,
+      "command": [
+        "ngspice",
+        "-b",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net21/reset-line/line-010.cir"
+      ],
+      "exit": 0,
+      "deck": "verification/net21/reset-line/line-010.cir",
+      "log": "verification/net21/reset-line/line-010.log",
+      "measures": {
+        "high": 4.3687,
+        "low": 0.01723353,
+        "fall": 2.00088e-05,
+        "rise": 0.000104296
+      },
+      "analytic_high_v": 4.3687000000000005,
+      "passed": true
+    },
+    {
+      "index": 11,
+      "supply_v": 4.5,
+      "pullup_ohm": 101000.0,
+      "receiver_leak_a": 1e-06,
+      "cap_pf": 50,
+      "command": [
+        "ngspice",
+        "-b",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net21/reset-line/line-011.cir"
+      ],
+      "exit": 0,
+      "deck": "verification/net21/reset-line/line-011.cir",
+      "log": "verification/net21/reset-line/line-011.log",
+      "measures": {
+        "high": 4.3687,
+        "low": 0.01723353,
+        "fall": 2.0023e-05,
+        "rise": 0.00011074
+      },
+      "analytic_high_v": 4.3687000000000005,
+      "passed": true
+    },
+    {
+      "index": 12,
+      "supply_v": 5.5,
+      "pullup_ohm": 99000.0,
+      "receiver_leak_a": -1e-06,
+      "cap_pf": 10,
+      "command": [
+        "ngspice",
+        "-b",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net21/reset-line/line-012.cir"
+      ],
+      "exit": 0,
+      "deck": "verification/net21/reset-line/line-012.cir",
+      "log": "verification/net21/reset-line/line-012.log",
+      "measures": {
+        "high": 5.470825,
+        "low": 0.02241005,
+        "fall": 2.00051e-05,
+        "rise": 0.000101178
+      },
+      "analytic_high_v": 5.470825147347741,
+      "passed": true
+    },
+    {
+      "index": 13,
+      "supply_v": 5.5,
+      "pullup_ohm": 99000.0,
+      "receiver_leak_a": -1e-06,
+      "cap_pf": 20,
+      "command": [
+        "ngspice",
+        "-b",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net21/reset-line/line-013.cir"
+      ],
+      "exit": 0,
+      "deck": "verification/net21/reset-line/line-013.cir",
+      "log": "verification/net21/reset-line/line-013.log",
+      "measures": {
+        "high": 5.470825,
+        "low": 0.02241005,
+        "fall": 2.00106e-05,
+        "rise": 0.000102357
+      },
+      "analytic_high_v": 5.470825147347741,
+      "passed": true
+    },
+    {
+      "index": 14,
+      "supply_v": 5.5,
+      "pullup_ohm": 99000.0,
+      "receiver_leak_a": -1e-06,
+      "cap_pf": 50,
+      "command": [
+        "ngspice",
+        "-b",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net21/reset-line/line-014.cir"
+      ],
+      "exit": 0,
+      "deck": "verification/net21/reset-line/line-014.cir",
+      "log": "verification/net21/reset-line/line-014.log",
+      "measures": {
+        "high": 5.470825,
+        "low": 0.02241005,
+        "fall": 2.00275e-05,
+        "rise": 0.000105895
+      },
+      "analytic_high_v": 5.470825147347741,
+      "passed": true
+    },
+    {
+      "index": 15,
+      "supply_v": 5.5,
+      "pullup_ohm": 99000.0,
+      "receiver_leak_a": 1e-06,
+      "cap_pf": 10,
+      "command": [
+        "ngspice",
+        "-b",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net21/reset-line/line-015.cir"
+      ],
+      "exit": 0,
+      "deck": "verification/net21/reset-line/line-015.cir",
+      "log": "verification/net21/reset-line/line-015.log",
+      "measures": {
+        "high": 5.3713,
+        "low": 0.02161489,
+        "fall": 2.0005e-05,
+        "rise": 0.000101244
+      },
+      "analytic_high_v": 5.3713,
+      "passed": true
+    },
+    {
+      "index": 16,
+      "supply_v": 5.5,
+      "pullup_ohm": 99000.0,
+      "receiver_leak_a": 1e-06,
+      "cap_pf": 20,
+      "command": [
+        "ngspice",
+        "-b",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net21/reset-line/line-016.cir"
+      ],
+      "exit": 0,
+      "deck": "verification/net21/reset-line/line-016.cir",
+      "log": "verification/net21/reset-line/line-016.log",
+      "measures": {
+        "high": 5.3713,
+        "low": 0.02161489,
+        "fall": 2.00105e-05,
+        "rise": 0.000102489
+      },
+      "analytic_high_v": 5.3713,
+      "passed": true
+    },
+    {
+      "index": 17,
+      "supply_v": 5.5,
+      "pullup_ohm": 99000.0,
+      "receiver_leak_a": 1e-06,
+      "cap_pf": 50,
+      "command": [
+        "ngspice",
+        "-b",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net21/reset-line/line-017.cir"
+      ],
+      "exit": 0,
+      "deck": "verification/net21/reset-line/line-017.cir",
+      "log": "verification/net21/reset-line/line-017.log",
+      "measures": {
+        "high": 5.3713,
+        "low": 0.02161489,
+        "fall": 2.00272e-05,
+        "rise": 0.000106224
+      },
+      "analytic_high_v": 5.3713,
+      "passed": true
+    },
+    {
+      "index": 18,
+      "supply_v": 5.5,
+      "pullup_ohm": 101000.0,
+      "receiver_leak_a": -1e-06,
+      "cap_pf": 10,
+      "command": [
+        "ngspice",
+        "-b",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net21/reset-line/line-018.cir"
+      ],
+      "exit": 0,
+      "deck": "verification/net21/reset-line/line-018.cir",
+      "log": "verification/net21/reset-line/line-018.log",
+      "measures": {
+        "high": 5.470246,
+        "low": 0.02197356,
+        "fall": 2.00051e-05,
+        "rise": 0.000101202
+      },
+      "analytic_high_v": 5.4702463845741836,
+      "passed": true
+    },
+    {
+      "index": 19,
+      "supply_v": 5.5,
+      "pullup_ohm": 101000.0,
+      "receiver_leak_a": -1e-06,
+      "cap_pf": 20,
+      "command": [
+        "ngspice",
+        "-b",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net21/reset-line/line-019.cir"
+      ],
+      "exit": 0,
+      "deck": "verification/net21/reset-line/line-019.cir",
+      "log": "verification/net21/reset-line/line-019.log",
+      "measures": {
+        "high": 5.470246,
+        "low": 0.02197356,
+        "fall": 2.00106e-05,
+        "rise": 0.000102405
+      },
+      "analytic_high_v": 5.4702463845741836,
+      "passed": true
+    },
+    {
+      "index": 20,
+      "supply_v": 5.5,
+      "pullup_ohm": 101000.0,
+      "receiver_leak_a": -1e-06,
+      "cap_pf": 50,
+      "command": [
+        "ngspice",
+        "-b",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net21/reset-line/line-020.cir"
+      ],
+      "exit": 0,
+      "deck": "verification/net21/reset-line/line-020.cir",
+      "log": "verification/net21/reset-line/line-020.log",
+      "measures": {
+        "high": 5.470246,
+        "low": 0.02197356,
+        "fall": 2.00275e-05,
+        "rise": 0.000106013
+      },
+      "analytic_high_v": 5.4702463845741836,
+      "passed": true
+    },
+    {
+      "index": 21,
+      "supply_v": 5.5,
+      "pullup_ohm": 101000.0,
+      "receiver_leak_a": 1e-06,
+      "cap_pf": 10,
+      "command": [
+        "ngspice",
+        "-b",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net21/reset-line/line-021.cir"
+      ],
+      "exit": 0,
+      "deck": "verification/net21/reset-line/line-021.cir",
+      "log": "verification/net21/reset-line/line-021.log",
+      "measures": {
+        "high": 5.3687,
+        "low": 0.0211783,
+        "fall": 2.0005e-05,
+        "rise": 0.000101271
+      },
+      "analytic_high_v": 5.3687000000000005,
+      "passed": true
+    },
+    {
+      "index": 22,
+      "supply_v": 5.5,
+      "pullup_ohm": 101000.0,
+      "receiver_leak_a": 1e-06,
+      "cap_pf": 20,
+      "command": [
+        "ngspice",
+        "-b",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net21/reset-line/line-022.cir"
+      ],
+      "exit": 0,
+      "deck": "verification/net21/reset-line/line-022.cir",
+      "log": "verification/net21/reset-line/line-022.log",
+      "measures": {
+        "high": 5.3687,
+        "low": 0.0211783,
+        "fall": 2.00105e-05,
+        "rise": 0.000102542
+      },
+      "analytic_high_v": 5.3687000000000005,
+      "passed": true
+    },
+    {
+      "index": 23,
+      "supply_v": 5.5,
+      "pullup_ohm": 101000.0,
+      "receiver_leak_a": 1e-06,
+      "cap_pf": 50,
+      "command": [
+        "ngspice",
+        "-b",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net21/reset-line/line-023.cir"
+      ],
+      "exit": 0,
+      "deck": "verification/net21/reset-line/line-023.cir",
+      "log": "verification/net21/reset-line/line-023.log",
+      "measures": {
+        "high": 5.3687,
+        "low": 0.0211783,
+        "fall": 2.00271e-05,
+        "rise": 0.000106356
+      },
+      "analytic_high_v": 5.3687000000000005,
+      "passed": true
+    }
+  ],
+  "negative": [
+    {
+      "index": 24,
+      "supply_v": 4.5,
+      "pullup_ohm": 1000000,
+      "receiver_leak_a": 1e-06,
+      "cap_pf": 20,
+      "command": [
+        "ngspice",
+        "-b",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net21/reset-line/line-024.cir"
+      ],
+      "exit": 0,
+      "deck": "verification/net21/reset-line/line-024.cir",
+      "log": "verification/net21/reset-line/line-024.log",
+      "measures": {
+        "high": 3.2,
+        "low": 0.001279488,
+        "fall": 2.00063e-05
+      },
+      "analytic_high_v": 3.2,
+      "passed": true
+    }
+  ],
+  "failures": [],
+  "production_released": false,
+  "summary": {
+    "cases": 24,
+    "minimum_high_v": 4.3687,
+    "maximum_low_v": 0.02241005,
+    "max_conditional_fall_after_sink_s": 2.7499999999999313e-08,
+    "max_conditional_rise_after_release_s": 1.0739999999999995e-05
+  }
+}

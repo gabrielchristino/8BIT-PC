@@ -1,0 +1,8 @@
+{
+  "date": "2026-11-26",
+  "command": "git diff --cached --check",
+  "exit": 1,
+  "observed": "Eight trailing-whitespace reports, all CR characters in the preserved PowerShell traceback capture output.txt",
+  "resolution": "Preserve exact captured bytes with -text and declare whitespace=cr-at-eol for this file only; no source-code or ERC waiver",
+  "electrical_test_result": false
+}

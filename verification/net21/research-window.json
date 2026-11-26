@@ -1,0 +1,155 @@
+{
+  "date": "2026-11-26",
+  "scope": "Arithmetic for TPS3808G01DBVR, 100k pullup and two AHC14 inverters. Native graph and digital tests have separate reports; no regulator, USB-C, POR or physical approval.",
+  "chosen": {
+    "sense_top_ohm": 1120,
+    "sense_bottom_ohm": 100,
+    "regulator_feedback_top_ohm": 57400,
+    "nominal_rail_v": 5.392,
+    "trip_min_v": 4.8332703496783225,
+    "release_max_v": 5.200584052623784,
+    "rail_min_v": 5.220762663076925,
+    "rail_max_v": 5.480950865125124,
+    "release_margin_v": 0.020178610453140955,
+    "qualified_detection_v": 4.591606832194406,
+    "hold_bank_lower_v": 4.526231832194406,
+    "bank_completion_s": 4.11e-05,
+    "supervisor_cl_budget_pf": 20,
+    "supervisor_timing_test_cl_pf": 50,
+    "monitor_corner_count": 16,
+    "regulator_corner_count": 16,
+    "passed": true
+  },
+  "negative": [
+    {
+      "sense_top_ohm": 1120,
+      "sense_bottom_ohm": 100,
+      "regulator_feedback_top_ohm": 55400,
+      "nominal_rail_v": 5.232,
+      "trip_min_v": 4.8332703496783225,
+      "release_max_v": 5.200584052623784,
+      "rail_min_v": 5.0628789465934085,
+      "rail_max_v": 5.318827141601601,
+      "release_margin_v": -0.1377051060303751,
+      "qualified_detection_v": 4.591606832194406,
+      "hold_bank_lower_v": 4.526231832194406,
+      "bank_completion_s": 4.11e-05,
+      "supervisor_cl_budget_pf": 20,
+      "supervisor_timing_test_cl_pf": 50,
+      "monitor_corner_count": 16,
+      "regulator_corner_count": 16,
+      "passed": false
+    },
+    {
+      "sense_top_ohm": 1120,
+      "sense_bottom_ohm": 100,
+      "regulator_feedback_top_ohm": 60000,
+      "nominal_rail_v": 5.6000000000000005,
+      "trip_min_v": 4.8332703496783225,
+      "release_max_v": 5.200584052623784,
+      "rail_min_v": 5.426011494505496,
+      "rail_max_v": 5.691711705705705,
+      "release_margin_v": 0.22542744188171238,
+      "qualified_detection_v": 4.591606832194406,
+      "hold_bank_lower_v": 4.526231832194406,
+      "bank_completion_s": 4.11e-05,
+      "supervisor_cl_budget_pf": 20,
+      "supervisor_timing_test_cl_pf": 50,
+      "monitor_corner_count": 16,
+      "regulator_corner_count": 16,
+      "passed": false
+    },
+    {
+      "sense_top_ohm": 1180,
+      "sense_bottom_ohm": 100,
+      "regulator_feedback_top_ohm": 57400,
+      "nominal_rail_v": 5.392,
+      "trip_min_v": 5.070933046982518,
+      "release_max_v": 5.456392501871486,
+      "rail_min_v": 5.220762663076925,
+      "rail_max_v": 5.480950865125124,
+      "release_margin_v": -0.23562983879456123,
+      "qualified_detection_v": 4.817386394633392,
+      "hold_bank_lower_v": 4.752011394633391,
+      "bank_completion_s": 4.11e-05,
+      "supervisor_cl_budget_pf": 20,
+      "supervisor_timing_test_cl_pf": 50,
+      "monitor_corner_count": 16,
+      "regulator_corner_count": 16,
+      "passed": false
+    },
+    {
+      "sense_top_ohm": 1120,
+      "sense_bottom_ohm": 100,
+      "regulator_feedback_top_ohm": 57400,
+      "nominal_rail_v": 5.392,
+      "trip_min_v": 4.8332703496783225,
+      "release_max_v": 5.200584052623784,
+      "rail_min_v": 5.220762663076925,
+      "rail_max_v": 5.480950865125124,
+      "release_margin_v": 0.020178610453140955,
+      "qualified_detection_v": 4.591606832194406,
+      "hold_bank_lower_v": 4.526231832194406,
+      "bank_completion_s": 4.11e-05,
+      "supervisor_cl_budget_pf": 60,
+      "supervisor_timing_test_cl_pf": 50,
+      "monitor_corner_count": 16,
+      "regulator_corner_count": 16,
+      "passed": false
+    }
+  ],
+  "candidate_limits": {
+    "supervisor_threshold_v": 0.405,
+    "threshold_accuracy": 0.02,
+    "hysteresis_max": 0.03,
+    "sense_abs_current_at_threshold_a": 2.5e-08,
+    "supervisor_reset_pullup_ohm": 100000,
+    "reset_delay_ct_open_ms": [
+      12,
+      28
+    ],
+    "detect_delay_max_s": 2e-05,
+    "test_input_overdrive": 0.05,
+    "reset_cl_test_pf": 50,
+    "schmitt_input_cap_at_5v_max_pf": 10
+  },
+  "conditional_budgets": {
+    "effective_resistor_tolerance": 0.001,
+    "load_a": 1.5,
+    "trace_resistance_ohm": 0.01,
+    "ripple_and_regulation_allowance_v": 0.02,
+    "effective_bulk_cap_f": 0.0044,
+    "bulk_esr_ohm": 0.02,
+    "reverse_peak_a": 0.5,
+    "reverse_charge_c": 5e-05,
+    "sense_filter_s": 1e-06,
+    "routing_cap_pf": 10,
+    "logic_after_qualified_reset_s": 1e-07,
+    "memory_bank_settling_s": 2e-05
+  },
+  "sources": [
+    {
+      "path": "tools/run_schmitt_power_window.py",
+      "sha256": "19f225d2f918a5c223fac3ca1c7b62b7ace35cd72f1618393eb4e36c522c800d"
+    },
+    {
+      "path": "references/net20/tps3808.pdf",
+      "sha256": "b25476cfb25be6ec75733b5a468123cc01a57996e4d75981cef11523876b0c83"
+    },
+    {
+      "path": "references/ti/sn74ahc14.pdf",
+      "sha256": "4ef53e806a952722b71c3ba94590f0b41099f86022ed5bd5fb37bc4a704bebe7"
+    },
+    {
+      "path": "references/power-candidates/tps63070.pdf",
+      "sha256": "a88ef66f3493156ff6e7da0849de0e0e1068647f2553d08c1844d4a90c5c65ef"
+    },
+    {
+      "path": "references/power-candidates/tps25947.pdf",
+      "sha256": "8f96de389903091650d4f462dcfad3210071c3ae7093623a7978f34baf8a65b4"
+    }
+  ],
+  "failures": [],
+  "native_circuit_report": "verification/net21/native/schematic-check.json",
+  "production_released": false
+}

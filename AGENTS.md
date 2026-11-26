@@ -1,3 +1,11 @@
+## Continuidade NET-21A
+
+- Leia docs/engineering/NET21.md. hardware/schmitt_reset é variante separada de NET20: TPS3808G01DBVR (pinagem DBV), pull-up100k, sense1120/100, duas portas Schmitt antes de RAW_BUFFERED, oito CIs/132pinos/9NC. Não misturar pinagem DRV/TPS3703.
+- Proposta de regulação muda para5,392V, feedback57,4k/10k; USB continua5V. Janela antiga5,232V não atende o novo pior limiar de retomada. Margens DC pequenas/condicionais; modelo oficial do regulador segue sem execução completa.
+- Orçamento RAW20pF (Ci máximo10pF a5V +trilha10pF) cabe no testeCL50pF, mas não é extraçãoPCB nem garantia completa de supervisor/POR. SPICE da linha é proxy Ron400ohm/leakage, não modelo vendor. Fuga para VDD deve ser passiva, sem fonte ideal elevando RAW acima da alimentação.
+- Há48 cortes do mestre de teste com WE até94ns e quatro de CPU real com epoch da SRAM preservado durante a falha, firmware reiniciando seus resultados. Não prometer rollback nem somar escopos distintos. Vetores/boot NET20 não foram novamente executados como NET21.
+- União candidata458CIs/30famílias não inclui fonte/USB-C/isolador/osciladores/DAC e não tem consumo fechado. ERC parcial12 violações sem exceções; fontes de clocks, energia/POR/cargas/skew/PVT/MTBF, firmware de eventos e PCB/protótipo abertos.
+
 ## Continuidade NET-20A
 
 - Leia docs/engineering/NET20.md. hardware/system_reset e sim/net20 são variantes separadas; CPU usa cpu_core_clk/cpu_reset_n, memórias/decoder/MMIO usam resets atrasados distintos. Não voltar a ligar SRAM ao endereço vivo da CPU.

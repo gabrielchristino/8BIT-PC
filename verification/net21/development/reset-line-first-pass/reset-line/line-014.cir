@@ -1,0 +1,15 @@
+NET21 conditional supervisor output RC 14
+VSUP vdd 0 5.5
+RPULL vdd raw 99000.0
+CLOAD raw 0 50p
+IINPUT raw 0 -1e-06
+IOFF raw 0 0.3u
+VCONTROL control 0 PWL(0 0 19.999u 0 20u 1 99.999u 1 100u 0)
+SSINK raw 0 control 0 SINK
+.model SINK SW(Ron=400 Roff=1e15 Vt=0.5 Vh=0)
+.tran .002u .2m
+.measure tran high FIND V(raw) AT=190u
+.measure tran low FIND V(raw) AT=90u
+.measure tran fall WHEN V(raw)=1.35 FALL=1
+.measure tran rise WHEN V(raw)=3.85 RISE=1
+.end

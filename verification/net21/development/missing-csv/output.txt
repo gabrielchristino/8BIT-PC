@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/mnt/c/Users/gabri/projetos/isa1/tools/build_schmitt_reset.py", line 113, in <module>
+    main()
+  File "/mnt/c/Users/gabri/projetos/isa1/tools/build_schmitt_reset.py", line 99, in main
+    emit(defs, parts)
+  File "<string>", line 20, in emit
+NameError: name 'csv' is not defined. Did you forget to import 'csv'?

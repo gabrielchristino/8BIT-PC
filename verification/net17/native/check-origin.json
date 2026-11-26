@@ -1,0 +1,157 @@
+{
+  "date": "2026-11-26",
+  "scope": "Separate resistor candidate, predecessors preserved; digital tran for series R is functional, analog values checked separately",
+  "files": [
+    {
+      "base": "sim/net15/tb_mmio_keyboard.sv",
+      "base_sha256": "e48909d90eda64c8fdfe8f6e1dc0681ec33b16596e9986ce0a5a8e2d79610100",
+      "generated": "sim/net17/tb_keyboard_500.sv",
+      "generated_sha256": "9b057e5596adbef67b4d594a59d824043d08ed5bc2d59e3f6fc5b3eb9e2c9a87",
+      "replacements": [
+        [
+          "mmio_keyboard_netlist",
+          "keyboard_500_netlist"
+        ],
+        [
+          "tb_mmio_keyboard",
+          "tb_keyboard_500"
+        ]
+      ]
+    },
+    {
+      "base": "tools/run_mmio_keyboard.py",
+      "base_sha256": "9411bfab1a541b60e8288f3e20450d5c5039780b8785db75748f823cd1550d43",
+      "generated": "tools/run_keyboard_500.py",
+      "generated_sha256": "775c25e9f951536768ceed21aaee46bb97d4a1e6ad5cc17268ca96542ca006c9",
+      "replacements": [
+        [
+          "build_mmio_keyboard",
+          "build_keyboard_500"
+        ],
+        [
+          "hardware/mmio_keyboard/",
+          "hardware/keyboard_500/"
+        ],
+        [
+          "mmio_keyboard.xml",
+          "keyboard_500.xml"
+        ],
+        [
+          "mmio_keyboard_netlist.sv",
+          "keyboard_500_netlist.sv"
+        ],
+        [
+          "sim/net15/tb_mmio_keyboard.sv",
+          "sim/net17/tb_keyboard_500.sv"
+        ],
+        [
+          "tb_mmio_keyboard",
+          "tb_keyboard_500"
+        ],
+        [
+          "tools/run_mmio_keyboard.py",
+          "tools/run_keyboard_500.py"
+        ],
+        [
+          "NET-15",
+          "NET-17"
+        ],
+        [
+          "2026-11-25",
+          "2026-11-26"
+        ]
+      ]
+    },
+    {
+      "base": "sim/net15/tb_key_settle.sv",
+      "base_sha256": "b222a662be90b5ff9ecc8cdf5f4cd91a1555de888d0fd8556d9fba94d37b887c",
+      "generated": "sim/net17/tb_key_settle_500.sv",
+      "generated_sha256": "edfa4561e23762a4d80b4b31c5752138dc1fb264a8427bd8483542aeb40642b4",
+      "replacements": [
+        [
+          "mmio_keyboard_netlist",
+          "keyboard_500_netlist"
+        ],
+        [
+          "tb_key_settle",
+          "tb_key_settle_500"
+        ]
+      ]
+    },
+    {
+      "base": "tools/run_key_settle.py",
+      "base_sha256": "61336bda07db52eedd2033fe4662bbaa7efbbb4d9c872d0cdcde0dbc52bc6121",
+      "generated": "tools/run_key_settle_500.py",
+      "generated_sha256": "1242bdbc268e70c27b490894d2e0567f4d9812d8ad242aa33a6ec54f8ac35964",
+      "replacements": [
+        [
+          "OUT=ROOT/'verification/net15'",
+          "OUT=ROOT/'verification/net17/native'"
+        ],
+        [
+          "hardware/mmio_keyboard/",
+          "hardware/keyboard_500/"
+        ],
+        [
+          "mmio_keyboard_netlist.sv",
+          "keyboard_500_netlist.sv"
+        ],
+        [
+          "sim/net15/tb_key_settle.sv",
+          "sim/net17/tb_key_settle_500.sv"
+        ],
+        [
+          "tb_key_settle",
+          "tb_key_settle_500"
+        ],
+        [
+          "tools/run_key_settle.py",
+          "tools/run_key_settle_500.py"
+        ],
+        [
+          "tools/build_mmio_keyboard.py",
+          "tools/build_keyboard_500.py"
+        ],
+        [
+          "NET-15",
+          "NET-17"
+        ],
+        [
+          "2026-11-25",
+          "2026-11-26"
+        ]
+      ]
+    },
+    {
+      "base": "tools/check_video_system_erc.py",
+      "base_sha256": "13ee92406fcaf69d38bb29653f0fc337b734628cad92161585022d6cd03cf95c",
+      "generated": "tools/check_keyboard_500_erc.py",
+      "generated_sha256": "bc23d0cf045813e29e73fd700d7c2484574273d4c47ce7f8886088c230e2d981",
+      "replacements": [
+        [
+          "build_video_system",
+          "build_keyboard_500"
+        ],
+        [
+          "video_system",
+          "keyboard_500"
+        ],
+        [
+          "NET-14C",
+          "NET-17"
+        ],
+        [
+          "2026-11-25",
+          "2026-11-26"
+        ]
+      ]
+    }
+  ],
+  "additional_transformations": [
+    "run_keyboard_500.py adds rejection of R21 first pin rewired to ROW_WIRE_0, bypassing row series resistance",
+    "Correct explicit XML source-hash path from verification/net15/keyboard_500.xml to verification/net17/native/keyboard_500.xml",
+    "Correct doubled suffix in tb_key_settle_500 source filename",
+    "Settling bench requires >=2ms, 16000 waiting cycles, allows 18000 cycles and 20ms watchdog for 16384-cycle candidate",
+    "Replace NET14B package source with NET14C bounded boundary model; only new U41 stages enable its reset boundary parameters"
+  ]
+}

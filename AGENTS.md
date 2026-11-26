@@ -1,3 +1,11 @@
+## Continuidade NET-17
+
+- Leia docs/engineering/NET17.md. keyboard_500 é variante separada: 41 CIs/806 pinos, colunas 270k, linhas 120k, quatro séries de 820 ohm e espera de 16.384 ciclos. Preserve NET-15 e intermediários.
+- A aceitação condicional de 500 ohm exige a política conservadora de até duas teclas estáticas. Não ampliar para fechamento elétrico exato de todos os fantasmas ou NKRO. Isolação em 5 V e capacitâncias não foram medidas; 100 Mohm a 100 V não é prova de I/V em 5 V.
+- U41 sincroniza a retomada de ACCESS_SAFE; o temporizador não pode amadurecer com os drivers desabilitados. Reversão dos clears reproduz a falha. Os dois FFs novos têm hipótese binária explícita e rejeição estrita preservada; MTBF continua aberto.
+- keypad_policy.py é contrato no host, não firmware da CPU. Quadros repetidos não provam simultaneidade física. Exigir vazio estável após CANCEL/ALL_UP e fila cheia; não esconder cancelamentos como releases físicos.
+- Modelo analógico usa vinte nós com pull-ups e capacitâncias diagonais. Corrente transitória limitada por 820 ohm é do caminho do cabo, não aprovação da corrente interna/local do CI. Produção segue bloqueada por integração, fontes, carga, PCB e protótipo.
+
 ## Continuidade NET-15
 
 - Leia docs/engineering/NET15.md. Novas folhas mmio_keyboard/keyboard_access não alteram a integração NET-14C. Não alegue CPU/teclado completo testado nesta etapa.

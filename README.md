@@ -1,3 +1,5 @@
+**Avanço NET-17:** [teclado com alvo de contato de 500 Ω](docs/engineering/NET17.md): variante nativa com resistores nas linhas, espera de 2,60 ms e proteção da retomada. Passaram 768 cenários elétricos condicionais e regressões digitais; a política de até duas teclas ainda é referência no host. Medições das membranas, integração CPU/energia e fabricação continuam pendentes.
+
 **Avanço NET-15:** [MMIO e teclado por pinos](docs/engineering/NET15.md): matriz de quatro membranas, registradores e espera de acomodação em esquema separado; testes digitais e envelope RC condicional registrados. Integração CPU desta etapa, reset/energia global e validação física continuam pendentes.
 
 # ISA-1 — computador de 8 bits

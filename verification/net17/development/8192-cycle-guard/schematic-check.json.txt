@@ -1,0 +1,21 @@
+{
+  "components": 108,
+  "ics": 40,
+  "pins": 790,
+  "no_connects": 39,
+  "max_signal_input_loads": 4,
+  "failures": [],
+  "scope": "Pin/connector graph and selected digital models; physical matrix R/C/settling/CDC/protection/firmware approval pending",
+  "command": [
+    "/home/gabri/.local/opt/isa1-kicad-10.0.8/squashfs-root/usr/bin/kicad-cli",
+    "sch",
+    "export",
+    "netlist",
+    "--format",
+    "kicadxml",
+    "-o",
+    "/mnt/c/Users/gabri/projetos/isa1/verification/net17/native/keyboard_500.xml",
+    "/mnt/c/Users/gabri/projetos/isa1/hardware/keyboard_500/keyboard_500.kicad_sch"
+  ],
+  "kicad": "10.0.8"
+}

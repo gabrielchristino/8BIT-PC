@@ -1,0 +1,58 @@
+{
+  "date": "2026-11-26",
+  "python": "3.12.3",
+  "scope": "New host reference only, complete stable frames, conditional analog bound; no CPU firmware, arbitrary mixed-frame coherence or measured hardware approval",
+  "sources": [
+    {
+      "path": "tools/run_keypad_policy.py",
+      "sha256": "fcdf3a54f3f4c7d1d782bd9288adb8aff2620feea8285dce9112dba2818e1fac"
+    },
+    {
+      "path": "sim/net17/keypad_policy.py",
+      "sha256": "3f6d648c6621d0e3ecfcef547de506ef587c16d95b36bf358df463b1eacc0e9a"
+    },
+    {
+      "path": "revisions/rev983/keyboard.py",
+      "sha256": "a2eccfd9d04b69879ee2c8321a5f1abe5b932cb9ee0d4af10603d85d0f005fa9"
+    },
+    {
+      "path": "verification/net17/electrical-results.json",
+      "sha256": "2e444cd5a21f7719cf2c5413d0735d15695f51901df27e0758e506801facbd75"
+    }
+  ],
+  "counts": {
+    "exhaustive_static_sets_0_to_3": 43745,
+    "extreme_observations": 87490,
+    "legacy_three_key_sets_with_some_admitted_keys": 38784,
+    "random_large_partial_ghost_frames": 10000,
+    "stateful_random_steps": 100000,
+    "consumer_drains": 25230
+  },
+  "negative": [
+    {
+      "case": "Admit a third key",
+      "expected_rejection": true,
+      "passed": true
+    }
+  ],
+  "failures": [],
+  "production_released": false,
+  "stateful_sequences": [
+    "startup requires stable empty",
+    "bounce suppressed",
+    "releases before presses",
+    "ambiguity cancels immediately",
+    "no rearm while held",
+    "stable-empty rearm",
+    "reset discards stale events",
+    "queue overflow cancels atomically"
+  ],
+  "mixed_frame_limitation": {
+    "accepted_repeated_logical_mask": [
+      0,
+      16
+    ],
+    "reason": "Row 0 may contain a press in its sampling interval and row 1 a different press later. Three repeated frames alone cannot prove physical simultaneity; this reference does not claim that guarantee."
+  },
+  "seconds": 1.18
+}

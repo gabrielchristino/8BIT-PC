@@ -27,3 +27,6 @@ As decisões de rotina podem seguir autonomamente. Consultar o usuário quando d
 # Atualização NET-15
 
 MMIO e controlador de teclado agora têm folhas nativas e ensaios isolados, com ERC parcial de 25/135 violações. Envelope de resistência/capacitância é condicional e unidades não foram medidas. Não há integração nova completa da CPU ao teclado nem liberação de fabricação. Reset/energia deve bloquear escritas antes de mudar bancos e liberar registradores com clocks válidos; esquemas unidos, proteção, cargas, BOM/footprints, ERC/DRC e protótipo permanecem obrigatórios. Ver [NET15](NET15.md).
+## Atualização NET-17
+
+Teclado tem variante nativa para alvo condicional de contato de 500 Ω e contrato host de até duas teclas. Isso não fecha dados físicos das membranas, firmware de CPU, sincronizadores/MTBF, proteção ou integração global. Corrente de cabo limitada por resistores não aprova carga local dos drivers. ERC parcial tem 25 violações e a placa segue sem liberação. Ver [NET17](NET17.md).

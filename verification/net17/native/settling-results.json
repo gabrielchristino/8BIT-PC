@@ -1,0 +1,177 @@
+{
+  "date": "2026-11-26",
+  "iteration": "NET-17",
+  "scope": "Pin-derived quiet timer and extended access controller; fixed master/backend stimuli; no analog/physical contact or MTBF approval",
+  "sources": [
+    {
+      "path": "sim/hdl/hc_models.sv",
+      "sha256": "f305ff38b7e58701e9f97528de68ea8c5518a628d38bd5a8ac9e847fa87c8680"
+    },
+    {
+      "path": "sim/net03/package_models.sv",
+      "sha256": "53712265aa1d4312866135c59e73d7543069c7a3281635d43d66825790716258"
+    },
+    {
+      "path": "sim/net04/package_models.sv",
+      "sha256": "85b00a3b6b0307d68b53e4ea1ae97ba5cbf83c20685544bb12fde333efa07d63"
+    },
+    {
+      "path": "sim/net14c/package_models_async.sv",
+      "sha256": "7b45346f5e25bb73deb33ba9fb02d50e2b020ab527f75fed1244e173300ccfcb"
+    },
+    {
+      "path": "hardware/memory_decode/memory_decode_netlist.sv",
+      "sha256": "ea33aea0e9d2977fb9fe683e11526e183bc4c3edac465e221b135d873860f0a4"
+    },
+    {
+      "path": "hardware/keyboard_access/keyboard_access_netlist.sv",
+      "sha256": "8bb21f059af0d3b1ca08334a7ad7992cf1d0f6a49344d52a227753c229e4b240"
+    },
+    {
+      "path": "hardware/keyboard_500/keyboard_500_netlist.sv",
+      "sha256": "b6ed3cf1f838f2782e5e3420eb32ca316f750a76d27030cbacd6837abe32e9e8"
+    },
+    {
+      "path": "sim/net17/tb_key_settle_500.sv",
+      "sha256": "edfa4561e23762a4d80b4b31c5752138dc1fb264a8427bd8483542aeb40642b4"
+    },
+    {
+      "path": "tools/run_key_settle_500.py",
+      "sha256": "1242bdbc268e70c27b490894d2e0567f4d9812d8ad242aa33a6ec54f8ac35964"
+    },
+    {
+      "path": "tools/build_keyboard_access.py",
+      "sha256": "272402c91a07aea0b85e816234706bc0e5d968374acf7d7feb61354bddc4d53d"
+    },
+    {
+      "path": "tools/build_keyboard_500.py",
+      "sha256": "44ad4cc2eeb70c60ae2070f53b3b4c648b533f6e1cc51ab600ab3ccce17c46ab"
+    }
+  ],
+  "runs": [
+    {
+      "timed": 0,
+      "bypass_ready": 0,
+      "compile": {
+        "command": [
+          "iverilog",
+          "-g2012",
+          "-Wall",
+          "-s",
+          "tb_key_settle_500",
+          "-Ptb_key_settle_500.TIMED=0",
+          "-Ptb_key_settle_500.BYPASS_READY=0",
+          "-o",
+          "/tmp/isa1-key-settle-fbkdhxbv/test.vvp",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/hdl/hc_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net03/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net04/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net14c/package_models_async.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/memory_decode/memory_decode_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/keyboard_access/keyboard_access_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/keyboard_500/keyboard_500_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net17/tb_key_settle_500.sv"
+        ],
+        "exit": 0,
+        "stdout": "",
+        "stderr": "",
+        "seconds": 0.049
+      },
+      "execution": {
+        "command": [
+          "vvp",
+          "/tmp/isa1-key-settle-fbkdhxbv/test.vvp"
+        ],
+        "exit": 0,
+        "stdout": "RESULT timed=0 transactions=11 long_column_reads=4 short_accesses=7 reset_pending=1 min_quiet_ns=2603412.650 failures=0\n/mnt/c/Users/gabri/projetos/isa1/sim/net17/tb_key_settle_500.sv:69: $finish called at 10511209060 (1ps)\n",
+        "stderr": "",
+        "seconds": 0.879
+      },
+      "passed": true
+    },
+    {
+      "timed": 1,
+      "bypass_ready": 0,
+      "compile": {
+        "command": [
+          "iverilog",
+          "-g2012",
+          "-Wall",
+          "-s",
+          "tb_key_settle_500",
+          "-Ptb_key_settle_500.TIMED=1",
+          "-Ptb_key_settle_500.BYPASS_READY=0",
+          "-o",
+          "/tmp/isa1-key-settle-fbkdhxbv/test.vvp",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/hdl/hc_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net03/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net04/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net14c/package_models_async.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/memory_decode/memory_decode_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/keyboard_access/keyboard_access_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/keyboard_500/keyboard_500_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net17/tb_key_settle_500.sv"
+        ],
+        "exit": 0,
+        "stdout": "",
+        "stderr": "",
+        "seconds": 0.051
+      },
+      "execution": {
+        "command": [
+          "vvp",
+          "/tmp/isa1-key-settle-fbkdhxbv/test.vvp"
+        ],
+        "exit": 0,
+        "stdout": "RESULT timed=1 transactions=11 long_column_reads=4 short_accesses=7 reset_pending=1 min_quiet_ns=2603301.650 failures=0\n/mnt/c/Users/gabri/projetos/isa1/sim/net17/tb_key_settle_500.sv:69: $finish called at 10511209060 (1ps)\n",
+        "stderr": "",
+        "seconds": 3.365
+      },
+      "passed": true
+    }
+  ],
+  "negative": [
+    {
+      "timed": 1,
+      "bypass_ready": 1,
+      "compile": {
+        "command": [
+          "iverilog",
+          "-g2012",
+          "-Wall",
+          "-s",
+          "tb_key_settle_500",
+          "-Ptb_key_settle_500.TIMED=1",
+          "-Ptb_key_settle_500.BYPASS_READY=1",
+          "-o",
+          "/tmp/isa1-key-settle-fbkdhxbv/test.vvp",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/hdl/hc_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net03/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net04/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net14c/package_models_async.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/memory_decode/memory_decode_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/keyboard_access/keyboard_access_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/keyboard_500/keyboard_500_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net17/tb_key_settle_500.sv"
+        ],
+        "exit": 0,
+        "stdout": "",
+        "stderr": "",
+        "seconds": 0.047
+      },
+      "execution": {
+        "command": [
+          "vvp",
+          "/tmp/isa1-key-settle-fbkdhxbv/test.vvp"
+        ],
+        "exit": 1,
+        "stdout": "FATAL: /mnt/c/Users/gabri/projetos/isa1/sim/net17/tb_key_settle_500.sv:41: column read acknowledged before settling\n       Time: 3525580  Scope: tb_key_settle_500.transaction\n",
+        "stderr": "",
+        "seconds": 0.021
+      },
+      "expected_rejection": true,
+      "passed": true
+    }
+  ],
+  "failures": []
+}

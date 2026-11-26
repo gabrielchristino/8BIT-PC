@@ -1,0 +1,46 @@
+{
+  "date": "2026-11-26",
+  "reason": "Harden negative acceptance: ngspice must finish successfully with all measures and the intended electrical rejection, not merely any violation. All three earlier negatives already had successful tool exits. Only their raw decks/logs retained here; normal deck paths are reused by final rerun.",
+  "files": [
+    {
+      "source": "tools/run_keypad_500.py",
+      "preserved": "verification/net17/development/negative-acceptance/run_keypad_500.py.txt",
+      "sha256": "d47c5c91c52849f06b0a0645a47301200a660ef9568970300a9bc8c8d4cf288d"
+    },
+    {
+      "source": "verification/net17/electrical-results.json",
+      "preserved": "verification/net17/development/negative-acceptance/electrical-results.json.txt",
+      "sha256": "5e1440b0d98497ce8f4283355cd43c0f72f7bffc655b6abf09c4b038934623e5"
+    },
+    {
+      "source": "verification/net17/rc/matrix-768.cir",
+      "preserved": "verification/net17/development/negative-acceptance/matrix-768.cir",
+      "sha256": "9d83bc6b3f509c3939e6f8c4f05cd2d747b2a053845ffac1453071c40b0ec30d"
+    },
+    {
+      "source": "verification/net17/rc/matrix-768.log",
+      "preserved": "verification/net17/development/negative-acceptance/matrix-768.log",
+      "sha256": "194ae267f955444671052759d8dfe0ac5e059c1e59994568c6e8252731b78aa2"
+    },
+    {
+      "source": "verification/net17/rc/matrix-769.cir",
+      "preserved": "verification/net17/development/negative-acceptance/matrix-769.cir",
+      "sha256": "324eca73e2a338750b946a4c51c94ed08ebbad41000d85b29e4d4faf5daa1d0d"
+    },
+    {
+      "source": "verification/net17/rc/matrix-769.log",
+      "preserved": "verification/net17/development/negative-acceptance/matrix-769.log",
+      "sha256": "842ba8610f5fa1f1536642ed26708292fdd976533b7031bd444716aec7f928e5"
+    },
+    {
+      "source": "verification/net17/rc/matrix-770.cir",
+      "preserved": "verification/net17/development/negative-acceptance/matrix-770.cir",
+      "sha256": "ab88cd28c0e55fb872a76e4733027e6c448b1390eec0a87a147a8076fb85c86b"
+    },
+    {
+      "source": "verification/net17/rc/matrix-770.log",
+      "preserved": "verification/net17/development/negative-acceptance/matrix-770.log",
+      "sha256": "b0418f0609e005ac72740ca4fe655dd54fb48b646921c54f3b703e0747eb7d8f"
+    }
+  ]
+}

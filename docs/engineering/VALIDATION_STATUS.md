@@ -1,6 +1,6 @@
 # Lista consolidada de testes, itens e revisões
 
-Atualizada em 25/11/2026, após NET-16A/B de reset candidato e NET-15 de MMIO/teclado, ainda separados da integração CPU/raster NET-14C. Esta lista substitui a leitura dos checkboxes antigos como estado atual; eles permanecem no ROADMAP como registros das respectivas etapas. Não há percentual de placa pronta: uma aprovação de modelo não equivale a aprovação elétrica ou física.
+Atualizada em 26/11/2026, após NET-17 de teclado candidato para 500 Ω e NET-16A/B de reset, ainda separados da integração CPU/raster NET-14C. Esta lista substitui a leitura dos checkboxes antigos como estado atual; eles permanecem no ROADMAP como registros das respectivas etapas. Não há percentual de placa pronta: uma aprovação de modelo não equivale a aprovação elétrica ou física.
 
 ## Evidências aprovadas no escopo de modelo
 
@@ -24,7 +24,7 @@ Evidências: [NET13](NET13.md), [integração ideal](../../verification/net13/cp
 |---|---|---|
 | 1. Relógio, raster e captura de vídeo | NET-14C: CPU/boot/quadro ideal com circuito por pinos; variante corrige clock truncado; cortes temporizados têm hipótese binária na fronteira de reset | Cargas/setup/hold/skew/PVT, oscilador e reset/MTBF físico; programa/quadro temporizado completo |
 | 2. Concessão física da VRAM | SLOT por pinos, 32 posições exercitadas e integração com CPU/quadro ideal | Fechar cargas/min/max/clock globais e validar placa |
-| 3. MMIO e teclado por pinos | NET-15: registradores/muxes/drivers/conectores em esquema; 5.681 padrões por modo, espera de 8.192 ciclos e RC condicional em 48 cantos | Integrar CPU/raster após reset/energia; MTBF, proteções, bounce/ambiguidades/fila e medidas das unidades |
+| 3. MMIO e teclado por pinos | NET-17: variante para alvo de 500 Ω, séries nas linhas, 16.384 ciclos e retomada qualificada; 768 cenários elétricos e 5.681 padrões digitais por modo; debounce/fila em referência host | Integrar CPU/raster após energia/reset; implementar scan/firmware de cancelamento, fechar MTBF/proteções/cargas e medir unidades |
 | 4. Alimentação e reset | NET-16A/B: ordem WE/estado e liberações CPU/backend em folha candidata; RC/cortes/pausas isolados sob hipóteses explícitas | Supervisor/brownout/hold-up e integração global; níveis/cargas/min/max/MTBF e rampas/cortes físicos. Escrita interrompida continua desconhecida |
 | 5. Saída VGA e DAC RGB332 | Dados digitais disponíveis; DAC e conector não fechados | Níveis/correntes/impedância, cargas do monitor, sincronismos, proteção, simulação e medição |
 | 6. Temporização global | Cenários de atrasos selecionados e orçamento de captura NET-14A | Setup/hold/recovery/removal, mínimos/máximos, temperatura/tensão, skew/jitter/duty cycle e MTBF; regressão integrada correspondente |

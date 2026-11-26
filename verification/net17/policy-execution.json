@@ -1,0 +1,11 @@
+{
+  "date": "2026-11-26",
+  "command": [
+    "python3",
+    "tools/run_keypad_policy.py"
+  ],
+  "python": "3.12.3",
+  "exit": 0,
+  "stdout": "{\"counts\": {\"exhaustive_static_sets_0_to_3\": 43745, \"extreme_observations\": 87490, \"legacy_three_key_sets_with_some_admitted_keys\": 38784, \"random_large_partial_ghost_frames\": 10000, \"stateful_random_steps\": 100000, \"consumer_drains\": 25230}, \"stateful_sequences\": [\"startup requires stable empty\", \"bounce suppressed\", \"releases before presses\", \"ambiguity cancels immediately\", \"no rearm while held\", \"stable-empty rearm\", \"reset discards stale events\", \"queue overflow cancels atomically\"], \"failures\": [], \"seconds\": 1.18, \"cpu_firmware_implemented\": false}\n",
+  "stderr": ""
+}

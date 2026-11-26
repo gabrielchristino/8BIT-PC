@@ -1,0 +1,39 @@
+{
+  "date": "2026-11-26",
+  "files": [
+    {
+      "path": "references/ti/sn74ahc14.pdf",
+      "url": "https://www.ti.com/lit/ds/symlink/sn74ahc14.pdf",
+      "sha256": "4ef53e806a952722b71c3ba94590f0b41099f86022ed5bd5fb37bc4a704bebe7",
+      "status": "Reused unmodified candidate PDF; not qualified BOM"
+    },
+    {
+      "path": "references/ti/sn74ahc125.pdf",
+      "url": "https://www.ti.com/lit/ds/symlink/sn74ahc125.pdf",
+      "sha256": "c2ca226688e5704e94755fb20907c970ba7e2bac3a18fd6b2c28ce73295d0a3f",
+      "status": "Reused unmodified candidate PDF; not qualified BOM"
+    },
+    {
+      "path": "references/ti/sn74ahc74.pdf",
+      "url": "https://www.ti.com/lit/ds/symlink/sn74ahc74.pdf",
+      "sha256": "48edcc29fc5a6fa517a0d54a5f4459c0a784fc3342cb01ce100c75b4befb8db4",
+      "status": "Reused unmodified candidate PDF; not qualified BOM"
+    },
+    {
+      "path": "references/ti/sn74lv161a.pdf",
+      "url": "https://www.ti.com/lit/ds/symlink/sn74lv161a.pdf",
+      "sha256": "80d50ee4c3745eb8a94f7ea3aa2a8ae0d95a70a638933406d8e2cb35033f5182",
+      "status": "Reused unmodified candidate PDF; not qualified BOM"
+    }
+  ],
+  "consulted_not_selected": [
+    {
+      "url": "https://www.ti.com/lit/ds/symlink/sn74hcs14.pdf",
+      "status": "Web consultation only, no local PDF claimed and no typical leakage used as guaranteed limit"
+    },
+    {
+      "url": "https://assets.nexperia.com/documents/data-sheet/74AHC_AHCT14.pdf",
+      "status": "Web consultation only, alternative not selected or modeled"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+"""NET-17 separate keyboard candidate: series row resistors and weaker bias."""
+import hashlib
+import build_mmio_keyboard as previous
+from build_mmio_keyboard import *
+
+OUT=ROOT/'hardware/keyboard_500';VERIFY=ROOT/'verification/net17/native'
+def uid(s):return str(uuid.uuid5(uuid.NAMESPACE_URL,'isa1/net17/'+s))
+
+
+def definitions():
+    defs=previous.definitions()
+    defs['R']['source']='Proposed columns 270k/rows 120k +/-5%, row series 820ohm +/-1%; conditional 500ohm contacts, <=2-key policy, no qualified BOM'
+    return defs
+
+
+def design(defs):
+    parts=previous.design(defs)
+    driver=next(p for p in parts if p['reference']=='U3')
+    for pin,n in driver['nets'].items():
+        if n and n.startswith('ROW_WIRE_'):driver['nets'][pin]=n.replace('ROW_WIRE_','ROW_DRIVE_')
+    for p in parts:
+        if p['part']=='R':p['value']='270k' if p['value']=='150k' else '120k'
+    for i in range(4):parts.append({'reference':f'R{i+21}','part':'R','value':'820','nets':{'1':f'ROW_DRIVE_{i}','2':f'ROW_WIRE_{i}'},'x':round((790+45*i)/1.27)*1.27,'y':486.41})
+    return parts
+
+
+def package_symbol(kind,spec):
+    return tuple(x.replace('NET15:','NET17:') if isinstance(x,str) else x for x in previous.package_symbol(kind,spec))
+
+
+exec(previous._emitter.replace('mmio_keyboard','keyboard_500').replace('NET15','NET17').replace('NET-15','NET-17'),globals())
+converter=inspect.getsource(previous.convert).replace('mmio_keyboard','keyboard_500').replace('n_ROW_WIRE_\'','n_ROW_DRIVE_\'')
+marker="        if kind=='R':\n"
+addition="""        if kind=='R' and p['value']=='820':
+            index=int(ref[1:])-21
+            if not 0<=index<4 or fs['1']!=sig(f'ROW_DRIVE_{index}') or fs['2']!=sig(f'ROW_WIRE_{index}'):raise ValueError('Series row wiring '+ref)
+            drivers.setdefault(actual[ref,'2'],[]).append('low-only driver via series resistor')
+            lines.append(f"tran({fs['1']},{fs['2']}); // Functional only; resistance tested in separate analog network")
+            continue
+"""
+assert converter.count(marker)==1
+exec(converter.replace(marker,addition+marker),globals())
+
+
+def main():
+    OUT.mkdir(parents=True,exist_ok=True);VERIFY.mkdir(parents=True,exist_ok=True)
+    defs=definitions();parts=design(defs);emit(defs,parts)
+    (OUT/'package-functions.json').write_text(json.dumps(defs,indent=2)+'\n');(OUT/'design.json').write_text(json.dumps({'iteration':'NET-17','parts':parts},indent=2)+'\n')
+    cmd=[KICAD,'sch','export','netlist','--format','kicadxml','-o',str(VERIFY/'keyboard_500.xml'),str(OUT/'keyboard_500.kicad_sch')]
+    p=subprocess.run(cmd,capture_output=True,text=True,timeout=120)
+    if p.returncode:raise RuntimeError(p.stdout+p.stderr)
+    report=convert();report.update(command=cmd,kicad=subprocess.check_output([KICAD,'version'],text=True).strip())
+    (VERIFY/'schematic-check.json').write_text(json.dumps(report,indent=2)+'\n');print(json.dumps(report));return int(bool(report['failures']) or report['max_signal_input_loads']>4)
+
+
+if __name__=='__main__':raise SystemExit(main())

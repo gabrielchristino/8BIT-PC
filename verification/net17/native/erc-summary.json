@@ -1,0 +1,45 @@
+{
+  "date": "2026-11-26",
+  "kicad": "10.0.8",
+  "command": [
+    "/home/gabri/.local/opt/isa1-kicad-10.0.8/squashfs-root/usr/bin/kicad-cli",
+    "sch",
+    "erc",
+    "--format",
+    "json",
+    "--severity-all",
+    "--exit-code-violations",
+    "-o",
+    "/mnt/c/Users/gabri/projetos/isa1/verification/net17/native/erc.json",
+    "/mnt/c/Users/gabri/projetos/isa1/hardware/keyboard_500/keyboard_500.kicad_sch"
+  ],
+  "exit": 5,
+  "stdout": "Found 25 violations\nSaved ERC Report to /mnt/c/Users/gabri/projetos/isa1/verification/net17/native/erc.json\n",
+  "stderr": "",
+  "violation_counts": {
+    "pin_not_driven": 12,
+    "power_pin_not_driven": 2,
+    "isolated_pin_label": 11
+  },
+  "sources": [
+    {
+      "path": "hardware/keyboard_500/keyboard_500.kicad_sch",
+      "sha256": "5f70c63f2d7169cfa10647eb1e265bd3740b4e6dc0072640c0662101a879102b"
+    },
+    {
+      "path": "hardware/keyboard_500/keyboard_500.kicad_pro",
+      "sha256": "76775cd179ed745d3229e9db11b580bd953505cd85cb65cea7f7c84ca56450b8"
+    },
+    {
+      "path": "hardware/keyboard_500/bus_packages.kicad_sym",
+      "sha256": "40480e3be3857016eccf8875e0edd3d562d104c71800700bf0d7fd8e577bfb1d"
+    },
+    {
+      "path": "tools/check_keyboard_500_erc.py",
+      "sha256": "bc23d0cf045813e29e73fd700d7c2484574273d4c47ce7f8886088c230e2d981"
+    }
+  ],
+  "erc_passed": false,
+  "board_release": false,
+  "scope": "Partial sheet; inputs/outputs/power sources need global union, no waivers added"
+}

@@ -1,0 +1,106 @@
+
+Note: No compatibility mode selected!
+
+
+Circuit: net17 conditional keypad pair-column corner 267
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+vcc                                        5.5
+drv                                       0.44
+ctl0                                         1
+drive0                                0.440001
+n0                                     0.53553
+ctl1                                         0
+drive1                                 0.53899
+n1                                     0.53899
+ctl2                                         0
+drive2                                 5.83525
+n2                                     5.83525
+ctl3                                         0
+drive3                                 5.83525
+n3                                     5.83525
+n4                                     0.53757
+n5                                     5.79387
+n6                                     5.79387
+n7                                     5.79387
+n8                                     5.79387
+n9                                     5.79387
+n10                                    5.79387
+n11                                    5.79387
+n12                                    5.79387
+n13                                    5.79387
+n14                                    5.79387
+n15                                    5.79387
+n16                                    5.79387
+n17                                    5.79387
+n18                                    5.79387
+n19                                    5.79387
+vsel3#branch                                 0
+vsel2#branch                                 0
+vsel1#branch                                 0
+vsel0#branch                                 0
+vdrv#branch                        0.000115345
+vcc#branch                        -8.33453e-05
+
+
+No. of Data Rows : 8025
+
+  Measurements for Transient Analysis
+
+c0_settled          =  5.375704e-01
+c0_guard            =  5.375704e-01
+c1_settled          =  5.793871e+00
+c1_guard            =  5.793871e+00
+c2_settled          =  5.793871e+00
+c2_guard            =  5.793871e+00
+c3_settled          =  5.793871e+00
+c3_guard            =  5.793871e+00
+c4_settled          =  5.793871e+00
+c4_guard            =  5.793871e+00
+c5_settled          =  5.793871e+00
+c5_guard            =  5.793871e+00
+c6_settled          =  5.793871e+00
+c6_guard            =  5.793871e+00
+c7_settled          =  5.793871e+00
+c7_guard            =  5.793871e+00
+c8_settled          =  5.793871e+00
+c8_guard            =  5.793871e+00
+c9_settled          =  5.793871e+00
+c9_guard            =  5.793871e+00
+c10_settled         =  5.793871e+00
+c10_guard           =  5.793871e+00
+c11_settled         =  5.793871e+00
+c11_guard           =  5.793871e+00
+c12_settled         =  5.793871e+00
+c12_guard           =  5.793871e+00
+c13_settled         =  5.793871e+00
+c13_guard           =  5.793871e+00
+c14_settled         =  5.793871e+00
+c14_guard           =  5.793871e+00
+c15_settled         =  5.793871e+00
+c15_guard           =  5.793871e+00
+sink                =  1.153453e-04
+
+
+Total analysis time (seconds) = 0.063
+
+Total elapsed time (seconds) = 0.074 
+
+Total DRAM available = 7873.207 MB.
+DRAM currently available = 7047.414 MB.
+Maximum ngspice program size =   22.684 MB.
+Current ngspice program size =   13.875 MB.
+
+Shared ngspice pages =   10.750 MB.
+Text (code) pages =    6.156 MB.
+Stack = 0 bytes.
+Library pages =    3.434 MB.
+
+Using SPARSE 1.3 as Direct Linear Solver

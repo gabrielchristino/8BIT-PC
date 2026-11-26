@@ -1,5 +1,15 @@
 # Decisões recuperadas e registro da migração
 
+## ADR E22 — Alvo de 500 Ω com leitura conservadora e espera após habilitar linhas
+
+26/11/2026: informação comercial de contato até 500 Ω amplia o alvo condicional, sem substituir a medição das quatro membranas. Criar hardware/keyboard_500 separado: colunas 270k/linhas 120k ±5%, séries de 820 Ω ±1%, limiar do contador em 16.384 ciclos e um AHC74 adicional para qualificar a retomada de ACCESS_SAFE no backend. Usar canal livre de U33 e ramo existente de clock; folha final tem 41 CIs/806 pinos, não os 40 da NET-15.
+
+Alternativas: não promover o envelope de sete contatos/150 Ω a aprovação de 500 Ω; não usar driver ideal instantâneo sobre a capacitância como prova de corrente; não permitir que o contador termine enquanto as linhas estão desabilitadas. A variante de 8.192 ciclos passou condicionalmente, mas tinha margem menor; ampliar o contador não custa CI. A habilitação tardia reproduz defeito ao reverter apenas os clears. Hipótese binária nos dois FFs novos conserva a rejeição estrita de recovery e não fecha MTBF.
+
+Aceitar até duas teclas estáticas; com mais bits, cancelar e bloquear até vazio estável, conforme objetivo do planejamento histórico. A referência rev983 mais permissiva para alguns acordes de três teclas permanece original; a nova política restringe esses acordes. Isso evita depender de todos os fantasmas atingirem LOW, sem alterar CPU/ISA/mapa/COMMIT. Contrato de debounce/fila ainda é host, não firmware embarcado, e não prova simultaneidade em quadros mistos.
+
+Aceitação atual: 768 redes RC, três negativos elétricos, 5.681 padrões por modo digital, espera/retomada e política exercitadas; ERC parcial 25 violações. Critérios futuros: implementar firmware/scan completo e integrar CPU/energia/raster, confirmar R/C/isolação/bounce reais, cargas/ruído/MTBF, BOM/footprints, ERC/DRC e protótipo. [Evidências e limites NET17](docs/engineering/NET17.md).
+
 ## ADR E21 — Bloqueio rápido e reset atrasado em dois domínios
 
 25/11/2026: criar hardware/reset_domains como candidato separado, com buffer e RC/Schmitt antes de afirmar reset, dois FFs por domínio para liberar CPU/backend e ACCESS_SAFE exigindo RAW_SAFE_N e ambos liberados. Preservar CPU/ISA/mapa e exigir supervisor externo com pulso/energia qualificados. Não usar o reset de backend diretamente na CPU de clock distinto.

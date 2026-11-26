@@ -1,0 +1,834 @@
+{
+  "date": "2026-11-26",
+  "scope": "Native pin graph with bounded inertial RC and binary external reset resolution; no MTBF, short pulse train, supervisor or full CPU integration approval",
+  "sources": [
+    {
+      "path": "sim/net03/package_models.sv",
+      "sha256": "53712265aa1d4312866135c59e73d7543069c7a3281635d43d66825790716258"
+    },
+    {
+      "path": "sim/net14c/package_models_async.sv",
+      "sha256": "7b45346f5e25bb73deb33ba9fb02d50e2b020ab527f75fed1244e173300ccfcb"
+    },
+    {
+      "path": "hardware/power_reset/power_reset_netlist.sv",
+      "sha256": "715c51ab31d3fce643153c790138028befd0b0b1d9efe827074f4c4589191cdf"
+    },
+    {
+      "path": "sim/net18/tb_power_reset.sv",
+      "sha256": "9d6ce468e45cd3d18e3f7289d52c27ef1b0e8fabb35fd9fe7bbeb0240fbb9d96"
+    },
+    {
+      "path": "tools/run_power_reset.py",
+      "sha256": "0c186cb128b38c5dee72b1ccb852896e1bf6d6d946c42e2c9a600d7e88765def"
+    },
+    {
+      "path": "tools/build_power_reset.py",
+      "sha256": "5a69ba5b0e8d04c21d782b799820274e5d1a67268ec169147a2eab5ef8e053d3"
+    },
+    {
+      "path": "verification/net18/native/power_reset.xml",
+      "sha256": "7bf42a32b51fdb684784747ab8269377f93a4e539064bd171f68aaee8230cfbb"
+    }
+  ],
+  "runs": [
+    {
+      "timed": 0,
+      "resolution_policy": 0,
+      "assertion_delay_ns": 1000,
+      "release_delay_ns": 2000,
+      "early_reset_fault": 0,
+      "cpu_ready_bypass_fault": 0,
+      "compile": {
+        "command": [
+          "iverilog",
+          "-g2012",
+          "-Wall",
+          "-s",
+          "tb_power_reset",
+          "-Ptb_power_reset.TIMED=0",
+          "-Ptb_power_reset.RESOLVE_LATE=0",
+          "-Ptb_power_reset.ASSERT_DELAY=1000",
+          "-Ptb_power_reset.RELEASE_DELAY=2000",
+          "-Ptb_power_reset.FAULT_EARLY=0",
+          "-Ptb_power_reset.FAULT_CPU=0",
+          "-o",
+          "/tmp/isa1-reset-s6kvx9ws/test.vvp",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net03/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net14c/package_models_async.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/power_reset/power_reset_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net18/tb_power_reset.sv"
+        ],
+        "exit": 0,
+        "stdout": "",
+        "stderr": "",
+        "seconds": 0.038
+      },
+      "execution": {
+        "command": [
+          "vvp",
+          "/tmp/isa1-reset-s6kvx9ws/test.vvp"
+        ],
+        "exit": 0,
+        "stdout": "RESULT timed=0 policy=0 reset_cuts=32 cpu_pauses=11 backend_pauses=11 min_order_ns=1000.000 recovery_backend=0/0 recovery_cpu=0/0 failures=0\n/mnt/c/Users/gabri/projetos/isa1/sim/net18/tb_power_reset.sv:53: $finish called at 2978770135 (1ps)\n",
+        "stderr": "",
+        "seconds": 0.063
+      },
+      "passed": true
+    },
+    {
+      "timed": 0,
+      "resolution_policy": 0,
+      "assertion_delay_ns": 1000,
+      "release_delay_ns": 42000,
+      "early_reset_fault": 0,
+      "cpu_ready_bypass_fault": 0,
+      "compile": {
+        "command": [
+          "iverilog",
+          "-g2012",
+          "-Wall",
+          "-s",
+          "tb_power_reset",
+          "-Ptb_power_reset.TIMED=0",
+          "-Ptb_power_reset.RESOLVE_LATE=0",
+          "-Ptb_power_reset.ASSERT_DELAY=1000",
+          "-Ptb_power_reset.RELEASE_DELAY=42000",
+          "-Ptb_power_reset.FAULT_EARLY=0",
+          "-Ptb_power_reset.FAULT_CPU=0",
+          "-o",
+          "/tmp/isa1-reset-s6kvx9ws/test.vvp",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net03/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net14c/package_models_async.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/power_reset/power_reset_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net18/tb_power_reset.sv"
+        ],
+        "exit": 0,
+        "stdout": "",
+        "stderr": "",
+        "seconds": 0.019
+      },
+      "execution": {
+        "command": [
+          "vvp",
+          "/tmp/isa1-reset-s6kvx9ws/test.vvp"
+        ],
+        "exit": 0,
+        "stdout": "RESULT timed=0 policy=0 reset_cuts=32 cpu_pauses=11 backend_pauses=11 min_order_ns=1000.000 recovery_backend=0/0 recovery_cpu=0/0 failures=0\n/mnt/c/Users/gabri/projetos/isa1/sim/net18/tb_power_reset.sv:53: $finish called at 4298828255 (1ps)\n",
+        "stderr": "",
+        "seconds": 0.068
+      },
+      "passed": true
+    },
+    {
+      "timed": 0,
+      "resolution_policy": 0,
+      "assertion_delay_ns": 19000,
+      "release_delay_ns": 2000,
+      "early_reset_fault": 0,
+      "cpu_ready_bypass_fault": 0,
+      "compile": {
+        "command": [
+          "iverilog",
+          "-g2012",
+          "-Wall",
+          "-s",
+          "tb_power_reset",
+          "-Ptb_power_reset.TIMED=0",
+          "-Ptb_power_reset.RESOLVE_LATE=0",
+          "-Ptb_power_reset.ASSERT_DELAY=19000",
+          "-Ptb_power_reset.RELEASE_DELAY=2000",
+          "-Ptb_power_reset.FAULT_EARLY=0",
+          "-Ptb_power_reset.FAULT_CPU=0",
+          "-o",
+          "/tmp/isa1-reset-s6kvx9ws/test.vvp",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net03/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net14c/package_models_async.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/power_reset/power_reset_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net18/tb_power_reset.sv"
+        ],
+        "exit": 0,
+        "stdout": "",
+        "stderr": "",
+        "seconds": 0.021
+      },
+      "execution": {
+        "command": [
+          "vvp",
+          "/tmp/isa1-reset-s6kvx9ws/test.vvp"
+        ],
+        "exit": 0,
+        "stdout": "RESULT timed=0 policy=0 reset_cuts=32 cpu_pauses=11 backend_pauses=11 min_order_ns=19000.000 recovery_backend=0/0 recovery_cpu=0/0 failures=0\n/mnt/c/Users/gabri/projetos/isa1/sim/net18/tb_power_reset.sv:53: $finish called at 3516612785 (1ps)\n",
+        "stderr": "",
+        "seconds": 0.065
+      },
+      "passed": true
+    },
+    {
+      "timed": 0,
+      "resolution_policy": 0,
+      "assertion_delay_ns": 19000,
+      "release_delay_ns": 42000,
+      "early_reset_fault": 0,
+      "cpu_ready_bypass_fault": 0,
+      "compile": {
+        "command": [
+          "iverilog",
+          "-g2012",
+          "-Wall",
+          "-s",
+          "tb_power_reset",
+          "-Ptb_power_reset.TIMED=0",
+          "-Ptb_power_reset.RESOLVE_LATE=0",
+          "-Ptb_power_reset.ASSERT_DELAY=19000",
+          "-Ptb_power_reset.RELEASE_DELAY=42000",
+          "-Ptb_power_reset.FAULT_EARLY=0",
+          "-Ptb_power_reset.FAULT_CPU=0",
+          "-o",
+          "/tmp/isa1-reset-s6kvx9ws/test.vvp",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net03/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net14c/package_models_async.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/power_reset/power_reset_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net18/tb_power_reset.sv"
+        ],
+        "exit": 0,
+        "stdout": "",
+        "stderr": "",
+        "seconds": 0.02
+      },
+      "execution": {
+        "command": [
+          "vvp",
+          "/tmp/isa1-reset-s6kvx9ws/test.vvp"
+        ],
+        "exit": 0,
+        "stdout": "RESULT timed=0 policy=0 reset_cuts=32 cpu_pauses=11 backend_pauses=11 min_order_ns=19000.000 recovery_backend=0/0 recovery_cpu=0/0 failures=0\n/mnt/c/Users/gabri/projetos/isa1/sim/net18/tb_power_reset.sv:53: $finish called at 4836670905 (1ps)\n",
+        "stderr": "",
+        "seconds": 0.079
+      },
+      "passed": true
+    },
+    {
+      "timed": 0,
+      "resolution_policy": 1,
+      "assertion_delay_ns": 1000,
+      "release_delay_ns": 2000,
+      "early_reset_fault": 0,
+      "cpu_ready_bypass_fault": 0,
+      "compile": {
+        "command": [
+          "iverilog",
+          "-g2012",
+          "-Wall",
+          "-s",
+          "tb_power_reset",
+          "-Ptb_power_reset.TIMED=0",
+          "-Ptb_power_reset.RESOLVE_LATE=1",
+          "-Ptb_power_reset.ASSERT_DELAY=1000",
+          "-Ptb_power_reset.RELEASE_DELAY=2000",
+          "-Ptb_power_reset.FAULT_EARLY=0",
+          "-Ptb_power_reset.FAULT_CPU=0",
+          "-o",
+          "/tmp/isa1-reset-s6kvx9ws/test.vvp",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net03/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net14c/package_models_async.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/power_reset/power_reset_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net18/tb_power_reset.sv"
+        ],
+        "exit": 0,
+        "stdout": "",
+        "stderr": "",
+        "seconds": 0.018
+      },
+      "execution": {
+        "command": [
+          "vvp",
+          "/tmp/isa1-reset-s6kvx9ws/test.vvp"
+        ],
+        "exit": 0,
+        "stdout": "RESULT timed=0 policy=1 reset_cuts=32 cpu_pauses=11 backend_pauses=11 min_order_ns=1000.000 recovery_backend=0/0 recovery_cpu=0/0 failures=0\n/mnt/c/Users/gabri/projetos/isa1/sim/net18/tb_power_reset.sv:53: $finish called at 2978770135 (1ps)\n",
+        "stderr": "",
+        "seconds": 0.054
+      },
+      "passed": true
+    },
+    {
+      "timed": 0,
+      "resolution_policy": 1,
+      "assertion_delay_ns": 1000,
+      "release_delay_ns": 42000,
+      "early_reset_fault": 0,
+      "cpu_ready_bypass_fault": 0,
+      "compile": {
+        "command": [
+          "iverilog",
+          "-g2012",
+          "-Wall",
+          "-s",
+          "tb_power_reset",
+          "-Ptb_power_reset.TIMED=0",
+          "-Ptb_power_reset.RESOLVE_LATE=1",
+          "-Ptb_power_reset.ASSERT_DELAY=1000",
+          "-Ptb_power_reset.RELEASE_DELAY=42000",
+          "-Ptb_power_reset.FAULT_EARLY=0",
+          "-Ptb_power_reset.FAULT_CPU=0",
+          "-o",
+          "/tmp/isa1-reset-s6kvx9ws/test.vvp",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net03/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net14c/package_models_async.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/power_reset/power_reset_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net18/tb_power_reset.sv"
+        ],
+        "exit": 0,
+        "stdout": "",
+        "stderr": "",
+        "seconds": 0.02
+      },
+      "execution": {
+        "command": [
+          "vvp",
+          "/tmp/isa1-reset-s6kvx9ws/test.vvp"
+        ],
+        "exit": 0,
+        "stdout": "RESULT timed=0 policy=1 reset_cuts=32 cpu_pauses=11 backend_pauses=11 min_order_ns=1000.000 recovery_backend=0/0 recovery_cpu=0/0 failures=0\n/mnt/c/Users/gabri/projetos/isa1/sim/net18/tb_power_reset.sv:53: $finish called at 4298828255 (1ps)\n",
+        "stderr": "",
+        "seconds": 0.069
+      },
+      "passed": true
+    },
+    {
+      "timed": 0,
+      "resolution_policy": 1,
+      "assertion_delay_ns": 19000,
+      "release_delay_ns": 2000,
+      "early_reset_fault": 0,
+      "cpu_ready_bypass_fault": 0,
+      "compile": {
+        "command": [
+          "iverilog",
+          "-g2012",
+          "-Wall",
+          "-s",
+          "tb_power_reset",
+          "-Ptb_power_reset.TIMED=0",
+          "-Ptb_power_reset.RESOLVE_LATE=1",
+          "-Ptb_power_reset.ASSERT_DELAY=19000",
+          "-Ptb_power_reset.RELEASE_DELAY=2000",
+          "-Ptb_power_reset.FAULT_EARLY=0",
+          "-Ptb_power_reset.FAULT_CPU=0",
+          "-o",
+          "/tmp/isa1-reset-s6kvx9ws/test.vvp",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net03/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net14c/package_models_async.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/power_reset/power_reset_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net18/tb_power_reset.sv"
+        ],
+        "exit": 0,
+        "stdout": "",
+        "stderr": "",
+        "seconds": 0.02
+      },
+      "execution": {
+        "command": [
+          "vvp",
+          "/tmp/isa1-reset-s6kvx9ws/test.vvp"
+        ],
+        "exit": 0,
+        "stdout": "RESULT timed=0 policy=1 reset_cuts=32 cpu_pauses=11 backend_pauses=11 min_order_ns=19000.000 recovery_backend=0/0 recovery_cpu=0/0 failures=0\n/mnt/c/Users/gabri/projetos/isa1/sim/net18/tb_power_reset.sv:53: $finish called at 3516612785 (1ps)\n",
+        "stderr": "",
+        "seconds": 0.066
+      },
+      "passed": true
+    },
+    {
+      "timed": 0,
+      "resolution_policy": 1,
+      "assertion_delay_ns": 19000,
+      "release_delay_ns": 42000,
+      "early_reset_fault": 0,
+      "cpu_ready_bypass_fault": 0,
+      "compile": {
+        "command": [
+          "iverilog",
+          "-g2012",
+          "-Wall",
+          "-s",
+          "tb_power_reset",
+          "-Ptb_power_reset.TIMED=0",
+          "-Ptb_power_reset.RESOLVE_LATE=1",
+          "-Ptb_power_reset.ASSERT_DELAY=19000",
+          "-Ptb_power_reset.RELEASE_DELAY=42000",
+          "-Ptb_power_reset.FAULT_EARLY=0",
+          "-Ptb_power_reset.FAULT_CPU=0",
+          "-o",
+          "/tmp/isa1-reset-s6kvx9ws/test.vvp",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net03/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net14c/package_models_async.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/power_reset/power_reset_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net18/tb_power_reset.sv"
+        ],
+        "exit": 0,
+        "stdout": "",
+        "stderr": "",
+        "seconds": 0.02
+      },
+      "execution": {
+        "command": [
+          "vvp",
+          "/tmp/isa1-reset-s6kvx9ws/test.vvp"
+        ],
+        "exit": 0,
+        "stdout": "RESULT timed=0 policy=1 reset_cuts=32 cpu_pauses=11 backend_pauses=11 min_order_ns=19000.000 recovery_backend=0/0 recovery_cpu=0/0 failures=0\n/mnt/c/Users/gabri/projetos/isa1/sim/net18/tb_power_reset.sv:53: $finish called at 4836670905 (1ps)\n",
+        "stderr": "",
+        "seconds": 0.079
+      },
+      "passed": true
+    },
+    {
+      "timed": 1,
+      "resolution_policy": 0,
+      "assertion_delay_ns": 1000,
+      "release_delay_ns": 2000,
+      "early_reset_fault": 0,
+      "cpu_ready_bypass_fault": 0,
+      "compile": {
+        "command": [
+          "iverilog",
+          "-g2012",
+          "-Wall",
+          "-s",
+          "tb_power_reset",
+          "-Ptb_power_reset.TIMED=1",
+          "-Ptb_power_reset.RESOLVE_LATE=0",
+          "-Ptb_power_reset.ASSERT_DELAY=1000",
+          "-Ptb_power_reset.RELEASE_DELAY=2000",
+          "-Ptb_power_reset.FAULT_EARLY=0",
+          "-Ptb_power_reset.FAULT_CPU=0",
+          "-o",
+          "/tmp/isa1-reset-s6kvx9ws/test.vvp",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net03/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net14c/package_models_async.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/power_reset/power_reset_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net18/tb_power_reset.sv"
+        ],
+        "exit": 0,
+        "stdout": "",
+        "stderr": "",
+        "seconds": 0.019
+      },
+      "execution": {
+        "command": [
+          "vvp",
+          "/tmp/isa1-reset-s6kvx9ws/test.vvp"
+        ],
+        "exit": 0,
+        "stdout": "RESULT timed=1 policy=0 reset_cuts=32 cpu_pauses=11 backend_pauses=11 min_order_ns=1045.000 recovery_backend=1/1 recovery_cpu=0/0 failures=0\n/mnt/c/Users/gabri/projetos/isa1/sim/net18/tb_power_reset.sv:53: $finish called at 2978800635 (1ps)\n",
+        "stderr": "",
+        "seconds": 0.157
+      },
+      "passed": true
+    },
+    {
+      "timed": 1,
+      "resolution_policy": 0,
+      "assertion_delay_ns": 1000,
+      "release_delay_ns": 42000,
+      "early_reset_fault": 0,
+      "cpu_ready_bypass_fault": 0,
+      "compile": {
+        "command": [
+          "iverilog",
+          "-g2012",
+          "-Wall",
+          "-s",
+          "tb_power_reset",
+          "-Ptb_power_reset.TIMED=1",
+          "-Ptb_power_reset.RESOLVE_LATE=0",
+          "-Ptb_power_reset.ASSERT_DELAY=1000",
+          "-Ptb_power_reset.RELEASE_DELAY=42000",
+          "-Ptb_power_reset.FAULT_EARLY=0",
+          "-Ptb_power_reset.FAULT_CPU=0",
+          "-o",
+          "/tmp/isa1-reset-s6kvx9ws/test.vvp",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net03/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net14c/package_models_async.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/power_reset/power_reset_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net18/tb_power_reset.sv"
+        ],
+        "exit": 0,
+        "stdout": "",
+        "stderr": "",
+        "seconds": 0.022
+      },
+      "execution": {
+        "command": [
+          "vvp",
+          "/tmp/isa1-reset-s6kvx9ws/test.vvp"
+        ],
+        "exit": 0,
+        "stdout": "RESULT timed=1 policy=0 reset_cuts=32 cpu_pauses=11 backend_pauses=11 min_order_ns=1045.000 recovery_backend=2/2 recovery_cpu=0/0 failures=0\n/mnt/c/Users/gabri/projetos/isa1/sim/net18/tb_power_reset.sv:53: $finish called at 4298858755 (1ps)\n",
+        "stderr": "",
+        "seconds": 0.191
+      },
+      "passed": true
+    },
+    {
+      "timed": 1,
+      "resolution_policy": 0,
+      "assertion_delay_ns": 19000,
+      "release_delay_ns": 2000,
+      "early_reset_fault": 0,
+      "cpu_ready_bypass_fault": 0,
+      "compile": {
+        "command": [
+          "iverilog",
+          "-g2012",
+          "-Wall",
+          "-s",
+          "tb_power_reset",
+          "-Ptb_power_reset.TIMED=1",
+          "-Ptb_power_reset.RESOLVE_LATE=0",
+          "-Ptb_power_reset.ASSERT_DELAY=19000",
+          "-Ptb_power_reset.RELEASE_DELAY=2000",
+          "-Ptb_power_reset.FAULT_EARLY=0",
+          "-Ptb_power_reset.FAULT_CPU=0",
+          "-o",
+          "/tmp/isa1-reset-s6kvx9ws/test.vvp",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net03/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net14c/package_models_async.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/power_reset/power_reset_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net18/tb_power_reset.sv"
+        ],
+        "exit": 0,
+        "stdout": "",
+        "stderr": "",
+        "seconds": 0.019
+      },
+      "execution": {
+        "command": [
+          "vvp",
+          "/tmp/isa1-reset-s6kvx9ws/test.vvp"
+        ],
+        "exit": 0,
+        "stdout": "RESULT timed=1 policy=0 reset_cuts=32 cpu_pauses=11 backend_pauses=11 min_order_ns=19045.000 recovery_backend=0/0 recovery_cpu=0/0 failures=0\n/mnt/c/Users/gabri/projetos/isa1/sim/net18/tb_power_reset.sv:53: $finish called at 3516802175 (1ps)\n",
+        "stderr": "",
+        "seconds": 0.199
+      },
+      "passed": true
+    },
+    {
+      "timed": 1,
+      "resolution_policy": 0,
+      "assertion_delay_ns": 19000,
+      "release_delay_ns": 42000,
+      "early_reset_fault": 0,
+      "cpu_ready_bypass_fault": 0,
+      "compile": {
+        "command": [
+          "iverilog",
+          "-g2012",
+          "-Wall",
+          "-s",
+          "tb_power_reset",
+          "-Ptb_power_reset.TIMED=1",
+          "-Ptb_power_reset.RESOLVE_LATE=0",
+          "-Ptb_power_reset.ASSERT_DELAY=19000",
+          "-Ptb_power_reset.RELEASE_DELAY=42000",
+          "-Ptb_power_reset.FAULT_EARLY=0",
+          "-Ptb_power_reset.FAULT_CPU=0",
+          "-o",
+          "/tmp/isa1-reset-s6kvx9ws/test.vvp",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net03/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net14c/package_models_async.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/power_reset/power_reset_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net18/tb_power_reset.sv"
+        ],
+        "exit": 0,
+        "stdout": "",
+        "stderr": "",
+        "seconds": 0.022
+      },
+      "execution": {
+        "command": [
+          "vvp",
+          "/tmp/isa1-reset-s6kvx9ws/test.vvp"
+        ],
+        "exit": 0,
+        "stdout": "RESULT timed=1 policy=0 reset_cuts=32 cpu_pauses=11 backend_pauses=11 min_order_ns=19045.000 recovery_backend=1/1 recovery_cpu=0/0 failures=0\n/mnt/c/Users/gabri/projetos/isa1/sim/net18/tb_power_reset.sv:53: $finish called at 4836701405 (1ps)\n",
+        "stderr": "",
+        "seconds": 0.234
+      },
+      "passed": true
+    },
+    {
+      "timed": 1,
+      "resolution_policy": 1,
+      "assertion_delay_ns": 1000,
+      "release_delay_ns": 2000,
+      "early_reset_fault": 0,
+      "cpu_ready_bypass_fault": 0,
+      "compile": {
+        "command": [
+          "iverilog",
+          "-g2012",
+          "-Wall",
+          "-s",
+          "tb_power_reset",
+          "-Ptb_power_reset.TIMED=1",
+          "-Ptb_power_reset.RESOLVE_LATE=1",
+          "-Ptb_power_reset.ASSERT_DELAY=1000",
+          "-Ptb_power_reset.RELEASE_DELAY=2000",
+          "-Ptb_power_reset.FAULT_EARLY=0",
+          "-Ptb_power_reset.FAULT_CPU=0",
+          "-o",
+          "/tmp/isa1-reset-s6kvx9ws/test.vvp",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net03/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net14c/package_models_async.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/power_reset/power_reset_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net18/tb_power_reset.sv"
+        ],
+        "exit": 0,
+        "stdout": "",
+        "stderr": "",
+        "seconds": 0.022
+      },
+      "execution": {
+        "command": [
+          "vvp",
+          "/tmp/isa1-reset-s6kvx9ws/test.vvp"
+        ],
+        "exit": 0,
+        "stdout": "RESULT timed=1 policy=1 reset_cuts=32 cpu_pauses=11 backend_pauses=11 min_order_ns=1045.000 recovery_backend=1/1 recovery_cpu=0/0 failures=0\n/mnt/c/Users/gabri/projetos/isa1/sim/net18/tb_power_reset.sv:53: $finish called at 2978800635 (1ps)\n",
+        "stderr": "",
+        "seconds": 0.16
+      },
+      "passed": true
+    },
+    {
+      "timed": 1,
+      "resolution_policy": 1,
+      "assertion_delay_ns": 1000,
+      "release_delay_ns": 42000,
+      "early_reset_fault": 0,
+      "cpu_ready_bypass_fault": 0,
+      "compile": {
+        "command": [
+          "iverilog",
+          "-g2012",
+          "-Wall",
+          "-s",
+          "tb_power_reset",
+          "-Ptb_power_reset.TIMED=1",
+          "-Ptb_power_reset.RESOLVE_LATE=1",
+          "-Ptb_power_reset.ASSERT_DELAY=1000",
+          "-Ptb_power_reset.RELEASE_DELAY=42000",
+          "-Ptb_power_reset.FAULT_EARLY=0",
+          "-Ptb_power_reset.FAULT_CPU=0",
+          "-o",
+          "/tmp/isa1-reset-s6kvx9ws/test.vvp",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net03/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net14c/package_models_async.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/power_reset/power_reset_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net18/tb_power_reset.sv"
+        ],
+        "exit": 0,
+        "stdout": "",
+        "stderr": "",
+        "seconds": 0.021
+      },
+      "execution": {
+        "command": [
+          "vvp",
+          "/tmp/isa1-reset-s6kvx9ws/test.vvp"
+        ],
+        "exit": 0,
+        "stdout": "RESULT timed=1 policy=1 reset_cuts=32 cpu_pauses=11 backend_pauses=11 min_order_ns=1045.000 recovery_backend=2/2 recovery_cpu=0/0 failures=0\n/mnt/c/Users/gabri/projetos/isa1/sim/net18/tb_power_reset.sv:53: $finish called at 4298858755 (1ps)\n",
+        "stderr": "",
+        "seconds": 0.189
+      },
+      "passed": true
+    },
+    {
+      "timed": 1,
+      "resolution_policy": 1,
+      "assertion_delay_ns": 19000,
+      "release_delay_ns": 2000,
+      "early_reset_fault": 0,
+      "cpu_ready_bypass_fault": 0,
+      "compile": {
+        "command": [
+          "iverilog",
+          "-g2012",
+          "-Wall",
+          "-s",
+          "tb_power_reset",
+          "-Ptb_power_reset.TIMED=1",
+          "-Ptb_power_reset.RESOLVE_LATE=1",
+          "-Ptb_power_reset.ASSERT_DELAY=19000",
+          "-Ptb_power_reset.RELEASE_DELAY=2000",
+          "-Ptb_power_reset.FAULT_EARLY=0",
+          "-Ptb_power_reset.FAULT_CPU=0",
+          "-o",
+          "/tmp/isa1-reset-s6kvx9ws/test.vvp",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net03/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net14c/package_models_async.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/power_reset/power_reset_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net18/tb_power_reset.sv"
+        ],
+        "exit": 0,
+        "stdout": "",
+        "stderr": "",
+        "seconds": 0.02
+      },
+      "execution": {
+        "command": [
+          "vvp",
+          "/tmp/isa1-reset-s6kvx9ws/test.vvp"
+        ],
+        "exit": 0,
+        "stdout": "RESULT timed=1 policy=1 reset_cuts=32 cpu_pauses=11 backend_pauses=11 min_order_ns=19045.000 recovery_backend=0/0 recovery_cpu=0/0 failures=0\n/mnt/c/Users/gabri/projetos/isa1/sim/net18/tb_power_reset.sv:53: $finish called at 3516802175 (1ps)\n",
+        "stderr": "",
+        "seconds": 0.203
+      },
+      "passed": true
+    },
+    {
+      "timed": 1,
+      "resolution_policy": 1,
+      "assertion_delay_ns": 19000,
+      "release_delay_ns": 42000,
+      "early_reset_fault": 0,
+      "cpu_ready_bypass_fault": 0,
+      "compile": {
+        "command": [
+          "iverilog",
+          "-g2012",
+          "-Wall",
+          "-s",
+          "tb_power_reset",
+          "-Ptb_power_reset.TIMED=1",
+          "-Ptb_power_reset.RESOLVE_LATE=1",
+          "-Ptb_power_reset.ASSERT_DELAY=19000",
+          "-Ptb_power_reset.RELEASE_DELAY=42000",
+          "-Ptb_power_reset.FAULT_EARLY=0",
+          "-Ptb_power_reset.FAULT_CPU=0",
+          "-o",
+          "/tmp/isa1-reset-s6kvx9ws/test.vvp",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net03/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net14c/package_models_async.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/power_reset/power_reset_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net18/tb_power_reset.sv"
+        ],
+        "exit": 0,
+        "stdout": "",
+        "stderr": "",
+        "seconds": 0.019
+      },
+      "execution": {
+        "command": [
+          "vvp",
+          "/tmp/isa1-reset-s6kvx9ws/test.vvp"
+        ],
+        "exit": 0,
+        "stdout": "RESULT timed=1 policy=1 reset_cuts=32 cpu_pauses=11 backend_pauses=11 min_order_ns=19045.000 recovery_backend=1/1 recovery_cpu=0/0 failures=0\n/mnt/c/Users/gabri/projetos/isa1/sim/net18/tb_power_reset.sv:53: $finish called at 4836701405 (1ps)\n",
+        "stderr": "",
+        "seconds": 0.248
+      },
+      "passed": true
+    }
+  ],
+  "negative": [
+    {
+      "timed": 1,
+      "resolution_policy": 1,
+      "assertion_delay_ns": 1000,
+      "release_delay_ns": 42000,
+      "early_reset_fault": 1,
+      "cpu_ready_bypass_fault": 0,
+      "compile": {
+        "command": [
+          "iverilog",
+          "-g2012",
+          "-Wall",
+          "-s",
+          "tb_power_reset",
+          "-Ptb_power_reset.TIMED=1",
+          "-Ptb_power_reset.RESOLVE_LATE=1",
+          "-Ptb_power_reset.ASSERT_DELAY=1000",
+          "-Ptb_power_reset.RELEASE_DELAY=42000",
+          "-Ptb_power_reset.FAULT_EARLY=1",
+          "-Ptb_power_reset.FAULT_CPU=0",
+          "-o",
+          "/tmp/isa1-reset-s6kvx9ws/test.vvp",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net03/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net14c/package_models_async.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/power_reset/power_reset_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net18/tb_power_reset.sv"
+        ],
+        "exit": 0,
+        "stdout": "",
+        "stderr": "",
+        "seconds": 0.021
+      },
+      "execution": {
+        "command": [
+          "vvp",
+          "/tmp/isa1-reset-s6kvx9ws/test.vvp"
+        ],
+        "exit": 1,
+        "stdout": "FATAL: /mnt/c/Users/gabri/projetos/isa1/sim/net18/tb_power_reset.sv:24: state reset before WE inhibition\n       Time: 135057500  Scope: tb_power_reset\n",
+        "stderr": "",
+        "seconds": 0.015
+      },
+      "expected_rejection": true,
+      "passed": true
+    },
+    {
+      "timed": 1,
+      "resolution_policy": 1,
+      "assertion_delay_ns": 1000,
+      "release_delay_ns": 42000,
+      "early_reset_fault": 0,
+      "cpu_ready_bypass_fault": 1,
+      "compile": {
+        "command": [
+          "iverilog",
+          "-g2012",
+          "-Wall",
+          "-s",
+          "tb_power_reset",
+          "-Ptb_power_reset.TIMED=1",
+          "-Ptb_power_reset.RESOLVE_LATE=1",
+          "-Ptb_power_reset.ASSERT_DELAY=1000",
+          "-Ptb_power_reset.RELEASE_DELAY=42000",
+          "-Ptb_power_reset.FAULT_EARLY=0",
+          "-Ptb_power_reset.FAULT_CPU=1",
+          "-o",
+          "/tmp/isa1-reset-s6kvx9ws/test.vvp",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net03/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net14c/package_models_async.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/power_reset/power_reset_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net18/tb_power_reset.sv"
+        ],
+        "exit": 0,
+        "stdout": "",
+        "stderr": "",
+        "seconds": 0.022
+      },
+      "execution": {
+        "command": [
+          "vvp",
+          "/tmp/isa1-reset-s6kvx9ws/test.vvp"
+        ],
+        "exit": 1,
+        "stdout": "FATAL: /mnt/c/Users/gabri/projetos/isa1/sim/net18/tb_power_reset.sv:45: access released while CPU clock stopped\n       Time: 242000000  Scope: tb_power_reset\n",
+        "stderr": "",
+        "seconds": 0.02
+      },
+      "expected_rejection": true,
+      "passed": true
+    }
+  ],
+  "failures": [],
+  "production_released": false
+}

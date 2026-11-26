@@ -1,0 +1,74 @@
+{
+  "date": "2026-11-26",
+  "library_unchanged": true,
+  "runs": [
+    {
+      "name": "relaxed-gear",
+      "command": [
+        "ngspice",
+        "-b",
+        "-o",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net18/vendor-trial/relaxed-gear.log",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net18/vendor-trial/relaxed-gear.cir"
+      ],
+      "spiceinit": "set ngbehavior=ps",
+      "options": ".options method=gear reltol=.01 abstol=1n vntol=10u trtol=10",
+      "exit": null,
+      "stdout": "",
+      "stderr": "Timeout 60s: incomplete, never approved",
+      "deck": "verification/net18/vendor-trial/relaxed-gear.cir",
+      "log": "verification/net18/vendor-trial/relaxed-gear.log",
+      "final_v": null,
+      "completed": false,
+      "nominal_target_v": 5.232,
+      "vendor_library_sha256": "251545a36d3a9d9295eb00a061f622ef492035feacaaef2a61bf33f606caddb8",
+      "production_released": false
+    },
+    {
+      "name": "shunted-gear",
+      "command": [
+        "ngspice",
+        "-b",
+        "-o",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net18/vendor-trial/shunted-gear.log",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net18/vendor-trial/shunted-gear.cir"
+      ],
+      "spiceinit": "set ngbehavior=ps",
+      "options": ".options method=gear reltol=.003 abstol=1n vntol=1u rshunt=1e12 cshunt=1e-15",
+      "exit": null,
+      "stdout": "",
+      "stderr": "Timeout 60s: incomplete, never approved",
+      "deck": "verification/net18/vendor-trial/shunted-gear.cir",
+      "log": "verification/net18/vendor-trial/shunted-gear.log",
+      "final_v": null,
+      "completed": false,
+      "nominal_target_v": 5.232,
+      "vendor_library_sha256": "251545a36d3a9d9295eb00a061f622ef492035feacaaef2a61bf33f606caddb8",
+      "production_released": false
+    },
+    {
+      "name": "relaxed-trap",
+      "command": [
+        "ngspice",
+        "-b",
+        "-o",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net18/vendor-trial/relaxed-trap.log",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net18/vendor-trial/relaxed-trap.cir"
+      ],
+      "spiceinit": "set ngbehavior=ps",
+      "options": ".options method=trap reltol=.01 abstol=1n vntol=10u trtol=10",
+      "exit": 1,
+      "stdout": "******\n** ngspice-42 : Circuit level simulation program\n** Compiled with KLU Direct Linear Solver\n** The U. C. Berkeley CAD Group\n** Copyright 1985-1994, Regents of the University of California.\n** Copyright 2001-2023, The ngspice team.\n** Please get your ngspice manual from https://ngspice.sourceforge.io/docs.html\n** Please file your bug-reports at http://ngspice.sourceforge.net/bugrep.html\n** Creation Date: Sun Mar 31 20:15:14 UTC 2024\n******\n\nBatch mode\n\nComments and warnings go to log-file: /mnt/c/Users/gabri/projetos/isa1/verification/net18/vendor-trial/relaxed-trap.log\n\n",
+      "stderr": "",
+      "deck": "verification/net18/vendor-trial/relaxed-trap.cir",
+      "log": "verification/net18/vendor-trial/relaxed-trap.log",
+      "final_v": null,
+      "completed": false,
+      "nominal_target_v": 5.232,
+      "vendor_library_sha256": "251545a36d3a9d9295eb00a061f622ef492035feacaaef2a61bf33f606caddb8",
+      "production_released": false
+    }
+  ],
+  "status": "Compatibility research; numerical changes and missing temperature/IQ models prevent physical qualification",
+  "production_released": false
+}

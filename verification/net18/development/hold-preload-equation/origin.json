@@ -1,0 +1,21 @@
+{
+  "status": "Rejected intermediate: ESR equation subtracts pre-cut load although capacitor ESR has zero DC current before isolation",
+  "sources": [
+    {
+      "path": "verification/net18/development/hold-preload-equation/hold-000.cir",
+      "sha256": "13c838cb5ee9f5bca47a7c7f720470ce6b34f5113a897ef483d7c5bef36a4711"
+    },
+    {
+      "path": "verification/net18/development/hold-preload-equation/hold-000.log",
+      "sha256": "120429ec4ff134ab4ef1745fb52ea086cbc9f2f36ceb397d62fb13a348bffb3d"
+    },
+    {
+      "path": "verification/net18/development/hold-preload-equation/hold-up-results.json",
+      "sha256": "9846d04baee9a18f206aa4847b3e066a2aadb404117eedd28c1621c7b8dfce94"
+    },
+    {
+      "path": "verification/net18/development/hold-preload-equation/run_power_hold_up.py",
+      "sha256": "7346c32953144739a414c37d1177a6a5259e3103cd1b9148a97126680d4797c8"
+    }
+  ]
+}

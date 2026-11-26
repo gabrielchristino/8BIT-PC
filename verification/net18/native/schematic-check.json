@@ -1,0 +1,39 @@
+{
+  "components": 18,
+  "ics": 6,
+  "pins": 100,
+  "no_connects": 14,
+  "max_signal_input_loads": 4,
+  "failures": [],
+  "scope": "Exact supervisor/passive/logic pin graph. Digital projection forces RAW_SAFE_N; supervisor internals, finite RESET rise, below-valid-VDD and MTBF are NOT simulated",
+  "supervisor_reset_cmos_inputs": 1,
+  "supervisor_reset_load_budget_pf": 10,
+  "supervisor_analog_model_implemented": false,
+  "production_released": false,
+  "command": [
+    "/home/gabri/.local/opt/isa1-kicad-10.0.8/squashfs-root/usr/bin/kicad-cli",
+    "sch",
+    "export",
+    "netlist",
+    "--format",
+    "kicadxml",
+    "-o",
+    "/mnt/c/Users/gabri/projetos/isa1/verification/net18/native/power_reset.xml",
+    "/mnt/c/Users/gabri/projetos/isa1/hardware/power_reset/power_reset.kicad_sch"
+  ],
+  "kicad": "10.0.8",
+  "sources": [
+    {
+      "path": "tools/build_reset_domains.py",
+      "sha256": "8d64101d820e1e77f1114184e2967ba0a792ab0a0180f71233e3c3e9bd339fac"
+    },
+    {
+      "path": "tools/build_power_reset.py",
+      "sha256": "5a69ba5b0e8d04c21d782b799820274e5d1a67268ec169147a2eab5ef8e053d3"
+    },
+    {
+      "path": "references/power-candidates/tps3703.pdf",
+      "sha256": "cc65714774e50c97dca9a1bf094489b17350cc70fa16068880e108e320f8a6ea"
+    }
+  ]
+}

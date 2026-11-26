@@ -1,0 +1,787 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>/mnt/c/Users/gabri/projetos/isa1/hardware/power_reset/power_reset.kicad_sch</source>
+    <date>2026-11-26T07:45:48</date>
+    <tool>Eeschema 10.0.8</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>ISA-1 delayed bank reset / fast inhibit candidate</title>
+        <company/>
+        <rev>NET-18</rev>
+        <date>2026-11-26</date>
+        <source>power_reset.kicad_sch</source>
+        <comment number="1" value="CANDIDATE - LOAD / PCB / ANALOG VALIDATION PENDING - NOT FOR PRODUCTION"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C1">
+      <value>100nF</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET18" part="C" description=""/>
+      <property name="Sheetname" value="power_reset"/>
+      <property name="Sheetfile" value="power_reset.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1cf17757-f63e-5e6d-8afd-57f8923f8bd5</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C2">
+      <value>100nF</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET18" part="C" description=""/>
+      <property name="Sheetname" value="power_reset"/>
+      <property name="Sheetfile" value="power_reset.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>754951c4-8fb5-5e80-a0ce-f1c41c5bf266</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C3">
+      <value>100nF</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET18" part="C" description=""/>
+      <property name="Sheetname" value="power_reset"/>
+      <property name="Sheetfile" value="power_reset.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3c22c887-24fc-5da1-8caa-6fa28d656dad</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C4">
+      <value>100nF</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET18" part="C" description=""/>
+      <property name="Sheetname" value="power_reset"/>
+      <property name="Sheetfile" value="power_reset.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>23f79a58-388f-593c-bb4d-398636b2e98a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C5">
+      <value>100nF</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET18" part="C" description=""/>
+      <property name="Sheetname" value="power_reset"/>
+      <property name="Sheetfile" value="power_reset.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4c97b489-6fbe-57f4-987f-3d690a5591ca</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C6">
+      <value>1n C0G</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET18" part="C" description=""/>
+      <property name="Sheetname" value="power_reset"/>
+      <property name="Sheetfile" value="power_reset.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>16fec0ec-e2fc-524b-bd94-2dccfacde632</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C7">
+      <value>100nF</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET18" part="C" description=""/>
+      <property name="Sheetname" value="power_reset"/>
+      <property name="Sheetfile" value="power_reset.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4b7cf649-0555-514b-b7b9-85eb291b06aa</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C8">
+      <value>1n C0G sense candidate</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET18" part="C" description=""/>
+      <property name="Sheetname" value="power_reset"/>
+      <property name="Sheetfile" value="power_reset.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>83727805-c293-53f5-872a-a8030e804c4a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R1">
+      <value>10k</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET18" part="R" description=""/>
+      <property name="Sheetname" value="power_reset"/>
+      <property name="Sheetfile" value="power_reset.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>37994754-37b9-50cc-99a6-8ddc6cf6a840</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R2">
+      <value>950 ohm 0.1% effective</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET18" part="R" description=""/>
+      <property name="Sheetname" value="power_reset"/>
+      <property name="Sheetfile" value="power_reset.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3386d2ac-eba5-5035-b151-17e0dec53e4b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R3">
+      <value>100 ohm 0.1% effective</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET18" part="R" description=""/>
+      <property name="Sheetname" value="power_reset"/>
+      <property name="Sheetfile" value="power_reset.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>bfa0e4af-b779-5b48-b2dc-4ac9e8955c68</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R4">
+      <value>10k 1%</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET18" part="R" description=""/>
+      <property name="Sheetname" value="power_reset"/>
+      <property name="Sheetfile" value="power_reset.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>79d95022-373a-5226-8540-d1773e39e624</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U1">
+      <value>SN74AHC125</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET18" part="SN74AHC125" description=""/>
+      <property name="Sheetname" value="power_reset"/>
+      <property name="Sheetfile" value="power_reset.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1468ccc8-a42e-5acf-ad44-b36eac6bd7f4</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="2"/>
+            <pin num="5"/>
+            <pin num="9"/>
+            <pin num="12"/>
+            <pin num="1"/>
+            <pin num="4"/>
+            <pin num="10"/>
+            <pin num="13"/>
+            <pin num="14"/>
+            <pin num="7"/>
+            <pin num="3"/>
+            <pin num="6"/>
+            <pin num="8"/>
+            <pin num="11"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U2">
+      <value>SN74AHC14</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET18" part="SN74AHC14" description=""/>
+      <property name="Sheetname" value="power_reset"/>
+      <property name="Sheetfile" value="power_reset.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c7e0e375-0485-50e2-8f18-5747a0d13489</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="3"/>
+            <pin num="5"/>
+            <pin num="9"/>
+            <pin num="11"/>
+            <pin num="13"/>
+            <pin num="14"/>
+            <pin num="7"/>
+            <pin num="2"/>
+            <pin num="4"/>
+            <pin num="6"/>
+            <pin num="8"/>
+            <pin num="10"/>
+            <pin num="12"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U3">
+      <value>SN74AHC74</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET18" part="SN74AHC74" description=""/>
+      <property name="Sheetname" value="power_reset"/>
+      <property name="Sheetfile" value="power_reset.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>68753d4f-090e-53c4-a832-879b491843d6</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="13"/>
+            <pin num="12"/>
+            <pin num="11"/>
+            <pin num="10"/>
+            <pin num="14"/>
+            <pin num="7"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="9"/>
+            <pin num="8"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U4">
+      <value>SN74AHC08</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET18" part="SN74AHC08" description=""/>
+      <property name="Sheetname" value="power_reset"/>
+      <property name="Sheetfile" value="power_reset.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e9cb9914-7000-585f-a306-4d065189afd6</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="4"/>
+            <pin num="9"/>
+            <pin num="12"/>
+            <pin num="2"/>
+            <pin num="5"/>
+            <pin num="10"/>
+            <pin num="13"/>
+            <pin num="14"/>
+            <pin num="7"/>
+            <pin num="3"/>
+            <pin num="6"/>
+            <pin num="8"/>
+            <pin num="11"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U5">
+      <value>SN74AHC74</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET18" part="SN74AHC74" description=""/>
+      <property name="Sheetname" value="power_reset"/>
+      <property name="Sheetfile" value="power_reset.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>92780e5b-c8f8-59e0-be75-dd1ac11ac8d3</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="13"/>
+            <pin num="12"/>
+            <pin num="11"/>
+            <pin num="10"/>
+            <pin num="14"/>
+            <pin num="7"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="9"/>
+            <pin num="8"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U6">
+      <value>TPS3703F6050DSER</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET18" part="TPS3703F6050DSER" description=""/>
+      <property name="Sheetname" value="power_reset"/>
+      <property name="Sheetfile" value="power_reset.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>63a1cbde-2aa6-5272-8073-f98f59e52154</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="3"/>
+            <pin num="6"/>
+            <pin num="2"/>
+            <pin num="5"/>
+            <pin num="4"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="NET18" part="C">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="NET18" part="R">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="NET18" part="SN74AHC08">
+      <docs>https://www.ti.com/lit/ds/symlink/sn74ahc08.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">SN74AHC08</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/sn74ahc08.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="A0" type="input"/>
+        <pin num="2" name="B0" type="input"/>
+        <pin num="3" name="Y0" type="output"/>
+        <pin num="4" name="A1" type="input"/>
+        <pin num="5" name="B1" type="input"/>
+        <pin num="6" name="Y1" type="output"/>
+        <pin num="7" name="GND" type="power_in"/>
+        <pin num="8" name="Y2" type="output"/>
+        <pin num="9" name="A2" type="input"/>
+        <pin num="10" name="B2" type="input"/>
+        <pin num="11" name="Y3" type="output"/>
+        <pin num="12" name="A3" type="input"/>
+        <pin num="13" name="B3" type="input"/>
+        <pin num="14" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="NET18" part="SN74AHC125">
+      <docs>https://www.ti.com/lit/ds/symlink/sn74ahc125.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">SN74AHC125</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/sn74ahc125.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="OE0_N" type="input"/>
+        <pin num="2" name="A0" type="input"/>
+        <pin num="3" name="Y0" type="output"/>
+        <pin num="4" name="OE1_N" type="input"/>
+        <pin num="5" name="A1" type="input"/>
+        <pin num="6" name="Y1" type="output"/>
+        <pin num="7" name="GND" type="power_in"/>
+        <pin num="8" name="Y2" type="output"/>
+        <pin num="9" name="A2" type="input"/>
+        <pin num="10" name="OE2_N" type="input"/>
+        <pin num="11" name="Y3" type="output"/>
+        <pin num="12" name="A3" type="input"/>
+        <pin num="13" name="OE3_N" type="input"/>
+        <pin num="14" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="NET18" part="SN74AHC14">
+      <docs>https://www.ti.com/lit/ds/symlink/sn74ahc14.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">SN74AHC14</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/sn74ahc14.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="A0" type="input"/>
+        <pin num="2" name="Y0" type="output"/>
+        <pin num="3" name="A1" type="input"/>
+        <pin num="4" name="Y1" type="output"/>
+        <pin num="5" name="A2" type="input"/>
+        <pin num="6" name="Y2" type="output"/>
+        <pin num="7" name="GND" type="power_in"/>
+        <pin num="8" name="Y3" type="output"/>
+        <pin num="9" name="A3" type="input"/>
+        <pin num="10" name="Y4" type="output"/>
+        <pin num="11" name="A4" type="input"/>
+        <pin num="12" name="Y5" type="output"/>
+        <pin num="13" name="A5" type="input"/>
+        <pin num="14" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="NET18" part="SN74AHC74">
+      <docs>https://www.ti.com/lit/ds/symlink/sn74ahc74.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">SN74AHC74</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/sn74ahc74.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="CLR0_N" type="input"/>
+        <pin num="2" name="D0" type="input"/>
+        <pin num="3" name="CLK0" type="input"/>
+        <pin num="4" name="PRE0_N" type="input"/>
+        <pin num="5" name="Q0" type="output"/>
+        <pin num="6" name="QB0" type="output"/>
+        <pin num="7" name="GND" type="power_in"/>
+        <pin num="8" name="QB1" type="output"/>
+        <pin num="9" name="Q1" type="output"/>
+        <pin num="10" name="PRE1_N" type="input"/>
+        <pin num="11" name="CLK1" type="input"/>
+        <pin num="12" name="D1" type="input"/>
+        <pin num="13" name="CLR1_N" type="input"/>
+        <pin num="14" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="NET18" part="TPS3703F6050DSER">
+      <docs>https://www.ti.com/lit/ds/symlink/tps3703.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TPS3703F6050DSER</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/tps3703.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="SENSE" type="input"/>
+        <pin num="2" name="VCC" type="power_in"/>
+        <pin num="3" name="CT" type="input"/>
+        <pin num="4" name="RESET_N" type="open_collector"/>
+        <pin num="5" name="GND" type="power_in"/>
+        <pin num="6" name="MR_N" type="input"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="NET18">
+      <uri>${KIPRJMOD}/bus_packages.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/+5V" class="Default">
+      <node ref="C1" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C2" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C3" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C4" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C5" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C7" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R2" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R4" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="10" pinfunction="OE2_N_10" pintype="input"/>
+      <node ref="U1" pin="13" pinfunction="OE3_N_13" pintype="input"/>
+      <node ref="U1" pin="14" pinfunction="VCC_14" pintype="power_in"/>
+      <node ref="U1" pin="4" pinfunction="OE1_N_4" pintype="input"/>
+      <node ref="U2" pin="14" pinfunction="VCC_14" pintype="power_in"/>
+      <node ref="U3" pin="10" pinfunction="PRE1_N_10" pintype="input"/>
+      <node ref="U3" pin="14" pinfunction="VCC_14" pintype="power_in"/>
+      <node ref="U3" pin="2" pinfunction="D0_2" pintype="input"/>
+      <node ref="U3" pin="4" pinfunction="PRE0_N_4" pintype="input"/>
+      <node ref="U4" pin="14" pinfunction="VCC_14" pintype="power_in"/>
+      <node ref="U5" pin="10" pinfunction="PRE1_N_10" pintype="input"/>
+      <node ref="U5" pin="14" pinfunction="VCC_14" pintype="power_in"/>
+      <node ref="U5" pin="2" pinfunction="D0_2" pintype="input"/>
+      <node ref="U5" pin="4" pinfunction="PRE0_N_4" pintype="input"/>
+      <node ref="U6" pin="2" pinfunction="VCC_2" pintype="power_in"/>
+      <node ref="U6" pin="6" pinfunction="MR_N_6" pintype="input"/>
+    </net>
+    <net code="2" name="/ACCESS_SAFE" class="Default">
+      <node ref="U4" pin="6" pinfunction="Y1_6" pintype="output"/>
+    </net>
+    <net code="3" name="/ALL_READY" class="Default">
+      <node ref="U4" pin="3" pinfunction="Y0_3" pintype="output"/>
+      <node ref="U4" pin="5" pinfunction="B1_5" pintype="input"/>
+    </net>
+    <net code="4" name="/BACKEND" class="Default">
+      <node ref="U3" pin="11" pinfunction="CLK1_11" pintype="input"/>
+      <node ref="U3" pin="3" pinfunction="CLK0_3" pintype="input"/>
+    </net>
+    <net code="5" name="/BANK_RESET_N" class="Default">
+      <node ref="U3" pin="9" pinfunction="Q1_9" pintype="output"/>
+      <node ref="U4" pin="1" pinfunction="A0_1" pintype="input"/>
+    </net>
+    <net code="6" name="/CPU_CLK" class="Default">
+      <node ref="U5" pin="11" pinfunction="CLK1_11" pintype="input"/>
+      <node ref="U5" pin="3" pinfunction="CLK0_3" pintype="input"/>
+    </net>
+    <net code="7" name="/CPU_RESET_N" class="Default">
+      <node ref="U4" pin="2" pinfunction="B0_2" pintype="input"/>
+      <node ref="U5" pin="9" pinfunction="Q1_9" pintype="output"/>
+    </net>
+    <net code="8" name="/CPU_SYNC1" class="Default">
+      <node ref="U5" pin="12" pinfunction="D1_12" pintype="input"/>
+      <node ref="U5" pin="5" pinfunction="Q0_5" pintype="output"/>
+    </net>
+    <net code="9" name="/DELAY_CLEAR_N" class="Default">
+      <node ref="U2" pin="4" pinfunction="Y1_4" pintype="output"/>
+      <node ref="U3" pin="1" pinfunction="CLR0_N_1" pintype="input"/>
+      <node ref="U3" pin="13" pinfunction="CLR1_N_13" pintype="input"/>
+      <node ref="U5" pin="1" pinfunction="CLR0_N_1" pintype="input"/>
+      <node ref="U5" pin="13" pinfunction="CLR1_N_13" pintype="input"/>
+    </net>
+    <net code="10" name="/DELAY_INV" class="Default">
+      <node ref="U2" pin="2" pinfunction="Y0_2" pintype="output"/>
+      <node ref="U2" pin="3" pinfunction="A1_3" pintype="input"/>
+    </net>
+    <net code="11" name="/DELAY_RC" class="Default">
+      <node ref="C6" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R1" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U2" pin="1" pinfunction="A0_1" pintype="input"/>
+    </net>
+    <net code="12" name="/GND" class="Default">
+      <node ref="C1" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C2" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C3" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C4" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C5" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C6" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C7" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C8" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R3" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U1" pin="1" pinfunction="OE0_N_1" pintype="input"/>
+      <node ref="U1" pin="12" pinfunction="A3_12" pintype="input"/>
+      <node ref="U1" pin="5" pinfunction="A1_5" pintype="input"/>
+      <node ref="U1" pin="7" pinfunction="GND_7" pintype="power_in"/>
+      <node ref="U1" pin="9" pinfunction="A2_9" pintype="input"/>
+      <node ref="U2" pin="11" pinfunction="A4_11" pintype="input"/>
+      <node ref="U2" pin="13" pinfunction="A5_13" pintype="input"/>
+      <node ref="U2" pin="5" pinfunction="A2_5" pintype="input"/>
+      <node ref="U2" pin="7" pinfunction="GND_7" pintype="power_in"/>
+      <node ref="U2" pin="9" pinfunction="A3_9" pintype="input"/>
+      <node ref="U3" pin="7" pinfunction="GND_7" pintype="power_in"/>
+      <node ref="U4" pin="10" pinfunction="B2_10" pintype="input"/>
+      <node ref="U4" pin="12" pinfunction="A3_12" pintype="input"/>
+      <node ref="U4" pin="13" pinfunction="B3_13" pintype="input"/>
+      <node ref="U4" pin="7" pinfunction="GND_7" pintype="power_in"/>
+      <node ref="U4" pin="9" pinfunction="A2_9" pintype="input"/>
+      <node ref="U5" pin="7" pinfunction="GND_7" pintype="power_in"/>
+      <node ref="U6" pin="5" pinfunction="GND_5" pintype="power_in"/>
+    </net>
+    <net code="13" name="/RAW_BUFFERED" class="Default">
+      <node ref="R1" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="3" pinfunction="Y0_3" pintype="output"/>
+      <node ref="U4" pin="4" pinfunction="A1_4" pintype="input"/>
+    </net>
+    <net code="14" name="/RAW_SAFE_N" class="Default">
+      <node ref="R4" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U1" pin="2" pinfunction="A0_2" pintype="input"/>
+      <node ref="U6" pin="4" pinfunction="RESET_N_4" pintype="open_collector"/>
+    </net>
+    <net code="15" name="/RESET_SYNC1" class="Default">
+      <node ref="U3" pin="12" pinfunction="D1_12" pintype="input"/>
+      <node ref="U3" pin="5" pinfunction="Q0_5" pintype="output"/>
+    </net>
+    <net code="16" name="/SUPERVISOR_SENSE" class="Default">
+      <node ref="C8" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R2" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R3" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U6" pin="1" pinfunction="SENSE_1" pintype="input"/>
+    </net>
+    <net code="17" name="unconnected-(U1-Y1-Pad6)" class="Default">
+      <node ref="U1" pin="6" pinfunction="Y1_6" pintype="output+no_connect"/>
+    </net>
+    <net code="18" name="unconnected-(U1-Y2-Pad8)" class="Default">
+      <node ref="U1" pin="8" pinfunction="Y2_8" pintype="output+no_connect"/>
+    </net>
+    <net code="19" name="unconnected-(U1-Y3-Pad11)" class="Default">
+      <node ref="U1" pin="11" pinfunction="Y3_11" pintype="output+no_connect"/>
+    </net>
+    <net code="20" name="unconnected-(U2-Y2-Pad6)" class="Default">
+      <node ref="U2" pin="6" pinfunction="Y2_6" pintype="output+no_connect"/>
+    </net>
+    <net code="21" name="unconnected-(U2-Y3-Pad8)" class="Default">
+      <node ref="U2" pin="8" pinfunction="Y3_8" pintype="output+no_connect"/>
+    </net>
+    <net code="22" name="unconnected-(U2-Y4-Pad10)" class="Default">
+      <node ref="U2" pin="10" pinfunction="Y4_10" pintype="output+no_connect"/>
+    </net>
+    <net code="23" name="unconnected-(U2-Y5-Pad12)" class="Default">
+      <node ref="U2" pin="12" pinfunction="Y5_12" pintype="output+no_connect"/>
+    </net>
+    <net code="24" name="unconnected-(U3-QB0-Pad6)" class="Default">
+      <node ref="U3" pin="6" pinfunction="QB0_6" pintype="output+no_connect"/>
+    </net>
+    <net code="25" name="unconnected-(U3-QB1-Pad8)" class="Default">
+      <node ref="U3" pin="8" pinfunction="QB1_8" pintype="output+no_connect"/>
+    </net>
+    <net code="26" name="unconnected-(U4-Y2-Pad8)" class="Default">
+      <node ref="U4" pin="8" pinfunction="Y2_8" pintype="output+no_connect"/>
+    </net>
+    <net code="27" name="unconnected-(U4-Y3-Pad11)" class="Default">
+      <node ref="U4" pin="11" pinfunction="Y3_11" pintype="output+no_connect"/>
+    </net>
+    <net code="28" name="unconnected-(U5-QB0-Pad6)" class="Default">
+      <node ref="U5" pin="6" pinfunction="QB0_6" pintype="output+no_connect"/>
+    </net>
+    <net code="29" name="unconnected-(U5-QB1-Pad8)" class="Default">
+      <node ref="U5" pin="8" pinfunction="QB1_8" pintype="output+no_connect"/>
+    </net>
+    <net code="30" name="unconnected-(U6-CT-Pad3)" class="Default">
+      <node ref="U6" pin="3" pinfunction="CT_3" pintype="input+no_connect"/>
+    </net>
+  </nets>
+</export>

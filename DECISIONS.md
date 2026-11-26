@@ -1,3 +1,13 @@
+## ADR E23 — Separar supervisão rápida, reserva isolada e qualificação do conversor
+
+26/11/2026: criar hardware/power_reset separada da NET-16, incluindo TPS3703F6050DSER candidato e divisor 950/100 ohm; mover entrada do inibidor rápido para RAW_BUFFERED. A saída open-drain do supervisor deve carregar somente uma entrada CMOS mais pull-up/trilha, sob orçamento total de 10pF. Pinagem e regressão digital são verificadas; o supervisor é ponto de injeção externo no modelo, sem simulação analógica interna aprovada.
+
+Propor conversão de USB 5V para trilho interno nominal de 5,232V com TPS63070 em PWM, para acomodar limiar de supervisão, resistência de isolamento e queda de trilha. Alternativas de 5V com esse divisor não mantêm a margem DC; TPS3808 tem tempos típicos insuficientes para a prova máxima proposta. Não selecionar BOM apenas pelo nome do candidato. Não mudar ISA/X/pilha/mapa/VGA ou permitir retorno a VBUS.
+
+O envelope de 4,4mF efetivos/20mohm/1,5A e reverso limitado passou em 64 redes com três negativos; consumo de 456 CIs candidatos permanece aberto e não foi inferido do limite de 1,5A. Ripple, fuga SENSE, derating, reverso, rampas e partida fria continuam requisitos, não resultados. A biblioteca oficial do conversor não concluiu no ngspice: preservar falhas e não promover fonte ideal a validação do regulador.
+
+Aceitação desta etapa: XML/100 pinos, reset/pausas, fronteira binária e rejeição estrita, cantos DC e energia condicionais. Fechamento futuro exige corrente real, conversor/isolamento/POR/USB-C qualificados, integração global, cargas/PVT/MTBF, ERC/DRC e protótipo. [Evidências NET18](docs/engineering/NET18.md).
+
 # Decisões recuperadas e registro da migração
 
 ## ADR E22 — Alvo de 500 Ω com leitura conservadora e espera após habilitar linhas

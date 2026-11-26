@@ -1,0 +1,13 @@
+{
+  "date": "2026-11-26",
+  "command": [
+    "ngspice",
+    "-b",
+    "/mnt/c/Users/gabri/projetos/isa1/verification/net18/vendor-trial/explicit-inductor-esr.cir"
+  ],
+  "local_spiceinit": "set ngbehavior=ps",
+  "transformation": "Replace unsupported testbench inductor Rser parameter by explicit 30mohm series R; original vendor library unchanged",
+  "exit": null,
+  "log": "verification/net18/vendor-trial/explicit-inductor-esr.log",
+  "deck_sha256": "64625f567068ad9200d38ee9095fbf46fbf6523f4cb3ab73762c8ef7ca6880dd"
+}

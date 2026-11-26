@@ -1,3 +1,10 @@
+## 26/11/2026 — NET-18, supervisor candidato e energia condicional
+
+- Variante nativa de seis CIs/100 pinos limita RESET a uma entrada e mantém inibição antes dos bancos nos testes digitais.
+- 64 redes de reserva, 16+16 cantos DC e negativos completos; 456 CIs candidatos inventariados sem consumo fictício.
+- Modelo original TPS63070/ZIP preservado; tentativas de compatibilidade/convergência não concluíram, sem aprovação de regulador.
+- Cinco violações ERC parciais e limites de POR/reverso/carga documentados; fabricação permanece pendente.
+
 NET-15 — 25/11/2026: acrescentados MMIO/teclado por pinos e controlador que aguarda acomodação de colunas; matriz, cortes e RC condicional verificados, intermediários e negativos preservados. Não integrado ainda ao programa completo CPU/raster, sem fabricação liberada.
 
 ## 25/11/2026 — NET-14C, integração CPU/vídeo e correção de clock

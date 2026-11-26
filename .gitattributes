@@ -16,3 +16,9 @@ revisions/** -text
 /verification/net15/**/*.log -whitespace
 /verification/net16/**/*.log -whitespace
 /verification/net17/**/*.log -whitespace
+
+# Preserve official vendor package bytes and native NET18 console output.
+/references/vendor/** -text -whitespace
+/verification/net18/**/*.log -whitespace
+# The captured Git check contains verbatim vendor lines as evidence.
+/verification/net18/development/vendor-original-whitespace/check.txt -whitespace

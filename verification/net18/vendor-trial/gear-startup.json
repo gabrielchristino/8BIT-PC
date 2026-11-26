@@ -1,0 +1,19 @@
+{
+  "date": "2026-11-26",
+  "command": [
+    "ngspice",
+    "-b",
+    "-o",
+    "/mnt/c/Users/gabri/projetos/isa1/verification/net18/vendor-trial/gear-startup.log",
+    "/mnt/c/Users/gabri/projetos/isa1/verification/net18/vendor-trial/gear-startup.cir"
+  ],
+  "local_spiceinit": "set ngbehavior=ps",
+  "vendor_library_unchanged": true,
+  "solver": "Gear integration, no model replacement",
+  "exit": 1,
+  "seconds": 1.6,
+  "stdout": "******\n** ngspice-42 : Circuit level simulation program\n** Compiled with KLU Direct Linear Solver\n** The U. C. Berkeley CAD Group\n** Copyright 1985-1994, Regents of the University of California.\n** Copyright 2001-2023, The ngspice team.\n** Please get your ngspice manual from https://ngspice.sourceforge.io/docs.html\n** Please file your bug-reports at http://ngspice.sourceforge.net/bugrep.html\n** Creation Date: Sun Mar 31 20:15:14 UTC 2024\n******\n\nBatch mode\n\nComments and warnings go to log-file: /mnt/c/Users/gabri/projetos/isa1/verification/net18/vendor-trial/gear-startup.log\n\n",
+  "stderr": "",
+  "deck_sha256": "4f279ec3c8f2f721c763abc7b6623959a97ca1ad46962334ef3a4efca54de6f5",
+  "log": "verification/net18/vendor-trial/gear-startup.log"
+}

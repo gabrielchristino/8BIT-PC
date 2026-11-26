@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-26",
+  "transformation": "Namespace/path/date substitutions listed by this source; original reset monitors preserved. RAW_SAFE_N is supervisor forcepoint, not analog model",
+  "files": [
+    {
+      "base": "sim/net16/tb_reset_domains.sv",
+      "base_sha256": "07387181adf0afa399319a5588c29319a3653751d7e815b12490fccc1208e83f",
+      "generated": "sim/net18/tb_power_reset.sv",
+      "generated_sha256": "9d6ce468e45cd3d18e3f7289d52c27ef1b0e8fabb35fd9fe7bbeb0240fbb9d96"
+    },
+    {
+      "base": "sim/net16/tb_reset_apertures.sv",
+      "base_sha256": "01f999c187f1b1c3fdf84614de25d4a8e33f59d577a521a1c85963cc2f2189b7",
+      "generated": "sim/net18/tb_power_apertures.sv",
+      "generated_sha256": "c5b0b8de7f6967dbfe9430f9135bc559fc247650105b1d5af241cc43893a27fc"
+    },
+    {
+      "base": "tools/run_reset_domains.py",
+      "base_sha256": "11afcadde55846847157c45fc07c25cdb68c1eba757a90a6aed9da7c2a3269f1",
+      "generated": "tools/run_power_reset.py",
+      "generated_sha256": "0c186cb128b38c5dee72b1ccb852896e1bf6d6d946c42e2c9a600d7e88765def"
+    },
+    {
+      "base": "tools/run_reset_apertures.py",
+      "base_sha256": "593f9c70ee2d433c3183ca1e198243171d47377cd171c327f59f2827f5659bea",
+      "generated": "tools/run_power_apertures.py",
+      "generated_sha256": "0ab7f0d6e25cf3bc49cdc2402326953a6503ef5990d255416942a20582b79e88"
+    },
+    {
+      "base": "tools/check_keyboard_500_erc.py",
+      "base_sha256": "bc23d0cf045813e29e73fd700d7c2484574273d4c47ce7f8886088c230e2d981",
+      "generated": "tools/check_power_reset_erc.py",
+      "generated_sha256": "53e53988f41858dd12d8f0c41e5502f0b2faf0902821efe53b4de3b2b7dbd415"
+    }
+  ],
+  "failures": []
+}

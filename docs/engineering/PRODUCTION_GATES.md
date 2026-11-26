@@ -1,3 +1,5 @@
+Atualização NET-18, 26/11/2026: janela DC e hold-up são envelopes condicionais; seis CIs/100 pinos de supervisão/reset em folha parcial. Não qualificam conversor, consumo, reverso, partida fria, curto ou VDD inválido. ERC parcial: cinco violações/retorno 5; nenhuma tentativa do modelo oficial TPS63070 completou. Ver NET18.md antes de integrar ou liberar fabricação.
+
 # Critérios para liberar o ISA-1 para produção
 
 Este é o roteiro de evidências para chegar a uma placa produzível. Uma bancada isolada aprovada não marca um bloco ou a placa inteira como liberado.

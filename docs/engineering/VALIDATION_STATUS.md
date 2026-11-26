@@ -1,3 +1,5 @@
+Atualização NET-18, 26/11/2026: [supervisor/energia condicional](NET18.md), seis CIs/100 pinos, 64 cenários de reserva e regressões digitais passaram; ERC parcial tem cinco violações. O modelo oficial do regulador não completou. Consumo real, conversão/USB-C/isolamento/POR, integração global, PVT/MTBF e PCB/protótipo continuam abertos.
+
 # Lista consolidada de testes, itens e revisões
 
 Atualizada em 26/11/2026, após NET-17 de teclado candidato para 500 Ω e NET-16A/B de reset, ainda separados da integração CPU/raster NET-14C. Esta lista substitui a leitura dos checkboxes antigos como estado atual; eles permanecem no ROADMAP como registros das respectivas etapas. Não há percentual de placa pronta: uma aprovação de modelo não equivale a aprovação elétrica ou física.

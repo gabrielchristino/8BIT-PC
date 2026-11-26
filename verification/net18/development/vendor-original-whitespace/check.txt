@@ -1,0 +1,1676 @@
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:1: trailing whitespace.
++@OrCAD Simulation Server Version: 1.0
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:2: trailing whitespace.
++
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:3: trailing whitespace.
++@Settings: 0 1
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:4: trailing whitespace.
++@General:
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:5: trailing whitespace.
++ProfileName= "Startup" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:6: trailing whitespace.
++ProfileFile= "Startup.sim" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:7: trailing whitespace.
++Connectivity= "Startup.net" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:8: trailing whitespace.
++NetlistFile= "Startup.cir" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:9: trailing whitespace.
++DataFile= "Startup.dat" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:10: trailing whitespace.
++OutFile= "Startup.out" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:11: trailing whitespace.
++Notes=
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:12: trailing whitespace.
++@#$BEGINNOTES
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:13: trailing whitespace.
++@#$ENDNOTES
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:14: trailing whitespace.
++@End General
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:15: trailing whitespace.
++@Analysis: 0 1
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:16: trailing whitespace.
+++0 0 0 0 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:17: trailing whitespace.
+++0 "1m" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:18: trailing whitespace.
+++1 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:19: trailing whitespace.
+++2 "0" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:20: trailing whitespace.
+++3 "20n" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:21: trailing whitespace.
+++4 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:22: trailing whitespace.
+++5 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:23: trailing whitespace.
+++6 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:24: trailing whitespace.
++@End Analysis
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:25: trailing whitespace.
++@Analysis: 1 0
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:26: trailing whitespace.
+++2 0 0
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:27: trailing whitespace.
+++0 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:28: trailing whitespace.
+++1 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:29: trailing whitespace.
+++2 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:30: trailing whitespace.
+++3 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:31: trailing whitespace.
+++4 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:32: trailing whitespace.
+++5 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:33: trailing whitespace.
++@End Analysis
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:34: trailing whitespace.
++@Analysis: 2 0
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:35: trailing whitespace.
+++0 0
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:36: trailing whitespace.
+++0 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:37: trailing whitespace.
+++1 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:38: trailing whitespace.
+++2 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:39: trailing whitespace.
+++3 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:40: trailing whitespace.
+++4 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:41: trailing whitespace.
+++5 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:42: trailing whitespace.
+++6 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:43: trailing whitespace.
+++7 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:44: trailing whitespace.
++@End Analysis
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:45: trailing whitespace.
++@Analysis: 3 0
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:46: trailing whitespace.
+++0 0 0
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:47: trailing whitespace.
+++0 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:48: trailing whitespace.
+++1 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:49: trailing whitespace.
+++2 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:50: trailing whitespace.
++@End Analysis
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:51: trailing whitespace.
++@Analysis: 4 0
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:52: trailing whitespace.
+++0 0 1 0 0 0 0 0 0 0
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:53: trailing whitespace.
+++0 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:54: trailing whitespace.
+++1 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:55: trailing whitespace.
+++2 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:56: trailing whitespace.
+++3 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:57: trailing whitespace.
+++4 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:58: trailing whitespace.
+++5 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:59: trailing whitespace.
+++6 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:60: trailing whitespace.
+++7 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:61: trailing whitespace.
++LoadFile 0 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:62: trailing whitespace.
++SaveFile 0 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:63: trailing whitespace.
++@End Analysis
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:64: trailing whitespace.
++@Analysis: 5 0
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:65: trailing whitespace.
+++0 0
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:66: trailing whitespace.
+++0 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:67: trailing whitespace.
+++1 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:68: trailing whitespace.
+++2 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:69: trailing whitespace.
+++3 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:70: trailing whitespace.
+++4 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:71: trailing whitespace.
+++5 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:72: trailing whitespace.
+++6 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:73: trailing whitespace.
+++7 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:74: trailing whitespace.
++@End Analysis
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:75: trailing whitespace.
++@Analysis: 6 0
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:76: trailing whitespace.
+++1 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:77: trailing whitespace.
+++0 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:78: trailing whitespace.
++@End Analysis
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:79: trailing whitespace.
++@Analysis: 7 0
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:80: trailing whitespace.
+++0 0
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:81: trailing whitespace.
+++0 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:82: trailing whitespace.
+++1 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:83: trailing whitespace.
+++2 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:84: trailing whitespace.
+++3 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:85: trailing whitespace.
+++4 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:86: trailing whitespace.
+++5 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:87: trailing whitespace.
++@End Analysis
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:88: trailing whitespace.
++@Analysis: 8 0
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:89: trailing whitespace.
+++0 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:90: trailing whitespace.
+++0 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:91: trailing whitespace.
+++1 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:92: trailing whitespace.
+++2 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:93: trailing whitespace.
+++3 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:94: trailing whitespace.
+++4 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:95: trailing whitespace.
+++5 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:96: trailing whitespace.
++@End Analysis
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:97: trailing whitespace.
++@Analysis: 9 0
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:98: trailing whitespace.
+++0 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:99: trailing whitespace.
++@End Analysis
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:100: trailing whitespace.
++@Analysis: 10 0
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:101: trailing whitespace.
+++0 0
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:102: trailing whitespace.
+++0 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:103: trailing whitespace.
+++1 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:104: trailing whitespace.
+++2 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:105: trailing whitespace.
+++3 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:106: trailing whitespace.
+++4 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:107: trailing whitespace.
+++5 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:108: trailing whitespace.
+++6 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:109: trailing whitespace.
+++7 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:110: trailing whitespace.
++@End Analysis
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:111: trailing whitespace.
++@Analysis: 11 1
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:112: trailing whitespace.
+++ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:113: trailing whitespace.
+++ ABSTOL "10n"
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:114: trailing whitespace.
+++ ITL2 "40"
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:115: trailing whitespace.
+++ ITL4 "50"
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:116: trailing whitespace.
+++ VNTOL "10u"
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:117: trailing whitespace.
+++ 0 0 0 0 0 0 0 0 0
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:118: trailing whitespace.
++@End Analysis
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:119: trailing whitespace.
++@Analysis: 12 0
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:120: trailing whitespace.
+++8946208 0
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:121: trailing whitespace.
++@End Analysis
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:122: trailing whitespace.
++@Analysis: 13 1
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:123: trailing whitespace.
+++0 1 0 1
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:124: trailing whitespace.
++@End Analysis
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:125: trailing whitespace.
++@Analysis: 14 1
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:126: trailing whitespace.
+++1 1 1 "*" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:127: trailing whitespace.
++@End Analysis
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:128: trailing whitespace.
++@Analysis: 15 0
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:129: trailing whitespace.
++@End Analysis
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:130: trailing whitespace.
++@Analysis: 16 0
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:131: trailing whitespace.
+++0 "0" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:132: trailing whitespace.
+++1 "0" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:133: trailing whitespace.
+++2 "chkpt_default, , ," 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:134: trailing whitespace.
++@End Analysis
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:135: trailing whitespace.
++@Analysis: 17 0
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:136: trailing whitespace.
+++0 "-1" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:137: trailing whitespace.
+++1 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:138: trailing whitespace.
+++2 "-1" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:139: trailing whitespace.
+++3 "-1" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:140: trailing whitespace.
+++4 "1" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup.sim:141: trailing whitespace.
++@End Analysis
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:1: trailing whitespace.
++[DISPLAYS]
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:2: trailing whitespace.
++BEGIN DISPLAY LAST SESSION
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:3: trailing whitespace.
++ANALYSIS TRANSIENT_ANALYSIS
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:4: trailing whitespace.
++SYMBOL ALWAYS
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:5: trailing whitespace.
++TRACECOLORSCHEME NORMAL
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:6: trailing whitespace.
++BEGIN ANAPLOT 1
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:7: trailing whitespace.
++XBASE
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:8: trailing whitespace.
++BEGIN XAXIS
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:9: trailing whitespace.
++XAXISUSERNAME 0 (null)
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:10: trailing whitespace.
++RANGEFLAG AUTO
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:11: trailing whitespace.
++TYPE LINEAR
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:12: trailing whitespace.
++UNIT s
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:13: trailing whitespace.
++BEGIN GRIDS
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:14: trailing whitespace.
++AUTOMATIC
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:15: trailing whitespace.
++MAJORNUMBERS
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:16: trailing whitespace.
++MAJORSTYLE NONE
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:17: trailing whitespace.
++MINORSTYLE NONE
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:18: trailing whitespace.
++END GRIDS
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:19: trailing whitespace.
++END XAXIS
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:20: trailing whitespace.
++BEGIN YAXIS 1
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:21: trailing whitespace.
++YAXISSIDE LEFT
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:22: trailing whitespace.
++ACTIVE
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:23: trailing whitespace.
++RANGEFLAG AUTO
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:24: trailing whitespace.
++TYPE LINEAR
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:25: trailing whitespace.
++UNIT V
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:26: trailing whitespace.
++BEGIN GRIDS
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:27: trailing whitespace.
++AUTOMATIC
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:28: trailing whitespace.
++MAJORNUMBERS
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:29: trailing whitespace.
++MAJORSTYLE LINES
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:30: trailing whitespace.
++MAJORPATTERN SOLID
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:31: trailing whitespace.
++MINORSTYLE NONE
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:32: trailing whitespace.
++END GRIDS
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:33: trailing whitespace.
++BEGIN TRACE V(VOUT)
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:34: trailing whitespace.
++MARKERID 1
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:35: trailing whitespace.
++END TRACE V(VOUT)
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:36: trailing whitespace.
++BEGIN TRACE V(PG)
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:37: trailing whitespace.
++MARKERID 20
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:38: trailing whitespace.
++END TRACE V(PG)
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:39: trailing whitespace.
++END YAXIS 1
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:40: trailing whitespace.
++END ANAPLOT 1
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:41: trailing whitespace.
++BEGIN ANAPLOT 2
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:42: trailing whitespace.
++BEGIN XAXIS
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:43: trailing whitespace.
++XAXISUSERNAME 0 (null)
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:44: trailing whitespace.
++RANGEFLAG AUTO
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:45: trailing whitespace.
++TYPE LINEAR
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:46: trailing whitespace.
++UNIT s
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:47: trailing whitespace.
++BEGIN GRIDS
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:48: trailing whitespace.
++AUTOMATIC
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:49: trailing whitespace.
++MAJORNUMBERS
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:50: trailing whitespace.
++MAJORSTYLE NONE
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:51: trailing whitespace.
++MINORSTYLE NONE
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:52: trailing whitespace.
++END GRIDS
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:53: trailing whitespace.
++END XAXIS
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:54: trailing whitespace.
++BEGIN YAXIS 1
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:55: trailing whitespace.
++YAXISSIDE LEFT
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:56: trailing whitespace.
++ACTIVE
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:57: trailing whitespace.
++RANGEFLAG AUTO
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:58: trailing whitespace.
++TYPE LINEAR
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:59: trailing whitespace.
++UNIT A
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:60: trailing whitespace.
++BEGIN GRIDS
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:61: trailing whitespace.
++AUTOMATIC
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:62: trailing whitespace.
++MAJORNUMBERS
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:63: trailing whitespace.
++MAJORSTYLE LINES
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:64: trailing whitespace.
++MAJORPATTERN SOLID
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:65: trailing whitespace.
++MINORSTYLE NONE
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:66: trailing whitespace.
++END GRIDS
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:67: trailing whitespace.
++BEGIN TRACE I(L1:IN)
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:68: trailing whitespace.
++MARKERID 11
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:69: trailing whitespace.
++END TRACE I(L1:IN)
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:70: trailing whitespace.
++BEGIN TRACE I(Rload)
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:71: trailing whitespace.
++MARKERID 23
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:72: trailing whitespace.
++END TRACE I(Rload)
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:73: trailing whitespace.
++END YAXIS 1
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:74: trailing whitespace.
++END ANAPLOT 2
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:75: trailing whitespace.
++BEGIN ANAPLOT 3
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:76: trailing whitespace.
++BEGIN XAXIS
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:77: trailing whitespace.
++XAXISUSERNAME 0 (null)
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:78: trailing whitespace.
++RANGEFLAG AUTO
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:79: trailing whitespace.
++TYPE LINEAR
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:80: trailing whitespace.
++UNIT s
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:81: trailing whitespace.
++BEGIN GRIDS
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:82: trailing whitespace.
++AUTOMATIC
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:83: trailing whitespace.
++MAJORNUMBERS
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:84: trailing whitespace.
++MAJORSTYLE NONE
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:85: trailing whitespace.
++MINORSTYLE NONE
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:86: trailing whitespace.
++END GRIDS
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:87: trailing whitespace.
++END XAXIS
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:88: trailing whitespace.
++BEGIN YAXIS 1
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:89: trailing whitespace.
++YAXISSIDE LEFT
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:90: trailing whitespace.
++ACTIVE
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:91: trailing whitespace.
++RANGEFLAG AUTO
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:92: trailing whitespace.
++TYPE LINEAR
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:93: trailing whitespace.
++UNIT V
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:94: trailing whitespace.
++BEGIN GRIDS
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:95: trailing whitespace.
++AUTOMATIC
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:96: trailing whitespace.
++MAJORNUMBERS
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:97: trailing whitespace.
++MAJORSTYLE LINES
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:98: trailing whitespace.
++MAJORPATTERN SOLID
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:99: trailing whitespace.
++MINORSTYLE NONE
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:100: trailing whitespace.
++END GRIDS
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:101: trailing whitespace.
++BEGIN TRACE V(L1)
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:102: trailing whitespace.
++MARKERID 9
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:103: trailing whitespace.
++END TRACE V(L1)
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:104: trailing whitespace.
++BEGIN TRACE V(L2)
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:105: trailing whitespace.
++MARKERID 26
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:106: trailing whitespace.
++END TRACE V(L2)
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:107: trailing whitespace.
++END YAXIS 1
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:108: trailing whitespace.
++END ANAPLOT 3
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:109: trailing whitespace.
++BEGIN ANAPLOT 4
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:110: trailing whitespace.
++ACTIVE
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:111: trailing whitespace.
++BEGIN XAXIS
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:112: trailing whitespace.
++XAXISUSERNAME 0 (null)
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:113: trailing whitespace.
++RANGEFLAG AUTO
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:114: trailing whitespace.
++TYPE LINEAR
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:115: trailing whitespace.
++UNIT s
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:116: trailing whitespace.
++BEGIN GRIDS
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:117: trailing whitespace.
++AUTOMATIC
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:118: trailing whitespace.
++MAJORNUMBERS
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:119: trailing whitespace.
++MAJORSTYLE NONE
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:120: trailing whitespace.
++MINORSTYLE NONE
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:121: trailing whitespace.
++END GRIDS
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:122: trailing whitespace.
++END XAXIS
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:123: trailing whitespace.
++BEGIN YAXIS 1
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:124: trailing whitespace.
++YAXISSIDE LEFT
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:125: trailing whitespace.
++ACTIVE
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:126: trailing whitespace.
++RANGEFLAG AUTO
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:127: trailing whitespace.
++TYPE LINEAR
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:128: trailing whitespace.
++UNIT V
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:129: trailing whitespace.
++BEGIN GRIDS
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:130: trailing whitespace.
++AUTOMATIC
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:131: trailing whitespace.
++MAJORNUMBERS
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:132: trailing whitespace.
++MAJORSTYLE LINES
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:133: trailing whitespace.
++MAJORPATTERN SOLID
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:134: trailing whitespace.
++MINORSTYLE NONE
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:135: trailing whitespace.
++END GRIDS
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:136: trailing whitespace.
++BEGIN TRACE V(VIN)
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:137: trailing whitespace.
++MARKERID 8
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:138: trailing whitespace.
++END TRACE V(VIN)
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:139: trailing whitespace.
++END YAXIS 1
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:140: trailing whitespace.
++END ANAPLOT 4
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:141: trailing whitespace.
++END DISPLAY LAST SESSION
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:142: trailing whitespace.
++BEGIN DISPLAY LAST DISPLAY
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:143: trailing whitespace.
++ANALYSIS TRANSIENT_ANALYSIS
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:144: trailing whitespace.
++SYMBOL ALWAYS
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:145: trailing whitespace.
++TRACECOLORSCHEME NORMAL
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:146: trailing whitespace.
++BEGIN ANAPLOT 1
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:147: trailing whitespace.
++ACTIVE
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:148: trailing whitespace.
++XBASE
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:149: trailing whitespace.
++BEGIN XAXIS
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:150: trailing whitespace.
++XAXISUSERNAME 0 (null)
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:151: trailing whitespace.
++RANGEFLAG AUTO
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:152: trailing whitespace.
++TYPE LINEAR
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:153: trailing whitespace.
++UNIT s
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:154: trailing whitespace.
++BEGIN GRIDS
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:155: trailing whitespace.
++AUTOMATIC
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:156: trailing whitespace.
++MAJORNUMBERS
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:157: trailing whitespace.
++MAJORSTYLE NONE
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:158: trailing whitespace.
++MINORSTYLE NONE
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:159: trailing whitespace.
++END GRIDS
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:160: trailing whitespace.
++END XAXIS
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:161: trailing whitespace.
++BEGIN YAXIS 1
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:162: trailing whitespace.
++YAXISSIDE LEFT
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:163: trailing whitespace.
++ACTIVE
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:164: trailing whitespace.
++RANGEFLAG NORANGE
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:165: trailing whitespace.
++TYPE LINEAR
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:166: trailing whitespace.
++UNIT  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:167: trailing whitespace.
++END YAXIS 1
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:168: trailing whitespace.
++END ANAPLOT 1
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Startup/Startup/Startup.prb:169: trailing whitespace.
++END DISPLAY LAST DISPLAY
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:1: trailing whitespace.
++@OrCAD Simulation Server Version: 1.0
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:2: trailing whitespace.
++
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:3: trailing whitespace.
++@Settings: 0 1
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:4: trailing whitespace.
++@General:
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:5: trailing whitespace.
++ProfileName= "Steady" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:6: trailing whitespace.
++ProfileFile= "steady.sim" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:7: trailing whitespace.
++Connectivity= "Steady.net" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:8: trailing whitespace.
++NetlistFile= "Steady.cir" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:9: trailing whitespace.
++DataFile= "Steady.dat" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:10: trailing whitespace.
++OutFile= "Steady.out" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:11: trailing whitespace.
++Notes=
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:12: trailing whitespace.
++@#$BEGINNOTES
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:13: trailing whitespace.
++@#$ENDNOTES
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:14: trailing whitespace.
++@End General
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:15: trailing whitespace.
++@Analysis: 0 1
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:16: trailing whitespace.
+++0 0 0 0 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:17: trailing whitespace.
+++0 "600u" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:18: trailing whitespace.
+++1 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:19: trailing whitespace.
+++2 "580u" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:20: trailing whitespace.
+++3 "20n" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:21: trailing whitespace.
+++4 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:22: trailing whitespace.
+++5 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:23: trailing whitespace.
+++6 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:24: trailing whitespace.
++@End Analysis
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:25: trailing whitespace.
++@Analysis: 1 0
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:26: trailing whitespace.
+++2 0 0
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:27: trailing whitespace.
+++0 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:28: trailing whitespace.
+++1 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:29: trailing whitespace.
+++2 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:30: trailing whitespace.
+++3 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:31: trailing whitespace.
+++4 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:32: trailing whitespace.
+++5 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:33: trailing whitespace.
++@End Analysis
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:34: trailing whitespace.
++@Analysis: 2 0
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:35: trailing whitespace.
+++0 0
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:36: trailing whitespace.
+++0 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:37: trailing whitespace.
+++1 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:38: trailing whitespace.
+++2 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:39: trailing whitespace.
+++3 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:40: trailing whitespace.
+++4 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:41: trailing whitespace.
+++5 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:42: trailing whitespace.
+++6 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:43: trailing whitespace.
+++7 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:44: trailing whitespace.
++@End Analysis
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:45: trailing whitespace.
++@Analysis: 3 0
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:46: trailing whitespace.
+++0 0 0
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:47: trailing whitespace.
+++0 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:48: trailing whitespace.
+++1 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:49: trailing whitespace.
+++2 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:50: trailing whitespace.
++@End Analysis
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:51: trailing whitespace.
++@Analysis: 4 0
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:52: trailing whitespace.
+++0 0 1 0 0 0 0 0 0 0
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:53: trailing whitespace.
+++0 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:54: trailing whitespace.
+++1 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:55: trailing whitespace.
+++2 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:56: trailing whitespace.
+++3 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:57: trailing whitespace.
+++4 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:58: trailing whitespace.
+++5 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:59: trailing whitespace.
+++6 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:60: trailing whitespace.
+++7 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:61: trailing whitespace.
++LoadFile 0 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:62: trailing whitespace.
++SaveFile 0 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:63: trailing whitespace.
++@End Analysis
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:64: trailing whitespace.
++@Analysis: 5 0
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:65: trailing whitespace.
+++0 0
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:66: trailing whitespace.
+++0 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:67: trailing whitespace.
+++1 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:68: trailing whitespace.
+++2 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:69: trailing whitespace.
+++3 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:70: trailing whitespace.
+++4 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:71: trailing whitespace.
+++5 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:72: trailing whitespace.
+++6 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:73: trailing whitespace.
+++7 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:74: trailing whitespace.
++@End Analysis
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:75: trailing whitespace.
++@Analysis: 6 0
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:76: trailing whitespace.
+++1 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:77: trailing whitespace.
+++0 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:78: trailing whitespace.
++@End Analysis
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:79: trailing whitespace.
++@Analysis: 7 0
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:80: trailing whitespace.
+++0 0
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:81: trailing whitespace.
+++0 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:82: trailing whitespace.
+++1 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:83: trailing whitespace.
+++2 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:84: trailing whitespace.
+++3 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:85: trailing whitespace.
+++4 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:86: trailing whitespace.
+++5 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:87: trailing whitespace.
++@End Analysis
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:88: trailing whitespace.
++@Analysis: 8 0
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:89: trailing whitespace.
+++0 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:90: trailing whitespace.
+++0 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:91: trailing whitespace.
+++1 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:92: trailing whitespace.
+++2 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:93: trailing whitespace.
+++3 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:94: trailing whitespace.
+++4 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:95: trailing whitespace.
+++5 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:96: trailing whitespace.
++@End Analysis
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:97: trailing whitespace.
++@Analysis: 9 0
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:98: trailing whitespace.
+++0 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:99: trailing whitespace.
++@End Analysis
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:100: trailing whitespace.
++@Analysis: 10 0
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:101: trailing whitespace.
+++0 0
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:102: trailing whitespace.
+++0 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:103: trailing whitespace.
+++1 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:104: trailing whitespace.
+++2 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:105: trailing whitespace.
+++3 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:106: trailing whitespace.
+++4 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:107: trailing whitespace.
+++5 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:108: trailing whitespace.
+++6 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:109: trailing whitespace.
+++7 "" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:110: trailing whitespace.
++@End Analysis
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:111: trailing whitespace.
++@Analysis: 11 1
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:112: trailing whitespace.
+++ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:113: trailing whitespace.
+++ ABSTOL "10n"
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:114: trailing whitespace.
+++ ITL2 "40"
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:115: trailing whitespace.
+++ ITL4 "50"
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:116: trailing whitespace.
+++ VNTOL "10u"
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:117: trailing whitespace.
+++ 0 0 0 0 0 0 0 0 0
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:118: trailing whitespace.
++@End Analysis
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:119: trailing whitespace.
++@Analysis: 12 0
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:120: trailing whitespace.
+++8946208 0
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:121: trailing whitespace.
++@End Analysis
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:122: trailing whitespace.
++@Analysis: 13 1
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:123: trailing whitespace.
+++0 1 0 1
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:124: trailing whitespace.
++@End Analysis
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:125: trailing whitespace.
++@Analysis: 14 1
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:126: trailing whitespace.
+++1 1 1 "*" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:127: trailing whitespace.
++@End Analysis
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:128: trailing whitespace.
++@Analysis: 15 0
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:129: trailing whitespace.
++@End Analysis
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:130: trailing whitespace.
++@Analysis: 16 0
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:131: trailing whitespace.
+++0 "0" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:132: trailing whitespace.
+++1 "0" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:133: trailing whitespace.
+++2 "chkpt_default, , ," 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:134: trailing whitespace.
++@End Analysis
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:135: trailing whitespace.
++@Analysis: 17 0
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:136: trailing whitespace.
+++0 "-1" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:137: trailing whitespace.
+++1 "-1" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:138: trailing whitespace.
+++2 "-1" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:139: trailing whitespace.
+++3 "-1" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:140: trailing whitespace.
+++4 "1" 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady.sim:141: trailing whitespace.
++@End Analysis
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:1: trailing whitespace.
++[DISPLAYS]
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:2: trailing whitespace.
++BEGIN DISPLAY LAST SESSION
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:3: trailing whitespace.
++ANALYSIS TRANSIENT_ANALYSIS
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:4: trailing whitespace.
++SYMBOL ALWAYS
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:5: trailing whitespace.
++TRACECOLORSCHEME NORMAL
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:6: trailing whitespace.
++BEGIN ANAPLOT 1
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:7: trailing whitespace.
++ACTIVE
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:8: trailing whitespace.
++XBASE
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:9: trailing whitespace.
++BEGIN XAXIS
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:10: trailing whitespace.
++XAXISUSERNAME 0 (null)
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:11: trailing whitespace.
++RANGEFLAG MANUAL
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:12: trailing whitespace.
++TYPE LINEAR
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:13: trailing whitespace.
++UNIT s
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:14: trailing whitespace.
++BEGIN GRIDS
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:15: trailing whitespace.
++AUTOMATIC
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:16: trailing whitespace.
++MAJORNUMBERS
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:17: trailing whitespace.
++MAJORSTYLE NONE
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:18: trailing whitespace.
++MINORSTYLE NONE
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:19: trailing whitespace.
++END GRIDS
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:20: trailing whitespace.
++REFMIN 0.00058
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:21: trailing whitespace.
++REFMAX 0.0006
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:22: trailing whitespace.
++REFUNIT s
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:23: trailing whitespace.
++END XAXIS
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:24: trailing whitespace.
++BEGIN YAXIS 1
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:25: trailing whitespace.
++YAXISSIDE LEFT
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:26: trailing whitespace.
++ACTIVE
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:27: trailing whitespace.
++RANGEFLAG AUTO
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:28: trailing whitespace.
++TYPE LINEAR
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:29: trailing whitespace.
++UNIT V
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:30: trailing whitespace.
++BEGIN GRIDS
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:31: trailing whitespace.
++AUTOMATIC
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:32: trailing whitespace.
++MAJORNUMBERS
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:33: trailing whitespace.
++MAJORSTYLE LINES
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:34: trailing whitespace.
++MAJORPATTERN SOLID
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:35: trailing whitespace.
++MINORSTYLE NONE
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:36: trailing whitespace.
++END GRIDS
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:37: trailing whitespace.
++BEGIN TRACE V(VOUT)
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:38: trailing whitespace.
++MARKERID 19
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:39: trailing whitespace.
++END TRACE V(VOUT)
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:40: trailing whitespace.
++BEGIN TRACE V(PG)
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:41: trailing whitespace.
++MARKERID 25
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:42: trailing whitespace.
++END TRACE V(PG)
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:43: trailing whitespace.
++END YAXIS 1
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:44: trailing whitespace.
++END ANAPLOT 1
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:45: trailing whitespace.
++BEGIN ANAPLOT 2
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:46: trailing whitespace.
++BEGIN XAXIS
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:47: trailing whitespace.
++XAXISUSERNAME 0 (null)
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:48: trailing whitespace.
++RANGEFLAG MANUAL
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:49: trailing whitespace.
++TYPE LINEAR
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:50: trailing whitespace.
++UNIT s
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:51: trailing whitespace.
++BEGIN GRIDS
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:52: trailing whitespace.
++AUTOMATIC
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:53: trailing whitespace.
++MAJORNUMBERS
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:54: trailing whitespace.
++MAJORSTYLE NONE
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:55: trailing whitespace.
++MINORSTYLE NONE
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:56: trailing whitespace.
++END GRIDS
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:57: trailing whitespace.
++REFMIN 0.00058
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:58: trailing whitespace.
++REFMAX 0.0006
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:59: trailing whitespace.
++REFUNIT s
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:60: trailing whitespace.
++END XAXIS
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:61: trailing whitespace.
++BEGIN YAXIS 1
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:62: trailing whitespace.
++YAXISSIDE LEFT
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:63: trailing whitespace.
++ACTIVE
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:64: trailing whitespace.
++RANGEFLAG AUTO
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:65: trailing whitespace.
++TYPE LINEAR
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:66: trailing whitespace.
++UNIT A
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:67: trailing whitespace.
++BEGIN GRIDS
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:68: trailing whitespace.
++AUTOMATIC
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:69: trailing whitespace.
++MAJORNUMBERS
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:70: trailing whitespace.
++MAJORSTYLE LINES
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:71: trailing whitespace.
++MAJORPATTERN SOLID
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:72: trailing whitespace.
++MINORSTYLE NONE
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:73: trailing whitespace.
++END GRIDS
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:74: trailing whitespace.
++BEGIN TRACE I(L1:IN)
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:75: trailing whitespace.
++MARKERID 17
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:76: trailing whitespace.
++END TRACE I(L1:IN)
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:77: trailing whitespace.
++BEGIN TRACE I(Iload)
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:78: trailing whitespace.
++MARKERID 28
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:79: trailing whitespace.
++END TRACE I(Iload)
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:80: trailing whitespace.
++END YAXIS 1
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:81: trailing whitespace.
++END ANAPLOT 2
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:82: trailing whitespace.
++BEGIN ANAPLOT 3
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:83: trailing whitespace.
++BEGIN XAXIS
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:84: trailing whitespace.
++XAXISUSERNAME 0 (null)
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:85: trailing whitespace.
++RANGEFLAG MANUAL
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:86: trailing whitespace.
++TYPE LINEAR
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:87: trailing whitespace.
++UNIT s
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:88: trailing whitespace.
++BEGIN GRIDS
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:89: trailing whitespace.
++AUTOMATIC
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:90: trailing whitespace.
++MAJORNUMBERS
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:91: trailing whitespace.
++MAJORSTYLE NONE
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:92: trailing whitespace.
++MINORSTYLE NONE
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:93: trailing whitespace.
++END GRIDS
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:94: trailing whitespace.
++REFMIN 0.00058
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:95: trailing whitespace.
++REFMAX 0.0006
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:96: trailing whitespace.
++REFUNIT s
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:97: trailing whitespace.
++END XAXIS
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:98: trailing whitespace.
++BEGIN YAXIS 1
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:99: trailing whitespace.
++YAXISSIDE LEFT
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:100: trailing whitespace.
++ACTIVE
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:101: trailing whitespace.
++RANGEFLAG AUTO
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:102: trailing whitespace.
++TYPE LINEAR
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:103: trailing whitespace.
++UNIT V
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:104: trailing whitespace.
++BEGIN GRIDS
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:105: trailing whitespace.
++AUTOMATIC
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:106: trailing whitespace.
++MAJORNUMBERS
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:107: trailing whitespace.
++MAJORSTYLE LINES
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:108: trailing whitespace.
++MAJORPATTERN SOLID
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:109: trailing whitespace.
++MINORSTYLE NONE
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:110: trailing whitespace.
++END GRIDS
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:111: trailing whitespace.
++BEGIN TRACE V(L1)
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:112: trailing whitespace.
++MARKERID 14
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:113: trailing whitespace.
++END TRACE V(L1)
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:114: trailing whitespace.
++BEGIN TRACE V(L2)
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:115: trailing whitespace.
++MARKERID 31
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:116: trailing whitespace.
++END TRACE V(L2)
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:117: trailing whitespace.
++END YAXIS 1
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:118: trailing whitespace.
++END ANAPLOT 3
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:119: trailing whitespace.
++BEGIN ANAPLOT 4
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:120: trailing whitespace.
++BEGIN XAXIS
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:121: trailing whitespace.
++XAXISUSERNAME 0 (null)
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:122: trailing whitespace.
++RANGEFLAG MANUAL
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:123: trailing whitespace.
++TYPE LINEAR
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:124: trailing whitespace.
++UNIT s
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:125: trailing whitespace.
++BEGIN GRIDS
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:126: trailing whitespace.
++AUTOMATIC
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:127: trailing whitespace.
++MAJORNUMBERS
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:128: trailing whitespace.
++MAJORSTYLE NONE
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:129: trailing whitespace.
++MINORSTYLE NONE
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:130: trailing whitespace.
++END GRIDS
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:131: trailing whitespace.
++REFMIN 0.00058
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:132: trailing whitespace.
++REFMAX 0.0006
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:133: trailing whitespace.
++REFUNIT s
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:134: trailing whitespace.
++END XAXIS
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:135: trailing whitespace.
++BEGIN YAXIS 1
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:136: trailing whitespace.
++YAXISSIDE LEFT
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:137: trailing whitespace.
++ACTIVE
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:138: trailing whitespace.
++RANGEFLAG AUTO
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:139: trailing whitespace.
++TYPE LINEAR
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:140: trailing whitespace.
++UNIT V
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:141: trailing whitespace.
++BEGIN GRIDS
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:142: trailing whitespace.
++AUTOMATIC
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:143: trailing whitespace.
++MAJORNUMBERS
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:144: trailing whitespace.
++MAJORSTYLE LINES
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:145: trailing whitespace.
++MAJORPATTERN SOLID
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:146: trailing whitespace.
++MINORSTYLE NONE
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:147: trailing whitespace.
++END GRIDS
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:148: trailing whitespace.
++BEGIN TRACE V(VIN)
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:149: trailing whitespace.
++MARKERID 13
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:150: trailing whitespace.
++END TRACE V(VIN)
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:151: trailing whitespace.
++END YAXIS 1
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:152: trailing whitespace.
++END ANAPLOT 4
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:153: trailing whitespace.
++END DISPLAY LAST SESSION
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:154: trailing whitespace.
++BEGIN DISPLAY LAST DISPLAY
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:155: trailing whitespace.
++ANALYSIS TRANSIENT_ANALYSIS
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:156: trailing whitespace.
++SYMBOL ALWAYS
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:157: trailing whitespace.
++TRACECOLORSCHEME NORMAL
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:158: trailing whitespace.
++BEGIN ANAPLOT 1
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:159: trailing whitespace.
++ACTIVE
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:160: trailing whitespace.
++XBASE
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:161: trailing whitespace.
++BEGIN XAXIS
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:162: trailing whitespace.
++XAXISUSERNAME 0 (null)
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:163: trailing whitespace.
++RANGEFLAG AUTO
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:164: trailing whitespace.
++TYPE LINEAR
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:165: trailing whitespace.
++UNIT s
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:166: trailing whitespace.
++BEGIN GRIDS
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:167: trailing whitespace.
++AUTOMATIC
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:168: trailing whitespace.
++MAJORNUMBERS
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:169: trailing whitespace.
++MAJORSTYLE NONE
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:170: trailing whitespace.
++MINORSTYLE NONE
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:171: trailing whitespace.
++END GRIDS
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:172: trailing whitespace.
++END XAXIS
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:173: trailing whitespace.
++BEGIN YAXIS 1
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:174: trailing whitespace.
++YAXISSIDE LEFT
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:175: trailing whitespace.
++ACTIVE
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:176: trailing whitespace.
++RANGEFLAG NORANGE
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:177: trailing whitespace.
++TYPE LINEAR
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:178: trailing whitespace.
++UNIT  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:179: trailing whitespace.
++END YAXIS 1
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:180: trailing whitespace.
++END ANAPLOT 1
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS-PSpiceFiles/Steady/Steady/Steady.prb:181: trailing whitespace.
++END DISPLAY LAST DISPLAY
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:46: trailing whitespace.
++* 2. Device has 1A of switch current limit during soft start time. 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:54: trailing whitespace.
+++  VIN_1 VOUT_0 VOUT_1 VSEL  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:55: trailing whitespace.
++X_S2    FAULT 0 VOUT_0 0 TPS63070_TOPLEVEL_1_S2 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:56: trailing whitespace.
++X_U3 BOOSTDRV BUCKDRV FAULT ISEN L1 L2 PS_RST VAUX VIN_0 VOUT_0 DRIVER  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:57: trailing whitespace.
++R_R11         0 GND  1m  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:63: trailing whitespace.
+++  V3 V4 VAUX VIN_BUF VOUT_0 VREF VVA HK  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:67: trailing whitespace.
+++  VVA ERRORAMP  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:71: trailing whitespace.
++X_S1    N16787858 0 FB2 GND TPS63070_TOPLEVEL_1_S1 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:74: trailing whitespace.
++R_R10         0 PGND  1m  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:76: trailing whitespace.
++X_U2 BOOSTRAMP BUCKRAMP CLK FAULT V3 VIN_BUF VOUT_0 OSCILLATOR  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:77: trailing whitespace.
++X_U1 BOOSTDRV BOOSTRAMP BUCKDRV BUCKRAMP CLK FAULT PS_RST VCA PWM  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:81: trailing whitespace.
++.SUBCKT PWM BOOSTDRV BOOSTRAMP BUCKDRV BUCKRAMP CLK FAULT PS_RST VCA  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:87: trailing whitespace.
++X_U1_S2    BOOSTDRV 0 N16737598 0 PWM_U1_S2 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:103: trailing whitespace.
++X_D1         N16548402 N16548530 d_d1 PARAMS: 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:106: trailing whitespace.
++X_U1_S1    BUCKDRV 0 N16548402 0 PWM_U1_S1 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:115: trailing whitespace.
++X_D2         N16737598 N16737606 d_d1 PARAMS: 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:118: trailing whitespace.
++C_C1         0 N16548402  1n  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:121: trailing whitespace.
++C_C2         0 N16737598  1n  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:126: trailing whitespace.
++.SUBCKT OSCILLATOR BOOSTRAMP BUCKRAMP CLK FAULT V3 VIN VOUT  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:128: trailing whitespace.
++R_R3         N16708537 N16707526  1  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:129: trailing whitespace.
++C_C1         0 N124395  1n IC=0 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:131: trailing whitespace.
++E_ABM1         N16703633 0 VALUE { IF(V(VIN)>9 & V(VOUT)<2,  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:133: trailing whitespace.
++V_V11         N16702677 0  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:137: trailing whitespace.
++C_C3         0 N16707526  1.443n  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:138: trailing whitespace.
++X_U2_S5    RAMPDIS 0 N124395 0 OSCILLATOR_U2_S5 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:140: trailing whitespace.
++R_R2         N16702677 N16702776  1k  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:142: trailing whitespace.
++V_V10         N16702493 0  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:145: trailing whitespace.
++X_U2_S6    RAMPDIS 0 N126109 0 OSCILLATOR_U2_S6 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:149: trailing whitespace.
++R_R1         N16702493 N16702869  1k  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:150: trailing whitespace.
++X_D5         N126109 SET5 d_d1 PARAMS: 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:154: trailing whitespace.
++C_C2         0 N126109  1n IC=0 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:155: trailing whitespace.
++X_D2         N16708537 N16707526 d_d1 PARAMS: 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:157: trailing whitespace.
++X_D4         N124395 SET5 d_d1 PARAMS: 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:161: trailing whitespace.
+++  VVA  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:162: trailing whitespace.
++X_D16         N16775199 N16775891 d_d1 PARAMS: 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:163: trailing whitespace.
++R_R14         N16772251 N16775891  10  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:164: trailing whitespace.
++R_R8         0 VCA  1e9  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:168: trailing whitespace.
++C_C10         0 N16772251  1n  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:172: trailing whitespace.
++R_R6         N165519481 VVA_PROG  10  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:173: trailing whitespace.
++R_R13         N16772251 N16775199  20k  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:180: trailing whitespace.
++C_CCV         N134364 0  190p IC=0.51 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:181: trailing whitespace.
++T_T1         N16752511 0 N16739465 0 Z0=50 TD=1u  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:182: trailing whitespace.
++C_C8         0 N16732738  1n  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:184: trailing whitespace.
++C_C6         0 VVA  10f  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:185: trailing whitespace.
++R_R9         N16657334 FB  10K  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:187: trailing whitespace.
++R_R10         N16732738 N16665520  7k  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:188: trailing whitespace.
++X_D15         N16657334 N16651148 d_d1 PARAMS: 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:194: trailing whitespace.
++R_R7         0 VVA  1e9  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:196: trailing whitespace.
++R_R12         BUFVOUT N16695454  500  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:198: trailing whitespace.
++C_CCI         0 N138646  20p IC=0 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:199: trailing whitespace.
++C_C7         0 VCA  10f  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:201: trailing whitespace.
++C_C9         0 BUFVOUT  1n  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:203: trailing whitespace.
++C_C5         0 VVA_PROG  1n  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:205: trailing whitespace.
++R_R11         0 N16739465  50  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:206: trailing whitespace.
++R_RZV         N134364 VVA  500k  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:210: trailing whitespace.
++R_R2         N137240 VVA_ACT  0.080  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:211: trailing whitespace.
++R_RZI         N138646 VCA  400k  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:215: trailing whitespace.
+++  VAUX VIN VOUT VREF VVA  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:216: trailing whitespace.
++E_ABM9         N170010511 0 VALUE { MIN(7,MAX(  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:220: trailing whitespace.
++R_R122         N17001094 VAUX  1  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:221: trailing whitespace.
++X_U5_S1    PG_N 0 PG 0 HK_U5_S1 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:223: trailing whitespace.
++C_C9         0 VAUX  1n  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:224: trailing whitespace.
++C_C102         ILAVG_SKIP 0  1n  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:225: trailing whitespace.
++R_R12         N6157414 N6157424  1  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:229: trailing whitespace.
++C_C20         0 N16727053  1.443n  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:232: trailing whitespace.
++R_R11         N16766644 N6144664  50k  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:233: trailing whitespace.
++C_C6         0 N6157424  1n  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:237: trailing whitespace.
++E_ABM101         OVP_DET 0 VALUE { IF( V(VOUT)>V(N17089804),5,0  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:239: trailing whitespace.
++R_R124         N17056047 ILAVG_SKIP  1  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:242: trailing whitespace.
++E_ABM12         N16914430 0 VALUE { (0 +  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:246: trailing whitespace.
++E_ABM2         V3 0 VALUE { (V(VOUT)+V(VIN))/4  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:248: trailing whitespace.
++R_R16         N16969527 ILIMIT  70  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:252: trailing whitespace.
++R_R127         0 N17129366  100k  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:256: trailing whitespace.
+++  +  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:263: trailing whitespace.
+++  V(N17129366),V(NONOVP_PFM)  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:265: trailing whitespace.
++X_D15         FB N16914491 d_d1 PARAMS: 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:274: trailing whitespace.
++R_R26         EN N16727053  70k  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:288: trailing whitespace.
++X_D7         N16727053 EN d_d1 PARAMS: 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:289: trailing whitespace.
++R_R13         N170010511 N17001073  1  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:290: trailing whitespace.
++E_ABM14         N6157414 0 VALUE { IF( V(N16942311)<0.5,  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:291: trailing whitespace.
+++ +V(N17020298),  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:294: trailing whitespace.
++X_D8         N16766644 N6144664 d_d1 PARAMS: 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:295: trailing whitespace.
++C_C10         0 ILIMIT  1n  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:296: trailing whitespace.
++C_C100         0 N17001073  1n  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:297: trailing whitespace.
++R_R126         0 NONOVP_PFM  100k  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:298: trailing whitespace.
++E_ABM100         N17001094 0 VALUE { IF(V(FAULT) > 0.5,0,  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:301: trailing whitespace.
++R_R125         0 N17128646  100k  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:302: trailing whitespace.
++X_U5_S2    FAULT 0 CLIM_RAMP 0 HK_U5_S2 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:303: trailing whitespace.
++C_C5         0 N6144664  1.443n  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:306: trailing whitespace.
++C_Css         0 CLIM_RAMP  1u IC=0 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:310: trailing whitespace.
++.SUBCKT DRIVER BOOSTDRV BUCKDRV FAULT ISEN L1 L2 PS_RST VAUX VIN VOUT  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:311: trailing whitespace.
++R_R3         N162195 N16761268  5  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:314: trailing whitespace.
++C_C7         0 N148451  8p  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:316: trailing whitespace.
++D_D2         0 L1 D_D3 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:317: trailing whitespace.
++X_U3_S2    N16778411 0 N162880 L1 DRIVER_U3_S2 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:318: trailing whitespace.
++X_U3_S5    N16791426 0 L2 0 DRIVER_U3_S5 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:328: trailing whitespace.
++R_R5         N166627 N16709145  6.66  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:334: trailing whitespace.
++C_C12         0 N16709145  1.443n  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:335: trailing whitespace.
++X_D1         L1 N162880 d_d1 PARAMS: 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:339: trailing whitespace.
++X_D4         0 L2 d_d1 PARAMS: 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:340: trailing whitespace.
++X_U3_S4    N16790681 0 VOUT L2 DRIVER_U3_S4 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:343: trailing whitespace.
++R_R8         N167859691 N16820145  1  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:344: trailing whitespace.
++R_R6         N16710240 N16710236  3.33  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:345: trailing whitespace.
++C_C15         0 N16820145  1n  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:346: trailing whitespace.
++E_ABM1         N167308371 0 VALUE { IF(V(FAULT) > 0.5,0,  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:348: trailing whitespace.
++C_C13         0 N16710236  1.443n  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:349: trailing whitespace.
++C_C9         0 ISEN  1n  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:352: trailing whitespace.
++D_D3         L2 VOUT D_D3 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:353: trailing whitespace.
++X_U3_S3    N179660 0 L1 0 DRIVER_U3_S3 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:356: trailing whitespace.
++R_R4         N16705153 N16705014  5  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:361: trailing whitespace.
++C_C11         0 N16705014  1.443n  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:362: trailing whitespace.
++R_R2         N167308371 ISEN  1  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:363: trailing whitespace.
++X_H1    VIN N162880 ISEN_INT 0 DRIVER_H1 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:368: trailing whitespace.
++X_U3_S1    N167831 0 ISEN_INT N148451 DRIVER_U3_S1 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:369: trailing whitespace.
++C_C10         0 N16761268  1.443n  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:372: trailing whitespace.
++.subckt TPS63070_TOPLEVEL_1_S2 1 2 3 4  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:378: trailing whitespace.
++.subckt TPS63070_TOPLEVEL_1_S1 1 2 3 4  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:384: trailing whitespace.
++.subckt PWM_U1_S2 1 2 3 4  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:390: trailing whitespace.
++.subckt PWM_U1_S1 1 2 3 4  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:396: trailing whitespace.
++.subckt OSCILLATOR_U2_S5 1 2 3 4  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:402: trailing whitespace.
++.subckt OSCILLATOR_U2_S6 1 2 3 4  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:408: trailing whitespace.
++.subckt HK_U5_S1 1 2 3 4  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:414: trailing whitespace.
++.subckt HK_U5_S2 1 2 3 4  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:420: trailing whitespace.
++.subckt DRIVER_U3_S2 1 2 3 4  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:426: trailing whitespace.
++.subckt DRIVER_U3_S5 1 2 3 4  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:432: trailing whitespace.
++.subckt DRIVER_U3_S4 1 2 3 4  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:438: trailing whitespace.
++.subckt DRIVER_U3_S3 1 2 3 4  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:444: trailing whitespace.
++.subckt DRIVER_H1 1 2 3 4  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:449: trailing whitespace.
++.subckt DRIVER_U3_S1 1 2 3 4  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:455: trailing whitespace.
++.subckt srlatchrhp_basic_gen s r q qb params: vdd=1 vss=0 vthresh=0.5 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:462: trailing whitespace.
++v2 myvss 0 {vss} 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:467: trailing whitespace.
++rqb qbr qb 1 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:468: trailing whitespace.
++cdummy1 q 0 1n 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:502: trailing whitespace.
++.SUBCKT AND3_BASIC_GEN A B C Y PARAMS: VDD=1 VSS=0 VTHRESH=0.5 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:503: trailing whitespace.
++E_ABMGATE    YINT 0 VALUE {{IF(V(A) > {VTHRESH}  &  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:510: trailing whitespace.
++.SUBCKT INV_BASIC_GEN A  Y PARAMS: VDD=1 VSS=0 VTHRESH=0.5 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:511: trailing whitespace.
++E_ABMGATE    YINT 0 VALUE {{IF(V(A) > {VTHRESH} , 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:517: trailing whitespace.
++.SUBCKT AND2_BASIC_GEN A B Y PARAMS: VDD=1 VSS=0 VTHRESH=0.5 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:518: trailing whitespace.
++E_ABMGATE    YINT 0 VALUE {{IF(V(A) > {VTHRESH}  &  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:524: trailing whitespace.
++.SUBCKT COMPHYS_BASIC_GEN INP INM HYS OUT PARAMS: VDD=1 VSS=0 VTHRESH=0.5	
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:525: trailing whitespace.
++EIN INP1 INM1 INP INM 1 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:533: trailing whitespace.
++.SUBCKT NAND3_BASIC_GEN A B C Y PARAMS: VDD=1 VSS=0 VTHRESH=0.5 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:534: trailing whitespace.
++E_ABMGATE    YINT 0 VALUE {{IF(V(A) > {VTHRESH}  &  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:541: trailing whitespace.
++.SUBCKT BUF_BASIC_GEN A  Y PARAMS: VDD=1 VSS=0 VTHRESH=0.5 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:542: trailing whitespace.
++E_ABMGATE    YINT 0 VALUE {{IF(V(A) > {VTHRESH} , 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:548: trailing whitespace.
++.SUBCKT COMP_BASIC_GEN INP INM Y PARAMS: VDD=1 VSS=0 VTHRESH=0.5	
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:549: trailing whitespace.
++E_ABM Yint 0 VALUE {IF (V(INP) > 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:555: trailing whitespace.
++.SUBCKT MUX2_BASIC_GEN A B S Y PARAMS: VDD=1 VSS=0 VTHRESH=0.5 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:556: trailing whitespace.
++E_ABMGATE  YINT 0 VALUE {{IF(V(S) > {VTHRESH},  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:562: trailing whitespace.
++.SUBCKT OR2_BASIC_GEN A B Y PARAMS: VDD=1 VSS=0 VTHRESH=0.5 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:563: trailing whitespace.
++E_ABMGATE    YINT 0 VALUE {{IF(V(A) > {VTHRESH}  |  
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.LIB:574: trailing whitespace.
++*$ 
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.opj:1: trailing whitespace.
++(ExpressProject "TPS63070_TRANS"
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.opj:2: trailing whitespace.
++  (ProjectVersion "19981106")
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.opj:3: trailing whitespace.
++  (ProjectType "Analog or A/D Mixed Mode")
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.opj:4: trailing whitespace.
++  (Folder "Design Resources"
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.opj:5: trailing whitespace.
++    (Folder "Library"
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.opj:6: trailing whitespace.
++      (File ".\tps63070rnm_trans.olb"
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.opj:7: trailing whitespace.
++        (Type "Schematic Library")))
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.opj:8: trailing whitespace.
++    (NoModify)
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.opj:9: trailing whitespace.
++    (File ".\tps63070_trans.dsn"
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.opj:10: trailing whitespace.
++      (Type "Schematic Design"))
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.opj:11: trailing whitespace.
++    (BuildFileAddedOrDeleted "x")
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.opj:12: trailing whitespace.
++    (CompileFileAddedOrDeleted "x")
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.opj:13: trailing whitespace.
++    (RootChangedForceReNetlist "x")
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.opj:14: trailing whitespace.
++    (PSPICE_Regenerate_Netlist_Flag "FALSE"))
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.opj:15: trailing whitespace.
++  (Folder "Outputs")
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.opj:16: trailing whitespace.
++  (Folder "PSpice Resources"
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.opj:17: trailing whitespace.
++    (Folder "Simulation Profiles"
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.opj:18: trailing whitespace.
++      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.opj:19: trailing whitespace.
++         ".\tps63070_trans-pspicefiles\startup\startup.sim"
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.opj:20: trailing whitespace.
++        (DisplayName "Startup-Startup")
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.opj:21: trailing whitespace.
++        (Type "PSpice Profile"))
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.opj:22: trailing whitespace.
++      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.opj:23: trailing whitespace.
++         ".\tps63070_trans-pspicefiles\steady\steady.sim"
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.opj:24: trailing whitespace.
++        (DisplayName "Steady-Steady")
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.opj:25: trailing whitespace.
++        (Type "PSpice Profile"))
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.opj:26: trailing whitespace.
++      (ActiveProfile ".\tps63070_trans-pspicefiles\startup\startup.sim"))
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.opj:27: trailing whitespace.
++    (Folder "Model Libraries"
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.opj:28: trailing whitespace.
++      (Sort User)
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.opj:29: trailing whitespace.
++      (File ".\tps63070_trans.lib"
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.opj:30: trailing whitespace.
++        (Type "PSpiceLibrary")))
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.opj:31: trailing whitespace.
++    (Folder "Stimulus Files"
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.opj:32: trailing whitespace.
++      (Sort User))
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.opj:33: trailing whitespace.
++    (Folder "Include Files"
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.opj:34: trailing whitespace.
++      (Sort User)))
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.opj:35: trailing whitespace.
++  (DefaultLibraryBrowseDirectory "library\PSpice")
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.opj:36: trailing whitespace.
++  (GlobalState
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.opj:37: trailing whitespace.
++    (FileView
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.opj:38: trailing whitespace.
++      (Path "Design Resources")
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.opj:39: trailing whitespace.
++      (Path "Outputs"))
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.opj:40: trailing whitespace.
++    (HierarchyView)
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.opj:41: trailing whitespace.
++    (Doc
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.opj:42: trailing whitespace.
++      (Type "COrCapturePMDoc")
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.opj:43: trailing whitespace.
++      (Frame
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.opj:44: trailing whitespace.
++        (Placement "44 0 1 -1 -1 -4 -23 0 211 0 386"))
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.opj:45: trailing whitespace.
++      (Tab 0)))
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.opj:46: trailing whitespace.
++  (PartMRUSelector
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.opj:47: trailing whitespace.
++    (TPS63070RNM_TRANS
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.opj:48: trailing whitespace.
++      (FullPartName "TPS63070RNMR.Normal")
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.opj:49: trailing whitespace.
++      (LibraryName
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.opj:50: trailing whitespace.
++         "C:\ELABTRANS_WS\ELABTRANS_DS\PART_NUMBERS\TPS63070\RELEASE_SANKALP\PSPICE\TPS63070_PSPICE_TRANS\TPS63070RNM_TRANS.OLB")
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.opj:51: trailing whitespace.
++      (DeviceIndex "0")))
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.opj:52: trailing whitespace.
++  (MPSSessionName "x0190639")
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.opj:53: trailing whitespace.
++  (LastUsedLibraryBrowseDirectory
+references/vendor/tps63070/original/SLVMBP8/TPS63070_PSPICE_TRANS/TPS63070_TRANS.opj:54: trailing whitespace.
++     "C:\ELABTRANS_WS\ELABTRANS_DS\Part_Numbers\TPS63070\Release_Sankalp\PSPICE\TPS63070_PSPICE_TRANS"))

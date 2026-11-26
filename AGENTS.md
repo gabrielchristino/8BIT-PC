@@ -1,3 +1,11 @@
+## Continuidade NET-18
+
+- Leia docs/engineering/NET18.md. hardware/power_reset é variante separada de NET-16, com supervisor UV-only candidato e inibidor alimentado por RAW_BUFFERED para limitar a carga de RESET. NET-16 permanece intacta.
+- A projeção digital força RAW_SAFE_N; não simula os circuitos analógicos do TPS3703. Preserve recovery estrito, RC inercial e as limitações de pulso/POR/VDD inválido.
+- Hold-up de 64 cenários é condicional a C efetivo >=4,4mF, ESR <=20mohm, carga <=1,5A e reverso limitado em pico/carga. 1,5A não é consumo calculado nem limite instantâneo garantido pelo eFuse. Não estender a curto do trilho ou rampas arbitrárias.
+- Trilho interno 5,232V é proposta de regulação, USB continua 5V. Sense +/-10uA, trilha/ripple, corrente e carga de RESET são orçamentos a qualificar. Não usar típico como máximo.
+- Nenhuma tentativa do modelo oficial TPS63070 completou com medida final; zero do coletor de pesquisa não é aprovação. Originais TI/ZIP intactos, cabeçalhos e logs preservados. ERC parcial retorna 5 com cinco violações.
+
 ## Continuidade NET-17
 
 - Leia docs/engineering/NET17.md. keyboard_500 é variante separada: 41 CIs/806 pinos, colunas 270k, linhas 120k, quatro séries de 820 ohm e espera de 16.384 ciclos. Preserve NET-15 e intermediários.

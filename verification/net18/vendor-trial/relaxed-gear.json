@@ -1,0 +1,22 @@
+{
+  "name": "relaxed-gear",
+  "command": [
+    "ngspice",
+    "-b",
+    "-o",
+    "/mnt/c/Users/gabri/projetos/isa1/verification/net18/vendor-trial/relaxed-gear.log",
+    "/mnt/c/Users/gabri/projetos/isa1/verification/net18/vendor-trial/relaxed-gear.cir"
+  ],
+  "spiceinit": "set ngbehavior=ps",
+  "options": ".options method=gear reltol=.01 abstol=1n vntol=10u trtol=10",
+  "exit": null,
+  "stdout": "",
+  "stderr": "Timeout 60s: incomplete, never approved",
+  "deck": "verification/net18/vendor-trial/relaxed-gear.cir",
+  "log": "verification/net18/vendor-trial/relaxed-gear.log",
+  "final_v": null,
+  "completed": false,
+  "nominal_target_v": 5.232,
+  "vendor_library_sha256": "251545a36d3a9d9295eb00a061f622ef492035feacaaef2a61bf33f606caddb8",
+  "production_released": false
+}

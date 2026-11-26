@@ -1,0 +1,13 @@
+{
+  "date": "2026-11-26",
+  "scope": "Conditional energy/DC and pin-derived reset forcepoint tests only",
+  "hold_up_scenarios": 64,
+  "digital_reset_configurations": 16,
+  "partial_erc_violations": 5,
+  "regulator_vendor_trials_completed": 0,
+  "global_current_budget_closed": false,
+  "full_cpu_integration_executed": false,
+  "physical_por_reverse_fault_qualified": false,
+  "regulator_qualified": false,
+  "production_released": false
+}

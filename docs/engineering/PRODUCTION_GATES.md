@@ -1,3 +1,5 @@
+Atualização NET-20A, 26/11/2026: a ordem digital WE/bancos está ligada aos blocos e observada nos pinos SRAM. Não encerra o gate de alimentação: a entrada AHC125 pode ocupar todos os 10 pF da condição temporal do TPS3703. Fechar carga, transições, limiares, POR/hold-up e consumo antes de aprovação física; 12 violações ERC parciais continuam sem exceções. Ver NET20.md.
+
 Atualização NET-19A, 26/11/2026: CPU/memórias/raster agora usam MMIO/teclado por pinos e controlador com três AHC174. Vetores, boot/quadro e raw scan passaram no escopo digital; ERC parcial 135/retorno5. Energia/domínios, clocks/cargas globais, DAC, firmware de eventos, esquema unido e PCB/protótipo continuam pendentes. Ver NET19A.md.
 
 Atualização NET-18, 26/11/2026: janela DC e hold-up são envelopes condicionais; seis CIs/100 pinos de supervisão/reset em folha parcial. Não qualificam conversor, consumo, reverso, partida fria, curto ou VDD inválido. ERC parcial: cinco violações/retorno 5; nenhuma tentativa do modelo oficial TPS63070 completou. Ver NET18.md antes de integrar ou liberar fabricação.

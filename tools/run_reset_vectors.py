@@ -1,0 +1,49 @@
+"""Adapt verified instruction vectors to actual reset-domain outputs."""
+import hashlib
+import json
+from pathlib import Path
+import sys
+import run_system_vectors as base
+
+ROOT = Path(__file__).resolve().parents[1]
+
+
+def main():
+    folder = ROOT / 'verification/net20/vectors'
+    folder.mkdir(parents=True, exist_ok=True)
+    base.OUT = folder
+    base.MODELS = [p for p in base.MODELS if p != 'sim/net19a/isa1_memory_system.sv'] + [
+        'hardware/system_reset/system_reset_netlist.sv', 'sim/net20/isa1_memory_reset.sv']
+    original = base.fixture
+
+    def fixture(text, timed, refs):
+        text = original(text, timed, refs)
+        old = 'dut(clk,reset_n,power_good,run,boot'
+        if text.count(old) != 1:
+            raise ValueError('Unexpected CPU reset wiring')
+        text = text.replace(old, "dut(memory.cpu_core_clk,memory.cpu_reset_n,1'b1,run,boot")
+        # A physical reset must persist past the maximum RC assertion bound.
+        text = text.replace('repeat(2)@(negedge clk);', 'repeat(6)@(negedge clk);')
+        old = '@(negedge memory.backend_clk);#0.01;'
+        if old not in text:
+            raise ValueError('Vector fixture lacks bank seed staging')
+        text = text.replace(old, 'wait(memory.safe===1);\n     ' + old)
+        return text
+
+    base.fixture = fixture
+    result = base.main()
+    timed = '--timed' in sys.argv
+    quick = '--quick' in sys.argv
+    early = '--early' in sys.argv
+    report_path = folder / ('verified-cpu' + ('-early' if early else '') + ('-timed' if timed else '-ideal') + ('-quick' if quick else '') + '.json')
+    report = json.loads(report_path.read_text())
+    report.update(scope='Instruction vectors with native reset/clock domains and actual CPU reset output; fixture-only architectural/MMIO/memory seeds occur after readiness. Analog supervisor forcepoint/RC conditional; no board/PVT/MTBF signoff.',
+                  supervisor_output_load_qualified=False)
+    for name in ['tools/run_reset_vectors.py', 'tools/make_reset_system.py', 'tools/build_system_reset.py', 'verification/net20/native/system_reset.xml']:
+        report['sources'].append({'path': name, 'sha256': hashlib.sha256((ROOT / name).read_bytes()).hexdigest()})
+    report_path.write_text(json.dumps(report, indent=2) + '\n')
+    return result
+
+
+if __name__ == '__main__':
+    raise SystemExit(main())

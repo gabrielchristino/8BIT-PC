@@ -1,0 +1,6 @@
+{
+  "command": "python3 tools/record_net20_manifest.py",
+  "reason": "Auditoria chamada antes do fim da execução de programa; não foi aceitação nem falha do circuito. Relatório completo foi gerado posteriormente.",
+  "exit": 1,
+  "observed": "FileNotFoundError: program/system-program-ideal.json"
+}

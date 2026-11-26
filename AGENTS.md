@@ -1,3 +1,11 @@
+## Continuidade NET-20A
+
+- Leia docs/engineering/NET20.md. hardware/system_reset e sim/net20 são variantes separadas; CPU usa cpu_core_clk/cpu_reset_n, memórias/decoder/MMIO usam resets atrasados distintos. Não voltar a ligar SRAM ao endereço vivo da CPU.
+- Reset rápido da CPU pode preceder WE alto porque payload HC377 não tem clear; reset dos bancos/posse/endereço físico precisa ocorrer depois do bloqueio. RUN não é gated assíncrono. Monitorar SRAM mesmo após SAFE cair.
+- run_reset_memory.py cruza dois extremos RC e duas políticas binárias: 48 cortes ativos, não milhares de cortes herdados. Negativo de endereço acontece 60 ns após RAW, com SAFE interno baixo; deve cair no monitor independente.
+- Supervisor é forcepoint, não modelo analógico. Ci máximo do AHC125 esgota CL=10 pF do TPS3703; zero margem para trilhas, interface não qualificada. Não apresentar hold-up condicional como garantia física. Alternativas em references/net20 são apenas pesquisa.
+- Distribuição selecionada tem até quatro entradas/saída no orçamento 10pF/entrada+10pF/trilhas; não fecha cargas extraídas, clock físico, skew/PVT/MTBF ou consumo global. ERC parcial tem 12 violações, sem exceções. Programa completo temporizado, energia, DAC, firmware de eventos e PCB/protótipo continuam abertos.
+
 ## Continuidade NET-19A
 
 - Leia docs/engineering/NET19A.md antes de unir o sistema. hardware/system_access muda apenas U1/U2/U3 de HC174 para AHC174, mesma lógica/pinagem/31 CIs. Não relaxar o monitor de HC174 sem trocar o CI real; a reversão reproduz setup inválido.

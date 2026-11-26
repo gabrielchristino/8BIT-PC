@@ -29,3 +29,6 @@ revisions/** -text
 
 # Exact generated bench snapshots are compiled evidence, including emitter spacing.
 /verification/net19a/**/*.sv -whitespace
+/verification/net20/**/*.sv -whitespace
+# Preserve native SPICE console logs as evidence.
+/verification/net20/**/*.log -whitespace

@@ -1,3 +1,5 @@
+Atualização NET-20A, 26/11/2026: oito CIs de reset/distribuição, integração digital de domínios, monitores SRAM independentes de SAFE, 48 cortes em RAM/VRAM, CPU/relógios/teclado e hold-up condicional revisado. Registrada lacuna de CL do supervisor; nenhuma aprovação física inferida. Ver docs/engineering/NET20.md.
+
 ## 26/11/2026 — NET-19A, integração CPU/teclado e correção temporal
 
 - MMIO/colunas procedurais substituídos por pinos e temporizador real da NET17; arquitetura e mapa preservados.

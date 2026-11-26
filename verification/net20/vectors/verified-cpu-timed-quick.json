@@ -1,0 +1,525 @@
+{
+  "date": "2026-11-26",
+  "scope": "Instruction vectors with native reset/clock domains and actual CPU reset output; fixture-only architectural/MMIO/memory seeds occur after readiness. Analog supervisor forcepoint/RC conditional; no board/PVT/MTBF signoff.",
+  "bench": "tb_rtl_cpu",
+  "negative_bank": false,
+  "legacy_state": false,
+  "early_state_cq": false,
+  "timed": true,
+  "quick": true,
+  "iverilog": "Icarus Verilog version 12.0 (stable) ()",
+  "sources": [
+    {
+      "path": "sim/hdl/hc_models.sv",
+      "sha256": "f305ff38b7e58701e9f97528de68ea8c5518a628d38bd5a8ac9e847fa87c8680"
+    },
+    {
+      "path": "sim/net02/package_models.sv",
+      "sha256": "de2fd5315a3809a89ba90b8f09a96a25d06d3e00b8568a8f82387b92a624199f"
+    },
+    {
+      "path": "sim/net03/package_models.sv",
+      "sha256": "53712265aa1d4312866135c59e73d7543069c7a3281635d43d66825790716258"
+    },
+    {
+      "path": "sim/net04/package_models.sv",
+      "sha256": "85b00a3b6b0307d68b53e4ea1ae97ba5cbf83c20685544bb12fde333efa07d63"
+    },
+    {
+      "path": "hardware/cpu_global/cpu_global_netlist.sv",
+      "sha256": "70f251891939357d16b942eee168b836df5ae801f082ef70de787600758ebe7a"
+    },
+    {
+      "path": "hardware/memory_decode/memory_decode_netlist.sv",
+      "sha256": "ea33aea0e9d2977fb9fe683e11526e183bc4c3edac465e221b135d873860f0a4"
+    },
+    {
+      "path": "sim/net19a/package_models.sv",
+      "sha256": "dc71d5b1f5bcefcf7e20dc9a930de79c4ebc7fec145961dcbabd79a4766ac957"
+    },
+    {
+      "path": "hardware/system_access/system_access_netlist.sv",
+      "sha256": "afac84baef3304ebfd6575dcb5fbdb8d9441a2ef0a20f0e842b16e485dd98b13"
+    },
+    {
+      "path": "sim/net13/memory_devices.sv",
+      "sha256": "cf166183d3ffc7a94fd722ad6e6b2ea00c9fa02f3f8405efe4600f37427a4af1"
+    },
+    {
+      "path": "hardware/memory_bus/memory_bus_netlist.sv",
+      "sha256": "d8730776c4166a2b1a5df1e314d8148f66ed970ff513379401392329d8722ea3"
+    },
+    {
+      "path": "sim/net14c/package_models_async.sv",
+      "sha256": "7b45346f5e25bb73deb33ba9fb02d50e2b020ab527f75fed1244e173300ccfcb"
+    },
+    {
+      "path": "sim/net14c/video_raster_async_netlist.sv",
+      "sha256": "9885b7aeeb25428fa6a25ea6157061837175d971d4f81bef11c0b5018bcca38f"
+    },
+    {
+      "path": "hardware/keyboard_500/keyboard_500_netlist.sv",
+      "sha256": "b6ed3cf1f838f2782e5e3420eb32ca316f750a76d27030cbacd6837abe32e9e8"
+    },
+    {
+      "path": "hardware/system_reset/system_reset_netlist.sv",
+      "sha256": "746b912225c88c17b05449275b484a2f84c46fec384f7e1cd6997d96be5a51dd"
+    },
+    {
+      "path": "sim/net20/isa1_memory_reset.sv",
+      "sha256": "c0bf6e94911e28c873d6baa4cfa9faf0bd3bcf73a4fe0cbc2300d306faaccbfe"
+    },
+    {
+      "path": "tools/run_system_vectors.py",
+      "sha256": "be3e692af7abf301cf66af0c6c6f551ca964e259c7a7edcdb1a912b5c6fc78d2"
+    },
+    {
+      "path": "tools/prepare_system_vectors.py",
+      "sha256": "81e9a903fb20bbbc58ace1aa4e716be03f6bd369cc79aecaa669830154c96f90"
+    },
+    {
+      "path": "tools/run_system_cpu.py",
+      "sha256": "c106d0c2d457074718f556a012ead2fcb959163027cdd53d1beebd72408a9438"
+    },
+    {
+      "path": "tools/make_system_cpu.py",
+      "sha256": "5729b5b88b1538ea0151e79beeac0aa38c98a078ab9562c4ac05a7c84950b88d"
+    },
+    {
+      "path": "tools/run_keyboard_cpu.py",
+      "sha256": "d2b23c9e72a74c207d900b70453e9a122d4605b96cd4c66e231c9177c83589e8"
+    },
+    {
+      "path": "tools/make_keyboard_cpu.py",
+      "sha256": "1c9109cec0375a5a30aaae74eac73975054cc1e3999e715101c5ec299ab9ff2a"
+    },
+    {
+      "path": "tools/run_video_cpu_async.py",
+      "sha256": "e319f8d51fcb96c82d3e349179cac12f3ce8fcc677084b08051b62e6b71357bf"
+    },
+    {
+      "path": "sim/tests/tb_rtl_cpu.sv",
+      "sha256": "eebade88cd0e3366b9331d7044b535758889f227d1e4603fcb05001e981842bb"
+    },
+    {
+      "path": "verification/net19a/adapter-origin.json",
+      "sha256": "f6f1237b52918b6569f207b99d51a96f98c04fd3c4a746d646905dda32a92651"
+    },
+    {
+      "path": "hardware/keyboard_500/design.json",
+      "sha256": "483c1b3caacd92302ffaad80fb69ec59a635f9f7b4bb10488fcbcec82ab51af5"
+    },
+    {
+      "path": "hardware/keyboard_access/design.json",
+      "sha256": "bfaf195042f31c76e1b5b2d3e8bae95d31c1ac52735dc579f5867381ba98d578"
+    },
+    {
+      "path": "hardware/system_access/design.json",
+      "sha256": "aeb4be9eed1372cd4b22be78d20dcb659ec387520306f45fa1cd15bd1cdb64a2"
+    },
+    {
+      "path": "verification/net19a/native/system_access.xml",
+      "sha256": "c9a0b2d7384e8145b569858d5aabe8581d9bbbe388e86f9afcd27ac7913689b4"
+    },
+    {
+      "path": "tools/build_system_access.py",
+      "sha256": "416b291b436f94f3b7aa3ca6c197b4ec9959c250bd67c81574a735e5ab82c49a"
+    },
+    {
+      "path": "references/ti/sn74ahc174.pdf",
+      "sha256": "75de6d4176cc6ed67d3e4bd75c14240e54e7061c0f2aad62f1e974a66b6bf8a7"
+    },
+    {
+      "path": "verification/net17/native/keyboard_500.xml",
+      "sha256": "294107e5117a464fed800075dc6a087701104061d43ffc47234436f7a24a1525"
+    },
+    {
+      "path": "tools/run_rtl.py",
+      "sha256": "f9b071d1009109cf115977562734881a826a61e046715f5580cee50b746077dd"
+    },
+    {
+      "path": "firmware/rtl01_diagnostic.asm",
+      "sha256": "ee198751b959ff6580176842de245699e57476b5e66d49eabece0fd53e38c046"
+    },
+    {
+      "path": "verification/net15/access/keyboard_access.xml",
+      "sha256": "8e7e3a4da8a041c9aa69306990187ccda1655fda75af67dc2dc0e39cc4c1cd3d"
+    },
+    {
+      "path": "revisions/rev983/control_lane0.bin",
+      "sha256": "d8e4a90ed70b376c12cda278f659b32decb14e0b588bda475932124dc5c576f2"
+    },
+    {
+      "path": "revisions/rev983/control_lane1.bin",
+      "sha256": "e403962ad102f2018347fbc1f9c8ba01b7ad71c23d29824eee33248ee29f2da6"
+    },
+    {
+      "path": "revisions/rev983/control_lane2.bin",
+      "sha256": "1cb7101341d7b4e13bb615695d4e5bbeb55b4de5132ad8e408033c8effceefe6"
+    },
+    {
+      "path": "revisions/rev983/control_lane3.bin",
+      "sha256": "20cca3fa9b9106e433062a0fd4001f8d3575200708c5b1e2ff3758f3ed962461"
+    },
+    {
+      "path": "tools/run_reset_vectors.py",
+      "sha256": "70cee23eb45f676500c4d86c3c25b1221b263dfc4b4029c90f0027a38842c8d3"
+    },
+    {
+      "path": "tools/make_reset_system.py",
+      "sha256": "6ae4691a6381d317a7e1c0d8495d06b04c32946d19f0f23e22aa157aef17fd00"
+    },
+    {
+      "path": "tools/build_system_reset.py",
+      "sha256": "d50598869d6248f2c2111d999ae9583319913ecac0c4cb3e61886edbe71a4c2f"
+    },
+    {
+      "path": "verification/net20/native/system_reset.xml",
+      "sha256": "de6e4ca0f9de06df8c41518acda00e8caf387c2c94ffb7e9fad2249240754df1"
+    }
+  ],
+  "runs": [
+    {
+      "compile": {
+        "command": [
+          "iverilog",
+          "-g2012",
+          "-Wall",
+          "-s",
+          "tb_rtl_cpu",
+          "-Ptb_rtl_cpu.CASES=1062",
+          "-o",
+          "/tmp/isa1-keyboard-cpu-9ss9spmg/bench.vvp",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/hdl/hc_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net02/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net03/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net04/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/cpu_global/cpu_global_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/memory_decode/memory_decode_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net19a/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/system_access/system_access_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net13/memory_devices.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/memory_bus/memory_bus_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net14c/package_models_async.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net14c/video_raster_async_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/keyboard_500/keyboard_500_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/system_reset/system_reset_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net20/isa1_memory_reset.sv",
+          "/tmp/isa1-keyboard-cpu-9ss9spmg/tb_rtl_cpu.sv"
+        ],
+        "exit": 0,
+        "stdout": "",
+        "stderr": "",
+        "seconds": 0.149
+      },
+      "execution": {
+        "command": [
+          "vvp",
+          "/tmp/isa1-keyboard-cpu-9ss9spmg/bench.vvp"
+        ],
+        "exit": 0,
+        "stdout": "RESULT hc191=0 instruction_cases=1062 transactions=1821 wait_checks=3645 failures=0\nMEMORY_MODEL ram_valid_writes=73 vram_valid_writes=8 ram_aborts=0 vram_aborts=0 fixture_defaults=1\nRESET_BOUNDARY stage1_recovery_events=88 stage2_recovery_events=88 binary_resolution_late=1 analog_metastability_approved=0\nSTATE_TIMING observed_setup_ns=54.888/38.944/48.944\n/tmp/isa1-keyboard-cpu-9ss9spmg/tb_rtl_cpu.sv:92: $finish called at 426086000000 (1ps)\n",
+        "stderr": "",
+        "seconds": 582.015
+      },
+      "passed": true
+    }
+  ],
+  "failures": [],
+  "production_released": false,
+  "opcode_cases": {
+    "00": 32,
+    "01": 1,
+    "02": 1,
+    "03": 1,
+    "04": 1,
+    "05": 1,
+    "06": 1,
+    "07": 1,
+    "08": 1,
+    "09": 1,
+    "0a": 1,
+    "0b": 1,
+    "0c": 1,
+    "0d": 1,
+    "0e": 1,
+    "0f": 1,
+    "10": 32,
+    "11": 32,
+    "12": 1,
+    "13": 1,
+    "14": 1,
+    "15": 1,
+    "16": 1,
+    "17": 1,
+    "18": 1,
+    "19": 1,
+    "1a": 1,
+    "1b": 1,
+    "1c": 1,
+    "1d": 1,
+    "1e": 1,
+    "1f": 1,
+    "20": 32,
+    "21": 32,
+    "22": 32,
+    "23": 32,
+    "24": 32,
+    "25": 32,
+    "26": 32,
+    "27": 1,
+    "28": 1,
+    "29": 1,
+    "2a": 1,
+    "2b": 1,
+    "2c": 1,
+    "2d": 1,
+    "2e": 1,
+    "2f": 1,
+    "30": 32,
+    "31": 32,
+    "32": 32,
+    "33": 32,
+    "34": 32,
+    "35": 32,
+    "36": 32,
+    "37": 1,
+    "38": 1,
+    "39": 1,
+    "3a": 1,
+    "3b": 1,
+    "3c": 1,
+    "3d": 1,
+    "3e": 1,
+    "3f": 1,
+    "40": 32,
+    "41": 32,
+    "42": 32,
+    "43": 1,
+    "44": 1,
+    "45": 1,
+    "46": 1,
+    "47": 1,
+    "48": 1,
+    "49": 1,
+    "4a": 1,
+    "4b": 1,
+    "4c": 1,
+    "4d": 1,
+    "4e": 1,
+    "4f": 1,
+    "50": 32,
+    "51": 32,
+    "52": 32,
+    "53": 32,
+    "54": 32,
+    "55": 1,
+    "56": 1,
+    "57": 1,
+    "58": 1,
+    "59": 1,
+    "5a": 1,
+    "5b": 1,
+    "5c": 1,
+    "5d": 1,
+    "5e": 1,
+    "5f": 1,
+    "60": 1,
+    "61": 1,
+    "62": 1,
+    "63": 1,
+    "64": 1,
+    "65": 1,
+    "66": 1,
+    "67": 1,
+    "68": 1,
+    "69": 1,
+    "6a": 1,
+    "6b": 1,
+    "6c": 1,
+    "6d": 1,
+    "6e": 1,
+    "6f": 1,
+    "70": 1,
+    "71": 1,
+    "72": 1,
+    "73": 1,
+    "74": 1,
+    "75": 1,
+    "76": 1,
+    "77": 1,
+    "78": 1,
+    "79": 1,
+    "7a": 1,
+    "7b": 1,
+    "7c": 1,
+    "7d": 1,
+    "7e": 1,
+    "7f": 1,
+    "80": 1,
+    "81": 1,
+    "82": 1,
+    "83": 1,
+    "84": 1,
+    "85": 1,
+    "86": 1,
+    "87": 1,
+    "88": 1,
+    "89": 1,
+    "8a": 1,
+    "8b": 1,
+    "8c": 1,
+    "8d": 1,
+    "8e": 1,
+    "8f": 1,
+    "90": 1,
+    "91": 1,
+    "92": 1,
+    "93": 1,
+    "94": 1,
+    "95": 1,
+    "96": 1,
+    "97": 1,
+    "98": 1,
+    "99": 1,
+    "9a": 1,
+    "9b": 1,
+    "9c": 1,
+    "9d": 1,
+    "9e": 1,
+    "9f": 1,
+    "a0": 1,
+    "a1": 1,
+    "a2": 1,
+    "a3": 1,
+    "a4": 1,
+    "a5": 1,
+    "a6": 1,
+    "a7": 1,
+    "a8": 1,
+    "a9": 1,
+    "aa": 1,
+    "ab": 1,
+    "ac": 1,
+    "ad": 1,
+    "ae": 1,
+    "af": 1,
+    "b0": 1,
+    "b1": 1,
+    "b2": 1,
+    "b3": 1,
+    "b4": 1,
+    "b5": 1,
+    "b6": 1,
+    "b7": 1,
+    "b8": 1,
+    "b9": 1,
+    "ba": 1,
+    "bb": 1,
+    "bc": 1,
+    "bd": 1,
+    "be": 1,
+    "bf": 1,
+    "c0": 1,
+    "c1": 1,
+    "c2": 1,
+    "c3": 1,
+    "c4": 1,
+    "c5": 1,
+    "c6": 1,
+    "c7": 1,
+    "c8": 1,
+    "c9": 1,
+    "ca": 1,
+    "cb": 1,
+    "cc": 1,
+    "cd": 1,
+    "ce": 1,
+    "cf": 1,
+    "d0": 1,
+    "d1": 1,
+    "d2": 1,
+    "d3": 1,
+    "d4": 1,
+    "d5": 1,
+    "d6": 1,
+    "d7": 1,
+    "d8": 1,
+    "d9": 1,
+    "da": 1,
+    "db": 1,
+    "dc": 1,
+    "dd": 1,
+    "de": 1,
+    "df": 1,
+    "e0": 1,
+    "e1": 1,
+    "e2": 1,
+    "e3": 1,
+    "e4": 1,
+    "e5": 1,
+    "e6": 1,
+    "e7": 1,
+    "e8": 1,
+    "e9": 1,
+    "ea": 1,
+    "eb": 1,
+    "ec": 1,
+    "ed": 1,
+    "ee": 1,
+    "ef": 1,
+    "f0": 1,
+    "f1": 1,
+    "f2": 1,
+    "f3": 1,
+    "f4": 1,
+    "f5": 1,
+    "f6": 1,
+    "f7": 1,
+    "f8": 1,
+    "f9": 1,
+    "fa": 1,
+    "fb": 1,
+    "fc": 1,
+    "fd": 1,
+    "fe": 1,
+    "ff": 32
+  },
+  "program": {
+    "retirements": 132197,
+    "transactions": 232576,
+    "opcodes": [
+      0,
+      16,
+      17,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      64,
+      65,
+      66,
+      80,
+      81,
+      82,
+      83,
+      84,
+      255
+    ],
+    "assembled_bytes": 194,
+    "firmware_sha256": "add3a0d59064d91c80b729504a364143e36b7d8dd88ba7a004e66da83e536d90",
+    "boot_image_sha256": "f55d63d70b2da8150b0586e665823639374734ac181f1aefa801a06b8f6b1393"
+  },
+  "adapted_bench_sha256": "68026f3cbc2f9fae2e6fc80f14545bb2c04897fd63952bcca5437f3edd7632cb",
+  "supervisor_output_load_qualified": false
+}

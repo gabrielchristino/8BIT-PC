@@ -1,0 +1,213 @@
+{
+  "date": "2026-11-26",
+  "scope": "Raw scan executed by native CPU with separate fast CPU/delayed memory reset and buffered clocks. Qualified RAW forcepoint, not analog supervisor, power, PVT/skew or physical proof.",
+  "timed": true,
+  "negative": false,
+  "image_sha256": "eb21c2f51a6202292a2cc7c1f10842f28304fe5b1daab7cb5fa46eae48e5fde2",
+  "assembled_bytes": 69,
+  "patterns": [
+    {
+      "keys": "0000000000000000",
+      "expected_rows": [
+        65535,
+        65535,
+        65535,
+        65535
+      ]
+    },
+    {
+      "keys": "8000000000000001",
+      "expected_rows": [
+        65534,
+        65535,
+        65535,
+        32767
+      ]
+    },
+    {
+      "keys": "0000000000010101",
+      "expected_rows": [
+        65278,
+        65278,
+        65535,
+        65535
+      ]
+    },
+    {
+      "keys": "0000000100008000",
+      "expected_rows": [
+        32767,
+        65535,
+        65534,
+        65535
+      ]
+    },
+    {
+      "keys": "0000400000080000",
+      "expected_rows": [
+        65535,
+        65527,
+        49151,
+        65535
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "path": "sim/hdl/hc_models.sv",
+      "sha256": "f305ff38b7e58701e9f97528de68ea8c5518a628d38bd5a8ac9e847fa87c8680"
+    },
+    {
+      "path": "sim/net02/package_models.sv",
+      "sha256": "de2fd5315a3809a89ba90b8f09a96a25d06d3e00b8568a8f82387b92a624199f"
+    },
+    {
+      "path": "sim/net03/package_models.sv",
+      "sha256": "53712265aa1d4312866135c59e73d7543069c7a3281635d43d66825790716258"
+    },
+    {
+      "path": "sim/net04/package_models.sv",
+      "sha256": "85b00a3b6b0307d68b53e4ea1ae97ba5cbf83c20685544bb12fde333efa07d63"
+    },
+    {
+      "path": "hardware/cpu_global/cpu_global_netlist.sv",
+      "sha256": "70f251891939357d16b942eee168b836df5ae801f082ef70de787600758ebe7a"
+    },
+    {
+      "path": "hardware/memory_decode/memory_decode_netlist.sv",
+      "sha256": "ea33aea0e9d2977fb9fe683e11526e183bc4c3edac465e221b135d873860f0a4"
+    },
+    {
+      "path": "sim/net19a/package_models.sv",
+      "sha256": "dc71d5b1f5bcefcf7e20dc9a930de79c4ebc7fec145961dcbabd79a4766ac957"
+    },
+    {
+      "path": "hardware/system_access/system_access_netlist.sv",
+      "sha256": "afac84baef3304ebfd6575dcb5fbdb8d9441a2ef0a20f0e842b16e485dd98b13"
+    },
+    {
+      "path": "sim/net13/memory_devices.sv",
+      "sha256": "cf166183d3ffc7a94fd722ad6e6b2ea00c9fa02f3f8405efe4600f37427a4af1"
+    },
+    {
+      "path": "hardware/memory_bus/memory_bus_netlist.sv",
+      "sha256": "d8730776c4166a2b1a5df1e314d8148f66ed970ff513379401392329d8722ea3"
+    },
+    {
+      "path": "sim/net14c/package_models_async.sv",
+      "sha256": "7b45346f5e25bb73deb33ba9fb02d50e2b020ab527f75fed1244e173300ccfcb"
+    },
+    {
+      "path": "sim/net14c/video_raster_async_netlist.sv",
+      "sha256": "9885b7aeeb25428fa6a25ea6157061837175d971d4f81bef11c0b5018bcca38f"
+    },
+    {
+      "path": "hardware/keyboard_500/keyboard_500_netlist.sv",
+      "sha256": "b6ed3cf1f838f2782e5e3420eb32ca316f750a76d27030cbacd6837abe32e9e8"
+    },
+    {
+      "path": "hardware/system_reset/system_reset_netlist.sv",
+      "sha256": "746b912225c88c17b05449275b484a2f84c46fec384f7e1cd6997d96be5a51dd"
+    },
+    {
+      "path": "sim/net20/isa1_memory_reset.sv",
+      "sha256": "c0bf6e94911e28c873d6baa4cfa9faf0bd3bcf73a4fe0cbc2300d306faaccbfe"
+    },
+    {
+      "path": "sim/net19a/tb_keyboard_scan.sv",
+      "sha256": "58fa94520c14e0ea4a1c9e0de87bf8e109642cc70e821bb881ffbbf7d52ac8b3"
+    },
+    {
+      "path": "firmware/net19a/keyboard_scan.asm",
+      "sha256": "da2569d1c68eb00bc97ab8067afe3f1259c3d00bd5930440aef2146a58357896"
+    },
+    {
+      "path": "tools/run_system_scan.py",
+      "sha256": "f8904635419835ef7bb70911cc592519f4c024144c8636a53a85f47cc588faac"
+    },
+    {
+      "path": "tools/run_keyboard_scan.py",
+      "sha256": "d59f9fae945cee8900385eada22600b6ff22867fdc3b443c035c5de456b6176c"
+    },
+    {
+      "path": "tools/run_system_cpu.py",
+      "sha256": "c106d0c2d457074718f556a012ead2fcb959163027cdd53d1beebd72408a9438"
+    },
+    {
+      "path": "tools/make_system_cpu.py",
+      "sha256": "5729b5b88b1538ea0151e79beeac0aa38c98a078ab9562c4ac05a7c84950b88d"
+    },
+    {
+      "path": "references/ti/sn74ahc174.pdf",
+      "sha256": "75de6d4176cc6ed67d3e4bd75c14240e54e7061c0f2aad62f1e974a66b6bf8a7"
+    },
+    {
+      "path": "tools/run_reset_scan.py",
+      "sha256": "797107a7c3748f5b2952fbb49b5dca7709355f951ad85130592b1a6c5b97b5cd"
+    },
+    {
+      "path": "tools/make_reset_system.py",
+      "sha256": "6ae4691a6381d317a7e1c0d8495d06b04c32946d19f0f23e22aa157aef17fd00"
+    },
+    {
+      "path": "tools/build_system_reset.py",
+      "sha256": "d50598869d6248f2c2111d999ae9583319913ecac0c4cb3e61886edbe71a4c2f"
+    },
+    {
+      "path": "verification/net20/native/system_reset.xml",
+      "sha256": "de6e4ca0f9de06df8c41518acda00e8caf387c2c94ffb7e9fad2249240754df1"
+    }
+  ],
+  "failures": [],
+  "production_released": false,
+  "compile": {
+    "command": [
+      "iverilog",
+      "-g2012",
+      "-Wall",
+      "-s",
+      "tb_keyboard_scan",
+      "-Ptb_keyboard_scan.TIMED=1",
+      "-Ptb_keyboard_scan.BYPASS_READY=0",
+      "-o",
+      "/tmp/isa1-scan-7d0fu2n4/test.vvp",
+      "/mnt/c/Users/gabri/projetos/isa1/sim/hdl/hc_models.sv",
+      "/mnt/c/Users/gabri/projetos/isa1/sim/net02/package_models.sv",
+      "/mnt/c/Users/gabri/projetos/isa1/sim/net03/package_models.sv",
+      "/mnt/c/Users/gabri/projetos/isa1/sim/net04/package_models.sv",
+      "/mnt/c/Users/gabri/projetos/isa1/hardware/cpu_global/cpu_global_netlist.sv",
+      "/mnt/c/Users/gabri/projetos/isa1/hardware/memory_decode/memory_decode_netlist.sv",
+      "/mnt/c/Users/gabri/projetos/isa1/sim/net19a/package_models.sv",
+      "/mnt/c/Users/gabri/projetos/isa1/hardware/system_access/system_access_netlist.sv",
+      "/mnt/c/Users/gabri/projetos/isa1/sim/net13/memory_devices.sv",
+      "/mnt/c/Users/gabri/projetos/isa1/hardware/memory_bus/memory_bus_netlist.sv",
+      "/mnt/c/Users/gabri/projetos/isa1/sim/net14c/package_models_async.sv",
+      "/mnt/c/Users/gabri/projetos/isa1/sim/net14c/video_raster_async_netlist.sv",
+      "/mnt/c/Users/gabri/projetos/isa1/hardware/keyboard_500/keyboard_500_netlist.sv",
+      "/mnt/c/Users/gabri/projetos/isa1/hardware/system_reset/system_reset_netlist.sv",
+      "/mnt/c/Users/gabri/projetos/isa1/sim/net20/isa1_memory_reset.sv",
+      "/tmp/isa1-scan-7d0fu2n4/tb_reset_scan.sv"
+    ],
+    "exit": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 0.123
+  },
+  "execution": {
+    "command": [
+      "vvp",
+      "/tmp/isa1-scan-7d0fu2n4/test.vvp"
+    ],
+    "exit": 0,
+    "stdout": "RESULT timed=1 scan_frames=5 completed_column_reads=40 total_column_reads=40 completed_row_writes=20 total_row_writes=21 stopped_cpu_checks=1 reset_pending_checks=1 capture_edges=688889 failures=0\n/tmp/isa1-scan-7d0fu2n4/tb_reset_scan.sv:104: $finish called at 110255000000 (1ps)\n",
+    "stderr": "",
+    "seconds": 167.367
+  },
+  "passed": true,
+  "binary_reset_policy": 1,
+  "compiled_bench": {
+    "path": "verification/net20/scan-policy1-timed/compiled-bench.sv",
+    "sha256": "c847f389751abe27f8d76091e4977d94b7652746c181ecd913d9fea0c81e0141"
+  },
+  "supervisor_output_load_qualified": false
+}

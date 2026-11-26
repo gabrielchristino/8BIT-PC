@@ -1,0 +1,20 @@
+{
+  "date": "2026-11-26",
+  "transformation": "Separate native reset and clock distribution. CPU peer must use cpu_core_clk/cpu_reset_n. SRAM payload registers retain state across fast CPU clear; memory-affecting state uses delayed bank reset. RAW is a qualified external supervisor forcepoint, not an analog model. Ideal RC delays are scaled to 1/4 ns; timed 19/42 us.",
+  "files": [
+    {
+      "path": "tools/make_reset_system.py",
+      "sha256": "6ae4691a6381d317a7e1c0d8495d06b04c32946d19f0f23e22aa157aef17fd00"
+    },
+    {
+      "path": "sim/net19a/isa1_memory_system.sv",
+      "sha256": "d0bc0bca43ed55dcb96e2bb4f3c4c650894deb5e35a07b1774b73c17475c51e5"
+    },
+    {
+      "path": "sim/net20/isa1_memory_reset.sv",
+      "sha256": "c0bf6e94911e28c873d6baa4cfa9faf0bd3bcf73a4fe0cbc2300d306faaccbfe"
+    }
+  ],
+  "supervisor_output_load_qualified": false,
+  "production_released": false
+}

@@ -192,3 +192,28 @@ O GitHub estava vazio na inspeção inicial. Publicar materiais recuperados e do
 ## ADR M04 — Preservar a falha da bancada do montador
 
 O pacote rev983 contém `test_assembler.py`, mas omite `diagnostic.asm`. Manter a bancada e registrar a falha de dependência. Não inventar um firmware diagnóstico ou retirar a bancada para produzir um relatório artificialmente verde. Recuperar o arquivo e executar novamente é o critério de resolução.
+
+
+## ADR E25 — Separar reset rápido da CPU e bancos que afetam SRAM
+
+26/11/2026. Base NET-19A/NET-18; variante NET-20A, não liberação física.
+Decisão: afirmar reset da CPU por RAW_BUFFERED, liberar após bancos e duas
+bordas de CPU; manter reset de controlador/decoder/MMIO/posse atrás do RC,
+com inibidor rápido e buffers separados. RUN preservado. A CPU não dirige mais
+endereço/dado SRAM diretamente: os HC377 sem clear retêm o payload capturado.
+Alternativas: limpar todos os bancos imediatamente arrisca mudança de endereço
+antes de WE; atrasar também a CPU não é necessário para a retenção e prolonga
+atividade arquitetural em falha. Um novo gate assíncrono em RUN criaria outra
+entrada temporal. Não mudar ISA/X/SP/flags/VGA nem prometer rollback de byte.
+
+Evidência/aceitação: XML exato de 22 componentes/oito CIs/132 pinos; 48 cortes
+ativos com WE alto em até 80 ns antes de bancos, payload retido, nenhum endereço
+físico mudando enquanto WE baixo; dois negativos calibram a rejeição. Pausas das
+fontes retêm SAFE baixo até ambas retomarem. Raw scan na CPU usa domínios reais.
+Orçamento até bancos/decoder sobe a 20 us; hold-up repetido, 64+3 cenários
+condicionais. Critério de produção permanece aberto: CL do supervisor, fontes,
+transições, cargas/clock/skew/PVT/MTBF, ERC global, PCB e protótipo. Em particular
+Ci máximo AHC125=10 pF não deixa margem para trilhas no teste CL=10 pF do
+TPS3703; não promover o prazo analógico anterior a garantia. Alternativas de
+datasheet preservadas são pesquisa e exigem novo cálculo/circuito/ADR.
+Detalhes e comandos: docs/engineering/NET20.md.

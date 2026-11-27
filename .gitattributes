@@ -89,3 +89,6 @@ revisions/** -text
 /verification/net27/full-timed/** -text -whitespace
 /verification/net36/**/values.dat -text -whitespace
 /references/net36/** -text -whitespace
+
+# Exact final legacy NET30 evidence.
+/verification/net30/full-timed/** -text -whitespace

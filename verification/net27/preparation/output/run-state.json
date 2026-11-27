@@ -1,0 +1,28 @@
+{
+  "status": "process_finished",
+  "phase": "output",
+  "command": [
+    "/usr/bin/python3",
+    "-c",
+    "import os\nwhile True: os.write(1,b'x'*65536)"
+  ],
+  "cwd": "/tmp/isa1-limit-check-mtfhvo0l",
+  "boot_id": "e83b5137-128a-4b62-995b-0b9291433040",
+  "started_unix_seconds": 1795745341.5413275,
+  "limits": {
+    "memory_mb": 128,
+    "cpu_seconds": 5,
+    "wall_seconds": 10,
+    "output_mb_per_file": 1
+  },
+  "stdout_path": "/mnt/c/Users/gabri/projetos/isa1/verification/net27/preparation/output/output.stdout.log",
+  "stderr_path": "/mnt/c/Users/gabri/projetos/isa1/verification/net27/preparation/output/output.stderr.log",
+  "simulation_passed": false,
+  "pid": 603,
+  "process_group": 603,
+  "exit": 1,
+  "wall_timeout": false,
+  "seconds": 0.187,
+  "stdout_sha256": "8f990ba0b577b51cf009ea049368c16bbda1b21e1b93be07a824758bb253c39b",
+  "stderr_sha256": "b6e49e9e7d3d676bd99bf8de491877bcf7959354dffd340c5d339aa7aca0965c"
+}

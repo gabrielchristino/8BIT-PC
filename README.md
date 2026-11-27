@@ -1,3 +1,5 @@
+Preparação NET-27 (26/11/2026): [ensaio completo temporizado](docs/engineering/NET27_PLAN.md) com progresso persistente e limites de recursos. Executor verificado; resultado do circuito completo ainda pendente.
+
 NET-26 (26/11/2026): reset local emP1, controlador com uma etapa de buffer e AHC174 real no teclado. Passaram156 cenários estritos,128 combinações selecionadas,48 cortes SRAM, oito cortes CPU,6.886 vetores ideais/dois temporizados de1.062 e boot/quadro completo ideal. Candidato460CIs+2osciladores; energia/temporização global/PCB/protótipo continuam abertos. [Circuito, resultados e limites](docs/engineering/NET26.md). Placa não liberada.
 
 Investigação NET-25 (26/11/2026): drenagem síncrona passou32 cortes selecionados e6.886 vetores ideais, mas a variante NÃO foi promovida: partida binária arbitrária ainda rejeita pulso7,722ns/20ns sob CLR0; um reset breve50ns rejeita recovery em U36_1. Uma hipótese somenteHDL com dupla local emP1 passou156 cenários funcionais, conservando clock frio como restrição aberta. Ver [evidências e próximos ensaios](docs/engineering/NET25.md). Placa não liberada.

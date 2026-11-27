@@ -1,0 +1,143 @@
+{
+  "date": "2026-11-26",
+  "base_git_commit": "f1c6c27d60d921286ed8729cd6f47e90e5948a3b",
+  "scope": "NET27 preparation only; process controls verified, complete timed circuit result pending",
+  "origin": "New engineering tooling derived in memory from published NET26 runners; original sources unchanged. Logs record bounded helper subprocesses, not circuit verification.",
+  "files": [
+    {
+      "path": "PROVENANCE.md",
+      "sha256": "fb19f91be10d7ce89d5b609031a7cabacaa4b3044f2a54a0a31e81a5a79503f0",
+      "bytes": 25694
+    },
+    {
+      "path": "README.md",
+      "sha256": "381140eb42b1ad894485d3a69bb7c3b9b61e9faf9d960344e0cd838e1fdedc96",
+      "bytes": 11878
+    },
+    {
+      "path": "docs/engineering/NET27_PLAN.md",
+      "sha256": "980e12df7477178d9f1c238d36d002760fb8cd0a83f3c007700a6ed14b4a1d76",
+      "bytes": 2261
+    },
+    {
+      "path": "tools/check_tracked_simulation.py",
+      "sha256": "a108883f3689aea0afd008afd982d1a87fc18f7e68be1c863bbc6723588bbd34",
+      "bytes": 2673
+    },
+    {
+      "path": "tools/run_full_timed_program.py",
+      "sha256": "cfcdb920e9afc03813c45b790953f0bf7c550bbea475f32a4d3b87f4db67aa6a",
+      "bytes": 8349
+    },
+    {
+      "path": "tools/tracked_simulation.py",
+      "sha256": "5f155be9ceb4a7f6e7b6f791a45f07b5ed6d73d374264c169ede38c145210cbe",
+      "bytes": 2929
+    },
+    {
+      "path": "verification/net27/preparation/cpu/cpu-run.json",
+      "sha256": "4209d16e4818178999c2dd4ead154eece1b23ecbcf0e5f7b146752d4e86ed2ca",
+      "bytes": 893
+    },
+    {
+      "path": "verification/net27/preparation/cpu/cpu.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "verification/net27/preparation/cpu/cpu.stdout.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "verification/net27/preparation/cpu/run-state.json",
+      "sha256": "4209d16e4818178999c2dd4ead154eece1b23ecbcf0e5f7b146752d4e86ed2ca",
+      "bytes": 893
+    },
+    {
+      "path": "verification/net27/preparation/memory/memory-run.json",
+      "sha256": "ca7f7bf83fd0d5c2036824af16ec5caa7e06205789c03a2055bc772f6cf84d7c",
+      "bytes": 915
+    },
+    {
+      "path": "verification/net27/preparation/memory/memory.stderr.log",
+      "sha256": "38f453979bab240d789e4f6aca8c94daadeced572fc316aa457637897c9d23bd",
+      "bytes": 86
+    },
+    {
+      "path": "verification/net27/preparation/memory/memory.stdout.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "verification/net27/preparation/memory/run-state.json",
+      "sha256": "ca7f7bf83fd0d5c2036824af16ec5caa7e06205789c03a2055bc772f6cf84d7c",
+      "bytes": 915
+    },
+    {
+      "path": "verification/net27/preparation/normal/normal-run.json",
+      "sha256": "c196a15aa589b3af2e779d4780f2a0ed006435a4eef294537f9c18fd9ebac003",
+      "bytes": 916
+    },
+    {
+      "path": "verification/net27/preparation/normal/normal.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "verification/net27/preparation/normal/normal.stdout.log",
+      "sha256": "e2bda02de0583050f620dcaa76977e5252a73fd65c66065084e0e65bf7bda134",
+      "bytes": 16
+    },
+    {
+      "path": "verification/net27/preparation/normal/run-state.json",
+      "sha256": "c196a15aa589b3af2e779d4780f2a0ed006435a4eef294537f9c18fd9ebac003",
+      "bytes": 916
+    },
+    {
+      "path": "verification/net27/preparation/output/output-run.json",
+      "sha256": "39139709b3cfe07f13e5130be61dc6b15fb073219971d8ccf5d458f3e0451d4e",
+      "bytes": 937
+    },
+    {
+      "path": "verification/net27/preparation/output/output.stderr.log",
+      "sha256": "b6e49e9e7d3d676bd99bf8de491877bcf7959354dffd340c5d339aa7aca0965c",
+      "bytes": 109
+    },
+    {
+      "path": "verification/net27/preparation/output/output.stdout.log",
+      "sha256": "8f990ba0b577b51cf009ea049368c16bbda1b21e1b93be07a824758bb253c39b",
+      "bytes": 1048576
+    },
+    {
+      "path": "verification/net27/preparation/output/run-state.json",
+      "sha256": "39139709b3cfe07f13e5130be61dc6b15fb073219971d8ccf5d458f3e0451d4e",
+      "bytes": 937
+    },
+    {
+      "path": "verification/net27/preparation/runner-check.json",
+      "sha256": "e64d8e03935f73857ff870a7c1468b7f64d3b4f32aee2ff6853f14bedecb30a0",
+      "bytes": 1051918
+    },
+    {
+      "path": "verification/net27/preparation/wall/run-state.json",
+      "sha256": "133a267efad6acca9f5e76d3859e064d495152184fa0809ab84b83cb67a41f56",
+      "bytes": 907
+    },
+    {
+      "path": "verification/net27/preparation/wall/wall-run.json",
+      "sha256": "133a267efad6acca9f5e76d3859e064d495152184fa0809ab84b83cb67a41f56",
+      "bytes": 907
+    },
+    {
+      "path": "verification/net27/preparation/wall/wall.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "verification/net27/preparation/wall/wall.stdout.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "pdf": {
+    "command": [
+      "/home/gabri/.local/opt/isa1-kicad-10.0.8/squashfs-root/usr/bin/kicad-cli",
+      "sch",
+      "export",
+      "pdf",
+      "-o",
+      "/mnt/c/Users/gabri/projetos/isa1/verification/net33/video/schematic.pdf",
+      "/mnt/c/Users/gabri/projetos/isa1/hardware/dac_packet_video/dac_packet_video.kicad_sch"
+    ],
+    "exit": 0,
+    "wall_timeout": false,
+    "seconds": 2.12,
+    "limits": {
+      "memory_mb": 2048,
+      "cpu_seconds": 90,
+      "output_mb_per_file": 2,
+      "wall_seconds": 120
+    },
+    "stdout": "Plotted to '/mnt/c/Users/gabri/projetos/isa1/verification/net33/video/schematic.pdf'.\nDone.\n",
+    "stderr": ""
+  },
+  "preview": {
+    "command": [
+      "pdftoppm",
+      "-scale-to",
+      "2000",
+      "-singlefile",
+      "-png",
+      "/mnt/c/Users/gabri/projetos/isa1/verification/net33/video/schematic.pdf",
+      "/mnt/c/Users/gabri/projetos/isa1/verification/net33/video/preview"
+    ],
+    "exit": 0,
+    "wall_timeout": false,
+    "seconds": 0.677,
+    "limits": {
+      "memory_mb": 2048,
+      "cpu_seconds": 90,
+      "output_mb_per_file": 2,
+      "wall_seconds": 120
+    },
+    "stdout": "",
+    "stderr": ""
+  }
+}

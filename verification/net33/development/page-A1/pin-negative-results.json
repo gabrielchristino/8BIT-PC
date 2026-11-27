@@ -1,0 +1,90 @@
+{
+  "date": "2026-11-27",
+  "scope": "Pin faults in copied XMLs and preview export only; no hardware release.",
+  "pin_negatives": [
+    {
+      "case": "clock_wrong_phase",
+      "leaf": "video",
+      "rejected": true,
+      "reason": "('U35', '12', 'P1', 'P0')",
+      "file": "verification/net33/pin-negatives/video-clock_wrong_phase.xml"
+    },
+    {
+      "case": "blue_buffer_wrong_source",
+      "leaf": "video",
+      "rejected": true,
+      "reason": "('U27', '9', 'PIXEL_0', 'PIXEL_1')",
+      "file": "verification/net33/pin-negatives/video-blue_buffer_wrong_source.xml"
+    },
+    {
+      "case": "sync_clear_unbuffered",
+      "leaf": "video",
+      "rejected": true,
+      "reason": "('U38', '1', 'BUF_1_2', 'LOCAL_RESET_N')",
+      "file": "verification/net33/pin-negatives/video-sync_clear_unbuffered.xml"
+    },
+    {
+      "case": "sync_data_wrong_polarity",
+      "leaf": "video",
+      "rejected": true,
+      "reason": "('U38', '3', 'H_ACTIVE', 'HSYNC_N')",
+      "file": "verification/net33/pin-negatives/video-sync_data_wrong_polarity.xml"
+    },
+    {
+      "case": "red_msb_wrong_bit",
+      "leaf": "dac",
+      "rejected": true,
+      "reason": "('U1', '1', 'PIXEL_7', 'PIXEL_6')",
+      "file": "verification/net33/pin-negatives/dac-red_msb_wrong_bit.xml"
+    },
+    {
+      "case": "blue_buffer_bypassed",
+      "leaf": "dac",
+      "rejected": true,
+      "reason": "('U3', '5', 'BLUE1_BUFFER', 'PIXEL_1')",
+      "file": "verification/net33/pin-negatives/dac-blue_buffer_bypassed.xml"
+    },
+    {
+      "case": "sleep_high",
+      "leaf": "dac",
+      "rejected": true,
+      "reason": "('U1', '15', 'GND', '+5V')",
+      "file": "verification/net33/pin-negatives/dac-sleep_high.xml"
+    },
+    {
+      "case": "complement_wrong_rail",
+      "leaf": "dac",
+      "rejected": true,
+      "reason": "('U1', '21', 'GND', '+5V')",
+      "file": "verification/net33/pin-negatives/dac-complement_wrong_rail.xml"
+    }
+  ],
+  "failures": [],
+  "sources": [
+    {
+      "path": "tools/check_video_dac_native.py",
+      "sha256": "4115cad164fe6694c3001916500438a28c15f1d28302e88b6b32a2ba9c2702ec"
+    },
+    {
+      "path": "tools/check_dac_leaf.py",
+      "sha256": "d79d5f1b6ea6f4b7bb9ee4f77aafb0ccf4b84554cb0c1c4c434da7ca10c1de88"
+    },
+    {
+      "path": "tools/build_dac_video_adapter.py",
+      "sha256": "a798213a2254f96d93b1b82993bc2003b9f27d1dedb06b38739a623f30f11ca1"
+    },
+    {
+      "path": "tools/build_dac_leaf.py",
+      "sha256": "b86f69adde2255b791d863b37ae6c74981eac29286ac92df4378fb0d615c9598"
+    },
+    {
+      "path": "verification/net33/video/dac_packet_video.xml",
+      "sha256": "b9640192e61c39ef80b57dc2351ec15824eb84ef60c771ee50bb6d1e25293b78"
+    },
+    {
+      "path": "verification/net33/dac/vga_dac_rgb332.xml",
+      "sha256": "07bce1ab2a9d8dcd23d01c7833cdf1d9a715092a6240333af9fffb057d278524"
+    }
+  ],
+  "production_released": false
+}

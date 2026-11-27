@@ -1,0 +1,82 @@
+{
+  "date": "2026-11-27",
+  "base_git_commit": "052928f344e1fad6f6d43f380345793f60b748ff",
+  "source_records_checked": 46,
+  "historical_source_resolutions": [
+    {
+      "path": "tools/build_dac_video_adapter.py",
+      "sha256": "a798213a2254f96d93b1b82993bc2003b9f27d1dedb06b38739a623f30f11ca1",
+      "preserved_source": "verification/net33/development/page-A1/build_dac_video_adapter.py"
+    },
+    {
+      "path": "tools/build_dac_video_adapter.py",
+      "sha256": "a798213a2254f96d93b1b82993bc2003b9f27d1dedb06b38739a623f30f11ca1",
+      "preserved_source": "verification/net33/development/page-A1/build_dac_video_adapter.py"
+    },
+    {
+      "path": "verification/net33/video/dac_packet_video.xml",
+      "sha256": "b9640192e61c39ef80b57dc2351ec15824eb84ef60c771ee50bb6d1e25293b78",
+      "preserved_source": "verification/net33/development/page-A1/video/dac_packet_video.xml"
+    },
+    {
+      "path": "verification/net33/dac/vga_dac_rgb332.xml",
+      "sha256": "07bce1ab2a9d8dcd23d01c7833cdf1d9a715092a6240333af9fffb057d278524",
+      "preserved_source": "verification/net33/development/page-A1/dac/vga_dac_rgb332.xml"
+    }
+  ],
+  "original_video_pin_changes_exact": true,
+  "model_bytes_unchanged_after_page_fix": true,
+  "electrical_graph_unchanged_after_page_fix": true,
+  "positive_native_scenarios": 4,
+  "reset_epochs_each": 2,
+  "samples_each": 210000,
+  "colors_each": 256,
+  "functional_negatives": 2,
+  "structural_negatives": 8,
+  "versions": {
+    "python": {
+      "command": [
+        "wsl",
+        "-d",
+        "Ubuntu",
+        "--",
+        "python3",
+        "--version"
+      ],
+      "stdout": "Python 3.12.3\n",
+      "stderr": "",
+      "exit": 0
+    },
+    "iverilog": {
+      "command": [
+        "wsl",
+        "-d",
+        "Ubuntu",
+        "--",
+        "iverilog",
+        "-V"
+      ],
+      "stdout": "Icarus Verilog version 12.0 (stable) ()\n\nCopyright (c) 2000-2021 Stephen Williams (steve@icarus.com)\n\n  This program is free software; you can redistribute it and/or modify\n  it under the terms of the GNU General Public License as published by\n  the Free Software Foundation; either version 2 of the License, or\n  (at your option) any later version.\n\n  This program is distributed in the hope that it will be useful,\n  but WITHOUT ANY WARRANTY; without even the implied warranty of\n  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n  GNU General Public License for more details.\n\n  You should have received a copy of the GNU General Public License along\n  with this program; if not, write to the Free Software Foundation, Inc.,\n  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.\n\nIcarus Verilog Preprocessor version 12.0 (stable) ()\n\nCopyright (c) 1999-2021 Stephen Williams (steve@icarus.com)\n\n  This program is free software; you can redistribute it and/or modify\n  it under the terms of the GNU General Public License as published by\n  the Free Software Foundation; either version 2 of the License, or\n  (at your option) any later version.\n\n  This program is distributed in the hope that it will be useful,\n  but WITHOUT ANY WARRANTY; without even the implied warranty of\n  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n  GNU General Public License for more details.\n\n  You should have received a copy of the GNU General Public License along\n  with this program; if not, write to the Free Software Foundation, Inc.,\n  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.\n\nIcarus Verilog Parser/Elaborator version 12.0 (stable) ()\n\nCopyright (c) 1998-2021 Stephen Williams (steve@icarus.com)\n\n  This program is free software; you can redistribute it and/or modify\n  it under the terms of the GNU General Public License as published by\n  the Free Software Foundation; either version 2 of the License, or\n  (at your option) any later version.\n\n  This program is distributed in the hope that it will be useful,\n  but WITHOUT ANY WARRANTY; without even the implied warranty of\n  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n  GNU General Public License for more details.\n\n  You should have received a copy of the GNU General Public License along\n  with this program; if not, write to the Free Software Foundation, Inc.,\n  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.\n\n FLAGS DLL vvp.tgt\nvvp.tgt: Icarus Verilog VVP Code Generator 12.0 (stable) ()\n\nCopyright (c) 2001-2021 Stephen Williams (steve@icarus.com)\n\n  This program is free software; you can redistribute it and/or modify\n  it under the terms of the GNU General Public License as published by\n  the Free Software Foundation; either version 2 of the License, or\n  (at your option) any later version.\n\n  This program is distributed in the hope that it will be useful,\n  but WITHOUT ANY WARRANTY; without even the implied warranty of\n  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n  GNU General Public License for more details.\n\n  You should have received a copy of the GNU General Public License along\n  with this program; if not, write to the Free Software Foundation, Inc.,\n  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.\n\n",
+      "stderr": "",
+      "exit": 0
+    },
+    "kicad": {
+      "command": [
+        "wsl",
+        "-d",
+        "Ubuntu",
+        "--",
+        "/home/gabri/.local/opt/isa1-kicad-10.0.8/squashfs-root/usr/bin/kicad-cli",
+        "version"
+      ],
+      "stdout": "10.0.8\n",
+      "stderr": "",
+      "exit": 0
+    }
+  },
+  "visual_review": "A0 video preview now contains all components; DAC preview checked; earlier clipped A1 presentation preserved.",
+  "erc_approved": false,
+  "complete_net30_system_integrated": false,
+  "analog_validated": false,
+  "production_released": false
+}

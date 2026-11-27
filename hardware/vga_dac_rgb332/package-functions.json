@@ -1,0 +1,146 @@
+{
+  "AD9760ARUZ": {
+    "pins": {
+      "1": {
+        "name": "DB9",
+        "type": "input"
+      },
+      "2": {
+        "name": "DB8",
+        "type": "input"
+      },
+      "3": {
+        "name": "DB7",
+        "type": "input"
+      },
+      "4": {
+        "name": "DB6",
+        "type": "input"
+      },
+      "5": {
+        "name": "DB5",
+        "type": "input"
+      },
+      "6": {
+        "name": "DB4",
+        "type": "input"
+      },
+      "7": {
+        "name": "DB3",
+        "type": "input"
+      },
+      "8": {
+        "name": "DB2",
+        "type": "input"
+      },
+      "9": {
+        "name": "DB1",
+        "type": "input"
+      },
+      "10": {
+        "name": "DB0",
+        "type": "input"
+      },
+      "11": {
+        "name": "NC",
+        "type": "no_connect"
+      },
+      "12": {
+        "name": "NC",
+        "type": "no_connect"
+      },
+      "13": {
+        "name": "NC",
+        "type": "no_connect"
+      },
+      "14": {
+        "name": "NC",
+        "type": "no_connect"
+      },
+      "15": {
+        "name": "SLEEP",
+        "type": "input"
+      },
+      "16": {
+        "name": "REFLO",
+        "type": "input"
+      },
+      "17": {
+        "name": "REFIO",
+        "type": "passive"
+      },
+      "18": {
+        "name": "FSADJ",
+        "type": "passive"
+      },
+      "19": {
+        "name": "COMP1",
+        "type": "passive"
+      },
+      "20": {
+        "name": "ACOM",
+        "type": "power_in"
+      },
+      "21": {
+        "name": "IOUTB",
+        "type": "output"
+      },
+      "22": {
+        "name": "IOUTA",
+        "type": "output"
+      },
+      "23": {
+        "name": "COMP2",
+        "type": "passive"
+      },
+      "24": {
+        "name": "AVDD",
+        "type": "power_in"
+      },
+      "25": {
+        "name": "NC",
+        "type": "no_connect"
+      },
+      "26": {
+        "name": "DCOM",
+        "type": "power_in"
+      },
+      "27": {
+        "name": "DVDD",
+        "type": "power_in"
+      },
+      "28": {
+        "name": "CLOCK",
+        "type": "input"
+      }
+    },
+    "datasheet": "https://www.analog.com/media/en/technical-documentation/data-sheets/AD9760.pdf",
+    "source_revision": "B; transcription, not local PDF"
+  },
+  "R": {
+    "pins": {
+      "1": {
+        "name": "1",
+        "type": "passive"
+      },
+      "2": {
+        "name": "2",
+        "type": "passive"
+      }
+    },
+    "datasheet": ""
+  },
+  "C": {
+    "pins": {
+      "1": {
+        "name": "1",
+        "type": "passive"
+      },
+      "2": {
+        "name": "2",
+        "type": "passive"
+      }
+    },
+    "datasheet": ""
+  }
+}

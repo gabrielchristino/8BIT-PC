@@ -1,0 +1,49 @@
+{
+  "xml": {
+    "command": [
+      "/home/gabri/.local/opt/isa1-kicad-10.0.8/squashfs-root/usr/bin/kicad-cli",
+      "sch",
+      "export",
+      "netlist",
+      "--format",
+      "kicadxml",
+      "-o",
+      "/mnt/c/Users/gabri/projetos/isa1/verification/net33/dac/vga_dac_rgb332.xml",
+      "/mnt/c/Users/gabri/projetos/isa1/hardware/vga_dac_rgb332/vga_dac_rgb332.kicad_sch"
+    ],
+    "exit": 0,
+    "wall_timeout": false,
+    "seconds": 1.733,
+    "limits": {
+      "memory_mb": 2048,
+      "cpu_seconds": 90,
+      "output_mb_per_file": 4,
+      "wall_seconds": 120
+    },
+    "stdout": "",
+    "stderr": ""
+  },
+  "erc": {
+    "command": [
+      "/home/gabri/.local/opt/isa1-kicad-10.0.8/squashfs-root/usr/bin/kicad-cli",
+      "sch",
+      "erc",
+      "--format",
+      "json",
+      "-o",
+      "/mnt/c/Users/gabri/projetos/isa1/verification/net33/dac/erc.json",
+      "/mnt/c/Users/gabri/projetos/isa1/hardware/vga_dac_rgb332/vga_dac_rgb332.kicad_sch"
+    ],
+    "exit": 0,
+    "wall_timeout": false,
+    "seconds": 3.091,
+    "limits": {
+      "memory_mb": 2048,
+      "cpu_seconds": 90,
+      "output_mb_per_file": 4,
+      "wall_seconds": 120
+    },
+    "stdout": "Found 15 violations\nSaved ERC Report to /mnt/c/Users/gabri/projetos/isa1/verification/net33/dac/erc.json\n",
+    "stderr": ""
+  }
+}

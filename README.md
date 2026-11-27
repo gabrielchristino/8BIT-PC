@@ -1,3 +1,5 @@
+NET33 (27/11/2026): [raster ligado a projecao digital dos DACs](docs/engineering/NET33_VIDEO_DAC.md). Quatro cenarios passaram, cada um com dois quadros separados por reset e256cores; dois negativos funcionais e oito de pinagem foram rejeitados. Canais livres e um AHC174 novo no video. Folhas experimentais, sem CPU/SRAM/analogico ou integracao ao candidato NET30; ERC e placa fisica continuam abertos.
+
 NET32 (27/11/2026): [folha experimental dos DACs](docs/engineering/NET32_DAC_LEAF.md) com 24 componentes/126pinos conferidos,1.024codigos por canal,oito negativos e tres redes ngspice de carga ideal. RSET de diagnostico nao entrega branco final; ERC65itens sem aprovacao, sem footprints ou integracao NET30. Dois boots temporizados completos seguem pendentes.
 
 NET31 (27/11/2026): [contrato candidato da saida VGA](docs/engineering/NET31_DAC.md), com 256 cores, 16 cantos de calibracao e um quadro sintetico com quatro negativos. Estudo funcional/documental; nenhum DAC ou CI novo adotado. Ganho, saida sem monitor, protecao e integracao nativa continuam abertos. NET30 permanece candidato digital; os dois boots temporizados completos continuam pendentes.

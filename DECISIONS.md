@@ -1,3 +1,13 @@
+## ADR E37 - Reutilizar canais livres e registrar H/V na borda dos DACs
+
+27/11/2026, base052928f/NET32. Status: variante nativa experimental com regressao selecionada, sem promocao ao sistema completo.
+
+Decisao: U27OR2/3 divide cargas azuis, U35buffer3 distribui P1 para tresDACs e U38AHC174; quatro inversores U32 convertem H/V para ativos altos antes do registro e negativos depois. Clear usa BUF_1_2 e mantem H/V inativos em reset qualificado. Quatorze pinos de canais livres mudam, um CI/capacitor acrescentado ao video. CPU/ISA/X/SP/flags/ROMs/teclado/NET30 permanecem intactos.
+
+Alternativas: cinco cargas diretas por bit azul ultrapassam orcamento preliminar; clear direto LOCAL_RESET_N adicionaria quinta carga; H/V direto muda antes da borda DAC e foi rejeitado no negativo. Adicionar pacotes de buffer sem usar canais livres nao foi necessario neste escopo. H/V externo em3,3V permanece outra interface, nao dirigir monitor com estes5V internos.
+
+Evidencia: quatro cenarios com duas epocas/quadros completos e256cores, dois negativos funcionais e oito de pinagem. Maximo quatro entradas na uniao de duas folhas nao e capacitancia extraida. Aceitacao restante: timing/PVT/cargas/niveis, driverH/V,ganho/protecao/energia/POR/SLEEP,integracao CPU/memoria e regressao; ERC49/15 separado,footprints/PCB/DRC/prototipo. Ver docs/engineering/NET33_VIDEO_DAC.md.
+
 ## ADR E36 - Separar DAC experimental de VGA integrado e protecao
 
 27/11/2026, base793d391/NET31. Status: folha experimental construida e verificada estruturalmente, nao promovida ao candidato NET30.

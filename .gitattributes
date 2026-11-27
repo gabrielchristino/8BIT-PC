@@ -71,3 +71,6 @@ revisions/** -text
 # Preserve original KiCad SVG formatting as generated evidence.
 /verification/net32/**/*.svg -text -whitespace
 /verification/net32/development/stage-generated-svg/check.txt -text -whitespace
+
+# Preserve exact compiled NET33 fixture/model evidence.
+/verification/net33/**/*.sv -whitespace

@@ -1,3 +1,12 @@
+## Continuidade NET33 - variante video/DAC, sem promocao global
+
+- Leia docs/engineering/NET33_VIDEO_DAC.md. hardware/dac_packet_video deriva de NET30:14pinos antes livres mudam e U38AHC174/C38 sao acrescentados. ORU27ch2/3 divide azul; U35ch3 bufferP1; U32ch1..4 inverte sync antes/depois do registro. CLR U38 usa BUF_1_2 (tres cargas), nao LOCAL_RESET_N (ja quatro). Videos38CIs e tresDACs sao somente duas folhas experimentais, nao nova contagem global.
+- RGB332 expandido por pinos reais em hardware/vga_dac_rgb332. Uniao somente dessas folhas tem100componentes e maximo quatro entradas contadas, sem Ci extraida/garantida do DAC ou STA global. H/V sao internos5V; driver3,3V/conector/protecao continuam abertos.
+- Quatro cenarios temporizados selecionados passaram cada210000amostras/153600visiveis/duas epocas de reset/256cores. Dados video sinteticos, master/reset forcepoints; sem CPU/SRAM/osciladorACH/analogico. Dois negativos detectam sync cedo e azul trocado; oito XMLs fora do contrato sao rejeitados, nao significando que toda alteracao seja defeito funcional.
+- Testes comparam H/V35ns depois de DAC_CLK e mantencao antes da borda, nao simultaneidade analogica. CQ1ns/10,5ns e fronteiras binarias nao sao min/max/PVT/MTBF garantidos. RSET2,32k diagnostico/SLEEPbaixo e lacunas NET32 permanecem.
+- Todos os ensaios NET33 terminaram antes da correcao de papelA1 paraA0. Versao cortada e gerador preservados em development/page-A1; grafos e bytes dos dois modelos compilados identicos depois. Nao atribuir aprovacao por novos hashes de XML sem resolver os originais. ERC49video/15DAC sem waivers; sem footprints/producao.
+- NET27/NET30 completos temporizados seguem separados e congelados. Conferir PID/boot_id e progresso; nao duplicar, editar fontes ativas ou declarar aprovacao por progresso.
+
 ## Continuidade NET32 - folha experimental DAC
 
 - Leia docs/engineering/NET32_DAC_LEAF.md. hardware/vga_dac_experiment e folha separada:3DACs/15C/6R,126pinos/15NC. XML confere funcoes/tipos/pinos/valores; projeccao digital testa1024codigos por canal, oito negativos. Nao e raster integrado nem modelo eletrico vendor.

@@ -1,0 +1,157 @@
+{
+  "date": "2026-11-27",
+  "base_git_commit": "052928f344e1fad6f6d43f380345793f60b748ff",
+  "video_ics": 38,
+  "dac_ics": 3,
+  "combined_components": 100,
+  "video_pin_changes_in_spare_channels": [
+    {
+      "reference": "U27",
+      "pin": "9",
+      "before": "GND",
+      "after": "PIXEL_0"
+    },
+    {
+      "reference": "U27",
+      "pin": "8",
+      "before": null,
+      "after": "BLUE0_BUFFER"
+    },
+    {
+      "reference": "U27",
+      "pin": "12",
+      "before": "GND",
+      "after": "PIXEL_1"
+    },
+    {
+      "reference": "U27",
+      "pin": "11",
+      "before": null,
+      "after": "BLUE1_BUFFER"
+    },
+    {
+      "reference": "U35",
+      "pin": "12",
+      "before": "GND",
+      "after": "P1"
+    },
+    {
+      "reference": "U35",
+      "pin": "11",
+      "before": null,
+      "after": "DAC_CLK"
+    },
+    {
+      "reference": "U32",
+      "pin": "3",
+      "before": "GND",
+      "after": "HSYNC_N"
+    },
+    {
+      "reference": "U32",
+      "pin": "4",
+      "before": null,
+      "after": "H_ACTIVE"
+    },
+    {
+      "reference": "U32",
+      "pin": "5",
+      "before": "GND",
+      "after": "VSYNC_N"
+    },
+    {
+      "reference": "U32",
+      "pin": "6",
+      "before": null,
+      "after": "V_ACTIVE"
+    },
+    {
+      "reference": "U32",
+      "pin": "9",
+      "before": "GND",
+      "after": "H_ACTIVE_LATCH"
+    },
+    {
+      "reference": "U32",
+      "pin": "8",
+      "before": null,
+      "after": "DAC_HSYNC_N"
+    },
+    {
+      "reference": "U32",
+      "pin": "11",
+      "before": "GND",
+      "after": "V_ACTIVE_LATCH"
+    },
+    {
+      "reference": "U32",
+      "pin": "10",
+      "before": null,
+      "after": "DAC_VSYNC_N"
+    }
+  ],
+  "new_video_packages": 1,
+  "native_video_and_dac_pin_maps_checked": true,
+  "scope": "Separate native video+DAC experiment, not promoted into complete NET30; selected existing timing models, analog not qualified",
+  "erc_unwaived": {
+    "video": {
+      "power_pin_not_driven": 2,
+      "pin_not_driven": 13,
+      "isolated_pin_label": 34
+    },
+    "dac": {
+      "pin_not_driven": 11,
+      "power_pin_not_driven": 2,
+      "pin_to_pin": 2
+    }
+  },
+  "erc_approved": false,
+  "production_released": false,
+  "sources": [
+    {
+      "path": "tools/build_dac_video_adapter.py",
+      "sha256": "45448e23d2b0ef3e86c9da48b573b49fb73c4f8670eebd76bf03d0cf6afe18ef"
+    },
+    {
+      "path": "tools/build_dac_leaf.py",
+      "sha256": "b86f69adde2255b791d863b37ae6c74981eac29286ac92df4378fb0d615c9598"
+    },
+    {
+      "path": "tools/build_memory_bus.py",
+      "sha256": "3836d5019a7dab5f2487b3459fe624f94b094f23568ab3d0354335924715ef0c"
+    },
+    {
+      "path": "tools/build_stack_bank.py",
+      "sha256": "342e1c06eeba20eb07bdac5ff29ae5baaf693ea86580c17dde6c2f0818356bcd"
+    },
+    {
+      "path": "sim/net30/load_video_async.sv",
+      "sha256": "4696d3fb2d277e58beba2bb0240fce92ae993cf7b126a4e6b3083c5c7f3ac7f2"
+    },
+    {
+      "path": "hardware/load_distributed_video/design.json",
+      "sha256": "7fe52589fa2256c6d0a2b015feb385ff2ed4c414cbb286456f5fea37769491ba"
+    },
+    {
+      "path": "hardware/load_distributed_video/package-functions.json",
+      "sha256": "d6fcea117a33208088f717a6e554b7fdef50342096bb0c8abcca6f7e6652968c"
+    },
+    {
+      "path": "hardware/vga_dac_experiment/design.json",
+      "sha256": "8d04ee7b4427b92b91ecdd68218c4253c237d50ba741fd05a7012c3b9dff4dd6"
+    },
+    {
+      "path": "hardware/vga_dac_experiment/package-functions.json",
+      "sha256": "30048e811ac28f1026895d4b1ca3f255d5be2b313e2db2f48087e35ba13a4b17"
+    },
+    {
+      "path": "hardware/common_request/package-functions.json",
+      "sha256": "def621da744c3c611af720ca3ce761c5b0215bf9fd69ba7aea1aba86413227fd"
+    },
+    {
+      "path": "sim/net19a/package_models.sv",
+      "sha256": "dc71d5b1f5bcefcf7e20dc9a930de79c4ebc7fec145961dcbabd79a4766ac957"
+    }
+  ],
+  "failures": []
+}

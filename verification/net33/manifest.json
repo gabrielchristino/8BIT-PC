@@ -1,0 +1,579 @@
+{
+  "date": "2026-11-27",
+  "base_git_commit": "052928f344e1fad6f6d43f380345793f60b748ff",
+  "source_records_checked": 46,
+  "historical_source_resolutions": [
+    {
+      "path": "tools/build_dac_video_adapter.py",
+      "sha256": "a798213a2254f96d93b1b82993bc2003b9f27d1dedb06b38739a623f30f11ca1",
+      "preserved_source": "verification/net33/development/page-A1/build_dac_video_adapter.py"
+    },
+    {
+      "path": "tools/build_dac_video_adapter.py",
+      "sha256": "a798213a2254f96d93b1b82993bc2003b9f27d1dedb06b38739a623f30f11ca1",
+      "preserved_source": "verification/net33/development/page-A1/build_dac_video_adapter.py"
+    },
+    {
+      "path": "verification/net33/video/dac_packet_video.xml",
+      "sha256": "b9640192e61c39ef80b57dc2351ec15824eb84ef60c771ee50bb6d1e25293b78",
+      "preserved_source": "verification/net33/development/page-A1/video/dac_packet_video.xml"
+    },
+    {
+      "path": "verification/net33/dac/vga_dac_rgb332.xml",
+      "sha256": "07bce1ab2a9d8dcd23d01c7833cdf1d9a715092a6240333af9fffb057d278524",
+      "preserved_source": "verification/net33/development/page-A1/dac/vga_dac_rgb332.xml"
+    }
+  ],
+  "original_video_pin_changes_exact": true,
+  "model_bytes_unchanged_after_page_fix": true,
+  "electrical_graph_unchanged_after_page_fix": true,
+  "positive_native_scenarios": 4,
+  "reset_epochs_each": 2,
+  "samples_each": 210000,
+  "colors_each": 256,
+  "functional_negatives": 2,
+  "structural_negatives": 8,
+  "versions": {
+    "python": {
+      "command": [
+        "wsl",
+        "-d",
+        "Ubuntu",
+        "--",
+        "python3",
+        "--version"
+      ],
+      "stdout": "Python 3.12.3\n",
+      "stderr": "",
+      "exit": 0
+    },
+    "iverilog": {
+      "command": [
+        "wsl",
+        "-d",
+        "Ubuntu",
+        "--",
+        "iverilog",
+        "-V"
+      ],
+      "stdout": "Icarus Verilog version 12.0 (stable) ()\n\nCopyright (c) 2000-2021 Stephen Williams (steve@icarus.com)\n\n  This program is free software; you can redistribute it and/or modify\n  it under the terms of the GNU General Public License as published by\n  the Free Software Foundation; either version 2 of the License, or\n  (at your option) any later version.\n\n  This program is distributed in the hope that it will be useful,\n  but WITHOUT ANY WARRANTY; without even the implied warranty of\n  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n  GNU General Public License for more details.\n\n  You should have received a copy of the GNU General Public License along\n  with this program; if not, write to the Free Software Foundation, Inc.,\n  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.\n\nIcarus Verilog Preprocessor version 12.0 (stable) ()\n\nCopyright (c) 1999-2021 Stephen Williams (steve@icarus.com)\n\n  This program is free software; you can redistribute it and/or modify\n  it under the terms of the GNU General Public License as published by\n  the Free Software Foundation; either version 2 of the License, or\n  (at your option) any later version.\n\n  This program is distributed in the hope that it will be useful,\n  but WITHOUT ANY WARRANTY; without even the implied warranty of\n  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n  GNU General Public License for more details.\n\n  You should have received a copy of the GNU General Public License along\n  with this program; if not, write to the Free Software Foundation, Inc.,\n  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.\n\nIcarus Verilog Parser/Elaborator version 12.0 (stable) ()\n\nCopyright (c) 1998-2021 Stephen Williams (steve@icarus.com)\n\n  This program is free software; you can redistribute it and/or modify\n  it under the terms of the GNU General Public License as published by\n  the Free Software Foundation; either version 2 of the License, or\n  (at your option) any later version.\n\n  This program is distributed in the hope that it will be useful,\n  but WITHOUT ANY WARRANTY; without even the implied warranty of\n  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n  GNU General Public License for more details.\n\n  You should have received a copy of the GNU General Public License along\n  with this program; if not, write to the Free Software Foundation, Inc.,\n  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.\n\n FLAGS DLL vvp.tgt\nvvp.tgt: Icarus Verilog VVP Code Generator 12.0 (stable) ()\n\nCopyright (c) 2001-2021 Stephen Williams (steve@icarus.com)\n\n  This program is free software; you can redistribute it and/or modify\n  it under the terms of the GNU General Public License as published by\n  the Free Software Foundation; either version 2 of the License, or\n  (at your option) any later version.\n\n  This program is distributed in the hope that it will be useful,\n  but WITHOUT ANY WARRANTY; without even the implied warranty of\n  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n  GNU General Public License for more details.\n\n  You should have received a copy of the GNU General Public License along\n  with this program; if not, write to the Free Software Foundation, Inc.,\n  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.\n\n",
+      "stderr": "",
+      "exit": 0
+    },
+    "kicad": {
+      "command": [
+        "wsl",
+        "-d",
+        "Ubuntu",
+        "--",
+        "/home/gabri/.local/opt/isa1-kicad-10.0.8/squashfs-root/usr/bin/kicad-cli",
+        "version"
+      ],
+      "stdout": "10.0.8\n",
+      "stderr": "",
+      "exit": 0
+    }
+  },
+  "visual_review": "A0 video preview now contains all components; DAC preview checked; earlier clipped A1 presentation preserved.",
+  "erc_approved": false,
+  "complete_net30_system_integrated": false,
+  "analog_validated": false,
+  "production_released": false,
+  "scope": "Two native video/DAC leaves, selected digital tests, not CPU/full-system/analog qualification",
+  "excluded_pending_run_prefix": [
+    "verification/net27/full-timed/attempt-001/",
+    "verification/net30/full-timed/attempt-001/"
+  ],
+  "excluded_files_at_snapshot": [
+    "verification/net27/full-timed/attempt-001/adapted-program-runner.py",
+    "verification/net27/full-timed/attempt-001/adapted-system-main.py",
+    "verification/net27/full-timed/attempt-001/compile-run.json",
+    "verification/net27/full-timed/attempt-001/compile.stderr.log",
+    "verification/net27/full-timed/attempt-001/compile.stdout.log",
+    "verification/net27/full-timed/attempt-001/compiler-inputs.json",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/generated-bench.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/hardware/common_request/common_request_netlist.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/hardware/cpu_global/cpu_global_netlist.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/hardware/local_phase_keyboard/local_phase_keyboard_netlist.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/hardware/local_phase_reset/local_phase_reset_netlist.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/hardware/memory_bus/memory_bus_netlist.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/hardware/memory_decode/memory_decode_netlist.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/sim/hdl/hc_models.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/sim/net02/package_models.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/sim/net03/package_models.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/sim/net04/package_models.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/sim/net13/memory_devices.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/sim/net14c/package_models_async.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/sim/net19a/package_models.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/sim/net22/phase_packages.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/sim/net23/clock_models.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/sim/net25/warm_packages.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/sim/net26/isa1_memory_local_phase.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/sim/net26/local_video_async.sv",
+    "verification/net27/full-timed/attempt-001/input-images/control_lane0.hex",
+    "verification/net27/full-timed/attempt-001/input-images/control_lane1.hex",
+    "verification/net27/full-timed/attempt-001/input-images/control_lane2.hex",
+    "verification/net27/full-timed/attempt-001/input-images/control_lane3.hex",
+    "verification/net27/full-timed/attempt-001/input-images/program_bus.hex",
+    "verification/net27/full-timed/attempt-001/input-images/program_state.hex",
+    "verification/net27/full-timed/attempt-001/input-images/rom_image.hex",
+    "verification/net27/full-timed/attempt-001/input-images/vectors.hex",
+    "verification/net27/full-timed/attempt-001/run-origin.json",
+    "verification/net27/full-timed/attempt-001/run-state.json",
+    "verification/net27/full-timed/attempt-001/simulation.stderr.log",
+    "verification/net27/full-timed/attempt-001/simulation.stdout.log",
+    "verification/net27/full-timed/attempt-001/system-tb_rtl_program-timed.sv",
+    "verification/net30/full-timed/attempt-001/adapted-program-runner.py",
+    "verification/net30/full-timed/attempt-001/adapted-system-main.py",
+    "verification/net30/full-timed/attempt-001/compile-run.json",
+    "verification/net30/full-timed/attempt-001/compile.stderr.log",
+    "verification/net30/full-timed/attempt-001/compile.stdout.log",
+    "verification/net30/full-timed/attempt-001/compiler-inputs.json",
+    "verification/net30/full-timed/attempt-001/compiler-inputs/generated-bench.sv",
+    "verification/net30/full-timed/attempt-001/compiler-inputs/hardware/common_request/common_request_netlist.sv",
+    "verification/net30/full-timed/attempt-001/compiler-inputs/hardware/cpu_global/cpu_global_netlist.sv",
+    "verification/net30/full-timed/attempt-001/compiler-inputs/hardware/load_distributed_bus/load_distributed_bus_netlist.sv",
+    "verification/net30/full-timed/attempt-001/compiler-inputs/hardware/load_distributed_keyboard/load_distributed_keyboard_netlist.sv",
+    "verification/net30/full-timed/attempt-001/compiler-inputs/hardware/local_phase_reset/local_phase_reset_netlist.sv",
+    "verification/net30/full-timed/attempt-001/compiler-inputs/hardware/memory_decode/memory_decode_netlist.sv",
+    "verification/net30/full-timed/attempt-001/compiler-inputs/sim/hdl/hc_models.sv",
+    "verification/net30/full-timed/attempt-001/compiler-inputs/sim/net02/package_models.sv",
+    "verification/net30/full-timed/attempt-001/compiler-inputs/sim/net03/package_models.sv",
+    "verification/net30/full-timed/attempt-001/compiler-inputs/sim/net04/package_models.sv",
+    "verification/net30/full-timed/attempt-001/compiler-inputs/sim/net13/memory_devices.sv",
+    "verification/net30/full-timed/attempt-001/compiler-inputs/sim/net14c/package_models_async.sv",
+    "verification/net30/full-timed/attempt-001/compiler-inputs/sim/net19a/package_models.sv",
+    "verification/net30/full-timed/attempt-001/compiler-inputs/sim/net22/phase_packages.sv",
+    "verification/net30/full-timed/attempt-001/compiler-inputs/sim/net23/clock_models.sv",
+    "verification/net30/full-timed/attempt-001/compiler-inputs/sim/net25/warm_packages.sv",
+    "verification/net30/full-timed/attempt-001/compiler-inputs/sim/net30/isa1_memory_loads.sv",
+    "verification/net30/full-timed/attempt-001/compiler-inputs/sim/net30/load_video_async.sv",
+    "verification/net30/full-timed/attempt-001/input-images/control_lane0.hex",
+    "verification/net30/full-timed/attempt-001/input-images/control_lane1.hex",
+    "verification/net30/full-timed/attempt-001/input-images/control_lane2.hex",
+    "verification/net30/full-timed/attempt-001/input-images/control_lane3.hex",
+    "verification/net30/full-timed/attempt-001/input-images/program_bus.hex",
+    "verification/net30/full-timed/attempt-001/input-images/program_state.hex",
+    "verification/net30/full-timed/attempt-001/input-images/rom_image.hex",
+    "verification/net30/full-timed/attempt-001/input-images/vectors.hex",
+    "verification/net30/full-timed/attempt-001/run-origin.json",
+    "verification/net30/full-timed/attempt-001/run-state.json",
+    "verification/net30/full-timed/attempt-001/simulation.stderr.log",
+    "verification/net30/full-timed/attempt-001/simulation.stdout.log",
+    "verification/net30/full-timed/attempt-001/system-tb_rtl_program-timed.sv"
+  ],
+  "commands": [
+    "python3 tools/build_dac_video_adapter.py",
+    "python3 tools/run_video_dac_checks.py",
+    "python3 tools/check_video_dac_native.py",
+    "python tools/record_net33_results.py",
+    "python tools/stage_net33_results.py verification/net33/manifest.json"
+  ],
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 3081,
+      "sha256": "284e4dbe2d890d1b609a35083e6b745633d59e72dae9704e25e7751a5f8a2c44"
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 43456,
+      "sha256": "e5df6de4d2c5d937d88f6d5087a8566844dab05269caaa371210f613edba7723"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "bytes": 20874,
+      "sha256": "747623678924d90f15c358401f9d6d531e2df3c5e3c0c2584ba07588789fbd23"
+    },
+    {
+      "path": "DECISIONS.md",
+      "bytes": 53684,
+      "sha256": "047735eb559fb31c92cf4fe668dc8b710b06406cd810425e226988aa0ff1db33"
+    },
+    {
+      "path": "PROVENANCE.md",
+      "bytes": 30237,
+      "sha256": "97342efdfc1ffea39661733be84d8e638dce695f4cee0d65a7831b20dfe75080"
+    },
+    {
+      "path": "README.md",
+      "bytes": 13542,
+      "sha256": "965168983c88182898c3b953ef8d692355edd4b90e875d951982746dbbb5564f"
+    },
+    {
+      "path": "ROADMAP.md",
+      "bytes": 23377,
+      "sha256": "3767bc4d037abe5bf6bda64f1363cffbf1b61a881bca0f3442fdfb0725176cbc"
+    },
+    {
+      "path": "docs/engineering/NET33_VIDEO_DAC.md",
+      "bytes": 6380,
+      "sha256": "0eecec0e2517b02079f62c73d2a8349ee76232f63a664f05a738f08e8ad5592d"
+    },
+    {
+      "path": "docs/engineering/VALIDATION_STATUS.md",
+      "bytes": 8765,
+      "sha256": "ffac3f02769e438cdb85c3d0fb48f73449c2669e1105167d1b8e0f0931803975"
+    },
+    {
+      "path": "hardware/dac_packet_video/bus_packages.kicad_sym",
+      "bytes": 25591,
+      "sha256": "55a4a7453bee052956a9e934a84cafe39bbccf1ab57474a60f19235af8f0e503"
+    },
+    {
+      "path": "hardware/dac_packet_video/dac_packet_video.kicad_pro",
+      "bytes": 83,
+      "sha256": "4f0e81cfadb110f217def56a210d416f88a62b7db9fcb96efe76978f0447a85a"
+    },
+    {
+      "path": "hardware/dac_packet_video/dac_packet_video.kicad_sch",
+      "bytes": 178682,
+      "sha256": "baa29e11d8199f1cf20ecb1073d2019280414d138f95e3739e920566acbe9867"
+    },
+    {
+      "path": "hardware/dac_packet_video/dac_packet_video_async.sv",
+      "bytes": 12117,
+      "sha256": "96f36ef77deabe0566bdae2c6480c47c6f9422dc09b523ad1d61ab83d298aa61"
+    },
+    {
+      "path": "hardware/dac_packet_video/design.json",
+      "bytes": 25180,
+      "sha256": "a76acf0ba06da2f43afea77afc774a553364d672d2d76cfcf815b9f635f8a12d"
+    },
+    {
+      "path": "hardware/dac_packet_video/package-functions.json",
+      "bytes": 12257,
+      "sha256": "fae6d23780f283d137f267f13e473572b1a0178129bb92b186f5073e1029c4be"
+    },
+    {
+      "path": "hardware/dac_packet_video/pinmap.csv",
+      "bytes": 15205,
+      "sha256": "654491f4b64db00f697fc7b5ed5f6354c3815c492e08210888ab0cdb5763818a"
+    },
+    {
+      "path": "hardware/dac_packet_video/sym-lib-table",
+      "bytes": 156,
+      "sha256": "02c55e1e04c11da9c413abdb45f29e81d38b28ee270d0c2cf1bcd560914e42e2"
+    },
+    {
+      "path": "hardware/vga_dac_rgb332/dac_packages.kicad_sym",
+      "bytes": 5874,
+      "sha256": "2a2331f9cbfc5e8a8e66df4b08c54ce658992656cd7a34e5a0791a1e33ab8922"
+    },
+    {
+      "path": "hardware/vga_dac_rgb332/dac_rgb332_digital.sv",
+      "bytes": 543,
+      "sha256": "d94bdbfd9d3cf395ec5f1179d256d2a702ab80f34ac61a47adb0c8b58e2dd2c2"
+    },
+    {
+      "path": "hardware/vga_dac_rgb332/design.json",
+      "bytes": 7678,
+      "sha256": "48e109d63824b730b90fb2a4d2761483bc4122099ea71b7468e2804150891c67"
+    },
+    {
+      "path": "hardware/vga_dac_rgb332/package-functions.json",
+      "bytes": 2601,
+      "sha256": "30048e811ac28f1026895d4b1ca3f255d5be2b313e2db2f48087e35ba13a4b17"
+    },
+    {
+      "path": "hardware/vga_dac_rgb332/pinmap.csv",
+      "bytes": 2987,
+      "sha256": "ebf541a0fc5425d8a977655b4bf579d7d4552665e00c2b0820d8faab5d61988d"
+    },
+    {
+      "path": "hardware/vga_dac_rgb332/sym-lib-table",
+      "bytes": 168,
+      "sha256": "1ba4fc64c7e11723759de2681b5b40e3c345f941ea46c0a83820a3d0bfee05d4"
+    },
+    {
+      "path": "hardware/vga_dac_rgb332/vga_dac_rgb332.kicad_pro",
+      "bytes": 81,
+      "sha256": "0c095946e46b40b34fa40b2c1d3c03c279584a03796ca7182567b8b17f03d10c"
+    },
+    {
+      "path": "hardware/vga_dac_rgb332/vga_dac_rgb332.kicad_sch",
+      "bytes": 39681,
+      "sha256": "da8cb1c806335101c246cba1971939572a434f056e25306fbbac1b2eada80a77"
+    },
+    {
+      "path": "references/net33-review.json",
+      "bytes": 1356,
+      "sha256": "2dd7e36e2dd8e389dd964212729990065797c5cd25ba45b36cb4466eb55638f7"
+    },
+    {
+      "path": "sim/net33/tb_video_dac.sv",
+      "bytes": 3258,
+      "sha256": "c50f03333e24215a742169dd93476f949c0cccb8910b14e519b49e33f7f2bb33"
+    },
+    {
+      "path": "tools/build_dac_video_adapter.py",
+      "bytes": 11655,
+      "sha256": "45448e23d2b0ef3e86c9da48b573b49fb73c4f8670eebd76bf03d0cf6afe18ef"
+    },
+    {
+      "path": "tools/check_video_dac_native.py",
+      "bytes": 3024,
+      "sha256": "4115cad164fe6694c3001916500438a28c15f1d28302e88b6b32a2ba9c2702ec"
+    },
+    {
+      "path": "tools/record_net33_results.py",
+      "bytes": 7757,
+      "sha256": "5fc28f603f01d781a42999a8f64d5ac4fac79fdeb5893e3b98f3f58ee91fa68a"
+    },
+    {
+      "path": "tools/run_video_dac_checks.py",
+      "bytes": 3351,
+      "sha256": "f6be75050788e4ca95f07a5e751d459bf6957fe7b5f26077b4ad56859a8bc257"
+    },
+    {
+      "path": "tools/stage_net33_results.py",
+      "bytes": 230,
+      "sha256": "0e183bb35221404e12922bd6c5cfe96aebdbd910477840612200fd83c0e869d4"
+    },
+    {
+      "path": "verification/net33/dac/adapted-emitter.py",
+      "bytes": 2735,
+      "sha256": "38f4dd63a2e6803a61a1f84153b6a7f91209397bc35ba014ba8cf9262f67f3f8"
+    },
+    {
+      "path": "verification/net33/dac/adapted-symbol.py",
+      "bytes": 1468,
+      "sha256": "3ecd1a68fb9b2dcd6b6a5bd4a68be4ce318ce1e669fa98d5d6ef18128157f69f"
+    },
+    {
+      "path": "verification/net33/dac/commands.json",
+      "bytes": 1314,
+      "sha256": "89ea8b76ceffdf7561ff29ed5c0408c1e98705a2c56e14a3b08d1fc067cb8227"
+    },
+    {
+      "path": "verification/net33/dac/erc.json",
+      "bytes": 11080,
+      "sha256": "52047b49fc2f242c8cfc00eb5e2550fcafb0c1abb0d93a4bd900a5a0478116ae"
+    },
+    {
+      "path": "verification/net33/dac/preview-commands.json",
+      "bytes": 1179,
+      "sha256": "00bd9832ba63b4d2473d54d7b532b18d2c44667eab480f1f29a13b17f8f7dbb3"
+    },
+    {
+      "path": "verification/net33/dac/preview.png",
+      "bytes": 64759,
+      "sha256": "2355f41c5e6109c3d83d7070173758fd92b6301995536a5d100db7ce8571e5f4"
+    },
+    {
+      "path": "verification/net33/dac/schematic.pdf",
+      "bytes": 101501,
+      "sha256": "54d9674ec9d5adeec4ad0562263ee39ee4bc5b6b2d10d18eae76f092c5feb635"
+    },
+    {
+      "path": "verification/net33/dac/vga_dac_rgb332.xml",
+      "bytes": 33026,
+      "sha256": "a820ad734e496953b8a71f87affbcd9fb593044e28417b1d7f6daf39b15afcf1"
+    },
+    {
+      "path": "verification/net33/development/page-A1/build_dac_video_adapter.py",
+      "bytes": 11598,
+      "sha256": "a798213a2254f96d93b1b82993bc2003b9f27d1dedb06b38739a623f30f11ca1"
+    },
+    {
+      "path": "verification/net33/development/page-A1/dac/adapted-emitter.py",
+      "bytes": 2735,
+      "sha256": "38f4dd63a2e6803a61a1f84153b6a7f91209397bc35ba014ba8cf9262f67f3f8"
+    },
+    {
+      "path": "verification/net33/development/page-A1/dac/adapted-symbol.py",
+      "bytes": 1468,
+      "sha256": "3ecd1a68fb9b2dcd6b6a5bd4a68be4ce318ce1e669fa98d5d6ef18128157f69f"
+    },
+    {
+      "path": "verification/net33/development/page-A1/dac/commands.json",
+      "bytes": 1314,
+      "sha256": "dac89d4ed6ebc5190bb9558e13dee24022cdb6b49fdb944ff1bb7adef3cb5ad2"
+    },
+    {
+      "path": "verification/net33/development/page-A1/dac/erc.json",
+      "bytes": 11080,
+      "sha256": "f7c67e99f2a1d03b694f4f70c069e19af3088135aee1d7b4450cd57b46563ef7"
+    },
+    {
+      "path": "verification/net33/development/page-A1/dac/preview-commands.json",
+      "bytes": 1179,
+      "sha256": "94de30347338045480fa87f7a81188ba654ddcb1cd9f24cee8fc78002e6828e0"
+    },
+    {
+      "path": "verification/net33/development/page-A1/dac/preview.png",
+      "bytes": 64759,
+      "sha256": "2355f41c5e6109c3d83d7070173758fd92b6301995536a5d100db7ce8571e5f4"
+    },
+    {
+      "path": "verification/net33/development/page-A1/dac/schematic.pdf",
+      "bytes": 101501,
+      "sha256": "94dd7eece625b60d9f1b2bd83803e2024db3c2c3cddfde5891dafe2ba13fb909"
+    },
+    {
+      "path": "verification/net33/development/page-A1/dac/vga_dac_rgb332.xml",
+      "bytes": 33026,
+      "sha256": "07bce1ab2a9d8dcd23d01c7833cdf1d9a715092a6240333af9fffb057d278524"
+    },
+    {
+      "path": "verification/net33/development/page-A1/model-hashes.json",
+      "bytes": 247,
+      "sha256": "536ddecfd71bb29b75c5929ac7c53ce9a492443cc95cd4a22e4de819991dbf54"
+    },
+    {
+      "path": "verification/net33/development/page-A1/native-results.json",
+      "bytes": 3901,
+      "sha256": "999b806e437ebf5ff0ad8f24309cd22e997a1a5dc4de0cefdcf0cb27b83690f2"
+    },
+    {
+      "path": "verification/net33/development/page-A1/original.kicad_sch",
+      "bytes": 178682,
+      "sha256": "52478cbe67d51e9e0241a38a29ce5aaa067d37c13c6c726fc899e9c0a44aeedf"
+    },
+    {
+      "path": "verification/net33/development/page-A1/pin-negative-results.json",
+      "bytes": 2899,
+      "sha256": "76fd2834c66d2d1676040591a295eba2d42381a09fe4c9f145eecf5f432e4855"
+    },
+    {
+      "path": "verification/net33/development/page-A1/video/adapted-emitter.py",
+      "bytes": 2552,
+      "sha256": "0e4093126522a00bcf965fe3fb5b777cc73a5224cad7ea9faab9fc4574d322a1"
+    },
+    {
+      "path": "verification/net33/development/page-A1/video/commands.json",
+      "bytes": 1329,
+      "sha256": "16e41e99fb78c47e436d41dd8088408d0fb4e36c4f28e8610fb1e450eb69197f"
+    },
+    {
+      "path": "verification/net33/development/page-A1/video/dac_packet_video.xml",
+      "bytes": 130810,
+      "sha256": "b9640192e61c39ef80b57dc2351ec15824eb84ef60c771ee50bb6d1e25293b78"
+    },
+    {
+      "path": "verification/net33/development/page-A1/video/erc.json",
+      "bytes": 30727,
+      "sha256": "e67b702d48ec285ccaa2ac791b64e38d18003c8026878f1bdd8234b020b37b0d"
+    },
+    {
+      "path": "verification/net33/development/page-A1/video/preview-commands.json",
+      "bytes": 1190,
+      "sha256": "ab7684745a2396e53593db7c727a55e8c85d92cf69d9cb8c572a0945f6babe46"
+    },
+    {
+      "path": "verification/net33/development/page-A1/video/preview.png",
+      "bytes": 97392,
+      "sha256": "d8842b8f8c1097f986b2dace18b09b39dfbddebe35fb45131b7eeaafb9011ffe"
+    },
+    {
+      "path": "verification/net33/development/page-A1/video/schematic.pdf",
+      "bytes": 269720,
+      "sha256": "db1256d8fa37374832a8fc6170827cf63da40bb9d57f5c9a4411641b31933632"
+    },
+    {
+      "path": "verification/net33/native-results.json",
+      "bytes": 3901,
+      "sha256": "63616d9ea78fe0082d3c035fea829ab11fcc380b0880cdbb147af7155694bca2"
+    },
+    {
+      "path": "verification/net33/pending-integrity.json",
+      "bytes": 7668,
+      "sha256": "63634b463495525924ff39b3c290c8b9751b7c7b1390c7dbea8d5c09a3a16f26"
+    },
+    {
+      "path": "verification/net33/pin-loads.json",
+      "bytes": 8931,
+      "sha256": "16d39c807bf12a13ce4e323839a83912177b0605c2c8e54896218b1b8ea4e915"
+    },
+    {
+      "path": "verification/net33/pin-negative-results.json",
+      "bytes": 2899,
+      "sha256": "8e22808e15e64248a4162a2389c4ff7808b53e17d5beb88ca98689bc396d5294"
+    },
+    {
+      "path": "verification/net33/pin-negatives/dac-blue_buffer_bypassed.xml",
+      "bytes": 33495,
+      "sha256": "cbd582ad4320449e7c2cae32d2db3b061d38dd7b25fd78906ca2564054f0984e"
+    },
+    {
+      "path": "verification/net33/pin-negatives/dac-complement_wrong_rail.xml",
+      "bytes": 33495,
+      "sha256": "a52c25331967c09544aeae508553acff695f65509525a74d9d5d8232b46c1540"
+    },
+    {
+      "path": "verification/net33/pin-negatives/dac-red_msb_wrong_bit.xml",
+      "bytes": 33495,
+      "sha256": "913086e985031e2f0f4662d5a8327b3b7871f4803f58e4d34b5692a566b2d926"
+    },
+    {
+      "path": "verification/net33/pin-negatives/dac-sleep_high.xml",
+      "bytes": 33495,
+      "sha256": "7c78c609ab37535141670078c56c25f28e9c7d13195d481bdee700c88f101f9c"
+    },
+    {
+      "path": "verification/net33/pin-negatives/video-blue_buffer_wrong_source.xml",
+      "bytes": 132766,
+      "sha256": "b969fb542f7fc1ee92f0d08e3f160a9da07f8e1133a33626e1884f1ee2febd57"
+    },
+    {
+      "path": "verification/net33/pin-negatives/video-clock_wrong_phase.xml",
+      "bytes": 132766,
+      "sha256": "3c75f8f9dfd079ef4e268b01917e90c20c5ed7d9e6735cf652aea849a6b9798a"
+    },
+    {
+      "path": "verification/net33/pin-negatives/video-sync_clear_unbuffered.xml",
+      "bytes": 132766,
+      "sha256": "b61913b061855677d5dd597a5a2fc2cd18ab851fee19ce032de89a1cca8f3301"
+    },
+    {
+      "path": "verification/net33/pin-negatives/video-sync_data_wrong_polarity.xml",
+      "bytes": 132766,
+      "sha256": "89d6c4feaf5df4aeff8fd97b08d26d04f1e44bfbbdb0dcc9e20456e6840492a7"
+    },
+    {
+      "path": "verification/net33/raster-dac-results.json",
+      "bytes": 15011,
+      "sha256": "7b9fef1b543571c10d5fb6918aa660e8704c7f19581eb0263f32c0aaf88fdde9"
+    },
+    {
+      "path": "verification/net33/result-audit.json",
+      "bytes": 5810,
+      "sha256": "a20f6980a0ce0b26fde9ffc0418a18ce9535f2e5247038eb1775a810fecdb925"
+    },
+    {
+      "path": "verification/net33/video/adapted-emitter.py",
+      "bytes": 2552,
+      "sha256": "050fe32109e9c6d5355b3704ee9ffe5a855ca6195747d8e6c8bcc33cede97f9b"
+    },
+    {
+      "path": "verification/net33/video/commands.json",
+      "bytes": 1330,
+      "sha256": "bfd5b827ce7e0279efa5758fbe7cd892eee311d81bf7686e47ce52a2655d3f3e"
+    },
+    {
+      "path": "verification/net33/video/dac_packet_video.xml",
+      "bytes": 130810,
+      "sha256": "bf72db487dcbd74c2c58b7acd190013425a97173409410b630c370d2e27f0121"
+    },
+    {
+      "path": "verification/net33/video/erc.json",
+      "bytes": 30727,
+      "sha256": "5f02af0c02a04ae59e2fe9a0479d39cc25b53629152a550ffa3d1781e79db822"
+    },
+    {
+      "path": "verification/net33/video/preview-commands.json",
+      "bytes": 1190,
+      "sha256": "db448b21fb91dcf6b2b66c54dc2950848d157c46bdf337a82fa0dd175ee8b36d"
+    },
+    {
+      "path": "verification/net33/video/preview.png",
+      "bytes": 67879,
+      "sha256": "076c4cd52dac0b9ddfc82ece253d4fcd71530a73e4eb5b5885be45596b3775e9"
+    },
+    {
+      "path": "verification/net33/video/schematic.pdf",
+      "bytes": 271666,
+      "sha256": "ba753ca602540e6d560d0b9f0e78cb24e9e122f533a0bce444f133c5f8a9cf6d"
+    }
+  ]
+}

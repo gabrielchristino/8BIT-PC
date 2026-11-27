@@ -1,0 +1,406 @@
+{
+  "date": "2026-11-27",
+  "scope": "Native raster and DAC pin projection only, synthetic video memory data and qualified external master/reset. Two full frame/reset epochs per positive case. Selected digital delays/binary boundaries, no CPU, analog, PVT/MTBF/POR or production approval.",
+  "sources": [
+    {
+      "path": "sim/hdl/hc_models.sv",
+      "sha256": "f305ff38b7e58701e9f97528de68ea8c5518a628d38bd5a8ac9e847fa87c8680"
+    },
+    {
+      "path": "sim/net02/package_models.sv",
+      "sha256": "de2fd5315a3809a89ba90b8f09a96a25d06d3e00b8568a8f82387b92a624199f"
+    },
+    {
+      "path": "sim/net14c/package_models_async.sv",
+      "sha256": "7b45346f5e25bb73deb33ba9fb02d50e2b020ab527f75fed1244e173300ccfcb"
+    },
+    {
+      "path": "sim/net19a/package_models.sv",
+      "sha256": "dc71d5b1f5bcefcf7e20dc9a930de79c4ebc7fec145961dcbabd79a4766ac957"
+    },
+    {
+      "path": "sim/net22/phase_packages.sv",
+      "sha256": "f4c9fd1d3c6a936df6e024a32b9a53e53e79cfcf1e094c1d7731e5a857cf2059"
+    },
+    {
+      "path": "sim/net25/warm_packages.sv",
+      "sha256": "b6ff85ba2c3ffeb0de54608c10e4afae3aaed2abb051498a39bdc000259c7d7b"
+    },
+    {
+      "path": "sim/net31/dac_packet_contract.sv",
+      "sha256": "1ca9dce1d98d338f52524060319db773cd918cf988bd876c5bed4a65b631c370"
+    },
+    {
+      "path": "hardware/dac_packet_video/dac_packet_video_async.sv",
+      "sha256": "96f36ef77deabe0566bdae2c6480c47c6f9422dc09b523ad1d61ab83d298aa61"
+    },
+    {
+      "path": "hardware/vga_dac_rgb332/dac_rgb332_digital.sv",
+      "sha256": "d94bdbfd9d3cf395ec5f1179d256d2a702ab80f34ac61a47adb0c8b58e2dd2c2"
+    },
+    {
+      "path": "sim/net33/tb_video_dac.sv",
+      "sha256": "c50f03333e24215a742169dd93476f949c0cccb8910b14e519b49e33f7f2bb33"
+    },
+    {
+      "path": "tools/run_video_dac_checks.py",
+      "sha256": "f6be75050788e4ca95f07a5e751d459bf6957fe7b5f26077b4ad56859a8bc257"
+    },
+    {
+      "path": "tools/limited_process.py",
+      "sha256": "c19d8efcf4dffa5fbff513360a40f27f200b98c459050ad40662192039ee3ffa"
+    }
+  ],
+  "runs": [
+    {
+      "policy": 0,
+      "early": 0,
+      "negative": 0,
+      "compile": {
+        "command": [
+          "iverilog",
+          "-g2012",
+          "-s",
+          "tb_video_dac",
+          "-Ptb_video_dac.EARLY=0",
+          "-Ptb_video_dac.POLICY=0",
+          "-Ptb_video_dac.NEGATIVE=0",
+          "-o",
+          "bench.vvp",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/hdl/hc_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net02/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net14c/package_models_async.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net19a/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net22/phase_packages.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net25/warm_packages.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net31/dac_packet_contract.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/dac_packet_video/dac_packet_video_async.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/vga_dac_rgb332/dac_rgb332_digital.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net33/tb_video_dac.sv"
+        ],
+        "exit": 0,
+        "wall_timeout": false,
+        "seconds": 0.068,
+        "limits": {
+          "memory_mb": 512,
+          "cpu_seconds": 20,
+          "output_mb_per_file": 2,
+          "wall_seconds": 30
+        },
+        "stdout": "",
+        "stderr": ""
+      },
+      "execution": {
+        "command": [
+          "vvp",
+          "bench.vvp"
+        ],
+        "exit": 0,
+        "wall_timeout": false,
+        "seconds": 42.333,
+        "limits": {
+          "memory_mb": 512,
+          "cpu_seconds": 90,
+          "output_mb_per_file": 2,
+          "wall_seconds": 120
+        },
+        "stdout": "RESULT native_raster_dac=1 reset_epochs=2 samples=210000 visible=153600 hsync=25200 vsync=800 colors=256 cpu=0 analog=0 early=0 policy=0 failures=0\n/mnt/c/Users/gabri/projetos/isa1/sim/net33/tb_video_dac.sv:66: $finish called at 33467772100 (1ps)\n",
+        "stderr": ""
+      },
+      "expected_marker": "RESULT native_raster_dac=1 reset_epochs=2 samples=210000 visible=153600 hsync=25200 vsync=800 colors=256 cpu=0 analog=0",
+      "passed": true
+    },
+    {
+      "policy": 0,
+      "early": 1,
+      "negative": 0,
+      "compile": {
+        "command": [
+          "iverilog",
+          "-g2012",
+          "-s",
+          "tb_video_dac",
+          "-Ptb_video_dac.EARLY=1",
+          "-Ptb_video_dac.POLICY=0",
+          "-Ptb_video_dac.NEGATIVE=0",
+          "-o",
+          "bench.vvp",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/hdl/hc_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net02/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net14c/package_models_async.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net19a/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net22/phase_packages.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net25/warm_packages.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net31/dac_packet_contract.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/dac_packet_video/dac_packet_video_async.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/vga_dac_rgb332/dac_rgb332_digital.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net33/tb_video_dac.sv"
+        ],
+        "exit": 0,
+        "wall_timeout": false,
+        "seconds": 0.069,
+        "limits": {
+          "memory_mb": 512,
+          "cpu_seconds": 20,
+          "output_mb_per_file": 2,
+          "wall_seconds": 30
+        },
+        "stdout": "",
+        "stderr": ""
+      },
+      "execution": {
+        "command": [
+          "vvp",
+          "bench.vvp"
+        ],
+        "exit": 0,
+        "wall_timeout": false,
+        "seconds": 44.094,
+        "limits": {
+          "memory_mb": 512,
+          "cpu_seconds": 90,
+          "output_mb_per_file": 2,
+          "wall_seconds": 120
+        },
+        "stdout": "RESULT native_raster_dac=1 reset_epochs=2 samples=210000 visible=153600 hsync=25200 vsync=800 colors=256 cpu=0 analog=0 early=1 policy=0 failures=0\n/mnt/c/Users/gabri/projetos/isa1/sim/net33/tb_video_dac.sv:66: $finish called at 33467772100 (1ps)\n",
+        "stderr": ""
+      },
+      "expected_marker": "RESULT native_raster_dac=1 reset_epochs=2 samples=210000 visible=153600 hsync=25200 vsync=800 colors=256 cpu=0 analog=0",
+      "passed": true
+    },
+    {
+      "policy": 1,
+      "early": 0,
+      "negative": 0,
+      "compile": {
+        "command": [
+          "iverilog",
+          "-g2012",
+          "-s",
+          "tb_video_dac",
+          "-Ptb_video_dac.EARLY=0",
+          "-Ptb_video_dac.POLICY=1",
+          "-Ptb_video_dac.NEGATIVE=0",
+          "-o",
+          "bench.vvp",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/hdl/hc_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net02/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net14c/package_models_async.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net19a/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net22/phase_packages.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net25/warm_packages.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net31/dac_packet_contract.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/dac_packet_video/dac_packet_video_async.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/vga_dac_rgb332/dac_rgb332_digital.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net33/tb_video_dac.sv"
+        ],
+        "exit": 0,
+        "wall_timeout": false,
+        "seconds": 0.07,
+        "limits": {
+          "memory_mb": 512,
+          "cpu_seconds": 20,
+          "output_mb_per_file": 2,
+          "wall_seconds": 30
+        },
+        "stdout": "",
+        "stderr": ""
+      },
+      "execution": {
+        "command": [
+          "vvp",
+          "bench.vvp"
+        ],
+        "exit": 0,
+        "wall_timeout": false,
+        "seconds": 42.383,
+        "limits": {
+          "memory_mb": 512,
+          "cpu_seconds": 90,
+          "output_mb_per_file": 2,
+          "wall_seconds": 120
+        },
+        "stdout": "RESULT native_raster_dac=1 reset_epochs=2 samples=210000 visible=153600 hsync=25200 vsync=800 colors=256 cpu=0 analog=0 early=0 policy=1 failures=0\n/mnt/c/Users/gabri/projetos/isa1/sim/net33/tb_video_dac.sv:66: $finish called at 33467772100 (1ps)\n",
+        "stderr": ""
+      },
+      "expected_marker": "RESULT native_raster_dac=1 reset_epochs=2 samples=210000 visible=153600 hsync=25200 vsync=800 colors=256 cpu=0 analog=0",
+      "passed": true
+    },
+    {
+      "policy": 1,
+      "early": 1,
+      "negative": 0,
+      "compile": {
+        "command": [
+          "iverilog",
+          "-g2012",
+          "-s",
+          "tb_video_dac",
+          "-Ptb_video_dac.EARLY=1",
+          "-Ptb_video_dac.POLICY=1",
+          "-Ptb_video_dac.NEGATIVE=0",
+          "-o",
+          "bench.vvp",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/hdl/hc_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net02/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net14c/package_models_async.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net19a/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net22/phase_packages.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net25/warm_packages.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net31/dac_packet_contract.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/dac_packet_video/dac_packet_video_async.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/vga_dac_rgb332/dac_rgb332_digital.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net33/tb_video_dac.sv"
+        ],
+        "exit": 0,
+        "wall_timeout": false,
+        "seconds": 0.07,
+        "limits": {
+          "memory_mb": 512,
+          "cpu_seconds": 20,
+          "output_mb_per_file": 2,
+          "wall_seconds": 30
+        },
+        "stdout": "",
+        "stderr": ""
+      },
+      "execution": {
+        "command": [
+          "vvp",
+          "bench.vvp"
+        ],
+        "exit": 0,
+        "wall_timeout": false,
+        "seconds": 44.376,
+        "limits": {
+          "memory_mb": 512,
+          "cpu_seconds": 90,
+          "output_mb_per_file": 2,
+          "wall_seconds": 120
+        },
+        "stdout": "RESULT native_raster_dac=1 reset_epochs=2 samples=210000 visible=153600 hsync=25200 vsync=800 colors=256 cpu=0 analog=0 early=1 policy=1 failures=0\n/mnt/c/Users/gabri/projetos/isa1/sim/net33/tb_video_dac.sv:66: $finish called at 33467772100 (1ps)\n",
+        "stderr": ""
+      },
+      "expected_marker": "RESULT native_raster_dac=1 reset_epochs=2 samples=210000 visible=153600 hsync=25200 vsync=800 colors=256 cpu=0 analog=0",
+      "passed": true
+    },
+    {
+      "policy": 1,
+      "early": 1,
+      "negative": 1,
+      "compile": {
+        "command": [
+          "iverilog",
+          "-g2012",
+          "-s",
+          "tb_video_dac",
+          "-Ptb_video_dac.EARLY=1",
+          "-Ptb_video_dac.POLICY=1",
+          "-Ptb_video_dac.NEGATIVE=1",
+          "-o",
+          "bench.vvp",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/hdl/hc_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net02/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net14c/package_models_async.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net19a/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net22/phase_packages.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net25/warm_packages.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net31/dac_packet_contract.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/dac_packet_video/dac_packet_video_async.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/vga_dac_rgb332/dac_rgb332_digital.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net33/tb_video_dac.sv"
+        ],
+        "exit": 0,
+        "wall_timeout": false,
+        "seconds": 0.07,
+        "limits": {
+          "memory_mb": 512,
+          "cpu_seconds": 20,
+          "output_mb_per_file": 2,
+          "wall_seconds": 30
+        },
+        "stdout": "",
+        "stderr": ""
+      },
+      "execution": {
+        "command": [
+          "vvp",
+          "bench.vvp"
+        ],
+        "exit": 1,
+        "wall_timeout": false,
+        "seconds": 0.12,
+        "limits": {
+          "memory_mb": 512,
+          "cpu_seconds": 90,
+          "output_mb_per_file": 2,
+          "wall_seconds": 120
+        },
+        "stdout": "FATAL: /mnt/c/Users/gabri/projetos/isa1/sim/net33/tb_video_dac.sv:27: sync changed before DAC capture\n       Time: 76764321  Scope: tb_video_dac\n",
+        "stderr": ""
+      },
+      "expected_marker": "sync changed before DAC capture",
+      "passed": true
+    },
+    {
+      "policy": 1,
+      "early": 1,
+      "negative": 2,
+      "compile": {
+        "command": [
+          "iverilog",
+          "-g2012",
+          "-s",
+          "tb_video_dac",
+          "-Ptb_video_dac.EARLY=1",
+          "-Ptb_video_dac.POLICY=1",
+          "-Ptb_video_dac.NEGATIVE=2",
+          "-o",
+          "bench.vvp",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/hdl/hc_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net02/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net14c/package_models_async.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net19a/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net22/phase_packages.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net25/warm_packages.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net31/dac_packet_contract.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/dac_packet_video/dac_packet_video_async.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/vga_dac_rgb332/dac_rgb332_digital.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net33/tb_video_dac.sv"
+        ],
+        "exit": 0,
+        "wall_timeout": false,
+        "seconds": 0.069,
+        "limits": {
+          "memory_mb": 512,
+          "cpu_seconds": 20,
+          "output_mb_per_file": 2,
+          "wall_seconds": 30
+        },
+        "stdout": "",
+        "stderr": ""
+      },
+      "execution": {
+        "command": [
+          "vvp",
+          "bench.vvp"
+        ],
+        "exit": 1,
+        "wall_timeout": false,
+        "seconds": 0.068,
+        "limits": {
+          "memory_mb": 512,
+          "cpu_seconds": 90,
+          "output_mb_per_file": 2,
+          "wall_seconds": 120
+        },
+        "stdout": "FATAL: /mnt/c/Users/gabri/projetos/isa1/sim/net33/tb_video_dac.sv:41: native RGB332 DAC mapping mismatch\n       Time: 50931521  Scope: tb_video_dac\n",
+        "stderr": ""
+      },
+      "expected_marker": "native RGB332 DAC mapping mismatch",
+      "passed": true
+    }
+  ],
+  "failures": [],
+  "production_released": false
+}

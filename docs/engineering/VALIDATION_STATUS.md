@@ -5,6 +5,18 @@ Atualizado em27/11/2026, após as regressões próprias da NET30.
 relatórios NET e versões Git preservam os estados anteriores. Não somar
 ensaios sobrepostos nem transferir aprovação entre variantes diferentes.
 
+## Integracao de video/DAC NET33, separada do sistema completo
+
+Duas folhas nativas com RGB332 e H/V registrados: um AHC174 novo no video,
+sete canais livres reutilizados. Passaram quatro cenarios, cada um com
+dois quadros/epocas de reset,210000amostras,153600visiveis e256cores.
+Dois negativos funcionais e oito XMLs alterados foram rejeitados. Dados
+sinteticos e forcepoints digitais; sem CPU/SRAM/analogico. Contagem de
+entradas de duas folhas cabe em quatro, sem carga extraida. ERC49/15 sem
+aprovacao; ganho,driverH/V,niveis/protecao,energia/POR,integracao global e
+PCB/prototipo continuam abertos. [Detalhes NET33](NET33_VIDEO_DAC.md).
+NET30 e os dois boots completos temporizados permanecem separados.
+
 ## Folha experimental NET32
 
 Tres DACs em folha KiCad separada: 24 componentes,126pinos,15NC conferidos.

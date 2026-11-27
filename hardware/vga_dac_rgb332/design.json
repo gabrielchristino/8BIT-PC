@@ -1,0 +1,373 @@
+{
+  "date": "2026-11-27",
+  "base_git_commit": "052928f344e1fad6f6d43f380345793f60b748ff",
+  "status": "RGB332 pin mapping; diagnostic analog values, not final VGA",
+  "parts": [
+    {
+      "reference": "U1",
+      "part": "AD9760ARUZ",
+      "value": "AD9760ARUZ",
+      "nets": {
+        "1": "PIXEL_7",
+        "2": "PIXEL_6",
+        "3": "PIXEL_5",
+        "4": "PIXEL_7",
+        "5": "PIXEL_6",
+        "6": "PIXEL_5",
+        "7": "PIXEL_7",
+        "8": "PIXEL_6",
+        "9": "PIXEL_5",
+        "10": "PIXEL_7",
+        "11": null,
+        "12": null,
+        "13": null,
+        "14": null,
+        "15": "GND",
+        "16": "GND",
+        "17": "R_REFIO",
+        "18": "R_FSADJ",
+        "19": "R_COMP1",
+        "20": "GND",
+        "21": "GND",
+        "22": "R_ANALOG",
+        "23": "R_COMP2",
+        "24": "+5V",
+        "25": null,
+        "26": "GND",
+        "27": "+5V",
+        "28": "DAC_CLK"
+      },
+      "x": 60.96,
+      "y": 66.04,
+      "role": "experimental channel R"
+    },
+    {
+      "reference": "C1",
+      "part": "C",
+      "value": "100nF",
+      "nets": {
+        "1": "+5V",
+        "2": "GND"
+      },
+      "x": 30.48,
+      "y": 120.65,
+      "role": "digital supply"
+    },
+    {
+      "reference": "C2",
+      "part": "C",
+      "value": "100nF",
+      "nets": {
+        "1": "+5V",
+        "2": "GND"
+      },
+      "x": 60.96,
+      "y": 120.65,
+      "role": "analog supply"
+    },
+    {
+      "reference": "C3",
+      "part": "C",
+      "value": "100nF",
+      "nets": {
+        "1": "R_REFIO",
+        "2": "GND"
+      },
+      "x": 91.44,
+      "y": 120.65,
+      "role": "internal reference"
+    },
+    {
+      "reference": "C4",
+      "part": "C",
+      "value": "100nF",
+      "nets": {
+        "1": "R_COMP1",
+        "2": "+5V"
+      },
+      "x": 30.48,
+      "y": 140.97,
+      "role": "COMP1 to AVDD"
+    },
+    {
+      "reference": "C5",
+      "part": "C",
+      "value": "100nF",
+      "nets": {
+        "1": "R_COMP2",
+        "2": "GND"
+      },
+      "x": 60.96,
+      "y": 140.97,
+      "role": "COMP2 to ACOM"
+    },
+    {
+      "reference": "R1",
+      "part": "R",
+      "value": "2.32k",
+      "nets": {
+        "1": "R_FSADJ",
+        "2": "GND"
+      },
+      "x": 40.64,
+      "y": 175.26,
+      "role": "0.1 percent diagnostic RSET; deliberately not calibrated final white"
+    },
+    {
+      "reference": "R2",
+      "part": "R",
+      "value": "75",
+      "nets": {
+        "1": "R_ANALOG",
+        "2": "GND"
+      },
+      "x": 81.28,
+      "y": 175.26,
+      "role": "1 percent local shunt; monitor external; not series termination"
+    },
+    {
+      "reference": "U2",
+      "part": "AD9760ARUZ",
+      "value": "AD9760ARUZ",
+      "nets": {
+        "1": "PIXEL_4",
+        "2": "PIXEL_3",
+        "3": "PIXEL_2",
+        "4": "PIXEL_4",
+        "5": "PIXEL_3",
+        "6": "PIXEL_2",
+        "7": "PIXEL_4",
+        "8": "PIXEL_3",
+        "9": "PIXEL_2",
+        "10": "PIXEL_4",
+        "11": null,
+        "12": null,
+        "13": null,
+        "14": null,
+        "15": "GND",
+        "16": "GND",
+        "17": "G_REFIO",
+        "18": "G_FSADJ",
+        "19": "G_COMP1",
+        "20": "GND",
+        "21": "GND",
+        "22": "G_ANALOG",
+        "23": "G_COMP2",
+        "24": "+5V",
+        "25": null,
+        "26": "GND",
+        "27": "+5V",
+        "28": "DAC_CLK"
+      },
+      "x": 190.5,
+      "y": 66.04,
+      "role": "experimental channel G"
+    },
+    {
+      "reference": "C6",
+      "part": "C",
+      "value": "100nF",
+      "nets": {
+        "1": "+5V",
+        "2": "GND"
+      },
+      "x": 160.02,
+      "y": 120.65,
+      "role": "digital supply"
+    },
+    {
+      "reference": "C7",
+      "part": "C",
+      "value": "100nF",
+      "nets": {
+        "1": "+5V",
+        "2": "GND"
+      },
+      "x": 190.5,
+      "y": 120.65,
+      "role": "analog supply"
+    },
+    {
+      "reference": "C8",
+      "part": "C",
+      "value": "100nF",
+      "nets": {
+        "1": "G_REFIO",
+        "2": "GND"
+      },
+      "x": 220.98000000000002,
+      "y": 120.65,
+      "role": "internal reference"
+    },
+    {
+      "reference": "C9",
+      "part": "C",
+      "value": "100nF",
+      "nets": {
+        "1": "G_COMP1",
+        "2": "+5V"
+      },
+      "x": 160.02,
+      "y": 140.97,
+      "role": "COMP1 to AVDD"
+    },
+    {
+      "reference": "C10",
+      "part": "C",
+      "value": "100nF",
+      "nets": {
+        "1": "G_COMP2",
+        "2": "GND"
+      },
+      "x": 190.5,
+      "y": 140.97,
+      "role": "COMP2 to ACOM"
+    },
+    {
+      "reference": "R3",
+      "part": "R",
+      "value": "2.32k",
+      "nets": {
+        "1": "G_FSADJ",
+        "2": "GND"
+      },
+      "x": 170.18,
+      "y": 175.26,
+      "role": "0.1 percent diagnostic RSET; deliberately not calibrated final white"
+    },
+    {
+      "reference": "R4",
+      "part": "R",
+      "value": "75",
+      "nets": {
+        "1": "G_ANALOG",
+        "2": "GND"
+      },
+      "x": 210.82,
+      "y": 175.26,
+      "role": "1 percent local shunt; monitor external; not series termination"
+    },
+    {
+      "reference": "U3",
+      "part": "AD9760ARUZ",
+      "value": "AD9760ARUZ",
+      "nets": {
+        "1": "PIXEL_1",
+        "2": "PIXEL_0",
+        "3": "PIXEL_1",
+        "4": "PIXEL_0",
+        "5": "BLUE1_BUFFER",
+        "6": "BLUE0_BUFFER",
+        "7": "BLUE1_BUFFER",
+        "8": "BLUE0_BUFFER",
+        "9": "BLUE1_BUFFER",
+        "10": "BLUE0_BUFFER",
+        "11": null,
+        "12": null,
+        "13": null,
+        "14": null,
+        "15": "GND",
+        "16": "GND",
+        "17": "B_REFIO",
+        "18": "B_FSADJ",
+        "19": "B_COMP1",
+        "20": "GND",
+        "21": "GND",
+        "22": "B_ANALOG",
+        "23": "B_COMP2",
+        "24": "+5V",
+        "25": null,
+        "26": "GND",
+        "27": "+5V",
+        "28": "DAC_CLK"
+      },
+      "x": 320.03999999999996,
+      "y": 66.04,
+      "role": "experimental channel B"
+    },
+    {
+      "reference": "C11",
+      "part": "C",
+      "value": "100nF",
+      "nets": {
+        "1": "+5V",
+        "2": "GND"
+      },
+      "x": 289.55999999999995,
+      "y": 120.65,
+      "role": "digital supply"
+    },
+    {
+      "reference": "C12",
+      "part": "C",
+      "value": "100nF",
+      "nets": {
+        "1": "+5V",
+        "2": "GND"
+      },
+      "x": 320.03999999999996,
+      "y": 120.65,
+      "role": "analog supply"
+    },
+    {
+      "reference": "C13",
+      "part": "C",
+      "value": "100nF",
+      "nets": {
+        "1": "B_REFIO",
+        "2": "GND"
+      },
+      "x": 350.5199999999999,
+      "y": 120.65,
+      "role": "internal reference"
+    },
+    {
+      "reference": "C14",
+      "part": "C",
+      "value": "100nF",
+      "nets": {
+        "1": "B_COMP1",
+        "2": "+5V"
+      },
+      "x": 289.55999999999995,
+      "y": 140.97,
+      "role": "COMP1 to AVDD"
+    },
+    {
+      "reference": "C15",
+      "part": "C",
+      "value": "100nF",
+      "nets": {
+        "1": "B_COMP2",
+        "2": "GND"
+      },
+      "x": 320.03999999999996,
+      "y": 140.97,
+      "role": "COMP2 to ACOM"
+    },
+    {
+      "reference": "R5",
+      "part": "R",
+      "value": "2.32k",
+      "nets": {
+        "1": "B_FSADJ",
+        "2": "GND"
+      },
+      "x": 299.71999999999997,
+      "y": 175.26,
+      "role": "0.1 percent diagnostic RSET; deliberately not calibrated final white"
+    },
+    {
+      "reference": "R6",
+      "part": "R",
+      "value": "75",
+      "nets": {
+        "1": "B_ANALOG",
+        "2": "GND"
+      },
+      "x": 340.35999999999996,
+      "y": 175.26,
+      "role": "1 percent local shunt; monitor external; not series termination"
+    }
+  ]
+}

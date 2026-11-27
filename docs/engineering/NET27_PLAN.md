@@ -1,3 +1,5 @@
+Atualização27/11/2026: tentativa001 concluída e auditada independentemente; programa completo temporizado NET26 aceito nas condições selecionadas.132.197instruções/232.576transações/32.771VRAM/76.800pixels exatos, zero abortos. Evidências em verification/net27/full-timed/attempt-001 e verification/net36; detalhes emNET36_REVIEW.md. O plano original abaixo registra a preparação, não o estado final. NET30 continua separada/pendente; sem liberação física.
+
 # NET-27 — programa completo temporizado
 
 Plano preparado após NET26 `f1c6c27d60d921286ed8729cd6f47e90e5948a3b`.

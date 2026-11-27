@@ -1,0 +1,12 @@
+NET36 conditional charge stress - NOT vendor regulator or supervisor
+C1 store 0 150u IC=3.0108343359965035
+R1 store rail 0.05
+I1 rail 0 0.025
+.control
+set wr_singlescale
+set wr_vecnames
+tran 5n 51u uic
+wrdata values.dat v(rail)
+quit
+.endc
+.end

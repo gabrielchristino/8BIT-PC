@@ -1,3 +1,5 @@
+NET36,27/11/2026: NET27 completo temporizado aceito no circuito NET26 (132.197instruções/232.576transações/32.771VRAM/76.800pixels idênticos); NET30 ainda ativa e não aprovada nesta coleta. Revisão H/V inclui caminhos LT3042 até15mA descritos no datasheet;10mA totais continuam não qualificados.120casos/cinco proxies condicionais, proposta25mA/150uF efetivos sem adoção de BOM. Ver docs/engineering/NET36_REVIEW.md; fabricação não liberada.
+
 NET35: hardware/vga_sync_window é alternativa experimental separada, não BOM adotada. Preservar NET34 e entradas congeladas dos boots NET27/NET30. Os 128 casos de descarga pressupõem até 10 mA, pelo menos 47 uF efetivos, ESR até 50 miliohm e inibição em 20,1 us após 5% de overdrive; não comprovam esses limites. Não transferir resultados de quadros NET34 como novos ensaios NET35. LT3042 lido via web, PDF local ausente por timeout. Ver docs/engineering/NET35_WINDOW.md e verification/net35.
 
 ## Continuidade NET34 - sincronismos3,3V supervisionados

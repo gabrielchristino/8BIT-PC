@@ -84,3 +84,8 @@ revisions/** -text
 /references/net35/** -text -whitespace
 /verification/net35/**/values.dat -text -whitespace
 /verification/net35/**/*.sv -whitespace
+
+# Preserve exact completed NET27 compiler/image/log evidence and NET36 proxy tables.
+/verification/net27/full-timed/** -text -whitespace
+/verification/net36/**/values.dat -text -whitespace
+/references/net36/** -text -whitespace

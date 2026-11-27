@@ -1,0 +1,33 @@
+{
+  "date_started": "2026-11-26",
+  "circuit_base_commit": "f1c6c27d60d921286ed8729cd6f47e90e5948a3b",
+  "run_source_commit": "ba3353f585fff94469d89674a8c1bdfa08ea70f1",
+  "engine": "Icarus",
+  "scope": "Full timed program at nominal100kHz CPU/25.175MHz master,10ms source startup, selected digital chip delays, initially unknown SRAM. Qualified oscillator VDD held valid. Binary warm/local reset boundary, not analog/PVT/jitter/MTBF/POR/PCB approval.",
+  "transformation": "Adapt previously verified ideal program runner to timed mode and nominal source startup; add read-only retirement progress every128instructions. Keep original architectural/WAIT/COMMIT/VRAM/frame assertions and simulated watchdog. Compiler inputs/images snapshotted; observed PPM retained.",
+  "sources": [
+    {
+      "path": "tools/run_full_timed_program.py",
+      "sha256": "cfcdb920e9afc03813c45b790953f0bf7c550bbea475f32a4d3b87f4db67aa6a"
+    },
+    {
+      "path": "tools/tracked_simulation.py",
+      "sha256": "5f155be9ceb4a7f6e7b6f791a45f07b5ed6d73d374264c169ede38c145210cbe"
+    },
+    {
+      "path": "tools/run_local_phase_program.py",
+      "sha256": "564f9471e6a454cf8b4e872086d16871a4676d778c3f4b1d93602af6afad7e79"
+    },
+    {
+      "path": "tools/run_system_cpu.py",
+      "sha256": "c106d0c2d457074718f556a012ead2fcb959163027cdd53d1beebd72408a9438"
+    }
+  ],
+  "limits": {
+    "simulation_memory_mb": 1024,
+    "simulation_cpu_seconds": 72000,
+    "simulation_wall_seconds": 86400,
+    "output_mb_per_file": 8
+  },
+  "simulation_passed": false
+}

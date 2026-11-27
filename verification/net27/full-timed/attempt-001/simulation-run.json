@@ -1,0 +1,27 @@
+{
+  "status": "process_finished",
+  "phase": "simulation",
+  "command": [
+    "vvp",
+    "/tmp/isa1-keyboard-cpu-_pbv9afx/bench.vvp"
+  ],
+  "cwd": "/tmp/isa1-keyboard-cpu-_pbv9afx",
+  "boot_id": "e83b5137-128a-4b62-995b-0b9291433040",
+  "started_unix_seconds": 1795745472.4121609,
+  "limits": {
+    "memory_mb": 1024,
+    "cpu_seconds": 72000,
+    "wall_seconds": 86400,
+    "output_mb_per_file": 8
+  },
+  "stdout_path": "/mnt/c/Users/gabri/projetos/isa1/verification/net27/full-timed/attempt-001/simulation.stdout.log",
+  "stderr_path": "/mnt/c/Users/gabri/projetos/isa1/verification/net27/full-timed/attempt-001/simulation.stderr.log",
+  "simulation_passed": false,
+  "pid": 702,
+  "process_group": 702,
+  "exit": 0,
+  "wall_timeout": false,
+  "seconds": 56155.678,
+  "stdout_sha256": "6404d9f6c6c4189dd17dfa057993fe41f1bd221001b8f1c3f047453b5d69c33c",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

@@ -1,3 +1,19 @@
+## Atualização NET36 — 27/11/2026
+
+NET27 `attempt-001` concluída e aceita pela auditoria independente:132.197
+instruções/232.576transações/32.771VRAM,76.800pixels idênticos,zero abortos.
+49fontes do relatório final e entradas congeladas conferidas; referência
+regenerada,seis negativos rejeitados. É circuitoNET26, sem herança paraNET30.
+NET30 permanece ativa/pendente no checkpoint; identidade e limites conferidos.
+
+NET35 permanece experimental: limite10mA total não qualificado frente aos
+caminhos internos LT3042; estresse parcial20,817mA deixa0,891mV no proxy47uF.
+Proposta25mA/150uF efetivos/50mohm/20,1us resulta3,006234V condicionalmente;
+nenhuma peça/BOM/esquema adotada.120combinações e cinco proxies conferidos.
+TimingTPS3808 em4,7k,passivos reais,estabilidade/POR/transientes ainda abertos.
+**Fabricação não liberada.** [Evidências e critérios NET36](NET36_REVIEW.md).
+Os estados anteriores abaixo conservam o escopo das respectivas etapas.
+
 # Testes, pendências e revisões do ISA-1
 
 Atualizado em27/11/2026, após as regressões próprias da NET30.

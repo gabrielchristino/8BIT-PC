@@ -1,0 +1,10 @@
+{
+  "command": [
+    "/usr/bin/python3",
+    "scripts/verify_archive.py"
+  ],
+  "exit": 0,
+  "stdout": "{\n  \"date\": \"2026-11-24\",\n  \"manifest_files_checked\": 159,\n  \"manifests\": [\n    \"archive/manifest.json\",\n    \"archive/local-additions-manifest.json\"\n  ],\n  \"zip_entries_checked\": 55,\n  \"failures\": []\n}\n",
+  "stderr": "",
+  "source_sha256": "cdcf55b10c4d473fa83f0b5492c686dec4ecf268b38e9e12c694b13c036a8fe2"
+}

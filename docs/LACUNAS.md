@@ -1,3 +1,5 @@
+NET36,27/11/2026: boot completo temporizado NET27/NET26 agora auditado e aceito; NET30 permanece pendente. Corrente de descarga LT3042/SET, timing real TPS3808 a4,7k e capacitância efetiva/ESR continuam sem qualificação. Proposta25mA/150uF não é BOM. Novo download LT3042 também terminou em timeout; sem PDF local. Ver engineering/NET36_REVIEW.md.
+
 NET35, 27/11/2026: falta PDF original local LT3042 Rev. C (download terminou em timeout; leitura primária web registrada). A alternativa 3,51 V não fecha alimentação física: até 10 mA, 47 uF efetivos, ESR 50 miliohm e 20,1 us são condições a comprovar. Margens até 3,6 V e no desligamento são pequenas; selecionar componentes completos, conferir estabilidade/Kelvin/temperatura, supervisor real, partida, transientes e proteção. ERC quatro itens não aprovado, sem footprints/PCB. Proxies passivos não são modelo vendor nem ensaio físico. Ver engineering/NET35_WINDOW.md.
 
 # Lacunas da recuperação

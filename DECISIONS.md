@@ -1,3 +1,26 @@
+## ADR E40 — Rever a reserva H/V antes de promover NET35
+
+27/11/2026,base2a7fbab. Estado: requisito proposto em investigação,sem
+adoção de BOM ou mudança de circuito. LT3042RevC descreve caminhos de
+descarga OUTS/SET/recuperação até15mA em condições de falha; bloqueio
+reverso deIN não qualifica10mA totais. Ledger parcial com essa hipótese
+chega20,817mA e margem0,891mV no proxy47uF,sem provar simultaneidade real.
+
+Decisão: conservar NET35 e testar separadamente requisitos25mA totais,
+150uF efetivos,ESR50mohm e inibição20,1us.120combinações e cinco proxies
+conferidos; caso25mA/47uF é negativo,150uF/25mA resulta3,006234V.
+Alternativas: qualificar10mA com todos os caminhos,isolação da reserva,
+outro regulador/supervisor ou arquitetura H/V; maior capacitor sozinho
+não fecha transientes/POR e não é adoção automática de nominal220uF.
+
+Compatibilidade: CPU/ISA/X/SP/flags/VGA/WAIT/COMMIT e todas as fontes
+NET27/NET30 preservadas. Nenhuma integração ou economia deCI alegada.
+Aceitação: corrente integrada/dinâmica SET reais,tempoTPS3808 na carga
+4,7k real,passivos completos/deriva/ESR/ESL,estabilidade/Kelvin/térmica,
+partida/receptor/proteção e margens superior/retomada antes de promover.
+Resultado NET27 aceito pertence àNET26;NET30 segue pendente no checkpoint.
+Detalhes em docs/engineering/NET36_REVIEW.md.
+
 ## ADR E39 — Investigar uma janela H/V nominal de 3,51 V
 
 Data: 27/11/2026. Estado: alternativa experimental, não promovida à BOM.

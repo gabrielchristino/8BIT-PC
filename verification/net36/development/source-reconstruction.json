@@ -1,0 +1,6 @@
+{
+  "transformation": "Reverse two bench/resource-limit additions; reconstructed source, not contemporaneous capture.",
+  "source": "tools/audit_full_timed_attempts.py",
+  "result": "verification/net36/development/auditor-initial-reconstructed.py",
+  "matches_original_report_sha256": "c64cb465c19305388b8f53ae80f5492ce99226cc558bc4e801b7d1b771a148b5"
+}

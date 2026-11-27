@@ -1,0 +1,14 @@
+{
+  "date": "2026-11-27",
+  "base_git_commit": "4b74c8c6681d43bc0329e29ce4ab93f5ab4787f6",
+  "python": "3.13.14",
+  "validated_source_records": 6,
+  "downloaded_primary_pdfs": 6,
+  "local_download_failures": 4,
+  "original_ad9760_pdf_available": false,
+  "contract_arithmetic_passed": true,
+  "functional_packet_proposal_passed": true,
+  "native_dac_circuit_built": false,
+  "bom_adopted": false,
+  "production_released": false
+}

@@ -60,3 +60,6 @@ revisions/** -text
 
 /verification/net30/**/*.sv -whitespace
 /verification/net30/**/*.log -whitespace
+
+# Exact NET31 primary-source downloads, extraction and acquisition records.
+/references/net31/** -text -whitespace

@@ -1,0 +1,290 @@
+{
+  "date": "2026-11-27",
+  "base_git_commit": "4b74c8c6681d43bc0329e29ce4ab93f5ab4787f6",
+  "python": "3.13.14",
+  "validated_source_records": 6,
+  "downloaded_primary_pdfs": 6,
+  "local_download_failures": 4,
+  "original_ad9760_pdf_available": false,
+  "contract_arithmetic_passed": true,
+  "functional_packet_proposal_passed": true,
+  "native_dac_circuit_built": false,
+  "bom_adopted": false,
+  "production_released": false,
+  "scope": "Candidate VGA DAC review and separate functional proposal; no native/global/analog approval",
+  "commands": [
+    "python3 tools/check_dac_contract.py",
+    "python3 tools/run_dac_packet_contract.py",
+    "python tools/record_net31_review.py",
+    "python tools/stage_net31_review.py verification/net31/manifest.json"
+  ],
+  "excluded_pending_run_prefix": [
+    "verification/net27/full-timed/attempt-001/",
+    "verification/net30/full-timed/attempt-001/"
+  ],
+  "excluded_files_at_snapshot": [
+    "verification/net27/full-timed/attempt-001/adapted-program-runner.py",
+    "verification/net27/full-timed/attempt-001/adapted-system-main.py",
+    "verification/net27/full-timed/attempt-001/compile-run.json",
+    "verification/net27/full-timed/attempt-001/compile.stderr.log",
+    "verification/net27/full-timed/attempt-001/compile.stdout.log",
+    "verification/net27/full-timed/attempt-001/compiler-inputs.json",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/generated-bench.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/hardware/common_request/common_request_netlist.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/hardware/cpu_global/cpu_global_netlist.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/hardware/local_phase_keyboard/local_phase_keyboard_netlist.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/hardware/local_phase_reset/local_phase_reset_netlist.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/hardware/memory_bus/memory_bus_netlist.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/hardware/memory_decode/memory_decode_netlist.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/sim/hdl/hc_models.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/sim/net02/package_models.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/sim/net03/package_models.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/sim/net04/package_models.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/sim/net13/memory_devices.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/sim/net14c/package_models_async.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/sim/net19a/package_models.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/sim/net22/phase_packages.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/sim/net23/clock_models.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/sim/net25/warm_packages.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/sim/net26/isa1_memory_local_phase.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/sim/net26/local_video_async.sv",
+    "verification/net27/full-timed/attempt-001/input-images/control_lane0.hex",
+    "verification/net27/full-timed/attempt-001/input-images/control_lane1.hex",
+    "verification/net27/full-timed/attempt-001/input-images/control_lane2.hex",
+    "verification/net27/full-timed/attempt-001/input-images/control_lane3.hex",
+    "verification/net27/full-timed/attempt-001/input-images/program_bus.hex",
+    "verification/net27/full-timed/attempt-001/input-images/program_state.hex",
+    "verification/net27/full-timed/attempt-001/input-images/rom_image.hex",
+    "verification/net27/full-timed/attempt-001/input-images/vectors.hex",
+    "verification/net27/full-timed/attempt-001/run-origin.json",
+    "verification/net27/full-timed/attempt-001/run-state.json",
+    "verification/net27/full-timed/attempt-001/simulation.stderr.log",
+    "verification/net27/full-timed/attempt-001/simulation.stdout.log",
+    "verification/net27/full-timed/attempt-001/system-tb_rtl_program-timed.sv",
+    "verification/net30/full-timed/attempt-001/adapted-program-runner.py",
+    "verification/net30/full-timed/attempt-001/adapted-system-main.py",
+    "verification/net30/full-timed/attempt-001/compile-run.json",
+    "verification/net30/full-timed/attempt-001/compile.stderr.log",
+    "verification/net30/full-timed/attempt-001/compile.stdout.log",
+    "verification/net30/full-timed/attempt-001/compiler-inputs.json",
+    "verification/net30/full-timed/attempt-001/compiler-inputs/generated-bench.sv",
+    "verification/net30/full-timed/attempt-001/compiler-inputs/hardware/common_request/common_request_netlist.sv",
+    "verification/net30/full-timed/attempt-001/compiler-inputs/hardware/cpu_global/cpu_global_netlist.sv",
+    "verification/net30/full-timed/attempt-001/compiler-inputs/hardware/load_distributed_bus/load_distributed_bus_netlist.sv",
+    "verification/net30/full-timed/attempt-001/compiler-inputs/hardware/load_distributed_keyboard/load_distributed_keyboard_netlist.sv",
+    "verification/net30/full-timed/attempt-001/compiler-inputs/hardware/local_phase_reset/local_phase_reset_netlist.sv",
+    "verification/net30/full-timed/attempt-001/compiler-inputs/hardware/memory_decode/memory_decode_netlist.sv",
+    "verification/net30/full-timed/attempt-001/compiler-inputs/sim/hdl/hc_models.sv",
+    "verification/net30/full-timed/attempt-001/compiler-inputs/sim/net02/package_models.sv",
+    "verification/net30/full-timed/attempt-001/compiler-inputs/sim/net03/package_models.sv",
+    "verification/net30/full-timed/attempt-001/compiler-inputs/sim/net04/package_models.sv",
+    "verification/net30/full-timed/attempt-001/compiler-inputs/sim/net13/memory_devices.sv",
+    "verification/net30/full-timed/attempt-001/compiler-inputs/sim/net14c/package_models_async.sv",
+    "verification/net30/full-timed/attempt-001/compiler-inputs/sim/net19a/package_models.sv",
+    "verification/net30/full-timed/attempt-001/compiler-inputs/sim/net22/phase_packages.sv",
+    "verification/net30/full-timed/attempt-001/compiler-inputs/sim/net23/clock_models.sv",
+    "verification/net30/full-timed/attempt-001/compiler-inputs/sim/net25/warm_packages.sv",
+    "verification/net30/full-timed/attempt-001/compiler-inputs/sim/net30/isa1_memory_loads.sv",
+    "verification/net30/full-timed/attempt-001/compiler-inputs/sim/net30/load_video_async.sv",
+    "verification/net30/full-timed/attempt-001/input-images/control_lane0.hex",
+    "verification/net30/full-timed/attempt-001/input-images/control_lane1.hex",
+    "verification/net30/full-timed/attempt-001/input-images/control_lane2.hex",
+    "verification/net30/full-timed/attempt-001/input-images/control_lane3.hex",
+    "verification/net30/full-timed/attempt-001/input-images/program_bus.hex",
+    "verification/net30/full-timed/attempt-001/input-images/program_state.hex",
+    "verification/net30/full-timed/attempt-001/input-images/rom_image.hex",
+    "verification/net30/full-timed/attempt-001/input-images/vectors.hex",
+    "verification/net30/full-timed/attempt-001/run-origin.json",
+    "verification/net30/full-timed/attempt-001/run-state.json",
+    "verification/net30/full-timed/attempt-001/simulation.stderr.log",
+    "verification/net30/full-timed/attempt-001/simulation.stdout.log",
+    "verification/net30/full-timed/attempt-001/system-tb_rtl_program-timed.sv"
+  ],
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 2638,
+      "sha256": "f18ed3cd3de4be3a2c05ecf38cfde3da4778fcf1cd45db523d9204188664a35e"
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 40329,
+      "sha256": "462342c2250ec69bea12cf49778936074c8ea2082e74a0a74441cb1516d634d5"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "bytes": 19923,
+      "sha256": "1bfe4c214854cdf4d57b5cc48e8ea19daf0f8bc1f68bc5837acc572004c4c099"
+    },
+    {
+      "path": "DECISIONS.md",
+      "bytes": 50981,
+      "sha256": "655e2286916dea484225a72850998def6c977631e93e29a9b6b012625ddbe688"
+    },
+    {
+      "path": "PROVENANCE.md",
+      "bytes": 28652,
+      "sha256": "db3e60be31184095442ab875fcf1d613d88dc4f44a26a00319255522257861ec"
+    },
+    {
+      "path": "README.md",
+      "bytes": 12776,
+      "sha256": "26bf413335d296fd70d8abb87366128575110d19b76f12db413b6b1737d74e8e"
+    },
+    {
+      "path": "ROADMAP.md",
+      "bytes": 22445,
+      "sha256": "7c37e6dee86f9100048a34886930c24e8f37d1a5eaab4672288ad53986b0717f"
+    },
+    {
+      "path": "docs/engineering/NET31_DAC.md",
+      "bytes": 6839,
+      "sha256": "2c7418b660841617c1c6db353b06325d376b3d88b90425d2809345332cef9d52"
+    },
+    {
+      "path": "docs/engineering/VALIDATION_STATUS.md",
+      "bytes": 7443,
+      "sha256": "001d79b11fb08de0d70383773620492a06028bd0b47a1a212f7ae78a0115b662"
+    },
+    {
+      "path": "engineering/net31/dac_contract.json",
+      "bytes": 3114,
+      "sha256": "bec2c337f0a1217cf0f59f62d61e5262daf209f31ab238d0bc1a044e4e641a15"
+    },
+    {
+      "path": "references/net31/opa350.pdf",
+      "bytes": 1497776,
+      "sha256": "89e6d1933b041f0ddfdd61d6d31090fc8ade1c08d7f6f5e8e48a3d7ac774d8d8"
+    },
+    {
+      "path": "references/net31/opa350.pdf.txt",
+      "bytes": 183135,
+      "sha256": "9267e2b5226322a8ae7a692c35afc3d6bc38678c4939da1f6acd021cd001cd57"
+    },
+    {
+      "path": "references/net31/ref33.pdf",
+      "bytes": 1512901,
+      "sha256": "39839abc9bf09417d0a4b446c6e922679f6dc63b19072e284169dd23007e65fe"
+    },
+    {
+      "path": "references/net31/ref33.pdf.txt",
+      "bytes": 136594,
+      "sha256": "d24178f57f42026f526d0d88793bf578c6fd41fcae0521d68fba56ce2dd4d10a"
+    },
+    {
+      "path": "references/net31/sn74lvc8t245.pdf",
+      "bytes": 1855672,
+      "sha256": "a2493b65471e5c873e3f71afbe152ac4d0f9233045c5ec289bda602a4b453cf0"
+    },
+    {
+      "path": "references/net31/sn74lvc8t245.pdf.txt",
+      "bytes": 124474,
+      "sha256": "901eb6d7a20105e40404757126f6ecc8dd591c3cac6bc0a5d73db076900d8624"
+    },
+    {
+      "path": "references/net31/sources.json",
+      "bytes": 4613,
+      "sha256": "5fa69b9b7619b808f4b0ac2144fce30ec3d9e0a78ebcac29ace7bf03c15b94b0"
+    },
+    {
+      "path": "references/net31/supplement.json",
+      "bytes": 1022,
+      "sha256": "b86f9b0356a4cb2a8ae7044fe89962bcf11943dcd43f8bcb02c4a4f6c2a48e6e"
+    },
+    {
+      "path": "references/net31/ths8136.pdf",
+      "bytes": 695536,
+      "sha256": "52a61f208563eb558b6ebe0f72e0a4bbc631c1ee316818df6d65f65eb0158319"
+    },
+    {
+      "path": "references/net31/ths8136.pdf.txt",
+      "bytes": 67276,
+      "sha256": "e6a5cf1bfffa745c96ae152a99ad4b7862cd8d37d0cc948734abc9c420af9e53"
+    },
+    {
+      "path": "references/net31/tlv755p.pdf",
+      "bytes": 3071549,
+      "sha256": "f9e676918d1af7144e55835616108def097b48fb5784bd0084ae77a418c64fbf"
+    },
+    {
+      "path": "references/net31/tlv755p.pdf.txt",
+      "bytes": 220997,
+      "sha256": "44433a99823581433cdca7887249c023f71942b887550572b6ffc0a07f7732f7"
+    },
+    {
+      "path": "references/net31/tmux1133.pdf",
+      "bytes": 1530385,
+      "sha256": "6cedd719bcb2ac8a079f1b1dfe5aedbc063f9e200e501536a4d9b6fc72d34884"
+    },
+    {
+      "path": "references/net31/tmux1133.pdf.txt",
+      "bytes": 200245,
+      "sha256": "92bbc78c61e07d30706822aae87e8bd630cb887981bc09bdc232d25c0483a953"
+    },
+    {
+      "path": "references/net31/web-review.json",
+      "bytes": 2229,
+      "sha256": "2a59dd1a16aba69e6ff7b9adb47ca3ecfa607cf25889a7058a35a5021a8e1876"
+    },
+    {
+      "path": "sim/net31/dac_packet_contract.sv",
+      "bytes": 1587,
+      "sha256": "1ca9dce1d98d338f52524060319db773cd918cf988bd876c5bed4a65b631c370"
+    },
+    {
+      "path": "sim/net31/tb_dac_packet.sv",
+      "bytes": 2021,
+      "sha256": "2c9c84d34e8709a293129d66da473996080429b2426eb77b72837bcb562249bf"
+    },
+    {
+      "path": "tools/check_dac_contract.py",
+      "bytes": 6641,
+      "sha256": "ddcda559e0fc7c3346059ec0c317fb7f826f37676eb839ce780a4bed8f8feed6"
+    },
+    {
+      "path": "tools/collect_dac_sources.py",
+      "bytes": 2732,
+      "sha256": "45e014b28d9e21807f1fdfbac2eac15b96868bfaf3175c6fcb17c32062a4a3dc"
+    },
+    {
+      "path": "tools/collect_dac_supplement.py",
+      "bytes": 1624,
+      "sha256": "28e5c22a477e98b0019e399db995eac93c6a7f8a1cdc30d67489b2625e68086d"
+    },
+    {
+      "path": "tools/record_net31_review.py",
+      "bytes": 6067,
+      "sha256": "fcbc4745abcb0c28c1acabeaf678fa217f5fefc0f68bb81b0a84d1f3b40d8741"
+    },
+    {
+      "path": "tools/run_dac_packet_contract.py",
+      "bytes": 2555,
+      "sha256": "95010298583aa7d7146660766e12c22d63206ddcd8bd7bf18bded28b82eecdb1"
+    },
+    {
+      "path": "tools/stage_net31_review.py",
+      "bytes": 766,
+      "sha256": "543ff788b4c40cc0d7c530e5f8f98d528ef9c41eba760a8e207fbc7092c5f7b5"
+    },
+    {
+      "path": "verification/net31/contract-results.json",
+      "bytes": 58052,
+      "sha256": "08de3a14ea184a99d662f30878d7298c0fa471ce47aa40660d7ce7e782579c59"
+    },
+    {
+      "path": "verification/net31/packet-results.json",
+      "bytes": 10831,
+      "sha256": "932651099fe6e3a5ead94751169ede1ec509b84cfa1b676f35a9e4a5e838596f"
+    },
+    {
+      "path": "verification/net31/pending-integrity.json",
+      "bytes": 7668,
+      "sha256": "c2e67424c34beb0fc1e337f37c044e7a49afd18403fe6c74715f94e07ce25125"
+    },
+    {
+      "path": "verification/net31/review-audit.json",
+      "bytes": 430,
+      "sha256": "53323945c939ea3f34e92b2fbd1ccf9e28af79a3cf680b68b703984deaea61de"
+    }
+  ]
+}

@@ -1,3 +1,10 @@
+## Continuidade NET31 - contrato DAC, sem circuito novo
+
+- Leia docs/engineering/NET31_DAC.md. engineering/net31/dac_contract.json separa fatos e hipoteses. AD9760 e candidato para investigar, nao BOM; pinagem transcrita nao e netlist. Os PDFs ADI nao foram baixados; fatos vieram da leitura web e seis PDFs TI tem bytes/hashes preservados.
+- Check aritmetico: 256 cores/16 cantos condicionais/cinco atalhos rejeitados. Bancada funcional separada: 256 cores e quadro sintetico 105000/76800 visiveis, quatro negativos setup/hold/pulso/sync. Nao instancia NET30/CPU/memorias nem valida analogico, PVT ou sincronismo fisico. Atraso1ns e settling35ns sao tipicos, sem maximo garantido.
+- RSET fixo falha alvo preliminar5%; ajuste minimo pode exceder20mA, partida no maximo e hipotese; ganho inclui referencia. Sem monitor a extrapolacao1,4V supera compliance1,25V; resolver protecao/saida antes de adotar. Temperatura, niveis na janela5,392V e driverH/V continuam abertos.
+- Duas tentativas completas temporizadas NET27/NET30 seguem em prefixes separados; conferir PID/boot_id/progresso, sem duplicar ou editar fontes/snapshots. Manifesto NET31 exclui somente essas tentativas. Nao declarar aprovacao final por progresso.
+
 ## Fechamento NET-30 — 27/11/2026
 
 - NET30 é candidato digital para continuidade, não produção. Passaram6886vetores ideais, dois1062temporizados,48cortes SRAM, oito CPU nominais/cantos, quatro cenários de dois quadros temporizados e boot ideal132197/232576transações/76800pixels idênticos sem SRAM semeada/aborts. Quadros sem CPU têm seeds VRAM/VB; não misturar escopos ou herdar matriz156/128 NET26 como NET30.

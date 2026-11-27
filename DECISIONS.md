@@ -1,3 +1,13 @@
+## ADR E35 - Investigar DAC com contrato explicito antes de integra-lo
+
+27/11/2026, base NET30/4b74c8c. Status: proposta em investigacao, sem BOM ou esquema adotado.
+
+Decisao: investigar tres AD9760, preservar RGB332 e tratar H/V como parte do mesmo pacote de cor. Clock arbitrario e permitido se cumprir pulso minimo; nao aplicar a permissao ao THS8136, que exige40-60% e7,5ciclos de latencia. Alternativas: ADV7123/25 NRND, AD9748 com outro trilho/traducao e rede resistiva historica ainda sem limites garantidos dos drivers.
+
+Evidencia: 256 cores,16cantos condicionais, quadro sintetico completo e quatro negativos de guardas passaram em modelos separados. Ganho maximo10% impede assumir RSET fixo; ajuste por canal e hipotese. Posicao minima pode exceder20mA e retirada do monitor extrapola compliance. Esses contraexemplos impedem adocao imediata; nao representam ensaio fisico nem defeito do candidato NET30.
+
+Compatibilidade: CPU/ISA/X/SP/flags/memorias/teclado e NET30 intactos; nenhum CI acrescentado nesta etapa. Aceitacao exige resolver protecao/carga desconectada, niveis/fontes, calibracao/temperatura, maximos de tempo e cap, esquema/XML/cargas e regressao integrada; depois ERC/PCB/DRC/prototipo. Fontes e detalhes em docs/engineering/NET31_DAC.md.
+
 ## ADR E34 — Construir variante com quatro canais livres para distribuir cargas
 
 26/11/2026, base NET29. Implementar separadamente load_distributed_video,

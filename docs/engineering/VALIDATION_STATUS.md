@@ -5,6 +5,16 @@ Atualizado em27/11/2026, após as regressões próprias da NET30.
 relatórios NET e versões Git preservam os estados anteriores. Não somar
 ensaios sobrepostos nem transferir aprovação entre variantes diferentes.
 
+## Estudo VGA NET31
+
+Contrato candidato e proposta funcional separados: 256 cores, 16 cantos
+condicionais e quadro sintetico de 76.800 pixels; quatro negativos de
+guardas rejeitados. Nao ha circuito DAC nativo ou BOM adotada. Ganho,
+compliance sem monitor, protecao, alimentacao/niveis, driver H/V,
+calibracao/temperatura e integracao permanecem abertos. Ver
+[NET31_DAC.md](NET31_DAC.md). Nao acrescentar esses numeros aos ensaios
+nativos NET30 ou considerar os dois boots temporizados completos aprovados.
+
 ## Circuito candidato corrente
 
 A [NET30](NET30.md) é o candidato digital para os próximos blocos: usa quatro

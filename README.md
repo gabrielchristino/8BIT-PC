@@ -1,3 +1,5 @@
+NET31 (27/11/2026): [contrato candidato da saida VGA](docs/engineering/NET31_DAC.md), com 256 cores, 16 cantos de calibracao e um quadro sintetico com quatro negativos. Estudo funcional/documental; nenhum DAC ou CI novo adotado. Ganho, saida sem monitor, protecao e integracao nativa continuam abertos. NET30 permanece candidato digital; os dois boots temporizados completos continuam pendentes.
+
 Preparação NET-27 (26/11/2026): [ensaio completo temporizado](docs/engineering/NET27_PLAN.md) com progresso persistente e limites de recursos. Executor verificado; resultado do circuito completo ainda pendente.
 
 NET-26 (26/11/2026): reset local emP1, controlador com uma etapa de buffer e AHC174 real no teclado. Passaram156 cenários estritos,128 combinações selecionadas,48 cortes SRAM, oito cortes CPU,6.886 vetores ideais/dois temporizados de1.062 e boot/quadro completo ideal. Candidato460CIs+2osciladores; energia/temporização global/PCB/protótipo continuam abertos. [Circuito, resultados e limites](docs/engineering/NET26.md). Placa não liberada.

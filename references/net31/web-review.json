@@ -1,0 +1,44 @@
+{
+  "date": "2026-11-27",
+  "kind": "Manually curated factual review via web reader; not downloaded original pages or PDFs",
+  "transformation": "Primary-source facts summarized into candidate contract and engineering notes; no source binaries reconstructed from reader text",
+  "rows": [
+    {
+      "url": "https://www.analog.com/media/en/technical-documentation/data-sheets/AD9760.pdf",
+      "printed_revision": "B",
+      "reader_title_discrepancy": "Reader title says Rev. A; actual document headers say REV. B",
+      "original_local_bytes": false,
+      "facts_used": "Supply/gain/current/compliance on printed p2, digital limits p4, pins p5, arbitrary-duty permission p14, unused output grounding and resistive loads pp16-17"
+    },
+    {
+      "url": "https://www.analog.com/en/products/ad9760.html",
+      "lifecycle_seen": "PRODUCTION, including AD9760ARUZ",
+      "caveat": "A direct open timed out; primary-page search reader returned lifecycle and part table. Not distributor inventory or qualification."
+    },
+    {
+      "url": "https://www.analog.com/en/products/adv7125.html",
+      "lifecycle_seen": "NOT RECOMMENDED FOR NEW DESIGNS"
+    },
+    {
+      "url": "https://www.analog.com/en/products/adv7123.html",
+      "lifecycle_seen": "NOT RECOMMENDED FOR NEW DESIGNS"
+    },
+    {
+      "url": "https://www.ti.com/product/THS8136",
+      "lifecycle_seen": "ACTIVE",
+      "caveat": "Page also indicates no ongoing design support for new projects; ACTIVE is not unrestricted recommendation"
+    },
+    {
+      "url": "https://www.ti.com/lit/ds/symlink/ths8136.pdf",
+      "original_local_bytes": true,
+      "facts_used": "40-60 percent clock high/low, 7.5-clock data latency, separate analog and digital supplies; preserved PDF and extraction recorded in sources.json"
+    },
+    {
+      "url": "https://www.analog.com/en/products/ad9748.html",
+      "lifecycle_seen": "PRODUCTION",
+      "caveat": "Alternative only; no native circuit or exact package adopted"
+    }
+  ],
+  "historical_reference": "archive/export-2026-11-26/assets/file_0000000000d4820eb79c59864bc60779/dac.py",
+  "historical_action": "Read only; not executed or modified; its ideal-voltage assumptions are not electrical qualification"
+}

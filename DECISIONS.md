@@ -1,3 +1,38 @@
+## ADR E39 — Investigar uma janela H/V nominal de 3,51 V
+
+Data: 27/11/2026. Estado: alternativa experimental, não promovida à BOM.
+
+Problema: no contrato NET34, apenas trocar o limiar com as mesmas
+precisão/histerese e detecção a 5% de overdrive não satisfaz simultaneamente
+retomada e desabilitação acima de 3 V. As inequações e fontes estão em
+verification/net35/window-results.json e references/net35/review.json.
+
+Decisão: construir uma folha separada com LT3042IMSE#PBF, RSET 35,1 kohm,
+TPS3808G01 e divisor 14 kohm/2 kohm, mantendo a lógica de habilitação.
+Alternativas: preservar NET34 sem fechamento de cutoff; usar outro supervisor
+(TPS3890/TPS3899 pesquisados, sem adoção); alterar o contrato do driver.
+A escolha permite estudar uma janela condicional com quatro CIs, ao custo
+de cinco passivos adicionais, sem comparação de preços ou homologação.
+
+Evidência: 22 componentes/66 pinos conferidos, dois cenários de 14 estados,
+um negativo funcional, oito erros de pinagem e 128 casos de descarga;
+quatro proxies de descarga dentro do envelope e dois negativos. Não são
+modelos vendor, prova de POR ou novos quadros completos. Margens calculadas
+pequenas: 4,2198 mV até 3,6 V, 14,0925 mV na retomada e mínimo 3,0060577 V
+no desligamento sob as hipóteses documentadas.
+
+Compatibilidade: CPU/ISA/X/pilha/flags, NET30/NET33/NET34 e fontes dos dois
+boots ativos preservados. O trilho de 3,51 V exige nova qualificação elétrica;
+nenhuma aprovação global foi transferida para a variante.
+
+Aceitação futura: comprovar corrente total até 10 mA e capacitância efetiva
+mínima 47 uF/ESR máxima 50 miliohm, inibição em até 20,1 us nas condições
+reais, tensão máxima/transientes, estabilidade/Kelvin/ESL, temperatura,
+receptor/proteção e comportamento fora desse envelope. Selecionar passivos,
+footprints e revisar ERC global/PCB/DRC antes de qualquer liberação física.
+O PDF LT3042 original local segue ausente por timeout; não inventar arquivo.
+Detalhes em docs/engineering/NET35_WINDOW.md.
+
 ## ADR E38 - Supervisionar a saida candidata H/V em3,3V
 
 27/11/2026, base8aa26ed/NET33. Status: folha experimental com verificacoes selecionadas, sem promocao global ou homologacao de BOM.

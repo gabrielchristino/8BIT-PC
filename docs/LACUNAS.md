@@ -1,3 +1,5 @@
+NET35, 27/11/2026: falta PDF original local LT3042 Rev. C (download terminou em timeout; leitura primária web registrada). A alternativa 3,51 V não fecha alimentação física: até 10 mA, 47 uF efetivos, ESR 50 miliohm e 20,1 us são condições a comprovar. Margens até 3,6 V e no desligamento são pequenas; selecionar componentes completos, conferir estabilidade/Kelvin/temperatura, supervisor real, partida, transientes e proteção. ERC quatro itens não aprovado, sem footprints/PCB. Proxies passivos não são modelo vendor nem ensaio físico. Ver engineering/NET35_WINDOW.md.
+
 # Lacunas da recuperação
 
 **A migração integral ainda não pode ser declarada concluída.** Atualização de

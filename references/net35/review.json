@@ -1,0 +1,14 @@
+{
+  "date": "2026-11-27",
+  "scope": "Primary-source engineering review; source capture ledger distinguishes original bytes from web-only reading",
+  "sources": [
+    {"url": "https://www.analog.com/media/en/technical-documentation/data-sheets/lt3042.pdf", "revision": "C", "original_local_bytes": false,
+     "used": "MSE10 plus pad11; full-temperature ISET98..102uA and output offset+/-2mV; pins11-13; capacitor/Kelvin requirements. Initial1percent was not used as full-temperature bound."},
+    {"url": "https://www.analog.com/en/products/lt3042.html", "used": "Primary-page search reader lists LT3042IMSE#PBF as PRODUCTION; not procurement or footprint qualification."},
+    {"file": "references/net20/tps3808.pdf", "revision": "SBVS050N", "used": "G01 DBV pin map, reference error,hysteresis and sense leakage. Detection/load assumptions remain explicitly conditional at the new rail."},
+    {"file": "references/net35/tps3890.pdf", "used": "Alternative researched, not adopted; timing and tolerance conditions must not be replaced by headline precision."},
+    {"file": "references/net35/tps3899.pdf", "used": "Alternative researched, not adopted; typical precision/hysteresis are not guaranteed maxima."}
+  ],
+  "candidate_not_bom_adopted": true,
+  "physical_power_qualified": false
+}

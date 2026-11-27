@@ -1,0 +1,512 @@
+{
+  "date": "2026-11-27",
+  "base_git_commit": "e2d466193a4f2e83e251ebb9c7ea985405907e9d",
+  "source_records_checked": 19,
+  "versions": {
+    "python": {
+      "command": [
+        "wsl",
+        "-d",
+        "Ubuntu",
+        "--",
+        "python3",
+        "--version"
+      ],
+      "exit": 0,
+      "stdout": "Python 3.12.3\n",
+      "stderr": ""
+    },
+    "iverilog": {
+      "command": [
+        "wsl",
+        "-d",
+        "Ubuntu",
+        "--",
+        "iverilog",
+        "-V"
+      ],
+      "exit": 0,
+      "stdout": "Icarus Verilog version 12.0 (stable) ()\n\nCopyright (c) 2000-2021 Stephen Williams (steve@icarus.com)\n\n  This program is free software; you can redistribute it and/or modify\n  it under the terms of the GNU General Public License as published by\n  the Free Software Foundation; either version 2 of the License, or\n  (at your option) any later version.\n\n  This program is distributed in the hope that it will be useful,\n  but WITHOUT ANY WARRANTY; without even the implied warranty of\n  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n  GNU General Public License for more details.\n\n  You should have received a copy of the GNU General Public License along\n  with this program; if not, write to the Free Software Foundation, Inc.,\n  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.\n\nIcarus Verilog Preprocessor version 12.0 (stable) ()\n\nCopyright (c) 1999-2021 Stephen Williams (steve@icarus.com)\n\n  This program is free software; you can redistribute it and/or modify\n  it under the terms of the GNU General Public License as published by\n  the Free Software Foundation; either version 2 of the License, or\n  (at your option) any later version.\n\n  This program is distributed in the hope that it will be useful,\n  but WITHOUT ANY WARRANTY; without even the implied warranty of\n  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n  GNU General Public License for more details.\n\n  You should have received a copy of the GNU General Public License along\n  with this program; if not, write to the Free Software Foundation, Inc.,\n  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.\n\nIcarus Verilog Parser/Elaborator version 12.0 (stable) ()\n\nCopyright (c) 1998-2021 Stephen Williams (steve@icarus.com)\n\n  This program is free software; you can redistribute it and/or modify\n  it under the terms of the GNU General Public License as published by\n  the Free Software Foundation; either version 2 of the License, or\n  (at your option) any later version.\n\n  This program is distributed in the hope that it will be useful,\n  but WITHOUT ANY WARRANTY; without even the implied warranty of\n  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n  GNU General Public License for more details.\n\n  You should have received a copy of the GNU General Public License along\n  with this program; if not, write to the Free Software Foundation, Inc.,\n  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.\n\n FLAGS DLL vvp.tgt\nvvp.tgt: Icarus Verilog VVP Code Generator 12.0 (stable) ()\n\nCopyright (c) 2001-2021 Stephen Williams (steve@icarus.com)\n\n  This program is free software; you can redistribute it and/or modify\n  it under the terms of the GNU General Public License as published by\n  the Free Software Foundation; either version 2 of the License, or\n  (at your option) any later version.\n\n  This program is distributed in the hope that it will be useful,\n  but WITHOUT ANY WARRANTY; without even the implied warranty of\n  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n  GNU General Public License for more details.\n\n  You should have received a copy of the GNU General Public License along\n  with this program; if not, write to the Free Software Foundation, Inc.,\n  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.\n\n",
+      "stderr": ""
+    },
+    "ngspice": {
+      "command": [
+        "wsl",
+        "-d",
+        "Ubuntu",
+        "--",
+        "ngspice",
+        "--version"
+      ],
+      "exit": 0,
+      "stdout": "******\n** ngspice-42 : Circuit level simulation program\n** Compiled with KLU Direct Linear Solver\n** The U. C. Berkeley CAD Group\n** Copyright 1985-1994, Regents of the University of California.\n** Copyright 2001-2023, The ngspice team.\n** Please get your ngspice manual from https://ngspice.sourceforge.io/docs.html\n** Please file your bug-reports at http://ngspice.sourceforge.net/bugrep.html\n** Creation Date: Sun Mar 31 20:15:14 UTC 2024\n******\n",
+      "stderr": ""
+    },
+    "pdftotext": {
+      "command": [
+        "wsl",
+        "-d",
+        "Ubuntu",
+        "--",
+        "pdftotext",
+        "-v"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": "pdftotext version 24.02.0\nCopyright 2005-2024 The Poppler Developers - http://poppler.freedesktop.org\nCopyright 1996-2011, 2022 Glyph & Cog, LLC\n"
+    },
+    "kicad": {
+      "command": [
+        "wsl",
+        "-d",
+        "Ubuntu",
+        "--",
+        "/home/gabri/.local/opt/isa1-kicad-10.0.8/squashfs-root/usr/bin/kicad-cli",
+        "version"
+      ],
+      "exit": 0,
+      "stdout": "10.0.8\n",
+      "stderr": ""
+    }
+  },
+  "native_pin_values_checked": true,
+  "qualified_state_scenarios": 2,
+  "state_checks_each": 14,
+  "new_full_frames_executed": false,
+  "functional_model_equivalent_to_net34": true,
+  "functional_negative": 1,
+  "pin_negatives": 8,
+  "conditional_discharge_corners": 128,
+  "passive_discharge_proxy_cases": 6,
+  "visual_review": "All four packages and 22 components visible without clipping in exported A3 preview; reviewed before publication.",
+  "analog_regulator_supervisor_ramp_qualified": false,
+  "universal_monitor_compatibility": false,
+  "erc_approved": false,
+  "production_released": false,
+  "scope": "Alternative supervised 3.51V sync window; qualified-state logic and conditional passive discharge only. No physical power/manufacturing approval.",
+  "excluded_pending_run_prefix": [
+    "verification/net27/full-timed/attempt-001/",
+    "verification/net30/full-timed/attempt-001/"
+  ],
+  "excluded_files_at_snapshot": [
+    "verification/net27/full-timed/attempt-001/adapted-program-runner.py",
+    "verification/net27/full-timed/attempt-001/adapted-system-main.py",
+    "verification/net27/full-timed/attempt-001/compile-run.json",
+    "verification/net27/full-timed/attempt-001/compile.stderr.log",
+    "verification/net27/full-timed/attempt-001/compile.stdout.log",
+    "verification/net27/full-timed/attempt-001/compiler-inputs.json",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/generated-bench.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/hardware/common_request/common_request_netlist.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/hardware/cpu_global/cpu_global_netlist.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/hardware/local_phase_keyboard/local_phase_keyboard_netlist.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/hardware/local_phase_reset/local_phase_reset_netlist.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/hardware/memory_bus/memory_bus_netlist.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/hardware/memory_decode/memory_decode_netlist.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/sim/hdl/hc_models.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/sim/net02/package_models.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/sim/net03/package_models.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/sim/net04/package_models.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/sim/net13/memory_devices.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/sim/net14c/package_models_async.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/sim/net19a/package_models.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/sim/net22/phase_packages.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/sim/net23/clock_models.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/sim/net25/warm_packages.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/sim/net26/isa1_memory_local_phase.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/sim/net26/local_video_async.sv",
+    "verification/net27/full-timed/attempt-001/input-images/control_lane0.hex",
+    "verification/net27/full-timed/attempt-001/input-images/control_lane1.hex",
+    "verification/net27/full-timed/attempt-001/input-images/control_lane2.hex",
+    "verification/net27/full-timed/attempt-001/input-images/control_lane3.hex",
+    "verification/net27/full-timed/attempt-001/input-images/program_bus.hex",
+    "verification/net27/full-timed/attempt-001/input-images/program_state.hex",
+    "verification/net27/full-timed/attempt-001/input-images/rom_image.hex",
+    "verification/net27/full-timed/attempt-001/input-images/vectors.hex",
+    "verification/net27/full-timed/attempt-001/run-origin.json",
+    "verification/net27/full-timed/attempt-001/run-state.json",
+    "verification/net27/full-timed/attempt-001/simulation.stderr.log",
+    "verification/net27/full-timed/attempt-001/simulation.stdout.log",
+    "verification/net27/full-timed/attempt-001/system-tb_rtl_program-timed.sv",
+    "verification/net30/full-timed/attempt-001/adapted-program-runner.py",
+    "verification/net30/full-timed/attempt-001/adapted-system-main.py",
+    "verification/net30/full-timed/attempt-001/compile-run.json",
+    "verification/net30/full-timed/attempt-001/compile.stderr.log",
+    "verification/net30/full-timed/attempt-001/compile.stdout.log",
+    "verification/net30/full-timed/attempt-001/compiler-inputs.json",
+    "verification/net30/full-timed/attempt-001/compiler-inputs/generated-bench.sv",
+    "verification/net30/full-timed/attempt-001/compiler-inputs/hardware/common_request/common_request_netlist.sv",
+    "verification/net30/full-timed/attempt-001/compiler-inputs/hardware/cpu_global/cpu_global_netlist.sv",
+    "verification/net30/full-timed/attempt-001/compiler-inputs/hardware/load_distributed_bus/load_distributed_bus_netlist.sv",
+    "verification/net30/full-timed/attempt-001/compiler-inputs/hardware/load_distributed_keyboard/load_distributed_keyboard_netlist.sv",
+    "verification/net30/full-timed/attempt-001/compiler-inputs/hardware/local_phase_reset/local_phase_reset_netlist.sv",
+    "verification/net30/full-timed/attempt-001/compiler-inputs/hardware/memory_decode/memory_decode_netlist.sv",
+    "verification/net30/full-timed/attempt-001/compiler-inputs/sim/hdl/hc_models.sv",
+    "verification/net30/full-timed/attempt-001/compiler-inputs/sim/net02/package_models.sv",
+    "verification/net30/full-timed/attempt-001/compiler-inputs/sim/net03/package_models.sv",
+    "verification/net30/full-timed/attempt-001/compiler-inputs/sim/net04/package_models.sv",
+    "verification/net30/full-timed/attempt-001/compiler-inputs/sim/net13/memory_devices.sv",
+    "verification/net30/full-timed/attempt-001/compiler-inputs/sim/net14c/package_models_async.sv",
+    "verification/net30/full-timed/attempt-001/compiler-inputs/sim/net19a/package_models.sv",
+    "verification/net30/full-timed/attempt-001/compiler-inputs/sim/net22/phase_packages.sv",
+    "verification/net30/full-timed/attempt-001/compiler-inputs/sim/net23/clock_models.sv",
+    "verification/net30/full-timed/attempt-001/compiler-inputs/sim/net25/warm_packages.sv",
+    "verification/net30/full-timed/attempt-001/compiler-inputs/sim/net30/isa1_memory_loads.sv",
+    "verification/net30/full-timed/attempt-001/compiler-inputs/sim/net30/load_video_async.sv",
+    "verification/net30/full-timed/attempt-001/input-images/control_lane0.hex",
+    "verification/net30/full-timed/attempt-001/input-images/control_lane1.hex",
+    "verification/net30/full-timed/attempt-001/input-images/control_lane2.hex",
+    "verification/net30/full-timed/attempt-001/input-images/control_lane3.hex",
+    "verification/net30/full-timed/attempt-001/input-images/program_bus.hex",
+    "verification/net30/full-timed/attempt-001/input-images/program_state.hex",
+    "verification/net30/full-timed/attempt-001/input-images/rom_image.hex",
+    "verification/net30/full-timed/attempt-001/input-images/vectors.hex",
+    "verification/net30/full-timed/attempt-001/run-origin.json",
+    "verification/net30/full-timed/attempt-001/run-state.json",
+    "verification/net30/full-timed/attempt-001/simulation.stderr.log",
+    "verification/net30/full-timed/attempt-001/simulation.stdout.log",
+    "verification/net30/full-timed/attempt-001/system-tb_rtl_program-timed.sv"
+  ],
+  "commands": [
+    "python3 tools/build_sync_window.py",
+    "python3 tools/check_sync_window.py",
+    "python tools/record_net35_results.py",
+    "python tools/stage_net35_results.py verification/net35/manifest.json"
+  ],
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 3467,
+      "sha256": "e27fa0d4d4236884ccfdf291d83739f265e9600beb300b91c436bb3dbb0641ad"
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 45898,
+      "sha256": "414245cec77a39814e2c98f2ba8544c58ae69509901a6bc3987d9c2e405e7f4e"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "bytes": 21895,
+      "sha256": "851d9036b8570e1f51fa92544c15521fc470d85c93b468f29e605055883368cd"
+    },
+    {
+      "path": "DECISIONS.md",
+      "bytes": 57089,
+      "sha256": "3a863d5f4568164f0bb43b94c31ec1dfce5ece21bf794ff496df5a4cf8e12978"
+    },
+    {
+      "path": "PROVENANCE.md",
+      "bytes": 31582,
+      "sha256": "1e44b359429a60440790956a1b2f6bdd138bfb50e391e132abe11fae5e6a0999"
+    },
+    {
+      "path": "README.md",
+      "bytes": 14317,
+      "sha256": "987049277ca2b1045eb48fe44d2dcf44433c981251b47270b103831f3307ea3d"
+    },
+    {
+      "path": "ROADMAP.md",
+      "bytes": 24429,
+      "sha256": "d229e4aa7ba3b6109a818f895a49944e22b64ac0fd4e32d289ab41878737e169"
+    },
+    {
+      "path": "docs/LACUNAS.md",
+      "bytes": 4496,
+      "sha256": "5d1727a60c7145d1a1ca5d09cefbde12f7f4ecee7584f6bc1c1ce73999ac966a"
+    },
+    {
+      "path": "docs/engineering/NET35_WINDOW.md",
+      "bytes": 6232,
+      "sha256": "6eb4b8b2bec1fecf923922bd572fec68768ba896d6698a9f52bfb622906df30a"
+    },
+    {
+      "path": "docs/engineering/VALIDATION_STATUS.md",
+      "bytes": 10093,
+      "sha256": "df63e7e642efecaca6305dbefe0892a363e9509196465c53b471cf30a52cbb36"
+    },
+    {
+      "path": "hardware/vga_sync_window/design.json",
+      "bytes": 6346,
+      "sha256": "8dd1a1fadce1ea599cdb6f41f5f00d93fb3ce5888e20789b8dcafe797a8fc797"
+    },
+    {
+      "path": "hardware/vga_sync_window/package-functions.json",
+      "bytes": 3126,
+      "sha256": "8d5f5d7a32b4701dac9c24529e79ac7a8c3e619203e2e3a4b5fd5986a8ca06a8"
+    },
+    {
+      "path": "hardware/vga_sync_window/pinmap.csv",
+      "bytes": 1642,
+      "sha256": "0ad41452e7418cb67b3252239b1a07f9800817f81f41f008665b7d93bc1c332d"
+    },
+    {
+      "path": "hardware/vga_sync_window/sym-lib-table",
+      "bytes": 169,
+      "sha256": "62b3924ac2513ac11dd996cd93f4a515961aeead933b81cc04ae7d5ba359c685"
+    },
+    {
+      "path": "hardware/vga_sync_window/sync_packages.kicad_sym",
+      "bytes": 7690,
+      "sha256": "14e772e8223f82cb1dc5849e6a4f0ce51bdce7b6ec0170ad058a0b393355ba4a"
+    },
+    {
+      "path": "hardware/vga_sync_window/sync_window_functional.sv",
+      "bytes": 1269,
+      "sha256": "36a6668e225e354931fb9ebd39ed6aa297e218a9ce8b473764d40b9566f0b650"
+    },
+    {
+      "path": "hardware/vga_sync_window/vga_sync_window.kicad_pro",
+      "bytes": 82,
+      "sha256": "f7cb0b46532e13a3850a2b86270839c29c6c1b0e08cc2d6013e744d9d2392fa4"
+    },
+    {
+      "path": "hardware/vga_sync_window/vga_sync_window.kicad_sch",
+      "bytes": 29580,
+      "sha256": "9dd596a6b544c0529b9863217c28995c777b6a122209629ab0dd33e93b3e9a93"
+    },
+    {
+      "path": "references/net35/review.json",
+      "bytes": 1292,
+      "sha256": "061788a931189cbd0017736aa2fac525fdbe206cb5c38a232ff54ae13a3f2716"
+    },
+    {
+      "path": "references/net35/sources.json",
+      "bytes": 1798,
+      "sha256": "41957a67b17ebb7b3327211bcbde44177b6c29f56d8c487e693169972d434c42"
+    },
+    {
+      "path": "references/net35/tps3890.pdf",
+      "bytes": 1203677,
+      "sha256": "ee79599730e7606ba9718d9820b411020e3dcd9ff7d44572f8ee63fead15b9d0"
+    },
+    {
+      "path": "references/net35/tps3890.pdf.txt",
+      "bytes": 110483,
+      "sha256": "cd9b3c5511ab2ae1bf5abc16ed972eeb61ca8bb9dfee5bded3fbd7e8776d2c70"
+    },
+    {
+      "path": "references/net35/tps3899.pdf",
+      "bytes": 1508636,
+      "sha256": "c0d1fba12d0813d66c77f16f8d00f199bae504a8908dbd95fdb03bac5184a928"
+    },
+    {
+      "path": "references/net35/tps3899.pdf.txt",
+      "bytes": 110340,
+      "sha256": "94301018ca960e1cdfd232e84af87f8c73c5b297bbfd2e4b4103fa60cc32567f"
+    },
+    {
+      "path": "tools/build_sync_window.py",
+      "bytes": 5875,
+      "sha256": "6ad9f995284d3b84da098feee96553a8f1b9641267a045abf7803464400a7c30"
+    },
+    {
+      "path": "tools/check_sync_window.py",
+      "bytes": 9526,
+      "sha256": "2368970c7670c1791daa6c901fbbbc4a385992e87a7b06b05c536e2e5ac777e4"
+    },
+    {
+      "path": "tools/collect_window_sources.py",
+      "bytes": 875,
+      "sha256": "023e541b409c12d53edf0bf6809e08220175c71e789fc02976b382859fcc3972"
+    },
+    {
+      "path": "tools/record_net35_results.py",
+      "bytes": 7291,
+      "sha256": "50be16eb15ec97d080295362d8be5d17a2da78accce0f036a877556fd87f1867"
+    },
+    {
+      "path": "tools/stage_net35_results.py",
+      "bytes": 229,
+      "sha256": "af51b767ffd2a6443fa3826969051cc896de953f10d72fd138b1a77febbfa49a"
+    },
+    {
+      "path": "verification/net35/discharge-proxy/0/discharge.cir",
+      "bytes": 246,
+      "sha256": "455892902fdf063c98269d67f06c42aace6721f6d894b4222ba53c12e9da6867"
+    },
+    {
+      "path": "verification/net35/discharge-proxy/0/execution.json",
+      "bytes": 574,
+      "sha256": "e66128d0e7a1245c030145bd8b450329a29dd3be6fe157ed54f8a8fab2c8474c"
+    },
+    {
+      "path": "verification/net35/discharge-proxy/0/values.dat",
+      "bytes": 72996,
+      "sha256": "8dd6c250bceb24fd80c3f5571608a5606a474f3dfff246feb71bdbd4e6121783"
+    },
+    {
+      "path": "verification/net35/discharge-proxy/1/discharge.cir",
+      "bytes": 244,
+      "sha256": "0f5398088ed95cf5fe6d5cfbf20d0958e77acc1a1cbaa5f95a73c5ce8943cc15"
+    },
+    {
+      "path": "verification/net35/discharge-proxy/1/execution.json",
+      "bytes": 574,
+      "sha256": "d5fc0c2d53174939e246959bab9467ef5ee550d4b3770e9af068f8ea52c12697"
+    },
+    {
+      "path": "verification/net35/discharge-proxy/1/values.dat",
+      "bytes": 72996,
+      "sha256": "aa1562b6427a7adb14546b8d8f8a4e19ac03e0af3ab22f0bbc4abf62cebc1698"
+    },
+    {
+      "path": "verification/net35/discharge-proxy/2/discharge.cir",
+      "bytes": 246,
+      "sha256": "36f4422f0d9b7d2f834612b7c54bfe8b8a2d0852267a003e2e9a26d9fad75484"
+    },
+    {
+      "path": "verification/net35/discharge-proxy/2/execution.json",
+      "bytes": 574,
+      "sha256": "e66128d0e7a1245c030145bd8b450329a29dd3be6fe157ed54f8a8fab2c8474c"
+    },
+    {
+      "path": "verification/net35/discharge-proxy/2/values.dat",
+      "bytes": 72996,
+      "sha256": "9885d6dcace5db2e6c303bb19011e930bdc537ab0cadae982a0b4a13e136d5d5"
+    },
+    {
+      "path": "verification/net35/discharge-proxy/3/discharge.cir",
+      "bytes": 245,
+      "sha256": "c7cd00f047ba7c5acc114a2d552e0ee8f5ddffe6af55a7b7c22fac27b306f003"
+    },
+    {
+      "path": "verification/net35/discharge-proxy/3/execution.json",
+      "bytes": 574,
+      "sha256": "a4f8c3ded88a376e05c5e7a14e7160b078b9c7ec2b01864751e4c12301caacde"
+    },
+    {
+      "path": "verification/net35/discharge-proxy/3/values.dat",
+      "bytes": 72996,
+      "sha256": "6b6afde04d996270e9f565c757cbb870a9884a45c8b47b2bc2c3a3238623ac08"
+    },
+    {
+      "path": "verification/net35/discharge-proxy/4/discharge.cir",
+      "bytes": 245,
+      "sha256": "ad5303d6bb8aa98a14958747ceb757cdd35f605bf2f0666687c4cae786705bb6"
+    },
+    {
+      "path": "verification/net35/discharge-proxy/4/execution.json",
+      "bytes": 574,
+      "sha256": "e66128d0e7a1245c030145bd8b450329a29dd3be6fe157ed54f8a8fab2c8474c"
+    },
+    {
+      "path": "verification/net35/discharge-proxy/4/values.dat",
+      "bytes": 72996,
+      "sha256": "8cb7cf1506a9f423ffaaea61fba9e8f1d218916636ad8d7e62f2772bfc50bfb9"
+    },
+    {
+      "path": "verification/net35/discharge-proxy/5/discharge.cir",
+      "bytes": 244,
+      "sha256": "b3f7ba162102dd5aaa329ee87f8f13e66d2789fc3064ce768534cb236f6cf5e4"
+    },
+    {
+      "path": "verification/net35/discharge-proxy/5/execution.json",
+      "bytes": 574,
+      "sha256": "a4f8c3ded88a376e05c5e7a14e7160b078b9c7ec2b01864751e4c12301caacde"
+    },
+    {
+      "path": "verification/net35/discharge-proxy/5/values.dat",
+      "bytes": 72996,
+      "sha256": "5a500ce2dba0584098e2217181dcc7d16517c7de61db3552cf7222140145cd81"
+    },
+    {
+      "path": "verification/net35/native/adapted-emitter.py",
+      "bytes": 885,
+      "sha256": "fa5259e7fc09f245856f68577c95b419c07ca17c72f95742195a4c713da512fb"
+    },
+    {
+      "path": "verification/net35/native/adapted-symbol.py",
+      "bytes": 1116,
+      "sha256": "e0678705adeba24bee91335f9e725d879da64e094020edac17ae732136c3cafc"
+    },
+    {
+      "path": "verification/net35/native/commands.json",
+      "bytes": 2515,
+      "sha256": "ebbec267c2878d72cb6b1f7cd93c567cfe3545f1c9b1199684a8d05c5209e53f"
+    },
+    {
+      "path": "verification/net35/native/erc.json",
+      "bytes": 3477,
+      "sha256": "5cce8e65db4f5f1ae3e31625a7f7e308dbe60ffcf0092d34c23452793e185db6"
+    },
+    {
+      "path": "verification/net35/native/native-results.json",
+      "bytes": 1479,
+      "sha256": "d7e2d54ecf2e635b3295509f394d56fee6b16f70cf360565dac65525565c2a31"
+    },
+    {
+      "path": "verification/net35/native/preview.png",
+      "bytes": 55898,
+      "sha256": "ab3695b8ae97048d2d23f8eea4c497fe420eeb01ade151acc65798cec3f7e9e0"
+    },
+    {
+      "path": "verification/net35/native/schematic.pdf",
+      "bytes": 87126,
+      "sha256": "527c8fd10430cbd9d155e9250f50e56247575caeb245ff4bcf3653a54c163975"
+    },
+    {
+      "path": "verification/net35/native/vga_sync_window.xml",
+      "bytes": 25543,
+      "sha256": "b1d5b7e6ba0d8b65fac4eb270ef34105d801f51318fce1e22a2fe78052feabc0"
+    },
+    {
+      "path": "verification/net35/pending-integrity.json",
+      "bytes": 7670,
+      "sha256": "8741422625d51ea4e56c58d19c340db28b3041b9a7b55fdcbf298e7f11251e28"
+    },
+    {
+      "path": "verification/net35/pin-negatives/bleed_wrong_rail.xml",
+      "bytes": 25886,
+      "sha256": "24f154ea5853e3a38cee367094bbea23a5c34aa2d4dcf43901071f1d33684cee"
+    },
+    {
+      "path": "verification/net35/pin-negatives/buffer_oe_grounded.xml",
+      "bytes": 25886,
+      "sha256": "72ef35ca137b0fc617e30ba20917b78a7c8c18c16606f1bced0efbcdeff08c12"
+    },
+    {
+      "path": "verification/net35/pin-negatives/divider_lower_wrong.xml",
+      "bytes": 25886,
+      "sha256": "77a6447609ca45b8ef8c9eea5d2483af5f11dc8815905b7a91050d195794f0e0"
+    },
+    {
+      "path": "verification/net35/pin-negatives/out_sense_wrong.xml",
+      "bytes": 25886,
+      "sha256": "62970ead03830d38ae80f2a156a9179d5d50e1280c56980938e95e2523ac21f2"
+    },
+    {
+      "path": "verification/net35/pin-negatives/pad_not_grounded.xml",
+      "bytes": 25886,
+      "sha256": "4ad143f69a66f3d078604da6d8c936de27664969be0cde6bd83c702439f90ed9"
+    },
+    {
+      "path": "verification/net35/pin-negatives/set_wrong_rail.xml",
+      "bytes": 25886,
+      "sha256": "07d6e54b4e15e58bf5722a347e2e12d60f4505559608638205d0ff8a5a09db01"
+    },
+    {
+      "path": "verification/net35/pin-negatives/supervisor_divider_bypassed.xml",
+      "bytes": 25886,
+      "sha256": "c6090ed51224ca09868b13e6e848d32c47e61a81cc0dade3fb93cdfc54e824cd"
+    },
+    {
+      "path": "verification/net35/pin-negatives/unused_pgfb_grounded.xml",
+      "bytes": 25886,
+      "sha256": "5f42f4faa1a03bea160f164d6f60c719266c513c032ea159717872595708a0b9"
+    },
+    {
+      "path": "verification/net35/result-audit.json",
+      "bytes": 5836,
+      "sha256": "6132ae6f26a5d86fc2db27da130fbc2d98e8bb9aa76dd72c239fb2a9d296f34f"
+    },
+    {
+      "path": "verification/net35/tb_window_states.sv",
+      "bytes": 1331,
+      "sha256": "2d4eaaea58867a6c8ba132d8d7157d6a79faae093a2e8190056512254c1de44e"
+    },
+    {
+      "path": "verification/net35/window-results.json",
+      "bytes": 34922,
+      "sha256": "e2096b1e6cffe105127cab0d927d9812b0a7b243918d635612aa88e53e925f25"
+    }
+  ]
+}

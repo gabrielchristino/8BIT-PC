@@ -79,3 +79,8 @@ revisions/** -text
 /references/net34/** -text -whitespace
 /verification/net34/**/values.dat -text -whitespace
 /verification/net34/**/*.sv -whitespace
+
+# Exact NET35 source captures and passive discharge tables.
+/references/net35/** -text -whitespace
+/verification/net35/**/values.dat -text -whitespace
+/verification/net35/**/*.sv -whitespace

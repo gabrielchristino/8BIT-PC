@@ -1,3 +1,5 @@
+NET35 (27/11/2026): [alternativa de alimentação dos sincronismos](docs/engineering/NET35_WINDOW.md), com trilho nominal de 3,51 V. Pinagem, estados funcionais e descarga condicional conferidos; 128 combinações e seis proxies ngspice, incluindo dois negativos. Margens pequenas e hipóteses de corrente/capacitância/tempo ainda exigem qualificação. Folha experimental separada; placa não liberada.
+
 NET34 (27/11/2026): [saida candidata de sincronismo em3,3V](docs/engineering/NET34_SYNC.md), com regulador,supervisor,NANDSchmitt e bufferIoff. Dois cenarios de estados e dois de quadros passaram; contratoDC e pinagem conferidos. Alimentacao intermediaria/transientes/ESD e compatibilidade do receptor continuam abertos. Folha separada, sem promocao a placa completa.
 
 NET33 (27/11/2026): [raster ligado a projecao digital dos DACs](docs/engineering/NET33_VIDEO_DAC.md). Quatro cenarios passaram, cada um com dois quadros separados por reset e256cores; dois negativos funcionais e oito de pinagem foram rejeitados. Canais livres e um AHC174 novo no video. Folhas experimentais, sem CPU/SRAM/analogico ou integracao ao candidato NET30; ERC e placa fisica continuam abertos.

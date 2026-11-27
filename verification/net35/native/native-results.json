@@ -1,0 +1,47 @@
+{
+  "date": "2026-11-27",
+  "base_git_commit": "e2d466193a4f2e83e251ebb9c7ea985405907e9d",
+  "components": 22,
+  "ics": 4,
+  "pins": 66,
+  "qualified_state_model_equal_after_module_rename": true,
+  "erc_unwaived": {
+    "power_pin_not_driven": 2,
+    "isolated_pin_label": 2
+  },
+  "erc_approved": false,
+  "lt3042_original_local_pdf": false,
+  "power_ramp_or_transients_qualified": false,
+  "production_released": false,
+  "sources": [
+    {
+      "path": "tools/build_sync_window.py",
+      "sha256": "6ad9f995284d3b84da098feee96553a8f1b9641267a045abf7803464400a7c30"
+    },
+    {
+      "path": "tools/build_vga_sync.py",
+      "sha256": "61f46dc7e829a836d1c5c59169cfa0f9c73cbc02c5a8834dd986b7a20a425288"
+    },
+    {
+      "path": "tools/build_dac_leaf.py",
+      "sha256": "b86f69adde2255b791d863b37ae6c74981eac29286ac92df4378fb0d615c9598"
+    },
+    {
+      "path": "hardware/vga_sync_3v3/design.json",
+      "sha256": "a8f02b049d1500dd6901c1bbc2280f0076d22db0545e4a22421f9db0af4deaf8"
+    },
+    {
+      "path": "hardware/vga_sync_3v3/package-functions.json",
+      "sha256": "33d71540564d259d8dc4a4aa1bb1a336c477f3e5923e283f3c18e08088e129a8"
+    },
+    {
+      "path": "hardware/vga_sync_3v3/vga_sync_functional.sv",
+      "sha256": "9f55f75726b45212886f832b1c6c58ec7b7d170c4a0764de6333b1b71f6019cf"
+    },
+    {
+      "path": "references/net20/tps3808.pdf",
+      "sha256": "b25476cfb25be6ec75733b5a468123cc01a57996e4d75981cef11523876b0c83"
+    }
+  ],
+  "failures": []
+}

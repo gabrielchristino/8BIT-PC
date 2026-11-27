@@ -1,0 +1,97 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-27T12:30:21",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.8",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/90f49d0e-8af6-552b-971b-64cf9af25a3e",
+            "violations": [
+                {
+                    "description": "Input Power pin not driven by any Output Power pins",
+                    "items": [
+                        {
+                            "description": "Symbol U1 Pin 1 [IN1, Power input, Line]",
+                            "pos": {
+                                "x": 43.18,
+                                "y": 54.61
+                            },
+                            "uuid": "c7cd471d-6233-5006-a74a-45b3950146ce"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "power_pin_not_driven"
+                },
+                {
+                    "description": "Input Power pin not driven by any Output Power pins",
+                    "items": [
+                        {
+                            "description": "Symbol U1 Pin 8 [GND, Power input, Line]",
+                            "pos": {
+                                "x": 78.74,
+                                "y": 62.23
+                            },
+                            "uuid": "8850cb7b-96c3-5154-bba5-5fca92e9e3bf"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "power_pin_not_driven"
+                },
+                {
+                    "description": "Label connected to only one pin",
+                    "items": [
+                        {
+                            "description": "Label 'V_OUT'",
+                            "pos": {
+                                "x": 35.56,
+                                "y": 243.84
+                            },
+                            "uuid": "7d3435c1-bbe7-5db8-b63e-81c35b4944ba"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "isolated_pin_label"
+                },
+                {
+                    "description": "Label connected to only one pin",
+                    "items": [
+                        {
+                            "description": "Label 'H_OUT'",
+                            "pos": {
+                                "x": 218.44,
+                                "y": 218.44
+                            },
+                            "uuid": "a0201748-2e50-5ffb-a44a-18aa7faf60ac"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "isolated_pin_label"
+                }
+            ]
+        }
+    ],
+    "source": "vga_sync_window.kicad_sch"
+}

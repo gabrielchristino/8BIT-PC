@@ -1,0 +1,169 @@
+{
+  "SN74LVC1G132DBVR": {
+    "datasheet": "https://www.ti.com/lit/ds/symlink/sn74lvc1g132.pdf",
+    "pins": {
+      "1": {
+        "name": "A",
+        "type": "input"
+      },
+      "2": {
+        "name": "B",
+        "type": "input"
+      },
+      "3": {
+        "name": "GND",
+        "type": "power_in"
+      },
+      "4": {
+        "name": "Y",
+        "type": "output"
+      },
+      "5": {
+        "name": "VCC",
+        "type": "power_in"
+      }
+    }
+  },
+  "SN74LVC2G125DCTR": {
+    "datasheet": "https://www.ti.com/lit/ds/symlink/sn74lvc2g125.pdf",
+    "pins": {
+      "1": {
+        "name": "OE0_N",
+        "type": "input"
+      },
+      "2": {
+        "name": "A0",
+        "type": "input"
+      },
+      "3": {
+        "name": "Y1",
+        "type": "tri_state"
+      },
+      "4": {
+        "name": "GND",
+        "type": "power_in"
+      },
+      "5": {
+        "name": "A1",
+        "type": "input"
+      },
+      "6": {
+        "name": "Y0",
+        "type": "tri_state"
+      },
+      "7": {
+        "name": "OE1_N",
+        "type": "input"
+      },
+      "8": {
+        "name": "VCC",
+        "type": "power_in"
+      }
+    }
+  },
+  "R": {
+    "datasheet": "",
+    "pins": {
+      "1": {
+        "name": "1",
+        "type": "passive"
+      },
+      "2": {
+        "name": "2",
+        "type": "passive"
+      }
+    }
+  },
+  "C": {
+    "datasheet": "",
+    "pins": {
+      "1": {
+        "name": "1",
+        "type": "passive"
+      },
+      "2": {
+        "name": "2",
+        "type": "passive"
+      }
+    }
+  },
+  "TPS3808G01DBVR": {
+    "datasheet": "https://www.ti.com/lit/ds/symlink/tps3808.pdf",
+    "pins": {
+      "1": {
+        "name": "RESET_N",
+        "type": "open_collector"
+      },
+      "2": {
+        "name": "GND",
+        "type": "power_in"
+      },
+      "3": {
+        "name": "MR_N",
+        "type": "input"
+      },
+      "4": {
+        "name": "CT",
+        "type": "input"
+      },
+      "5": {
+        "name": "SENSE",
+        "type": "input"
+      },
+      "6": {
+        "name": "VCC",
+        "type": "power_in"
+      }
+    }
+  },
+  "LT3042IMSE_PBF": {
+    "datasheet": "https://www.analog.com/media/en/technical-documentation/data-sheets/lt3042.pdf",
+    "source": "RevC MSE10 plus exposed GND pad11; web transcription, local PDF download timed out",
+    "pins": {
+      "1": {
+        "name": "IN1",
+        "type": "power_in"
+      },
+      "2": {
+        "name": "IN2",
+        "type": "power_in"
+      },
+      "3": {
+        "name": "EN_UV",
+        "type": "input"
+      },
+      "4": {
+        "name": "PG",
+        "type": "open_collector"
+      },
+      "5": {
+        "name": "ILIM",
+        "type": "passive"
+      },
+      "6": {
+        "name": "PGFB",
+        "type": "input"
+      },
+      "7": {
+        "name": "SET",
+        "type": "passive"
+      },
+      "8": {
+        "name": "GND",
+        "type": "power_in"
+      },
+      "9": {
+        "name": "OUTS",
+        "type": "input"
+      },
+      "10": {
+        "name": "OUT",
+        "type": "power_out"
+      },
+      "11": {
+        "name": "EP_GND",
+        "type": "power_in"
+      }
+    }
+  }
+}

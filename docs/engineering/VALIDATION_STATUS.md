@@ -5,6 +5,18 @@ Atualizado em27/11/2026, após as regressões próprias da NET30.
 relatórios NET e versões Git preservam os estados anteriores. Não somar
 ensaios sobrepostos nem transferir aprovação entre variantes diferentes.
 
+## Alternativa de janela H/V NET35
+
+Folha separada nominal 3,51 V, 22 componentes/quatro CIs/66 pinos. Dois
+cenários funcionais de 14 estados passaram; um negativo funcional e oito
+XMLs inválidos foram rejeitados. A projeção de estados é equivalente à
+NET34 após renomear módulo, sem novas execuções de quadros/CPU. As 128
+combinações de descarga e seis proxies passivos dependem de limites ainda
+não qualificados: 10 mA, 47 uF efetivos, ESR 50 miliohm e 20,1 us. Margens
+pequenas; resposta real do regulador/supervisor e ERC quatro itens seguem
+abertos. [Detalhes e critérios NET35](NET35_WINDOW.md). Não há liberação
+física nem integração dessa alternativa ao candidato NET30.
+
 ## Saida candidata de sincronismos NET34
 
 Folha3,3V supervisionada:17componentes/50pinos conferidos. Passaram dois

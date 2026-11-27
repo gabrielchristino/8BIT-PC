@@ -1,0 +1,1657 @@
+                                                                                                                                       TPS3899
+                                                                                              SLVSFM0C – SEPTEMBER 2020 – REVISED JANUARY 2024
+
+     TPS3899 Nano-Power, Precision Voltage Supervisor, Push-Button Monitor with
+                     Programmable Sense and Reset Delay
+
+1 Features                                                                   3 Description
+•   Functional Safety-Capable                                                The TPS3899 is a nano power, precision voltage
+    – Documentation available to aid functional safety                       supervisor with ±0.5% threshold accuracy and
+       system design                                                         programmable sense and reset time delay in a 6
+•   Precision voltage and push-button monitor                                pin space saving 1.5mm x 1.5mm WSON package.
+•   VDD range: 0.85V to 6V ( DL and PL outputs)                              The TPS3899 is a feature-rich voltage supervisor that
+•   VDD range: 1V to 6V ( PH output)                                         offers the smallest total solution size in its class. Built-
+•   Programmable sense and reset delay                                       in hysteresis along with programmable delay prevent
+•   Nano quiescent current: 125nA (typical)                                  false reset signals when monitoring a voltage rail or
+•   High threshold accuracy: ±0.5% (typical)                                 push button signals.
+•   Precision hysteresis: 5% (typical)                                       The separate VDD and SENSE pins allow for
+•   Adjustable threshold voltage: 0.505V (typical)                           the redundancy sought by high-reliability systems.
+•   Fixed threshold voltage: 0.8V to 5.4V                                    SENSE is decoupled from VDD and can monitor rail
+    – Fixed threshold level available in 100mV steps                         voltages other than VDD. Optional use of external
+•   Multiple output topologies                                               resistors are supported by the high impedance input
+    – DL: open-drain active-low                                              of the SENSE pin. Both CTS and CTR provide delay
+    – PL: push-pull active-low                                               adjustability on the rising and falling edges of the
+    – PH: push-pull active-high                                              RESET signals. CTS also functions as a debouncer
+•   Temperature range: –40°C to +125°C                                       by ignoring voltage glitches on the monitored voltage
+•   Package: 1.5mm × 1.5mm WSON                                              rails and operates as a "manual reset" that can be
+                                                                             used to force a system reset.
+2 Applications
+•   Electricity meters                                                       The precision performance, best in-class features
+•   Building automation                                                      in a compact form factor, makes the TPS3899
+•   Body Control Module (BCM)                                                an ideal solution for wide ranging industrial and
+•   Data center and enterprise computing                                     battery-powered applications such as Factory/Building
+•   Notebooks, desktop computers, servers                                    Automation, Motor Drives, and consumer products.
+•   Smartphones, hand-held products                                          The device is fully specified over a temperature range
+•   Portable, battery-powered equipment                                      of –40°C to +125°C (TA).
+•   Solid-state drives                                                                                  Device Information
+•   STB & DVR                                                                    PART NUMBER                     PACKAGE (1)   BODY SIZE (NOM)
+                                                                                      TPS3899                   WSON (6) DSE    1.5mm × 1.5mm
+
+
+                                                                             1. For all available packages, see the orderable
+                                                                                addendum at the end of the data sheet
+                                    0.85 V to 6.0 V
+
+
+
+                                                                                                            *Rpull-up
+                                                                                       VDD
+                                                                                SENSE        RESET
+                                         Push-button                                  TPS3899
+                                            input
+                                                                                CTS           CTR
+                                                                                       GND
+
+
+
+                                                       *Rpull-up is required for open-drain variants only
+
+                                                      Typical Application Circuit
+
+
+     An IMPORTANT NOTICE at the end of this data sheet addresses availability, warranty, changes, use in safety-critical applications,
+     intellectual property matters and other important disclaimers. PRODUCTION DATA.
+TPS3899
+SLVSFM0C – SEPTEMBER 2020 – REVISED JANUARY 2024                                                                                                               www.ti.com
+
+
+                                                                        Table of Contents
+1 Features............................................................................1     6.2 Functional Block Diagram......................................... 13
+2 Applications..................................................................... 1       6.3 Feature Description...................................................13
+3 Description.......................................................................1       6.4 Device Functional Modes..........................................17
+4 Device Comparison......................................................... 3            7 Application and Implementation.................................. 18
+Pin Configuration and Functions......................................4                      7.1 Application Information............................................. 18
+5 Specifications.................................................................. 5        7.2 Typical Application.................................................... 18
+  5.1 Absolute Maximum Ratings ....................................... 5                  8 Device and Documentation Support............................22
+  5.2 ESD Ratings .............................................................. 5          8.1 Device Support ........................................................ 22
+  5.3 Recommended Operating Conditions ........................5                            8.2 Receiving Notification of Documentation Updates....23
+  5.4 Thermal Information ...................................................6              8.3 Support Resources................................................... 23
+  5.5 Electrical Characteristics ............................................7              8.4 Trademarks............................................................... 23
+  5.6 Timing Requirements ................................................. 8               8.5 Electrostatic Discharge Caution................................23
+  5.7 Timing Diagrams......................................................... 9            8.6 Glossary....................................................................23
+  5.8 Typical Characteristics.............................................. 10            9 Revision History............................................................ 24
+6 Detailed Description......................................................13            10 Mechanical, Packaging, and Orderable
+  6.1 Overview................................................................... 13        Information.................................................................... 24
+
+
+
+
+2       Submit Document Feedback                                                                                        Copyright © 2024 Texas Instruments Incorporated
+
+                                                                      Product Folder Links: TPS3899
+                                                                                                                                TPS3899
+www.ti.com                                                                                SLVSFM0C – SEPTEMBER 2020 – REVISED JANUARY 2024
+
+
+4 Device Comparison
+Figure 4-1 shows the device naming nomenclature of the TPS3899. For all possible output types and
+threshold voltages options, see Device Naming Convention for a more detailed explanation. Contact TI sales
+representatives or on TI's E2E forum for detail and availability of other options; minimum order quantities apply.
+
+                                   TPS3899 XX XX XXX
+
+                                        Output Type                      Threshold Voltage          Package
+                                        DL: Open-Drain Acve-Low         01: 0.505 V (adjustable)   DSE: WSON
+                                        PL: Push-Pull Ac ve-Low          08: 0.8 V
+                                        PH: Push-Pull Acve-High         ...
+                                                                         54: 5.4 V
+
+                                                  Figure 4-1. Device Naming Nomenclature
+
+
+
+
+Copyright © 2024 Texas Instruments Incorporated                                                            Submit Document Feedback     3
+                                                          Product Folder Links: TPS3899
+TPS3899
+SLVSFM0C – SEPTEMBER 2020 – REVISED JANUARY 2024                                                                                  www.ti.com
+
+
+Pin Configuration and Functions
+
+                                               CTR      1            6   RESET /RESET
+                                               CTS      2            5   SENSE
+                                              GND       3            4   VDD
+
+                                                    Figure 5-1. DSE Package,
+                                                              6 Pin,
+                                                       TPS3899 Top View
+
+                                                     Table 5-1. Pin Functions
+            PIN
+                          I/O                                                 DESCRIPTION
+    NO.           NAME
+                                Capacitor programmable reset delay: The CTR pin offers a user-adjustable delay time when returning from
+    1             CTR     —     reset condition. Connecting this pin to a ground-referenced capacitor sets the RESET/RESET delay time to
+                                deassert.
+                                Capacitor programmable sense delay: The CTS pin offers a user-adjustable delay time when asserting
+    2             CTS     —     reset condition. Connecting this pin to a ground-referenced capacitor sets the RESET/RESET delay time to
+                                assert.
+    3             GND     —     Ground
+    4             VDD      I    Supply voltage pin: Good analog design practice is to place a 0.1µF ceramic capacitor close to this pin.
+                                This pin is connected to the voltage that will be monitored for fixed variants or to a resistor divider for
+                                the adjustable variant. When the voltage on the SENSE pin transistions below the negative threshold
+                                voltage VIT-, RESET/RESET asserts to active logic after the sense delay set by CTS. When the voltage on
+    5          SENSE       I
+                                the SENSE pin transistions above the positive threshold voltage VIT- + VHYS, RESET/RESET releases to
+                                inactive logic (deasserts) after the reset delay set by CTR. For noisy applications, placing a 10nF to
+                                100nF ceramic capacitor close to this pin may be needed for optimum performance.
+                                RESET active-low output that asserts to a logic low state after CTS delay when the monitored voltage on
+    6          RESET      O     the SENSE pin is lower than the negative threshold voltage VIT-. RESET remains logic low (asserted) until
+                                the SENSE input rises above VIT- + VHYS and the CTR reset delay expires.
+                                RESET active-high output that asserts to a logic high state after CTS delay when the monitored voltage on
+    6          RESET      O     the SENSE pin is lower than the negative threshold voltage VIT-. RESET remains logic high (asserted) until
+                                the SENSE input rises above VIT- + VHYS and the CTR reset delay expires.
+
+
+
+
+4         Submit Document Feedback                                                               Copyright © 2024 Texas Instruments Incorporated
+
+                                                     Product Folder Links: TPS3899
+                                                                                                                                    TPS3899
+www.ti.com                                                                               SLVSFM0C – SEPTEMBER 2020 – REVISED JANUARY 2024
+
+
+5 Specifications
+5.1 Absolute Maximum Ratings
+over operating free-air temperature range, unless otherwise noted(1)
+                                                                                                         MIN           MAX          UNIT
+ Voltage                           VDD, SENSE                                                            –0.3             6.5        V
+ Voltage                           CTR, CTS                                                              –0.3    VDD+0.3 (3)         V
+                                   RESET (TPS389DL)                                                      –0.3             6.5
+ Voltage                                                                                                                             V
+                                   RESET (TPS3899PL), RESET (TPS3899PH)                                  -0.3    VDD+0.3 (3)
+ Current                           RESET pin and RESET pin                                                                ±20       mA
+ Temperature(2)                    Operating ambient temperature, TA                                     –40              125
+                                                                                                                                     °C
+ Temperature(2)                    Storage, Tstg                                                         –65              150
+
+(1)     Stresses beyond those listed under Absolute Maximum Rating may cause permanent damage to the device. These are stress
+        ratings only, which do not imply functional operation of the device at these or any other conditions beyond those indicated
+        under Recommended Operating Condition. Exposure to absolute-maximum-rated conditions for extended periods may affect device
+        reliability.
+(2)     As a result of the low dissipated power in this device, it is assumed that TJ = TA.
+(3)     The absolute maximum rating is (VDD + 0.3) V or 6.5 V, whichever is smaller
+
+
+5.2 ESD Ratings
+                                                                                                                 VALUE              UNIT
+                                                   Human body model (HBM), per ANSI/ESDA/JEDEC
+                                                                                                                 ± 2000
+                                                   JS-001(1)
+ V(ESD)           Electrostatic discharge                                                                                            V
+                                                   Charged device model (CDM), per JEDEC specification
+                                                                                                                  ± 750
+                                                   JESD22-C101(2)
+
+(1)     JEDEC document JEP155 states that 500-V HBM allows safe manufacturing with a standard ESD control process.
+(2)     JEDEC document JEP157 states that 250-V CDM allows safe manufacturing with a standard ESD control process.
+
+
+5.3 Recommended Operating Conditions
+over operating free-air temperature range (unless otherwise noted)
+                                                                                               MIN         NOM            MAX       UNIT
+ Voltage                       VDD, SENSE                                                         0                             6     V
+ Voltage                       CTR, CTS                                                           0                       VDD         V
+                               RESET (TPS3899DL)                                                  0                             6
+ Voltage                                                                                                                              V
+                               RESET (TPS3899PL), RESET (TPS3899PH)                               0                       VDD
+ Current                       RESET pin and RESET pin current                                    0                         ±5       mA
+ TA                            Operating free air temperature                                  –40                         125       °C
+ CCTR                          CTR pin capacitor range                                            0                         10       µF
+ CCTS                          CTS pin capacitor range                                            0                         10       µF
+
+
+
+
+Copyright © 2024 Texas Instruments Incorporated                                                           Submit Document Feedback         5
+                                                         Product Folder Links: TPS3899
+TPS3899
+SLVSFM0C – SEPTEMBER 2020 – REVISED JANUARY 2024                                                                                    www.ti.com
+
+5.4 Thermal Information
+                                                                                                          TPS3899
+                                       THERMAL METRIC(1)                                                    DSE                      UNIT
+                                                                                                           6 PINS
+    RθJA                            Junction-to-ambient thermal resistance                                  214.9                    °C/W
+    RθJC(top)                       Junction-to-case (top) thermal resistance                               153.7                    °C/W
+    RθJB                            Junction-to-board thermal resistance                                    112.3                    °C/W
+    ψJT                             Junction-to-top characterization parameter                               25.5                    °C/W
+    ψJB                             Junction-to-board characterization parameter                            111.8                    °C/W
+    RθJC(bot)                       Junction-to-case (bottom) thermal resistance                             N/A                     °C/W
+
+(1)        For more information about traditional and new thermal metrics, see the Semiconductor and IC Package Thermal Metrics application
+           report.
+
+
+
+
+6          Submit Document Feedback                                                                Copyright © 2024 Texas Instruments Incorporated
+
+                                                          Product Folder Links: TPS3899
+                                                                                                                                TPS3899
+www.ti.com                                                                              SLVSFM0C – SEPTEMBER 2020 – REVISED JANUARY 2024
+
+
+5.5 Electrical Characteristics
+CTR = CTS = Open, RESET pull-up resistor (Rpull-up) = 100 kΩ to VDD, output reset load (CLOAD) = 10 pF and over the
+operating free-air temperature range –40℃ to 125℃, unless otherwise noted. VDD ramp rate ≤ 1 V/µs. Typical values are at
+TA = 25℃
+                      PARAMETER                                    TEST CONDITIONS                    MIN       TYP      MAX     UNIT
+ COMMON PARAMETERS
+              Input supply voltage (Open Drain Low
+ VDD                                                                                                  0.85                  6       V
+              and Push Pull Low)
+ VDD          Input supply voltage (Push Pull High)                                                      1                  6       V
+ VIT–   (1)   Negative-going input threshold range      for all output configs                         0.8                5.4       V
+              Negative-going input threshold for
+ VADJ-VIT–                                                                                                     0.505                V
+              adjustable sense threshold version
+                                                        VIT– = 0.505 V (ADJ version) or 0.8 V to
+ VIT–                                                                                                 –2.5      ±0.5      2.5
+          Negative-going input threshold accuracy       1.7 V (Fixed threshold)                                                   %
+ accuracy
+                                                        VIT– = 1.8 V to 5.4 V (Fixed threshold)         –2      ±0.5        2
+                                                        VIT– = 0.505 V and 0.8 V                         3        5         8     %
+ VHYS         Hysteresis on VIT–
+                                                        VIT– = 0.9 V to 5.4 V                            3        5         7     %
+              Current into Sense pin, fixed threshold
+                                                        VDD = VSENSE = 6 V                                     0.025      0.1    µA
+ ISENSE       version
+              Current into Sense pin, ADJ version       VDD = VSENSE = 6 V                                     0.025     0.05    µA
+              Supply current into VDD pin when sense    VDD = VSENSE = 6 V
+ IDD                                                                                                           0.125        1    µA
+              pin is separate                           VIT– = 0.505 V and 0.8 V to 5.4 V
+              Voltage threshold to stop CTS capacitor                                                         0.73 *
+ VTH_CTS                                                                                                                            V
+              charge and assert RESET                                                                           VDD
+              Voltage threshold to stop CTR capacitor                                                         0.73 *
+ VTH_CTR                                                                                                                            V
+              charge and deassert RESET                                                                         VDD
+ RCTS         CTS pin internal pull up resistance                                                               500              kΩ
+ RCTR         CTR pin internal pull up resistance                                                               500              kΩ
+ TPS3899DL (Open-drain active-low)
+                                                        VOL(max) = 300 mV
+ VPOR         Power on reset voltage (2)                                                                                  700    mV
+                                                        IRESET(Sink) = 15 µA
+                                                        VDD = 0.85 V
+                                                                                                                          300    mV
+              Low level output voltage                  IRESET(Sink) = 15 µA
+ VOL
+                                                        VDD = 3.3 V
+                                                                                                                          300    mV
+                                                        IRESET(Sink) = 2 mA
+                                                        VDD = VPULLUP = 6 V, TA = –40℃ to 85℃                    10       100     nA
+ Ilkg(OD)     Open-Drain output leakage current
+                                                        VDD = VPULLUP = 6 V                                      10       350     nA
+ TPS3899PL (Push-pull active-low)
+                                                        VOL(max) = 300 mV
+ VPOR         Power on reset voltage (2)                                                                                  700    mV
+                                                        IRESET(Sink) = 15 µA
+                                                        VDD = 0.85 V
+                                                                                                                          300    mV
+              Low level output voltage                  IRESET(Sink) = 15 µA
+ VOL
+                                                        VDD = 3.3 V
+                                                                                                                          300    mV
+                                                        IRESET(Sink) = 2 mA
+                                                        VDD = 1.8 V
+                                                                                                    0.8VDD                          V
+                                                        IRESET(Source) = 500 µA
+              High level output voltage                 VDD = 3.3 V
+ VOH                                                                                                0.8VDD                          V
+                                                        IRESET(Source) = 500 µA
+                                                        VDD = 6 V
+                                                                                                    0.8VDD                          V
+                                                        IRESET(Source) = 2 mA
+
+
+
+
+Copyright © 2024 Texas Instruments Incorporated                                                          Submit Document Feedback       7
+                                                        Product Folder Links: TPS3899
+TPS3899
+SLVSFM0C – SEPTEMBER 2020 – REVISED JANUARY 2024                                                                                           www.ti.com
+
+5.5 Electrical Characteristics (continued)
+CTR = CTS = Open, RESET pull-up resistor (Rpull-up) = 100 kΩ to VDD, output reset load (CLOAD) = 10 pF and over the
+operating free-air temperature range –40℃ to 125℃, unless otherwise noted. VDD ramp rate ≤ 1 V/µs. Typical values are at
+TA = 25℃
+                          PARAMETER                                     TEST CONDITIONS                       MIN        TYP        MAX      UNIT
+    TPS3899PH (Push-pull active-high)
+                                                             VOH(min) = 0.8VDD
+    VPOR         Power on reset voltage(2)                                                                                           900      mV
+                                                             IRESET (Source) = 15 uA
+                                                             VDD = 3.3 V
+                                                                                                                                     300      mV
+                 Low level output voltage                    IRESET(Sink) = 500 µA
+    VOL
+                                                             VDD = 6 V
+                                                                                                                                     300      mV
+                                                             IRESET(Sink) = 2 mA
+                                                             VDD = 1V
+                                                                                                           0.8VDD                              V
+                                                             IRESET(Sink) = 15 µA
+                 High level output voltage                   VDD = 1.5 V
+    VOH                                                                                                    0.8VDD                              V
+                                                             IRESET(Sink) = 500 µA
+                                                             VDD = 3.3 V
+                                                                                                           0.8VDD                              V
+                                                             IRESET(Sink) = 2 mA
+
+(1)         VIT- threshold voltage range from 0.8 V to 5.4 V (for DL, PL) and 1 to 5.4 V (for PH) in 100 mV steps, for released versions see Device
+            Voltage Thresholds table.
+(2)         Minimum VDD voltage level for a controlled output state. Below VPOR, the output cannot be determined.
+
+
+5.6 Timing Requirements
+At 0.85 V ≤ VDD ≤ 6 V, CTR = CTS = Open, RESET pull-up resistor (Rpull-up) = 100 kΩ to VDD, output reset load
+(CLOAD) = 10 pF and over the operating free-air temperature range –40°C to 125°C, unless otherwise noted.
+VDD ramp rate ≤ 1 V / µs. Typical values are at TA = 25°C
+                            PARAMETER                                   TEST CONDITIONS                    MIN         TYP         MAX       UNIT
+    tSTRT         Startup Delay(1)                               CTR pin = Open or NC                                               300       µs
+                                                                 CTS pin = Open or NC
+                                                                                                                         30           50      µs
+
+                  Detect time delay                              CTS pin = 10 nF
+    tD-SENSE                                                                                                            6.2                   ms
+                  VDD = (VIT+ + 10%) to (VIT- – 10%)(2)
+                                                                 CTS pin = 1 µF
+                                                                                                                        619                   ms
+
+                                                                 CTR pin = Open or NC                                    40           80      µs
+    tD            Reset time delay                               CTR pin = 10 nF (3)                                    6.2                   ms
+                                                                 CTR pin = 1 µF (3)                                     619                   ms
+    tGI_VIT-      Glitch immunity VIT-                           5% VIT-   overdrive(4)                                  10                   µs
+
+(1)         When VDD starts from less than VPOR and then exceeds the specified minimum VDD, reset is asserted till startup delay (tSTRT) + tD
+            delay based on capacitor on CTR pin. After this time, the device controls the RESET pin based on the SENSE pin voltage.
+(2)         tD_SENSE measured from threhold trip point (VIT-) to VOL for active low variants and VOH for active high variants.
+(3)         Ideal capacitor
+(4)         Overdrive % = [(VDD/ VIT-) - 1] × 100%
+
+
+
+
+8           Submit Document Feedback                                                                    Copyright © 2024 Texas Instruments Incorporated
+
+                                                             Product Folder Links: TPS3899
+                                                                                                                                               TPS3899
+www.ti.com                                                                                    SLVSFM0C – SEPTEMBER 2020 – REVISED JANUARY 2024
+
+
+5.7 Timing Diagrams
+
+                  VDD          VDD(MIN)
+                                VPOR
+
+
+                 SENSE VIT- + VHYS
+                                    VIT-
+                                                  tSTRT + tD                 tD-SENSE                        tD
+                 RESET
+
+
+
+                                                  Undened                               (tD-SENSE) is controlled by CTS
+                                                                                               (tD) is controlled by CTR
+(1) tD (no cap) is included in tSTRT time delay. If tD delay is programmed by an external capacitor connected to the CTR pin then tD programmed time will be
+added to the startup time.
+
+                                 Figure 5-1. TPS3899DL01 and TPS3899PL01 Timing Diagram
+
+
+
+
+                  VDD          VDD(MIN)
+                                VPOR
+                SENSE
+                             VIT- + VHYS
+                                    VIT-
+
+                                                   tSTRT + tD                 tD-SENSE                        tD
+                RESET
+
+
+
+                                                   Undened                         (tD-SENSE) is controlled by CTS
+                                                                                          (tD) is controlled by CTR
+(2) tD (no cap) is included in tSTRT time delay. If tD delay is programmed by an external capacitor connected to the CTR pin then tD programmed time will be
+added to the startup time.
+
+                                              Figure 5-2. TPS3899PH01 Timing Diagram
+
+
+
+
+Copyright © 2024 Texas Instruments Incorporated                                                                    Submit Document Feedback              9
+                                                           Product Folder Links: TPS3899
+TPS3899
+SLVSFM0C – SEPTEMBER 2020 – REVISED JANUARY 2024                                                                        www.ti.com
+
+5.8 Typical Characteristics
+Typical characteristics show the typical performance of the TPS3899 device. Test conditions are TA = 25°C,
+VDD = 3.3V, and Rpull-up = 100kΩ, unless otherwise noted.
+
+
+
+
+     Figure 5-3. Supply Current vs Supply Voltage                          Figure 5-4. SENSE Current vs VSENSE
+
+
+
+
+       Figure 5-5. VIT- Accuracy vs Temperature                               Figure 5-6. VHYS vs Temperature
+
+
+
+
+      Figure 5-7. SENSE Glitch Immunity (VIT-) vs                       Figure 5-8. Startup Delay vs Temperature
+                      Overdrive
+
+
+
+
+10    Submit Document Feedback                                                         Copyright © 2024 Texas Instruments Incorporated
+
+                                                   Product Folder Links: TPS3899
+                                                                                                                                  TPS3899
+www.ti.com                                                                                  SLVSFM0C – SEPTEMBER 2020 – REVISED JANUARY 2024
+
+
+5.8 Typical Characteristics (continued)
+Typical characteristics show the typical performance of the TPS3899 device. Test conditions are TA = 25°C,
+VDD = 3.3V, and Rpull-up = 100kΩ, unless otherwise noted.
+
+
+
+
+                                   VDD falling below VIT-                                                   CTR = OPEN
+
+     Figure 5-9. Propagation Delay vs Temperature                             Figure 5-10. Reset Time Delay vs Temperature
+
+
+
+
+     Figure 5-11. RESET Delay vs CTR Capacitance
+                                                                                                            CTS = OPEN
+
+                                                                                 Figure 5-12. SENSE Delay vs Temperature
+
+
+
+
+     Figure 5-13. SENSE Delay vs CTS Capacitance                                               Figure 5-14. VOL vs IOL
+
+Copyright © 2024 Texas Instruments Incorporated                                                              Submit Document Feedback    11
+                                                            Product Folder Links: TPS3899
+TPS3899
+SLVSFM0C – SEPTEMBER 2020 – REVISED JANUARY 2024                                                                       www.ti.com
+
+5.8 Typical Characteristics (continued)
+Typical characteristics show the typical performance of the TPS3899 device. Test conditions are TA = 25°C,
+VDD = 3.3V, and Rpull-up = 100kΩ, unless otherwise noted.
+
+
+
+
+                                           Figure 5-15. VOL vs Temperature
+
+
+
+
+12    Submit Document Feedback                                                        Copyright © 2024 Texas Instruments Incorporated
+
+                                                   Product Folder Links: TPS3899
+                                                                                                                                               TPS3899
+www.ti.com                                                                                      SLVSFM0C – SEPTEMBER 2020 – REVISED JANUARY 2024
+
+
+6 Detailed Description
+6.1 Overview
+The TPS3899 voltage supervisor with push-button monitor asserts a RESET/RESET signal when the SENSE
+pin voltage drops below VIT- for the duration of the sense delay set by CTS. If the SENSE pin voltage rises
+above VIT- + VHYS before the sense delay expires, the RESET/RESET pin does not assert. When asserted, the
+RESET/RESET output remains asserted until SENSE voltage returns above VIT- + VHYS for the duration of the
+reset delay set by CTR. If the SENSE pin voltage falls below VIT- before the reset delay expires while RESET is
+asserted, RESET/RESET will remain asserted.
+Like most voltage supervisors, the TPS3899 includes a reset delay tD to provide time for the power and clocks to
+settle before letting the processor out of reset. At power up, the circuits inside the TPS3899 need additional time
+to start the reset delay timer after its power supply VDD has reached minimum VDD(MIN) for these circuits to start
+operating properly. This additional time is specified with the parameter start-up delay tSTRT. Figure 5-1 shows the
+timing diagram indicating this additional delay. After VDD is stable and above VDD(MIN) subsequent changes of
+the sense voltage across the threshold voltage will trigger reset after only the reset delay. The reset time delay tD
+is set by a capacitor on the CTR pin. The start-up delay has a max spec limit of 300μs for a ramp rate of
+VDD ≤ 1V/μS.
+6.2 Functional Block Diagram
+
+                                                                               Push-pull variants only
+                   VDD
+                                                                                    VDD
+
+
+
+                               Cap ladder                       RESET
+                                 Fixed
+                                                                LOGIC
+                                                                TIMER                                    RESET (active-low variants: DL, PL)
+                                   ADJ                                                                   RESET (active-high variants: PH)
+                 SENSE                            +
+
+                               Reference          ±
+
+                                                                              GND
+                                                      VDD        VDD
+
+
+                                                        RCTR           RCTS
+
+
+                                                               CTR            CTS
+                                    GND
+
+6.3 Feature Description
+The combination of user-adjustable sense delay time via CTS and reset delay time via CTR with a broad range
+of threshold voltages allow these devices to be used in a wide array of applications. Fixed negative threshold
+voltages VIT- can be factory set from 0.8V to 5.4V in steps of 100mV [1.1V to 5.4V for the -PH (push-pull active
+high) variants]. CTS and CTR pins allow the sense delay and reset delay to be set to typical values of 30μs and
+40μs, respectively, by leaving these pins floating. External capacitors can be placed on the CTS and CTR pins to
+program the sense and reset delays independently.
+6.3.1 VDD Hysteresis
+The internal comparator has built-in hysteresis to avoid erroneous output reset release. If the voltage at the VDD
+pin falls below VIT- the output reset is asserted. When the voltage at the VDD pin goes above VIT- plus hysteresis
+(VHYS) the output reset is deasserted after tD delay.
+
+
+
+
+Copyright © 2024 Texas Instruments Incorporated                                                                       Submit Document Feedback      13
+                                                       Product Folder Links: TPS3899
+TPS3899
+SLVSFM0C – SEPTEMBER 2020 – REVISED JANUARY 2024                                                                               www.ti.com
+
+                                        Hystersis Width                                   Hystersis Width
+
+
+
+
+                   RESET                                                  RESET
+
+
+
+
+                                           VIT-   VIT+                                      VIT-   VIT+
+
+
+                                              VDD                                              VDD
+
+                                                   Figure 6-1. Hysteresis Diagram
+
+6.3.2 User-Programmable Sense and Reset Time Delay
+The sense delay corresponds to the configuration of CTS and the reset delay corresponds to the configuration
+of CTR. The sense and reset time delay can be set to a minimum value of 50µs and 80µs by leaving the CTS
+and CTR pins floating respectively, or a maximum value of approximately 6.5 seconds by connecting 10µF delay
+capacitor.
+The relationship between external capacitor (CCT_EXT) in Farads at CTS or CTR pins and the time delay in
+seconds is given by Equation 1.
+
+     tD = -ln (0.27) x RCT x CCT_EXT + tD (CTS or CTR = OPEN)                                                                      (1)
+
+Equation 1 is simplified to Equation 2 and Equation 3 by plugging RCT and tD (CTS or CTR = OPEN) given in
+Section 5.5 and Section 5.6 section:
+
+     tD-SENSE = 654666 x CCTS_EXT + 50µs                                                                                           (2)
+
+     tD = 654666 x CCTR_EXT + 80µs                                                                                                 (3)
+
+
+Equation 4 and Equation 5 solves for both external capacitor values (CCTS_EXT) and (CCTR_EXT) in units of
+Farads where tD-SENSE and tD are in units of seconds
+
+     CCTS_EXT = (tD-SENSE - 50µs) ÷ 654666                                                                                         (4)
+
+     CCTR_EXT = (tD - 80µs) ÷ 654666                                                                                               (5)
+
+The sense or reset delay varies according to three variables: the external capacitor (CCT_EXT), CTS and CTR
+pin internal resistance (RCT) provided in the Electrical Characteristics table, and a constant. The minimum and
+maximum variance due to the constant is show in Equation 6 and Equation 7 .
+
+     tD-SENSE(min) = -ln (0.29) x RCT (min) x CCT_EXT (min) + tD (no cap, min)                                                     (6)
+
+     tD-SENSE(max) = -ln (0.25) x RCT (max) x CCT_EXT (max) + tD (no cap, max)                                                     (7)
+
+The recommended maximum sense and reset delay capacitors for the TPS3899 is limited to 10µF as this makes
+sure there is enough time for either capacitors to fully discharge when a voltage fault occurs. When a voltage
+fault occurs, the previously charged up capacitor discharges and if the monitored voltage returns from the fault
+condition before either delay capacitors discharges completely, both delays can be shorter than expected. The
+capacitors can begin charging from a voltage above zero and resulting in shorter than expected time delays.
+Larger delay capacitors can be used so long as the capacitors have enough time to fully discharge during the
+duration of the voltage fault. To make sure the capacitors are fully discharged, the time period or duration of the
+voltage fault needs to be greater than 10% of the programmed reset time delay.
+
+
+
+14    Submit Document Feedback                                                                Copyright © 2024 Texas Instruments Incorporated
+
+                                                          Product Folder Links: TPS3899
+                                                                                                                                                  TPS3899
+www.ti.com                                                                                            SLVSFM0C – SEPTEMBER 2020 – REVISED JANUARY 2024
+
+
+Figure 6-2 shows the charge and discharge behavior on CTS and CTR that defines the sense and reset
+delays respectively. When SENSE transitions below VIT-, the capacitor connected to CTS begins to charge.
+Once the CTS capacitor charges to an internal threshold shown as VTH_CTS, RESET transitions to active-low
+logic state and the CTS capacitor then begins to discharge immediately. When SENSE transitions above VIT-
++ VHYS, the capacitor connected to CTR begins to charge. Once the CTR capacitor charges to the internal
+threshold VTH_CTR, RESET releases back to inactive logic high state and the CTR capacitor begins to discharge
+immediately. Please note that for active-high variants, RESET follows the inverse behavior of RESET.
+                                  SENSE
+                                               VIT-
+
+                                                                                                         *tdischarge-CTR
+                                              VTH_CTR
+                                  CTR
+
+
+
+                                                                    *tdischarge-CTS
+                                   CTS
+                                              VTH_CTS
+
+
+
+
+                                                                tD-SENSE                         tD
+                                   RESET
+                                 (-DL Opon)
+
+
+
+                              * tdischarge-CTS and tdischarge-CTR: To ensure the capacitors are fully discharged, the me period or
+                              duraon of the voltage fault needs to be greater than 10% of the programmed reset me delay.
+
+             Figure 6-2. CTS and CTR Charge and Discharge Behavior Relative to SENSE and RESET
+
+
+
+
+Copyright © 2024 Texas Instruments Incorporated                                                                              Submit Document Feedback   15
+                                                              Product Folder Links: TPS3899
+TPS3899
+SLVSFM0C – SEPTEMBER 2020 – REVISED JANUARY 2024                                                                                              www.ti.com
+
+
+Figure 6-3 shows the charge and discharge behavior on CTS and CTR where the monitored voltage is VDD.
+Similar to Figure 6-2, Figure 6-3 illustrates a SENSE signal that is transitioning below VIT- before the CTR
+capacitor reaches to an internal threshold voltage VTH_CTR and t < tD. The result of the CTR capacitor not
+reaching the internal threshold voltage VTH_CTR is RESET becomes deasserted. Once RESET is deasserted,
+charging beings for the CTS capacitor. When the CTS voltage reaches the internal threshold VTH_CTS, RESET
+becomes asserted. This phenomenon is caused by the SENSE falling edge triggering the discharging of the
+CTR capacitor and producing a deassert signal on the RESET output.
+
+                                             VIT-
+                       VDD = SENSE
+
+                                          VTH_CTR                                                      tdischarge-CTR
+
+                              CTR
+
+                                                                 tdischarge-CTS                       tdischarge-CTS
+                                          VTH_CTS
+
+                               CTS
+
+
+
+                                                           tD-SENSE                             tD-SENSE
+                               RESET                                                  t < tD
+                             (-DL Opon)
+
+
+
+                         * tdischarge-CTS and tdischarge-CTR: To ensure the capacitors are fully discharged, the me period or
+                         duraon of the voltage fault needs to be greater than 10% of the programmed reset me delay.
+
+       Figure 6-3. CTS and CTR Charge and Discharge Behavior Relative to VDD, SENSE and RESET
+
+6.3.3 RESET/RESET Output
+Upon power up, RESET/RESET begins asserted and remains asserted until the SENSE pin voltage rises above
+the positive voltage threshold VIT- + VHYS for the duration of the reset delay set by CTR. After the SENSE pin
+voltage is above VIT- + VHYS for the reset delay, RESET/RESET deasserts. RESET/RESET remains deasserted
+long as the SENSE pin voltage is above the positive threshold. If the SENSE pin voltage falls below the negative
+threshold (VIT-) for the duration of the sense delay set by CTS, then RESET/RESET is asserted.
+An external pull-up resistor is required for the open-drain variants. Connect the external pull-up resistor to the
+proper voltage rail to enable the outputs to be connected to other devices at the correct interface voltage level.
+RESET/RESET can be pulled up to any voltage up to 6.0V, independent of the device supply voltage.
+6.3.4 SENSE Input
+The SENSE input can vary from 0V to 6.0V, regardless of the device supply voltage used. The SENSE pin
+is used to monitor a critical voltage rail or push-button input. If the voltage on this pin drops below VIT-, then
+RESET/RESET is asserted after the sense delay time set by CTS. When the voltage on the SENSE pin rises
+above the positive threshold voltage VIT- + VHYS, RESET/RESET deasserts after the reset delay time set by
+CTR. The internal comparator has built-in hysteresis to make sure well-defined RESET/RESET assertions and
+deassertions even when there are small changes on the voltage rail being monitored.
+
+
+
+16    Submit Document Feedback                                                                               Copyright © 2024 Texas Instruments Incorporated
+
+                                                         Product Folder Links: TPS3899
+                                                                                                                                   TPS3899
+www.ti.com                                                                                   SLVSFM0C – SEPTEMBER 2020 – REVISED JANUARY 2024
+
+
+The TPS3899 device is relatively immune to short transients on the SENSE pin. Glitch immunity (tGI_VIT-SENSE),
+found in Section 5.6, is dependent on threshold overdrive, as illustrated in Figure 5-7. Although not required in
+most cases, for noisy applications, good analog design practice is to place a 10nF to 100nF bypass capacitor at
+the SENSE input to reduce sensitivity to transient voltages on the monitored signal.
+6.3.4.1 Immunity to SENSE Pin Voltage Transients
+The TPS3899 is immune to short voltage transient spikes on the input pins. To further improve the noise
+immunity on the SENSE pin, placing a 10nF to 100nF capacitor between the SENSE pin and GND can reduce
+the sensitivity to transient voltages on the monitored signal.
+Sensitivity to transients depends on both transient duration and overdrive (amplitude) of the transient. Overdrive
+is defined by how much VSENSE exceeds the specified threshold, and is important to know because the smaller
+the overdrive, the slower the response of the outputs. Threshold overdrive is calculated as a percent of the
+threshold in question, as shown in Equation 8.
+
+       Overdrive = | ((VSENSE / VIT-) – 1) × 100% |                                                                                  (8)
+                                          VSENSE
+                                                         VIT- + VHYS
+                                                                VIT-
+                                                                                              Overdrive
+
+
+                                                                                Pulse
+                                                                               Duration
+
+
+                                                  Figure 6-4. Overdrive vs Pulse Duration
+
+6.4 Device Functional Modes
+Table 6-1 summarizes the various functional modes of the device.
+                                                              Table 6-1. Truth Table
+                VDD                               SENSE(1)                        RESET                               RESET
+            VDD < VPOR                               —                          Undefined                            Undefined
+      VPOR < VDD < VDD(MIN) (2)                      —                              L                                   H
+           VDD ≥ VDD(MIN)                     VSENSE < VIT-                         L                                   H
+           VDD ≥ VDD(MIN)                 VSENSE > VIT- + VHYS                      H                                   L
+
+(1)     SENSE pin voltage must be less than VIT- for the sense delay set by CTS or greater than VIT- + VHYS for the reset delay set by CTR
+        before RESET transistions
+(2)     When VDD falls below VDD(MIN), undervoltage-lockout (UVLO) takes effect and RESET is held logic low (RESET is held logic high) until
+        VDD falls below VPOR at which the RESET/RESET output is undefined.
+
+6.4.1 Normal Operation (VDD > VDD(min))
+When VDD is greater than VDD(min), the RESET/RESET pin is determined by the voltage on the SENSE pin and
+the sense delay and reset delay set by CTS and CTR respecively.
+6.4.2 Above Power-On-Reset But Less Than VDD(min) (VPOR < VDD < VDD(min))
+When the voltage on VDD is less than the VDD(min) voltage, and greater than the power-on-reset voltage VPOR,
+the RESET/RESET signal is asserted regardless of the voltage on the SENSE pin.
+6.4.3 Below Power-On-Reset (VDD < VPOR)
+When the voltage on VDD is lower than VPOR, the device does not have enough voltage to internally pull the
+asserted RESET output low and RESET is undefined. RESET is also undefined and can pull up to VDD or to the
+pull-up voltage. Neither output can be relied upon for proper device function.
+
+Copyright © 2024 Texas Instruments Incorporated                                                               Submit Document Feedback     17
+                                                             Product Folder Links: TPS3899
+TPS3899
+SLVSFM0C – SEPTEMBER 2020 – REVISED JANUARY 2024                                                                                        www.ti.com
+
+
+7 Application and Implementation
+                                                                     Note
+      Information in the following applications sections is not part of the TI component specification, and
+      TI does not warrant its accuracy or completeness. TI’s customers are responsible for determining
+      suitability of components for their purposes. Customers should validate and test their design
+      implementation to confirm system functionality.
+
+7.1 Application Information
+The following sections describe in detail how to properly use this device, depending on the requirements of the
+final application.
+7.2 Typical Application
+
+Design 1: Adjustable Voltage Supervisor with Push-Button Functionality
+A typical application for the TPS3899 is voltage rail monitoring with push-button functionality and specific timing
+requirements.
+In this design application, the TPS3899DL01 is being used to monitor a 3.3V power rail and triggers a reset
+when the voltage drops below 2.9V or when the push-button is pressed. The reset output connects to an MCU
+for system resetting or servicing the push-button.
+                                  3.3V
+                                                          R1                0.1 µF
+                                                                                                         Rpull-up
+                                                          47.5 k
+                                                                                                         10 k
+                                                                                      VDD
+
+                                                                              SENSE         RESET
+
+                                 Push-button                                    TPS3899DL01
+                                    input               R2
+                                                        10k     0.1µF         CTS            CTR
+
+                                                                    0.1µF             GND                  0.1 µF
+
+
+
+
+         Figure 7-1. Design 1 - Adjustable Voltage Supervisor with Push-Button Functionality Circuit
+
+7.2.1 Design Requirements
+The design requirements, described in Table 7-1, for this design has a defined reset threshold voltage of 2.9V, a
+sense delay of 60ms, a reset delay of 60ms, and an output current no larger than 500µA.
+                                                Table 7-1. Design Requirements
+                  PARAMETER                             DESIGN REQUIREMENTS                                         DESIGN RESULTS
+
+ Reset Asserting                               Reset needs to assert when under the reset           Reset asserts when under the reset condition
+                                               condition of a button press or VDD ≤ 2.9V.           of a button press or VDD ≤ 2.93V.
+
+ Reset Asserting Timing                        Reset output needs to assert when the reset          Reset output asserts when the reset
+                                               conditions are met for 60ms, and needs to            conditions are met for 62ms and deasserts
+                                               de-assert after 60ms of no reset conditions.         after 62ms of no reset conditions.
+
+ Output Current                                The output current must not exceed 500µA.            The output current is 300µA under the reset
+                                                                                                    condition.
+
+
+
+
+18    Submit Document Feedback                                                                         Copyright © 2024 Texas Instruments Incorporated
+
+                                                      Product Folder Links: TPS3899
+                                                                                                                                 TPS3899
+www.ti.com                                                                                 SLVSFM0C – SEPTEMBER 2020 – REVISED JANUARY 2024
+
+
+7.2.2 Detailed Design Procedure
+The TPS3899DL01 can monitor any voltage above 0.505V using an external voltage divider. This device has
+a negative going input threshold voltage of 0.505V; however, the design needs to assert a reset when VDD
+drops below 2.9V. By using a resistor divider (R1 = 47.5kΩ, R2 = 10kΩ) the negative going threshold voltage
+becomes 2.93V. The device's positive going voltage threshold is VIT- + VHYS. The typical VHYS is 25.5mV. This in
+combination with the resistor divider makes the design's positive going threshold voltage equal to 3.08V. If VDD
+falls below 2.93V for the duration of sense delay (tD-SENSE), the reset asserts. If VDD rises above 3.08V for the
+duration of reset delay (tD), the reset deasserts. See Figure 7-2 for a timing diagram detailing the voltage levels
+and reset assertion/deassertion conditions.
+               3.3 V
+                                                                 VIT- + VHYS = 3.08V
+                                                  VIT- = 2.93V
+
+
+
+       Push-buon
+          input
+
+
+             SENSE
+
+
+
+                                       tD-SENSE                          tD                tD-SENSE                  tD
+
+               RESET
+
+
+                                                   Figure 7-2. Design 1 Timing Diagram
+
+This design also enters a reset condition when the push-button (PB) is asserted. The push-button is tied to
+ground and when pressed drops the SENSE voltage to 0V, making the device assert a reset. As a good analog
+practice, a 0.1µF capacitor was also placed on VDD.
+The desired reset timing conditions are sense delay time of 60ms (the time to trigger a reset) and a reset delay
+time of 60ms (the time to recover from a reset). Using Equation 4 and Equation 5, respectively, to solve for CTS
+and CTR capacitor values, CTS = 0.1µF and CTR = 0.1µF. These capacitor values give a nominal sense delay
+time of 62ms and nominal reset delay time of 62ms. Figure 7-3 and
+Figure 7-4 are the results of the described application where the measured sense and reset delay time are
+shown respectively.
+For the requirement of a maximum output current, an external pull-up resistor needs to be selected so that the
+current through the external pull-up resistor exceeds no more than 500µA. When the reset output is low, the
+voltage drop across the external pull-up resistor is equal to VDD. Ohm’s law is used to calculate the minimum
+resistor value. The resistor needs to be greater than 6kΩ to pull less than 500µA in the reset asserted low
+condition. A resistor value of 10kΩ was selected to accomplish this.
+Note that this design does not account for tolerances.
+
+
+
+
+Copyright © 2024 Texas Instruments Incorporated                                                             Submit Document Feedback    19
+                                                           Product Folder Links: TPS3899
+TPS3899
+SLVSFM0C – SEPTEMBER 2020 – REVISED JANUARY 2024                                                                         www.ti.com
+
+7.2.3 Application Curves
+
+
+
+
+                 Figure 7-3. Sense Delay                                           Figure 7-4. Reset Delay
+
+
+
+
+20    Submit Document Feedback                                                          Copyright © 2024 Texas Instruments Incorporated
+
+                                                   Product Folder Links: TPS3899
+                                                                                                                                           TPS3899
+www.ti.com                                                                                       SLVSFM0C – SEPTEMBER 2020 – REVISED JANUARY 2024
+
+
+7.2.4 Power Supply Recommendations
+The TPS3899 is designed to operate from an input supply with a voltage range between 0.85V and 6V. An input
+supply capacitor is not required for this device; however, if the input supply is noisy, then good analog practice
+is to place a 0.1µF capacitor between the VDD pin and the GND pin. Also, placing a 10nF to 100nF capacitor
+between the SENSE pin and GND can reduce the sensitivity to transient voltages on the monitored signal. This
+device has a 6.5V absolute maximum rating on the VDD pin. If the voltage supply providing power to VDD is
+susceptible to any large voltage transient that can exceed 6.5V, additional precautions must be taken.
+7.2.5 Layout
+7.2.5.1 Layout Guidelines
+Make sure that the connection to the VDD pin is low impedance. Good analog design practice is to place a
+0.1µF ceramic capacitor near the VDD pin. If a capacitor is not connected to the CTS or CTS pins, then minimize
+parasitic capacitance on this pin so the sense delay or reset delay times are not adversely affected. For fixed
+voltage threshold devices, good analog design practice is to place a 0.1µF ceramic capacitor near the SENSE
+pin.
+7.2.5.2 Layout Example
+The layout example in Figure 7-5 shows how the TPS3899 is laid out on a printed circuit board (PCB) with a
+user-defined sense delay and reset delay.
+
+
+
+                                                                                                           Rpull-up
+
+
+                                                  CTR                                 RESET
+
+
+                      CCTR
+
+
+                                                  CTS                                 SENSE
+
+
+                                  CCTS                                                                                            CSENSE
+
+
+                                                  GND                                  VDD
+
+
+                                                                                                            CIN
+
+
+                                                                      GND
+
+
+
+
+                                          Vias used to connect pins for application-specific connections
+
+
+                                                    Figure 7-5. Recommended Layout
+
+
+
+
+Copyright © 2024 Texas Instruments Incorporated                                                                       Submit Document Feedback   21
+                                                            Product Folder Links: TPS3899
+TPS3899
+SLVSFM0C – SEPTEMBER 2020 – REVISED JANUARY 2024                                                                           www.ti.com
+
+
+8 Device and Documentation Support
+8.1 Device Support
+8.1.1 Device Nomenclature
+Figure 4-1 in Device Comparison shows how to decode the function of the device based on its part number
+shown in Table 8-1.
+                                        Table 8-1. Device Naming Convention
+                                   ORDERABLE DEVICE NAME
+                                                                                                       THRESHOLD VOLTAGE (V)
+ -DL (OPEN-DRAIN ACTIVE-LOW)     -PL (PUSH-PULL ACTIVE-LOW)          -PH (PUSH-PULL ACTIVE-HIGH)
+        TPS3899DL01DSE                  TPS3899PL01DSE                      TPS3899PH01DSE                         0.505
+
+        TPS3899DL08DSE                  TPS3899PL08DSE                             N/A                              0.80
+
+        TPS3899DL09DSE                  TPS3899PL09DSE                             N/A                              0.90
+
+        TPS3899DL10DSE                  TPS3899PL10DSE                             N/A                              1.00
+
+        TPS3899DL11DSE                  TPS3899PL11DSE                      TPS3899PH11DSE                          1.10
+
+        TPS3899DL12DSE                  TPS3899PL12DSE                      TPS3899PH12DSE                          1.20
+
+        TPS3899DL13DSE                  TPS3899PL13DSE                      TPS3899PH13DSE                          1.30
+
+        TPS3899DL14DSE                  TPS3899PL14DSE                      TPS3899PH14DSE                          1.40
+
+        TPS3899DL15DSE                  TPS3899PL15DSE                      TPS3899PH15DSE                          1.50
+
+        TPS3899DL16DSE                  TPS3899PL16DSE                      TPS3899PH16DSE                          1.60
+
+        TPS3899DL17DSE                  TPS3899PL17DSE                      TPS3899PH17DSE                          1.70
+
+        TPS3899DL18DSE                  TPS3899PL18DSE                      TPS3899PH18DSE                          1.80
+
+        TPS3899DL19DSE                  TPS3899PL19DSE                      TPS3899PH19DSE                          1.90
+
+        TPS3899DL20DSE                  TPS3899PL20DSE                      TPS3899PH20DSE                          2.00
+
+        TPS3899DL21DSE                  TPS3899PL21DSE                      TPS3899PH21DSE                          2.10
+
+        TPS3899DL22DSE                  TPS3899PL22DSE                      TPS3899PH22DSE                          2.20
+
+        TPS3899DL23DSE                  TPS3899PL23DSE                      TPS3899PH23DSE                          2.30
+
+        TPS3899DL24DSE                  TPS3899PL24DSE                      TPS3899PH24DSE                          2.40
+
+        TPS3899DL25DSE                  TPS3899PL25DSE                      TPS3899PH25DSE                          2.50
+
+        TPS3899DL26DSE                  TPS3899PL26DSE                      TPS3899PH26DSE                          2.60
+
+        TPS3899DL27DSE                  TPS3899PL27DSE                      TPS3899PH27DSE                          2.70
+
+        TPS3899DL28DSE                  TPS3899PL28DSE                      TPS3899PH28DSE                          2.80
+
+        TPS3899DL29DSE                  TPS3899PL29DSE                      TPS3899PH29DSE                          2.90
+
+        TPS3899DL30DSE                  TPS3899PL30DSE                      TPS3899PH30DSE                          3.00
+
+        TPS3899DL31DSE                  TPS3899PL31DSE                      TPS3899PH31DSE                          3.10
+
+        TPS3899DL32DSE                  TPS3899PL32DSE                      TPS3899PH32DSE                          3.20
+
+        TPS3899DL33DSE                  TPS3899PL33DSE                      TPS3899PH33DSE                          3.30
+
+        TPS3899DL34DSE                  TPS3899PL34DSE                      TPS3899PH34DSE                          3.40
+
+        TPS3899DL35DSE                  TPS3899PL35DSE                      TPS3899PH35DSE                          3.50
+
+        TPS3899DL36DSE                  TPS3899PL36DSE                      TPS3899PH36DSE                          3.60
+
+        TPS3899DL37DSE                  TPS3899PL37DSE                      TPS3899PH37DSE                          3.70
+
+        TPS3899DL38DSE                  TPS3899PL38DSE                      TPS3899PH38DSE                          3.80
+
+
+22    Submit Document Feedback                                                           Copyright © 2024 Texas Instruments Incorporated
+
+                                                   Product Folder Links: TPS3899
+                                                                                                                                  TPS3899
+www.ti.com                                                                              SLVSFM0C – SEPTEMBER 2020 – REVISED JANUARY 2024
+
+                                        Table 8-1. Device Naming Convention (continued)
+                                           ORDERABLE DEVICE NAME
+                                                                                                              THRESHOLD VOLTAGE (V)
+ -DL (OPEN-DRAIN ACTIVE-LOW)              -PL (PUSH-PULL ACTIVE-LOW)       -PH (PUSH-PULL ACTIVE-HIGH)
+          TPS3899DL39DSE                          TPS3899PL39DSE                  TPS3899PH39DSE                          3.90
+
+          TPS3899DL40DSE                          TPS3899PL40DSE                  TPS3899PH40DSE                          4.00
+
+          TPS3899DL41DSE                          TPS3899PL41DSE                  TPS3899PH41DSE                          4.10
+
+          TPS3899DL42DSE                          TPS3899PL42DSE                  TPS3899PH42DSE                          4.20
+
+          TPS3899DL43DSE                          TPS3899PL43DSE                  TPS3899PH43DSE                          4.30
+
+          TPS3899DL44DSE                          TPS3899PL44DSE                  TPS3899PH44DSE                          4.40
+
+          TPS3899DL45DSE                          TPS3899PL45DSE                  TPS3899PH45DSE                          4.50
+
+          TPS3899DL46DSE                          TPS3899PL46DSE                  TPS3899PH46DSE                          4.60
+
+          TPS3899DL47DSE                          TPS3899PL47DSE                  TPS3899PH47DSE                          4.70
+
+          TPS3899DL48DSE                          TPS3899PL48DSE                  TPS3899PH48DSE                          4.80
+
+          TPS3899DL49DSE                          TPS3899PL49DSE                  TPS3899PH49DSE                          4.90
+
+          TPS3899DL50DSE                          TPS3899PL50DSE                  TPS3899PH50DSE                          5.00
+
+          TPS3899DL51DSE                          TPS3899PL51DSE                  TPS3899PH51DSE                          5.10
+
+          TPS3899DL52DSE                          TPS3899PL52DSE                  TPS3899PH52DSE                          5.20
+
+          TPS3899DL53DSE                          TPS3899PL53DSE                  TPS3899PH53DSE                          5.30
+
+          TPS3899DL54DSE                          TPS3899PL54DSE                  TPS3899PH54DSE                          5.40
+
+
+
+8.2 Receiving Notification of Documentation Updates
+To receive notification of documentation updates, navigate to the device product folder on ti.com. In the upper
+right corner, click on Alert me to register and receive a weekly digest of any product information that has
+changed. For change details, review the revision history included in any revised document.
+8.3 Support Resources
+TI E2E™ support forums are an engineer's go-to source for fast, verified answers and design help — straight
+from the experts. Search existing answers or ask your own question to get the quick design help you need.
+Linked content is provided "AS IS" by the respective contributors. They do not constitute TI specifications and do
+not necessarily reflect TI's views; see TI's Terms of Use.
+8.4 Trademarks
+TI E2E™ is a trademark of Texas Instruments.
+All trademarks are the property of their respective owners.
+8.5 Electrostatic Discharge Caution
+                    This integrated circuit can be damaged by ESD. Texas Instruments recommends that all integrated circuits be handled
+                    with appropriate precautions. Failure to observe proper handling and installation procedures can cause damage.
+                    ESD damage can range from subtle performance degradation to complete device failure. Precision integrated circuits may
+                    be more susceptible to damage because very small parametric changes could cause the device not to meet its published
+                    specifications.
+
+
+8.6 Glossary
+ TI Glossary             This glossary lists and explains terms, acronyms, and definitions.
+
+
+
+
+Copyright © 2024 Texas Instruments Incorporated                                                          Submit Document Feedback         23
+                                                        Product Folder Links: TPS3899
+TPS3899
+SLVSFM0C – SEPTEMBER 2020 – REVISED JANUARY 2024                                                                                                   www.ti.com
+
+
+
+9 Revision History
+NOTE: Page numbers for previous revisions may differ from page numbers in the current version.
+
+Changes from Revision B (January 2022) to Revision C (January 2024)                                              Page
+• Updated equations in User-Programmable Sense and Reset Time Delay section.......................................... 14
+
+
+
+
+Changes from Revision A (December 2020) to Revision B (January 2022)                                                                             Page
+• Added Functional Safety-Capable......................................................................................................................1
+• Changed IDD from 1.2μA to 1μA........................................................................................................................5
+
+
+
+Changes from Revision * (September 2020) to Revision A (November 2020)                                                                                   Page
+• APL to RTM release........................................................................................................................................... 1
+
+
+
+10 Mechanical, Packaging, and Orderable Information
+The following pages include mechanical, packaging, and orderable information. This information is the most
+current data available for the designated devices. This data is subject to change without notice and revision of
+this document. For browser-based versions of this data sheet, refer to the left-hand navigation.
+
+
+
+
+24     Submit Document Feedback                                                                                Copyright © 2024 Texas Instruments Incorporated
+
+                                                              Product Folder Links: TPS3899
+                                                                                                                                 PACKAGE OPTION ADDENDUM
+
+  www.ti.com                                                                                                                                                    9-Nov-2025
+
+
+
+
+PACKAGING INFORMATION
+
+ Orderable part number   Status   Material type   Package | Pins   Package qty | Carrier   RoHS         Lead finish/       MSL rating/       Op temp (°C)   Part marking
+                           (1)         (2)                                                  (3)         Ball material      Peak reflow                           (6)
+                                                                                                             (4)                (5)
+
+   TPS3899DL01DSER       Active    Production     WSON (DSE) | 6    3000 | LARGE T&R        Yes      NIPDAU | NIPDAUAG Level-1-260C-UNLIM     -40 to 125        KH
+  TPS3899DL01DSER.A      Active    Production     WSON (DSE) | 6    3000 | LARGE T&R        Yes           NIPDAU        Level-1-260C-UNLIM    -40 to 125        KH
+  TPS3899DL01DSERG4      Active    Production     WSON (DSE) | 6    3000 | LARGE T&R        Yes           NIPDAU        Level-1-260C-UNLIM    -40 to 125        KH
+ TPS3899DL01DSERG4.A     Active    Production     WSON (DSE) | 6    3000 | LARGE T&R        Yes           NIPDAU        Level-1-260C-UNLIM    -40 to 125        KH
+   TPS3899DL08DSER       Active    Production     WSON (DSE) | 6    3000 | LARGE T&R        Yes           NIPDAU        Level-1-260C-UNLIM    -40 to 125        LJ
+  TPS3899DL08DSER.A      Active    Production     WSON (DSE) | 6    3000 | LARGE T&R        Yes           NIPDAU        Level-1-260C-UNLIM    -40 to 125        LJ
+   TPS3899DL09DSER       Active    Production     WSON (DSE) | 6    3000 | LARGE T&R        Yes           NIPDAU        Level-1-260C-UNLIM    -40 to 125        M3
+  TPS3899DL09DSER.A      Active    Production     WSON (DSE) | 6    3000 | LARGE T&R        Yes           NIPDAU        Level-1-260C-UNLIM    -40 to 125        M3
+   TPS3899DL10DSER       Active    Production     WSON (DSE) | 6    3000 | LARGE T&R        Yes           NIPDAU        Level-1-260C-UNLIM    -40 to 125        LS
+  TPS3899DL10DSER.A      Active    Production     WSON (DSE) | 6    3000 | LARGE T&R        Yes           NIPDAU        Level-1-260C-UNLIM    -40 to 125        LS
+   TPS3899DL11DSER       Active    Production     WSON (DSE) | 6    3000 | LARGE T&R        Yes           NIPDAU        Level-1-260C-UNLIM    -40 to 125        LZ
+  TPS3899DL11DSER.A      Active    Production     WSON (DSE) | 6    3000 | LARGE T&R        Yes           NIPDAU        Level-1-260C-UNLIM    -40 to 125        LZ
+   TPS3899DL13DSER       Active    Production     WSON (DSE) | 6    3000 | LARGE T&R        Yes           NIPDAU        Level-1-260C-UNLIM    -40 to 125        LX
+  TPS3899DL13DSER.A      Active    Production     WSON (DSE) | 6    3000 | LARGE T&R        Yes           NIPDAU        Level-1-260C-UNLIM    -40 to 125        LX
+   TPS3899DL14DSER       Active    Production     WSON (DSE) | 6    3000 | LARGE T&R        Yes           NIPDAU        Level-1-260C-UNLIM    -40 to 125        LN
+  TPS3899DL14DSER.A      Active    Production     WSON (DSE) | 6    3000 | LARGE T&R        Yes           NIPDAU        Level-1-260C-UNLIM    -40 to 125        LN
+   TPS3899DL15DSER       Active    Production     WSON (DSE) | 6    3000 | LARGE T&R        Yes           NIPDAU        Level-1-260C-UNLIM    -40 to 125        LL
+  TPS3899DL15DSER.A      Active    Production     WSON (DSE) | 6    3000 | LARGE T&R        Yes           NIPDAU        Level-1-260C-UNLIM    -40 to 125        LL
+   TPS3899DL20DSER       Active    Production     WSON (DSE) | 6    3000 | LARGE T&R        Yes           NIPDAU        Level-1-260C-UNLIM    -40 to 125        M1
+  TPS3899DL20DSER.A      Active    Production     WSON (DSE) | 6    3000 | LARGE T&R        Yes           NIPDAU        Level-1-260C-UNLIM    -40 to 125        M1
+   TPS3899DL22DSER       Active    Production     WSON (DSE) | 6    3000 | LARGE T&R        Yes           NIPDAU        Level-1-260C-UNLIM    -40 to 125        LP
+  TPS3899DL22DSER.A      Active    Production     WSON (DSE) | 6    3000 | LARGE T&R        Yes           NIPDAU        Level-1-260C-UNLIM    -40 to 125        LP
+   TPS3899DL26DSER       Active    Production     WSON (DSE) | 6    3000 | LARGE T&R        Yes           NIPDAU        Level-1-260C-UNLIM    -40 to 125        LV
+  TPS3899DL26DSER.A      Active    Production     WSON (DSE) | 6    3000 | LARGE T&R        Yes           NIPDAU        Level-1-260C-UNLIM    -40 to 125        LV
+   TPS3899DL28DSER       Active    Production     WSON (DSE) | 6    3000 | LARGE T&R        Yes           NIPDAU        Level-1-260C-UNLIM    -40 to 125         LI
+  TPS3899DL28DSER.A      Active    Production     WSON (DSE) | 6    3000 | LARGE T&R        Yes           NIPDAU        Level-1-260C-UNLIM    -40 to 125         LI
+   TPS3899DL29DSER       Active    Production     WSON (DSE) | 6    3000 | LARGE T&R        Yes           NIPDAU        Level-1-260C-UNLIM    -40 to 125        LK
+  TPS3899DL29DSER.A      Active    Production     WSON (DSE) | 6    3000 | LARGE T&R        Yes           NIPDAU        Level-1-260C-UNLIM    -40 to 125        LK
+   TPS3899DL30DSER       Active    Production     WSON (DSE) | 6    3000 | LARGE T&R        Yes           NIPDAU        Level-1-260C-UNLIM    -40 to 125        LM
+
+
+                                                                                   Addendum-Page 1
+                                                                                                                                                                     PACKAGE OPTION ADDENDUM
+
+       www.ti.com                                                                                                                                                                                                    9-Nov-2025
+
+
+
+
+       Orderable part number          Status     Material type      Package | Pins      Package qty | Carrier       RoHS             Lead finish/               MSL rating/          Op temp (°C)               Part marking
+                                        (1)            (2)                                                            (3)            Ball material              Peak reflow                                           (6)
+                                                                                                                                          (4)                       (5)
+
+       TPS3899DL30DSER.A              Active      Production       WSON (DSE) | 6        3000 | LARGE T&R            Yes               NIPDAU            Level-1-260C-UNLIM            -40 to 125                     LM
+        TPS3899DL31DSER               Active      Production       WSON (DSE) | 6        3000 | LARGE T&R            Yes               NIPDAU            Level-1-260C-UNLIM            -40 to 125                     M6
+       TPS3899DL31DSER.A              Active      Production       WSON (DSE) | 6        3000 | LARGE T&R            Yes               NIPDAU            Level-1-260C-UNLIM            -40 to 125                     M6
+        TPS3899DL35DSER               Active      Production       WSON (DSE) | 6        3000 | LARGE T&R            Yes               NIPDAU            Level-1-260C-UNLIM            -40 to 125                     LT
+       TPS3899DL35DSER.A              Active      Production       WSON (DSE) | 6        3000 | LARGE T&R            Yes               NIPDAU            Level-1-260C-UNLIM            -40 to 125                     LT
+        TPS3899DL41DSER               Active      Production       WSON (DSE) | 6        3000 | LARGE T&R            Yes               NIPDAU            Level-1-260C-UNLIM            -40 to 125                     LU
+       TPS3899DL41DSER.A              Active      Production       WSON (DSE) | 6        3000 | LARGE T&R            Yes               NIPDAU            Level-1-260C-UNLIM            -40 to 125                     LU
+        TPS3899DL43DSER               Active      Production       WSON (DSE) | 6        3000 | LARGE T&R            Yes               NIPDAU            Level-1-260C-UNLIM            -40 to 125                     M2
+       TPS3899DL43DSER.A              Active      Production       WSON (DSE) | 6        3000 | LARGE T&R            Yes               NIPDAU            Level-1-260C-UNLIM            -40 to 125                     M2
+        TPS3899PL31DSER               Active      Production       WSON (DSE) | 6        3000 | LARGE T&R            Yes               NIPDAU            Level-1-260C-UNLIM            -40 to 125                     LH
+       TPS3899PL31DSER.A              Active      Production       WSON (DSE) | 6        3000 | LARGE T&R            Yes               NIPDAU            Level-1-260C-UNLIM            -40 to 125                     LH
+        TPS3899PL42DSER               Active      Production       WSON (DSE) | 6        3000 | LARGE T&R            Yes               NIPDAU            Level-1-260C-UNLIM            -40 to 125                     LG
+       TPS3899PL42DSER.A              Active      Production       WSON (DSE) | 6        3000 | LARGE T&R            Yes               NIPDAU            Level-1-260C-UNLIM            -40 to 125                     LG
+
+(1)
+      Status: For more details on status, see our product life cycle.
+
+(2)
+   Material type: When designated, preproduction parts are prototypes/experimental devices, and are not yet approved or released for full production. Testing and final process, including without limitation quality assurance,
+reliability performance testing, and/or process qualification, may not yet be complete, and this item is subject to further changes or possible discontinuation. If available for ordering, purchases will be subject to an additional
+waiver at checkout, and are intended for early internal evaluation purposes only. These items are sold without warranties of any kind.
+
+(3)
+      RoHS values: Yes, No, RoHS Exempt. See the TI RoHS Statement for additional information and value definition.
+
+(4)
+   Lead finish/Ball material: Parts may have multiple material finish options. Finish options are separated by a vertical ruled line. Lead finish/Ball material values may wrap to two lines if the finish value exceeds the maximum
+column width.
+
+(5)
+  MSL rating/Peak reflow: The moisture sensitivity level ratings and peak solder (reflow) temperatures. In the event that a part has multiple moisture sensitivity ratings, only the lowest level per JEDEC standards is shown.
+Refer to the shipping label for the actual reflow temperature that will be used to mount the part to the printed circuit board.
+
+(6)
+      Part marking: There may be an additional marking, which relates to the logo, the lot trace code information, or the environmental category of the part.
+
+Multiple part markings will be inside parentheses. Only one part marking contained in parentheses and separated by a "~" will appear on a part. If a line is indented then it is a continuation of the previous line and the two
+combined represent the entire part marking for that device.
+
+
+
+
+                                                                                                          Addendum-Page 2
+                                                                                                                                                                      PACKAGE OPTION ADDENDUM
+
+    www.ti.com                                                                                                                                                                                                    9-Nov-2025
+
+
+
+
+Important Information and Disclaimer:The information provided on this page represents TI's knowledge and belief as of the date that it is provided. TI bases its knowledge and belief on information provided by third parties, and
+makes no representation or warranty as to the accuracy of such information. Efforts are underway to better integrate information from third parties. TI has taken and continues to take reasonable steps to provide representative
+and accurate information but may not have conducted destructive testing or chemical analysis on incoming materials and chemicals. TI and TI suppliers consider certain information to be proprietary, and thus CAS numbers
+and other limited information may not be available for release.
+
+In no event shall TI's liability arising out of such information exceed the total purchase price of the TI part(s) at issue in this document sold by TI to Customer on an annual basis.
+
+OTHER QUALIFIED VERSIONS OF TPS3899 :
+
+• Automotive : TPS3899-Q1
+
+NOTE: Qualified Version Definitions:
+
+        • Automotive - Q100 devices qualified for high-reliability automotive applications targeting zero defects
+
+
+
+
+                                                                                                          Addendum-Page 3
+                                                                             PACKAGE MATERIALS INFORMATION
+
+www.ti.com                                                                                                                                        3-Sep-2026
+
+
+
+TAPE AND REEL INFORMATION
+
+       REEL DIMENSIONS                                                                    TAPE DIMENSIONS
+                                                                                     K0         P1
+
+
+
+                                                                                                                       B0 W
+                                       Reel
+                                     Diameter
+                                                                                  Cavity             A0
+                                                              A0   Dimension designed to accommodate the component width
+                                                              B0   Dimension designed to accommodate the component length
+                                                              K0   Dimension designed to accommodate the component thickness
+                                                              W    Overall width of the carrier tape
+                                                              P1   Pitch between successive cavity centers
+
+
+                                      Reel Width (W1)
+                              QUADRANT ASSIGNMENTS FOR PIN 1 ORIENTATION IN TAPE
+
+                                                                                                      Sprocket Holes
+
+
+                                                Q1       Q2          Q1    Q2
+
+                                                Q3       Q4          Q3    Q4                    User Direction of Feed
+
+
+
+                                                          Pocket Quadrants
+
+
+*All dimensions are nominal
+             Device           Package Package Pins            SPQ       Reel   Reel   A0                     B0         K0     P1     W     Pin1
+                               Type Drawing                           Diameter Width (mm)                   (mm)       (mm)   (mm)   (mm) Quadrant
+                                                                        (mm) W1 (mm)
+   TPS3899DL01DSER            WSON     DSE           6        3000        178.0           8.4        1.7     1.7       0.95   4.0    8.0     Q2
+   TPS3899DL01DSER            WSON     DSE           6        3000        180.0           8.4        1.75   1.75       1.0    4.0    8.0     Q2
+ TPS3899DL01DSERG4            WSON     DSE           6        3000        180.0           8.4        1.75   1.75       1.0    4.0    8.0     Q2
+   TPS3899DL08DSER            WSON     DSE           6        3000        180.0           8.4        1.75   1.75       1.0    4.0    8.0     Q2
+   TPS3899DL09DSER            WSON     DSE           6        3000        180.0           8.4        1.75   1.75       1.0    4.0    8.0     Q2
+   TPS3899DL10DSER            WSON     DSE           6        3000        180.0           8.4        1.75   1.75       1.0    4.0    8.0     Q2
+   TPS3899DL11DSER            WSON     DSE           6        3000        180.0           8.4        1.75   1.75       1.0    4.0    8.0     Q2
+   TPS3899DL13DSER            WSON     DSE           6        3000        180.0           8.4        1.75   1.75       1.0    4.0    8.0     Q2
+   TPS3899DL14DSER            WSON     DSE           6        3000        180.0           8.4        1.75   1.75       1.0    4.0    8.0     Q2
+   TPS3899DL15DSER            WSON     DSE           6        3000        180.0           8.4        1.75   1.75       1.0    4.0    8.0     Q2
+   TPS3899DL20DSER            WSON     DSE           6        3000        180.0           8.4        1.75   1.75       1.0    4.0    8.0     Q2
+   TPS3899DL22DSER            WSON     DSE           6        3000        180.0           8.4        1.75   1.75       1.0    4.0    8.0     Q2
+   TPS3899DL26DSER            WSON     DSE           6        3000        180.0           8.4        1.75   1.75       1.0    4.0    8.0     Q2
+   TPS3899DL28DSER            WSON     DSE           6        3000        180.0           8.4        1.75   1.75       1.0    4.0    8.0     Q2
+   TPS3899DL29DSER            WSON     DSE           6        3000        180.0           8.4        1.75   1.75       1.0    4.0    8.0     Q2
+   TPS3899DL30DSER            WSON     DSE           6        3000        180.0           8.4        1.75   1.75       1.0    4.0    8.0     Q2
+
+
+
+
+                                                                    Pack Materials-Page 1
+                                                           PACKAGE MATERIALS INFORMATION
+
+www.ti.com                                                                                                          3-Sep-2026
+
+
+
+             Device   Package Package Pins   SPQ       Reel   Reel   A0            B0     K0     P1     W     Pin1
+                       Type Drawing                  Diameter Width (mm)          (mm)   (mm)   (mm)   (mm) Quadrant
+                                                       (mm) W1 (mm)
+   TPS3899DL31DSER    WSON     DSE     6     3000      180.0      8.4      1.75   1.75   1.0    4.0    8.0     Q2
+   TPS3899DL35DSER    WSON     DSE     6     3000      180.0      8.4      1.75   1.75   1.0    4.0    8.0     Q2
+   TPS3899DL41DSER    WSON     DSE     6     3000      180.0      8.4      1.75   1.75   1.0    4.0    8.0     Q2
+   TPS3899DL43DSER    WSON     DSE     6     3000      180.0      8.4      1.75   1.75   1.0    4.0    8.0     Q2
+   TPS3899PL31DSER    WSON     DSE     6     3000      180.0      8.4      1.75   1.75   1.0    4.0    8.0     Q2
+   TPS3899PL42DSER    WSON     DSE     6     3000      180.0      8.4      1.75   1.75   1.0    4.0    8.0     Q2
+
+
+
+
+                                                   Pack Materials-Page 2
+                                                                PACKAGE MATERIALS INFORMATION
+
+www.ti.com                                                                                                              3-Sep-2026
+
+
+
+ TAPE AND REEL BOX DIMENSIONS
+
+
+
+
+                                                               Width (mm)
+                                                                              H
+                      W
+
+
+
+
+                                                          L
+
+
+
+
+*All dimensions are nominal
+             Device           Package Type   Package Drawing   Pins         SPQ    Length (mm)   Width (mm)   Height (mm)
+   TPS3899DL01DSER               WSON             DSE           6           3000      205.0        200.0         33.0
+   TPS3899DL01DSER               WSON             DSE           6           3000      210.0        185.0         35.0
+  TPS3899DL01DSERG4              WSON             DSE           6           3000      210.0        185.0         35.0
+   TPS3899DL08DSER               WSON             DSE           6           3000      210.0        185.0         35.0
+   TPS3899DL09DSER               WSON             DSE           6           3000      210.0        185.0         35.0
+   TPS3899DL10DSER               WSON             DSE           6           3000      210.0        185.0         35.0
+   TPS3899DL11DSER               WSON             DSE           6           3000      210.0        185.0         35.0
+   TPS3899DL13DSER               WSON             DSE           6           3000      210.0        185.0         35.0
+   TPS3899DL14DSER               WSON             DSE           6           3000      210.0        185.0         35.0
+   TPS3899DL15DSER               WSON             DSE           6           3000      210.0        185.0         35.0
+   TPS3899DL20DSER               WSON             DSE           6           3000      210.0        185.0         35.0
+   TPS3899DL22DSER               WSON             DSE           6           3000      210.0        185.0         35.0
+   TPS3899DL26DSER               WSON             DSE           6           3000      210.0        185.0         35.0
+   TPS3899DL28DSER               WSON             DSE           6           3000      210.0        185.0         35.0
+   TPS3899DL29DSER               WSON             DSE           6           3000      210.0        185.0         35.0
+   TPS3899DL30DSER               WSON             DSE           6           3000      210.0        185.0         35.0
+   TPS3899DL31DSER               WSON             DSE           6           3000      210.0        185.0         35.0
+   TPS3899DL35DSER               WSON             DSE           6           3000      210.0        185.0         35.0
+
+
+
+
+                                                        Pack Materials-Page 3
+                                                        PACKAGE MATERIALS INFORMATION
+
+www.ti.com                                                                                                   3-Sep-2026
+
+
+
+             Device   Package Type   Package Drawing   Pins     SPQ     Length (mm)   Width (mm)   Height (mm)
+   TPS3899DL41DSER       WSON             DSE           6       3000       210.0        185.0         35.0
+   TPS3899DL43DSER       WSON             DSE           6       3000       210.0        185.0         35.0
+   TPS3899PL31DSER       WSON             DSE           6       3000       210.0        185.0         35.0
+   TPS3899PL42DSER       WSON             DSE           6       3000       210.0        185.0         35.0
+
+
+
+
+                                                Pack Materials-Page 4
+                                                                                                                  PACKAGE OUTLINE
+DSE0006A                                                               SCALE 6.000
+                                                                                                              WSON - 0.8 mm max height
+                                                                                                                   PLASTIC SMALL OUTLINE - NO LEAD
+
+
+
+
+                                                1.55                                  A
+                              B
+                                                1.45
+
+
+
+
+                                                                                     1.55
+           PIN 1 INDEX AREA                                                          1.45
+
+
+
+
+                          0.8 MAX
+                                                                                             C
+
+                                                                                                     SEATING PLANE
+
+                                                                                                    0.08 C
+
+                                                                                                                                 (0.2) TYP
+                           0.6                                                                                    0.05
+                        5X                                                                                        0.00
+                           0.4
+
+                                    3
+                                                                   4
+
+
+
+                   2X 1
+
+                          4X 0.5
+
+                                                                   6
+                                    1
+
+                                                                                                 0.3
+                                        0.7                                                 6X
+                                                                                                 0.2
+                                        0.5             PIN 1 ID                                   0.1    C A B
+                                                                                                   0.05    C
+
+
+                                                                                                                                  4220552/B 01/2024
+
+NOTES:
+
+1. All linear dimensions are in millimeters. Any dimensions in parenthesis are for reference only. Dimensioning and tolerancing
+   per ASME Y14.5M.
+2. This drawing is subject to change without notice.
+
+
+
+
+                                                                   www.ti.com
+                                                                                   EXAMPLE BOARD LAYOUT
+DSE0006A                                                                                    WSON - 0.8 mm max height
+                                                                                                     PLASTIC SMALL OUTLINE - NO LEAD
+
+
+
+
+                                                    (0.8)             PKG              5X (0.7)
+
+                                        1
+
+                            6X (0.25)                                                                    6
+
+
+
+
+                                                                                                             SYMM
+
+
+
+                              4X 0.5
+
+
+                                                                                                         4
+                                        3
+
+                        (R0.05) TYP
+                                                                      (1.2)
+
+
+                                                      LAND PATTERN EXAMPLE
+                                                                  SCALE:40X
+
+
+
+
+                                            0.05 MAX                                                 0.05 MIN
+                                            ALL AROUND                                               ALL AROUND
+
+
+
+
+                     SOLDER MASK                       METAL                  METAL UNDER                      SOLDER MASK
+                     OPENING                                                  SOLDER MASK                      OPENING
+                                      PADS 4-6                                                  PADS 1-3
+                                  NON SOLDER MASK                                             SOLDER MASK
+                                      DEFINED                                                   DEFINED
+
+
+                                                            SOLDER MASK DETAILS
+
+
+                                                                                                                    4220552/B 01/2024
+
+NOTES: (continued)
+
+3. For more information, see Texas Instruments literature number SLUA271 (www.ti.com/lit/slua271).
+
+
+
+
+                                                                   www.ti.com
+                                                                               EXAMPLE STENCIL DESIGN
+DSE0006A                                                                                 WSON - 0.8 mm max height
+                                                                                               PLASTIC SMALL OUTLINE - NO LEAD
+
+
+
+
+                                                                   PKG
+                                                   (0.8)                            5X (0.7)
+                        6X (0.25)
+                                        1
+
+                                                                                                    6
+
+
+
+
+                                                                                                        SYMM
+
+
+
+                             4X (0.5)
+
+
+
+                                        3                                                          4
+
+
+                      (R0.05) TYP
+                                                                   (1.2)
+
+
+                                                     SOLDER PASTE EXAMPLE
+                                                   BASED ON 0.125 mm THICK STENCIL
+                                                              SCALE:40X
+
+
+
+
+NOTES: (continued)
+
+4. Laser cutting apertures with trapezoidal walls and rounded corners may offer better paste release. IPC-7525 may have alternate
+   design recommendations.
+
+
+
+
+                                                                 www.ti.com
+                                         IMPORTANT NOTICE AND DISCLAIMER
+TI PROVIDES TECHNICAL AND RELIABILITY DATA (INCLUDING DATASHEETS), DESIGN RESOURCES (INCLUDING REFERENCE
+DESIGNS), APPLICATION OR OTHER DESIGN ADVICE, WEB TOOLS, SAFETY INFORMATION, AND OTHER RESOURCES “AS IS”
+AND WITH ALL FAULTS, AND DISCLAIMS ALL WARRANTIES, EXPRESS AND IMPLIED, INCLUDING WITHOUT LIMITATION ANY
+IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-INFRINGEMENT OF THIRD
+PARTY INTELLECTUAL PROPERTY RIGHTS.
+These resources are intended for skilled developers designing with TI products. You are solely responsible for (1) selecting the appropriate
+TI products for your application, (2) designing, validating and testing your application, and (3) ensuring your application meets applicable
+standards, and any other safety, security, regulatory or other requirements.
+These resources are subject to change without notice. TI grants you permission to use these resources only for development of an
+application that uses the TI products described in the resource. Other reproduction and display of these resources is prohibited. No license
+is granted to any other TI intellectual property right or to any third party intellectual property right. TI disclaims responsibility for, and you fully
+indemnify TI and its representatives against any claims, damages, costs, losses, and liabilities arising out of your use of these resources.
+TI’s products are provided subject to TI’s Terms of Sale, TI’s General Quality Guidelines, or other applicable terms available either on
+ti.com or provided in conjunction with such TI products. TI’s provision of these resources does not expand or otherwise alter TI’s applicable
+warranties or warranty disclaimers for TI products. Unless TI explicitly designates a product as custom or customer-specified, TI products
+are standard, catalog, general purpose devices.
+TI objects to and rejects any additional or different terms you may propose.
+IMPORTANT NOTICE
+
+                                                Copyright © 2026, Texas Instruments Incorporated
+                                                                Last updated 10/2025
+

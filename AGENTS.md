@@ -1,3 +1,5 @@
+NET35: hardware/vga_sync_window é alternativa experimental separada, não BOM adotada. Preservar NET34 e entradas congeladas dos boots NET27/NET30. Os 128 casos de descarga pressupõem até 10 mA, pelo menos 47 uF efetivos, ESR até 50 miliohm e inibição em 20,1 us após 5% de overdrive; não comprovam esses limites. Não transferir resultados de quadros NET34 como novos ensaios NET35. LT3042 lido via web, PDF local ausente por timeout. Ver docs/engineering/NET35_WINDOW.md e verification/net35.
+
 ## Continuidade NET34 - sincronismos3,3V supervisionados
 
 - Leia docs/engineering/NET34_SYNC.md. hardware/vga_sync_3v3 e folha separada17componentes/4CIs/50pinos:TPS70933DBVR, TPS3808G33DBVR, SN74LVC1G132DBVR e SN74LVC2G125DCTR. Respeitar pinagemDCT8pinos (Y0=6,Y1=3); TPS709EN e CTsupervisor intencionalmente abertos. Nao ligar TPS709EN a VIN. Footprints nao qualificados, ERC4itens sem excecoes.

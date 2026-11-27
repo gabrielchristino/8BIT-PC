@@ -1,0 +1,22 @@
+{
+  "command": [
+    "pdftoppm",
+    "-scale-to",
+    "1800",
+    "-png",
+    "-singlefile",
+    "/mnt/c/Users/gabri/projetos/isa1/verification/net30/native/bus/load_distributed_bus.pdf",
+    "/mnt/c/Users/gabri/projetos/isa1/verification/net30/native/bus/preview"
+  ],
+  "exit": 0,
+  "wall_timeout": false,
+  "seconds": 0.572,
+  "limits": {
+    "memory_mb": 2048,
+    "cpu_seconds": 90,
+    "output_mb_per_file": 8,
+    "wall_seconds": 120
+  },
+  "stdout": "",
+  "stderr": ""
+}

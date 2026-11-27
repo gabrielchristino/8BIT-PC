@@ -1,7 +1,9 @@
 # NET-30 — redistribuição com canais livres
 
 26/11/2026. Base `b5a19c7ee72a9b8543060e77f9c26824daf271ca`.
-**Variante nativa em validação; ainda não substitui o candidato NET26.**
+Fechamento das regressões em27/11/2026: **candidato digital para continuidade**,
+com resultados próprios abaixo. Não é temporização global, circuito analógico
+ou placa liberada. O boot completo temporizado desta variante ainda é pendente.
 
 ## Circuito construído separadamente
 
@@ -34,7 +36,7 @@ uma âncora ambígua antes de gerar; guarda corrigida com contexto completo,
 sem alteração de hardware ancestral. Transformações e desenvolvimento ficam
 preservados em verification/net30.
 
-## Checkpoint de testes
+## Resultados das regressões
 
 - Auditoria nativa/união: XMLs e15pinos alterados conferidos, nenhum CI novo,
   máximo de quatro entradas contadas. [Auditor](../../tools/audit_distributed_loads.py).
@@ -47,13 +49,20 @@ preservados em verification/net30.
   setup observado54,888/16,944/26,944ns, sem aprovação de STA global.
 - Mais quatro cortes CPU/scans com fontes em extremos opostos de50ppm
   passaram; oito cortes somando nominais/cantos, WE até84ns.
-- Quadros temporizados e boot ideal completo continuam em validação.
+- Quatro cenários temporizados de quadros, duas políticas binárias por dois
+  instantes de captura, passaram: dois quadros/210.000amostras por cenário,
+  153.600pixels visíveis,25.200amostrasHSYNC,800VSYNC,2.014escritas e todas as
+  32posições de concessão. VRAM/VB são seeds explícitos desse ensaio sem CPU.
   A primeira bancada de quadros aplicou só1us de reset frio e expirou:
   diagnóstico mostrou fases/armamento/banco indefinidos, sem SAFE. A RC
   exige asserção além de19us para essa inicialização. Fontes/logs preservados
   em development/frames-short-reset; nova tentativa começa RAW baixo por50us,
   sem mudar hardware, watchdog90ms ou monitores. Não é POR analógico aprovado.
-  Só relatórios finais completos permitem aceitar esses itens.
+- Boot/quadro ideal completo passou:132.197instruções,232.576transações,
+  32.771transaçõesVRAM,76.800pixels idênticos por comparação byte a byte,
+  5.355.850WAIT,46.465verificações de pausa,337escritasRAM/32.770VRAM,
+  nenhum abort e FIXTURE_DEFAULTS=0/SRAM inicialmente desconhecida. A imagem
+  foi inspecionada. Clocks/startup são escalados somente nesse ensaio ideal.
 - Programa completo temporizado NET27 continua pertencendo à NET26,
   independentemente do resultado; não valida os quatro buffers novos.
 
@@ -68,11 +77,17 @@ instancia os seis blocos do subsistema; o arquivo da CPU compilado é podado.
 
 ERC parcial sem waivers: vídeo49(2power+13input+34isolated), teclado27
 (2+12+13), memória172(2+88+82). Não é soma de erros de placa global e não
-há ERC aprovado. PDFs/previews foram inspecionados. Rótulos de revisão/data
-nos quadros de título de vídeo/teclado ainda herdaram NET26/25-11; os nomes
-dos arquivos, JSONs e hashes identificam esta variante NET30. Corrigir esses
-metadados depois das fontes congeladas, sem regenerar modelos no meio dos
-ensaios. Memória tem marcador NET-30B. Nenhum arquivo é pacote de fabricação.
+há ERC aprovado. PDFs/previews foram inspecionados. Depois de todos os jobs
+NET30 terminarem, datas/títulos herdados foram corrigidos para27/11 e
+NET-30V/K/B. Textos mudaram somente nesses campos; XMLs conservaram exatamente
+componentes/valores/pinos/redes e modelosSV/JSONs não mudaram. Originais do
+commit16a82e4 e cópias ficam preservados, com hashes antes/depois em
+verification/net30/title-update-final. Relatórios de execução continuam
+identificando os XMLs anteriores realmente usados, resolvidos nesse snapshot.
+Uma primeira tentativa não produziu o JSON ERC do teclado; comando não foi
+retido nessa etapa, portanto causa não foi inferida. Saídas parciais foram
+preservadas/restauradas antes da nova rodada limitada a2GiB, com comandos
+persistentes; ERC e grafos permaneceram iguais. Não foi falha da CPU.
 
 Os buffers acrescentam atraso de dados e atividade/corrente dinâmica, mesmo
 sem CIs extras. O modelo usa atraso selecionado10ns nesses canais; mínimos,
@@ -80,7 +95,10 @@ hold, assimetria, glitches/skew de decodificação, slew/jitter, capacitâncias
 reais, alimentação/POR e MTBF continuam abertos. Ci10pF+10pF de trilhas é
 orçamento de triagem, não garantia em todoVDD ou extração da placa.
 
-Para promover o candidato: terminar/verificar as regressões próprias,
-conferir fontes congeladas e preservar todos os resultados negativos e
-limites. Produção também exige energia/DAC/firmware/união/ERC/footprints,
-PCB/DRC e protótipo; nada disso é antecipado como aprovado aqui.
+O próximo programa completo temporizado usa tools/run_full_load_program.py,
+com frequências nominais, startup10ms, progresso/snapshots e os mesmos limites
+NET27. Preparação não é resultado. O ensaio antigo NET27 não valida os buffers
+novos; mantê-lo identificado separadamente. Os156/128cenários específicos
+NET26 não foram novamente executados como NET30 e não recebem nova contagem.
+Produção exige timing/energia/DAC/firmware/união/ERC/footprints,PCB/DRC e
+protótipo; nada disso é antecipado como aprovado aqui.

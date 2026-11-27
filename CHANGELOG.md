@@ -182,6 +182,12 @@ NET-17 — 26/11/2026: acrescentada variante para alvo condicional de 500 Ω, co
 - Hipótese apenasHDL de reset local emP1 passa156 cenários funcionais; clock frio continua aberto. Estudos de próxima variante não contam como implementação.
 
 
+## 2026-11-27 — NET-30, regressões próprias concluídas
+
+- Quatro cenários de dois quadros temporizados e boot ideal132197instruções/76800pixels idênticos passaram; SRAM do boot inicialmente desconhecida e nenhum abort.
+- Metadados de títulos/datas corrigidos após os jobs, com grafos XML e modelos/JSONs invariantes; originais e falha intermediária de exportação preservados.
+- NET30 adotada como candidato digital para continuidade, sem liberação física; fulltimed próprio preparado, ainda sem resultado final.
+
 ## 2026-11-26 — NET-30 em validação
 
 - Três variantes nativas com quatro canais AHC125 livres,15pinos alterados, sem CIs novos; união até quatro entradas contadas, sem alegação de carga extraída.

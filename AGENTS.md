@@ -1,4 +1,11 @@
-## Continuidade NET-30 em validação
+## Fechamento NET-30 — 27/11/2026
+
+- NET30 é candidato digital para continuidade, não produção. Passaram6886vetores ideais, dois1062temporizados,48cortes SRAM, oito CPU nominais/cantos, quatro cenários de dois quadros temporizados e boot ideal132197/232576transações/76800pixels idênticos sem SRAM semeada/aborts. Quadros sem CPU têm seeds VRAM/VB; não misturar escopos ou herdar matriz156/128 NET26 como NET30.
+- Todos os jobs parciais NET30 fecharam antes de corrigir apenas datas/títulos dos novos esquemas. title-update-final registra originais16a82e4, hashes e igualdade exata dos grafos; nenhum modeloSV/JSON mudou. Resolver hashes antigos de XML/SCH pelos originais preservados, sem fingir que foram reexecutados após metadados. Tentativa inicial sem JSON ERC está preservada e não aprovada; causa não foi inferida.
+- Próximo fulltimed próprio: tools/run_full_load_program.py, saídas verification/net30/full-timed/attempt-NNN. Conferir PID/boot_id e progresso antes de duplicar. Congelar todas as fontes/snapshots listados enquanto rodar. NET27 continua separado/circuito NET26. Nenhum boot temporizado completo é declarado aprovado por preparação/progresso.
+- Ci/cargas extraídas, min/max/glitches/skew/PVT/CDC/MTBF, energia/consumo/POR/USB-C/DAC, firmware, união/ERC/footprints/PCB/DRC e protótipo seguem abertos. ERC parcial49vídeo/27teclado/172memória sem waivers. Não liberar fabricação por regressões digitais.
+
+## Checkpoint histórico NET-30 em validação
 
 - Leia docs/engineering/NET30.md. Novas folhas load_distributed_video/keyboard/bus reutilizam quatro canais AHC125: WDATA0_LOCAL, BOOT_EXTERNAL, SELECT3_LOCAL e H2_EXTERNAL/U30.A3.15pinos mudam, nenhum CI novo, união7.814pinos conectados e máximo quatro entradas contadas. Não é carga extraída/produção.
 - Ensaios em verification/net30/jobs têm fontes congeladas e limites próprios. Conferir status/PID/boot_id antes de duplicar ou regenerar qualquer modelo/script listado. Jobs memory/ideal/cpu-fault concluíram no checkpoint; timed/early/program/corners/frames têm resultados próprios. Não supor aprovação sem relatórios completos. A NET27 ativa continua sendo circuito NET26.

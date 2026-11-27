@@ -1,0 +1,443 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-27T00:04:02",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.8",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/d568d795-35bc-539a-b236-a288964623e3",
+            "violations": [
+                {
+                    "description": "Input pin not driven by any Output pins",
+                    "items": [
+                        {
+                            "description": "Symbol U1 Pin 1 [CLR_N, Input, Line]",
+                            "pos": {
+                                "x": 41.91,
+                                "y": 60.96
+                            },
+                            "uuid": "05fb5016-07c7-5f8b-9d1f-7405ff7edade"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_driven"
+                },
+                {
+                    "description": "Input Power pin not driven by any Output Power pins",
+                    "items": [
+                        {
+                            "description": "Symbol U1 Pin 16 [VCC, Power input, Line]",
+                            "pos": {
+                                "x": 59.69,
+                                "y": 49.53
+                            },
+                            "uuid": "5efb7a7a-6de2-5515-961b-083803ff3b54"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "power_pin_not_driven"
+                },
+                {
+                    "description": "Input Power pin not driven by any Output Power pins",
+                    "items": [
+                        {
+                            "description": "Symbol U1 Pin 8 [GND, Power input, Line]",
+                            "pos": {
+                                "x": 59.69,
+                                "y": 90.17
+                            },
+                            "uuid": "155a0abc-83d6-5123-9faa-5565ea10e90b"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "power_pin_not_driven"
+                },
+                {
+                    "description": "Input pin not driven by any Output pins",
+                    "items": [
+                        {
+                            "description": "Symbol U32 Pin 1 [A0, Input, Line]",
+                            "pos": {
+                                "x": 139.7,
+                                "y": 316.23
+                            },
+                            "uuid": "d6ec59cc-b530-5ce7-aedf-cb1cafec23a8"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_driven"
+                },
+                {
+                    "description": "Input pin not driven by any Output pins",
+                    "items": [
+                        {
+                            "description": "Symbol U32 Pin 2 [B0, Input, Line]",
+                            "pos": {
+                                "x": 139.7,
+                                "y": 326.39
+                            },
+                            "uuid": "65382bdf-16e2-5d7a-a39d-c05a93c41836"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_driven"
+                },
+                {
+                    "description": "Input pin not driven by any Output pins",
+                    "items": [
+                        {
+                            "description": "Symbol U32 Pin 5 [B1, Input, Line]",
+                            "pos": {
+                                "x": 139.7,
+                                "y": 328.93
+                            },
+                            "uuid": "040eff23-f0dd-511d-a375-5813c8a077eb"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_driven"
+                },
+                {
+                    "description": "Input pin not driven by any Output pins",
+                    "items": [
+                        {
+                            "description": "Symbol U32 Pin 10 [B2, Input, Line]",
+                            "pos": {
+                                "x": 139.7,
+                                "y": 331.47
+                            },
+                            "uuid": "384be8d6-52dd-5447-823d-c1b5bd3682cd"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_driven"
+                },
+                {
+                    "description": "Input pin not driven by any Output pins",
+                    "items": [
+                        {
+                            "description": "Symbol U32 Pin 13 [B3, Input, Line]",
+                            "pos": {
+                                "x": 139.7,
+                                "y": 334.01
+                            },
+                            "uuid": "8c3186ef-a965-5ca8-b536-2d2783170395"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_driven"
+                },
+                {
+                    "description": "Input pin not driven by any Output pins",
+                    "items": [
+                        {
+                            "description": "Symbol U33 Pin 2 [B0, Input, Line]",
+                            "pos": {
+                                "x": 238.76,
+                                "y": 326.39
+                            },
+                            "uuid": "3bcfec76-64e9-5ede-bc8a-ef1c59352100"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_driven"
+                },
+                {
+                    "description": "Input pin not driven by any Output pins",
+                    "items": [
+                        {
+                            "description": "Symbol U34 Pin 10 [B2, Input, Line]",
+                            "pos": {
+                                "x": 336.55,
+                                "y": 331.47
+                            },
+                            "uuid": "28d87b97-2108-5a10-867c-dbf8934f5723"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_driven"
+                },
+                {
+                    "description": "Input pin not driven by any Output pins",
+                    "items": [
+                        {
+                            "description": "Symbol U15 Pin 6 [B1, Input, Line]",
+                            "pos": {
+                                "x": 434.34,
+                                "y": 161.29
+                            },
+                            "uuid": "68bbadf0-7e54-533a-8ee4-ce2255c66957"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_driven"
+                },
+                {
+                    "description": "Input pin not driven by any Output pins",
+                    "items": [
+                        {
+                            "description": "Symbol U35 Pin 1 [A0, Input, Line]",
+                            "pos": {
+                                "x": 434.34,
+                                "y": 316.23
+                            },
+                            "uuid": "246f38c6-47d8-5f47-b8dc-908aee18c069"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_driven"
+                },
+                {
+                    "description": "Input pin not driven by any Output pins",
+                    "items": [
+                        {
+                            "description": "Symbol U39 Pin 2 [A0, Input, Line]",
+                            "pos": {
+                                "x": 826.77,
+                                "y": 316.23
+                            },
+                            "uuid": "f596e720-3201-56ec-998c-7ae66b491433"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_driven"
+                },
+                {
+                    "description": "Input pin not driven by any Output pins",
+                    "items": [
+                        {
+                            "description": "Symbol U40 Pin 5 [A1, Input, Line]",
+                            "pos": {
+                                "x": 924.56,
+                                "y": 318.77
+                            },
+                            "uuid": "7733c11f-8694-5113-8713-b21402733fb9"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_driven"
+                },
+                {
+                    "description": "Label connected to only one pin",
+                    "items": [
+                        {
+                            "description": "Label 'IO_COMMIT'",
+                            "pos": {
+                                "x": 139.7,
+                                "y": 326.39
+                            },
+                            "uuid": "e3ddc56d-1083-55d6-8229-1d09f5beab41"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "isolated_pin_label"
+                },
+                {
+                    "description": "Label connected to only one pin",
+                    "items": [
+                        {
+                            "description": "Label 'IO_SEL_3'",
+                            "pos": {
+                                "x": 238.76,
+                                "y": 326.39
+                            },
+                            "uuid": "ebc9eda3-c224-5289-ada3-0a546ffb865c"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "isolated_pin_label"
+                },
+                {
+                    "description": "Label connected to only one pin",
+                    "items": [
+                        {
+                            "description": "Label 'IO_SEL_4'",
+                            "pos": {
+                                "x": 434.34,
+                                "y": 316.23
+                            },
+                            "uuid": "9f9832c0-c13e-57e1-960c-2fc6de4226d6"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "isolated_pin_label"
+                },
+                {
+                    "description": "Label connected to only one pin",
+                    "items": [
+                        {
+                            "description": "Label 'IO_DATA_0'",
+                            "pos": {
+                                "x": 665.48,
+                                "y": 321.31
+                            },
+                            "uuid": "2a6186fd-f6ed-5b2d-9ff9-e12f76eaee40"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "isolated_pin_label"
+                },
+                {
+                    "description": "Label connected to only one pin",
+                    "items": [
+                        {
+                            "description": "Label 'IO_DATA_1'",
+                            "pos": {
+                                "x": 665.48,
+                                "y": 323.85
+                            },
+                            "uuid": "b11b2d43-8754-5dd4-9476-127edfc56127"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "isolated_pin_label"
+                },
+                {
+                    "description": "Label connected to only one pin",
+                    "items": [
+                        {
+                            "description": "Label 'IO_DATA_2'",
+                            "pos": {
+                                "x": 665.48,
+                                "y": 326.39
+                            },
+                            "uuid": "f4659b24-4b30-5474-b2ba-c195ebde71bd"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "isolated_pin_label"
+                },
+                {
+                    "description": "Label connected to only one pin",
+                    "items": [
+                        {
+                            "description": "Label 'IO_DATA_3'",
+                            "pos": {
+                                "x": 665.48,
+                                "y": 328.93
+                            },
+                            "uuid": "49bdc903-1e30-5926-8509-dd2d8ab65fe6"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "isolated_pin_label"
+                },
+                {
+                    "description": "Label connected to only one pin",
+                    "items": [
+                        {
+                            "description": "Label 'IO_DATA_4'",
+                            "pos": {
+                                "x": 665.48,
+                                "y": 331.47
+                            },
+                            "uuid": "73557b1b-dc63-59c8-adbf-467c7ca6fdde"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "isolated_pin_label"
+                },
+                {
+                    "description": "Label connected to only one pin",
+                    "items": [
+                        {
+                            "description": "Label 'IO_DATA_5'",
+                            "pos": {
+                                "x": 763.27,
+                                "y": 318.77
+                            },
+                            "uuid": "f274a52d-15ce-573e-9462-49c9613c5dd9"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "isolated_pin_label"
+                },
+                {
+                    "description": "Label connected to only one pin",
+                    "items": [
+                        {
+                            "description": "Label 'IO_DATA_6'",
+                            "pos": {
+                                "x": 763.27,
+                                "y": 321.31
+                            },
+                            "uuid": "786414d9-a1ae-5a87-8cb2-746f200e5766"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "isolated_pin_label"
+                },
+                {
+                    "description": "Label connected to only one pin",
+                    "items": [
+                        {
+                            "description": "Label 'IO_DATA_7'",
+                            "pos": {
+                                "x": 763.27,
+                                "y": 323.85
+                            },
+                            "uuid": "2ddde2f2-8282-59e5-88cd-9071aa31cf46"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "isolated_pin_label"
+                },
+                {
+                    "description": "Label connected to only one pin",
+                    "items": [
+                        {
+                            "description": "Label 'WDATA_0'",
+                            "pos": {
+                                "x": 924.56,
+                                "y": 318.77
+                            },
+                            "uuid": "e1c623b2-bac3-5951-b6a3-5de4460b1bca"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "isolated_pin_label"
+                },
+                {
+                    "description": "Label connected to only one pin",
+                    "items": [
+                        {
+                            "description": "Label 'BOOT_EXTERNAL'",
+                            "pos": {
+                                "x": 960.12,
+                                "y": 326.39
+                            },
+                            "uuid": "2f24e1c5-1399-59b8-8dce-88bf41d42fa3"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "isolated_pin_label"
+                }
+            ]
+        }
+    ],
+    "source": "load_distributed_keyboard.kicad_sch"
+}

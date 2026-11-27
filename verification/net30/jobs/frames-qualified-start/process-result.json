@@ -1,0 +1,18 @@
+{
+  "command": [
+    "/usr/bin/python3",
+    "tools/run_distributed_load_frames.py",
+    "--worker"
+  ],
+  "exit": 0,
+  "wall_timeout": false,
+  "seconds": 351.151,
+  "stdout": "{\"policy\": 0, \"early\": 0, \"passed\": true, \"execution\": {\"command\": [\"vvp\", \"/tmp/isa1-load-frames-ly4c9abh/test.vvp\"], \"exit\": 0, \"stdout\": \"RESULT native_frames=2 samples=210000 visible=153600 hsync=25200 vsync=800 writes=2014 grant_starts=32 policy=0 early_capture=0 seeded_vram=1 seeded_vb=1 failures=0\\n/mnt/c/Users/gabri/projetos/isa1/sim/net30/tb_load_frames.sv:35: $finish called at 60050249442 (1ps)\\n\", \"stderr\": \"\", \"seconds\": 88.134}}\n{\"policy\": 0, \"early\": 1, \"passed\": true, \"execution\": {\"command\": [\"vvp\", \"/tmp/isa1-load-frames-ly4c9abh/test.vvp\"], \"exit\": 0, \"stdout\": \"RESULT native_frames=2 samples=210000 visible=153600 hsync=25200 vsync=800 writes=2014 grant_starts=32 policy=0 early_capture=1 seeded_vram=1 seeded_vb=1 failures=0\\n/mnt/c/Users/gabri/projetos/isa1/sim/net30/tb_load_frames.sv:35: $finish called at 60050237942 (1ps)\\n\", \"stderr\": \"\", \"seconds\": 90.25}}\n{\"policy\": 1, \"early\": 0, \"passed\": true, \"execution\": {\"command\": [\"vvp\", \"/tmp/isa1-load-frames-ly4c9abh/test.vvp\"], \"exit\": 0, \"stdout\": \"RESULT native_frames=2 samples=210000 visible=153600 hsync=25200 vsync=800 writes=2014 grant_starts=32 policy=1 early_capture=0 seeded_vram=1 seeded_vb=1 failures=0\\n/mnt/c/Users/gabri/projetos/isa1/sim/net30/tb_load_frames.sv:35: $finish called at 60050249442 (1ps)\\n\", \"stderr\": \"\", \"seconds\": 83.428}}\n{\"policy\": 1, \"early\": 1, \"passed\": true, \"execution\": {\"command\": [\"vvp\", \"/tmp/isa1-load-frames-ly4c9abh/test.vvp\"], \"exit\": 0, \"stdout\": \"RESULT native_frames=2 samples=210000 visible=153600 hsync=25200 vsync=800 writes=2014 grant_starts=32 policy=1 early_capture=1 seeded_vram=1 seeded_vb=1 failures=0\\n/mnt/c/Users/gabri/projetos/isa1/sim/net30/tb_load_frames.sv:35: $finish called at 60050237942 (1ps)\\n\", \"stderr\": \"\", \"seconds\": 88.542}}\n",
+  "stderr": "",
+  "limits": {
+    "memory_mb": 1024,
+    "cpu_seconds": 3000,
+    "wall_seconds": 3600,
+    "output_mb_per_file": 8
+  }
+}

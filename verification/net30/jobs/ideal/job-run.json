@@ -1,0 +1,27 @@
+{
+  "status": "process_finished",
+  "phase": "job",
+  "command": [
+    "/usr/bin/python3",
+    "tools/run_distributed_load_vectors.py"
+  ],
+  "cwd": "/mnt/c/Users/gabri/projetos/isa1",
+  "boot_id": "e83b5137-128a-4b62-995b-0b9291433040",
+  "started_unix_seconds": 1795747109.3291202,
+  "limits": {
+    "memory_mb": 1024,
+    "cpu_seconds": 3000,
+    "wall_seconds": 3600,
+    "output_mb_per_file": 8
+  },
+  "stdout_path": "/mnt/c/Users/gabri/projetos/isa1/verification/net30/jobs/ideal/job.stdout.log",
+  "stderr_path": "/mnt/c/Users/gabri/projetos/isa1/verification/net30/jobs/ideal/job.stderr.log",
+  "simulation_passed": false,
+  "pid": 1076,
+  "process_group": 1076,
+  "exit": 0,
+  "wall_timeout": false,
+  "seconds": 141.491,
+  "stdout_sha256": "0319d0f2d9e808b50880d6eeb16eef47c22e70ae358e959538566db1d515319f",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

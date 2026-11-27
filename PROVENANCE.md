@@ -16,6 +16,8 @@ NET-28, 26/11/2026: análise documental nova sobre as sete folhas NET26, sem alt
 
 # Origem e integridade dos materiais
 
+Fechamento NET30 em27/11/2026, modelo-base16a82e4866ac9c791dfae0e162c2f887842b1f52: regressões próprias concluídas e ensaio de quadros frio corrigido com falha original preservada. Após encerramento dos jobs, somente títulos/datas dos esquemas/XML/PDF foram atualizados; comparação canônica de componentes/valores/pinos/redes e hashesSV/JSON prova ausência de mudança funcional. Originais salvos e no commit16a82e4 identificam exatamente as fontes dos resultados. Runner fulltimed NET30 preparado separadamente, sem herdar resultado NET27. Manifesto final distingue resultados aceitos, falhas de desenvolvimento e saídas ainda ativas.
+
 NET30 em validação,26/11/2026, baseb5a19c7ee72a9b8543060e77f9c26824daf271ca: três variantes novas derivam dos JSONs NET26/NET13, com15pinos mudados e quatro canais existentes ativados. Builders antigos não emitem arquivos; preparação copiada em memória, modelos estritos/bordas binárias preservados. Relatórios incluem transformações, XMLs, fontes/hashes e limites de processo por job. Resultados parciais não promovem variante nem circuito para produção. Fontes/saídas da NET27 e ensaios ativos NET30 permanecem separados.
 
 NET29,26/11/2026: auditoria estrutural nova dos sete JSONs/XMLs e modelos publicados NET26; leitura de portos/aliases, sem alterar circuito. Todos os pinos XML conferidos, quatro negativos do leitor e comparação das fronteiras ideal/temporizada. Cópia byte a byte da bancada compilada NET27 em verification/net29/boundary-evidence é somente evidência de conectividade, não execução aprovada. Fontes, comandos e hashes no manifesto NET29; resultado mutável NET27 segue separado.

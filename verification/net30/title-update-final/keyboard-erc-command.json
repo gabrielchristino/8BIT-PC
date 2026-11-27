@@ -1,0 +1,25 @@
+{
+  "command": [
+    "/home/gabri/.local/opt/isa1-kicad-10.0.8/squashfs-root/usr/bin/kicad-cli",
+    "sch",
+    "erc",
+    "--format",
+    "json",
+    "--severity-all",
+    "--exit-code-violations",
+    "-o",
+    "/mnt/c/Users/gabri/projetos/isa1/verification/net30/title-update-final/keyboard-erc.json",
+    "/mnt/c/Users/gabri/projetos/isa1/hardware/load_distributed_keyboard/load_distributed_keyboard.kicad_sch"
+  ],
+  "exit": 5,
+  "wall_timeout": false,
+  "seconds": 3.476,
+  "limits": {
+    "memory_mb": 2048,
+    "cpu_seconds": 90,
+    "output_mb_per_file": 8,
+    "wall_seconds": 120
+  },
+  "stdout": "Found 27 violations\nSaved ERC Report to /mnt/c/Users/gabri/projetos/isa1/verification/net30/title-update-final/keyboard-erc.json\n",
+  "stderr": ""
+}

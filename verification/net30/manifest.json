@@ -1,0 +1,650 @@
+{
+  "date": "2026-11-27",
+  "base_git_commit": "16a82e4866ac9c791dfae0e162c2f887842b1f52",
+  "scope": "NET30 own selected digital regressions accepted for continued engineering; no full timed program, global electrical/STA/POR/MTBF or production pass.",
+  "python": "3.13.14",
+  "commands": [
+    "python tools/record_net30_results.py",
+    "python tools/stage_with_pending_timed_run.py verification/net30/manifest.json"
+  ],
+  "result_audit": "verification/net30/result-audit.json",
+  "excluded_pending_run_prefix": "verification/net27/full-timed/attempt-001/",
+  "excluded_files_at_snapshot": [
+    "verification/net27/full-timed/attempt-001/adapted-program-runner.py",
+    "verification/net27/full-timed/attempt-001/adapted-system-main.py",
+    "verification/net27/full-timed/attempt-001/compile-run.json",
+    "verification/net27/full-timed/attempt-001/compile.stderr.log",
+    "verification/net27/full-timed/attempt-001/compile.stdout.log",
+    "verification/net27/full-timed/attempt-001/compiler-inputs.json",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/generated-bench.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/hardware/common_request/common_request_netlist.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/hardware/cpu_global/cpu_global_netlist.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/hardware/local_phase_keyboard/local_phase_keyboard_netlist.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/hardware/local_phase_reset/local_phase_reset_netlist.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/hardware/memory_bus/memory_bus_netlist.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/hardware/memory_decode/memory_decode_netlist.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/sim/hdl/hc_models.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/sim/net02/package_models.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/sim/net03/package_models.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/sim/net04/package_models.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/sim/net13/memory_devices.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/sim/net14c/package_models_async.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/sim/net19a/package_models.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/sim/net22/phase_packages.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/sim/net23/clock_models.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/sim/net25/warm_packages.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/sim/net26/isa1_memory_local_phase.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/sim/net26/local_video_async.sv",
+    "verification/net27/full-timed/attempt-001/input-images/control_lane0.hex",
+    "verification/net27/full-timed/attempt-001/input-images/control_lane1.hex",
+    "verification/net27/full-timed/attempt-001/input-images/control_lane2.hex",
+    "verification/net27/full-timed/attempt-001/input-images/control_lane3.hex",
+    "verification/net27/full-timed/attempt-001/input-images/program_bus.hex",
+    "verification/net27/full-timed/attempt-001/input-images/program_state.hex",
+    "verification/net27/full-timed/attempt-001/input-images/rom_image.hex",
+    "verification/net27/full-timed/attempt-001/input-images/vectors.hex",
+    "verification/net27/full-timed/attempt-001/run-origin.json",
+    "verification/net27/full-timed/attempt-001/run-state.json",
+    "verification/net27/full-timed/attempt-001/simulation.stderr.log",
+    "verification/net27/full-timed/attempt-001/simulation.stdout.log",
+    "verification/net27/full-timed/attempt-001/system-tb_rtl_program-timed.sv"
+  ],
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "bytes": 39110,
+      "sha256": "f23dc851129c336fc93c9d2759d509b7548f966ddbeb399cdab139ff33c11c56"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "bytes": 19510,
+      "sha256": "8de63b133202edc7b2696d048ad54d8363ad6e9a1cbdbde3825a04969ac9efe2"
+    },
+    {
+      "path": "PROVENANCE.md",
+      "bytes": 27930,
+      "sha256": "016c575cc774c350af0ba2ca426989f4a7060d9866ad58f85c32e9cad9d299a9"
+    },
+    {
+      "path": "README.md",
+      "bytes": 12379,
+      "sha256": "b2327e8e21ddc9da5c55c53657b02da599b062aadc839b01b20e8266de422faf"
+    },
+    {
+      "path": "ROADMAP.md",
+      "bytes": 21946,
+      "sha256": "c6359d6c668bade1610b50e5be1641e08e9c45df3fb184e38e8b28c23a4d0cbf"
+    },
+    {
+      "path": "docs/engineering/NET30.md",
+      "bytes": 6632,
+      "sha256": "3f99660f98890785c52565c3d3fc011b26d68546f0675987d597c445442ffa52"
+    },
+    {
+      "path": "docs/engineering/VALIDATION_STATUS.md",
+      "bytes": 6935,
+      "sha256": "9a01f43a736989df378b33871de846a9b702531d6fb7a28d1a4493de2158b373"
+    },
+    {
+      "path": "hardware/load_distributed_bus/load_distributed_bus.kicad_sch",
+      "bytes": 174600,
+      "sha256": "ba09231df60e60addb75455ae99ad278fa09de67e600f9d28037c3a91b4a018d"
+    },
+    {
+      "path": "hardware/load_distributed_keyboard/load_distributed_keyboard.kicad_sch",
+      "bytes": 240434,
+      "sha256": "ba167ee57df53c242ef996ed4be4c2014d92a43d3603138455400a37adac5042"
+    },
+    {
+      "path": "hardware/load_distributed_video/load_distributed_video.kicad_sch",
+      "bytes": 171748,
+      "sha256": "2434a9ae9ffa858d48bd43242c096a21f474f37907d1aab4f21ed21197e45640"
+    },
+    {
+      "path": "tools/prepare_full_load_program.py",
+      "bytes": 2628,
+      "sha256": "2b1fbb71e48b3b22c7e48c2035c3e9549babacaee85f952b6826cae438c74b6a"
+    },
+    {
+      "path": "tools/record_net30_results.py",
+      "bytes": 10417,
+      "sha256": "fe32b56e0cecf1e0e4ccffff2f45f141e3addaef8c2867e3df20fc61c761a6d4"
+    },
+    {
+      "path": "tools/run_full_load_program.py",
+      "bytes": 8451,
+      "sha256": "5f39b19a4e1c176cd1b2ab49222d11f8b3ede3c86ab943f2103ebd9f6c582227"
+    },
+    {
+      "path": "tools/update_load_drawing_titles.py",
+      "bytes": 5481,
+      "sha256": "125f33981114360b2be9dfd006283c96ca316e13208fb9dfba97f99c090176cc"
+    },
+    {
+      "path": "verification/net30/full-program-preparation.json",
+      "bytes": 1602,
+      "sha256": "3344507e404cf4fcc3098518f5e6d6bd71dae6d93fb415e4fcc75f3d9c993c37"
+    },
+    {
+      "path": "verification/net30/jobs/corners/job-run.json",
+      "bytes": 926,
+      "sha256": "3d64fa7a9dc4227a7654dad319c5528f132e7bef24663a2e58aa1dc593e3b57e"
+    },
+    {
+      "path": "verification/net30/jobs/corners/job.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/net30/jobs/corners/job.stdout.log",
+      "bytes": 4005,
+      "sha256": "60cd8a2bb76f5cf45ee00ff33a4698f2b96259dee420ca6bd53eabad7d88f527"
+    },
+    {
+      "path": "verification/net30/jobs/corners/origin.json",
+      "bytes": 30623,
+      "sha256": "f0c634d30162721961833c277ebd17ab828b56e791d9ee7d385aa805440b7ef4"
+    },
+    {
+      "path": "verification/net30/jobs/corners/process-result.json",
+      "bytes": 4519,
+      "sha256": "33d4aadb1622f48267ccc609774b739544f1ca56fe2f2f0e61c8269f7d32e098"
+    },
+    {
+      "path": "verification/net30/jobs/corners/run-state.json",
+      "bytes": 926,
+      "sha256": "3d64fa7a9dc4227a7654dad319c5528f132e7bef24663a2e58aa1dc593e3b57e"
+    },
+    {
+      "path": "verification/net30/jobs/cpu-fault/job-run.json",
+      "bytes": 916,
+      "sha256": "76208ffa2d461f6cb6e45db7b8b602f783d10d11ee1957c3414340371b9ab64b"
+    },
+    {
+      "path": "verification/net30/jobs/cpu-fault/job.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/net30/jobs/cpu-fault/job.stdout.log",
+      "bytes": 4022,
+      "sha256": "2d79ccb596ddc28e050d60ce61e40aba8e5d6fd3ac04ae3b29a91937e9553f21"
+    },
+    {
+      "path": "verification/net30/jobs/cpu-fault/origin.json",
+      "bytes": 30029,
+      "sha256": "b70666b4e4501759d5aa978c8c065cec4262f6a5ddf6718eec555dcce9deab36"
+    },
+    {
+      "path": "verification/net30/jobs/cpu-fault/process-result.json",
+      "bytes": 4522,
+      "sha256": "4a9065408be42d079d86123b5986b7eadb10a583c67726b0426679671dd91cb2"
+    },
+    {
+      "path": "verification/net30/jobs/cpu-fault/run-state.json",
+      "bytes": 916,
+      "sha256": "76208ffa2d461f6cb6e45db7b8b602f783d10d11ee1957c3414340371b9ab64b"
+    },
+    {
+      "path": "verification/net30/jobs/early/job-run.json",
+      "bytes": 951,
+      "sha256": "93d59d3eef03fd849caac0dc72d669655f5c1cbae380f381e0d3df8a469df423"
+    },
+    {
+      "path": "verification/net30/jobs/early/job.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/net30/jobs/early/job.stdout.log",
+      "bytes": 766,
+      "sha256": "420f9f19a20b057be69d12d01228033884f1036656a45ca091b7ae94c100690e"
+    },
+    {
+      "path": "verification/net30/jobs/early/origin.json",
+      "bytes": 30027,
+      "sha256": "73be834a7f3b440ec7e1de6082bb3627bd5e795c2ca648b3db4156497b8278c4"
+    },
+    {
+      "path": "verification/net30/jobs/early/process-result.json",
+      "bytes": 1163,
+      "sha256": "272ac7b50e46b76b02a0ffd0b64831506b1b81001660cb56fc4b3bba72db200b"
+    },
+    {
+      "path": "verification/net30/jobs/early/run-state.json",
+      "bytes": 951,
+      "sha256": "93d59d3eef03fd849caac0dc72d669655f5c1cbae380f381e0d3df8a469df423"
+    },
+    {
+      "path": "verification/net30/jobs/frames-qualified-start/job-run.json",
+      "bytes": 955,
+      "sha256": "74df57fdcf639aec10869138e89a2027c0c72934b16a145741afe16536aeddc9"
+    },
+    {
+      "path": "verification/net30/jobs/frames-qualified-start/job.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/net30/jobs/frames-qualified-start/job.stdout.log",
+      "bytes": 1783,
+      "sha256": "0d01d64e989f5204aa94b79dcf915b64ead88b3c9f9522e753ebb069bc55db90"
+    },
+    {
+      "path": "verification/net30/jobs/frames-qualified-start/origin.json",
+      "bytes": 28776,
+      "sha256": "afb14690be2580f8b17efec35870e056b2b984fb710838c4792a3e8262f02641"
+    },
+    {
+      "path": "verification/net30/jobs/frames-qualified-start/process-result.json",
+      "bytes": 2218,
+      "sha256": "e1f4739a8090f1c6fb7493c09068b0cf619f5f826b08c2553bd41d40ea212c10"
+    },
+    {
+      "path": "verification/net30/jobs/frames-qualified-start/run-state.json",
+      "bytes": 955,
+      "sha256": "74df57fdcf639aec10869138e89a2027c0c72934b16a145741afe16536aeddc9"
+    },
+    {
+      "path": "verification/net30/jobs/frames/job-run.json",
+      "bytes": 922,
+      "sha256": "704ed68385752065d2ba2eb5fe1022e32ea851f9c9e3cf8b518d3c1a67447754"
+    },
+    {
+      "path": "verification/net30/jobs/frames/job.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/net30/jobs/frames/job.stdout.log",
+      "bytes": 323,
+      "sha256": "5544eab37aa075fc5f95ec67ad38c88522b4afb8dfeb7ed71c6514ff9d861f63"
+    },
+    {
+      "path": "verification/net30/jobs/frames/origin.json",
+      "bytes": 28760,
+      "sha256": "30b99dbbe0fdf281c45b1e9f12823bba020c93179c78991214be78feb94f8ce0"
+    },
+    {
+      "path": "verification/net30/jobs/frames/process-result.json",
+      "bytes": 670,
+      "sha256": "e3cc39c7983a67ebde147454cd1b6acbff0d75d0a6e89e2b7bff2dce9c42eb74"
+    },
+    {
+      "path": "verification/net30/jobs/frames/run-state.json",
+      "bytes": 922,
+      "sha256": "704ed68385752065d2ba2eb5fe1022e32ea851f9c9e3cf8b518d3c1a67447754"
+    },
+    {
+      "path": "verification/net30/jobs/ideal/job-run.json",
+      "bytes": 906,
+      "sha256": "59c443a804ba7ba7cbf9e3b5a7bf144bfcce51ce236578a21577f95d0516e5d1"
+    },
+    {
+      "path": "verification/net30/jobs/ideal/job.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/net30/jobs/ideal/job.stdout.log",
+      "bytes": 716,
+      "sha256": "0319d0f2d9e808b50880d6eeb16eef47c22e70ae358e959538566db1d515319f"
+    },
+    {
+      "path": "verification/net30/jobs/ideal/origin.json",
+      "bytes": 30027,
+      "sha256": "1af25eed55b1da362e5813aec08339a670a0806a9d3d2e6a2aeb3c8128826cba"
+    },
+    {
+      "path": "verification/net30/jobs/ideal/process-result.json",
+      "bytes": 1067,
+      "sha256": "4b97b597eae5d0de7a8a41aa0d85e956f58d1886b7b919976b1d23be0343843e"
+    },
+    {
+      "path": "verification/net30/jobs/ideal/run-state.json",
+      "bytes": 906,
+      "sha256": "59c443a804ba7ba7cbf9e3b5a7bf144bfcce51ce236578a21577f95d0516e5d1"
+    },
+    {
+      "path": "verification/net30/jobs/memory/job-run.json",
+      "bytes": 903,
+      "sha256": "d568c666cbacf5d7080f542b09e58287a692b40327e50797e7b29ba475a472f6"
+    },
+    {
+      "path": "verification/net30/jobs/memory/job.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/net30/jobs/memory/job.stdout.log",
+      "bytes": 12743,
+      "sha256": "aa994a1bff490e02a89b43e1b0f825fe88bc324a13f7d42b24bf53e24ae15289"
+    },
+    {
+      "path": "verification/net30/jobs/memory/origin.json",
+      "bytes": 30027,
+      "sha256": "5ea08f444cc90ce99486c33778dce34e27413764ee3ba309e3b7b6c3b81f84da"
+    },
+    {
+      "path": "verification/net30/jobs/memory/process-result.json",
+      "bytes": 13698,
+      "sha256": "8fdd177491a081152a0a1cc9c1d69654e8a5a52452107d34cd5abe69ea754ecf"
+    },
+    {
+      "path": "verification/net30/jobs/memory/run-state.json",
+      "bytes": 903,
+      "sha256": "d568c666cbacf5d7080f542b09e58287a692b40327e50797e7b29ba475a472f6"
+    },
+    {
+      "path": "verification/net30/jobs/program/job-run.json",
+      "bytes": 911,
+      "sha256": "418b3142b818592373c8143dbcccba6a68ccf11f555fbfc0a31eded7c2f1bc6f"
+    },
+    {
+      "path": "verification/net30/jobs/program/job.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/net30/jobs/program/job.stdout.log",
+      "bytes": 767,
+      "sha256": "ec91eaf5d419f98dc4ce0f753a3ffdafbcbb88599d71409bed5c8d746661009f"
+    },
+    {
+      "path": "verification/net30/jobs/program/origin.json",
+      "bytes": 30025,
+      "sha256": "6c85b7974bfe0a29cb4645c6dcf17ed7f27337e1debd8f403226acb1864e7041"
+    },
+    {
+      "path": "verification/net30/jobs/program/process-result.json",
+      "bytes": 1115,
+      "sha256": "a3ab302f0e2dc6f2d616fd0ec7506c042a295ae26b9f1ecb6161ffa713e38067"
+    },
+    {
+      "path": "verification/net30/jobs/program/run-state.json",
+      "bytes": 911,
+      "sha256": "418b3142b818592373c8143dbcccba6a68ccf11f555fbfc0a31eded7c2f1bc6f"
+    },
+    {
+      "path": "verification/net30/jobs/timed/job-run.json",
+      "bytes": 935,
+      "sha256": "528fb6a3e09e80eea9b70d51eb161a6962e44debe425e0f563a472bb1a1ceb23"
+    },
+    {
+      "path": "verification/net30/jobs/timed/job.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/net30/jobs/timed/job.stdout.log",
+      "bytes": 767,
+      "sha256": "fa637ce3faecb3ed7582d640677b7eac006b8758e56d94827ad4b44f8606fcaa"
+    },
+    {
+      "path": "verification/net30/jobs/timed/origin.json",
+      "bytes": 30027,
+      "sha256": "b09fd77d06442774892f18d2b430fd26d9d73275cf8e4d60e5418639fc02d487"
+    },
+    {
+      "path": "verification/net30/jobs/timed/process-result.json",
+      "bytes": 1149,
+      "sha256": "33cf084a2816b9bf6bc3a115e1d61741827e899a7559033abeb1052f9f28bf8e"
+    },
+    {
+      "path": "verification/net30/jobs/timed/run-state.json",
+      "bytes": 935,
+      "sha256": "528fb6a3e09e80eea9b70d51eb161a6962e44debe425e0f563a472bb1a1ceb23"
+    },
+    {
+      "path": "verification/net30/native-frame-results.json",
+      "bytes": 13709,
+      "sha256": "125ff3c6e5bc33cd7db5dc07716b2a566fd3e62eff851002b602817e2c836a76"
+    },
+    {
+      "path": "verification/net30/native/bus/load_distributed_bus.pdf",
+      "bytes": 267474,
+      "sha256": "c283ae25d87496907fd7b5e745c3bf786c846c01a404f9418f29ae9a11a8b1bc"
+    },
+    {
+      "path": "verification/net30/native/bus/load_distributed_bus.xml",
+      "bytes": 130291,
+      "sha256": "2e264d8fb272b20ccfd6d00e9f441693e75acbaa7a021b25311494acb3e2efe5"
+    },
+    {
+      "path": "verification/net30/native/bus/preview.png",
+      "bytes": 68981,
+      "sha256": "de9382ea9d822b5a1d15b6c9fe3206a8d8928199f5fbe0d6488b5870e64d543e"
+    },
+    {
+      "path": "verification/net30/native/keyboard/load_distributed_keyboard.pdf",
+      "bytes": 344195,
+      "sha256": "9944ed538da9fb0a85fa3cf32b52f2dbb92eeaea156bb88c974675fdb28af920"
+    },
+    {
+      "path": "verification/net30/native/keyboard/load_distributed_keyboard.xml",
+      "bytes": 176656,
+      "sha256": "014a08fecba001d2224a1ce92676dc56dd3ef19cfe576fed3b4c27b622b66bbe"
+    },
+    {
+      "path": "verification/net30/native/keyboard/preview.png",
+      "bytes": 59739,
+      "sha256": "6e75c56d030e0501ac04744da205eade643cf7d8e2a54bf718be4f5705d9239c"
+    },
+    {
+      "path": "verification/net30/native/video/load_distributed_video.pdf",
+      "bytes": 265900,
+      "sha256": "bc6a0dccfc64cdb5a404803cd7a1680d786d6952b9d99d08de26ed3d7ba4f006"
+    },
+    {
+      "path": "verification/net30/native/video/load_distributed_video.xml",
+      "bytes": 127362,
+      "sha256": "d6809d22ad4e6f01269b354a20e7f17b3dd92a8cc77df1accbba6447ae4cfd97"
+    },
+    {
+      "path": "verification/net30/native/video/preview.png",
+      "bytes": 49821,
+      "sha256": "20c2327e6311b30fbcf2c386434a143ef86f170000fbd98637a616b9ef8000e0"
+    },
+    {
+      "path": "verification/net30/program/frame-system-ideal.png",
+      "bytes": 1361,
+      "sha256": "d9a8e76c001c18198f03ed53bed7864ad1043e3002e2908a94e98452b58f6375"
+    },
+    {
+      "path": "verification/net30/program/system-program-ideal.json",
+      "bytes": 15337,
+      "sha256": "caca666c5df52cb2a7643c53e4fda2d604c080d622e4a6e862ba4909ce32a139"
+    },
+    {
+      "path": "verification/net30/program/system-tb_rtl_program-ideal.sv",
+      "bytes": 5290,
+      "sha256": "d75a9f3a7ee990c19e1212ff8243be1aa662167a595de1a9aa794370b0ecdf7e"
+    },
+    {
+      "path": "verification/net30/result-audit.json",
+      "bytes": 12361,
+      "sha256": "cbffea5b98c7021175bfe7284c172e5ee85cc72756f6dbe9f752027ada8d45f2"
+    },
+    {
+      "path": "verification/net30/title-update-final/bus-erc-command.json",
+      "bytes": 741,
+      "sha256": "dc42731d6ab870ec02f71985d8d2ce59eb25ac9085cee4c8383e9226a8fff7f8"
+    },
+    {
+      "path": "verification/net30/title-update-final/bus-erc.json",
+      "bytes": 105872,
+      "sha256": "7a1193f74176d12fab4aa6aa5c983633136b1ff475c52bf183104b5cbf0495a1"
+    },
+    {
+      "path": "verification/net30/title-update-final/bus-netlist-command.json",
+      "bytes": 546,
+      "sha256": "4f7707f6d6a8711f05237c46056c4db0088e2f7cc7a67e76278532b317add2b2"
+    },
+    {
+      "path": "verification/net30/title-update-final/bus-render-command-3.json",
+      "bytes": 662,
+      "sha256": "124398bce98c64c21aa0ff36a972801b04a5c8fc554d87e8154bd4ed74b83bc0"
+    },
+    {
+      "path": "verification/net30/title-update-final/bus-render-command-4.json",
+      "bytes": 479,
+      "sha256": "386754584b57cb26dabda37c1e3fbbdd80dd5d4435eea9d8e9e7de1e7a191e81"
+    },
+    {
+      "path": "verification/net30/title-update-final/keyboard-erc-command.json",
+      "bytes": 760,
+      "sha256": "05282fa1e9df69496883b7ab9548a20959f5256de6478e1353e55a174ab25e6a"
+    },
+    {
+      "path": "verification/net30/title-update-final/keyboard-erc.json",
+      "bytes": 17566,
+      "sha256": "48aca7fcc3693a366567746289fa200121f2c15c81cbbbbadfc4d917f066f9ec"
+    },
+    {
+      "path": "verification/net30/title-update-final/keyboard-netlist-command.json",
+      "bytes": 556,
+      "sha256": "5057ab69dc5a40f8cde7bb86c7651bbd2fab73d5fe2b4d45e2d31a63169fa819"
+    },
+    {
+      "path": "verification/net30/title-update-final/keyboard-render-command-3.json",
+      "bytes": 692,
+      "sha256": "053ad9667d6c5f07a9cac277b9e0a8108e5e3265cba88299544fcc8b8e8a45c1"
+    },
+    {
+      "path": "verification/net30/title-update-final/keyboard-render-command-4.json",
+      "bytes": 493,
+      "sha256": "d29667015f953825b49b9319409f6fcf38943a5f5dac7c656d6dd0228fbe1631"
+    },
+    {
+      "path": "verification/net30/title-update-final/original/bus/load_distributed_bus.kicad_sch",
+      "bytes": 174600,
+      "sha256": "d2044524d676b3e779676d6607cd86a2bb220c23013641cf5fb3a0da50dc2fd8"
+    },
+    {
+      "path": "verification/net30/title-update-final/original/bus/load_distributed_bus.xml",
+      "bytes": 130291,
+      "sha256": "fb7768ec8cace93ee25242d04e4d7ad1a62241e9b68e2021606deca785164c91"
+    },
+    {
+      "path": "verification/net30/title-update-final/original/keyboard/load_distributed_keyboard.kicad_sch",
+      "bytes": 240434,
+      "sha256": "f24906c3d0d07d1d4daab2aa3dbfc5bcf4e50203f78134451519e51797bbb527"
+    },
+    {
+      "path": "verification/net30/title-update-final/original/keyboard/load_distributed_keyboard.xml",
+      "bytes": 176656,
+      "sha256": "8fa907d89b7b752dffce8bf2923568d46a98bc2e94dc74ea4d66a5c877798967"
+    },
+    {
+      "path": "verification/net30/title-update-final/original/video/load_distributed_video.kicad_sch",
+      "bytes": 171748,
+      "sha256": "7f665540cca41b015448b5327b52a4c6649840986531be9ec47fd43b1284b85e"
+    },
+    {
+      "path": "verification/net30/title-update-final/original/video/load_distributed_video.xml",
+      "bytes": 127362,
+      "sha256": "c9285484914779a874b39c7e239de1fac037914cb81ce7d56917b2b9776769c7"
+    },
+    {
+      "path": "verification/net30/title-update-final/report.json",
+      "bytes": 15271,
+      "sha256": "1967f566a01b03917c322036458ebddc16fb6dda779fa5a5210d533497471c70"
+    },
+    {
+      "path": "verification/net30/title-update-final/video-erc-command.json",
+      "bytes": 748,
+      "sha256": "c31cd0a049462a2c11c1794db28eda12d07e9f4440237902e191c3c5fe3513b0"
+    },
+    {
+      "path": "verification/net30/title-update-final/video-erc.json",
+      "bytes": 30736,
+      "sha256": "c6fdc0f9991ece0902780d750534cbe2ec07749e9725daf98607f4ddb08e83c7"
+    },
+    {
+      "path": "verification/net30/title-update-final/video-netlist-command.json",
+      "bytes": 550,
+      "sha256": "f3e0ba312b5d1e59216fbc15d4dd221d37ae58df882e01536a46f5ed8f334dcc"
+    },
+    {
+      "path": "verification/net30/title-update-final/video-render-command-3.json",
+      "bytes": 674,
+      "sha256": "31d97e4f44c40a191b114458b0ae14a7ed82d79dc9cc30ce4abd7932d6c8a510"
+    },
+    {
+      "path": "verification/net30/title-update-final/video-render-command-4.json",
+      "bytes": 485,
+      "sha256": "4afee7148788d6df31c4e8ad70e9b9fa542042e29a19914af51e9e6e7ef9456f"
+    },
+    {
+      "path": "verification/net30/title-update/development/initial-tool.py",
+      "bytes": 5126,
+      "sha256": "2065dc29c87a65fb587edaadb7c59d23a1bb3688770353477dbf44d815c2300f"
+    },
+    {
+      "path": "verification/net30/title-update/development/restoration.json",
+      "bytes": 2698,
+      "sha256": "884630f8514bcd4ab7c0dd4d023d2323f25a07f9ada46fa16678c08b2f917712"
+    },
+    {
+      "path": "verification/net30/title-update/original/keyboard/load_distributed_keyboard.kicad_sch",
+      "bytes": 240434,
+      "sha256": "f24906c3d0d07d1d4daab2aa3dbfc5bcf4e50203f78134451519e51797bbb527"
+    },
+    {
+      "path": "verification/net30/title-update/original/keyboard/load_distributed_keyboard.xml",
+      "bytes": 176656,
+      "sha256": "8fa907d89b7b752dffce8bf2923568d46a98bc2e94dc74ea4d66a5c877798967"
+    },
+    {
+      "path": "verification/net30/title-update/original/video/load_distributed_video.kicad_sch",
+      "bytes": 171748,
+      "sha256": "7f665540cca41b015448b5327b52a4c6649840986531be9ec47fd43b1284b85e"
+    },
+    {
+      "path": "verification/net30/title-update/original/video/load_distributed_video.xml",
+      "bytes": 127362,
+      "sha256": "c9285484914779a874b39c7e239de1fac037914cb81ce7d56917b2b9776769c7"
+    },
+    {
+      "path": "verification/net30/title-update/partial-output/hardware/load_distributed_keyboard/load_distributed_keyboard.kicad_sch",
+      "bytes": 240434,
+      "sha256": "ba167ee57df53c242ef996ed4be4c2014d92a43d3603138455400a37adac5042"
+    },
+    {
+      "path": "verification/net30/title-update/partial-output/hardware/load_distributed_video/load_distributed_video.kicad_sch",
+      "bytes": 171748,
+      "sha256": "2434a9ae9ffa858d48bd43242c096a21f474f37907d1aab4f21ed21197e45640"
+    },
+    {
+      "path": "verification/net30/title-update/partial-output/verification/net30/native/keyboard/load_distributed_keyboard.xml",
+      "bytes": 176656,
+      "sha256": "162b7b895e07faeeb70896cb8785a0f3ffa70da0749aac5e18b103f9ccfc468c"
+    },
+    {
+      "path": "verification/net30/title-update/partial-output/verification/net30/native/video/load_distributed_video.pdf",
+      "bytes": 265900,
+      "sha256": "cbd9de2078861c410b957c9825b5731050ae1b5cfb89b12b7a7c4f4eebae856b"
+    },
+    {
+      "path": "verification/net30/title-update/partial-output/verification/net30/native/video/load_distributed_video.xml",
+      "bytes": 127362,
+      "sha256": "b823319b5bf80d88e38d9bc56ec829f020986b143a1e5777c64c008cc90673da"
+    },
+    {
+      "path": "verification/net30/title-update/partial-output/verification/net30/native/video/preview.png",
+      "bytes": 49821,
+      "sha256": "20c2327e6311b30fbcf2c386434a143ef86f170000fbd98637a616b9ef8000e0"
+    },
+    {
+      "path": "verification/net30/title-update/report.json",
+      "bytes": 5355,
+      "sha256": "73e3e5fdf5ab830893eef67d9fb7902eaa8e115314d867ae6f3b7f3895659565"
+    },
+    {
+      "path": "verification/net30/title-update/video-erc.json",
+      "bytes": 30736,
+      "sha256": "c64ca7ba5f7dd7b1cdf19d2fcf89362ab87d6a5634f27c0932205642ace08ec4"
+    }
+  ],
+  "production_released": false
+}

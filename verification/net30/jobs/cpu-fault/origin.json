@@ -1,0 +1,811 @@
+{
+  "date": "2026-11-26",
+  "job": "cpu-fault",
+  "candidate_base": "b5a19c7ee72a9b8543060e77f9c26824daf271ca",
+  "head_at_start": "b5a19c7ee72a9b8543060e77f9c26824daf271ca",
+  "scope": "Separate NET30 candidate, source files frozen before child launch. Process exit is not itself electrical/production acceptance.",
+  "sources": [
+    {
+      "path": "firmware/net19a/keyboard_scan.asm",
+      "sha256": "da2569d1c68eb00bc97ab8067afe3f1259c3d00bd5930440aef2146a58357896"
+    },
+    {
+      "path": "firmware/rtl01_diagnostic.asm",
+      "sha256": "ee198751b959ff6580176842de245699e57476b5e66d49eabece0fd53e38c046"
+    },
+    {
+      "path": "hardware/address_bank/address_bank_netlist.sv",
+      "sha256": "a557cbe3916f7378838581376942c9f768cd40fcf558a7c2e0960281f46845b0"
+    },
+    {
+      "path": "hardware/alu_bank/alu_bank_netlist.sv",
+      "sha256": "48db8630b4cf713259fedbedb262dfca0769066b97449e05014ad86dd6ed2cdd"
+    },
+    {
+      "path": "hardware/clocked_reset/clocked_reset_netlist.sv",
+      "sha256": "b3c7e1c64bdc2a8bb8e5aa2d658e864fc75c7dd054776593b290c165fd3e5603"
+    },
+    {
+      "path": "hardware/common_request/common_request_netlist.sv",
+      "sha256": "c8f529730b8fcc110af6dcf4d54c29f2bc57b589319f1126b17b7043521cc3a9"
+    },
+    {
+      "path": "hardware/cpu_execution_glue/execution_bank_net09.sv",
+      "sha256": "8ddf0b264c1ce5a93b882ea677c3c26cb7e2869cbd9c013df0d6de16f672206a"
+    },
+    {
+      "path": "hardware/cpu_global/cpu_global_netlist.sv",
+      "sha256": "70f251891939357d16b942eee168b836df5ae801f082ef70de787600758ebe7a"
+    },
+    {
+      "path": "hardware/execution_bank/execution_bank_netlist.sv",
+      "sha256": "76a84265651d79f14f271ed7a924d06968d2c9320ac803046a0a5bca7d0fad1a"
+    },
+    {
+      "path": "hardware/keyboard_500/keyboard_500_netlist.sv",
+      "sha256": "b6ed3cf1f838f2782e5e3420eb32ca316f750a76d27030cbacd6837abe32e9e8"
+    },
+    {
+      "path": "hardware/keyboard_access/keyboard_access_netlist.sv",
+      "sha256": "8bb21f059af0d3b1ca08334a7ad7992cf1d0f6a49344d52a227753c229e4b240"
+    },
+    {
+      "path": "hardware/load_distributed_bus/load_distributed_bus_netlist.sv",
+      "sha256": "4189c81362cd0cfa27120be9048e254dd8ad3291998e4cfc7c5d66971ffa9606"
+    },
+    {
+      "path": "hardware/load_distributed_keyboard/load_distributed_keyboard_netlist.sv",
+      "sha256": "05ace6ea59966f51613a561b74c5424e5a0c6fa87c5c7e97bbb4bf093bd13d80"
+    },
+    {
+      "path": "hardware/load_distributed_video/load_distributed_video_netlist.sv",
+      "sha256": "f05905ee686583d94c6d7ef737ad3650e8b4bc93b4295501c46d35e0b0d3d7df"
+    },
+    {
+      "path": "hardware/local_phase_keyboard/local_phase_keyboard_netlist.sv",
+      "sha256": "28b5113601f32f71a37739efed0e9c1c225201caac971ecbdb2eee1f0053e082"
+    },
+    {
+      "path": "hardware/local_phase_reset/local_phase_reset_netlist.sv",
+      "sha256": "297baf75c91813a90bb2966d6fa0a99c67a3e569416690f383772cc9eb5f32ab"
+    },
+    {
+      "path": "hardware/local_phase_video/local_phase_video_netlist.sv",
+      "sha256": "40cac43c893d05eb89481c2e531627b295d8f84b1949d8fcdb55025e9239ab23"
+    },
+    {
+      "path": "hardware/memory_access/memory_access_netlist.sv",
+      "sha256": "d19babac52f68cb4c547d17a1352a9d92a3c6a23fd8899911602299bd3be459a"
+    },
+    {
+      "path": "hardware/memory_bus/memory_bus_netlist.sv",
+      "sha256": "d8730776c4166a2b1a5df1e314d8148f66ed970ff513379401392329d8722ea3"
+    },
+    {
+      "path": "hardware/memory_bus_access/memory_access_netlist.sv",
+      "sha256": "0a31bba786c46ed6715c861c61087b740580f72a4af924436fd20b66c611847a"
+    },
+    {
+      "path": "hardware/memory_decode/memory_decode_netlist.sv",
+      "sha256": "ea33aea0e9d2977fb9fe683e11526e183bc4c3edac465e221b135d873860f0a4"
+    },
+    {
+      "path": "hardware/microcode_bank/microcode_bank_netlist.sv",
+      "sha256": "d761d3d5284cf025548ee7421f7c3e0fb6764acbd2283a6358714877485e85b8"
+    },
+    {
+      "path": "hardware/mmio_keyboard/mmio_keyboard_netlist.sv",
+      "sha256": "ef896924aee3c5ad18286936314c4fd86ef5456168d3aaa99101368eba6e516b"
+    },
+    {
+      "path": "hardware/phase_drain_reset/phase_drain_reset_netlist.sv",
+      "sha256": "2bb7fa1dcfad12b1197bfcc9cbbca41ebc17565f24100c579ae97651bb1ae1b6"
+    },
+    {
+      "path": "hardware/phase_drain_video/phase_drain_video_netlist.sv",
+      "sha256": "cb285d55e2edd6eb0ed31d87c1a5c9e407e8dd4790b0032d011add871bcd846b"
+    },
+    {
+      "path": "hardware/power_reset/power_reset_netlist.sv",
+      "sha256": "715c51ab31d3fce643153c790138028befd0b0b1d9efe827074f4c4589191cdf"
+    },
+    {
+      "path": "hardware/register_bank/register_bank_netlist.sv",
+      "sha256": "7f5f3acf94e3c146370a05c217c40e833f9dc56a91c3017fa23a349673a990f7"
+    },
+    {
+      "path": "hardware/reset_domains/reset_domains_netlist.sv",
+      "sha256": "c788935fe52f2ca91b191b4ba91c98620dcf18a7581d202ee55b341b8e24ac80"
+    },
+    {
+      "path": "hardware/schmitt_reset/schmitt_reset_netlist.sv",
+      "sha256": "40b59706100afc4804731106d930d7c4f2bf9478fa428db090534b03272ec7dc"
+    },
+    {
+      "path": "hardware/stack_bank/stack_bank_netlist.sv",
+      "sha256": "7e81b65cc40d045f8b2a586949563f1707ddb450066c0fa09eab64e7a6658669"
+    },
+    {
+      "path": "hardware/system_access/system_access_netlist.sv",
+      "sha256": "afac84baef3304ebfd6575dcb5fbdb8d9441a2ef0a20f0e842b16e485dd98b13"
+    },
+    {
+      "path": "hardware/system_reset/system_reset_netlist.sv",
+      "sha256": "746b912225c88c17b05449275b484a2f84c46fec384f7e1cd6997d96be5a51dd"
+    },
+    {
+      "path": "hardware/transaction_bank/transaction_bank_netlist.sv",
+      "sha256": "c5381deb78d25279fa4d6672779b526cbfb73d02c6478865dccb3965dc5d9b74"
+    },
+    {
+      "path": "hardware/video_common_clock/video_common_clock_netlist.sv",
+      "sha256": "1734f4a2cd56a40fe9ca37ce8ee369569d595de92eea0ade6aee229189e71269"
+    },
+    {
+      "path": "hardware/video_raster/video_raster_netlist.sv",
+      "sha256": "fcf7f60b03323d2f5033713428387557d692720e75e38cd62909cc38c09d1e5a"
+    },
+    {
+      "path": "hardware/video_system/video_system_netlist.sv",
+      "sha256": "0a70a3a4ee209ec188b5ff026c18c636d72d3121005500e235d54a7e73f0fd1a"
+    },
+    {
+      "path": "hardware/x_register_bank/x_register_bank_netlist.sv",
+      "sha256": "53bf653d7a5f9beeab3497233e239469ee4bc520eeea2abe8fe0b3cfa39cf6d8"
+    },
+    {
+      "path": "revisions/rev983/control_lane0.bin",
+      "sha256": "d8e4a90ed70b376c12cda278f659b32decb14e0b588bda475932124dc5c576f2"
+    },
+    {
+      "path": "revisions/rev983/control_lane1.bin",
+      "sha256": "e403962ad102f2018347fbc1f9c8ba01b7ad71c23d29824eee33248ee29f2da6"
+    },
+    {
+      "path": "revisions/rev983/control_lane2.bin",
+      "sha256": "1cb7101341d7b4e13bb615695d4e5bbeb55b4de5132ad8e408033c8effceefe6"
+    },
+    {
+      "path": "revisions/rev983/control_lane3.bin",
+      "sha256": "20cca3fa9b9106e433062a0fd4001f8d3575200708c5b1e2ff3758f3ed962461"
+    },
+    {
+      "path": "sim/hdl/counter_load_candidate.sv",
+      "sha256": "3651b6f7534de18a7e78df660649a7ffdcfae29f0729721ff84e91e13182840d"
+    },
+    {
+      "path": "sim/hdl/hc_models.sv",
+      "sha256": "f305ff38b7e58701e9f97528de68ea8c5518a628d38bd5a8ac9e847fa87c8680"
+    },
+    {
+      "path": "sim/hdl/tb_counter_load.sv",
+      "sha256": "51fcacf9860094e09c7a6bace2886398174b2124215a4ff3cf783e9bd233ac75"
+    },
+    {
+      "path": "sim/hdl/tb_hc191_negative.sv",
+      "sha256": "d667784cb2e36cf8b8ca24d1c6315497c3e0725e490949954631691cab61f01c"
+    },
+    {
+      "path": "sim/hdl/tb_hc191_unit.sv",
+      "sha256": "c8d9eae6ddf39b44a0bb7cc8eaba12ead9de1b58e5116f8b938dc6df368301a8"
+    },
+    {
+      "path": "sim/net02/isa1_cpu_stack.sv",
+      "sha256": "7d75e8deb1a1116004189917e8fdab97f42df595e4db6fa76d83c54d787e5432"
+    },
+    {
+      "path": "sim/net02/package_models.sv",
+      "sha256": "de2fd5315a3809a89ba90b8f09a96a25d06d3e00b8568a8f82387b92a624199f"
+    },
+    {
+      "path": "sim/net02/tb_hc273_negative.sv",
+      "sha256": "ee711ed64a34ffa6ec06342de997de8c44e606b3a608aa238459b86319b5a0f8"
+    },
+    {
+      "path": "sim/net02/tb_stack_bank.sv",
+      "sha256": "06e750f509434a07032c254f7a2755af8f250ff565d3aa15ad67a7b6f718af7d"
+    },
+    {
+      "path": "sim/net03/isa1_cpu_bus.sv",
+      "sha256": "d0dbe9984de317b513e1f3592b9d7a2c4dbbbe8645469a063ca53c6dc9426b7b"
+    },
+    {
+      "path": "sim/net03/package_models.sv",
+      "sha256": "53712265aa1d4312866135c59e73d7543069c7a3281635d43d66825790716258"
+    },
+    {
+      "path": "sim/net03/tb_ack_phase.sv",
+      "sha256": "55faff329d41d1c05d444dcafd744855c58a1f49cbc97ffbb236f2f7107885ac"
+    },
+    {
+      "path": "sim/net03/tb_timing_negative.sv",
+      "sha256": "2548a2666e8c9874b15d8ed1bf943b892707cf3d08763043febe8aa8e700d6ac"
+    },
+    {
+      "path": "sim/net03/tb_transaction_bank.sv",
+      "sha256": "de292533febf784897ddee55813de680ed5020a8d5101f55cf0d869e509cc579"
+    },
+    {
+      "path": "sim/net04/counter_word_candidate.sv",
+      "sha256": "ed2ff4d867c151af8eb9eef0339aa37b4dcb7decfd3cacededf4ace1812543f5"
+    },
+    {
+      "path": "sim/net04/isa1_cpu_microcode.sv",
+      "sha256": "9276f7ea2f993c962a5e9c5cdc0973f7eb028b64a875f9ab648ae5767507ab00"
+    },
+    {
+      "path": "sim/net04/package_models.sv",
+      "sha256": "85b00a3b6b0307d68b53e4ea1ae97ba5cbf83c20685544bb12fde333efa07d63"
+    },
+    {
+      "path": "sim/net04/tb_microcode_bank.sv",
+      "sha256": "1a402293a67e1fe8aca850fd7f158c8185047ab7407a42cc2a7a6683c73f0fcf"
+    },
+    {
+      "path": "sim/net04/tb_timing_negative.sv",
+      "sha256": "b59d0ac8169c9f2ddc98e1e7dbc8490a8f3de8e11802bcfa0a7f1ec493e0c209"
+    },
+    {
+      "path": "sim/net05/isa1_cpu_alu.sv",
+      "sha256": "9a563464cb666de1f5a50ec848c9b16bf7c1b05a9e1609a22de467fb9c21e641"
+    },
+    {
+      "path": "sim/net05/tb_alu_bank.sv",
+      "sha256": "70fe893b07d793c2f5d4f09476f8155789eca1653e1efc4eda947c4c024b3001"
+    },
+    {
+      "path": "sim/net06/isa1_cpu_registers.sv",
+      "sha256": "1ebb18921f8c9604b0b0502c285cf54d6135610b242f2cc2f50c4f34fdbe5db0"
+    },
+    {
+      "path": "sim/net06/tb_register_bank.sv",
+      "sha256": "9fbae101c8a1ed1d28afaa51878c546fdff19d18933429e3a9ff1bdab86be3f3"
+    },
+    {
+      "path": "sim/net06/tb_register_timing_negative.sv",
+      "sha256": "f3b7e96325f2d47affa9a01d18eb462d7991218ebdb5b26bf0c4c0ac3e90206d"
+    },
+    {
+      "path": "sim/net07/isa1_cpu_address.sv",
+      "sha256": "20a9f9ae40870d242debed8514f0b32c016d7d282159f3ac434cccc6c39d5f26"
+    },
+    {
+      "path": "sim/net07/tb_address_bank.sv",
+      "sha256": "dc6fd482b133977b1d04f1151a4a2bd168d3e318dd28051f8c140afedf3251d2"
+    },
+    {
+      "path": "sim/net08/isa1_cpu_execution.sv",
+      "sha256": "12c94b4c6540e44b264b2163910779b877d60759ec240a65fe7af878f6392593"
+    },
+    {
+      "path": "sim/net08/tb_execution_bank.sv",
+      "sha256": "ccab711cc6c2b6806efdb520c98281a85c627e449baea20a5c3da0bb86644bd3"
+    },
+    {
+      "path": "sim/net09/isa1_cpu_pins.sv",
+      "sha256": "724f44404e8c2f257b963d0cb5ab48a030c2aacf2988954c6b133d78e83b40e2"
+    },
+    {
+      "path": "sim/net09/tb_x_register_bank.sv",
+      "sha256": "44c259852ab023ef2873202a708a76c5305f00ae2cab2b1da420174410ebc3d1"
+    },
+    {
+      "path": "sim/net11/isa1_memory_decode.sv",
+      "sha256": "41c8a951cd7cc3443d8313d5994080addaffa6a34d5a9926f07b49a93e97879d"
+    },
+    {
+      "path": "sim/net11/tb_memory_decode.sv",
+      "sha256": "1994bb9d4b6f54bfbd0ce57186bdc2fd2d86649ff198229a03cbec64261456c1"
+    },
+    {
+      "path": "sim/net12/isa1_memory_access.sv",
+      "sha256": "4f9d9f9bbc6ee31dfb52320c1b2d82930aca19cc069be480b4a046eb917d7ad4"
+    },
+    {
+      "path": "sim/net12/tb_memory_access.sv",
+      "sha256": "5084619ee24f3c334b5329ad920e0752525eeb2664711a3416ed7443095ea00e"
+    },
+    {
+      "path": "sim/net13/isa1_memory_bus.sv",
+      "sha256": "ae83351879729f99074387f42e702b39df50977c6b5c43eb03c1d22d98c5af98"
+    },
+    {
+      "path": "sim/net13/memory_devices.sv",
+      "sha256": "cf166183d3ffc7a94fd722ad6e6b2ea00c9fa02f3f8405efe4600f37427a4af1"
+    },
+    {
+      "path": "sim/net13/tb_memory_bus.sv",
+      "sha256": "9c5d7b8b77674786930931ea3666049688fd747e61cfac630839d434d7e28604"
+    },
+    {
+      "path": "sim/net13/tb_memory_fabric.sv",
+      "sha256": "4907fb127b817fcd1c6204e84d98413669bb08d10051da288e3982ce73974111"
+    },
+    {
+      "path": "sim/net14a/tb_video_contract.sv",
+      "sha256": "7477a07db7aeb6d5bdc874ddd37bd0a1cb117ef940344f0d4d5327357ef58a55"
+    },
+    {
+      "path": "sim/net14a/video_contract.sv",
+      "sha256": "911720a0f953680ee17c392230494866d71fb04d91ab30da8f66dd9a72b48be0"
+    },
+    {
+      "path": "sim/net14b/package_models.sv",
+      "sha256": "f8f84c02d57e6043d6abc8ede4483971e88d6d1b18d53ea4fce39bf748274bc8"
+    },
+    {
+      "path": "sim/net14b/tb_raster_reset.sv",
+      "sha256": "7141de200b0e53c1b0622074566cbfa6b29eb6056bb3b680b0665485e8a70b13"
+    },
+    {
+      "path": "sim/net14b/tb_video_raster.sv",
+      "sha256": "6b2a075d2c198140df8fd784702a7245ba9adaf0c8eb49c98074ef51d65a45d4"
+    },
+    {
+      "path": "sim/net14c/isa1_memory_video.sv",
+      "sha256": "86c1e44645b21b1eaa0a1eea6863d5fc8a07793a852d61ad99d3e560b097cfc4"
+    },
+    {
+      "path": "sim/net14c/package_models_async.sv",
+      "sha256": "7b45346f5e25bb73deb33ba9fb02d50e2b020ab527f75fed1244e173300ccfcb"
+    },
+    {
+      "path": "sim/net14c/tb_reset_resolution.sv",
+      "sha256": "a23e2058d0c6a8ac25faa61ee079c17749062897322a7a322b115a444ac0757a"
+    },
+    {
+      "path": "sim/net14c/tb_video_clock_cuts.sv",
+      "sha256": "743b07dcd3445869ec626d5bfbb93834f0dba254d565c82d876916fe2bebaaf5"
+    },
+    {
+      "path": "sim/net14c/tb_video_system.sv",
+      "sha256": "4bf5b3498e3012aef5ace5ae49d7a1ea8d1742f79278857c32d1a51bfad7a006"
+    },
+    {
+      "path": "sim/net14c/video_raster_async_netlist.sv",
+      "sha256": "9885b7aeeb25428fa6a25ea6157061837175d971d4f81bef11c0b5018bcca38f"
+    },
+    {
+      "path": "sim/net15/tb_key_settle.sv",
+      "sha256": "b222a662be90b5ff9ecc8cdf5f4cd91a1555de888d0fd8556d9fba94d37b887c"
+    },
+    {
+      "path": "sim/net15/tb_keyboard_access.sv",
+      "sha256": "a978b9f64fbd74f5506fd75f5bc850d5afe727f58fe7c2e8f57623328c9aa2b9"
+    },
+    {
+      "path": "sim/net15/tb_mmio_keyboard.sv",
+      "sha256": "e48909d90eda64c8fdfe8f6e1dc0681ec33b16596e9986ce0a5a8e2d79610100"
+    },
+    {
+      "path": "sim/net16/tb_reset_apertures.sv",
+      "sha256": "01f999c187f1b1c3fdf84614de25d4a8e33f59d577a521a1c85963cc2f2189b7"
+    },
+    {
+      "path": "sim/net16/tb_reset_domains.sv",
+      "sha256": "07387181adf0afa399319a5588c29319a3653751d7e815b12490fccc1208e83f"
+    },
+    {
+      "path": "sim/net17/tb_key_settle_500.sv",
+      "sha256": "edfa4561e23762a4d80b4b31c5752138dc1fb264a8427bd8483542aeb40642b4"
+    },
+    {
+      "path": "sim/net17/tb_keyboard_500.sv",
+      "sha256": "9b057e5596adbef67b4d594a59d824043d08ed5bc2d59e3f6fc5b3eb9e2c9a87"
+    },
+    {
+      "path": "sim/net17/tb_keyboard_resume.sv",
+      "sha256": "3957571c7cdd6ebb1894e37cbcbf19712fa7463b0feffb0a4075589cae45a46c"
+    },
+    {
+      "path": "sim/net18/tb_power_apertures.sv",
+      "sha256": "c5b0b8de7f6967dbfe9430f9135bc559fc247650105b1d5af241cc43893a27fc"
+    },
+    {
+      "path": "sim/net18/tb_power_reset.sv",
+      "sha256": "9d6ce468e45cd3d18e3f7289d52c27ef1b0e8fabb35fd9fe7bbeb0240fbb9d96"
+    },
+    {
+      "path": "sim/net19a/isa1_memory_keyboard.sv",
+      "sha256": "f32176d9903fc65e1871704d3f4b9cc51ead798a1d52e753985453b73a51cd93"
+    },
+    {
+      "path": "sim/net19a/isa1_memory_system.sv",
+      "sha256": "d0bc0bca43ed55dcb96e2bb4f3c4c650894deb5e35a07b1774b73c17475c51e5"
+    },
+    {
+      "path": "sim/net19a/package_models.sv",
+      "sha256": "dc71d5b1f5bcefcf7e20dc9a930de79c4ebc7fec145961dcbabd79a4766ac957"
+    },
+    {
+      "path": "sim/net19a/tb_ahc174_limits.sv",
+      "sha256": "c38f0274c39036265316dcc9ade4b8326a16ed9c33114b713ef25e0069e2e618"
+    },
+    {
+      "path": "sim/net19a/tb_keyboard_scan.sv",
+      "sha256": "58fa94520c14e0ea4a1c9e0de87bf8e109642cc70e821bb881ffbbf7d52ac8b3"
+    },
+    {
+      "path": "sim/net20/isa1_memory_reset.sv",
+      "sha256": "c0bf6e94911e28c873d6baa4cfa9faf0bd3bcf73a4fe0cbc2300d306faaccbfe"
+    },
+    {
+      "path": "sim/net20/tb_reset_memory.sv",
+      "sha256": "133f2a6d71d89721fe8600caf884259087ac25e482aea29f56b31f86eacf4b9a"
+    },
+    {
+      "path": "sim/net21/isa1_memory_schmitt.sv",
+      "sha256": "e5a38125cad5bf8cf781f06d68ae4275ee49d0a45415ed136a15bbc6710539bf"
+    },
+    {
+      "path": "sim/net21/tb_reset_memory.sv",
+      "sha256": "133f2a6d71d89721fe8600caf884259087ac25e482aea29f56b31f86eacf4b9a"
+    },
+    {
+      "path": "sim/net21/tb_schmitt_cpu_fault.sv",
+      "sha256": "0ceaccc47451a518ea856fbf56cac28249d2d7ee13954c538dcafe336df18e6b"
+    },
+    {
+      "path": "sim/net22/isa1_memory_video_common.sv",
+      "sha256": "efbfa3f3f25524262b58b5894df920955e0f4f5f34310123440a4434970a4773"
+    },
+    {
+      "path": "sim/net22/phase_packages.sv",
+      "sha256": "f4c9fd1d3c6a936df6e024a32b9a53e53e79cfcf1e094c1d7731e5a857cf2059"
+    },
+    {
+      "path": "sim/net22/phase_packages_asymmetric.sv",
+      "sha256": "1463309927e8315c4136737c01d59296dd8629e324ffdbc01a4236d0d962916f"
+    },
+    {
+      "path": "sim/net22/tb_ahc164_limits.sv",
+      "sha256": "f4f9be27ee57d571f4918841be8515abd99766a8ee1189c916107da1148b2954"
+    },
+    {
+      "path": "sim/net22/tb_common_clock_cuts.sv",
+      "sha256": "f2547fc877864f83fac3563892ba3951ca0d2f83b08296af5e73c4c1b19ac4e8"
+    },
+    {
+      "path": "sim/net22/tb_common_phase_matrix.sv",
+      "sha256": "1c97489fc61b1e472ff14e04004ad09b6ea01964af3aa5b4a288659f7b48c0b9"
+    },
+    {
+      "path": "sim/net22/tb_common_pulse_matrix.sv",
+      "sha256": "f1418b87c4e6d9ab9b6d7ba741b4b77ae79b2c4ca3ca8c8b8154e84c9969f17c"
+    },
+    {
+      "path": "sim/net22/tb_phase_skew.sv",
+      "sha256": "33e4f9f347451118854d6a5809dc68d420435e2a4be3899d5ee883c99247d886"
+    },
+    {
+      "path": "sim/net22/tb_video_common.sv",
+      "sha256": "f0652fe09369fed1d4f43d64ab4e5f320ab6c5f7f81a54698fbb667fe1c5001b"
+    },
+    {
+      "path": "sim/net22/video_common_async_netlist.sv",
+      "sha256": "a419979ccb85d6723d27f7af2e459dfd64733092220c10b718de7134c65c2474"
+    },
+    {
+      "path": "sim/net22/video_common_probe.sv",
+      "sha256": "f93d3641364a64ee6f176eb2a15d3ce4cc077c521264e263a71802bb62088e79"
+    },
+    {
+      "path": "sim/net22/video_common_pulse_probe.sv",
+      "sha256": "5e9b07a1fb833218efca7bfa8aa18a682b70c0fb2a1bd5e9252683464c00f52a"
+    },
+    {
+      "path": "sim/net22/video_skew_probe.sv",
+      "sha256": "b689b05b38234464c7ad843d01c5b53849c2f01b80cd879fedab5cdb7056ffae"
+    },
+    {
+      "path": "sim/net23/clock_models.sv",
+      "sha256": "9bdf1c41d5698a46cc3e7fb5c3f9e9b3b16c6f8476ea364226790fed625c0af6"
+    },
+    {
+      "path": "sim/net23/isa1_clocked_memory.sv",
+      "sha256": "dea398d005f992c0cdde7831afe2358e79a6949e07c454be2cece538e1d888f8"
+    },
+    {
+      "path": "sim/net23/tb_clock_model.sv",
+      "sha256": "67935d1696da4a5b759a328a3f45188c55a313231005464cefc601b7317d5aa4"
+    },
+    {
+      "path": "sim/net23/tb_clock_sources.sv",
+      "sha256": "9e14cdbae83ffa80182b90ccd1de4d2bf713303c082cf98a88527d250c5f446d"
+    },
+    {
+      "path": "sim/net23/tb_clocked_cpu_fault.sv",
+      "sha256": "12c9068161910302324164309966bb59950526401663dd5d85620fb7850f0c03"
+    },
+    {
+      "path": "sim/net23/tb_clocked_memory_start.sv",
+      "sha256": "5d8404f7645f78f8c88ccef02545d0fc477ff6099a1ffad6e279446b1b23ad01"
+    },
+    {
+      "path": "sim/net24/backend_pulse_model.sv",
+      "sha256": "38b4acb598aac3bbbdb3909a740ea11c2d30a1588b685e93cb253b1f7bfbf5c8"
+    },
+    {
+      "path": "sim/net24/common_request_probe.sv",
+      "sha256": "2b24afecd85d80c63a0824a59a240afbfe348954dc1946bd6334a0a86fa1e4f4"
+    },
+    {
+      "path": "sim/net24/control_pulse_probe.sv",
+      "sha256": "29aae94c8831327b33a6b71200ca1ab7761bbd3a979d257265355505a89ab318"
+    },
+    {
+      "path": "sim/net24/isa1_memory_common_request.sv",
+      "sha256": "f7df73dd78591d27d18e634900e85169d603cd46a1fb9e88ed99d8108665d4b3"
+    },
+    {
+      "path": "sim/net24/package_models_pulse_diagnostic.sv",
+      "sha256": "45027579e2ade0dcee9cd31a584523be5264c5b8b8938afcadf4bcf61b624499"
+    },
+    {
+      "path": "sim/net24/request_probe_model.sv",
+      "sha256": "f207c4cc0c25028998cad4cd15117674c91e1630a533900f254a6d46916bdace"
+    },
+    {
+      "path": "sim/net24/reset_pulse_probe.sv",
+      "sha256": "667aaca524509a69622c1a354f1062a8487d4b81b9d5e52cd07d227b8f47aa35"
+    },
+    {
+      "path": "sim/net24/system_access_skew_probe.sv",
+      "sha256": "e54e0009ae1b0030c407a824fd28ba5b2ea8ea0f42d416c31e27bfc7625a8842"
+    },
+    {
+      "path": "sim/net24/tb_common_request.sv",
+      "sha256": "e56fe5b1b51b857e6fb0ddc8d89e32660ae02227ba38fec3e6141c2712d1ca4c"
+    },
+    {
+      "path": "sim/net24/tb_request_skew.sv",
+      "sha256": "bb0e8cdc2e4f8d55733ed18f9643fdcbe412f0a690b9da4226d18a3d8b770af6"
+    },
+    {
+      "path": "sim/net24/tb_reset_pulse_probe.sv",
+      "sha256": "5dff782519118c4aec0cb92c786c1d78efd40a4a7b56d0ae5ee8ffd32c5b27c7"
+    },
+    {
+      "path": "sim/net24/video_reset_pulse_probe.sv",
+      "sha256": "9f5f1452de1693d42675f86643779b58eb51a13c38884869ccb32c6992beb4f9"
+    },
+    {
+      "path": "sim/net25/control_drain_probe.sv",
+      "sha256": "512ffbd47faac38de6f96f715b0367dc89711ef9b1e6e2b7d1d2f1549ee13b9f"
+    },
+    {
+      "path": "sim/net25/direct_backend_video_hypothesis.sv",
+      "sha256": "2f9eecb21a3baf3a4783e91b8a6cfcb5ad362925f9bf2ae1336599b28707443e"
+    },
+    {
+      "path": "sim/net25/isa1_memory_phase_drain.sv",
+      "sha256": "a5583e445896a2b0aa084e03a1238807403cb3788ea36a2df439c9e9301db54c"
+    },
+    {
+      "path": "sim/net25/local_sync_hypothesis.sv",
+      "sha256": "ffed76748548f4f4e361c8144d2f98975d3ecaa6c73f5f10b88f0276d62d9abd"
+    },
+    {
+      "path": "sim/net25/package_models_cold_diagnostic.sv",
+      "sha256": "91e8f567e5ad0e1bf729ae62dd90b6537d9b9892967c494c33f42a3e7a2cc3e1"
+    },
+    {
+      "path": "sim/net25/reset_drain_probe.sv",
+      "sha256": "0859ef7c1522a3b12cd70ad80c0fdf71bda93c7dff1d145614a1918d077e90c9"
+    },
+    {
+      "path": "sim/net25/tb_direct_backend_hypothesis.sv",
+      "sha256": "e25fbed014f0b00384ecdadf0e1591d13fd62839b3df73d34a15ef9b361b7156"
+    },
+    {
+      "path": "sim/net25/tb_direct_backend_revert_clock.sv",
+      "sha256": "0cb71e745f1ae02c11c150113311cf333f37fe9276d5569faa3277f77a63325e"
+    },
+    {
+      "path": "sim/net25/tb_drain_pulse.sv",
+      "sha256": "f217a6f0111c925e10e1f44936a0ddc9160fe6a69f8516db289e5b0639490015"
+    },
+    {
+      "path": "sim/net25/tb_drain_startup.sv",
+      "sha256": "3ce0b8bcbec8ca5fefa222f1eff89b37c1e5ad7b9ae5fe88f2d2b18ad84a4123"
+    },
+    {
+      "path": "sim/net25/tb_warm_packages.sv",
+      "sha256": "a5e00501ca78ad5bcb15bceac85d6654677df82f68385ddd653c037082c1d797"
+    },
+    {
+      "path": "sim/net25/video_drain_async.sv",
+      "sha256": "6e7eb628bb7ce719695b684a79d85d35030cba98dd7ea9fc5618d2b04d9c3bb9"
+    },
+    {
+      "path": "sim/net25/video_drain_probe.sv",
+      "sha256": "464eb5c0a3f6697684f54e995f115ad20f0f878b08bb2f8c1718fdaf9bdd9d98"
+    },
+    {
+      "path": "sim/net25/warm_packages.sv",
+      "sha256": "b6ff85ba2c3ffeb0de54608c10e4afae3aaed2abb051498a39bdc000259c7d7b"
+    },
+    {
+      "path": "sim/net26/compiled_smoke.sv",
+      "sha256": "8756afddc028b4e6966f7f38694545ad0a1c5b13d9a9135dbf2590a5bfd2f2b6"
+    },
+    {
+      "path": "sim/net26/cvc_clock_restricted.sv",
+      "sha256": "e3f2197efef0ed1376201d579d340327e4fe45f195fcc8d28fec95832d18028c"
+    },
+    {
+      "path": "sim/net26/cvc_compatible/sim__net04__package_models.sv",
+      "sha256": "3a99c5211f2183b21434608503beabd1b79a1ec8005ce6f4a826fa23bad4f42d"
+    },
+    {
+      "path": "sim/net26/cvc_compatible/sim__net24__package_models_pulse_diagnostic.sv",
+      "sha256": "be26a9ed4db03dcac0618de3e70010b0d64bfb8c3e26ec709b92b80067f72a55"
+    },
+    {
+      "path": "sim/net26/cvc_compatible/sim__net26__local_control_probe.sv",
+      "sha256": "5a3a813c68d0e0ac202ff22db57909725c469370518a5358f8251888b448b0fe"
+    },
+    {
+      "path": "sim/net26/isa1_memory_local_phase.sv",
+      "sha256": "58c7a994dc71c6bc0d0b1a8fa4b7d89cffaec4fde28ef64fbcbb163ec6166398"
+    },
+    {
+      "path": "sim/net26/local_control_probe.sv",
+      "sha256": "92cb6156399b794b244cbe93d1ec90847808354ab3b9ec8039bb03613d201e23"
+    },
+    {
+      "path": "sim/net26/local_keyboard_probe.sv",
+      "sha256": "ba0424bb7917b0f9a8232be69802b9f8f58a1cf8ce8ba0da5e2b7e0586830089"
+    },
+    {
+      "path": "sim/net26/local_reset_probe.sv",
+      "sha256": "0b466d74a050d3c45cd2161f999abe4c3870926f440d45d1270a06f43b7783ab"
+    },
+    {
+      "path": "sim/net26/local_video_async.sv",
+      "sha256": "d4fdb650eef0727a92003c0d7e4fd4850b46ddecba9742bd164053b6bcf15004"
+    },
+    {
+      "path": "sim/net26/local_video_probe.sv",
+      "sha256": "279a070799179eb70ef35e828753666ef3f8340dee97fd9db0568d49040b0809"
+    },
+    {
+      "path": "sim/net26/matrix_control.sv",
+      "sha256": "5518bf8c9e9ede80001319eeb1ce51bf7a69fe6bc7d43436092e2f6569fb4111"
+    },
+    {
+      "path": "sim/net26/matrix_keyboard.sv",
+      "sha256": "f360045b69081dcd581a63367d416596f544571527a54d746a98e4cd053ac3b5"
+    },
+    {
+      "path": "sim/net26/matrix_reset.sv",
+      "sha256": "ed8b1e18e3bb264fe0fc565302d8ae8f0d3be9153ebce3f95bdab344dfdd0936"
+    },
+    {
+      "path": "sim/net26/matrix_video.sv",
+      "sha256": "5bf3ab0f8e9b51e9c0f3158481bb3fe97b93be634b13ef549e0587acc6cad3ad"
+    },
+    {
+      "path": "sim/net26/revert_clock.sv",
+      "sha256": "6c5fab6be369a5a31a46048a70720c3905f3ff472d659dbd6cfe5a053e9bcf3e"
+    },
+    {
+      "path": "sim/net26/revert_keyboard.sv",
+      "sha256": "592074f1fdf8de6d8c0f16892f6a5a80ce5bae122b2ad28f75126c71b1b0dd88"
+    },
+    {
+      "path": "sim/net26/revert_local.sv",
+      "sha256": "7444230bda107807d99d949d3a2bf764f133967c0cea30cfab57adcd282f6c1f"
+    },
+    {
+      "path": "sim/net26/tb_local_phase_matrix.sv",
+      "sha256": "f01859a71269d150ea0422eb12d6cfe83234bf9a24ec0bb5223479a9b06d3e62"
+    },
+    {
+      "path": "sim/net26/tb_local_phase_memory.sv",
+      "sha256": "a9ecf61ae8edb3ef0a97249e8132c13037c33df7e2db7fccd70c0f979dc2313f"
+    },
+    {
+      "path": "sim/net26/tb_local_phase_probe.sv",
+      "sha256": "1ad1d4f161305ae261b585a9a6a30a5526a32993938d6a3937d5903a37fb7a8d"
+    },
+    {
+      "path": "sim/net30/isa1_memory_loads.sv",
+      "sha256": "7be55545bda51728fe8aef0b72b070eb62b205d266d447d6b5108d98e04c415a"
+    },
+    {
+      "path": "sim/net30/load_video_async.sv",
+      "sha256": "4696d3fb2d277e58beba2bb0240fce92ae993cf7b126a4e6b3083c5c7f3ac7f2"
+    },
+    {
+      "path": "sim/net30/tb_load_memory.sv",
+      "sha256": "a9ecf61ae8edb3ef0a97249e8132c13037c33df7e2db7fccd70c0f979dc2313f"
+    },
+    {
+      "path": "sim/rtl/isa1_cpu.sv",
+      "sha256": "16767753b645234a563d7839c898115dac0444b53672688db15854b30637e407"
+    },
+    {
+      "path": "sim/rtl/isa1_memory.sv",
+      "sha256": "1b4e568ffc3162d1ba1e67f71ead2a9e887351d50d55f89b454e719be98f4e3d"
+    },
+    {
+      "path": "sim/tests/tb_rtl_alu.sv",
+      "sha256": "0e8abb26f392eafffc5f960af1e35e908a77480a1c741d5ad16a41a67f8edb78"
+    },
+    {
+      "path": "sim/tests/tb_rtl_cpu.sv",
+      "sha256": "eebade88cd0e3366b9331d7044b535758889f227d1e4603fcb05001e981842bb"
+    },
+    {
+      "path": "sim/tests/tb_rtl_program.sv",
+      "sha256": "370d9fb77fed927a03ebfe06554b17d66094dd841b0f1ba1d44deb505828dcab"
+    },
+    {
+      "path": "sim/tests/tb_rtl_safety.sv",
+      "sha256": "89333bb30bf2d9a84be32b4784098b2b3a14f5183768e13eef5b3468ae0d7b68"
+    },
+    {
+      "path": "sim/tests/tb_stack_guards.sv",
+      "sha256": "2edb147909f2aaddbcd51c09e821d3e39db8e08742325b4b9232673b78e9d162"
+    },
+    {
+      "path": "tools/build_execution_bank.py",
+      "sha256": "8eb3c0df1c34521826bf52decb83fccc75bd972b069339e7ea66ba766bbf5415"
+    },
+    {
+      "path": "tools/build_stack_bank.py",
+      "sha256": "342e1c06eeba20eb07bdac5ff29ae5baaf693ea86580c17dde6c2f0818356bcd"
+    },
+    {
+      "path": "tools/make_address_cpu.py",
+      "sha256": "d0d9a52a74d18eb7abaf69a03df92e35d521a5c60de446ce1d9bf0231754f3ae"
+    },
+    {
+      "path": "tools/make_execution_cpu.py",
+      "sha256": "19c88f979e866737bb5cb6a02a452b16cb0533c8575183054dd700747d0a7aa0"
+    },
+    {
+      "path": "tools/make_register_cpu.py",
+      "sha256": "1db0ed7198274e387b89d72b457dfc8e49fec49484334be967be8ca7d0d515a9"
+    },
+    {
+      "path": "tools/make_stack_cpu.py",
+      "sha256": "2ad4a33195cc6790836e3b98ccf34f6fe83b486db0ef9cefd2e13d79cf843c0b"
+    },
+    {
+      "path": "tools/make_x_register_cpu.py",
+      "sha256": "275bd4f7180d61db761d670c9365ff3926806a8965d76f99bf0f884e560f1aad"
+    },
+    {
+      "path": "tools/run_distributed_load_cpu_fault.py",
+      "sha256": "3f7764d0cc444b28ff171103f09b7584c71ef2775243d8c58179301237baad75"
+    },
+    {
+      "path": "tools/run_distributed_load_job.py",
+      "sha256": "bad00e253e81db6fdf8b1d3786467f705f50128ea41444bfec5e7a00ce0d1788"
+    },
+    {
+      "path": "tools/run_execution_netlist.py",
+      "sha256": "cfa20dded0e929231695bd434133cf6f2697a8faf2d242da6ac0b958325b1134"
+    },
+    {
+      "path": "tools/run_rtl.py",
+      "sha256": "f9b071d1009109cf115977562734881a826a61e046715f5580cee50b746077dd"
+    },
+    {
+      "path": "tools/run_system_cpu.py",
+      "sha256": "c106d0c2d457074718f556a012ead2fcb959163027cdd53d1beebd72408a9438"
+    },
+    {
+      "path": "tools/run_video_cpu_async.py",
+      "sha256": "e319f8d51fcb96c82d3e349179cac12f3ce8fcc677084b08051b62e6b71357bf"
+    },
+    {
+      "path": "tools/tracked_simulation.py",
+      "sha256": "5f155be9ceb4a7f6e7b6f791a45f07b5ed6d73d374264c169ede38c145210cbe"
+    }
+  ],
+  "sources_include_conservative_superset": true,
+  "production_released": false
+}

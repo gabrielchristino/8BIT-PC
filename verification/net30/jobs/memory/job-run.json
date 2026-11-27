@@ -1,0 +1,27 @@
+{
+  "status": "process_finished",
+  "phase": "job",
+  "command": [
+    "/usr/bin/python3",
+    "tools/run_distributed_load_memory.py"
+  ],
+  "cwd": "/mnt/c/Users/gabri/projetos/isa1",
+  "boot_id": "e83b5137-128a-4b62-995b-0b9291433040",
+  "started_unix_seconds": 1795747088.0242574,
+  "limits": {
+    "memory_mb": 1024,
+    "cpu_seconds": 3000,
+    "wall_seconds": 3600,
+    "output_mb_per_file": 8
+  },
+  "stdout_path": "/mnt/c/Users/gabri/projetos/isa1/verification/net30/jobs/memory/job.stdout.log",
+  "stderr_path": "/mnt/c/Users/gabri/projetos/isa1/verification/net30/jobs/memory/job.stderr.log",
+  "simulation_passed": false,
+  "pid": 997,
+  "process_group": 997,
+  "exit": 0,
+  "wall_timeout": false,
+  "seconds": 6.707,
+  "stdout_sha256": "aa994a1bff490e02a89b43e1b0f825fe88bc324a13f7d42b24bf53e24ae15289",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

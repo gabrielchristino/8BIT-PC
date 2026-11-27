@@ -1,0 +1,22 @@
+{
+  "command": [
+    "/home/gabri/.local/opt/isa1-kicad-10.0.8/squashfs-root/usr/bin/kicad-cli",
+    "sch",
+    "export",
+    "pdf",
+    "-o",
+    "/mnt/c/Users/gabri/projetos/isa1/verification/net30/native/video/load_distributed_video.pdf",
+    "/mnt/c/Users/gabri/projetos/isa1/hardware/load_distributed_video/load_distributed_video.kicad_sch"
+  ],
+  "exit": 0,
+  "wall_timeout": false,
+  "seconds": 1.822,
+  "limits": {
+    "memory_mb": 2048,
+    "cpu_seconds": 90,
+    "output_mb_per_file": 8,
+    "wall_seconds": 120
+  },
+  "stdout": "Plotted to '/mnt/c/Users/gabri/projetos/isa1/verification/net30/native/video/load_distributed_video.pdf'.\nDone.\n",
+  "stderr": ""
+}

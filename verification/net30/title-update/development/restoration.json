@@ -1,0 +1,41 @@
+{
+  "scope": "Preserved six partial generated title outputs, then restored exact base bytes for a separate bounded retry. No model or design changed. Initial ERC produced no JSON; original command output was not retained by the first tool. Cause not inferred.",
+  "files": [
+    {
+      "path": "hardware/load_distributed_keyboard/load_distributed_keyboard.kicad_sch",
+      "partial_sha256": "ba167ee57df53c242ef996ed4be4c2014d92a43d3603138455400a37adac5042",
+      "base_sha256": "f24906c3d0d07d1d4daab2aa3dbfc5bcf4e50203f78134451519e51797bbb527",
+      "preserved_at": "verification/net30/title-update/partial-output/hardware/load_distributed_keyboard/load_distributed_keyboard.kicad_sch"
+    },
+    {
+      "path": "hardware/load_distributed_video/load_distributed_video.kicad_sch",
+      "partial_sha256": "2434a9ae9ffa858d48bd43242c096a21f474f37907d1aab4f21ed21197e45640",
+      "base_sha256": "7f665540cca41b015448b5327b52a4c6649840986531be9ec47fd43b1284b85e",
+      "preserved_at": "verification/net30/title-update/partial-output/hardware/load_distributed_video/load_distributed_video.kicad_sch"
+    },
+    {
+      "path": "verification/net30/native/keyboard/load_distributed_keyboard.xml",
+      "partial_sha256": "162b7b895e07faeeb70896cb8785a0f3ffa70da0749aac5e18b103f9ccfc468c",
+      "base_sha256": "8fa907d89b7b752dffce8bf2923568d46a98bc2e94dc74ea4d66a5c877798967",
+      "preserved_at": "verification/net30/title-update/partial-output/verification/net30/native/keyboard/load_distributed_keyboard.xml"
+    },
+    {
+      "path": "verification/net30/native/video/load_distributed_video.xml",
+      "partial_sha256": "b823319b5bf80d88e38d9bc56ec829f020986b143a1e5777c64c008cc90673da",
+      "base_sha256": "c9285484914779a874b39c7e239de1fac037914cb81ce7d56917b2b9776769c7",
+      "preserved_at": "verification/net30/title-update/partial-output/verification/net30/native/video/load_distributed_video.xml"
+    },
+    {
+      "path": "verification/net30/native/video/load_distributed_video.pdf",
+      "partial_sha256": "cbd9de2078861c410b957c9825b5731050ae1b5cfb89b12b7a7c4f4eebae856b",
+      "base_sha256": "f6599c4880f97f0e0bcf71c6e60b2638d68095177a36906c4cf95f370b0acf81",
+      "preserved_at": "verification/net30/title-update/partial-output/verification/net30/native/video/load_distributed_video.pdf"
+    },
+    {
+      "path": "verification/net30/native/video/preview.png",
+      "partial_sha256": "20c2327e6311b30fbcf2c386434a143ef86f170000fbd98637a616b9ef8000e0",
+      "base_sha256": "cf92920cc3fa1880a5cfccc1143783709c36b9c24880b38fbcf33c21db5e0b0e",
+      "preserved_at": "verification/net30/title-update/partial-output/verification/net30/native/video/preview.png"
+    }
+  ]
+}

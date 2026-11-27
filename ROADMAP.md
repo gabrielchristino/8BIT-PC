@@ -40,6 +40,8 @@ Atualização NET-10 (25/11/2026): CPU global por pinos em hardware/cpu_global, 
 
 # Roadmap de continuidade
 
+27/11/2026 — NET30 fecha suas regressões parciais: instruções, cortes, quadros temporizados e boot ideal completo. É candidato digital para continuidade. Próximo: programa completo temporizado próprio, análise global de timing/cargas/energia/POR, DAC e firmware; depois união/ERC/footprints/PCB/DRC/protótipo. NET27 permanece ensaio da NET26, sem atribuição cruzada.
+
 NET30 em validação: quatro canais AHC125 existentes redistribuem as cargas NET29, sem acrescentar CIs. XMLs/união e regressões parciais passaram; fechar quadros temporizados e boot completo antes de promover. Progresso e falha de fixture fria preservada em docs/engineering/NET30.md.
 
 NET29: quatro redes na união excedem o orçamento preliminar de quatro entradas: WDATA0 retido, SELECT_IO, BOOT e H2. Investigar divisão com canais AHC125 livres, em nova variante nativa e com regressões próprias. Não usar o resultado do programa NET27 como aprovação dessa futura mudança. Detalhes em docs/engineering/NET29_LOADS.md.

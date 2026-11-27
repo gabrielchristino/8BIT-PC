@@ -1,0 +1,443 @@
+{
+  "date": "2026-11-27",
+  "arithmetic": {
+    "scope": "Conditional steady-state arithmetic using identified datasheet conditions and receiver profile; not multivariate PVT/power-transient approval.",
+    "ldo_candidate_window_v": [
+      3.207,
+      3.393
+    ],
+    "ldo_budget": "1 percent initial/DC plus10mV max line and50mV max load; different test conditions, combined envelope remains conditional",
+    "supervisor_low_threshold_min_v": 3.02395,
+    "supervisor_release_max_v": 3.19395125,
+    "conditional_release_margin_mv": 13.04875,
+    "at_5pct_overdrive_below_minimum_threshold_v": 2.8727525,
+    "minimum_bleed_load_ma": 0.31752475247524753,
+    "local_input_leakage_pull_down_max_v": 0.23735,
+    "receiver_profile": "TTL thresholds2.0/0.8V, resistance>=2.2k to a0..5.5V bias, additional leakage<=100uA. Not universal monitor compatibility.",
+    "dc_corners": [
+      {
+        "series_ohm": 74.25,
+        "receiver_ohm": 2200.0,
+        "bias_v": 0.0,
+        "leak_a": -0.0001,
+        "high": false,
+        "receiver_v": 0.3797581620314389,
+        "output_current_a": 0.0002726173463779268
+      },
+      {
+        "series_ohm": 74.25,
+        "receiver_ohm": 2200.0,
+        "bias_v": 0.0,
+        "leak_a": -0.0001,
+        "high": true,
+        "receiver_v": 2.3144619105199515,
+        "output_current_a": 0.0011520281411454326
+      },
+      {
+        "series_ohm": 74.25,
+        "receiver_ohm": 2200.0,
+        "bias_v": 0.0,
+        "leak_a": 0.0001,
+        "high": false,
+        "receiver_v": 0.39412333736396615,
+        "output_current_a": 7.914697152907552e-05
+      },
+      {
+        "series_ohm": 74.25,
+        "receiver_ohm": 2200.0,
+        "bias_v": 0.0,
+        "leak_a": 0.0001,
+        "high": true,
+        "receiver_v": 2.328827085852479,
+        "output_current_a": 0.0009585577662965813
+      },
+      {
+        "series_ohm": 74.25,
+        "receiver_ohm": 2200.0,
+        "bias_v": 5.5,
+        "leak_a": -0.0001,
+        "high": false,
+        "receiver_v": 0.559322853688029,
+        "output_current_a": 0.0021457623392327142
+      },
+      {
+        "series_ohm": 74.25,
+        "receiver_ohm": 2200.0,
+        "bias_v": 5.5,
+        "leak_a": -0.0001,
+        "high": true,
+        "receiver_v": 2.494026602176542,
+        "output_current_a": 0.0012663515444652084
+      },
+      {
+        "series_ohm": 74.25,
+        "receiver_ohm": 2200.0,
+        "bias_v": 5.5,
+        "leak_a": 0.0001,
+        "high": false,
+        "receiver_v": 0.5736880290205563,
+        "output_current_a": 0.0023392327140815653
+      },
+      {
+        "series_ohm": 74.25,
+        "receiver_ohm": 2200.0,
+        "bias_v": 5.5,
+        "leak_a": 0.0001,
+        "high": true,
+        "receiver_v": 2.5083917775090687,
+        "output_current_a": 0.0014598219193140596
+      },
+      {
+        "series_ohm": 74.25,
+        "receiver_ohm": 1000000000000.0,
+        "bias_v": 0.0,
+        "leak_a": -0.0001,
+        "high": false,
+        "receiver_v": 0.3925749999708513,
+        "output_current_a": 0.000100000000392575
+      },
+      {
+        "series_ohm": 74.25,
+        "receiver_ohm": 1000000000000.0,
+        "bias_v": 0.0,
+        "leak_a": -0.0001,
+        "high": true,
+        "receiver_v": 2.3925749998223513,
+        "output_current_a": 0.000100000002392575
+      },
+      {
+        "series_ohm": 74.25,
+        "receiver_ohm": 1000000000000.0,
+        "bias_v": 0.0,
+        "leak_a": 0.0001,
+        "high": false,
+        "receiver_v": 0.4074249999697487,
+        "output_current_a": 9.9999999592575e-05
+      },
+      {
+        "series_ohm": 74.25,
+        "receiver_ohm": 1000000000000.0,
+        "bias_v": 0.0,
+        "leak_a": 0.0001,
+        "high": true,
+        "receiver_v": 2.4074249998212487,
+        "output_current_a": 9.9999997592575e-05
+      },
+      {
+        "series_ohm": 74.25,
+        "receiver_ohm": 1000000000000.0,
+        "bias_v": 5.5,
+        "leak_a": -0.0001,
+        "high": false,
+        "receiver_v": 0.3925750003792263,
+        "output_current_a": 9.9999994892575e-05
+      },
+      {
+        "series_ohm": 74.25,
+        "receiver_ohm": 1000000000000.0,
+        "bias_v": 5.5,
+        "leak_a": -0.0001,
+        "high": true,
+        "receiver_v": 2.3925750002307264,
+        "output_current_a": 9.9999996892575e-05
+      },
+      {
+        "series_ohm": 74.25,
+        "receiver_ohm": 1000000000000.0,
+        "bias_v": 5.5,
+        "leak_a": 0.0001,
+        "high": false,
+        "receiver_v": 0.4074250003781237,
+        "output_current_a": 0.000100000005092575
+      },
+      {
+        "series_ohm": 74.25,
+        "receiver_ohm": 1000000000000.0,
+        "bias_v": 5.5,
+        "leak_a": 0.0001,
+        "high": true,
+        "receiver_v": 2.407425000229624,
+        "output_current_a": 0.000100000003092575
+      },
+      {
+        "series_ohm": 75.75,
+        "receiver_ohm": 2200.0,
+        "bias_v": 0.0,
+        "leak_a": -0.0001,
+        "high": false,
+        "receiver_v": 0.3793628474129408,
+        "output_current_a": 0.0002724376579149731
+      },
+      {
+        "series_ohm": 75.75,
+        "receiver_ohm": 2200.0,
+        "bias_v": 0.0,
+        "leak_a": -0.0001,
+        "high": true,
+        "receiver_v": 2.3127913874546855,
+        "output_current_a": 0.0011512688124794023
+      },
+      {
+        "series_ohm": 75.75,
+        "receiver_ohm": 2200.0,
+        "bias_v": 0.0,
+        "leak_a": 0.0001,
+        "high": false,
+        "receiver_v": 0.394008568603757,
+        "output_current_a": 7.909480391079863e-05
+      },
+      {
+        "series_ohm": 75.75,
+        "receiver_ohm": 2200.0,
+        "bias_v": 0.0,
+        "leak_a": 0.0001,
+        "high": true,
+        "receiver_v": 2.3274371086455017,
+        "output_current_a": 0.000957925958475228
+      },
+      {
+        "series_ohm": 75.75,
+        "receiver_ohm": 2200.0,
+        "bias_v": 5.5,
+        "leak_a": -0.0001,
+        "high": false,
+        "receiver_v": 0.5624343622981435,
+        "output_current_a": 0.0021443480171372074
+      },
+      {
+        "series_ohm": 75.75,
+        "receiver_ohm": 2200.0,
+        "bias_v": 5.5,
+        "leak_a": -0.0001,
+        "high": true,
+        "receiver_v": 2.495862902339888,
+        "output_current_a": 0.0012655168625727781
+      },
+      {
+        "series_ohm": 75.75,
+        "receiver_ohm": 2200.0,
+        "bias_v": 5.5,
+        "leak_a": 0.0001,
+        "high": false,
+        "receiver_v": 0.5770800834889597,
+        "output_current_a": 0.002337690871141382
+      },
+      {
+        "series_ohm": 75.75,
+        "receiver_ohm": 2200.0,
+        "bias_v": 5.5,
+        "leak_a": 0.0001,
+        "high": true,
+        "receiver_v": 2.510508623530704,
+        "output_current_a": 0.0014588597165769526
+      },
+      {
+        "series_ohm": 75.75,
+        "receiver_ohm": 1000000000000.0,
+        "bias_v": 0.0,
+        "leak_a": -0.0001,
+        "high": false,
+        "receiver_v": 0.3924249999702738,
+        "output_current_a": 0.000100000000392425
+      },
+      {
+        "series_ohm": 75.75,
+        "receiver_ohm": 1000000000000.0,
+        "bias_v": 0.0,
+        "leak_a": -0.0001,
+        "high": true,
+        "receiver_v": 2.3924249998187737,
+        "output_current_a": 0.000100000002392425
+      },
+      {
+        "series_ohm": 75.75,
+        "receiver_ohm": 1000000000000.0,
+        "bias_v": 0.0,
+        "leak_a": 0.0001,
+        "high": false,
+        "receiver_v": 0.4075749999691262,
+        "output_current_a": 9.9999999592425e-05
+      },
+      {
+        "series_ohm": 75.75,
+        "receiver_ohm": 1000000000000.0,
+        "bias_v": 0.0,
+        "leak_a": 0.0001,
+        "high": true,
+        "receiver_v": 2.4075749998176263,
+        "output_current_a": 9.9999997592425e-05
+      },
+      {
+        "series_ohm": 75.75,
+        "receiver_ohm": 1000000000000.0,
+        "bias_v": 5.5,
+        "leak_a": -0.0001,
+        "high": false,
+        "receiver_v": 0.3924250003868988,
+        "output_current_a": 9.9999994892425e-05
+      },
+      {
+        "series_ohm": 75.75,
+        "receiver_ohm": 1000000000000.0,
+        "bias_v": 5.5,
+        "leak_a": -0.0001,
+        "high": true,
+        "receiver_v": 2.3924250002353986,
+        "output_current_a": 9.9999996892425e-05
+      },
+      {
+        "series_ohm": 75.75,
+        "receiver_ohm": 1000000000000.0,
+        "bias_v": 5.5,
+        "leak_a": 0.0001,
+        "high": false,
+        "receiver_v": 0.4075750003857512,
+        "output_current_a": 0.000100000005092425
+      },
+      {
+        "series_ohm": 75.75,
+        "receiver_ohm": 1000000000000.0,
+        "bias_v": 5.5,
+        "leak_a": 0.0001,
+        "high": true,
+        "receiver_v": 2.4075750002342513,
+        "output_current_a": 0.000100000003092425
+      }
+    ],
+    "rejected_shortcuts": {
+      "sync_75ohm_receiver_not_supported": true,
+      "initial_ldo_accuracy_alone_is_incomplete": true,
+      "supervisor_20us_at_5pct_overdrive_does_not_prove_3v_cutoff": true,
+      "zero_volt_ioff_does_not_specify_intermediate_ramp": true,
+      "tps731_reverse_block_needs_enable_low_before_input_removal": true
+    },
+    "core_input_operating_margin_to_5_5v_mv": 19.05,
+    "negative_cutoff_result_is_not_approved_power_sequence": true
+  },
+  "pin_negatives": [
+    {
+      "case": "buffer_channels_swapped",
+      "rejected": true,
+      "reason": "('U4', '6', 'H_BUFFER', 'V_BUFFER')",
+      "file": "verification/net34/pin-negatives/buffer_channels_swapped.xml"
+    },
+    {
+      "case": "buffer_wrong_rail",
+      "rejected": true,
+      "reason": "('U4', '8', 'SYNC_3V3', 'CORE_VDD')",
+      "file": "verification/net34/pin-negatives/buffer_wrong_rail.xml"
+    },
+    {
+      "case": "supervisor_wrong_sense",
+      "rejected": true,
+      "reason": "('U2', '5', 'SYNC_3V3', 'CORE_VDD')",
+      "file": "verification/net34/pin-negatives/supervisor_wrong_sense.xml"
+    },
+    {
+      "case": "gate_ready_bypassed",
+      "rejected": true,
+      "reason": "('U3', '1', 'VIDEO_READY', 'SYNC_3V3')",
+      "file": "verification/net34/pin-negatives/gate_ready_bypassed.xml"
+    },
+    {
+      "case": "oe_grounded",
+      "rejected": true,
+      "reason": "('U4', '1', 'SYNC_OE_N', 'GND')",
+      "file": "verification/net34/pin-negatives/oe_grounded.xml"
+    },
+    {
+      "case": "ldo_enable_tied_to_input",
+      "rejected": true,
+      "reason": "",
+      "file": "verification/net34/pin-negatives/ldo_enable_tied_to_input.xml"
+    },
+    {
+      "case": "series_shortened",
+      "rejected": true,
+      "reason": "('R4', '2', 'H_OUT', 'H_BUFFER')",
+      "file": "verification/net34/pin-negatives/series_shortened.xml"
+    },
+    {
+      "case": "ready_pull_wrong_rail",
+      "rejected": true,
+      "reason": "('R3', '2', 'GND', 'SYNC_3V3')",
+      "file": "verification/net34/pin-negatives/ready_pull_wrong_rail.xml"
+    }
+  ],
+  "rc_proxy": [
+    {
+      "load_pf": 50,
+      "samples": 8024,
+      "minimum_1_to_3us_v": 3.13945946,
+      "maximum_6_to_7us_v": 1.46457658e-177,
+      "scope": "Illustrative RC load; source Ron, supply and edge are selected hypotheses, not guaranteed chip/cable behavior."
+    },
+    {
+      "load_pf": 250,
+      "samples": 8024,
+      "minimum_1_to_3us_v": 3.13945946,
+      "maximum_6_to_7us_v": 1.34821894e-35,
+      "scope": "Illustrative RC load; source Ron, supply and edge are selected hypotheses, not guaranteed chip/cable behavior."
+    },
+    {
+      "load_pf": 1000,
+      "samples": 8024,
+      "minimum_1_to_3us_v": 3.13912779,
+      "maximum_6_to_7us_v": 4.52938529e-09,
+      "scope": "Illustrative RC load; source Ron, supply and edge are selected hypotheses, not guaranteed chip/cable behavior."
+    }
+  ],
+  "failures": [],
+  "sources": [
+    {
+      "path": "tools/check_sync_electrical.py",
+      "sha256": "c253fc19e2980f381f4394ca6bd690771c9b778f65d33d70f460ced5b6afbd5e"
+    },
+    {
+      "path": "tools/build_vga_sync.py",
+      "sha256": "61f46dc7e829a836d1c5c59169cfa0f9c73cbc02c5a8834dd986b7a20a425288"
+    },
+    {
+      "path": "tools/build_dac_leaf.py",
+      "sha256": "b86f69adde2255b791d863b37ae6c74981eac29286ac92df4378fb0d615c9598"
+    },
+    {
+      "path": "tools/check_dac_leaf.py",
+      "sha256": "d79d5f1b6ea6f4b7bb9ee4f77aafb0ccf4b84554cb0c1c4c434da7ca10c1de88"
+    },
+    {
+      "path": "tools/limited_process.py",
+      "sha256": "c19d8efcf4dffa5fbff513360a40f27f200b98c459050ad40662192039ee3ffa"
+    },
+    {
+      "path": "hardware/vga_sync_3v3/design.json",
+      "sha256": "a8f02b049d1500dd6901c1bbc2280f0076d22db0545e4a22421f9db0af4deaf8"
+    },
+    {
+      "path": "hardware/vga_sync_3v3/package-functions.json",
+      "sha256": "33d71540564d259d8dc4a4aa1bb1a336c477f3e5923e283f3c18e08088e129a8"
+    },
+    {
+      "path": "verification/net34/native/vga_sync_3v3.xml",
+      "sha256": "e19e49283c4b939270423f5c7ab88bf3a9bc775c39681273a2fe48965c844423"
+    },
+    {
+      "path": "references/net34/tps709.pdf",
+      "sha256": "8ac3e060d3902febc8f87c9bdd4ce8948f3d18d9d0a9ef723b343802cce67163"
+    },
+    {
+      "path": "references/net34/sn74lvc1g132.pdf",
+      "sha256": "fae33d78fe46834ab99230aaa1106f58321f23cf06c65be9cf08ea9c0dbcb623"
+    },
+    {
+      "path": "references/net23/sn74lvc2g125.pdf",
+      "sha256": "15dab14095892f561bc7407dde6c7fb2fb75d92c6bdafc34e949e5dca1fed340"
+    },
+    {
+      "path": "references/net20/tps3808.pdf",
+      "sha256": "b25476cfb25be6ec75733b5a468123cc01a57996e4d75981cef11523876b0c83"
+    }
+  ],
+  "ramp_transient_esd_qualified": false,
+  "production_released": false
+}

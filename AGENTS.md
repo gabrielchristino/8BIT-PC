@@ -1,3 +1,12 @@
+## Continuidade NET34 - sincronismos3,3V supervisionados
+
+- Leia docs/engineering/NET34_SYNC.md. hardware/vga_sync_3v3 e folha separada17componentes/4CIs/50pinos:TPS70933DBVR, TPS3808G33DBVR, SN74LVC1G132DBVR e SN74LVC2G125DCTR. Respeitar pinagemDCT8pinos (Y0=6,Y1=3); TPS709EN e CTsupervisor intencionalmente abertos. Nao ligar TPS709EN a VIN. Footprints nao qualificados, ERC4itens sem excecoes.
+- OE_N=NANDSchmitt(VIDEO_READY,reset33_liberado), pullup10k; reset4,7k; entradas47k ao terra. Rseries75ohm em H/V nao e shunt75ohm de RGB. LVC125A nao herdou Ioff do LVC2G125. Ioff aVCC0 nao prova isolamento durante rampa ou absorcao de corrente com saida ativamente alta.
+- Dois cenarios de estados14checks e um negativo, dois cenarios raster/DAC/driver com duas epocas e210000amostras/256cores passaram. Rail0/valido/rampa e release do supervisor sao forcepoints. Rampa produzX, nao aprovacaoPOR; quadros observam saida dos buffers ANTES dos resistores. Sem CPU/SRAM/analogico vendor.
+-32cantosDC e tres proxiesRC sao condicionais. Perfil de receptor:>=2,2k ao terra; HIGH so absorve<=100uA, LOW pode fornecer<=2mA; sem injecao em HIGH. Perfil inicial com bias5,5V arbitrario foi rejeitado na revisao e preservado em development/receiver-profile. Oito XMLs fora do contrato rejeitados. Sem compatibilidade universal/ESD/hotplug aprovados.
+- EnvelopeLDO3,207..3,393V soma parcelas de condicoes distintas; retomada do supervisor tem margem preliminar13,04875mV.20us de deteccao no overdrive especificado nao garantem desligamento antes3V; transientes/ripple permanecem abertos. Capacitancias efetivas e corrente da placa nao fechadas. TPS709reverso abaixo1,8V tem restricoes;10nA e tipico. TPS731 pesquisado, nao adotado, exigeENbaixo antesVIN cair.
+- NET30/33 e originais intactos. Dois boots completos temporizados continuam separados, fontes congeladas; conferir PID/boot_id/progresso, sem duplicar ou declarar aprovacao por progresso.
+
 ## Continuidade NET33 - variante video/DAC, sem promocao global
 
 - Leia docs/engineering/NET33_VIDEO_DAC.md. hardware/dac_packet_video deriva de NET30:14pinos antes livres mudam e U38AHC174/C38 sao acrescentados. ORU27ch2/3 divide azul; U35ch3 bufferP1; U32ch1..4 inverte sync antes/depois do registro. CLR U38 usa BUF_1_2 (tres cargas), nao LOCAL_RESET_N (ja quatro). Videos38CIs e tresDACs sao somente duas folhas experimentais, nao nova contagem global.

@@ -74,3 +74,8 @@ revisions/** -text
 
 # Preserve exact compiled NET33 fixture/model evidence.
 /verification/net33/**/*.sv -whitespace
+
+# Exact NET34 primary-source captures and simulator evidence.
+/references/net34/** -text -whitespace
+/verification/net34/**/values.dat -text -whitespace
+/verification/net34/**/*.sv -whitespace

@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-27",
+  "kind": "Primary-source review; capture ledgers separately identify actual downloaded bytes",
+  "sources": [
+    {"file": "references/net34/sn74lvc1g132.pdf", "revision": "SCES546E August2026", "used": "DBV pins, Schmitt thresholds, Ioff and delay tables;50pF full-temperature maximum6.5ns differs from15pF headline"},
+    {"file": "references/net34/tps709.pdf", "revision": "SBVS186H July2021", "used": "TPS70933 DBV pinout, EN intentionally open, accuracy/line/load bounds, reverse-current protection conditions"},
+    {"file": "references/net23/sn74lvc2g125.pdf", "revision": "SCES204Q March2017", "used": "DCT/DCU8pin map, Ioff at VCC0,5.5V input limit, VOH/VOL and selected timing bounds"},
+    {"file": "references/net20/tps3808.pdf", "revision": "SBVS050N", "used": "G33 fixed threshold, hysteresis, CT-open release and overdrive-dependent detection; DBV pinout"},
+    {"file": "references/net34/tps731.pdf", "used": "Alternative rejected here: reverse block requires EN low before removing VIN;1-percent overall accuracy has10mA minimum load"},
+    {"url": "https://www.ti.com/lit/ds/symlink/tps7a20.pdf", "original_local_bytes": false, "used": "Alternative only; reverse-current and VOUT/VIN restriction require additional design"},
+    {"file": "references/net22/sn74lvc125a.pdf", "used": "Alternative only;5.5V input tolerance was not conflated with a missing Ioff guarantee"},
+    {"url": "https://www.ti.com/lit/ds/symlink/tpd7s019.pdf", "original_local_bytes": false, "used": "Integrated VGA5V driver/protection alternative researched; not adopted or qualified"}
+  ],
+  "receiver_profile_is_conditional": true,
+  "analog_power_and_esd_validated": false,
+  "bom_adopted": false
+}

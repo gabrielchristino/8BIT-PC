@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-27",
+  "scope": "Candidate source capture, not BOM adoption",
+  "tool_sha256": "aea14e87fe13494ec05be1766f6c78a9ac363e32afaae20bdaf4bed7b13328c9",
+  "limits": "25s network timeout,8MiB per PDF,30s pdftotext",
+  "rows": [
+    {
+      "path": "references/net34/tps709.pdf",
+      "requested_url": "https://www.ti.com/lit/ds/symlink/tps709.pdf",
+      "date": "2026-11-27",
+      "final_url": "https://www.ti.com/lit/ds/symlink/tps709.pdf",
+      "status": 200,
+      "downloaded": true,
+      "sha256": "8ac3e060d3902febc8f87c9bdd4ce8948f3d18d9d0a9ef723b343802cce67163",
+      "bytes": 2270426,
+      "extraction_exit": 0,
+      "extraction_stderr": "",
+      "extraction": "references/net34/tps709.pdf.txt",
+      "extraction_sha256": "ed13457e459e46b1cc6b90068ff5ab9db438d6c086735e08b3691da3c74af167"
+    }
+  ],
+  "collector_template_sha256": "015c61fa329a3240aa807c4d9b5fd945adb5e6af349f48387e79de56829f90a6"
+}

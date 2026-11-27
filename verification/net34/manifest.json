@@ -1,0 +1,518 @@
+{
+  "date": "2026-11-27",
+  "base_git_commit": "8aa26ed00ec94f87f3f21fa8cd93f4b1abf1e14b",
+  "source_records_checked": 46,
+  "historical_source_resolutions": [
+    {
+      "path": "tools/check_sync_electrical.py",
+      "sha256": "c253fc19e2980f381f4394ca6bd690771c9b778f65d33d70f460ced5b6afbd5e",
+      "preserved_source": "verification/net34/development/receiver-profile/check_sync_electrical.py"
+    }
+  ],
+  "versions": {
+    "python": {
+      "command": [
+        "wsl",
+        "-d",
+        "Ubuntu",
+        "--",
+        "python3",
+        "--version"
+      ],
+      "exit": 0,
+      "stdout": "Python 3.12.3\n",
+      "stderr": ""
+    },
+    "iverilog": {
+      "command": [
+        "wsl",
+        "-d",
+        "Ubuntu",
+        "--",
+        "iverilog",
+        "-V"
+      ],
+      "exit": 0,
+      "stdout": "Icarus Verilog version 12.0 (stable) ()\n\nCopyright (c) 2000-2021 Stephen Williams (steve@icarus.com)\n\n  This program is free software; you can redistribute it and/or modify\n  it under the terms of the GNU General Public License as published by\n  the Free Software Foundation; either version 2 of the License, or\n  (at your option) any later version.\n\n  This program is distributed in the hope that it will be useful,\n  but WITHOUT ANY WARRANTY; without even the implied warranty of\n  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n  GNU General Public License for more details.\n\n  You should have received a copy of the GNU General Public License along\n  with this program; if not, write to the Free Software Foundation, Inc.,\n  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.\n\nIcarus Verilog Preprocessor version 12.0 (stable) ()\n\nCopyright (c) 1999-2021 Stephen Williams (steve@icarus.com)\n\n  This program is free software; you can redistribute it and/or modify\n  it under the terms of the GNU General Public License as published by\n  the Free Software Foundation; either version 2 of the License, or\n  (at your option) any later version.\n\n  This program is distributed in the hope that it will be useful,\n  but WITHOUT ANY WARRANTY; without even the implied warranty of\n  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n  GNU General Public License for more details.\n\n  You should have received a copy of the GNU General Public License along\n  with this program; if not, write to the Free Software Foundation, Inc.,\n  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.\n\nIcarus Verilog Parser/Elaborator version 12.0 (stable) ()\n\nCopyright (c) 1998-2021 Stephen Williams (steve@icarus.com)\n\n  This program is free software; you can redistribute it and/or modify\n  it under the terms of the GNU General Public License as published by\n  the Free Software Foundation; either version 2 of the License, or\n  (at your option) any later version.\n\n  This program is distributed in the hope that it will be useful,\n  but WITHOUT ANY WARRANTY; without even the implied warranty of\n  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n  GNU General Public License for more details.\n\n  You should have received a copy of the GNU General Public License along\n  with this program; if not, write to the Free Software Foundation, Inc.,\n  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.\n\n FLAGS DLL vvp.tgt\nvvp.tgt: Icarus Verilog VVP Code Generator 12.0 (stable) ()\n\nCopyright (c) 2001-2021 Stephen Williams (steve@icarus.com)\n\n  This program is free software; you can redistribute it and/or modify\n  it under the terms of the GNU General Public License as published by\n  the Free Software Foundation; either version 2 of the License, or\n  (at your option) any later version.\n\n  This program is distributed in the hope that it will be useful,\n  but WITHOUT ANY WARRANTY; without even the implied warranty of\n  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n  GNU General Public License for more details.\n\n  You should have received a copy of the GNU General Public License along\n  with this program; if not, write to the Free Software Foundation, Inc.,\n  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.\n\n",
+      "stderr": ""
+    },
+    "ngspice": {
+      "command": [
+        "wsl",
+        "-d",
+        "Ubuntu",
+        "--",
+        "ngspice",
+        "--version"
+      ],
+      "exit": 0,
+      "stdout": "******\n** ngspice-42 : Circuit level simulation program\n** Compiled with KLU Direct Linear Solver\n** The U. C. Berkeley CAD Group\n** Copyright 1985-1994, Regents of the University of California.\n** Copyright 2001-2023, The ngspice team.\n** Please get your ngspice manual from https://ngspice.sourceforge.io/docs.html\n** Please file your bug-reports at http://ngspice.sourceforge.net/bugrep.html\n** Creation Date: Sun Mar 31 20:15:14 UTC 2024\n******\n",
+      "stderr": ""
+    },
+    "pdftotext": {
+      "command": [
+        "wsl",
+        "-d",
+        "Ubuntu",
+        "--",
+        "pdftotext",
+        "-v"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": "pdftotext version 24.02.0\nCopyright 2005-2024 The Poppler Developers - http://poppler.freedesktop.org\nCopyright 1996-2011, 2022 Glyph & Cog, LLC\n"
+    },
+    "kicad": {
+      "command": [
+        "wsl",
+        "-d",
+        "Ubuntu",
+        "--",
+        "/home/gabri/.local/opt/isa1-kicad-10.0.8/squashfs-root/usr/bin/kicad-cli",
+        "version"
+      ],
+      "exit": 0,
+      "stdout": "10.0.8\n",
+      "stderr": ""
+    }
+  },
+  "native_pin_values_checked": true,
+  "qualified_state_scenarios": 2,
+  "state_checks_each": 14,
+  "native_frame_scenarios": 2,
+  "reset_epochs_each": 2,
+  "samples_each": 210000,
+  "colors_each": 256,
+  "functional_negative": 1,
+  "pin_negatives": 8,
+  "conditional_dc_corners": 32,
+  "rc_proxy_cases": 3,
+  "rejected_receiver_profile_preserved": true,
+  "visual_review": "All four packages, passive groups and intentional EN/CT no-connects visible in exported A3 preview.",
+  "analog_regulator_supervisor_ramp_qualified": false,
+  "universal_monitor_compatibility": false,
+  "erc_approved": false,
+  "production_released": false,
+  "scope": "Experimental supervised sync stage; qualified functional states, conditional DC and ideal RC. No analog power/ESD/manufacturing approval.",
+  "excluded_pending_run_prefix": [
+    "verification/net27/full-timed/attempt-001/",
+    "verification/net30/full-timed/attempt-001/"
+  ],
+  "excluded_files_at_snapshot": [
+    "verification/net27/full-timed/attempt-001/adapted-program-runner.py",
+    "verification/net27/full-timed/attempt-001/adapted-system-main.py",
+    "verification/net27/full-timed/attempt-001/compile-run.json",
+    "verification/net27/full-timed/attempt-001/compile.stderr.log",
+    "verification/net27/full-timed/attempt-001/compile.stdout.log",
+    "verification/net27/full-timed/attempt-001/compiler-inputs.json",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/generated-bench.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/hardware/common_request/common_request_netlist.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/hardware/cpu_global/cpu_global_netlist.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/hardware/local_phase_keyboard/local_phase_keyboard_netlist.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/hardware/local_phase_reset/local_phase_reset_netlist.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/hardware/memory_bus/memory_bus_netlist.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/hardware/memory_decode/memory_decode_netlist.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/sim/hdl/hc_models.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/sim/net02/package_models.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/sim/net03/package_models.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/sim/net04/package_models.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/sim/net13/memory_devices.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/sim/net14c/package_models_async.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/sim/net19a/package_models.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/sim/net22/phase_packages.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/sim/net23/clock_models.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/sim/net25/warm_packages.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/sim/net26/isa1_memory_local_phase.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/sim/net26/local_video_async.sv",
+    "verification/net27/full-timed/attempt-001/input-images/control_lane0.hex",
+    "verification/net27/full-timed/attempt-001/input-images/control_lane1.hex",
+    "verification/net27/full-timed/attempt-001/input-images/control_lane2.hex",
+    "verification/net27/full-timed/attempt-001/input-images/control_lane3.hex",
+    "verification/net27/full-timed/attempt-001/input-images/program_bus.hex",
+    "verification/net27/full-timed/attempt-001/input-images/program_state.hex",
+    "verification/net27/full-timed/attempt-001/input-images/rom_image.hex",
+    "verification/net27/full-timed/attempt-001/input-images/vectors.hex",
+    "verification/net27/full-timed/attempt-001/run-origin.json",
+    "verification/net27/full-timed/attempt-001/run-state.json",
+    "verification/net27/full-timed/attempt-001/simulation.stderr.log",
+    "verification/net27/full-timed/attempt-001/simulation.stdout.log",
+    "verification/net27/full-timed/attempt-001/system-tb_rtl_program-timed.sv",
+    "verification/net30/full-timed/attempt-001/adapted-program-runner.py",
+    "verification/net30/full-timed/attempt-001/adapted-system-main.py",
+    "verification/net30/full-timed/attempt-001/compile-run.json",
+    "verification/net30/full-timed/attempt-001/compile.stderr.log",
+    "verification/net30/full-timed/attempt-001/compile.stdout.log",
+    "verification/net30/full-timed/attempt-001/compiler-inputs.json",
+    "verification/net30/full-timed/attempt-001/compiler-inputs/generated-bench.sv",
+    "verification/net30/full-timed/attempt-001/compiler-inputs/hardware/common_request/common_request_netlist.sv",
+    "verification/net30/full-timed/attempt-001/compiler-inputs/hardware/cpu_global/cpu_global_netlist.sv",
+    "verification/net30/full-timed/attempt-001/compiler-inputs/hardware/load_distributed_bus/load_distributed_bus_netlist.sv",
+    "verification/net30/full-timed/attempt-001/compiler-inputs/hardware/load_distributed_keyboard/load_distributed_keyboard_netlist.sv",
+    "verification/net30/full-timed/attempt-001/compiler-inputs/hardware/local_phase_reset/local_phase_reset_netlist.sv",
+    "verification/net30/full-timed/attempt-001/compiler-inputs/hardware/memory_decode/memory_decode_netlist.sv",
+    "verification/net30/full-timed/attempt-001/compiler-inputs/sim/hdl/hc_models.sv",
+    "verification/net30/full-timed/attempt-001/compiler-inputs/sim/net02/package_models.sv",
+    "verification/net30/full-timed/attempt-001/compiler-inputs/sim/net03/package_models.sv",
+    "verification/net30/full-timed/attempt-001/compiler-inputs/sim/net04/package_models.sv",
+    "verification/net30/full-timed/attempt-001/compiler-inputs/sim/net13/memory_devices.sv",
+    "verification/net30/full-timed/attempt-001/compiler-inputs/sim/net14c/package_models_async.sv",
+    "verification/net30/full-timed/attempt-001/compiler-inputs/sim/net19a/package_models.sv",
+    "verification/net30/full-timed/attempt-001/compiler-inputs/sim/net22/phase_packages.sv",
+    "verification/net30/full-timed/attempt-001/compiler-inputs/sim/net23/clock_models.sv",
+    "verification/net30/full-timed/attempt-001/compiler-inputs/sim/net25/warm_packages.sv",
+    "verification/net30/full-timed/attempt-001/compiler-inputs/sim/net30/isa1_memory_loads.sv",
+    "verification/net30/full-timed/attempt-001/compiler-inputs/sim/net30/load_video_async.sv",
+    "verification/net30/full-timed/attempt-001/input-images/control_lane0.hex",
+    "verification/net30/full-timed/attempt-001/input-images/control_lane1.hex",
+    "verification/net30/full-timed/attempt-001/input-images/control_lane2.hex",
+    "verification/net30/full-timed/attempt-001/input-images/control_lane3.hex",
+    "verification/net30/full-timed/attempt-001/input-images/program_bus.hex",
+    "verification/net30/full-timed/attempt-001/input-images/program_state.hex",
+    "verification/net30/full-timed/attempt-001/input-images/rom_image.hex",
+    "verification/net30/full-timed/attempt-001/input-images/vectors.hex",
+    "verification/net30/full-timed/attempt-001/run-origin.json",
+    "verification/net30/full-timed/attempt-001/run-state.json",
+    "verification/net30/full-timed/attempt-001/simulation.stderr.log",
+    "verification/net30/full-timed/attempt-001/simulation.stdout.log",
+    "verification/net30/full-timed/attempt-001/system-tb_rtl_program-timed.sv"
+  ],
+  "commands": [
+    "python3 tools/build_vga_sync.py",
+    "python3 tools/run_sync_checks.py",
+    "python3 tools/check_sync_electrical.py",
+    "python tools/record_net34_results.py",
+    "python tools/stage_net34_results.py verification/net34/manifest.json"
+  ],
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 3275,
+      "sha256": "028228fa92b02bf45ef991352a9e7bc44bb25c15e4b79bd41b6027b6f1c15cd2"
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 45394,
+      "sha256": "dac54fc7cceb83020360503d4918cba58bd5a56c15bfe275bc0da6517731b0ec"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "bytes": 21340,
+      "sha256": "81807b7b19aca16b3342f99dd8e095754f004f95bdcfe572c17df8e246239a4f"
+    },
+    {
+      "path": "DECISIONS.md",
+      "bytes": 55045,
+      "sha256": "88fb5a25f392346b587d5543ba40afeb95d45295bba41f32d480d5214a60703a"
+    },
+    {
+      "path": "PROVENANCE.md",
+      "bytes": 30971,
+      "sha256": "5255e0a40913dce46faf1b59af733af7b732d8ab1f26f46d0449d29fec147f30"
+    },
+    {
+      "path": "README.md",
+      "bytes": 13911,
+      "sha256": "8bb141158d8d1f7a030ce4ac717bc2bd8ae9ac03f6de68ba14441a1c0577d56a"
+    },
+    {
+      "path": "ROADMAP.md",
+      "bytes": 23872,
+      "sha256": "d01be3f3dee5b0e76c13ee46c5c0ab297dfe32771da9562d865d66924f7a5acf"
+    },
+    {
+      "path": "docs/engineering/NET34_SYNC.md",
+      "bytes": 7842,
+      "sha256": "4819993763b11984184c21effe55358711cade5c7a270dda18f3d7b4868f7c4d"
+    },
+    {
+      "path": "docs/engineering/VALIDATION_STATUS.md",
+      "bytes": 9392,
+      "sha256": "95cb8cb2cd745852121d25b10ae3f8a48c4e610caa2860761fa81fa1e70e4677"
+    },
+    {
+      "path": "hardware/vga_sync_3v3/design.json",
+      "bytes": 4822,
+      "sha256": "a8f02b049d1500dd6901c1bbc2280f0076d22db0545e4a22421f9db0af4deaf8"
+    },
+    {
+      "path": "hardware/vga_sync_3v3/package-functions.json",
+      "bytes": 2550,
+      "sha256": "33d71540564d259d8dc4a4aa1bb1a336c477f3e5923e283f3c18e08088e129a8"
+    },
+    {
+      "path": "hardware/vga_sync_3v3/pinmap.csv",
+      "bytes": 1232,
+      "sha256": "ab45e5775fc67180493e09f7b70ccb8f2446f05e2570ef9597cf433346b6fdc2"
+    },
+    {
+      "path": "hardware/vga_sync_3v3/sym-lib-table",
+      "bytes": 169,
+      "sha256": "7807ccdaff29f5405d175a61c06fe8556a501ed7b279d2f7bd347779d5a75886"
+    },
+    {
+      "path": "hardware/vga_sync_3v3/sync_packages.kicad_sym",
+      "bytes": 6817,
+      "sha256": "7f451451805a2c54c3f1e14f777e359e44616734994d6bb2da61a11822ef2a11"
+    },
+    {
+      "path": "hardware/vga_sync_3v3/vga_sync_3v3.kicad_pro",
+      "bytes": 79,
+      "sha256": "6d125bd67f4f4509994ee338ba28b8a331a5ec160e59da0592e2f06d757f11c0"
+    },
+    {
+      "path": "hardware/vga_sync_3v3/vga_sync_3v3.kicad_sch",
+      "bytes": 23467,
+      "sha256": "c4b158c8d7119693fc1c0ad6295fc3fc243784fe59cbdb2c46d3a39ad218c7de"
+    },
+    {
+      "path": "hardware/vga_sync_3v3/vga_sync_functional.sv",
+      "bytes": 1269,
+      "sha256": "9f55f75726b45212886f832b1c6c58ec7b7d170c4a0764de6333b1b71f6019cf"
+    },
+    {
+      "path": "references/net34/regulator-source.json",
+      "bytes": 933,
+      "sha256": "56a9a46e472333a362513d19011ae1e4b61fe44ff098501d3c562a49573d09eb"
+    },
+    {
+      "path": "references/net34/review.json",
+      "bytes": 1721,
+      "sha256": "2e29412587a1b6a6c19a6d6aee69179376af4992bf303f0e0079bb4a6d244123"
+    },
+    {
+      "path": "references/net34/sn74lvc1g132.pdf",
+      "bytes": 1182185,
+      "sha256": "fae33d78fe46834ab99230aaa1106f58321f23cf06c65be9cf08ea9c0dbcb623"
+    },
+    {
+      "path": "references/net34/sn74lvc1g132.pdf.txt",
+      "bytes": 102894,
+      "sha256": "f4c08169c10d7885bc281086298923d1e12b64c653eafeb29e6a1501cf608676"
+    },
+    {
+      "path": "references/net34/sources.json",
+      "bytes": 1445,
+      "sha256": "e5377a670393a9b7b52b072e0b7609022b65dfac45602ecfbf98841ea8ba27cf"
+    },
+    {
+      "path": "references/net34/tps709.pdf",
+      "bytes": 2270426,
+      "sha256": "8ac3e060d3902febc8f87c9bdd4ce8948f3d18d9d0a9ef723b343802cce67163"
+    },
+    {
+      "path": "references/net34/tps709.pdf.txt",
+      "bytes": 189993,
+      "sha256": "ed13457e459e46b1cc6b90068ff5ab9db438d6c086735e08b3691da3c74af167"
+    },
+    {
+      "path": "references/net34/tps731.pdf",
+      "bytes": 1834586,
+      "sha256": "0fdb2d8444029d3e564417563de4d1deeb2d6f495126adabafa01759963a58cc"
+    },
+    {
+      "path": "references/net34/tps731.pdf.txt",
+      "bytes": 134714,
+      "sha256": "d6376afeae2caa4e81dfe4a1ed4a0c59562f514a90d58cacba28bf9cb7181e28"
+    },
+    {
+      "path": "sim/net34/tb_sync_states.sv",
+      "bytes": 1329,
+      "sha256": "d808d7825ce5f86923aea9a485c13fb2303836c7cae78d40e0c715a7950fbc0e"
+    },
+    {
+      "path": "tools/build_vga_sync.py",
+      "bytes": 9394,
+      "sha256": "61f46dc7e829a836d1c5c59169cfa0f9c73cbc02c5a8834dd986b7a20a425288"
+    },
+    {
+      "path": "tools/check_sync_electrical.py",
+      "bytes": 7542,
+      "sha256": "bb79a9f5fb652e939111a7c3b13d9df6c15a822d8895cb58361d25aa8b495f74"
+    },
+    {
+      "path": "tools/collect_sync_regulator.py",
+      "bytes": 737,
+      "sha256": "aea14e87fe13494ec05be1766f6c78a9ac363e32afaae20bdaf4bed7b13328c9"
+    },
+    {
+      "path": "tools/collect_sync_sources.py",
+      "bytes": 2124,
+      "sha256": "015c61fa329a3240aa807c4d9b5fd945adb5e6af349f48387e79de56829f90a6"
+    },
+    {
+      "path": "tools/record_net34_results.py",
+      "bytes": 6965,
+      "sha256": "647dc3c192ad09412c336224fb9ff9135b0fe9b1688a4c80eee486e4732f7b23"
+    },
+    {
+      "path": "tools/run_sync_checks.py",
+      "bytes": 4136,
+      "sha256": "42cf68fa75e12c3df8be4230f4ba5ccfa387037cc06943aa692176ee9b62c246"
+    },
+    {
+      "path": "tools/stage_net34_results.py",
+      "bytes": 229,
+      "sha256": "af51b767ffd2a6443fa3826969051cc896de953f10d72fd138b1a77febbfa49a"
+    },
+    {
+      "path": "verification/net34/development/receiver-profile/check_sync_electrical.py",
+      "bytes": 7100,
+      "sha256": "c253fc19e2980f381f4394ca6bd690771c9b778f65d33d70f460ced5b6afbd5e"
+    },
+    {
+      "path": "verification/net34/development/receiver-profile/electrical-results.json",
+      "bytes": 13492,
+      "sha256": "01c5d80caf3b96043fae561d0e004cc8260ffa84564b67a22bdabcd55c91153d"
+    },
+    {
+      "path": "verification/net34/development/receiver-profile/review.json",
+      "bytes": 381,
+      "sha256": "84a33ee36664f02213e843571ee88905fb4bed8b700d16e80bef249ad54b19d3"
+    },
+    {
+      "path": "verification/net34/electrical-results.json",
+      "bytes": 13800,
+      "sha256": "ea8eade0204fcc3be25c896b63635332ea97be4586ccaefe49d5a49397c9f290"
+    },
+    {
+      "path": "verification/net34/native/adapted-emitter.py",
+      "bytes": 2721,
+      "sha256": "fc5defe52c26268ac28b025fd8a3c173ee2058c124a99a0bf10c2be45cd8087b"
+    },
+    {
+      "path": "verification/net34/native/commands.json",
+      "bytes": 2494,
+      "sha256": "d0100b874f6d8363cc8c01dacd87baec36ceb055cd9f948c26d4f31a78ad2400"
+    },
+    {
+      "path": "verification/net34/native/erc.json",
+      "bytes": 3473,
+      "sha256": "e01ff16be21140678b737ad0e8a7071a7baee8edca8c8abec2ba0f25be96c3cb"
+    },
+    {
+      "path": "verification/net34/native/native-results.json",
+      "bytes": 1351,
+      "sha256": "c9fd10756811460a101b11db73a50ba038e22080d4eb652082a4aab5107d50a2"
+    },
+    {
+      "path": "verification/net34/native/preview.png",
+      "bytes": 47911,
+      "sha256": "2992cfd9e7d08ead2e729938be1fbb2af09c5664c48ba7f2574d819906f673cd"
+    },
+    {
+      "path": "verification/net34/native/schematic.pdf",
+      "bytes": 77923,
+      "sha256": "e6a5f7d84ab792c6798778b889dc8f60377c5374ae37eec83cd24fad51c85786"
+    },
+    {
+      "path": "verification/net34/native/vga_sync_3v3.xml",
+      "bytes": 20528,
+      "sha256": "e19e49283c4b939270423f5c7ab88bf3a9bc775c39681273a2fe48965c844423"
+    },
+    {
+      "path": "verification/net34/pending-integrity.json",
+      "bytes": 7668,
+      "sha256": "d92352acff2e757a8d9fc7f111655c7d590ba12236075cf4da3518da55df6646"
+    },
+    {
+      "path": "verification/net34/pin-negatives/buffer_channels_swapped.xml",
+      "bytes": 20798,
+      "sha256": "2bb3eee2d9ff3f0ae283d3b9754e05febec3d8ddcd5b4a08e87335892e676012"
+    },
+    {
+      "path": "verification/net34/pin-negatives/buffer_wrong_rail.xml",
+      "bytes": 20798,
+      "sha256": "60d6470ed945ae5e37c7765d94b4dca42da685809df3a4e77eb5e3c3a19be336"
+    },
+    {
+      "path": "verification/net34/pin-negatives/gate_ready_bypassed.xml",
+      "bytes": 20798,
+      "sha256": "8aed9676f3659a8ec07bb214ec40650be655946bc3b5792750adb560d9aff178"
+    },
+    {
+      "path": "verification/net34/pin-negatives/ldo_enable_tied_to_input.xml",
+      "bytes": 20798,
+      "sha256": "8fc3cf141724c6dd9af49c34e0184cdfb56fb709abb43c973b8c642981356019"
+    },
+    {
+      "path": "verification/net34/pin-negatives/oe_grounded.xml",
+      "bytes": 20798,
+      "sha256": "e1a7ebac5f13ea899eb59e15f4221016dcee8f3d9ae556abcb254fd6d04b2a3d"
+    },
+    {
+      "path": "verification/net34/pin-negatives/ready_pull_wrong_rail.xml",
+      "bytes": 20798,
+      "sha256": "8cdde5f8b1b9aecd67b088f593a6b205543c5eb6ce40ad3645a1ab3b0cd96615"
+    },
+    {
+      "path": "verification/net34/pin-negatives/series_shortened.xml",
+      "bytes": 20798,
+      "sha256": "c0b884963e81d0c0d7d2515f1bb07048ccd1f83fe8b45d6b13ad221b4693ea53"
+    },
+    {
+      "path": "verification/net34/pin-negatives/supervisor_wrong_sense.xml",
+      "bytes": 20798,
+      "sha256": "760125f77017b8bc2c07c5290760030880e8f93bcb8ac7ad5b7b2b23208f4cfe"
+    },
+    {
+      "path": "verification/net34/rc-proxy/1000/execution.json",
+      "bytes": 900,
+      "sha256": "80625d57d647a8e5d39fbb3e6472d36316a87f847d3e16db1e76afe8141fa3ed"
+    },
+    {
+      "path": "verification/net34/rc-proxy/1000/proxy.cir",
+      "bytes": 334,
+      "sha256": "9c7b2bc9c66df4e1c8209e836cec78c06b49103fe9ff62402e4c7b2613d50f76"
+    },
+    {
+      "path": "verification/net34/rc-proxy/1000/values.dat",
+      "bytes": 264825,
+      "sha256": "673ccd118f8abbf42a659a9ef3a83c712a3a881e779e4c86bda4381d68b024c3"
+    },
+    {
+      "path": "verification/net34/rc-proxy/250/execution.json",
+      "bytes": 900,
+      "sha256": "80625d57d647a8e5d39fbb3e6472d36316a87f847d3e16db1e76afe8141fa3ed"
+    },
+    {
+      "path": "verification/net34/rc-proxy/250/proxy.cir",
+      "bytes": 333,
+      "sha256": "8b2d67b04685e4d8a7c75d89cba8d04ab091601db54fbbe3b9ec1e3f47d6d5e1"
+    },
+    {
+      "path": "verification/net34/rc-proxy/250/values.dat",
+      "bytes": 264825,
+      "sha256": "7589f1b58014d9c100b3cfb9f3eaaba07d31c16048016803df85d7ce2ee3cd1f"
+    },
+    {
+      "path": "verification/net34/rc-proxy/50/execution.json",
+      "bytes": 899,
+      "sha256": "1cb53baa602935317d82de499b5f0f83096c0a99930c6c1b0033787540c38985"
+    },
+    {
+      "path": "verification/net34/rc-proxy/50/proxy.cir",
+      "bytes": 332,
+      "sha256": "f977559adb0f17414ae82c8f6362ca8b5066c87bd069f39d9c22e893ac723075"
+    },
+    {
+      "path": "verification/net34/rc-proxy/50/values.dat",
+      "bytes": 267782,
+      "sha256": "fe7a732bb1ced37d71a890128b1b783d4889a66a4612a689af9c4315771a2fbd"
+    },
+    {
+      "path": "verification/net34/result-audit.json",
+      "bytes": 6153,
+      "sha256": "7a32acd582164c17ffc1eb1a05befd50d736187444ae6407a378dae133bc7d03"
+    },
+    {
+      "path": "verification/net34/sync-results.json",
+      "bytes": 11411,
+      "sha256": "edf720a89339b27aa87db3e27db57825173d9670d1eab6e2f84513457696a9a6"
+    },
+    {
+      "path": "verification/net34/tb_sync_raster.sv",
+      "bytes": 3442,
+      "sha256": "1c43de8ead333b85df5856af5b0188f0cf2672f253e0e44d4983191156605721"
+    }
+  ]
+}

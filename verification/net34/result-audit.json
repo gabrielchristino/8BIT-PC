@@ -1,0 +1,96 @@
+{
+  "date": "2026-11-27",
+  "base_git_commit": "8aa26ed00ec94f87f3f21fa8cd93f4b1abf1e14b",
+  "source_records_checked": 46,
+  "historical_source_resolutions": [
+    {
+      "path": "tools/check_sync_electrical.py",
+      "sha256": "c253fc19e2980f381f4394ca6bd690771c9b778f65d33d70f460ced5b6afbd5e",
+      "preserved_source": "verification/net34/development/receiver-profile/check_sync_electrical.py"
+    }
+  ],
+  "versions": {
+    "python": {
+      "command": [
+        "wsl",
+        "-d",
+        "Ubuntu",
+        "--",
+        "python3",
+        "--version"
+      ],
+      "exit": 0,
+      "stdout": "Python 3.12.3\n",
+      "stderr": ""
+    },
+    "iverilog": {
+      "command": [
+        "wsl",
+        "-d",
+        "Ubuntu",
+        "--",
+        "iverilog",
+        "-V"
+      ],
+      "exit": 0,
+      "stdout": "Icarus Verilog version 12.0 (stable) ()\n\nCopyright (c) 2000-2021 Stephen Williams (steve@icarus.com)\n\n  This program is free software; you can redistribute it and/or modify\n  it under the terms of the GNU General Public License as published by\n  the Free Software Foundation; either version 2 of the License, or\n  (at your option) any later version.\n\n  This program is distributed in the hope that it will be useful,\n  but WITHOUT ANY WARRANTY; without even the implied warranty of\n  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n  GNU General Public License for more details.\n\n  You should have received a copy of the GNU General Public License along\n  with this program; if not, write to the Free Software Foundation, Inc.,\n  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.\n\nIcarus Verilog Preprocessor version 12.0 (stable) ()\n\nCopyright (c) 1999-2021 Stephen Williams (steve@icarus.com)\n\n  This program is free software; you can redistribute it and/or modify\n  it under the terms of the GNU General Public License as published by\n  the Free Software Foundation; either version 2 of the License, or\n  (at your option) any later version.\n\n  This program is distributed in the hope that it will be useful,\n  but WITHOUT ANY WARRANTY; without even the implied warranty of\n  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n  GNU General Public License for more details.\n\n  You should have received a copy of the GNU General Public License along\n  with this program; if not, write to the Free Software Foundation, Inc.,\n  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.\n\nIcarus Verilog Parser/Elaborator version 12.0 (stable) ()\n\nCopyright (c) 1998-2021 Stephen Williams (steve@icarus.com)\n\n  This program is free software; you can redistribute it and/or modify\n  it under the terms of the GNU General Public License as published by\n  the Free Software Foundation; either version 2 of the License, or\n  (at your option) any later version.\n\n  This program is distributed in the hope that it will be useful,\n  but WITHOUT ANY WARRANTY; without even the implied warranty of\n  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n  GNU General Public License for more details.\n\n  You should have received a copy of the GNU General Public License along\n  with this program; if not, write to the Free Software Foundation, Inc.,\n  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.\n\n FLAGS DLL vvp.tgt\nvvp.tgt: Icarus Verilog VVP Code Generator 12.0 (stable) ()\n\nCopyright (c) 2001-2021 Stephen Williams (steve@icarus.com)\n\n  This program is free software; you can redistribute it and/or modify\n  it under the terms of the GNU General Public License as published by\n  the Free Software Foundation; either version 2 of the License, or\n  (at your option) any later version.\n\n  This program is distributed in the hope that it will be useful,\n  but WITHOUT ANY WARRANTY; without even the implied warranty of\n  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n  GNU General Public License for more details.\n\n  You should have received a copy of the GNU General Public License along\n  with this program; if not, write to the Free Software Foundation, Inc.,\n  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.\n\n",
+      "stderr": ""
+    },
+    "ngspice": {
+      "command": [
+        "wsl",
+        "-d",
+        "Ubuntu",
+        "--",
+        "ngspice",
+        "--version"
+      ],
+      "exit": 0,
+      "stdout": "******\n** ngspice-42 : Circuit level simulation program\n** Compiled with KLU Direct Linear Solver\n** The U. C. Berkeley CAD Group\n** Copyright 1985-1994, Regents of the University of California.\n** Copyright 2001-2023, The ngspice team.\n** Please get your ngspice manual from https://ngspice.sourceforge.io/docs.html\n** Please file your bug-reports at http://ngspice.sourceforge.net/bugrep.html\n** Creation Date: Sun Mar 31 20:15:14 UTC 2024\n******\n",
+      "stderr": ""
+    },
+    "pdftotext": {
+      "command": [
+        "wsl",
+        "-d",
+        "Ubuntu",
+        "--",
+        "pdftotext",
+        "-v"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": "pdftotext version 24.02.0\nCopyright 2005-2024 The Poppler Developers - http://poppler.freedesktop.org\nCopyright 1996-2011, 2022 Glyph & Cog, LLC\n"
+    },
+    "kicad": {
+      "command": [
+        "wsl",
+        "-d",
+        "Ubuntu",
+        "--",
+        "/home/gabri/.local/opt/isa1-kicad-10.0.8/squashfs-root/usr/bin/kicad-cli",
+        "version"
+      ],
+      "exit": 0,
+      "stdout": "10.0.8\n",
+      "stderr": ""
+    }
+  },
+  "native_pin_values_checked": true,
+  "qualified_state_scenarios": 2,
+  "state_checks_each": 14,
+  "native_frame_scenarios": 2,
+  "reset_epochs_each": 2,
+  "samples_each": 210000,
+  "colors_each": 256,
+  "functional_negative": 1,
+  "pin_negatives": 8,
+  "conditional_dc_corners": 32,
+  "rc_proxy_cases": 3,
+  "rejected_receiver_profile_preserved": true,
+  "visual_review": "All four packages, passive groups and intentional EN/CT no-connects visible in exported A3 preview.",
+  "analog_regulator_supervisor_ramp_qualified": false,
+  "universal_monitor_compatibility": false,
+  "erc_approved": false,
+  "production_released": false
+}

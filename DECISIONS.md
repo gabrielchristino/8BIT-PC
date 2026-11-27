@@ -1,3 +1,13 @@
+## ADR E38 - Supervisionar a saida candidata H/V em3,3V
+
+27/11/2026, base8aa26ed/NET33. Status: folha experimental com verificacoes selecionadas, sem promocao global ou homologacao de BOM.
+
+Decisao: TPS70933 alimenta TPS3808G33/NANDSchmitt1G132/buffer2G125; habilitar so com VIDEO_READY e supervisor local liberado. Entradas47k ao terra, OE10k, reset4,7k, series75ohm e carga minima10k. Preserva CPU/ISA/X/SP/flags/ROMs/NET30/33.4CIs/17componentes pertencem somente a nova folha.
+
+Alternativas: LVC125A tolerante5,5V sem inferir Ioff; TPS731 com requisitoENantesVIN; TPS7A20 com restricao de reversao/VOUT; TPD7S0195V como outra arquitetura ainda nao qualificada. Perfil inicial de receptor com pullup5,5V em HIGH foi rejeitado: Ioff nao qualifica backdrive ativo. Perfil atual restringe corrente por nivel logico.
+
+Evidencia: dois cenarios14estados, negativo de ready, dois cenarios de quadros/reset/256cores,32contasDC,oito negativosXML e tres proxiesRC. Rail intermediario explicitamenteX; supervisor/regulador sao forcepoints, nao provaPOR. Envelope3,207..3,393V deixa margem preliminar13,04875mV de retomada e20us de overdrive nao garantem cutoff3V. Aceitacao exige fechar janela/transientes,niveis/carga real/protecao/conector,ganhoRGB/SLEEP,integracao global/ERC/footprints/PCB/DRC/prototipo. ERC4itens nao aprovado. Ver docs/engineering/NET34_SYNC.md.
+
 ## ADR E37 - Reutilizar canais livres e registrar H/V na borda dos DACs
 
 27/11/2026, base052928f/NET32. Status: variante nativa experimental com regressao selecionada, sem promocao ao sistema completo.

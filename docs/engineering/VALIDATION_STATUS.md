@@ -5,6 +5,17 @@ Atualizado em27/11/2026, após as regressões próprias da NET30.
 relatórios NET e versões Git preservam os estados anteriores. Não somar
 ensaios sobrepostos nem transferir aprovação entre variantes diferentes.
 
+## Saida candidata de sincronismos NET34
+
+Folha3,3V supervisionada:17componentes/50pinos conferidos. Passaram dois
+cenarios de14estados,um negativo funcional,dois cenarios de quadros/reset,
+32contasDC,oito XMLs fora do contrato e tres proxiesRC. Modelos de rail e
+supervisor sao forcepoints; rampa geraX e nao e POR aprovado. Perfil do
+receptor restringe correntes; sem compatibilidade universal ou backdrive
+ativo. Margem preliminar de retomada13mV e cutoff/ripple/transientes ainda
+abertos. ERC4itens sem aprovacao; conector/protecao,ganhoRGB/SLEEP e
+integracao global permanecem pendentes. [Detalhes NET34](NET34_SYNC.md).
+
 ## Integracao de video/DAC NET33, separada do sistema completo
 
 Duas folhas nativas com RGB332 e H/V registrados: um AHC174 novo no video,

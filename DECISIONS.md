@@ -325,3 +325,14 @@ Trocar U8 vídeo AHC74 por AHC164 de quatro estágios, clear RC independente, co
 Evidência:32 cortes selecionados passam, mas padrão frio4 rejeita7,722ns/20ns sob CLR0. RAW50ns/offset39 rejeita recovery em U36_1. Projeção cold diagnóstica permite observar apenas contenção conhecida sob CLR0 e conserva restrição aberta. Hipótese de pacote AHC74 extra local emP1 passou156 casos funcionais com essa mesma restrição fria; não tem esquema próprio e não substitui a variante nativa.
 
 Impacto: fronteira warm de dados/clear passa a ter hipótese binária explícita; não é MTBF/POR qualificado. Futuro pacote local aumentaria vídeo para37CIs. Aceitar somente após esquema real, XML/cargas/guardas estritas, glitches/pausas/partidas, pinos SRAM/CPU/teclado, quadros/boot e orçamento completo. Não promover o experimento pelo sucesso nominal. Ver NET25.md e CLOCK_TREE_STUDY.md.
+
+
+## ADR E31 — Reset local emP1, clock direto e AHC174 no teclado
+
+26/11/2026. Base64d01218193259dfc3740f71b6af5ecbe154149e. Adotada como variante candidata após regressões selecionadas; sem liberação física.
+
+Problemas: NET25 tem pulso frio7,722ns/20ns e recovery em RAW50ns. Decisão: adicionar dupla AHC74 local emP1 pelo ANDbuffer livre, ligar controlador diretamente a BACKEND conservando uma etapa de folha e trocar U1 do teclado HC174→AHC174 real. Mantém função/ISA/SP/X/ROMs/teclado/VGA, +1CI no vídeo, mesma pinagem/redes da U1. Quatro cargas50pF condicionais no BACKEND; conta selecionada22,72ns/20ns no controlador e7,72ns/5ns no teclado.
+
+Alternativas: máscara SAFE&PHASE_RUN falha em reset breve; três buffers falham em cold; relaxar guardas rejeitado; distribuição Q/QB/inversores é alternativa maior não necessária para estes cenários. Não se usa READY como clear dos bancos antes de WE alto.
+
+Evidência:156cenários estritos,128combinações, três reversões que reproduzem os defeitos,48cortes SRAM, oito CPU/scans, vetores e boot ideal. Compatibilidade funcional/pinagem conferida, porém novo hold0,5ns e caminhos de mux/min-delay entram no futuro STA global. Critérios restantes: fulltimedboot, cargas extraídas/jitter/slew/PVT/CDC/POR/energia, DAC/firmware, união/ERC/footprints/PCB/DRC e protótipo. Ver NET26.md.

@@ -1,0 +1,64 @@
+{
+  "date": "2026-11-26",
+  "command": [
+    "/home/gabri/.local/opt/isa1-kicad-10.0.8/squashfs-root/usr/bin/kicad-cli",
+    "sch",
+    "erc",
+    "--format",
+    "json",
+    "--severity-all",
+    "--exit-code-violations",
+    "-o",
+    "/mnt/c/Users/gabri/projetos/isa1/verification/net26/native/video/erc.json",
+    "/mnt/c/Users/gabri/projetos/isa1/hardware/local_phase_video/local_phase_video.kicad_sch"
+  ],
+  "exit": 5,
+  "stdout": "Found 49 violations\nSaved ERC Report to /mnt/c/Users/gabri/projetos/isa1/verification/net26/native/video/erc.json\n",
+  "stderr": "",
+  "violation_counts": {
+    "power_pin_not_driven": 2,
+    "pin_not_driven": 13,
+    "isolated_pin_label": 34
+  },
+  "erc_passed": false,
+  "production_released": false,
+  "native_changes": [
+    [
+      "U24",
+      "12",
+      "SAFE",
+      "P1"
+    ],
+    [
+      "U24",
+      "13",
+      "PHASE_RUN",
+      "+5V"
+    ],
+    [
+      "U24",
+      "11",
+      "LOCAL_RESET_N",
+      "LOCAL_RESET_CLK"
+    ]
+  ],
+  "scope": "Unwaived partial sheet ERC, not global board/ERC release.",
+  "sources": [
+    {
+      "path": "hardware/local_phase_video/local_phase_video.kicad_sch",
+      "sha256": "bade5e166d8e4fa2a5b8c3b595b18502e71176e4632b1c370b4d6ff8c1afcc4a"
+    },
+    {
+      "path": "hardware/local_phase_video/local_phase_video.kicad_pro",
+      "sha256": "aa6fe039620649e1fe5525070fb9a4c19ae7aba4f9af7ce7540b8fde53735176"
+    },
+    {
+      "path": "hardware/local_phase_video/bus_packages.kicad_sym",
+      "sha256": "3747e41a98e021fd031691dad7847c17b5f9f22226fa77d42c862a18d84c57b3"
+    },
+    {
+      "path": "tools/check_local_phase_native.py",
+      "sha256": "f9de8449a9d98d53aebefb40216b0b6c034f4acc53735289494a5137165b501c"
+    }
+  ]
+}

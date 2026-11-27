@@ -1,0 +1,6 @@
+{
+  "date": "2026-11-26",
+  "observed": "All three simulated reversions hit their intended original guards; keyboard collector nevertheless returned false because expected hierarchical scope omitted genblk1.",
+  "correction": "Match keyboard.U1.genblk1.check_state. No circuit or predicate change; calibration repeated.",
+  "production_released": false
+}

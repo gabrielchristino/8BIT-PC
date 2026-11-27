@@ -180,3 +180,10 @@ NET-17 — 26/11/2026: acrescentada variante para alvo condicional de 500 Ω, co
 - Novas folhas de drenagem/armamento e modelo warm calibrado;32 cortes selecionados e vetores ideais passam.
 - Preservadas falhas de clock frio sob CLR0 e recovery de reset breve. Variante não promovida.
 - Hipótese apenasHDL de reset local emP1 passa156 cenários funcionais; clock frio continua aberto. Estudos de próxima variante não contam como implementação.
+
+
+## 2026-11-26 — NET-26
+
+- Novas folhas de reset localP1, clock direto do controlador e AHC174 no teclado, com +1CI local e predecessores preservados.
+-156cenários estritos/128combinações, três negativos,48cortes SRAM/oito CPU, vetores ideais/temporizados e boot/quadro ideal passaram.
+- Inventário460CIs+2módulos ACH; ERC parcial49/13/25 violações e fechamento global/produção continuam abertos. CVC pesquisado e não adotado; programa inteiro temporizado permanece pendente.

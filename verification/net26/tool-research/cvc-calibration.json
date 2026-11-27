@@ -1,0 +1,89 @@
+{
+  "date": "2026-11-26",
+  "scope": "Tool calibration only. Default four-state CVC, no2state/no ignored timing flags. Compare actual original guards and smoke semantics against Icarus before any adoption.",
+  "executable": {
+    "path": "/home/gabri/.local/opt/isa1-cvc-source/build64/cvc64",
+    "sha256": "c652a90c7e498519c3117099b2802d30840c107fc196c469e5a650aa358b9faa"
+  },
+  "sources": [
+    {
+      "path": "tools/calibrate_compiled_simulator.py",
+      "sha256": "3b78380d2105370776dc2543ba0b26433f61b36520993d7b2d413042981ae6ba"
+    },
+    {
+      "path": "sim/net26/compiled_smoke.sv",
+      "sha256": "8756afddc028b4e6966f7f38694545ad0a1c5b13d9a9135dbf2590a5bfd2f2b6"
+    },
+    {
+      "path": "sim/net25/warm_packages.sv",
+      "sha256": "b6ff85ba2c3ffeb0de54608c10e4afae3aaed2abb051498a39bdc000259c7d7b"
+    },
+    {
+      "path": "sim/net25/tb_warm_packages.sv",
+      "sha256": "a5e00501ca78ad5bcb15bceac85d6654677df82f68385ddd653c037082c1d797"
+    }
+  ],
+  "runs": [
+    {
+      "name": "smoke",
+      "case": null,
+      "boundary": null,
+      "policy": null,
+      "negative": false,
+      "compile_cvc": {
+        "command": [
+          "/home/gabri/.local/opt/isa1-cvc-source/build64/cvc64",
+          "-sv",
+          "-o",
+          "/tmp/isa1-cvc-calibration-dsntqmc9/0/compiled",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net26/compiled_smoke.sv"
+        ],
+        "exit": 0,
+        "stdout": "OSS_CVC_7.00b-x86_64-rhel6x of 07/07/14 (Linux-elf).\nCopyright (c) 1991-2014 Tachyon Design Automation Corp.\n  All Rights reserved.  Licensed software subject to prohibitions and\n  restrictions.  See OSS CVC artistic license included with release.\nToday is Thu Nov 26 19:28:04 2026.\nElaborating source file \"/mnt/c/Users/gabri/projetos/isa1/sim/net26/compiled_smoke.sv\"\nHighest level modules:\ncompiled_smoke\n\n  Compiling module 1 of 1.\n  CVC compilation 0.3 seconds elapsed.\n\n  EXECUTABLE SAVED TO '/tmp/isa1-cvc-calibration-dsntqmc9/0/compiled'.\n\nEnd of OSS_CVC_7.00b-x86_64-rhel6x at Thu Nov 26 19:28:05 2026 (elapsed 0.3 seconds).\n",
+        "stderr": "/usr/bin/ld: warning: /tmp/comm_nt_m0-EqJKXr: missing .note.GNU-stack section implies executable stack\n/usr/bin/ld: NOTE: This behaviour is deprecated and will be removed in a future version of the linker\n",
+        "seconds": 0.348
+      },
+      "execution_cvc": {
+        "command": [
+          "/tmp/isa1-cvc-calibration-dsntqmc9/0/compiled"
+        ],
+        "exit": -11,
+        "stdout": "",
+        "stderr": "",
+        "seconds": 0.022
+      },
+      "compile_icarus": {
+        "command": [
+          "iverilog",
+          "-g2012",
+          "-Wall",
+          "-s",
+          "compiled_smoke",
+          "-o",
+          "/tmp/isa1-cvc-calibration-dsntqmc9/0/icarus.vvp",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net26/compiled_smoke.sv"
+        ],
+        "exit": 0,
+        "stdout": "",
+        "stderr": "",
+        "seconds": 0.013
+      },
+      "execution_icarus": {
+        "command": [
+          "vvp",
+          "/tmp/isa1-cvc-calibration-dsntqmc9/0/icarus.vvp"
+        ],
+        "exit": 0,
+        "stdout": "RESULT four_state=1 bidirectional_switch=1 contention_x=1 delayed_edges=28.500/41.000 failures=0\n/mnt/c/Users/gabri/projetos/isa1/sim/net26/compiled_smoke.sv:26: $finish called at 42000 (1ps)\n",
+        "stderr": "",
+        "seconds": 0.006
+      },
+      "passed": false
+    }
+  ],
+  "failures": [
+    0
+  ],
+  "adopted_for_full_simulation": false,
+  "production_released": false
+}

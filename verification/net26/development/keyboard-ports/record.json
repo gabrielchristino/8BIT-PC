@@ -1,0 +1,9 @@
+{
+  "date": "2026-11-26",
+  "observed_error": "ValueError: Driver count BANK_RESET_N",
+  "stage": "keyboard conversion, after successful native export",
+  "cause": "Shared builder environment accidentally used video port mapping for keyboard conversion.",
+  "correction": "Use keyboard.ports in keyboard environment; video/reset circuit pin definitions unchanged. Rebuild all three before simulation to record final builder hash.",
+  "functional_simulations_accepted_before_correction": 0,
+  "production_released": false
+}

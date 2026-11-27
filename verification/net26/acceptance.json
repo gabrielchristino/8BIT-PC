@@ -1,0 +1,32 @@
+{
+  "date": "2026-11-26",
+  "engine": "Icarus Verilog",
+  "selected_native_pulse_cases": 156,
+  "selected_matrix_cases": 128,
+  "reversion_negative_cases": 3,
+  "sram_active_write_cuts": 48,
+  "sram_source_pauses": 8,
+  "sram_negative_cases": 2,
+  "sram_max_we_inhibit_ns": 94,
+  "actual_cpu_write_cuts": 8,
+  "actual_cpu_restarted_scans": 8,
+  "cpu_max_we_inhibit_ns": 84,
+  "instruction_cases_ideal": 6886,
+  "timed_instruction_cases_each": 1062,
+  "timed_scenarios": 2,
+  "full_ideal_boot_instructions": 132197,
+  "full_ideal_boot_pixels": 76800,
+  "boot_sram_seeded": false,
+  "full_timed_boot_executed": false,
+  "candidate_union_ics": 460,
+  "oscillator_modules": 2,
+  "partial_erc_violations": {
+    "video": 49,
+    "reset": 13,
+    "keyboard": 25
+  },
+  "global_pvt_jitter_trace_por_mtbf_qualified": false,
+  "power_budget_closed": false,
+  "cvc_adopted": false,
+  "production_released": false
+}

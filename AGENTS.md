@@ -1,3 +1,15 @@
+## Continuidade NET-26
+
+- Leia docs/engineering/NET26.md. Novas folhas local_phase_video/reset/keyboard; predecessores preservados. Vídeo37CIs, U37 AHC74 reset local clockP1 através de U24.3 ANDbuffer; warm U8 AHC164 e U9 clearVDD permanecem.
+- Reset U8ch1 desabilitado; access_clk é alias BACKEND real, três buffers folha do controlador mais resetroot dão quatro cargas50pF condicionais. Teclado U1 AHC174 substitui HC174 sem redes alteradas; CLK continua BUF_1_0, IO_COMMIT autoriza mux de dados. Não relaxar monitor HC174 antigo.
+-156cenários estritos/128combinações e três negativos passaram; sem exceção CLR0.48cortes SRAM WE<=94ns, oito CPU/scans WE<=84ns,6.886ideais/dois1.062temporizados e boot ideal132.197/76.800pixels passaram. Não atribuir provas a outro circuito. Setup observado54,888/16,944/26,944ns, não valores antigos.
+- Limites de pulse22,72ns controlador/7,72ns teclado são condicionais, sem jitter/trilhas/PVT global. Warm e reset local têm projeções binárias explícitas, não MTBF/POR analógico aprovado. Modelo/ensaios de potências inválidas continuam com seu próprio escopo.
+- União candidata460CIs(inclui memórias/supervisor)+2módulos ACH,464capacitores; consumo não fechado. ERC parcial49vídeo/13reset/25teclado sem waivers, não ERC global/PCB.
+- CVC alternativo NÃO adotado: compilado crashou, interpretador só passou unidades, tentativa nativa não concluiu e a limitada esgotou768MB. Todos os resultados de engenharia são Icarus. Qualquer pesquisa/processo novo pesado deve ter limites próprios de memória/CPU/tempo/saída e identificação para parada; não repetir avaliação sem limites.
+- Congelar fontes/geradores listados enquanto houver execução ativa. Próximo programa completo temporizado requer progresso, limite e retomada; ainda não foi executado. Não marcar produção antes de orçamento global/energia/DAC/firmware/união/ERC/PCB/DRC/protótipo. diagnostic.asm histórico continua ausente.
+
+
+
 ## Continuidade NET-25
 
 - Hipótese combinada somenteHDL (dupla localP1 com buffer e controlador diretoBACKEND) passou156 casos com monitor estrito original e dois negativos; não instancia teclado/SRAM/CPU. Teclado U1HC174 recebe CLK BUF_1_0, IO_COMMIT é autorização de dados. Opção seguinte considera U1AHC174 real + controlador sem dois buffers intermediários, um pacote local extra; não confundir com esquema construído ou aprovação global.

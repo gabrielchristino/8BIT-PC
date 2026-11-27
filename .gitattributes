@@ -48,3 +48,6 @@ revisions/** -text
 
 /verification/net25/**/*.sv -whitespace
 /verification/net25/**/*.log -whitespace
+
+/verification/net26/**/*.sv -whitespace
+/verification/net26/**/*.log -whitespace

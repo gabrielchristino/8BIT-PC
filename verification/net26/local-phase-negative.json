@@ -1,0 +1,247 @@
+{
+  "date": "2026-11-26",
+  "scope": "Three independent one-change reversions; original strict clock/recovery predicates retained. Not approval of another circuit.",
+  "sources": [
+    {
+      "path": "sim/hdl/hc_models.sv",
+      "sha256": "f305ff38b7e58701e9f97528de68ea8c5518a628d38bd5a8ac9e847fa87c8680"
+    },
+    {
+      "path": "sim/net02/package_models.sv",
+      "sha256": "de2fd5315a3809a89ba90b8f09a96a25d06d3e00b8568a8f82387b92a624199f"
+    },
+    {
+      "path": "sim/net24/package_models_pulse_diagnostic.sv",
+      "sha256": "45027579e2ade0dcee9cd31a584523be5264c5b8b8938afcadf4bcf61b624499"
+    },
+    {
+      "path": "sim/net04/package_models.sv",
+      "sha256": "85b00a3b6b0307d68b53e4ea1ae97ba5cbf83c20685544bb12fde333efa07d63"
+    },
+    {
+      "path": "sim/net19a/package_models.sv",
+      "sha256": "dc71d5b1f5bcefcf7e20dc9a930de79c4ebc7fec145961dcbabd79a4766ac957"
+    },
+    {
+      "path": "sim/net14c/package_models_async.sv",
+      "sha256": "7b45346f5e25bb73deb33ba9fb02d50e2b020ab527f75fed1244e173300ccfcb"
+    },
+    {
+      "path": "sim/net22/phase_packages.sv",
+      "sha256": "f4c9fd1d3c6a936df6e024a32b9a53e53e79cfcf1e094c1d7731e5a857cf2059"
+    },
+    {
+      "path": "sim/net23/clock_models.sv",
+      "sha256": "9bdf1c41d5698a46cc3e7fb5c3f9e9b3b16c6f8476ea364226790fed625c0af6"
+    },
+    {
+      "path": "sim/net24/backend_pulse_model.sv",
+      "sha256": "38b4acb598aac3bbbdb3909a740ea11c2d30a1588b685e93cb253b1f7bfbf5c8"
+    },
+    {
+      "path": "sim/net25/warm_packages.sv",
+      "sha256": "b6ff85ba2c3ffeb0de54608c10e4afae3aaed2abb051498a39bdc000259c7d7b"
+    },
+    {
+      "path": "sim/net26/local_video_probe.sv",
+      "sha256": "279a070799179eb70ef35e828753666ef3f8340dee97fd9db0568d49040b0809"
+    },
+    {
+      "path": "sim/net26/local_reset_probe.sv",
+      "sha256": "0b466d74a050d3c45cd2161f999abe4c3870926f440d45d1270a06f43b7783ab"
+    },
+    {
+      "path": "sim/net26/local_control_probe.sv",
+      "sha256": "92cb6156399b794b244cbe93d1ec90847808354ab3b9ec8039bb03613d201e23"
+    },
+    {
+      "path": "sim/net26/local_keyboard_probe.sv",
+      "sha256": "ba0424bb7917b0f9a8232be69802b9f8f58a1cf8ce8ba0da5e2b7e0586830089"
+    },
+    {
+      "path": "sim/net26/tb_local_phase_probe.sv",
+      "sha256": "1ad1d4f161305ae261b585a9a6a30a5526a32993938d6a3937d5903a37fb7a8d"
+    },
+    {
+      "path": "sim/net26/revert_clock.sv",
+      "sha256": "6c5fab6be369a5a31a46048a70720c3905f3ff472d659dbd6cfe5a053e9bcf3e"
+    },
+    {
+      "path": "sim/net26/revert_local.sv",
+      "sha256": "7444230bda107807d99d949d3a2bf764f133967c0cea30cfab57adcd282f6c1f"
+    },
+    {
+      "path": "sim/net26/revert_keyboard.sv",
+      "sha256": "592074f1fdf8de6d8c0f16892f6a5a80ce5bae122b2ad28f75126c71b1b0dd88"
+    },
+    {
+      "path": "tools/run_local_phase_negative.py",
+      "sha256": "c4ebc4acc4761cf9dc4e144494ef312cd58cd40a4cc4d0de55403b4032a0bfd7"
+    }
+  ],
+  "runs": [
+    {
+      "negative": "revert_clock",
+      "parameters": {
+        "PROFILE": 1,
+        "INITIAL_PHASE": 4,
+        "RAW_RELEASE_NS": 60000,
+        "POLICY": 0
+      },
+      "compile": {
+        "command": [
+          "iverilog",
+          "-g2012",
+          "-Wall",
+          "-s",
+          "tb_drain_pulse",
+          "-Ptb_drain_pulse.PROFILE=1",
+          "-Ptb_drain_pulse.INITIAL_PHASE=4",
+          "-Ptb_drain_pulse.RAW_RELEASE_NS=60000",
+          "-Ptb_drain_pulse.POLICY=0",
+          "-o",
+          "/tmp/isa1-local-negative-n1buqq6y/test.vvp",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/hdl/hc_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net02/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net24/package_models_pulse_diagnostic.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net04/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net19a/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net14c/package_models_async.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net22/phase_packages.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net23/clock_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net24/backend_pulse_model.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net25/warm_packages.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net26/local_video_probe.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net26/revert_clock.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net26/local_control_probe.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net26/local_keyboard_probe.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net26/tb_local_phase_probe.sv"
+        ],
+        "exit": 0,
+        "stdout": "",
+        "stderr": "",
+        "seconds": 0.071
+      },
+      "execution": {
+        "command": [
+          "vvp",
+          "/tmp/isa1-local-negative-n1buqq6y/test.vvp"
+        ],
+        "exit": 1,
+        "stdout": "FATAL: /mnt/c/Users/gabri/projetos/isa1/sim/net24/package_models_pulse_diagnostic.sv:19: DFF clock pulse violation measured_ns=7.722 required_ns=20 clr_n=0\n       Time: 10000053722  Scope: tb_drain_pulse.control.genblk1.U4_check_second\n",
+        "stderr": "",
+        "seconds": 0.023
+      },
+      "passed": true
+    },
+    {
+      "negative": "revert_local",
+      "parameters": {
+        "PROFILE": 1,
+        "RAW_LOW_NS": 50,
+        "OFFSET_NS": 39,
+        "POLICY": 0
+      },
+      "compile": {
+        "command": [
+          "iverilog",
+          "-g2012",
+          "-Wall",
+          "-s",
+          "tb_drain_pulse",
+          "-Ptb_drain_pulse.PROFILE=1",
+          "-Ptb_drain_pulse.RAW_LOW_NS=50",
+          "-Ptb_drain_pulse.OFFSET_NS=39",
+          "-Ptb_drain_pulse.POLICY=0",
+          "-o",
+          "/tmp/isa1-local-negative-n1buqq6y/test.vvp",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/hdl/hc_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net02/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net24/package_models_pulse_diagnostic.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net04/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net19a/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net14c/package_models_async.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net22/phase_packages.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net23/clock_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net24/backend_pulse_model.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net25/warm_packages.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net26/revert_local.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net26/local_reset_probe.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net26/local_control_probe.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net26/local_keyboard_probe.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net26/tb_local_phase_probe.sv"
+        ],
+        "exit": 0,
+        "stdout": "",
+        "stderr": "",
+        "seconds": 0.085
+      },
+      "execution": {
+        "command": [
+          "vvp",
+          "/tmp/isa1-local-negative-n1buqq6y/test.vvp"
+        ],
+        "exit": 1,
+        "stdout": "CUT profile=1 offset_ns=39.000 raw_assert_ns=12061343.746 bank_memory_n=1\nFATAL: /mnt/c/Users/gabri/projetos/isa1/sim/net14c/package_models_async.sv:27: AHC74 reset recovery violation tb_drain_pulse.video.U36_1\n       Time: 12061423912  Scope: tb_drain_pulse.video.U36_1\n",
+        "stderr": "",
+        "seconds": 1.113
+      },
+      "passed": true
+    },
+    {
+      "negative": "revert_keyboard",
+      "parameters": {
+        "PROFILE": 1,
+        "INITIAL_PHASE": 4,
+        "RAW_RELEASE_NS": 60000,
+        "POLICY": 0
+      },
+      "compile": {
+        "command": [
+          "iverilog",
+          "-g2012",
+          "-Wall",
+          "-s",
+          "tb_drain_pulse",
+          "-Ptb_drain_pulse.PROFILE=1",
+          "-Ptb_drain_pulse.INITIAL_PHASE=4",
+          "-Ptb_drain_pulse.RAW_RELEASE_NS=60000",
+          "-Ptb_drain_pulse.POLICY=0",
+          "-o",
+          "/tmp/isa1-local-negative-n1buqq6y/test.vvp",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/hdl/hc_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net02/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net24/package_models_pulse_diagnostic.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net04/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net19a/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net14c/package_models_async.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net22/phase_packages.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net23/clock_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net24/backend_pulse_model.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net25/warm_packages.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net26/local_video_probe.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net26/local_reset_probe.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net26/local_control_probe.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net26/revert_keyboard.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net26/tb_local_phase_probe.sv"
+        ],
+        "exit": 0,
+        "stdout": "",
+        "stderr": "",
+        "seconds": 0.083
+      },
+      "execution": {
+        "command": [
+          "vvp",
+          "/tmp/isa1-local-negative-n1buqq6y/test.vvp"
+        ],
+        "exit": 1,
+        "stdout": "FATAL: /mnt/c/Users/gabri/projetos/isa1/sim/net24/package_models_pulse_diagnostic.sv:19: DFF clock pulse violation measured_ns=7.722 required_ns=20 clr_n=0\n       Time: 10000053722  Scope: tb_drain_pulse.keyboard.U1.genblk1.check_state\n",
+        "stderr": "",
+        "seconds": 0.023
+      },
+      "passed": true
+    }
+  ],
+  "failures": []
+}

@@ -1,0 +1,86 @@
+{
+  "date": "2026-11-26",
+  "scope": "Actual native three-block variant. CPU wrapper exact port alias; pulse bench additionally instantiates native keyboard with all contacts released. Strict original HC pulse monitors retained; bounded warm/local reset explicitly marked, no MTBF/analog approval.",
+  "files": [
+    {
+      "path": "tools/prepare_local_phase_checks.py",
+      "sha256": "77e2a687f8486557ed603abc93531efd745ad4e6447a30d3c9fa3daf1a8763c3"
+    },
+    {
+      "path": "hardware/local_phase_video/local_phase_video_netlist.sv",
+      "sha256": "40cac43c893d05eb89481c2e531627b295d8f84b1949d8fcdb55025e9239ab23"
+    },
+    {
+      "path": "sim/net26/local_video_async.sv",
+      "sha256": "d4fdb650eef0727a92003c0d7e4fd4850b46ddecba9742bd164053b6bcf15004"
+    },
+    {
+      "path": "sim/net25/isa1_memory_phase_drain.sv",
+      "sha256": "a5583e445896a2b0aa084e03a1238807403cb3788ea36a2df439c9e9301db54c"
+    },
+    {
+      "path": "sim/net26/isa1_memory_local_phase.sv",
+      "sha256": "58c7a994dc71c6bc0d0b1a8fa4b7d89cffaec4fde28ef64fbcbb163ec6166398"
+    },
+    {
+      "path": "tools/run_phase_drain_cpu_fault.py",
+      "sha256": "f35f689c27b3e197f029a68bcaf5e74eb9cab558f736c5dfc1d9c903d5d37234"
+    },
+    {
+      "path": "tools/run_local_phase_cpu_fault.py",
+      "sha256": "79539379aa2827492dd7068fe462c6e914019e844d5d23269b82c55b53ecfbb8"
+    },
+    {
+      "path": "tools/run_phase_drain_vectors.py",
+      "sha256": "41eac794e18b430d2bd459e7f62744f7cbe870b6a46fb1c54dcc8a6644bb7c50"
+    },
+    {
+      "path": "tools/run_local_phase_vectors.py",
+      "sha256": "e29369f4d65938b1fccaf769391a82c7fb1d3bb2e9af381cd8e07b37ced0d993"
+    },
+    {
+      "path": "tools/run_phase_drain_program.py",
+      "sha256": "703cb638a72e89182a5c1662e8fc436a2398e3ae87f626fe9612d5fe62e88067"
+    },
+    {
+      "path": "tools/run_local_phase_program.py",
+      "sha256": "564f9471e6a454cf8b4e872086d16871a4676d778c3f4b1d93602af6afad7e79"
+    },
+    {
+      "path": "sim/net26/local_video_probe.sv",
+      "sha256": "279a070799179eb70ef35e828753666ef3f8340dee97fd9db0568d49040b0809"
+    },
+    {
+      "path": "hardware/local_phase_reset/local_phase_reset_netlist.sv",
+      "sha256": "297baf75c91813a90bb2966d6fa0a99c67a3e569416690f383772cc9eb5f32ab"
+    },
+    {
+      "path": "sim/net26/local_reset_probe.sv",
+      "sha256": "0b466d74a050d3c45cd2161f999abe4c3870926f440d45d1270a06f43b7783ab"
+    },
+    {
+      "path": "hardware/local_phase_keyboard/local_phase_keyboard_netlist.sv",
+      "sha256": "28b5113601f32f71a37739efed0e9c1c225201caac971ecbdb2eee1f0053e082"
+    },
+    {
+      "path": "sim/net26/local_keyboard_probe.sv",
+      "sha256": "ba0424bb7917b0f9a8232be69802b9f8f58a1cf8ce8ba0da5e2b7e0586830089"
+    },
+    {
+      "path": "sim/net25/control_drain_probe.sv",
+      "sha256": "512ffbd47faac38de6f96f715b0367dc89711ef9b1e6e2b7d1d2f1549ee13b9f"
+    },
+    {
+      "path": "sim/net26/local_control_probe.sv",
+      "sha256": "92cb6156399b794b244cbe93d1ec90847808354ab3b9ec8039bb03613d201e23"
+    },
+    {
+      "path": "sim/net25/tb_direct_backend_hypothesis.sv",
+      "sha256": "e25fbed014f0b00384ecdadf0e1591d13fd62839b3df73d34a15ef9b361b7156"
+    },
+    {
+      "path": "sim/net26/tb_local_phase_probe.sv",
+      "sha256": "1ad1d4f161305ae261b585a9a6a30a5526a32993938d6a3937d5903a37fb7a8d"
+    }
+  ]
+}

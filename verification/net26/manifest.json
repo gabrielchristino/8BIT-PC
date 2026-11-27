@@ -1,0 +1,763 @@
+{
+  "iteration": "NET26",
+  "date": "2026-11-26",
+  "base_git_commit": "64d01218193259dfc3740f71b6af5ecbe154149e",
+  "scope": "Native local reset, direct controller clock, fast keyboard MMIO family; selected Icarus regressions pass. Optional CVC research rejected, full timed boot/global electrical/production qualification open.",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 2199,
+      "sha256": "cb3e2dc0290e56aa901cf0a6c5e1a2b081c0a44f40d32a0b283fa93a10450e58"
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 34414,
+      "sha256": "2b59411034c82bba20dc85adca06522762d4a9cf04b64487238e46309568c5f2"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "bytes": 17300,
+      "sha256": "858f1e581298dff1223df4c88807aade9f9f511afad7ba74adcabefea32657dd"
+    },
+    {
+      "path": "DECISIONS.md",
+      "bytes": 46591,
+      "sha256": "9fb182a2a950c7f98dd7de3e86387cd045500d2c60b4f75f40b8224411c8b291"
+    },
+    {
+      "path": "PROVENANCE.md",
+      "bytes": 25183,
+      "sha256": "34421c5360a75d4446005c47f516d3ba97e1ee81f00de16d463cae736c344be2"
+    },
+    {
+      "path": "README.md",
+      "bytes": 11664,
+      "sha256": "a294871ca919dfa3d8aa29e9d67759fdc9b0e3e42efe7417457a409587bbbbf9"
+    },
+    {
+      "path": "ROADMAP.md",
+      "bytes": 20497,
+      "sha256": "7f98615f217e37b73c171b8dfa253a215d008743e1c6d5d4f3238f23484c71b7"
+    },
+    {
+      "path": "docs/engineering/NET26.md",
+      "bytes": 6891,
+      "sha256": "86b567ad7a01b264ecfbba4e022dc16c0232a0ef59ba6f5e3ac797f6fd05ea5e"
+    },
+    {
+      "path": "docs/engineering/PRODUCTION_GATES.md",
+      "bytes": 8912,
+      "sha256": "320c41e2d9d97940f36723bcdecbbc990cb1b3cb050e84f253dc819e495296e4"
+    },
+    {
+      "path": "docs/engineering/VALIDATION_STATUS.md",
+      "bytes": 12175,
+      "sha256": "dc30f91fdd95b96d34204fb6ee91eeda2a7162ead00901c9fc92ecf7aa672cfa"
+    },
+    {
+      "path": "hardware/local_phase_keyboard/bus_packages.kicad_sym",
+      "bytes": 34739,
+      "sha256": "eec8e907c88b9b760d2300b5001a8c5dfd2bdcfaeecc954db39e847c7a6b1923"
+    },
+    {
+      "path": "hardware/local_phase_keyboard/design.json",
+      "bytes": 33475,
+      "sha256": "c322afe44983997757d7f90c8a04f3532f5e6da1747a6d1e5d078da909ae804b"
+    },
+    {
+      "path": "hardware/local_phase_keyboard/local_phase_keyboard.kicad_pro",
+      "bytes": 87,
+      "sha256": "9c8aee029dc1996703bad4b7799cbe5f2677e4facd94c668050cf37f48fbceb0"
+    },
+    {
+      "path": "hardware/local_phase_keyboard/local_phase_keyboard.kicad_sch",
+      "bytes": 239722,
+      "sha256": "30c00c3a45763dcc464e4d87972e868eac4f606d7f4b724043e53091e71efef7"
+    },
+    {
+      "path": "hardware/local_phase_keyboard/local_phase_keyboard_netlist.sv",
+      "bytes": 15587,
+      "sha256": "28b5113601f32f71a37739efed0e9c1c225201caac971ecbdb2eee1f0053e082"
+    },
+    {
+      "path": "hardware/local_phase_keyboard/package-functions.json",
+      "bytes": 16686,
+      "sha256": "554c22fafc109283e9c99e9d0a895ced989440d0d7ccb493fc04b952ac28e5f8"
+    },
+    {
+      "path": "hardware/local_phase_keyboard/pinmap.csv",
+      "bytes": 21248,
+      "sha256": "28ff5ccd3820327c92b54d90ec17a6fd501118962dfe8f66766bb62215333ea0"
+    },
+    {
+      "path": "hardware/local_phase_keyboard/sym-lib-table",
+      "bytes": 157,
+      "sha256": "8412941ddc4d47411836eac52e834bc37b0831ef44a096a87aecc10c865a4af3"
+    },
+    {
+      "path": "hardware/local_phase_reset/bus_packages.kicad_sym",
+      "bytes": 14762,
+      "sha256": "7c2ad9af6b7174daabec107ed7dc6360598ac92cdf3d4034cd944d87b1701c93"
+    },
+    {
+      "path": "hardware/local_phase_reset/design.json",
+      "bytes": 7243,
+      "sha256": "7b7145f8084b41f91c471aa823f1a2ce3d98994aa2f9139a2427c9a71aab87b3"
+    },
+    {
+      "path": "hardware/local_phase_reset/local_phase_reset.kicad_pro",
+      "bytes": 84,
+      "sha256": "afcc63b9e1b29d47cf8c2ee0a4fe34c502b378047207564f802b83b25fde5d82"
+    },
+    {
+      "path": "hardware/local_phase_reset/local_phase_reset.kicad_sch",
+      "bytes": 54414,
+      "sha256": "1057d3488a83d5dd2251429883a1142d772efd2de65729073d6cb4dec5fb68f5"
+    },
+    {
+      "path": "hardware/local_phase_reset/local_phase_reset_netlist.sv",
+      "bytes": 4132,
+      "sha256": "297baf75c91813a90bb2966d6fa0a99c67a3e569416690f383772cc9eb5f32ab"
+    },
+    {
+      "path": "hardware/local_phase_reset/package-functions.json",
+      "bytes": 7019,
+      "sha256": "de662a4bdd0630496670ff19093d5ec3b313deb22f39c4c857fd725661aa0eef"
+    },
+    {
+      "path": "hardware/local_phase_reset/pinmap.csv",
+      "bytes": 3765,
+      "sha256": "42f6e9d8524fac7a6f3eb2d79cb6910f878233487538c80cd9285f2f0ecc7f37"
+    },
+    {
+      "path": "hardware/local_phase_reset/sym-lib-table",
+      "bytes": 157,
+      "sha256": "1aba1e38a425ad9836a0bcd49687b4c73c3d3292c1a809afcbd87a4f399ebaf8"
+    },
+    {
+      "path": "hardware/local_phase_video/bus_packages.kicad_sym",
+      "bytes": 22823,
+      "sha256": "3747e41a98e021fd031691dad7847c17b5f9f22226fa77d42c862a18d84c57b3"
+    },
+    {
+      "path": "hardware/local_phase_video/design.json",
+      "bytes": 22394,
+      "sha256": "13d361cd94015c704421f595b450de5b5e35d1c8db1aa9d6f85163e19997873d"
+    },
+    {
+      "path": "hardware/local_phase_video/local_phase_video.kicad_pro",
+      "bytes": 84,
+      "sha256": "aa6fe039620649e1fe5525070fb9a4c19ae7aba4f9af7ce7540b8fde53735176"
+    },
+    {
+      "path": "hardware/local_phase_video/local_phase_video.kicad_sch",
+      "bytes": 171303,
+      "sha256": "bade5e166d8e4fa2a5b8c3b595b18502e71176e4632b1c370b4d6ff8c1afcc4a"
+    },
+    {
+      "path": "hardware/local_phase_video/local_phase_video_netlist.sv",
+      "bytes": 10890,
+      "sha256": "40cac43c893d05eb89481c2e531627b295d8f84b1949d8fcdb55025e9239ab23"
+    },
+    {
+      "path": "hardware/local_phase_video/package-functions.json",
+      "bytes": 10930,
+      "sha256": "d6fcea117a33208088f717a6e554b7fdef50342096bb0c8abcca6f7e6652968c"
+    },
+    {
+      "path": "hardware/local_phase_video/pinmap.csv",
+      "bytes": 14635,
+      "sha256": "158390cb6db2a65cf0b857534dd77d982dc9a9db1dd42da7a530426e83143633"
+    },
+    {
+      "path": "hardware/local_phase_video/sym-lib-table",
+      "bytes": 157,
+      "sha256": "afdb3299af1be465800e97d0e3fb3498976debd955e95784043e54e47fb43ed6"
+    },
+    {
+      "path": "sim/net26/compiled_smoke.sv",
+      "bytes": 1224,
+      "sha256": "8756afddc028b4e6966f7f38694545ad0a1c5b13d9a9135dbf2590a5bfd2f2b6"
+    },
+    {
+      "path": "sim/net26/cvc_clock_restricted.sv",
+      "bytes": 1047,
+      "sha256": "e3f2197efef0ed1376201d579d340327e4fe45f195fcc8d28fec95832d18028c"
+    },
+    {
+      "path": "sim/net26/cvc_compatible/sim__net04__package_models.sv",
+      "bytes": 2303,
+      "sha256": "3a99c5211f2183b21434608503beabd1b79a1ec8005ce6f4a826fa23bad4f42d"
+    },
+    {
+      "path": "sim/net26/cvc_compatible/sim__net24__package_models_pulse_diagnostic.sv",
+      "bytes": 2608,
+      "sha256": "be26a9ed4db03dcac0618de3e70010b0d64bfb8c3e26ec709b92b80067f72a55"
+    },
+    {
+      "path": "sim/net26/cvc_compatible/sim__net26__local_control_probe.sv",
+      "bytes": 14748,
+      "sha256": "5a3a813c68d0e0ac202ff22db57909725c469370518a5358f8251888b448b0fe"
+    },
+    {
+      "path": "sim/net26/isa1_memory_local_phase.sv",
+      "bytes": 6707,
+      "sha256": "58c7a994dc71c6bc0d0b1a8fa4b7d89cffaec4fde28ef64fbcbb163ec6166398"
+    },
+    {
+      "path": "sim/net26/local_control_probe.sv",
+      "bytes": 14441,
+      "sha256": "92cb6156399b794b244cbe93d1ec90847808354ab3b9ec8039bb03613d201e23"
+    },
+    {
+      "path": "sim/net26/local_keyboard_probe.sv",
+      "bytes": 15784,
+      "sha256": "ba0424bb7917b0f9a8232be69802b9f8f58a1cf8ce8ba0da5e2b7e0586830089"
+    },
+    {
+      "path": "sim/net26/local_reset_probe.sv",
+      "bytes": 4329,
+      "sha256": "0b466d74a050d3c45cd2161f999abe4c3870926f440d45d1270a06f43b7783ab"
+    },
+    {
+      "path": "sim/net26/local_video_async.sv",
+      "bytes": 11133,
+      "sha256": "d4fdb650eef0727a92003c0d7e4fd4850b46ddecba9742bd164053b6bcf15004"
+    },
+    {
+      "path": "sim/net26/local_video_probe.sv",
+      "bytes": 11156,
+      "sha256": "279a070799179eb70ef35e828753666ef3f8340dee97fd9db0568d49040b0809"
+    },
+    {
+      "path": "sim/net26/matrix_control.sv",
+      "bytes": 14528,
+      "sha256": "5518bf8c9e9ede80001319eeb1ce51bf7a69fe6bc7d43436092e2f6569fb4111"
+    },
+    {
+      "path": "sim/net26/matrix_keyboard.sv",
+      "bytes": 15871,
+      "sha256": "f360045b69081dcd581a63367d416596f544571527a54d746a98e4cd053ac3b5"
+    },
+    {
+      "path": "sim/net26/matrix_reset.sv",
+      "bytes": 4416,
+      "sha256": "ed8b1e18e3bb264fe0fc565302d8ae8f0d3be9153ebce3f95bdab344dfdd0936"
+    },
+    {
+      "path": "sim/net26/matrix_video.sv",
+      "bytes": 11292,
+      "sha256": "5bf3ab0f8e9b51e9c0f3158481bb3fe97b93be634b13ef549e0587acc6cad3ad"
+    },
+    {
+      "path": "sim/net26/revert_clock.sv",
+      "bytes": 4487,
+      "sha256": "6c5fab6be369a5a31a46048a70720c3905f3ff472d659dbd6cfe5a053e9bcf3e"
+    },
+    {
+      "path": "sim/net26/revert_keyboard.sv",
+      "bytes": 15885,
+      "sha256": "592074f1fdf8de6d8c0f16892f6a5a80ce5bae122b2ad28f75126c71b1b0dd88"
+    },
+    {
+      "path": "sim/net26/revert_local.sv",
+      "bytes": 11335,
+      "sha256": "7444230bda107807d99d949d3a2bf764f133967c0cea30cfab57adcd282f6c1f"
+    },
+    {
+      "path": "sim/net26/tb_local_phase_matrix.sv",
+      "bytes": 4514,
+      "sha256": "f01859a71269d150ea0422eb12d6cfe83234bf9a24ec0bb5223479a9b06d3e62"
+    },
+    {
+      "path": "sim/net26/tb_local_phase_memory.sv",
+      "bytes": 5002,
+      "sha256": "a9ecf61ae8edb3ef0a97249e8132c13037c33df7e2db7fccd70c0f979dc2313f"
+    },
+    {
+      "path": "sim/net26/tb_local_phase_probe.sv",
+      "bytes": 4182,
+      "sha256": "1ad1d4f161305ae261b585a9a6a30a5526a32993938d6a3937d5903a37fb7a8d"
+    },
+    {
+      "path": "tools/build_local_phase_reset.py",
+      "bytes": 7326,
+      "sha256": "05b4c7f9a3648b71f3709be47dbced037ae56a01ce991cf600bc7749a24ccb2e"
+    },
+    {
+      "path": "tools/calibrate_compiled_simulator.py",
+      "bytes": 4040,
+      "sha256": "3b78380d2105370776dc2543ba0b26433f61b36520993d7b2d413042981ae6ba"
+    },
+    {
+      "path": "tools/calibrate_interpreted_cvc.py",
+      "bytes": 1720,
+      "sha256": "f637f2d27ccfd82ed4697bd2546700c71e969e4301572f7e838f2f084a9dbbda"
+    },
+    {
+      "path": "tools/check_local_phase_native.py",
+      "bytes": 6749,
+      "sha256": "f9de8449a9d98d53aebefb40216b0b6c034f4acc53735289494a5137165b501c"
+    },
+    {
+      "path": "tools/evaluate_compiled_simulator.py",
+      "bytes": 2666,
+      "sha256": "d04a31769469ec53c3ec127f8fa2745c6038c1e5615bef72624eeb4d123209c3"
+    },
+    {
+      "path": "tools/inventory_local_system.py",
+      "bytes": 2168,
+      "sha256": "e62165c0dde64e6e20075d1b043b9c1d4e65c2716d3399d397ee5bd4decccc94"
+    },
+    {
+      "path": "tools/limited_process.py",
+      "bytes": 1542,
+      "sha256": "c19d8efcf4dffa5fbff513360a40f27f200b98c459050ad40662192039ee3ffa"
+    },
+    {
+      "path": "tools/prepare_compiler_dependency.py",
+      "bytes": 1489,
+      "sha256": "9f0618b9f36bfd4473c6a64eb0903d397ea3bfd954e983f06dcbba88771e58a9"
+    },
+    {
+      "path": "tools/prepare_local_phase_checks.py",
+      "bytes": 7308,
+      "sha256": "77e2a687f8486557ed603abc93531efd745ad4e6447a30d3c9fa3daf1a8763c3"
+    },
+    {
+      "path": "tools/probe_cvc_native.py",
+      "bytes": 6151,
+      "sha256": "326acfe9930f1a8311d9cc90b78a142aeffe33b8ecf8dd311a7059c3cebaf2f4"
+    },
+    {
+      "path": "tools/record_local_environment.py",
+      "bytes": 642,
+      "sha256": "b4814f9ee052bb163958bd3915f7484519821f5feec6a12600dd1062b5fb4dcc"
+    },
+    {
+      "path": "tools/record_net26_manifest.py",
+      "bytes": 7591,
+      "sha256": "14adcc60f3ed00af68539fc5280e2e318b09b753ccfeac558d6e6a6537f17429"
+    },
+    {
+      "path": "tools/run_local_phase_cpu_corners.py",
+      "bytes": 813,
+      "sha256": "6542877392edcbb5eb9c817fadc3a2ea8dc2bad2bc2db2d56e694fdd4a980903"
+    },
+    {
+      "path": "tools/run_local_phase_cpu_fault.py",
+      "bytes": 4231,
+      "sha256": "79539379aa2827492dd7068fe462c6e914019e844d5d23269b82c55b53ecfbb8"
+    },
+    {
+      "path": "tools/run_local_phase_matrix.py",
+      "bytes": 4801,
+      "sha256": "7d1a635d4f71780f3e2682151d016b3f0fd7306f3da9ea13b769602ad835d41f"
+    },
+    {
+      "path": "tools/run_local_phase_memory.py",
+      "bytes": 4601,
+      "sha256": "058a54a5973a1d70ebafe61f1f745b3697d15267ac2de96b655cc41b561323e7"
+    },
+    {
+      "path": "tools/run_local_phase_negative.py",
+      "bytes": 3598,
+      "sha256": "c4ebc4acc4761cf9dc4e144494ef312cd58cd40a4cc4d0de55403b4032a0bfd7"
+    },
+    {
+      "path": "tools/run_local_phase_probe.py",
+      "bytes": 2930,
+      "sha256": "c950eb7dcdcf261d2af23268fc102c2d89682559d85f55153912645c8da2c47d"
+    },
+    {
+      "path": "tools/run_local_phase_program.py",
+      "bytes": 4124,
+      "sha256": "564f9471e6a454cf8b4e872086d16871a4676d778c3f4b1d93602af6afad7e79"
+    },
+    {
+      "path": "tools/run_local_phase_vectors.py",
+      "bytes": 4808,
+      "sha256": "e29369f4d65938b1fccaf769391a82c7fb1d3bb2e9af381cd8e07b37ced0d993"
+    },
+    {
+      "path": "tools/update_net26_continuity.py",
+      "bytes": 7493,
+      "sha256": "848224d4ac0e1880504744e7f06ecb1cfa38e53e4d3e4a42f9825a4441449094"
+    },
+    {
+      "path": "verification/net26/acceptance.json",
+      "bytes": 905,
+      "sha256": "6f9d9c4f4e5252cf29441355e38ed1c7e77bb8ace23180ec3e712e266084360a"
+    },
+    {
+      "path": "verification/net26/actual-cpu-write-reset.json",
+      "bytes": 10272,
+      "sha256": "d4a0b13f73eab786f9a4a8b4132f15cd828e18ebabfd41f3834d7f54771baace"
+    },
+    {
+      "path": "verification/net26/adapter-origin.json",
+      "bytes": 3333,
+      "sha256": "77cd2312f17099e16be030a913d0b19ff8ba194f70f2a8f51f3cb612f50e2a60"
+    },
+    {
+      "path": "verification/net26/baseline-integrity.json",
+      "bytes": 4703,
+      "sha256": "7dff26dc69f832e4e97afc173b71e71fce75dac86d7d1bffe442a2ee51b8b17b"
+    },
+    {
+      "path": "verification/net26/development/keyboard-ports/build_local_phase_reset.py",
+      "bytes": 7286,
+      "sha256": "bdc37306a42800f351e1c80542e76b8bb9139b1b5555afe6ab6cc9aefc28dc5b"
+    },
+    {
+      "path": "verification/net26/development/keyboard-ports/keyboard-export.json",
+      "bytes": 430,
+      "sha256": "c145469ecb468505a3a01706dc09af3b91dc3e77d32cd160bccec86bfe91c5db"
+    },
+    {
+      "path": "verification/net26/development/keyboard-ports/record.json",
+      "bytes": 523,
+      "sha256": "fdc5b084928fb1a7b09745dc0c0171b1da1c6365cec84e541aaec8a9f43e7b1e"
+    },
+    {
+      "path": "verification/net26/development/keyboard-ports/reset-check.json",
+      "bytes": 2138,
+      "sha256": "6ac446dd6e477c62dc0abe6806e366da16c681e404b39476d862ce60b94ad0a9"
+    },
+    {
+      "path": "verification/net26/development/keyboard-ports/video-check.json",
+      "bytes": 2070,
+      "sha256": "957a8afe7e59a38f8bb1af85ec548ceed0a89524a92eb3872b46ab9f50fd419f"
+    },
+    {
+      "path": "verification/net26/development/negative-scope/record.json",
+      "bytes": 355,
+      "sha256": "705d3512e9853fc5f777f8a3defbee1d35522ebcb8439bb65bb43d1d6a8cf542"
+    },
+    {
+      "path": "verification/net26/development/negative-scope/result.json",
+      "bytes": 9920,
+      "sha256": "5b8ee12476e1d48b058d7fbec0725d7152e454b75eb19b88c0d8d8572b877487"
+    },
+    {
+      "path": "verification/net26/development/negative-scope/run_local_phase_negative.py",
+      "bytes": 3590,
+      "sha256": "b241399af7f3873ff2d7951b78aaa3b88b01c01e04b77441d01c948c7809d165"
+    },
+    {
+      "path": "verification/net26/environment.json",
+      "bytes": 5886,
+      "sha256": "3468665efe4790c6651c9e13e7f4362913f1b901d976d98888ffe1f1c3a42679"
+    },
+    {
+      "path": "verification/net26/frequency-corners/actual-cpu-write-reset.json",
+      "bytes": 11892,
+      "sha256": "8f08e60bc3ee580c81d7a8659f03a6bb740cc7533024787fd5e5ba3a6e4387a5"
+    },
+    {
+      "path": "verification/net26/frequency-corners/compiled-policy0.sv",
+      "bytes": 3488,
+      "sha256": "50bd35762367da83ee3a8f214747cd727c1abdb4d93af46fba0212682a9c8eea"
+    },
+    {
+      "path": "verification/net26/frequency-corners/compiled-policy1.sv",
+      "bytes": 3487,
+      "sha256": "a668e46276a3ecf5853bbbfc0e07c5db046827120220edf1a3b11a2b812e26e5"
+    },
+    {
+      "path": "verification/net26/load-inventory.json",
+      "bytes": 9641,
+      "sha256": "139f611ab99921c3c9728ddff524d405752d162241773161dd8c7e95fe4b583f"
+    },
+    {
+      "path": "verification/net26/local-phase-matrix.json",
+      "bytes": 366420,
+      "sha256": "eff70db3efe58aabe6d98a9d914fe56e437bf0df3e7285d5c684704e9cb29cd3"
+    },
+    {
+      "path": "verification/net26/local-phase-negative.json",
+      "bytes": 9894,
+      "sha256": "3db91a3b3a9ee37ec70291515d127baa1c75b95485be56765f96ffb26609b2dd"
+    },
+    {
+      "path": "verification/net26/local-phase-probe.json",
+      "bytes": 376141,
+      "sha256": "058d5e89bd9e140a48c005db4d3e58698d8ec3b377df0b2b382c905a997a55a7"
+    },
+    {
+      "path": "verification/net26/memory-pin-results.json",
+      "bytes": 19612,
+      "sha256": "a0f32e78e1ecb5f9099f04a545706a3350606d8ceb93c5cb55a76dbf15c7e8c5"
+    },
+    {
+      "path": "verification/net26/native/keyboard/erc-summary.json",
+      "bytes": 1612,
+      "sha256": "327ab97dd0c1b3840b2819782989ad1bc97aa6e57b07001bf77b56967288380d"
+    },
+    {
+      "path": "verification/net26/native/keyboard/erc.json",
+      "bytes": 16357,
+      "sha256": "c06f6026e9359fdbb73dcc8ea1e63998d3fe11a522907d5c0a3c178342ffb558"
+    },
+    {
+      "path": "verification/net26/native/keyboard/export.json",
+      "bytes": 430,
+      "sha256": "c145469ecb468505a3a01706dc09af3b91dc3e77d32cd160bccec86bfe91c5db"
+    },
+    {
+      "path": "verification/net26/native/keyboard/local_phase_keyboard.pdf",
+      "bytes": 343821,
+      "sha256": "84e96aaec6d1314b4160abfd44aabcfb45f8fc07f34d6f019abd9e7748880b04"
+    },
+    {
+      "path": "verification/net26/native/keyboard/local_phase_keyboard.xml",
+      "bytes": 175586,
+      "sha256": "cc11029a53e7c8265205dbe15a25ed51ba8966333804f699f67e5334a46e3b4a"
+    },
+    {
+      "path": "verification/net26/native/keyboard/preview.png",
+      "bytes": 59439,
+      "sha256": "abfc085bacbe1d38bc992cfb3016ed603581377d25a0dbca1f8182172f5aaddd"
+    },
+    {
+      "path": "verification/net26/native/keyboard/schematic-check.json",
+      "bytes": 2073,
+      "sha256": "ea34aafbd2e49dd0577971259d7c0464ceb3ada81000386d0b7d75001a27b454"
+    },
+    {
+      "path": "verification/net26/native/reset/erc-summary.json",
+      "bytes": 1704,
+      "sha256": "457e1ad1fb641b2bfac6974ad027ff268de13f55824ddf4f47ec7be5b5e73c82"
+    },
+    {
+      "path": "verification/net26/native/reset/erc.json",
+      "bytes": 8961,
+      "sha256": "e266f3f023051ddfa5a8d946c0f442cef193f501864eb484fd9afe65f4b52645"
+    },
+    {
+      "path": "verification/net26/native/reset/export.json",
+      "bytes": 418,
+      "sha256": "40bdd33f0fab67d9327dbd74b8481f16407446c4da572c3b71f0fa7837724fe4"
+    },
+    {
+      "path": "verification/net26/native/reset/local_phase_reset.pdf",
+      "bytes": 117605,
+      "sha256": "8f4eab61fa7b73595545781c16ff5f7a14b47efd7ce643bb992e717f5bcb8748"
+    },
+    {
+      "path": "verification/net26/native/reset/local_phase_reset.xml",
+      "bytes": 40588,
+      "sha256": "b26820f75c302e1103686b69632a0648d730638d147f985cf917bf2dd406f836"
+    },
+    {
+      "path": "verification/net26/native/reset/preview.png",
+      "bytes": 43673,
+      "sha256": "1cc2432e2a9a4175587beb6f8b29b98061cba2285d78b6c81c966981c102d4b0"
+    },
+    {
+      "path": "verification/net26/native/reset/schematic-check.json",
+      "bytes": 2138,
+      "sha256": "29cddca8819b8c12b40698c1b1b48ec7c4d2783c7e8ba288c9231bc9b4ef676a"
+    },
+    {
+      "path": "verification/net26/native/video/erc-summary.json",
+      "bytes": 1725,
+      "sha256": "fb6da739dfd36a69e82b6158088cacb30ae7d8d1cf97ac65e920511d4d39074c"
+    },
+    {
+      "path": "verification/net26/native/video/erc.json",
+      "bytes": 30731,
+      "sha256": "c265dc7c6d763b866a0105e07f7be2a2990a2e884d75f4fd624d2114dc90f632"
+    },
+    {
+      "path": "verification/net26/native/video/export.json",
+      "bytes": 418,
+      "sha256": "8819e527e555b9354f85e3ee7b017856c2baaf65ec2fdb35c4917f657b266d8a"
+    },
+    {
+      "path": "verification/net26/native/video/local_phase_video.pdf",
+      "bytes": 265168,
+      "sha256": "8a09ae55bb33c72741b9f3e38da4c1a3d3f45d2fade578d33b3732c9503f229c"
+    },
+    {
+      "path": "verification/net26/native/video/local_phase_video.xml",
+      "bytes": 126631,
+      "sha256": "49caa3cbf5b66d083c9c5eb05452b1ea2b59e9f95f587131d351a4e8a91a8a91"
+    },
+    {
+      "path": "verification/net26/native/video/preview.png",
+      "bytes": 49618,
+      "sha256": "a548f2cbd20da45c1572ee9c83ac865f75932d1e39c003950221dc927f28a2e3"
+    },
+    {
+      "path": "verification/net26/native/video/schematic-check.json",
+      "bytes": 2070,
+      "sha256": "6d00bc85bc746bb64330bd3ca8d64136a983f418baf9f75cca848972ad44636b"
+    },
+    {
+      "path": "verification/net26/program/frame-system-ideal.png",
+      "bytes": 1361,
+      "sha256": "d9a8e76c001c18198f03ed53bed7864ad1043e3002e2908a94e98452b58f6375"
+    },
+    {
+      "path": "verification/net26/program/system-program-ideal.json",
+      "bytes": 14336,
+      "sha256": "99940ce64199a9708bfa106524f50433a91852b4fa40d3f1a4089218cc1e3250"
+    },
+    {
+      "path": "verification/net26/program/system-tb_rtl_program-ideal.sv",
+      "bytes": 5290,
+      "sha256": "d75a9f3a7ee990c19e1212ff8243be1aa662167a595de1a9aa794370b0ecdf7e"
+    },
+    {
+      "path": "verification/net26/tool-research/cvc-build.json",
+      "bytes": 194206,
+      "sha256": "4115842fbf75912f8640bed3fe0071cfe70cb4ef33ac0b096f82324038282e5e"
+    },
+    {
+      "path": "verification/net26/tool-research/cvc-calibration.json",
+      "bytes": 3532,
+      "sha256": "7854fd1b6b59c162b83d523e61453678e46b725bd64de16228d3c805696b2b70"
+    },
+    {
+      "path": "verification/net26/tool-research/cvc-dependency.json",
+      "bytes": 1066,
+      "sha256": "1f4948fdc70443dd447a9a8a634da95d598cc5198588547d30a6314b77e1d504"
+    },
+    {
+      "path": "verification/net26/tool-research/cvc-interpreter-calibration.json",
+      "bytes": 63041,
+      "sha256": "548eb61555778e3da1c52c99e45700a098724cc70fa1259b911d5c953f31fef2"
+    },
+    {
+      "path": "verification/net26/tool-research/cvc-native-probe.json",
+      "bytes": 10015,
+      "sha256": "c16ac8177489e0b6445c40fbec7bf77a9b8d7019e47a9f6eb0fb9695a1f3fe65"
+    },
+    {
+      "path": "verification/net26/tool-research/development/aborted-native/models/sim__net04__package_models.sv",
+      "bytes": 2303,
+      "sha256": "3a99c5211f2183b21434608503beabd1b79a1ec8005ce6f4a826fa23bad4f42d"
+    },
+    {
+      "path": "verification/net26/tool-research/development/aborted-native/models/sim__net24__package_models_pulse_diagnostic.sv",
+      "bytes": 2608,
+      "sha256": "be26a9ed4db03dcac0618de3e70010b0d64bfb8c3e26ec709b92b80067f72a55"
+    },
+    {
+      "path": "verification/net26/tool-research/development/aborted-native/models/sim__net26__local_control_probe.sv",
+      "bytes": 14748,
+      "sha256": "5a3a813c68d0e0ac202ff22db57909725c469370518a5358f8251888b448b0fe"
+    },
+    {
+      "path": "verification/net26/tool-research/development/aborted-native/prior-report.json",
+      "bytes": 9838,
+      "sha256": "aa04f64ff60ac4f6723354dd80abe03259355cd6c05904510dc0d1468f303da3"
+    },
+    {
+      "path": "verification/net26/tool-research/development/aborted-native/probe_cvc_native.py",
+      "bytes": 6083,
+      "sha256": "d8f0263a28f4d18787e0a2c0da28c8362807a14af3957d4c31feaabd7d0f5eb1"
+    },
+    {
+      "path": "verification/net26/tool-research/development/aborted-native/record.json",
+      "bytes": 1044,
+      "sha256": "8671e0b78eeb80c69085475f61b7981cde3b9ab6d521d874eb7bf10aa69a596a"
+    },
+    {
+      "path": "verification/net26/tool-research/development/fatal-exit-zero/calibrate_interpreted_cvc.py",
+      "bytes": 1352,
+      "sha256": "687800463976d350e733ea498142812703f5ea877529133b99fee0c9246e6044"
+    },
+    {
+      "path": "verification/net26/tool-research/development/fatal-exit-zero/result.json",
+      "bytes": 10877,
+      "sha256": "7c3e0a4524ac68a59f8a2a52f879480ad6533a7f81d48a29f0043e92a6e9d7c6"
+    },
+    {
+      "path": "verification/net26/tool-research/development/generate-region/models/sim__net26__local_control_probe.sv",
+      "bytes": 14544,
+      "sha256": "2fe6184654db1752753cbf3e8ddc008d47ef40739ab444d7f24d8ccea28af1c0"
+    },
+    {
+      "path": "verification/net26/tool-research/development/generate-region/probe_cvc_native.py",
+      "bytes": 5433,
+      "sha256": "c184c59012b84c9f040491bf25f38980e0848f27e00c1b786dbe7cdf01c03caa"
+    },
+    {
+      "path": "verification/net26/tool-research/development/generate-region/result.json",
+      "bytes": 9838,
+      "sha256": "aa04f64ff60ac4f6723354dd80abe03259355cd6c05904510dc0d1468f303da3"
+    },
+    {
+      "path": "verification/net26/tool-research/development/implicit-generate/probe_cvc_native.py",
+      "bytes": 4062,
+      "sha256": "7cd494eabd7ea1bf00acf0a5528510de542cd5dcb340baf51d259a409b381160"
+    },
+    {
+      "path": "verification/net26/tool-research/development/implicit-generate/result.json",
+      "bytes": 9365,
+      "sha256": "5bbb007b5a88b95ee023774628c2118d85de135356f13394af5e49415c4caec6"
+    },
+    {
+      "path": "verification/net26/tool-research/development/library-parser/probe_cvc_native.py",
+      "bytes": 4066,
+      "sha256": "e0817473fe67b0a8913f309edea161f6d01c85c4c8b5a814bf3af30172edbbef"
+    },
+    {
+      "path": "verification/net26/tool-research/development/library-parser/result.json",
+      "bytes": 8012,
+      "sha256": "d5774e127d03d729e4f38e2a63d064a5a0d86a92717bba62c6cfd18f8c68022b"
+    },
+    {
+      "path": "verification/net26/tool-research/development/missing-zlib/evaluate_compiled_simulator.py",
+      "bytes": 2468,
+      "sha256": "0521fd365bff39fa82154c6342fcfd9831bc2ce3b9e6d14c8507d763053b1449"
+    },
+    {
+      "path": "verification/net26/tool-research/development/missing-zlib/result.json",
+      "bytes": 2746,
+      "sha256": "0c0500409b59114f388e020827b72d9e8250ce55feefffbf5baf0895d2c903ba"
+    },
+    {
+      "path": "verification/net26/tool-research/verilog.log",
+      "bytes": 44186,
+      "sha256": "755cd0ec6a647dfcbf5b4c3e1f5b723622e61a48f4972ae9ce6745c441625aec"
+    },
+    {
+      "path": "verification/net26/topology.json",
+      "bytes": 4893,
+      "sha256": "95e2569cdec9410e260c8ee7ec60d1d8f7c562223ac50b0e85fa781879639601"
+    },
+    {
+      "path": "verification/net26/vectors/verified-cpu-early-timed-quick.json",
+      "bytes": 14656,
+      "sha256": "9f48af4e0851c533859a29caefb99c64c4bf3bc7ff032ef03817740eeaba16ed"
+    },
+    {
+      "path": "verification/net26/vectors/verified-cpu-ideal.json",
+      "bytes": 14632,
+      "sha256": "a6435ad83b4a0f4052df3606a314b495c47aa04d60774038d7bc4790f48c837c"
+    },
+    {
+      "path": "verification/net26/vectors/verified-cpu-timed-quick.json",
+      "bytes": 14657,
+      "sha256": "d35d170cb4340dfb9bbd38d9c7c77a3cee86ad362a4d7ac715d6b5529a7e4b99"
+    },
+    {
+      "path": "verification/net26/vectors/verified-tb_rtl_cpu-early-timed.sv",
+      "bytes": 5753,
+      "sha256": "2d9efc50ae453a8472163c2420df70f4fd720a89ee424e18838f0dc10a681f49"
+    },
+    {
+      "path": "verification/net26/vectors/verified-tb_rtl_cpu-ideal.sv",
+      "bytes": 5732,
+      "sha256": "e66a3d6438822e58e2769e603f830e4c82182803ff9fbfae5d684ca835594035"
+    },
+    {
+      "path": "verification/net26/vectors/verified-tb_rtl_cpu-timed.sv",
+      "bytes": 5753,
+      "sha256": "2d9efc50ae453a8472163c2420df70f4fd720a89ee424e18838f0dc10a681f49"
+    }
+  ]
+}

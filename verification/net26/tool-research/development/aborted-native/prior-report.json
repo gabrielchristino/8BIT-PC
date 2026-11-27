@@ -1,0 +1,180 @@
+{
+  "date": "2026-11-26",
+  "scope": "Tool evaluation only: CVC+interp with explicit generate syntax versus Icarus with original syntax, same native graph/guards. Restricted source projection requires constant qualified VDD/enable; original cancelable model intact. Not compiled-engine adoption or analog proof.",
+  "sources": [
+    {
+      "path": "sim/hdl/hc_models.sv",
+      "sha256": "f305ff38b7e58701e9f97528de68ea8c5518a628d38bd5a8ac9e847fa87c8680"
+    },
+    {
+      "path": "sim/net02/package_models.sv",
+      "sha256": "de2fd5315a3809a89ba90b8f09a96a25d06d3e00b8568a8f82387b92a624199f"
+    },
+    {
+      "path": "sim/net24/package_models_pulse_diagnostic.sv",
+      "sha256": "45027579e2ade0dcee9cd31a584523be5264c5b8b8938afcadf4bcf61b624499"
+    },
+    {
+      "path": "sim/net04/package_models.sv",
+      "sha256": "85b00a3b6b0307d68b53e4ea1ae97ba5cbf83c20685544bb12fde333efa07d63"
+    },
+    {
+      "path": "sim/net19a/package_models.sv",
+      "sha256": "dc71d5b1f5bcefcf7e20dc9a930de79c4ebc7fec145961dcbabd79a4766ac957"
+    },
+    {
+      "path": "sim/net14c/package_models_async.sv",
+      "sha256": "7b45346f5e25bb73deb33ba9fb02d50e2b020ab527f75fed1244e173300ccfcb"
+    },
+    {
+      "path": "sim/net22/phase_packages.sv",
+      "sha256": "f4c9fd1d3c6a936df6e024a32b9a53e53e79cfcf1e094c1d7731e5a857cf2059"
+    },
+    {
+      "path": "sim/net26/cvc_clock_restricted.sv",
+      "sha256": "e3f2197efef0ed1376201d579d340327e4fe45f195fcc8d28fec95832d18028c"
+    },
+    {
+      "path": "sim/net24/backend_pulse_model.sv",
+      "sha256": "38b4acb598aac3bbbdb3909a740ea11c2d30a1588b685e93cb253b1f7bfbf5c8"
+    },
+    {
+      "path": "sim/net25/warm_packages.sv",
+      "sha256": "b6ff85ba2c3ffeb0de54608c10e4afae3aaed2abb051498a39bdc000259c7d7b"
+    },
+    {
+      "path": "sim/net26/local_video_probe.sv",
+      "sha256": "279a070799179eb70ef35e828753666ef3f8340dee97fd9db0568d49040b0809"
+    },
+    {
+      "path": "sim/net26/local_reset_probe.sv",
+      "sha256": "0b466d74a050d3c45cd2161f999abe4c3870926f440d45d1270a06f43b7783ab"
+    },
+    {
+      "path": "sim/net26/local_control_probe.sv",
+      "sha256": "92cb6156399b794b244cbe93d1ec90847808354ab3b9ec8039bb03613d201e23"
+    },
+    {
+      "path": "sim/net26/local_keyboard_probe.sv",
+      "sha256": "ba0424bb7917b0f9a8232be69802b9f8f58a1cf8ce8ba0da5e2b7e0586830089"
+    },
+    {
+      "path": "sim/net26/tb_local_phase_probe.sv",
+      "sha256": "1ad1d4f161305ae261b585a9a6a30a5526a32993938d6a3937d5903a37fb7a8d"
+    },
+    {
+      "path": "tools/probe_cvc_native.py",
+      "sha256": "c184c59012b84c9f040491bf25f38980e0848f27e00c1b786dbe7cdf01c03caa"
+    },
+    {
+      "path": "sim/net26/revert_clock.sv",
+      "sha256": "6c5fab6be369a5a31a46048a70720c3905f3ff472d659dbd6cfe5a053e9bcf3e"
+    },
+    {
+      "path": "sim/net26/revert_local.sv",
+      "sha256": "7444230bda107807d99d949d3a2bf764f133967c0cea30cfab57adcd282f6c1f"
+    },
+    {
+      "path": "sim/net26/revert_keyboard.sv",
+      "sha256": "592074f1fdf8de6d8c0f16892f6a5a80ce5bae122b2ad28f75126c71b1b0dd88"
+    }
+  ],
+  "executable": {
+    "path": "/home/gabri/.local/opt/isa1-cvc-source/build64/cvc64",
+    "sha256": "c652a90c7e498519c3117099b2802d30840c107fc196c469e5a650aa358b9faa"
+  },
+  "syntax_transforms": [
+    {
+      "original": "sim/net26/local_control_probe.sv",
+      "original_sha256": "92cb6156399b794b244cbe93d1ec90847808354ab3b9ec8039bb03613d201e23",
+      "adapted": "sim/net26/cvc_compatible/sim__net26__local_control_probe.sv",
+      "adapted_sha256": "2fe6184654db1752753cbf3e8ddc008d47ef40739ab444d7f24d8ccea28af1c0",
+      "transformation": "Wrap formerly implicit module-level TIMED generate tail in explicit generate/endgenerate. No added begin scope or changed predicates."
+    }
+  ],
+  "runs": [
+    {
+      "name": "positive",
+      "parameters": {
+        "PROFILE": 1,
+        "POLICY": 0,
+        "INITIAL_PHASE": -1,
+        "RAW_RELEASE_NS": 60000,
+        "RAW_LOW_NS": 50,
+        "OFFSET_NS": 39
+      },
+      "bench_sha256": "743d2174ec7a44ef0abd6d267dc6700c73ac2f0a073dc9952f7b90b22af9228f",
+      "cvc": {
+        "command": [
+          "/home/gabri/.local/opt/isa1-cvc-source/build64/cvc64",
+          "-sv",
+          "+interp",
+          "/tmp/isa1-cvc-native-liy_jasq/0/probe.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/hdl/hc_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net02/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net24/package_models_pulse_diagnostic.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net04/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net19a/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net14c/package_models_async.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net22/phase_packages.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net26/cvc_clock_restricted.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net24/backend_pulse_model.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net25/warm_packages.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net26/local_video_probe.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net26/local_reset_probe.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net26/cvc_compatible/sim__net26__local_control_probe.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net26/local_keyboard_probe.sv"
+        ],
+        "exit": 1,
+        "stdout": "OSS_CVC_7.00b-x86_64-rhel6x of 07/07/14 (Linux-elf).\nCopyright (c) 1991-2014 Tachyon Design Automation Corp.\n  All Rights reserved.  Licensed software subject to prohibitions and\n  restrictions.  See OSS CVC artistic license included with release.\nToday is Thu Nov 26 19:34:00 2026.\nElaborating source file \"/tmp/isa1-cvc-native-liy_jasq/0/probe.sv\"\nElaborating source file \"/mnt/c/Users/gabri/projetos/isa1/sim/hdl/hc_models.sv\"\nElaborating source file \"/mnt/c/Users/gabri/projetos/isa1/sim/net02/package_models.sv\"\nElaborating source file \"/mnt/c/Users/gabri/projetos/isa1/sim/net24/package_models_pulse_diagnostic.sv\"\n**/mnt/c/Users/gabri/projetos/isa1/sim/net24/package_models_pulse_diagnostic.sv(7) ERROR** [975] module or primitive keyword expected - endmodule read\nElaborating source file \"/mnt/c/Users/gabri/projetos/isa1/sim/net04/package_models.sv\"\n**/mnt/c/Users/gabri/projetos/isa1/sim/net04/package_models.sv(18) ERROR** [975] module or primitive keyword expected - endmodule read\nElaborating source file \"/mnt/c/Users/gabri/projetos/isa1/sim/net19a/package_models.sv\"\nElaborating source file \"/mnt/c/Users/gabri/projetos/isa1/sim/net14c/package_models_async.sv\"\nElaborating source file \"/mnt/c/Users/gabri/projetos/isa1/sim/net22/phase_packages.sv\"\nElaborating source file \"/mnt/c/Users/gabri/projetos/isa1/sim/net26/cvc_clock_restricted.sv\"\nElaborating source file \"/mnt/c/Users/gabri/projetos/isa1/sim/net24/backend_pulse_model.sv\"\nElaborating source file \"/mnt/c/Users/gabri/projetos/isa1/sim/net25/warm_packages.sv\"\nElaborating source file \"/mnt/c/Users/gabri/projetos/isa1/sim/net26/local_video_probe.sv\"\nElaborating source file \"/mnt/c/Users/gabri/projetos/isa1/sim/net26/local_reset_probe.sv\"\nElaborating source file \"/mnt/c/Users/gabri/projetos/isa1/sim/net26/cvc_compatible/sim__net26__local_control_probe.sv\"\n**/mnt/c/Users/gabri/projetos/isa1/sim/net26/cvc_compatible/sim__net26__local_control_probe.sv(419) ERROR** [975] module or primitive keyword expected - endmodule read\nElaborating source file \"/mnt/c/Users/gabri/projetos/isa1/sim/net26/local_keyboard_probe.sv\"\n  Unable to begin simulation.\nEnd of OSS_CVC_7.00b-x86_64-rhel6x at Thu Nov 26 19:34:00 2026 (elapsed 0.1 seconds).\n",
+        "stderr": "",
+        "seconds": 0.102
+      },
+      "compile_icarus": {
+        "command": [
+          "iverilog",
+          "-g2012",
+          "-Wall",
+          "-s",
+          "tb_drain_pulse",
+          "-o",
+          "/tmp/isa1-cvc-native-liy_jasq/0/icarus.vvp",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/hdl/hc_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net02/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net24/package_models_pulse_diagnostic.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net04/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net19a/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net14c/package_models_async.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net22/phase_packages.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net26/cvc_clock_restricted.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net24/backend_pulse_model.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net25/warm_packages.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net26/local_video_probe.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net26/local_reset_probe.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net26/local_control_probe.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net26/local_keyboard_probe.sv",
+          "/tmp/isa1-cvc-native-liy_jasq/0/probe.sv"
+        ],
+        "exit": 0,
+        "stdout": "",
+        "stderr": "",
+        "seconds": 0.081
+      },
+      "icarus": {
+        "command": [
+          "vvp",
+          "/tmp/isa1-cvc-native-liy_jasq/0/icarus.vvp"
+        ],
+        "exit": 0,
+        "stdout": "CUT profile=1 offset_ns=39.000 raw_assert_ns=10021340.992 bank_memory_n=1\nKEY_CLOCK selected_min_ns=47.444 local_reset_recovery_events=0/0\nRESULT profile=1 offset_ns=39.000 policy=0 initial_phase=-1 ready=1 safe=1 failures=0\n/tmp/isa1-cvc-native-liy_jasq/0/probe.sv:69: $finish called at 10042064500 (1ps)\n",
+        "stderr": "",
+        "seconds": 0.082
+      },
+      "passed": false
+    }
+  ],
+  "failures": [
+    0
+  ],
+  "adopted_for_full_program": false
+}

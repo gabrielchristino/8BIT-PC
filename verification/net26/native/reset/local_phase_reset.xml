@@ -1,0 +1,1079 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>/mnt/c/Users/gabri/projetos/isa1/hardware/local_phase_reset/local_phase_reset.kicad_sch</source>
+    <date>2026-11-26T19:07:06</date>
+    <tool>Eeschema 10.0.8</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>ISA-1 clock sources and reset candidate</title>
+        <company/>
+        <rev>NET-26R</rev>
+        <date>2026-11-26</date>
+        <source>local_phase_reset.kicad_sch</source>
+        <comment number="1" value="CANDIDATE - LOAD / PCB / ANALOG VALIDATION PENDING - NOT FOR PRODUCTION"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C1">
+      <value>100nF</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET26R" part="C" description=""/>
+      <property name="Sheetname" value="local_phase_reset"/>
+      <property name="Sheetfile" value="local_phase_reset.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0ea4c843-4e20-53e3-b62d-3afd6e77343e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C2">
+      <value>100nF</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET26R" part="C" description=""/>
+      <property name="Sheetname" value="local_phase_reset"/>
+      <property name="Sheetfile" value="local_phase_reset.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0a09f2ad-5119-5616-8729-40747014be82</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C3">
+      <value>100nF</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET26R" part="C" description=""/>
+      <property name="Sheetname" value="local_phase_reset"/>
+      <property name="Sheetfile" value="local_phase_reset.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>06c92be8-6de9-5e09-b293-4c5035bc9dca</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C4">
+      <value>100nF</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET26R" part="C" description=""/>
+      <property name="Sheetname" value="local_phase_reset"/>
+      <property name="Sheetfile" value="local_phase_reset.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>35a61592-0343-5653-8309-3a39e36acefe</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C5">
+      <value>100nF</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET26R" part="C" description=""/>
+      <property name="Sheetname" value="local_phase_reset"/>
+      <property name="Sheetfile" value="local_phase_reset.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1bc927c7-bee6-5b32-807c-4bfe0d6602bd</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C6">
+      <value>1n C0G</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET26R" part="C" description=""/>
+      <property name="Sheetname" value="local_phase_reset"/>
+      <property name="Sheetfile" value="local_phase_reset.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f5041eaa-cc0c-54e9-82b3-955c0f2289d6</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C7">
+      <value>100nF</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET26R" part="C" description=""/>
+      <property name="Sheetname" value="local_phase_reset"/>
+      <property name="Sheetfile" value="local_phase_reset.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b6dc5726-b429-54d1-bdbe-15432647c322</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C8">
+      <value>1n C0G sense candidate</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET26R" part="C" description=""/>
+      <property name="Sheetname" value="local_phase_reset"/>
+      <property name="Sheetfile" value="local_phase_reset.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>fdd0b677-6f46-5000-b5b3-a8973f35dba3</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C11">
+      <value>100nF</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET26R" part="C" description=""/>
+      <property name="Sheetname" value="local_phase_reset"/>
+      <property name="Sheetfile" value="local_phase_reset.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>abbc63c7-0243-554a-bf6b-394a43689a24</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C12">
+      <value>100nF</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET26R" part="C" description=""/>
+      <property name="Sheetname" value="local_phase_reset"/>
+      <property name="Sheetfile" value="local_phase_reset.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>44e2a9c0-207d-5a9c-9743-34d4cdfd2108</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C13">
+      <value>100nF candidate</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET26R" part="C" description=""/>
+      <property name="Sheetname" value="local_phase_reset"/>
+      <property name="Sheetfile" value="local_phase_reset.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>17f70ea5-f486-58d3-aea9-6451a5bff761</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C14">
+      <value>100nF candidate</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET26R" part="C" description=""/>
+      <property name="Sheetname" value="local_phase_reset"/>
+      <property name="Sheetfile" value="local_phase_reset.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0f76733a-3bd9-5290-99fd-b782b54a0f99</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R1">
+      <value>10k</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET26R" part="R" description=""/>
+      <property name="Sheetname" value="local_phase_reset"/>
+      <property name="Sheetfile" value="local_phase_reset.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7f590264-e00e-5d8b-ad3b-3d13610e2444</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R2">
+      <value>1120 ohm 0.1% effective</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET26R" part="R" description=""/>
+      <property name="Sheetname" value="local_phase_reset"/>
+      <property name="Sheetfile" value="local_phase_reset.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>70eb7fee-2055-5c05-9975-9cd39081a744</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R3">
+      <value>100 ohm 0.1% effective</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET26R" part="R" description=""/>
+      <property name="Sheetname" value="local_phase_reset"/>
+      <property name="Sheetfile" value="local_phase_reset.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2c999a88-760b-59f9-aaf6-4d1adc2987e1</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R4">
+      <value>100k 1%</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET26R" part="R" description=""/>
+      <property name="Sheetname" value="local_phase_reset"/>
+      <property name="Sheetfile" value="local_phase_reset.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4724529c-6e88-5e5b-91eb-834cf40b8cc9</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U1">
+      <value>SN74AHC125</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET26R" part="SN74AHC125" description=""/>
+      <property name="Sheetname" value="local_phase_reset"/>
+      <property name="Sheetfile" value="local_phase_reset.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9954e041-a52a-5174-a235-2236e318efd1</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="2"/>
+            <pin num="5"/>
+            <pin num="9"/>
+            <pin num="12"/>
+            <pin num="1"/>
+            <pin num="4"/>
+            <pin num="10"/>
+            <pin num="13"/>
+            <pin num="14"/>
+            <pin num="7"/>
+            <pin num="3"/>
+            <pin num="6"/>
+            <pin num="8"/>
+            <pin num="11"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U2">
+      <value>SN74AHC14</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET26R" part="SN74AHC14" description=""/>
+      <property name="Sheetname" value="local_phase_reset"/>
+      <property name="Sheetfile" value="local_phase_reset.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5bf95ea8-b7cd-5144-9571-8fa6a7ddef5d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="3"/>
+            <pin num="5"/>
+            <pin num="9"/>
+            <pin num="11"/>
+            <pin num="13"/>
+            <pin num="14"/>
+            <pin num="7"/>
+            <pin num="2"/>
+            <pin num="4"/>
+            <pin num="6"/>
+            <pin num="8"/>
+            <pin num="10"/>
+            <pin num="12"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U3">
+      <value>SN74AHC74</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET26R" part="SN74AHC74" description=""/>
+      <property name="Sheetname" value="local_phase_reset"/>
+      <property name="Sheetfile" value="local_phase_reset.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b3eed9a8-2e78-5662-9ddf-988b16feaa9a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="13"/>
+            <pin num="12"/>
+            <pin num="11"/>
+            <pin num="10"/>
+            <pin num="14"/>
+            <pin num="7"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="9"/>
+            <pin num="8"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U4">
+      <value>SN74AHC08</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET26R" part="SN74AHC08" description=""/>
+      <property name="Sheetname" value="local_phase_reset"/>
+      <property name="Sheetfile" value="local_phase_reset.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1030deea-c487-56ae-8da3-b4f2733f7c69</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="4"/>
+            <pin num="9"/>
+            <pin num="12"/>
+            <pin num="2"/>
+            <pin num="5"/>
+            <pin num="10"/>
+            <pin num="13"/>
+            <pin num="14"/>
+            <pin num="7"/>
+            <pin num="3"/>
+            <pin num="6"/>
+            <pin num="8"/>
+            <pin num="11"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U5">
+      <value>SN74AHC74</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET26R" part="SN74AHC74" description=""/>
+      <property name="Sheetname" value="local_phase_reset"/>
+      <property name="Sheetfile" value="local_phase_reset.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1f1036dc-f9a2-5a4d-a9a5-85684d6b0b14</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="13"/>
+            <pin num="12"/>
+            <pin num="11"/>
+            <pin num="10"/>
+            <pin num="14"/>
+            <pin num="7"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="9"/>
+            <pin num="8"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U6">
+      <value>TPS3808G01DBVR</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET26R" part="TPS3808G01DBVR" description=""/>
+      <property name="Sheetname" value="local_phase_reset"/>
+      <property name="Sheetfile" value="local_phase_reset.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>705ff7cb-4a8a-59af-b598-18301b7ac63c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="2"/>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U7">
+      <value>SN74AHC125</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET26R" part="SN74AHC125" description=""/>
+      <property name="Sheetname" value="local_phase_reset"/>
+      <property name="Sheetfile" value="local_phase_reset.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>df4259c2-5ff2-5f49-898f-ccd9cb721154</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="2"/>
+            <pin num="5"/>
+            <pin num="9"/>
+            <pin num="12"/>
+            <pin num="1"/>
+            <pin num="4"/>
+            <pin num="10"/>
+            <pin num="13"/>
+            <pin num="14"/>
+            <pin num="7"/>
+            <pin num="3"/>
+            <pin num="6"/>
+            <pin num="8"/>
+            <pin num="11"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U8">
+      <value>SN74AHC125</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET26R" part="SN74AHC125" description=""/>
+      <property name="Sheetname" value="local_phase_reset"/>
+      <property name="Sheetfile" value="local_phase_reset.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c6b38abf-581e-5836-86af-80cf9728e4b8</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="2"/>
+            <pin num="5"/>
+            <pin num="9"/>
+            <pin num="12"/>
+            <pin num="1"/>
+            <pin num="4"/>
+            <pin num="10"/>
+            <pin num="13"/>
+            <pin num="14"/>
+            <pin num="7"/>
+            <pin num="3"/>
+            <pin num="6"/>
+            <pin num="8"/>
+            <pin num="11"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="X1">
+      <value>ACH config 0.100MHz L C T A standard15pF; PN open</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET26R" part="ACH_CPU_CONFIG" description=""/>
+      <property name="Sheetname" value="local_phase_reset"/>
+      <property name="Sheetfile" value="local_phase_reset.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6a0b41f7-a2ba-5cac-8182-ef840434cfa0</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="8"/>
+            <pin num="4"/>
+            <pin num="5"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="X2">
+      <value>ACH config 25.175MHz L C T A standard15pF; PN open</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET26R" part="ACH_MASTER_CONFIG" description=""/>
+      <property name="Sheetname" value="local_phase_reset"/>
+      <property name="Sheetfile" value="local_phase_reset.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>809ff2a6-6704-5780-bbc5-a1a29c20027b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="8"/>
+            <pin num="4"/>
+            <pin num="5"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="NET26R" part="ACH_CPU_CONFIG">
+      <docs>https://abracon.com/Oscillators/ACH.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">ACH_CPU_CONFIG</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://abracon.com/Oscillators/ACH.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="ENABLE" type="input"/>
+        <pin num="4" name="GND" type="power_in"/>
+        <pin num="5" name="OUT" type="output"/>
+        <pin num="8" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="NET26R" part="ACH_MASTER_CONFIG">
+      <docs>https://abracon.com/Oscillators/ACH.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">ACH_MASTER_CONFIG</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://abracon.com/Oscillators/ACH.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="ENABLE" type="input"/>
+        <pin num="4" name="GND" type="power_in"/>
+        <pin num="5" name="OUT" type="output"/>
+        <pin num="8" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="NET26R" part="C">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="NET26R" part="R">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="NET26R" part="SN74AHC08">
+      <docs>https://www.ti.com/lit/ds/symlink/sn74ahc08.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">SN74AHC08</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/sn74ahc08.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="A0" type="input"/>
+        <pin num="2" name="B0" type="input"/>
+        <pin num="3" name="Y0" type="output"/>
+        <pin num="4" name="A1" type="input"/>
+        <pin num="5" name="B1" type="input"/>
+        <pin num="6" name="Y1" type="output"/>
+        <pin num="7" name="GND" type="power_in"/>
+        <pin num="8" name="Y2" type="output"/>
+        <pin num="9" name="A2" type="input"/>
+        <pin num="10" name="B2" type="input"/>
+        <pin num="11" name="Y3" type="output"/>
+        <pin num="12" name="A3" type="input"/>
+        <pin num="13" name="B3" type="input"/>
+        <pin num="14" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="NET26R" part="SN74AHC125">
+      <docs>https://www.ti.com/lit/ds/symlink/sn74ahc125.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">SN74AHC125</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/sn74ahc125.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="OE0_N" type="input"/>
+        <pin num="2" name="A0" type="input"/>
+        <pin num="3" name="Y0" type="output"/>
+        <pin num="4" name="OE1_N" type="input"/>
+        <pin num="5" name="A1" type="input"/>
+        <pin num="6" name="Y1" type="output"/>
+        <pin num="7" name="GND" type="power_in"/>
+        <pin num="8" name="Y2" type="output"/>
+        <pin num="9" name="A2" type="input"/>
+        <pin num="10" name="OE2_N" type="input"/>
+        <pin num="11" name="Y3" type="output"/>
+        <pin num="12" name="A3" type="input"/>
+        <pin num="13" name="OE3_N" type="input"/>
+        <pin num="14" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="NET26R" part="SN74AHC14">
+      <docs>https://www.ti.com/lit/ds/symlink/sn74ahc14.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">SN74AHC14</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/sn74ahc14.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="A0" type="input"/>
+        <pin num="2" name="Y0" type="output"/>
+        <pin num="3" name="A1" type="input"/>
+        <pin num="4" name="Y1" type="output"/>
+        <pin num="5" name="A2" type="input"/>
+        <pin num="6" name="Y2" type="output"/>
+        <pin num="7" name="GND" type="power_in"/>
+        <pin num="8" name="Y3" type="output"/>
+        <pin num="9" name="A3" type="input"/>
+        <pin num="10" name="Y4" type="output"/>
+        <pin num="11" name="A4" type="input"/>
+        <pin num="12" name="Y5" type="output"/>
+        <pin num="13" name="A5" type="input"/>
+        <pin num="14" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="NET26R" part="SN74AHC74">
+      <docs>https://www.ti.com/lit/ds/symlink/sn74ahc74.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">SN74AHC74</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/sn74ahc74.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="CLR0_N" type="input"/>
+        <pin num="2" name="D0" type="input"/>
+        <pin num="3" name="CLK0" type="input"/>
+        <pin num="4" name="PRE0_N" type="input"/>
+        <pin num="5" name="Q0" type="output"/>
+        <pin num="6" name="QB0" type="output"/>
+        <pin num="7" name="GND" type="power_in"/>
+        <pin num="8" name="QB1" type="output"/>
+        <pin num="9" name="Q1" type="output"/>
+        <pin num="10" name="PRE1_N" type="input"/>
+        <pin num="11" name="CLK1" type="input"/>
+        <pin num="12" name="D1" type="input"/>
+        <pin num="13" name="CLR1_N" type="input"/>
+        <pin num="14" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="NET26R" part="TPS3808G01DBVR">
+      <docs>https://www.ti.com/lit/ds/symlink/tps3808.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TPS3808G01DBVR</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/tps3808.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="RESET_N" type="open_collector"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="MR_N" type="input"/>
+        <pin num="4" name="CT" type="input"/>
+        <pin num="5" name="SENSE" type="input"/>
+        <pin num="6" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="NET26R">
+      <uri>${KIPRJMOD}/bus_packages.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/+5V" class="Default">
+      <node ref="C1" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C11" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C12" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C13" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C14" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C2" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C3" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C4" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C5" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C7" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R2" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R4" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="1" pinfunction="OE0_N_1" pintype="input"/>
+      <node ref="U1" pin="14" pinfunction="VCC_14" pintype="power_in"/>
+      <node ref="U2" pin="14" pinfunction="VCC_14" pintype="power_in"/>
+      <node ref="U3" pin="10" pinfunction="PRE1_N_10" pintype="input"/>
+      <node ref="U3" pin="14" pinfunction="VCC_14" pintype="power_in"/>
+      <node ref="U3" pin="4" pinfunction="PRE0_N_4" pintype="input"/>
+      <node ref="U4" pin="14" pinfunction="VCC_14" pintype="power_in"/>
+      <node ref="U5" pin="10" pinfunction="PRE1_N_10" pintype="input"/>
+      <node ref="U5" pin="14" pinfunction="VCC_14" pintype="power_in"/>
+      <node ref="U5" pin="2" pinfunction="D0_2" pintype="input"/>
+      <node ref="U5" pin="4" pinfunction="PRE0_N_4" pintype="input"/>
+      <node ref="U6" pin="3" pinfunction="MR_N_3" pintype="input"/>
+      <node ref="U6" pin="6" pinfunction="VCC_6" pintype="power_in"/>
+      <node ref="U7" pin="14" pinfunction="VCC_14" pintype="power_in"/>
+      <node ref="U8" pin="14" pinfunction="VCC_14" pintype="power_in"/>
+      <node ref="U8" pin="4" pinfunction="OE1_N_4" pintype="input"/>
+      <node ref="X1" pin="1" pinfunction="ENABLE_1" pintype="input"/>
+      <node ref="X1" pin="8" pinfunction="VCC_8" pintype="power_in"/>
+      <node ref="X2" pin="1" pinfunction="ENABLE_1" pintype="input"/>
+      <node ref="X2" pin="8" pinfunction="VCC_8" pintype="power_in"/>
+    </net>
+    <net code="2" name="/ACCESS_SAFE" class="Default">
+      <node ref="U1" pin="5" pinfunction="A1_5" pintype="input"/>
+      <node ref="U1" pin="9" pinfunction="A2_9" pintype="input"/>
+      <node ref="U4" pin="6" pinfunction="Y1_6" pintype="output"/>
+    </net>
+    <net code="3" name="/ALL_READY" class="Default">
+      <node ref="U4" pin="3" pinfunction="Y0_3" pintype="output"/>
+      <node ref="U4" pin="5" pinfunction="B1_5" pintype="input"/>
+    </net>
+    <net code="4" name="/BACKEND" class="Default">
+      <node ref="U8" pin="2" pinfunction="A0_2" pintype="input"/>
+    </net>
+    <net code="5" name="/BACKEND_ROOT" class="Default">
+      <node ref="U8" pin="12" pinfunction="A3_12" pintype="input"/>
+      <node ref="U8" pin="3" pinfunction="Y0_3" pintype="output"/>
+      <node ref="U8" pin="9" pinfunction="A2_9" pintype="input"/>
+    </net>
+    <net code="6" name="/BANK_ARM" class="Default">
+      <node ref="U3" pin="2" pinfunction="D0_2" pintype="input"/>
+    </net>
+    <net code="7" name="/BANK_DECODE_N" class="Default">
+      <node ref="U1" pin="11" pinfunction="Y3_11" pintype="output"/>
+    </net>
+    <net code="8" name="/BANK_KEYBOARD_N" class="Default">
+      <node ref="U7" pin="6" pinfunction="Y1_6" pintype="output"/>
+    </net>
+    <net code="9" name="/BANK_MEMORY_N" class="Default">
+      <node ref="U1" pin="12" pinfunction="A3_12" pintype="input"/>
+      <node ref="U7" pin="3" pinfunction="Y0_3" pintype="output"/>
+    </net>
+    <net code="10" name="/BANK_RESET_CLK" class="Default">
+      <node ref="U3" pin="11" pinfunction="CLK1_11" pintype="input"/>
+      <node ref="U3" pin="3" pinfunction="CLK0_3" pintype="input"/>
+      <node ref="U8" pin="11" pinfunction="Y3_11" pintype="output"/>
+    </net>
+    <net code="11" name="/BANK_RESET_N" class="Default">
+      <node ref="U3" pin="9" pinfunction="Q1_9" pintype="output"/>
+      <node ref="U4" pin="1" pinfunction="A0_1" pintype="input"/>
+      <node ref="U4" pin="10" pinfunction="B2_10" pintype="input"/>
+      <node ref="U7" pin="2" pinfunction="A0_2" pintype="input"/>
+      <node ref="U7" pin="5" pinfunction="A1_5" pintype="input"/>
+    </net>
+    <net code="12" name="/CPU_CLEAR_FAST_N" class="Default">
+      <node ref="U4" pin="8" pinfunction="Y2_8" pintype="output"/>
+      <node ref="U5" pin="1" pinfunction="CLR0_N_1" pintype="input"/>
+      <node ref="U5" pin="13" pinfunction="CLR1_N_13" pintype="input"/>
+    </net>
+    <net code="13" name="/CPU_CLK" class="Default">
+      <node ref="U2" pin="12" pinfunction="Y5_12" pintype="output"/>
+      <node ref="U7" pin="12" pinfunction="A3_12" pintype="input"/>
+      <node ref="U7" pin="9" pinfunction="A2_9" pintype="input"/>
+    </net>
+    <net code="14" name="/CPU_CLK_INVERTED" class="Default">
+      <node ref="U2" pin="10" pinfunction="Y4_10" pintype="output"/>
+      <node ref="U2" pin="13" pinfunction="A5_13" pintype="input"/>
+    </net>
+    <net code="15" name="/CPU_CORE_CLK" class="Default">
+      <node ref="U7" pin="8" pinfunction="Y2_8" pintype="output"/>
+    </net>
+    <net code="16" name="/CPU_OSC" class="Default">
+      <node ref="U2" pin="11" pinfunction="A4_11" pintype="input"/>
+      <node ref="X1" pin="5" pinfunction="OUT_5" pintype="output"/>
+    </net>
+    <net code="17" name="/CPU_RESET_CLK" class="Default">
+      <node ref="U5" pin="11" pinfunction="CLK1_11" pintype="input"/>
+      <node ref="U5" pin="3" pinfunction="CLK0_3" pintype="input"/>
+      <node ref="U7" pin="11" pinfunction="Y3_11" pintype="output"/>
+    </net>
+    <net code="18" name="/CPU_RESET_N" class="Default">
+      <node ref="U4" pin="2" pinfunction="B0_2" pintype="input"/>
+      <node ref="U5" pin="9" pinfunction="Q1_9" pintype="output"/>
+    </net>
+    <net code="19" name="/CPU_SYNC1" class="Default">
+      <node ref="U5" pin="12" pinfunction="D1_12" pintype="input"/>
+      <node ref="U5" pin="5" pinfunction="Q0_5" pintype="output"/>
+    </net>
+    <net code="20" name="/DELAY_CLEAR_N" class="Default">
+      <node ref="U2" pin="4" pinfunction="Y1_4" pintype="output"/>
+      <node ref="U3" pin="1" pinfunction="CLR0_N_1" pintype="input"/>
+      <node ref="U3" pin="13" pinfunction="CLR1_N_13" pintype="input"/>
+    </net>
+    <net code="21" name="/DELAY_INV" class="Default">
+      <node ref="U2" pin="2" pinfunction="Y0_2" pintype="output"/>
+      <node ref="U2" pin="3" pinfunction="A1_3" pintype="input"/>
+    </net>
+    <net code="22" name="/DELAY_RC" class="Default">
+      <node ref="C6" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R1" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U2" pin="1" pinfunction="A0_1" pintype="input"/>
+    </net>
+    <net code="23" name="/GND" class="Default">
+      <node ref="C1" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C11" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C12" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C13" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C14" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C2" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C3" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C4" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C5" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C6" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C7" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C8" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R3" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U1" pin="10" pinfunction="OE2_N_10" pintype="input"/>
+      <node ref="U1" pin="13" pinfunction="OE3_N_13" pintype="input"/>
+      <node ref="U1" pin="2" pinfunction="A0_2" pintype="input"/>
+      <node ref="U1" pin="4" pinfunction="OE1_N_4" pintype="input"/>
+      <node ref="U1" pin="7" pinfunction="GND_7" pintype="power_in"/>
+      <node ref="U2" pin="7" pinfunction="GND_7" pintype="power_in"/>
+      <node ref="U3" pin="7" pinfunction="GND_7" pintype="power_in"/>
+      <node ref="U4" pin="12" pinfunction="A3_12" pintype="input"/>
+      <node ref="U4" pin="13" pinfunction="B3_13" pintype="input"/>
+      <node ref="U4" pin="7" pinfunction="GND_7" pintype="power_in"/>
+      <node ref="U5" pin="7" pinfunction="GND_7" pintype="power_in"/>
+      <node ref="U6" pin="2" pinfunction="GND_2" pintype="power_in"/>
+      <node ref="U7" pin="1" pinfunction="OE0_N_1" pintype="input"/>
+      <node ref="U7" pin="10" pinfunction="OE2_N_10" pintype="input"/>
+      <node ref="U7" pin="13" pinfunction="OE3_N_13" pintype="input"/>
+      <node ref="U7" pin="4" pinfunction="OE1_N_4" pintype="input"/>
+      <node ref="U7" pin="7" pinfunction="GND_7" pintype="power_in"/>
+      <node ref="U8" pin="1" pinfunction="OE0_N_1" pintype="input"/>
+      <node ref="U8" pin="10" pinfunction="OE2_N_10" pintype="input"/>
+      <node ref="U8" pin="13" pinfunction="OE3_N_13" pintype="input"/>
+      <node ref="U8" pin="5" pinfunction="A1_5" pintype="input"/>
+      <node ref="U8" pin="7" pinfunction="GND_7" pintype="power_in"/>
+      <node ref="X1" pin="4" pinfunction="GND_4" pintype="power_in"/>
+      <node ref="X2" pin="4" pinfunction="GND_4" pintype="power_in"/>
+    </net>
+    <net code="24" name="/KEYBOARD_CLK" class="Default">
+      <node ref="U8" pin="8" pinfunction="Y2_8" pintype="output"/>
+    </net>
+    <net code="25" name="/MASTER" class="Default">
+      <node ref="X2" pin="5" pinfunction="OUT_5" pintype="output"/>
+    </net>
+    <net code="26" name="/RAW_BUFFERED" class="Default">
+      <node ref="R1" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U2" pin="8" pinfunction="Y3_8" pintype="output"/>
+      <node ref="U4" pin="4" pinfunction="A1_4" pintype="input"/>
+      <node ref="U4" pin="9" pinfunction="A2_9" pintype="input"/>
+    </net>
+    <net code="27" name="/RAW_INVERTED" class="Default">
+      <node ref="U2" pin="6" pinfunction="Y2_6" pintype="output"/>
+      <node ref="U2" pin="9" pinfunction="A3_9" pintype="input"/>
+    </net>
+    <net code="28" name="/RAW_SAFE_N" class="Default">
+      <node ref="R4" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U2" pin="5" pinfunction="A2_5" pintype="input"/>
+      <node ref="U6" pin="1" pinfunction="RESET_N_1" pintype="open_collector"/>
+    </net>
+    <net code="29" name="/RESET_SYNC1" class="Default">
+      <node ref="U3" pin="12" pinfunction="D1_12" pintype="input"/>
+      <node ref="U3" pin="5" pinfunction="Q0_5" pintype="output"/>
+    </net>
+    <net code="30" name="/SAFE_KEYBOARD" class="Default">
+      <node ref="U1" pin="8" pinfunction="Y2_8" pintype="output"/>
+    </net>
+    <net code="31" name="/SAFE_MEMORY" class="Default">
+      <node ref="U1" pin="6" pinfunction="Y1_6" pintype="output"/>
+    </net>
+    <net code="32" name="/SUPERVISOR_SENSE" class="Default">
+      <node ref="C8" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R2" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R3" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U6" pin="5" pinfunction="SENSE_5" pintype="input"/>
+    </net>
+    <net code="33" name="unconnected-(U1-Y0-Pad3)" class="Default">
+      <node ref="U1" pin="3" pinfunction="Y0_3" pintype="output+no_connect"/>
+    </net>
+    <net code="34" name="unconnected-(U3-QB0-Pad6)" class="Default">
+      <node ref="U3" pin="6" pinfunction="QB0_6" pintype="output+no_connect"/>
+    </net>
+    <net code="35" name="unconnected-(U3-QB1-Pad8)" class="Default">
+      <node ref="U3" pin="8" pinfunction="QB1_8" pintype="output+no_connect"/>
+    </net>
+    <net code="36" name="unconnected-(U4-Y3-Pad11)" class="Default">
+      <node ref="U4" pin="11" pinfunction="Y3_11" pintype="output+no_connect"/>
+    </net>
+    <net code="37" name="unconnected-(U5-QB0-Pad6)" class="Default">
+      <node ref="U5" pin="6" pinfunction="QB0_6" pintype="output+no_connect"/>
+    </net>
+    <net code="38" name="unconnected-(U5-QB1-Pad8)" class="Default">
+      <node ref="U5" pin="8" pinfunction="QB1_8" pintype="output+no_connect"/>
+    </net>
+    <net code="39" name="unconnected-(U6-CT-Pad4)" class="Default">
+      <node ref="U6" pin="4" pinfunction="CT_4" pintype="input+no_connect"/>
+    </net>
+    <net code="40" name="unconnected-(U8-Y1-Pad6)" class="Default">
+      <node ref="U8" pin="6" pinfunction="Y1_6" pintype="output+no_connect"/>
+    </net>
+  </nets>
+</export>

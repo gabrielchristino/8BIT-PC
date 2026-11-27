@@ -1,0 +1,221 @@
+{
+  "date": "2026-11-26",
+  "scope": "Tool calibration only. CVC+interp evaluates parsing/execution in one process (both stored under compile_cvc/execution_cvc). No2state/no ignored timing flags. Compiled CVC smoke remains rejected separately. Compare actual original guards and smoke semantics against Icarus before any adoption.",
+  "executable": {
+    "path": "/home/gabri/.local/opt/isa1-cvc-source/build64/cvc64",
+    "sha256": "c652a90c7e498519c3117099b2802d30840c107fc196c469e5a650aa358b9faa"
+  },
+  "sources": [
+    {
+      "path": "tools/calibrate_compiled_simulator.py",
+      "sha256": "3b78380d2105370776dc2543ba0b26433f61b36520993d7b2d413042981ae6ba"
+    },
+    {
+      "path": "tools/calibrate_interpreted_cvc.py",
+      "sha256": "687800463976d350e733ea498142812703f5ea877529133b99fee0c9246e6044"
+    },
+    {
+      "path": "sim/net26/compiled_smoke.sv",
+      "sha256": "8756afddc028b4e6966f7f38694545ad0a1c5b13d9a9135dbf2590a5bfd2f2b6"
+    },
+    {
+      "path": "sim/net25/warm_packages.sv",
+      "sha256": "b6ff85ba2c3ffeb0de54608c10e4afae3aaed2abb051498a39bdc000259c7d7b"
+    },
+    {
+      "path": "sim/net25/tb_warm_packages.sv",
+      "sha256": "a5e00501ca78ad5bcb15bceac85d6654677df82f68385ddd653c037082c1d797"
+    }
+  ],
+  "runs": [
+    {
+      "name": "smoke",
+      "case": null,
+      "boundary": null,
+      "policy": null,
+      "negative": false,
+      "compile_cvc": {
+        "command": [
+          "/home/gabri/.local/opt/isa1-cvc-source/build64/cvc64",
+          "-sv",
+          "+interp",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net26/compiled_smoke.sv"
+        ],
+        "exit": 0,
+        "stdout": "OSS_CVC_7.00b-x86_64-rhel6x of 07/07/14 (Linux-elf).\nCopyright (c) 1991-2014 Tachyon Design Automation Corp.\n  All Rights reserved.  Licensed software subject to prohibitions and\n  restrictions.  See OSS CVC artistic license included with release.\nToday is Thu Nov 26 19:30:02 2026.\nElaborating source file \"/mnt/c/Users/gabri/projetos/isa1/sim/net26/compiled_smoke.sv\"\nHighest level modules:\ncompiled_smoke\n\nRESULT four_state=1 bidirectional_switch=1 contention_x=1 delayed_edges=28.500/41.000 failures=0\nHalted at location **/mnt/c/Users/gabri/projetos/isa1/sim/net26/compiled_smoke.sv(26) time 42000 ps from call to $finish.\n  There were 0 error(s), 0 warning(s), and 5 inform(s).\n",
+        "stderr": "",
+        "seconds": 0.006
+      },
+      "execution_cvc": {
+        "command": [
+          "/home/gabri/.local/opt/isa1-cvc-source/build64/cvc64",
+          "-sv",
+          "+interp",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net26/compiled_smoke.sv"
+        ],
+        "exit": 0,
+        "stdout": "OSS_CVC_7.00b-x86_64-rhel6x of 07/07/14 (Linux-elf).\nCopyright (c) 1991-2014 Tachyon Design Automation Corp.\n  All Rights reserved.  Licensed software subject to prohibitions and\n  restrictions.  See OSS CVC artistic license included with release.\nToday is Thu Nov 26 19:30:02 2026.\nElaborating source file \"/mnt/c/Users/gabri/projetos/isa1/sim/net26/compiled_smoke.sv\"\nHighest level modules:\ncompiled_smoke\n\nRESULT four_state=1 bidirectional_switch=1 contention_x=1 delayed_edges=28.500/41.000 failures=0\nHalted at location **/mnt/c/Users/gabri/projetos/isa1/sim/net26/compiled_smoke.sv(26) time 42000 ps from call to $finish.\n  There were 0 error(s), 0 warning(s), and 5 inform(s).\n",
+        "stderr": "",
+        "seconds": 0.006
+      },
+      "compile_icarus": {
+        "command": [
+          "iverilog",
+          "-g2012",
+          "-Wall",
+          "-s",
+          "compiled_smoke",
+          "-o",
+          "/tmp/isa1-cvc-calibration-f8v676ew/0/icarus.vvp",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net26/compiled_smoke.sv"
+        ],
+        "exit": 0,
+        "stdout": "",
+        "stderr": "",
+        "seconds": 0.01
+      },
+      "execution_icarus": {
+        "command": [
+          "vvp",
+          "/tmp/isa1-cvc-calibration-f8v676ew/0/icarus.vvp"
+        ],
+        "exit": 0,
+        "stdout": "RESULT four_state=1 bidirectional_switch=1 contention_x=1 delayed_edges=28.500/41.000 failures=0\n/mnt/c/Users/gabri/projetos/isa1/sim/net26/compiled_smoke.sv:26: $finish called at 42000 (1ps)\n",
+        "stderr": "",
+        "seconds": 0.007
+      },
+      "passed": true
+    },
+    {
+      "name": "warm",
+      "case": 0,
+      "boundary": 0,
+      "policy": 0,
+      "negative": false,
+      "compile_cvc": {
+        "command": [
+          "/home/gabri/.local/opt/isa1-cvc-source/build64/cvc64",
+          "-sv",
+          "+interp",
+          "/tmp/isa1-cvc-calibration-f8v676ew/1/tb_warm_packages.sv",
+          "-v",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net25/warm_packages.sv"
+        ],
+        "exit": 0,
+        "stdout": "OSS_CVC_7.00b-x86_64-rhel6x of 07/07/14 (Linux-elf).\nCopyright (c) 1991-2014 Tachyon Design Automation Corp.\n  All Rights reserved.  Licensed software subject to prohibitions and\n  restrictions.  See OSS CVC artistic license included with release.\nToday is Thu Nov 26 19:30:02 2026.\nElaborating source file \"/tmp/isa1-cvc-calibration-f8v676ew/1/tb_warm_packages.sv\"\nHighest level modules:\ntb_warm_packages\n\nRESULT case=0 boundary=0 policy=0 setup=0 hold=0 recovery=0 failures=0\nHalted at location **/tmp/isa1-cvc-calibration-f8v676ew/1/tb_warm_packages.sv(27) time 164000 ps from call to $finish.\n  There were 0 error(s), 0 warning(s), and 6 inform(s).\n",
+        "stderr": "",
+        "seconds": 0.007
+      },
+      "execution_cvc": {
+        "command": [
+          "/home/gabri/.local/opt/isa1-cvc-source/build64/cvc64",
+          "-sv",
+          "+interp",
+          "/tmp/isa1-cvc-calibration-f8v676ew/1/tb_warm_packages.sv",
+          "-v",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net25/warm_packages.sv"
+        ],
+        "exit": 0,
+        "stdout": "OSS_CVC_7.00b-x86_64-rhel6x of 07/07/14 (Linux-elf).\nCopyright (c) 1991-2014 Tachyon Design Automation Corp.\n  All Rights reserved.  Licensed software subject to prohibitions and\n  restrictions.  See OSS CVC artistic license included with release.\nToday is Thu Nov 26 19:30:02 2026.\nElaborating source file \"/tmp/isa1-cvc-calibration-f8v676ew/1/tb_warm_packages.sv\"\nHighest level modules:\ntb_warm_packages\n\nRESULT case=0 boundary=0 policy=0 setup=0 hold=0 recovery=0 failures=0\nHalted at location **/tmp/isa1-cvc-calibration-f8v676ew/1/tb_warm_packages.sv(27) time 164000 ps from call to $finish.\n  There were 0 error(s), 0 warning(s), and 6 inform(s).\n",
+        "stderr": "",
+        "seconds": 0.007
+      },
+      "compile_icarus": {
+        "command": [
+          "iverilog",
+          "-g2012",
+          "-Wall",
+          "-s",
+          "tb_warm_packages",
+          "-o",
+          "/tmp/isa1-cvc-calibration-f8v676ew/1/icarus.vvp",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net25/warm_packages.sv",
+          "/tmp/isa1-cvc-calibration-f8v676ew/1/tb_warm_packages.sv"
+        ],
+        "exit": 0,
+        "stdout": "",
+        "stderr": "",
+        "seconds": 0.011
+      },
+      "execution_icarus": {
+        "command": [
+          "vvp",
+          "/tmp/isa1-cvc-calibration-f8v676ew/1/icarus.vvp"
+        ],
+        "exit": 0,
+        "stdout": "RESULT case=0 boundary=0 policy=0 setup=0 hold=0 recovery=0 failures=0\n/tmp/isa1-cvc-calibration-f8v676ew/1/tb_warm_packages.sv:27: $finish called at 164000 (1ps)\n",
+        "stderr": "",
+        "seconds": 0.006
+      },
+      "passed": true
+    },
+    {
+      "name": "warm",
+      "case": 1,
+      "boundary": 0,
+      "policy": 0,
+      "negative": true,
+      "compile_cvc": {
+        "command": [
+          "/home/gabri/.local/opt/isa1-cvc-source/build64/cvc64",
+          "-sv",
+          "+interp",
+          "/tmp/isa1-cvc-calibration-f8v676ew/2/tb_warm_packages.sv",
+          "-v",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net25/warm_packages.sv"
+        ],
+        "exit": 0,
+        "stdout": "OSS_CVC_7.00b-x86_64-rhel6x of 07/07/14 (Linux-elf).\nCopyright (c) 1991-2014 Tachyon Design Automation Corp.\n  All Rights reserved.  Licensed software subject to prohibitions and\n  restrictions.  See OSS CVC artistic license included with release.\nToday is Thu Nov 26 19:30:02 2026.\nElaborating source file \"/tmp/isa1-cvc-calibration-f8v676ew/2/tb_warm_packages.sv\"\nHighest level modules:\ntb_warm_packages\n\n$fatal[/mnt/c/Users/gabri/projetos/isa1/sim/net25/warm_packages.sv:42] - AHC164 data setup violation tb_warm_packages.dut\nHalted at location **/mnt/c/Users/gabri/projetos/isa1/sim/net25/warm_packages.sv(42) time 31000 ps from call to $fatal.\n  There were 1 error(s), 0 warning(s), and 6 inform(s).\n",
+        "stderr": "",
+        "seconds": 0.007
+      },
+      "execution_cvc": {
+        "command": [
+          "/home/gabri/.local/opt/isa1-cvc-source/build64/cvc64",
+          "-sv",
+          "+interp",
+          "/tmp/isa1-cvc-calibration-f8v676ew/2/tb_warm_packages.sv",
+          "-v",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net25/warm_packages.sv"
+        ],
+        "exit": 0,
+        "stdout": "OSS_CVC_7.00b-x86_64-rhel6x of 07/07/14 (Linux-elf).\nCopyright (c) 1991-2014 Tachyon Design Automation Corp.\n  All Rights reserved.  Licensed software subject to prohibitions and\n  restrictions.  See OSS CVC artistic license included with release.\nToday is Thu Nov 26 19:30:02 2026.\nElaborating source file \"/tmp/isa1-cvc-calibration-f8v676ew/2/tb_warm_packages.sv\"\nHighest level modules:\ntb_warm_packages\n\n$fatal[/mnt/c/Users/gabri/projetos/isa1/sim/net25/warm_packages.sv:42] - AHC164 data setup violation tb_warm_packages.dut\nHalted at location **/mnt/c/Users/gabri/projetos/isa1/sim/net25/warm_packages.sv(42) time 31000 ps from call to $fatal.\n  There were 1 error(s), 0 warning(s), and 6 inform(s).\n",
+        "stderr": "",
+        "seconds": 0.007
+      },
+      "compile_icarus": {
+        "command": [
+          "iverilog",
+          "-g2012",
+          "-Wall",
+          "-s",
+          "tb_warm_packages",
+          "-o",
+          "/tmp/isa1-cvc-calibration-f8v676ew/2/icarus.vvp",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net25/warm_packages.sv",
+          "/tmp/isa1-cvc-calibration-f8v676ew/2/tb_warm_packages.sv"
+        ],
+        "exit": 0,
+        "stdout": "",
+        "stderr": "",
+        "seconds": 0.012
+      },
+      "execution_icarus": {
+        "command": [
+          "vvp",
+          "/tmp/isa1-cvc-calibration-f8v676ew/2/icarus.vvp"
+        ],
+        "exit": 1,
+        "stdout": "FATAL: /mnt/c/Users/gabri/projetos/isa1/sim/net25/warm_packages.sv:42: AHC164 data setup violation tb_warm_packages.dut\n       Time: 31000  Scope: tb_warm_packages.dut\n",
+        "stderr": "",
+        "seconds": 0.008
+      },
+      "passed": false
+    }
+  ],
+  "failures": [
+    2
+  ],
+  "adopted_for_full_simulation": false,
+  "production_released": false
+}

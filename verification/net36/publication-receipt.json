@@ -1,0 +1,15 @@
+{
+  "date": "2026-11-27",
+  "published_engineering_commit": "81e89d038e9ad18775b155d1c6054688990b4d62",
+  "remote_verified_by": ["Windows git ls-remote origin refs/heads/main", "GitHub API GET branches/main"],
+  "remote_sha_verified": "81e89d038e9ad18775b155d1c6054688990b4d62",
+  "staged_files_and_index_blobs_verified": 86,
+  "transport_attempts": [
+    {"command": "git push origin HEAD:main", "environment": "WSL Ubuntu", "outcome": "subprocess.TimeoutExpired after 180 seconds; publishing script exited 1; commit already created locally", "simulation_processes_affected": false},
+    {"command": "git -C C:/Users/gabri/projetos/isa1 push origin HEAD:main", "environment": "Windows Git", "exit": 0, "stdout_summary": "main advanced 2a7fbab..81e89d0; subsequent ls-remote matched full commit SHA"}
+  ],
+  "force_push_used": false,
+  "net30_checkpoint": {"classification": "running, not approved", "last_observed_retirements": 127360, "pid": 1656, "frozen_inputs_modified": false},
+  "scope": "Post-publication receipt for the preceding engineering commit; intentionally outside that commit's manifest, which cannot contain its own publication result.",
+  "production_released": false
+}

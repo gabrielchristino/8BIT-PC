@@ -1,0 +1,3403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>/mnt/c/Users/gabri/projetos/isa1/hardware/load_distributed_bus/load_distributed_bus.kicad_sch</source>
+    <date>2026-11-26T23:34:58</date>
+    <tool>Eeschema 10.0.8</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>ISA-1 SRAM / EEPROM data front-end</title>
+        <company/>
+        <rev>NET-30B</rev>
+        <date>2026-11-25</date>
+        <source>load_distributed_bus.kicad_sch</source>
+        <comment number="1" value="CANDIDATE - LOAD / PCB / ANALOG VALIDATION PENDING - NOT FOR PRODUCTION"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C1">
+      <value>100nF</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET30B" part="C" description=""/>
+      <property name="Sheetname" value="load_distributed_bus"/>
+      <property name="Sheetfile" value="load_distributed_bus.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>11a95b34-2ef2-5427-8f86-dda08b922016</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C2">
+      <value>100nF</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET30B" part="C" description=""/>
+      <property name="Sheetname" value="load_distributed_bus"/>
+      <property name="Sheetfile" value="load_distributed_bus.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9bf862f5-2c51-5310-a4c7-3479fb99233a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C3">
+      <value>100nF</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET30B" part="C" description=""/>
+      <property name="Sheetname" value="load_distributed_bus"/>
+      <property name="Sheetfile" value="load_distributed_bus.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>619fc155-4eab-5ae0-bc9b-e34193a2cdd4</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C4">
+      <value>100nF</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET30B" part="C" description=""/>
+      <property name="Sheetname" value="load_distributed_bus"/>
+      <property name="Sheetfile" value="load_distributed_bus.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>dd97af08-cf3e-5f80-aa9c-56fcb83ce9a1</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C5">
+      <value>100nF</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET30B" part="C" description=""/>
+      <property name="Sheetname" value="load_distributed_bus"/>
+      <property name="Sheetfile" value="load_distributed_bus.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f4c330c6-2608-525a-8a01-9145a8f3cbfa</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C6">
+      <value>100nF</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET30B" part="C" description=""/>
+      <property name="Sheetname" value="load_distributed_bus"/>
+      <property name="Sheetfile" value="load_distributed_bus.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3b3cdd0a-8a5f-5640-9641-2698ac3e11ec</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C7">
+      <value>100nF</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET30B" part="C" description=""/>
+      <property name="Sheetname" value="load_distributed_bus"/>
+      <property name="Sheetfile" value="load_distributed_bus.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1461ef3c-29df-57d8-b7bd-4a3d8adf0393</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C8">
+      <value>100nF</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET30B" part="C" description=""/>
+      <property name="Sheetname" value="load_distributed_bus"/>
+      <property name="Sheetfile" value="load_distributed_bus.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c1ea085d-839d-5d11-a510-46789e1f971b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C9">
+      <value>100nF</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET30B" part="C" description=""/>
+      <property name="Sheetname" value="load_distributed_bus"/>
+      <property name="Sheetfile" value="load_distributed_bus.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ab4a9a43-35c9-5026-83d2-93ce4a572a08</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C10">
+      <value>100nF</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET30B" part="C" description=""/>
+      <property name="Sheetname" value="load_distributed_bus"/>
+      <property name="Sheetfile" value="load_distributed_bus.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c08d01ba-4291-58bb-bb25-6f3d798046e3</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C11">
+      <value>100nF</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET30B" part="C" description=""/>
+      <property name="Sheetname" value="load_distributed_bus"/>
+      <property name="Sheetfile" value="load_distributed_bus.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b5874307-1e9b-566f-bd9c-25506d6eca66</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C12">
+      <value>100nF</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET30B" part="C" description=""/>
+      <property name="Sheetname" value="load_distributed_bus"/>
+      <property name="Sheetfile" value="load_distributed_bus.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>71b9d354-bfcc-582d-8a35-89227a9e01f7</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C13">
+      <value>100nF</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET30B" part="C" description=""/>
+      <property name="Sheetname" value="load_distributed_bus"/>
+      <property name="Sheetfile" value="load_distributed_bus.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0268820a-2ae4-5674-bd6c-7bd6853240f0</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C14">
+      <value>100nF</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET30B" part="C" description=""/>
+      <property name="Sheetname" value="load_distributed_bus"/>
+      <property name="Sheetfile" value="load_distributed_bus.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>87a29af4-cba0-50af-a486-156ffa145d98</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C15">
+      <value>100nF</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET30B" part="C" description=""/>
+      <property name="Sheetname" value="load_distributed_bus"/>
+      <property name="Sheetfile" value="load_distributed_bus.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>897173f7-620b-5e15-9956-4aed06c4996c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C16">
+      <value>100nF</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET30B" part="C" description=""/>
+      <property name="Sheetname" value="load_distributed_bus"/>
+      <property name="Sheetfile" value="load_distributed_bus.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>cc70d829-6128-5204-9de5-3a313df14c16</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C17">
+      <value>100nF</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET30B" part="C" description=""/>
+      <property name="Sheetname" value="load_distributed_bus"/>
+      <property name="Sheetfile" value="load_distributed_bus.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c156273c-e33f-5dc7-aba5-35e66d4b4c9c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C18">
+      <value>100nF</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET30B" part="C" description=""/>
+      <property name="Sheetname" value="load_distributed_bus"/>
+      <property name="Sheetfile" value="load_distributed_bus.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>62522945-f348-5e0a-a26f-12fec8b1b3af</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C19">
+      <value>100nF</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET30B" part="C" description=""/>
+      <property name="Sheetname" value="load_distributed_bus"/>
+      <property name="Sheetfile" value="load_distributed_bus.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0bb47c00-24bd-5e89-90a3-8ce59ce3b256</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C20">
+      <value>100nF</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET30B" part="C" description=""/>
+      <property name="Sheetname" value="load_distributed_bus"/>
+      <property name="Sheetfile" value="load_distributed_bus.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>21702b12-aaed-5fd5-bd14-ddbb3642b49c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C21">
+      <value>100nF</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET30B" part="C" description=""/>
+      <property name="Sheetname" value="load_distributed_bus"/>
+      <property name="Sheetfile" value="load_distributed_bus.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>eff26a7f-216d-5128-a7e9-d0b99b331cba</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C22">
+      <value>100nF</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET30B" part="C" description=""/>
+      <property name="Sheetname" value="load_distributed_bus"/>
+      <property name="Sheetfile" value="load_distributed_bus.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b19e035d-c0b9-500d-b81b-e06b1121590e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C23">
+      <value>100nF</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET30B" part="C" description=""/>
+      <property name="Sheetname" value="load_distributed_bus"/>
+      <property name="Sheetfile" value="load_distributed_bus.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ef025ecf-bd9d-502a-9f11-fbe310bf5496</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C24">
+      <value>100nF</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET30B" part="C" description=""/>
+      <property name="Sheetname" value="load_distributed_bus"/>
+      <property name="Sheetfile" value="load_distributed_bus.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>21aff0e7-5e5c-5265-871c-a0e4e70fd1a6</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C25">
+      <value>100nF</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET30B" part="C" description=""/>
+      <property name="Sheetname" value="load_distributed_bus"/>
+      <property name="Sheetfile" value="load_distributed_bus.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>08f4b31a-8b00-516c-a59b-b2dd11ad1ea6</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C26">
+      <value>100nF</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET30B" part="C" description=""/>
+      <property name="Sheetname" value="load_distributed_bus"/>
+      <property name="Sheetfile" value="load_distributed_bus.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>87f8c9ed-564e-50a1-9b1b-dcc1895c2e39</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C27">
+      <value>100nF</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET30B" part="C" description=""/>
+      <property name="Sheetname" value="load_distributed_bus"/>
+      <property name="Sheetfile" value="load_distributed_bus.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9d7c506c-a5b1-5de2-ba76-e1406907a59c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C28">
+      <value>100nF</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET30B" part="C" description=""/>
+      <property name="Sheetname" value="load_distributed_bus"/>
+      <property name="Sheetfile" value="load_distributed_bus.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>573f6031-472c-5f3e-896f-e143f0c945d3</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R1">
+      <value>3.3k</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET30B" part="R" description=""/>
+      <property name="Sheetname" value="load_distributed_bus"/>
+      <property name="Sheetfile" value="load_distributed_bus.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>fcf14b44-40dc-58fe-852d-a34f0d90fb1f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R2">
+      <value>3.3k</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET30B" part="R" description=""/>
+      <property name="Sheetname" value="load_distributed_bus"/>
+      <property name="Sheetfile" value="load_distributed_bus.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>18853481-cdef-5ce3-a739-65a622441002</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R3">
+      <value>3.3k</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET30B" part="R" description=""/>
+      <property name="Sheetname" value="load_distributed_bus"/>
+      <property name="Sheetfile" value="load_distributed_bus.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e4fd0778-6241-5953-9c3d-747c7a9f378d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R4">
+      <value>3.3k</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET30B" part="R" description=""/>
+      <property name="Sheetname" value="load_distributed_bus"/>
+      <property name="Sheetfile" value="load_distributed_bus.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>17cbfe5d-cf74-565e-b984-9a30073839fd</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R5">
+      <value>3.3k</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET30B" part="R" description=""/>
+      <property name="Sheetname" value="load_distributed_bus"/>
+      <property name="Sheetfile" value="load_distributed_bus.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8829d10d-f47c-5a16-978e-af11b9af1a43</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R6">
+      <value>3.3k</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET30B" part="R" description=""/>
+      <property name="Sheetname" value="load_distributed_bus"/>
+      <property name="Sheetfile" value="load_distributed_bus.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5cc1410c-e417-5eeb-9e8f-698901479166</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R7">
+      <value>3.3k</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET30B" part="R" description=""/>
+      <property name="Sheetname" value="load_distributed_bus"/>
+      <property name="Sheetfile" value="load_distributed_bus.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>da1f9f3d-fb4c-5b9b-ae0e-16b3fba9642f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R8">
+      <value>3.3k</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET30B" part="R" description=""/>
+      <property name="Sheetname" value="load_distributed_bus"/>
+      <property name="Sheetfile" value="load_distributed_bus.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f43480ef-8018-5a5b-8c51-79d041a92c19</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R9">
+      <value>3.3k</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET30B" part="R" description=""/>
+      <property name="Sheetname" value="load_distributed_bus"/>
+      <property name="Sheetfile" value="load_distributed_bus.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e6a41f7d-b210-5fb6-b212-3abff474fc88</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R10">
+      <value>3.3k</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET30B" part="R" description=""/>
+      <property name="Sheetname" value="load_distributed_bus"/>
+      <property name="Sheetfile" value="load_distributed_bus.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c4789c6f-517c-5746-bad4-d4b797251608</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R11">
+      <value>3.3k</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET30B" part="R" description=""/>
+      <property name="Sheetname" value="load_distributed_bus"/>
+      <property name="Sheetfile" value="load_distributed_bus.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>128ac9eb-e8ee-5e73-97cd-e55498bf0ebd</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R12">
+      <value>3.3k</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET30B" part="R" description=""/>
+      <property name="Sheetname" value="load_distributed_bus"/>
+      <property name="Sheetfile" value="load_distributed_bus.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>32139b07-8f51-5d67-ae9a-3e4bcd95c91c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R13">
+      <value>3.3k</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET30B" part="R" description=""/>
+      <property name="Sheetname" value="load_distributed_bus"/>
+      <property name="Sheetfile" value="load_distributed_bus.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f08a9cd6-ba59-5571-8147-1fcdbecd203b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R14">
+      <value>3.3k</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET30B" part="R" description=""/>
+      <property name="Sheetname" value="load_distributed_bus"/>
+      <property name="Sheetfile" value="load_distributed_bus.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>27506b34-6528-5b9b-9513-d10ffc6a5f19</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R15">
+      <value>3.3k</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET30B" part="R" description=""/>
+      <property name="Sheetname" value="load_distributed_bus"/>
+      <property name="Sheetfile" value="load_distributed_bus.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>48fd5338-0cd8-5d38-8ff5-30870250e30d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R16">
+      <value>3.3k</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET30B" part="R" description=""/>
+      <property name="Sheetname" value="load_distributed_bus"/>
+      <property name="Sheetfile" value="load_distributed_bus.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e5508be7-0da4-5ec3-b644-a31d4a69f733</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R17">
+      <value>3.3k</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET30B" part="R" description=""/>
+      <property name="Sheetname" value="load_distributed_bus"/>
+      <property name="Sheetfile" value="load_distributed_bus.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c9aa5ecf-3a93-5c81-8285-c620d2dc3142</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R18">
+      <value>3.3k</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET30B" part="R" description=""/>
+      <property name="Sheetname" value="load_distributed_bus"/>
+      <property name="Sheetfile" value="load_distributed_bus.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c7defc2d-8a8a-518f-a0c3-77dd3618c0a3</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R19">
+      <value>3.3k</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET30B" part="R" description=""/>
+      <property name="Sheetname" value="load_distributed_bus"/>
+      <property name="Sheetfile" value="load_distributed_bus.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>95b883b3-881c-5b09-82ae-552722ec6a40</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R20">
+      <value>3.3k</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET30B" part="R" description=""/>
+      <property name="Sheetname" value="load_distributed_bus"/>
+      <property name="Sheetfile" value="load_distributed_bus.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0141524e-9480-5e8b-b296-0bff2edd3ee7</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R21">
+      <value>3.3k</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET30B" part="R" description=""/>
+      <property name="Sheetname" value="load_distributed_bus"/>
+      <property name="Sheetfile" value="load_distributed_bus.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>fbba8f10-08c3-5fed-9b99-01cef86e8df9</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R22">
+      <value>3.3k</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET30B" part="R" description=""/>
+      <property name="Sheetname" value="load_distributed_bus"/>
+      <property name="Sheetfile" value="load_distributed_bus.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4da33fe2-5840-5701-a143-902b28d7dec8</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R23">
+      <value>3.3k</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET30B" part="R" description=""/>
+      <property name="Sheetname" value="load_distributed_bus"/>
+      <property name="Sheetfile" value="load_distributed_bus.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0403f22f-a601-5b3a-a70e-d9a4773d1b49</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R24">
+      <value>3.3k</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET30B" part="R" description=""/>
+      <property name="Sheetname" value="load_distributed_bus"/>
+      <property name="Sheetfile" value="load_distributed_bus.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>39a1c319-371b-5dcf-afe8-61aaef202b21</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U1">
+      <value>AS7C256A_28SOJ</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET30B" part="AS7C256A_28SOJ" description=""/>
+      <property name="Sheetname" value="load_distributed_bus"/>
+      <property name="Sheetfile" value="load_distributed_bus.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>854e9828-be12-5e0b-ad75-cf2807e44bd6</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="21"/>
+            <pin num="23"/>
+            <pin num="24"/>
+            <pin num="25"/>
+            <pin num="26"/>
+            <pin num="20"/>
+            <pin num="22"/>
+            <pin num="27"/>
+            <pin num="28"/>
+            <pin num="14"/>
+            <pin num="11"/>
+            <pin num="12"/>
+            <pin num="13"/>
+            <pin num="15"/>
+            <pin num="16"/>
+            <pin num="17"/>
+            <pin num="18"/>
+            <pin num="19"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U2">
+      <value>AS7C256A_28SOJ</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET30B" part="AS7C256A_28SOJ" description=""/>
+      <property name="Sheetname" value="load_distributed_bus"/>
+      <property name="Sheetfile" value="load_distributed_bus.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>aebc5717-d576-5100-8369-95444595b1d6</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="21"/>
+            <pin num="23"/>
+            <pin num="24"/>
+            <pin num="25"/>
+            <pin num="26"/>
+            <pin num="20"/>
+            <pin num="22"/>
+            <pin num="27"/>
+            <pin num="28"/>
+            <pin num="14"/>
+            <pin num="11"/>
+            <pin num="12"/>
+            <pin num="13"/>
+            <pin num="15"/>
+            <pin num="16"/>
+            <pin num="17"/>
+            <pin num="18"/>
+            <pin num="19"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U3">
+      <value>AT28C256_28PDIP</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET30B" part="AT28C256_28PDIP" description=""/>
+      <property name="Sheetname" value="load_distributed_bus"/>
+      <property name="Sheetfile" value="load_distributed_bus.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4c2a02c8-cfe7-5ccb-81f4-1fb7a4e1b5ef</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="21"/>
+            <pin num="23"/>
+            <pin num="24"/>
+            <pin num="25"/>
+            <pin num="26"/>
+            <pin num="20"/>
+            <pin num="22"/>
+            <pin num="27"/>
+            <pin num="28"/>
+            <pin num="14"/>
+            <pin num="11"/>
+            <pin num="12"/>
+            <pin num="13"/>
+            <pin num="15"/>
+            <pin num="16"/>
+            <pin num="17"/>
+            <pin num="18"/>
+            <pin num="19"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U4">
+      <value>SN74AHCT157</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET30B" part="SN74AHCT157" description=""/>
+      <property name="Sheetname" value="load_distributed_bus"/>
+      <property name="Sheetfile" value="load_distributed_bus.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>567677c1-52e0-5c86-916c-f06854e53687</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="15"/>
+            <pin num="2"/>
+            <pin num="5"/>
+            <pin num="11"/>
+            <pin num="14"/>
+            <pin num="3"/>
+            <pin num="6"/>
+            <pin num="10"/>
+            <pin num="13"/>
+            <pin num="16"/>
+            <pin num="8"/>
+            <pin num="4"/>
+            <pin num="7"/>
+            <pin num="9"/>
+            <pin num="12"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U5">
+      <value>SN74AHCT157</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET30B" part="SN74AHCT157" description=""/>
+      <property name="Sheetname" value="load_distributed_bus"/>
+      <property name="Sheetfile" value="load_distributed_bus.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3763bbc6-d716-50b7-bba0-1024c2de4cfd</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="15"/>
+            <pin num="2"/>
+            <pin num="5"/>
+            <pin num="11"/>
+            <pin num="14"/>
+            <pin num="3"/>
+            <pin num="6"/>
+            <pin num="10"/>
+            <pin num="13"/>
+            <pin num="16"/>
+            <pin num="8"/>
+            <pin num="4"/>
+            <pin num="7"/>
+            <pin num="9"/>
+            <pin num="12"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U6">
+      <value>SN74AHCT157</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET30B" part="SN74AHCT157" description=""/>
+      <property name="Sheetname" value="load_distributed_bus"/>
+      <property name="Sheetfile" value="load_distributed_bus.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>816dcd27-f385-5a0b-a3f2-6432bafd62b7</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="15"/>
+            <pin num="2"/>
+            <pin num="5"/>
+            <pin num="11"/>
+            <pin num="14"/>
+            <pin num="3"/>
+            <pin num="6"/>
+            <pin num="10"/>
+            <pin num="13"/>
+            <pin num="16"/>
+            <pin num="8"/>
+            <pin num="4"/>
+            <pin num="7"/>
+            <pin num="9"/>
+            <pin num="12"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U7">
+      <value>SN74AHCT157</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET30B" part="SN74AHCT157" description=""/>
+      <property name="Sheetname" value="load_distributed_bus"/>
+      <property name="Sheetfile" value="load_distributed_bus.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3db7ffae-dd9f-5ba9-a090-e4ecc3160a36</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="15"/>
+            <pin num="2"/>
+            <pin num="5"/>
+            <pin num="11"/>
+            <pin num="14"/>
+            <pin num="3"/>
+            <pin num="6"/>
+            <pin num="10"/>
+            <pin num="13"/>
+            <pin num="16"/>
+            <pin num="8"/>
+            <pin num="4"/>
+            <pin num="7"/>
+            <pin num="9"/>
+            <pin num="12"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U8">
+      <value>SN74AHC125</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET30B" part="SN74AHC125" description=""/>
+      <property name="Sheetname" value="load_distributed_bus"/>
+      <property name="Sheetfile" value="load_distributed_bus.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>557189a2-7015-56b1-906d-7dc08b04e2aa</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="2"/>
+            <pin num="5"/>
+            <pin num="9"/>
+            <pin num="12"/>
+            <pin num="1"/>
+            <pin num="4"/>
+            <pin num="10"/>
+            <pin num="13"/>
+            <pin num="14"/>
+            <pin num="7"/>
+            <pin num="3"/>
+            <pin num="6"/>
+            <pin num="8"/>
+            <pin num="11"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U9">
+      <value>SN74AHC125</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET30B" part="SN74AHC125" description=""/>
+      <property name="Sheetname" value="load_distributed_bus"/>
+      <property name="Sheetfile" value="load_distributed_bus.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>58a9beb2-6e70-5470-a466-d91a6e0f1c8d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="2"/>
+            <pin num="5"/>
+            <pin num="9"/>
+            <pin num="12"/>
+            <pin num="1"/>
+            <pin num="4"/>
+            <pin num="10"/>
+            <pin num="13"/>
+            <pin num="14"/>
+            <pin num="7"/>
+            <pin num="3"/>
+            <pin num="6"/>
+            <pin num="8"/>
+            <pin num="11"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U10">
+      <value>SN74AHC125</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET30B" part="SN74AHC125" description=""/>
+      <property name="Sheetname" value="load_distributed_bus"/>
+      <property name="Sheetfile" value="load_distributed_bus.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>43bb4775-ce96-5bc2-a5d5-01591164f8ae</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="2"/>
+            <pin num="5"/>
+            <pin num="9"/>
+            <pin num="12"/>
+            <pin num="1"/>
+            <pin num="4"/>
+            <pin num="10"/>
+            <pin num="13"/>
+            <pin num="14"/>
+            <pin num="7"/>
+            <pin num="3"/>
+            <pin num="6"/>
+            <pin num="8"/>
+            <pin num="11"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U11">
+      <value>SN74AHC125</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET30B" part="SN74AHC125" description=""/>
+      <property name="Sheetname" value="load_distributed_bus"/>
+      <property name="Sheetfile" value="load_distributed_bus.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>990cf811-f0dc-5c2b-ad2c-dcaf696f1cb4</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="2"/>
+            <pin num="5"/>
+            <pin num="9"/>
+            <pin num="12"/>
+            <pin num="1"/>
+            <pin num="4"/>
+            <pin num="10"/>
+            <pin num="13"/>
+            <pin num="14"/>
+            <pin num="7"/>
+            <pin num="3"/>
+            <pin num="6"/>
+            <pin num="8"/>
+            <pin num="11"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U12">
+      <value>SN74HCT244</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET30B" part="SN74HCT244" description=""/>
+      <property name="Sheetname" value="load_distributed_bus"/>
+      <property name="Sheetfile" value="load_distributed_bus.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f23cc967-07aa-5e0d-be07-037cba6850a3</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="19"/>
+            <pin num="2"/>
+            <pin num="4"/>
+            <pin num="6"/>
+            <pin num="8"/>
+            <pin num="11"/>
+            <pin num="13"/>
+            <pin num="15"/>
+            <pin num="17"/>
+            <pin num="20"/>
+            <pin num="10"/>
+            <pin num="18"/>
+            <pin num="16"/>
+            <pin num="14"/>
+            <pin num="12"/>
+            <pin num="9"/>
+            <pin num="7"/>
+            <pin num="5"/>
+            <pin num="3"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U13">
+      <value>SN74HCT244</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET30B" part="SN74HCT244" description=""/>
+      <property name="Sheetname" value="load_distributed_bus"/>
+      <property name="Sheetfile" value="load_distributed_bus.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>dd3fee7c-f146-5ab5-9897-4ef1c2d43ec2</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="19"/>
+            <pin num="2"/>
+            <pin num="4"/>
+            <pin num="6"/>
+            <pin num="8"/>
+            <pin num="11"/>
+            <pin num="13"/>
+            <pin num="15"/>
+            <pin num="17"/>
+            <pin num="20"/>
+            <pin num="10"/>
+            <pin num="18"/>
+            <pin num="16"/>
+            <pin num="14"/>
+            <pin num="12"/>
+            <pin num="9"/>
+            <pin num="7"/>
+            <pin num="5"/>
+            <pin num="3"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U14">
+      <value>SN74HCT244</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET30B" part="SN74HCT244" description=""/>
+      <property name="Sheetname" value="load_distributed_bus"/>
+      <property name="Sheetfile" value="load_distributed_bus.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>88e2fa81-a256-59f3-85d1-2b45f0884f43</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="19"/>
+            <pin num="2"/>
+            <pin num="4"/>
+            <pin num="6"/>
+            <pin num="8"/>
+            <pin num="11"/>
+            <pin num="13"/>
+            <pin num="15"/>
+            <pin num="17"/>
+            <pin num="20"/>
+            <pin num="10"/>
+            <pin num="18"/>
+            <pin num="16"/>
+            <pin num="14"/>
+            <pin num="12"/>
+            <pin num="9"/>
+            <pin num="7"/>
+            <pin num="5"/>
+            <pin num="3"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U15">
+      <value>SN74AHCT157</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET30B" part="SN74AHCT157" description=""/>
+      <property name="Sheetname" value="load_distributed_bus"/>
+      <property name="Sheetfile" value="load_distributed_bus.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>fb2f99fe-9874-5693-84e8-e48a2e4a9d5b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="15"/>
+            <pin num="2"/>
+            <pin num="5"/>
+            <pin num="11"/>
+            <pin num="14"/>
+            <pin num="3"/>
+            <pin num="6"/>
+            <pin num="10"/>
+            <pin num="13"/>
+            <pin num="16"/>
+            <pin num="8"/>
+            <pin num="4"/>
+            <pin num="7"/>
+            <pin num="9"/>
+            <pin num="12"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U16">
+      <value>SN74AHCT157</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET30B" part="SN74AHCT157" description=""/>
+      <property name="Sheetname" value="load_distributed_bus"/>
+      <property name="Sheetfile" value="load_distributed_bus.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>cb040db2-c961-56f2-8f01-70758e3720ed</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="15"/>
+            <pin num="2"/>
+            <pin num="5"/>
+            <pin num="11"/>
+            <pin num="14"/>
+            <pin num="3"/>
+            <pin num="6"/>
+            <pin num="10"/>
+            <pin num="13"/>
+            <pin num="16"/>
+            <pin num="8"/>
+            <pin num="4"/>
+            <pin num="7"/>
+            <pin num="9"/>
+            <pin num="12"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U17">
+      <value>SN74AHCT157</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET30B" part="SN74AHCT157" description=""/>
+      <property name="Sheetname" value="load_distributed_bus"/>
+      <property name="Sheetfile" value="load_distributed_bus.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>bc5b2d5d-411e-5477-a56a-bb858b30d755</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="15"/>
+            <pin num="2"/>
+            <pin num="5"/>
+            <pin num="11"/>
+            <pin num="14"/>
+            <pin num="3"/>
+            <pin num="6"/>
+            <pin num="10"/>
+            <pin num="13"/>
+            <pin num="16"/>
+            <pin num="8"/>
+            <pin num="4"/>
+            <pin num="7"/>
+            <pin num="9"/>
+            <pin num="12"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U18">
+      <value>SN74AHCT157</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET30B" part="SN74AHCT157" description=""/>
+      <property name="Sheetname" value="load_distributed_bus"/>
+      <property name="Sheetfile" value="load_distributed_bus.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8889d06d-88e0-5bfb-aeed-abc8bba29c34</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="15"/>
+            <pin num="2"/>
+            <pin num="5"/>
+            <pin num="11"/>
+            <pin num="14"/>
+            <pin num="3"/>
+            <pin num="6"/>
+            <pin num="10"/>
+            <pin num="13"/>
+            <pin num="16"/>
+            <pin num="8"/>
+            <pin num="4"/>
+            <pin num="7"/>
+            <pin num="9"/>
+            <pin num="12"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U19">
+      <value>SN74AHCT157</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET30B" part="SN74AHCT157" description=""/>
+      <property name="Sheetname" value="load_distributed_bus"/>
+      <property name="Sheetfile" value="load_distributed_bus.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8c513ec3-289e-5085-ac27-045e63f65eda</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="15"/>
+            <pin num="2"/>
+            <pin num="5"/>
+            <pin num="11"/>
+            <pin num="14"/>
+            <pin num="3"/>
+            <pin num="6"/>
+            <pin num="10"/>
+            <pin num="13"/>
+            <pin num="16"/>
+            <pin num="8"/>
+            <pin num="4"/>
+            <pin num="7"/>
+            <pin num="9"/>
+            <pin num="12"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U20">
+      <value>SN74AHCT157</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET30B" part="SN74AHCT157" description=""/>
+      <property name="Sheetname" value="load_distributed_bus"/>
+      <property name="Sheetfile" value="load_distributed_bus.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a65c0835-27e7-5330-915d-39c589fea737</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="15"/>
+            <pin num="2"/>
+            <pin num="5"/>
+            <pin num="11"/>
+            <pin num="14"/>
+            <pin num="3"/>
+            <pin num="6"/>
+            <pin num="10"/>
+            <pin num="13"/>
+            <pin num="16"/>
+            <pin num="8"/>
+            <pin num="4"/>
+            <pin num="7"/>
+            <pin num="9"/>
+            <pin num="12"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U21">
+      <value>SN74AHC08</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET30B" part="SN74AHC08" description=""/>
+      <property name="Sheetname" value="load_distributed_bus"/>
+      <property name="Sheetfile" value="load_distributed_bus.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c88b8f15-6af6-5256-ba4a-53020b0887d4</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="4"/>
+            <pin num="9"/>
+            <pin num="12"/>
+            <pin num="2"/>
+            <pin num="5"/>
+            <pin num="10"/>
+            <pin num="13"/>
+            <pin num="14"/>
+            <pin num="7"/>
+            <pin num="3"/>
+            <pin num="6"/>
+            <pin num="8"/>
+            <pin num="11"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U22">
+      <value>SN74AHC08</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET30B" part="SN74AHC08" description=""/>
+      <property name="Sheetname" value="load_distributed_bus"/>
+      <property name="Sheetfile" value="load_distributed_bus.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>94a1302f-d000-51f4-887e-2ee45df80fe1</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="4"/>
+            <pin num="9"/>
+            <pin num="12"/>
+            <pin num="2"/>
+            <pin num="5"/>
+            <pin num="10"/>
+            <pin num="13"/>
+            <pin num="14"/>
+            <pin num="7"/>
+            <pin num="3"/>
+            <pin num="6"/>
+            <pin num="8"/>
+            <pin num="11"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U23">
+      <value>SN74AHC32</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET30B" part="SN74AHC32" description=""/>
+      <property name="Sheetname" value="load_distributed_bus"/>
+      <property name="Sheetfile" value="load_distributed_bus.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a8d7d549-7a7d-5c4a-b887-29681de40be1</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="4"/>
+            <pin num="9"/>
+            <pin num="12"/>
+            <pin num="2"/>
+            <pin num="5"/>
+            <pin num="10"/>
+            <pin num="13"/>
+            <pin num="14"/>
+            <pin num="7"/>
+            <pin num="3"/>
+            <pin num="6"/>
+            <pin num="8"/>
+            <pin num="11"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U24">
+      <value>SN74AHC32</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET30B" part="SN74AHC32" description=""/>
+      <property name="Sheetname" value="load_distributed_bus"/>
+      <property name="Sheetfile" value="load_distributed_bus.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>88f45627-57e9-5626-82f4-4e9b751b00c7</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="4"/>
+            <pin num="9"/>
+            <pin num="12"/>
+            <pin num="2"/>
+            <pin num="5"/>
+            <pin num="10"/>
+            <pin num="13"/>
+            <pin num="14"/>
+            <pin num="7"/>
+            <pin num="3"/>
+            <pin num="6"/>
+            <pin num="8"/>
+            <pin num="11"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U25">
+      <value>SN74AHC32</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET30B" part="SN74AHC32" description=""/>
+      <property name="Sheetname" value="load_distributed_bus"/>
+      <property name="Sheetfile" value="load_distributed_bus.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5f925229-4610-5664-8e58-a7c06b8c7b8a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="4"/>
+            <pin num="9"/>
+            <pin num="12"/>
+            <pin num="2"/>
+            <pin num="5"/>
+            <pin num="10"/>
+            <pin num="13"/>
+            <pin num="14"/>
+            <pin num="7"/>
+            <pin num="3"/>
+            <pin num="6"/>
+            <pin num="8"/>
+            <pin num="11"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U26">
+      <value>SN74AHC04</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET30B" part="SN74AHC04" description=""/>
+      <property name="Sheetname" value="load_distributed_bus"/>
+      <property name="Sheetfile" value="load_distributed_bus.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d5787fa9-45e5-5386-919e-1008ee4db847</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="3"/>
+            <pin num="5"/>
+            <pin num="9"/>
+            <pin num="11"/>
+            <pin num="13"/>
+            <pin num="14"/>
+            <pin num="7"/>
+            <pin num="2"/>
+            <pin num="4"/>
+            <pin num="6"/>
+            <pin num="8"/>
+            <pin num="10"/>
+            <pin num="12"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U27">
+      <value>SN74AHC125</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET30B" part="SN74AHC125" description=""/>
+      <property name="Sheetname" value="load_distributed_bus"/>
+      <property name="Sheetfile" value="load_distributed_bus.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ec37816f-a511-5ed5-8a08-8e7df05e3942</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="2"/>
+            <pin num="5"/>
+            <pin num="9"/>
+            <pin num="12"/>
+            <pin num="1"/>
+            <pin num="4"/>
+            <pin num="10"/>
+            <pin num="13"/>
+            <pin num="14"/>
+            <pin num="7"/>
+            <pin num="3"/>
+            <pin num="6"/>
+            <pin num="8"/>
+            <pin num="11"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U28">
+      <value>SN74AHC125</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NET30B" part="SN74AHC125" description=""/>
+      <property name="Sheetname" value="load_distributed_bus"/>
+      <property name="Sheetfile" value="load_distributed_bus.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>490aa19e-2206-5e2e-b1eb-22f4ef0bd8f9</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="2"/>
+            <pin num="5"/>
+            <pin num="9"/>
+            <pin num="12"/>
+            <pin num="1"/>
+            <pin num="4"/>
+            <pin num="10"/>
+            <pin num="13"/>
+            <pin num="14"/>
+            <pin num="7"/>
+            <pin num="3"/>
+            <pin num="6"/>
+            <pin num="8"/>
+            <pin num="11"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="NET30B" part="AS7C256A_28SOJ">
+      <docs>https://www.alliancememory.com/wp-content/uploads/as7c256av.1.2.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">AS7C256A_28SOJ</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://www.alliancememory.com/wp-content/uploads/as7c256av.1.2.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="A14" type="input"/>
+        <pin num="2" name="A12" type="input"/>
+        <pin num="3" name="A7" type="input"/>
+        <pin num="4" name="A6" type="input"/>
+        <pin num="5" name="A5" type="input"/>
+        <pin num="6" name="A4" type="input"/>
+        <pin num="7" name="A3" type="input"/>
+        <pin num="8" name="A2" type="input"/>
+        <pin num="9" name="A1" type="input"/>
+        <pin num="10" name="A0" type="input"/>
+        <pin num="11" name="IO0" type="bidirectional"/>
+        <pin num="12" name="IO1" type="bidirectional"/>
+        <pin num="13" name="IO2" type="bidirectional"/>
+        <pin num="14" name="GND" type="power_in"/>
+        <pin num="15" name="IO3" type="bidirectional"/>
+        <pin num="16" name="IO4" type="bidirectional"/>
+        <pin num="17" name="IO5" type="bidirectional"/>
+        <pin num="18" name="IO6" type="bidirectional"/>
+        <pin num="19" name="IO7" type="bidirectional"/>
+        <pin num="20" name="CE_N" type="input"/>
+        <pin num="21" name="A10" type="input"/>
+        <pin num="22" name="OE_N" type="input"/>
+        <pin num="23" name="A11" type="input"/>
+        <pin num="24" name="A9" type="input"/>
+        <pin num="25" name="A8" type="input"/>
+        <pin num="26" name="A13" type="input"/>
+        <pin num="27" name="WE_N" type="input"/>
+        <pin num="28" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="NET30B" part="AT28C256_28PDIP">
+      <docs>https://ww1.microchip.com/downloads/en/DeviceDoc/Industrial-Grade-256-Kbit-%2832%2C768-x-8%29-Paged-Parallel-EEPROM.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">AT28C256_28PDIP</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://ww1.microchip.com/downloads/en/DeviceDoc/Industrial-Grade-256-Kbit-%2832%2C768-x-8%29-Paged-Parallel-EEPROM.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="A14" type="input"/>
+        <pin num="2" name="A12" type="input"/>
+        <pin num="3" name="A7" type="input"/>
+        <pin num="4" name="A6" type="input"/>
+        <pin num="5" name="A5" type="input"/>
+        <pin num="6" name="A4" type="input"/>
+        <pin num="7" name="A3" type="input"/>
+        <pin num="8" name="A2" type="input"/>
+        <pin num="9" name="A1" type="input"/>
+        <pin num="10" name="A0" type="input"/>
+        <pin num="11" name="IO0" type="bidirectional"/>
+        <pin num="12" name="IO1" type="bidirectional"/>
+        <pin num="13" name="IO2" type="bidirectional"/>
+        <pin num="14" name="GND" type="power_in"/>
+        <pin num="15" name="IO3" type="bidirectional"/>
+        <pin num="16" name="IO4" type="bidirectional"/>
+        <pin num="17" name="IO5" type="bidirectional"/>
+        <pin num="18" name="IO6" type="bidirectional"/>
+        <pin num="19" name="IO7" type="bidirectional"/>
+        <pin num="20" name="CE_N" type="input"/>
+        <pin num="21" name="A10" type="input"/>
+        <pin num="22" name="OE_N" type="input"/>
+        <pin num="23" name="A11" type="input"/>
+        <pin num="24" name="A9" type="input"/>
+        <pin num="25" name="A8" type="input"/>
+        <pin num="26" name="A13" type="input"/>
+        <pin num="27" name="WE_N" type="input"/>
+        <pin num="28" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="NET30B" part="C">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="NET30B" part="R">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="NET30B" part="SN74AHC04">
+      <docs>https://www.ti.com/lit/ds/symlink/sn74ahc04.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">SN74AHC04</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/sn74ahc04.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="A0" type="input"/>
+        <pin num="2" name="Y0" type="output"/>
+        <pin num="3" name="A1" type="input"/>
+        <pin num="4" name="Y1" type="output"/>
+        <pin num="5" name="A2" type="input"/>
+        <pin num="6" name="Y2" type="output"/>
+        <pin num="7" name="GND" type="power_in"/>
+        <pin num="8" name="Y3" type="output"/>
+        <pin num="9" name="A3" type="input"/>
+        <pin num="10" name="Y4" type="output"/>
+        <pin num="11" name="A4" type="input"/>
+        <pin num="12" name="Y5" type="output"/>
+        <pin num="13" name="A5" type="input"/>
+        <pin num="14" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="NET30B" part="SN74AHC08">
+      <docs>https://www.ti.com/lit/ds/symlink/sn74ahc08.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">SN74AHC08</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/sn74ahc08.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="A0" type="input"/>
+        <pin num="2" name="B0" type="input"/>
+        <pin num="3" name="Y0" type="output"/>
+        <pin num="4" name="A1" type="input"/>
+        <pin num="5" name="B1" type="input"/>
+        <pin num="6" name="Y1" type="output"/>
+        <pin num="7" name="GND" type="power_in"/>
+        <pin num="8" name="Y2" type="output"/>
+        <pin num="9" name="A2" type="input"/>
+        <pin num="10" name="B2" type="input"/>
+        <pin num="11" name="Y3" type="output"/>
+        <pin num="12" name="A3" type="input"/>
+        <pin num="13" name="B3" type="input"/>
+        <pin num="14" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="NET30B" part="SN74AHC125">
+      <docs>https://www.ti.com/lit/ds/symlink/sn74ahc125.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">SN74AHC125</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/sn74ahc125.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="OE0_N" type="input"/>
+        <pin num="2" name="A0" type="input"/>
+        <pin num="3" name="Y0" type="output"/>
+        <pin num="4" name="OE1_N" type="input"/>
+        <pin num="5" name="A1" type="input"/>
+        <pin num="6" name="Y1" type="output"/>
+        <pin num="7" name="GND" type="power_in"/>
+        <pin num="8" name="Y2" type="output"/>
+        <pin num="9" name="A2" type="input"/>
+        <pin num="10" name="OE2_N" type="input"/>
+        <pin num="11" name="Y3" type="output"/>
+        <pin num="12" name="A3" type="input"/>
+        <pin num="13" name="OE3_N" type="input"/>
+        <pin num="14" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="NET30B" part="SN74AHC32">
+      <docs>https://www.ti.com/lit/ds/symlink/sn74ahc32.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">SN74AHC32</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/sn74ahc32.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="A0" type="input"/>
+        <pin num="2" name="B0" type="input"/>
+        <pin num="3" name="Y0" type="output"/>
+        <pin num="4" name="A1" type="input"/>
+        <pin num="5" name="B1" type="input"/>
+        <pin num="6" name="Y1" type="output"/>
+        <pin num="7" name="GND" type="power_in"/>
+        <pin num="8" name="Y2" type="output"/>
+        <pin num="9" name="A2" type="input"/>
+        <pin num="10" name="B2" type="input"/>
+        <pin num="11" name="Y3" type="output"/>
+        <pin num="12" name="A3" type="input"/>
+        <pin num="13" name="B3" type="input"/>
+        <pin num="14" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="NET30B" part="SN74AHCT157">
+      <docs>https://www.ti.com/lit/ds/symlink/sn74ahct157.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">SN74AHCT157</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/sn74ahct157.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="SELECT" type="input"/>
+        <pin num="2" name="A0" type="input"/>
+        <pin num="3" name="B0" type="input"/>
+        <pin num="4" name="Y0" type="output"/>
+        <pin num="5" name="A1" type="input"/>
+        <pin num="6" name="B1" type="input"/>
+        <pin num="7" name="Y1" type="output"/>
+        <pin num="8" name="GND" type="power_in"/>
+        <pin num="9" name="Y2" type="output"/>
+        <pin num="10" name="B2" type="input"/>
+        <pin num="11" name="A2" type="input"/>
+        <pin num="12" name="Y3" type="output"/>
+        <pin num="13" name="B3" type="input"/>
+        <pin num="14" name="A3" type="input"/>
+        <pin num="15" name="G_N" type="input"/>
+        <pin num="16" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="NET30B" part="SN74HCT244">
+      <docs>https://www.ti.com/lit/ds/symlink/sn74hct244.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">SN74HCT244</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/sn74hct244.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="OE0_N" type="input"/>
+        <pin num="2" name="A0" type="input"/>
+        <pin num="3" name="Y7" type="output"/>
+        <pin num="4" name="A1" type="input"/>
+        <pin num="5" name="Y6" type="output"/>
+        <pin num="6" name="A2" type="input"/>
+        <pin num="7" name="Y5" type="output"/>
+        <pin num="8" name="A3" type="input"/>
+        <pin num="9" name="Y4" type="output"/>
+        <pin num="10" name="GND" type="power_in"/>
+        <pin num="11" name="A4" type="input"/>
+        <pin num="12" name="Y3" type="output"/>
+        <pin num="13" name="A5" type="input"/>
+        <pin num="14" name="Y2" type="output"/>
+        <pin num="15" name="A6" type="input"/>
+        <pin num="16" name="Y1" type="output"/>
+        <pin num="17" name="A7" type="input"/>
+        <pin num="18" name="Y0" type="output"/>
+        <pin num="19" name="OE1_N" type="input"/>
+        <pin num="20" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="NET30B">
+      <uri>${KIPRJMOD}/bus_packages.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/+5V" class="Default">
+      <node ref="C1" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C10" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C11" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C12" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C13" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C14" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C15" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C16" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C17" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C18" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C19" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C2" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C20" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C21" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C22" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C23" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C24" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C25" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C26" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C27" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C28" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C3" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C4" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C5" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C6" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C7" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C8" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C9" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R1" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R10" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R11" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R12" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R13" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R14" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R15" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R16" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R17" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R18" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R19" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R2" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R20" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R21" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R22" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R23" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R24" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R3" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R4" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R5" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R6" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R7" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R8" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R9" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="28" pinfunction="VCC_28" pintype="power_in"/>
+      <node ref="U10" pin="14" pinfunction="VCC_14" pintype="power_in"/>
+      <node ref="U11" pin="14" pinfunction="VCC_14" pintype="power_in"/>
+      <node ref="U12" pin="20" pinfunction="VCC_20" pintype="power_in"/>
+      <node ref="U13" pin="20" pinfunction="VCC_20" pintype="power_in"/>
+      <node ref="U14" pin="20" pinfunction="VCC_20" pintype="power_in"/>
+      <node ref="U15" pin="16" pinfunction="VCC_16" pintype="power_in"/>
+      <node ref="U16" pin="16" pinfunction="VCC_16" pintype="power_in"/>
+      <node ref="U17" pin="16" pinfunction="VCC_16" pintype="power_in"/>
+      <node ref="U18" pin="16" pinfunction="VCC_16" pintype="power_in"/>
+      <node ref="U19" pin="16" pinfunction="VCC_16" pintype="power_in"/>
+      <node ref="U2" pin="28" pinfunction="VCC_28" pintype="power_in"/>
+      <node ref="U20" pin="16" pinfunction="VCC_16" pintype="power_in"/>
+      <node ref="U21" pin="14" pinfunction="VCC_14" pintype="power_in"/>
+      <node ref="U22" pin="14" pinfunction="VCC_14" pintype="power_in"/>
+      <node ref="U23" pin="14" pinfunction="VCC_14" pintype="power_in"/>
+      <node ref="U24" pin="14" pinfunction="VCC_14" pintype="power_in"/>
+      <node ref="U25" pin="14" pinfunction="VCC_14" pintype="power_in"/>
+      <node ref="U26" pin="14" pinfunction="VCC_14" pintype="power_in"/>
+      <node ref="U27" pin="14" pinfunction="VCC_14" pintype="power_in"/>
+      <node ref="U28" pin="14" pinfunction="VCC_14" pintype="power_in"/>
+      <node ref="U3" pin="27" pinfunction="WE_N_27" pintype="input"/>
+      <node ref="U3" pin="28" pinfunction="VCC_28" pintype="power_in"/>
+      <node ref="U4" pin="16" pinfunction="VCC_16" pintype="power_in"/>
+      <node ref="U5" pin="16" pinfunction="VCC_16" pintype="power_in"/>
+      <node ref="U6" pin="16" pinfunction="VCC_16" pintype="power_in"/>
+      <node ref="U7" pin="16" pinfunction="VCC_16" pintype="power_in"/>
+      <node ref="U8" pin="14" pinfunction="VCC_14" pintype="power_in"/>
+      <node ref="U9" pin="14" pinfunction="VCC_14" pintype="power_in"/>
+    </net>
+    <net code="2" name="/BUF_1_0" class="Default">
+      <node ref="U27" pin="3" pinfunction="Y0_3" pintype="output"/>
+      <node ref="U4" pin="1" pinfunction="SELECT_1" pintype="input"/>
+      <node ref="U5" pin="1" pinfunction="SELECT_1" pintype="input"/>
+      <node ref="U6" pin="1" pinfunction="SELECT_1" pintype="input"/>
+      <node ref="U7" pin="1" pinfunction="SELECT_1" pintype="input"/>
+    </net>
+    <net code="3" name="/BUF_1_1" class="Default">
+      <node ref="U21" pin="5" pinfunction="B1_5" pintype="input"/>
+      <node ref="U26" pin="3" pinfunction="A1_3" pintype="input"/>
+      <node ref="U27" pin="6" pinfunction="Y1_6" pintype="output"/>
+    </net>
+    <net code="4" name="/BUF_1_2" class="Default">
+      <node ref="U27" pin="8" pinfunction="Y2_8" pintype="output"/>
+      <node ref="U8" pin="1" pinfunction="OE0_N_1" pintype="input"/>
+      <node ref="U8" pin="10" pinfunction="OE2_N_10" pintype="input"/>
+      <node ref="U8" pin="13" pinfunction="OE3_N_13" pintype="input"/>
+      <node ref="U8" pin="4" pinfunction="OE1_N_4" pintype="input"/>
+    </net>
+    <net code="5" name="/BUF_1_3" class="Default">
+      <node ref="U27" pin="11" pinfunction="Y3_11" pintype="output"/>
+      <node ref="U9" pin="1" pinfunction="OE0_N_1" pintype="input"/>
+      <node ref="U9" pin="10" pinfunction="OE2_N_10" pintype="input"/>
+      <node ref="U9" pin="13" pinfunction="OE3_N_13" pintype="input"/>
+      <node ref="U9" pin="4" pinfunction="OE1_N_4" pintype="input"/>
+    </net>
+    <net code="6" name="/BUF_2_0" class="Default">
+      <node ref="U10" pin="1" pinfunction="OE0_N_1" pintype="input"/>
+      <node ref="U10" pin="10" pinfunction="OE2_N_10" pintype="input"/>
+      <node ref="U10" pin="13" pinfunction="OE3_N_13" pintype="input"/>
+      <node ref="U10" pin="4" pinfunction="OE1_N_4" pintype="input"/>
+      <node ref="U28" pin="3" pinfunction="Y0_3" pintype="output"/>
+    </net>
+    <net code="7" name="/BUF_2_1" class="Default">
+      <node ref="U11" pin="1" pinfunction="OE0_N_1" pintype="input"/>
+      <node ref="U11" pin="10" pinfunction="OE2_N_10" pintype="input"/>
+      <node ref="U11" pin="13" pinfunction="OE3_N_13" pintype="input"/>
+      <node ref="U11" pin="4" pinfunction="OE1_N_4" pintype="input"/>
+      <node ref="U28" pin="6" pinfunction="Y1_6" pintype="output"/>
+    </net>
+    <net code="8" name="/CPU_OE_N" class="Default">
+      <node ref="U21" pin="4" pinfunction="A1_4" pintype="input"/>
+      <node ref="U23" pin="4" pinfunction="A1_4" pintype="input"/>
+      <node ref="U25" pin="1" pinfunction="A0_1" pintype="input"/>
+    </net>
+    <net code="9" name="/CPU_WE_N" class="Default">
+      <node ref="U23" pin="9" pinfunction="A2_9" pintype="input"/>
+      <node ref="U24" pin="4" pinfunction="A1_4" pintype="input"/>
+    </net>
+    <net code="10" name="/CS_N_0" class="Default">
+      <node ref="U1" pin="20" pinfunction="CE_N_20" pintype="input"/>
+      <node ref="U23" pin="1" pinfunction="A0_1" pintype="input"/>
+      <node ref="U26" pin="5" pinfunction="A2_5" pintype="input"/>
+    </net>
+    <net code="11" name="/CS_N_1" class="Default">
+      <node ref="U23" pin="12" pinfunction="A3_12" pintype="input"/>
+      <node ref="U26" pin="11" pinfunction="A4_11" pintype="input"/>
+    </net>
+    <net code="12" name="/CS_N_2" class="Default">
+      <node ref="U24" pin="12" pinfunction="A3_12" pintype="input"/>
+      <node ref="U3" pin="20" pinfunction="CE_N_20" pintype="input"/>
+    </net>
+    <net code="13" name="/DRIVE" class="Default">
+      <node ref="U21" pin="9" pinfunction="A2_9" pintype="input"/>
+    </net>
+    <net code="14" name="/GND" class="Default">
+      <node ref="C1" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C10" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C11" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C12" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C13" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C14" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C15" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C16" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C17" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C18" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C19" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C2" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C20" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C21" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C22" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C23" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C24" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C25" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C26" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C27" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C28" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C3" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C4" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C5" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C6" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C7" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C8" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C9" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U1" pin="14" pinfunction="GND_14" pintype="power_in"/>
+      <node ref="U10" pin="7" pinfunction="GND_7" pintype="power_in"/>
+      <node ref="U11" pin="7" pinfunction="GND_7" pintype="power_in"/>
+      <node ref="U12" pin="1" pinfunction="OE0_N_1" pintype="input"/>
+      <node ref="U12" pin="10" pinfunction="GND_10" pintype="power_in"/>
+      <node ref="U12" pin="19" pinfunction="OE1_N_19" pintype="input"/>
+      <node ref="U13" pin="1" pinfunction="OE0_N_1" pintype="input"/>
+      <node ref="U13" pin="10" pinfunction="GND_10" pintype="power_in"/>
+      <node ref="U13" pin="19" pinfunction="OE1_N_19" pintype="input"/>
+      <node ref="U14" pin="1" pinfunction="OE0_N_1" pintype="input"/>
+      <node ref="U14" pin="10" pinfunction="GND_10" pintype="power_in"/>
+      <node ref="U14" pin="19" pinfunction="OE1_N_19" pintype="input"/>
+      <node ref="U15" pin="15" pinfunction="G_N_15" pintype="input"/>
+      <node ref="U15" pin="8" pinfunction="GND_8" pintype="power_in"/>
+      <node ref="U16" pin="15" pinfunction="G_N_15" pintype="input"/>
+      <node ref="U16" pin="8" pinfunction="GND_8" pintype="power_in"/>
+      <node ref="U17" pin="15" pinfunction="G_N_15" pintype="input"/>
+      <node ref="U17" pin="8" pinfunction="GND_8" pintype="power_in"/>
+      <node ref="U18" pin="15" pinfunction="G_N_15" pintype="input"/>
+      <node ref="U18" pin="8" pinfunction="GND_8" pintype="power_in"/>
+      <node ref="U19" pin="15" pinfunction="G_N_15" pintype="input"/>
+      <node ref="U19" pin="8" pinfunction="GND_8" pintype="power_in"/>
+      <node ref="U2" pin="14" pinfunction="GND_14" pintype="power_in"/>
+      <node ref="U2" pin="20" pinfunction="CE_N_20" pintype="input"/>
+      <node ref="U20" pin="15" pinfunction="G_N_15" pintype="input"/>
+      <node ref="U20" pin="8" pinfunction="GND_8" pintype="power_in"/>
+      <node ref="U21" pin="7" pinfunction="GND_7" pintype="power_in"/>
+      <node ref="U22" pin="10" pinfunction="B2_10" pintype="input"/>
+      <node ref="U22" pin="12" pinfunction="A3_12" pintype="input"/>
+      <node ref="U22" pin="13" pinfunction="B3_13" pintype="input"/>
+      <node ref="U22" pin="4" pinfunction="A1_4" pintype="input"/>
+      <node ref="U22" pin="5" pinfunction="B1_5" pintype="input"/>
+      <node ref="U22" pin="7" pinfunction="GND_7" pintype="power_in"/>
+      <node ref="U22" pin="9" pinfunction="A2_9" pintype="input"/>
+      <node ref="U23" pin="7" pinfunction="GND_7" pintype="power_in"/>
+      <node ref="U24" pin="7" pinfunction="GND_7" pintype="power_in"/>
+      <node ref="U25" pin="12" pinfunction="A3_12" pintype="input"/>
+      <node ref="U25" pin="13" pinfunction="B3_13" pintype="input"/>
+      <node ref="U25" pin="7" pinfunction="GND_7" pintype="power_in"/>
+      <node ref="U26" pin="7" pinfunction="GND_7" pintype="power_in"/>
+      <node ref="U27" pin="1" pinfunction="OE0_N_1" pintype="input"/>
+      <node ref="U27" pin="10" pinfunction="OE2_N_10" pintype="input"/>
+      <node ref="U27" pin="13" pinfunction="OE3_N_13" pintype="input"/>
+      <node ref="U27" pin="4" pinfunction="OE1_N_4" pintype="input"/>
+      <node ref="U27" pin="7" pinfunction="GND_7" pintype="power_in"/>
+      <node ref="U28" pin="1" pinfunction="OE0_N_1" pintype="input"/>
+      <node ref="U28" pin="10" pinfunction="OE2_N_10" pintype="input"/>
+      <node ref="U28" pin="12" pinfunction="A3_12" pintype="input"/>
+      <node ref="U28" pin="13" pinfunction="OE3_N_13" pintype="input"/>
+      <node ref="U28" pin="4" pinfunction="OE1_N_4" pintype="input"/>
+      <node ref="U28" pin="7" pinfunction="GND_7" pintype="power_in"/>
+      <node ref="U3" pin="14" pinfunction="GND_14" pintype="power_in"/>
+      <node ref="U4" pin="15" pinfunction="G_N_15" pintype="input"/>
+      <node ref="U4" pin="8" pinfunction="GND_8" pintype="power_in"/>
+      <node ref="U5" pin="15" pinfunction="G_N_15" pintype="input"/>
+      <node ref="U5" pin="8" pinfunction="GND_8" pintype="power_in"/>
+      <node ref="U6" pin="15" pinfunction="G_N_15" pintype="input"/>
+      <node ref="U6" pin="8" pinfunction="GND_8" pintype="power_in"/>
+      <node ref="U7" pin="13" pinfunction="B3_13" pintype="input"/>
+      <node ref="U7" pin="14" pinfunction="A3_14" pintype="input"/>
+      <node ref="U7" pin="15" pinfunction="G_N_15" pintype="input"/>
+      <node ref="U7" pin="8" pinfunction="GND_8" pintype="power_in"/>
+      <node ref="U8" pin="7" pinfunction="GND_7" pintype="power_in"/>
+      <node ref="U9" pin="7" pinfunction="GND_7" pintype="power_in"/>
+    </net>
+    <net code="15" name="/G_1" class="Default">
+      <node ref="U23" pin="13" pinfunction="B3_13" pintype="input"/>
+      <node ref="U23" pin="2" pinfunction="B0_2" pintype="input"/>
+      <node ref="U24" pin="13" pinfunction="B3_13" pintype="input"/>
+      <node ref="U24" pin="9" pinfunction="A2_9" pintype="input"/>
+      <node ref="U26" pin="2" pinfunction="Y0_2" pintype="output"/>
+    </net>
+    <net code="16" name="/G_2" class="Default">
+      <node ref="U23" pin="10" pinfunction="B2_10" pintype="input"/>
+      <node ref="U23" pin="3" pinfunction="Y0_3" pintype="output"/>
+      <node ref="U23" pin="5" pinfunction="B1_5" pintype="input"/>
+    </net>
+    <net code="17" name="/G_5" class="Default">
+      <node ref="U24" pin="1" pinfunction="A0_1" pintype="input"/>
+      <node ref="U26" pin="4" pinfunction="Y1_4" pintype="output"/>
+    </net>
+    <net code="18" name="/G_6" class="Default">
+      <node ref="U23" pin="11" pinfunction="Y3_11" pintype="output"/>
+      <node ref="U24" pin="2" pinfunction="B0_2" pintype="input"/>
+    </net>
+    <net code="19" name="/G_7" class="Default">
+      <node ref="U24" pin="3" pinfunction="Y0_3" pintype="output"/>
+      <node ref="U24" pin="5" pinfunction="B1_5" pintype="input"/>
+    </net>
+    <net code="20" name="/G_9" class="Default">
+      <node ref="U21" pin="6" pinfunction="Y1_6" pintype="output"/>
+      <node ref="U24" pin="10" pinfunction="B2_10" pintype="input"/>
+    </net>
+    <net code="21" name="/G_11" class="Default">
+      <node ref="U24" pin="11" pinfunction="Y3_11" pintype="output"/>
+      <node ref="U25" pin="2" pinfunction="B0_2" pintype="input"/>
+    </net>
+    <net code="22" name="/G_13" class="Default">
+      <node ref="U21" pin="12" pinfunction="A3_12" pintype="input"/>
+      <node ref="U21" pin="8" pinfunction="Y2_8" pintype="output"/>
+      <node ref="U22" pin="1" pinfunction="A0_1" pintype="input"/>
+    </net>
+    <net code="23" name="/G_14" class="Default">
+      <node ref="U21" pin="13" pinfunction="B3_13" pintype="input"/>
+      <node ref="U26" pin="6" pinfunction="Y2_6" pintype="output"/>
+    </net>
+    <net code="24" name="/G_15" class="Default">
+      <node ref="U21" pin="11" pinfunction="Y3_11" pintype="output"/>
+      <node ref="U26" pin="9" pinfunction="A3_9" pintype="input"/>
+    </net>
+    <net code="25" name="/G_16" class="Default">
+      <node ref="U26" pin="8" pinfunction="Y3_8" pintype="output"/>
+      <node ref="U27" pin="12" pinfunction="A3_12" pintype="input"/>
+      <node ref="U27" pin="9" pinfunction="A2_9" pintype="input"/>
+    </net>
+    <net code="26" name="/G_17" class="Default">
+      <node ref="U22" pin="2" pinfunction="B0_2" pintype="input"/>
+      <node ref="U26" pin="10" pinfunction="Y4_10" pintype="output"/>
+    </net>
+    <net code="27" name="/G_18" class="Default">
+      <node ref="U22" pin="3" pinfunction="Y0_3" pintype="output"/>
+      <node ref="U26" pin="13" pinfunction="A5_13" pintype="input"/>
+    </net>
+    <net code="28" name="/G_19" class="Default">
+      <node ref="U26" pin="12" pinfunction="Y5_12" pintype="output"/>
+      <node ref="U28" pin="2" pinfunction="A0_2" pintype="input"/>
+      <node ref="U28" pin="5" pinfunction="A1_5" pintype="input"/>
+    </net>
+    <net code="29" name="/HIGH_PAIR_0" class="Default">
+      <node ref="U17" pin="4" pinfunction="Y0_4" pintype="output"/>
+      <node ref="U19" pin="3" pinfunction="B0_3" pintype="input"/>
+    </net>
+    <net code="30" name="/HIGH_PAIR_1" class="Default">
+      <node ref="U17" pin="7" pinfunction="Y1_7" pintype="output"/>
+      <node ref="U19" pin="6" pinfunction="B1_6" pintype="input"/>
+    </net>
+    <net code="31" name="/HIGH_PAIR_2" class="Default">
+      <node ref="U17" pin="9" pinfunction="Y2_9" pintype="output"/>
+      <node ref="U19" pin="10" pinfunction="B2_10" pintype="input"/>
+    </net>
+    <net code="32" name="/HIGH_PAIR_3" class="Default">
+      <node ref="U17" pin="12" pinfunction="Y3_12" pintype="output"/>
+      <node ref="U19" pin="13" pinfunction="B3_13" pintype="input"/>
+    </net>
+    <net code="33" name="/HIGH_PAIR_4" class="Default">
+      <node ref="U18" pin="4" pinfunction="Y0_4" pintype="output"/>
+      <node ref="U20" pin="3" pinfunction="B0_3" pintype="input"/>
+    </net>
+    <net code="34" name="/HIGH_PAIR_5" class="Default">
+      <node ref="U18" pin="7" pinfunction="Y1_7" pintype="output"/>
+      <node ref="U20" pin="6" pinfunction="B1_6" pintype="input"/>
+    </net>
+    <net code="35" name="/HIGH_PAIR_6" class="Default">
+      <node ref="U18" pin="9" pinfunction="Y2_9" pintype="output"/>
+      <node ref="U20" pin="10" pinfunction="B2_10" pintype="input"/>
+    </net>
+    <net code="36" name="/HIGH_PAIR_7" class="Default">
+      <node ref="U18" pin="12" pinfunction="Y3_12" pintype="output"/>
+      <node ref="U20" pin="13" pinfunction="B3_13" pintype="input"/>
+    </net>
+    <net code="37" name="/IO_DATA_0" class="Default">
+      <node ref="U17" pin="3" pinfunction="B0_3" pintype="input"/>
+    </net>
+    <net code="38" name="/IO_DATA_1" class="Default">
+      <node ref="U17" pin="6" pinfunction="B1_6" pintype="input"/>
+    </net>
+    <net code="39" name="/IO_DATA_2" class="Default">
+      <node ref="U17" pin="10" pinfunction="B2_10" pintype="input"/>
+    </net>
+    <net code="40" name="/IO_DATA_3" class="Default">
+      <node ref="U17" pin="13" pinfunction="B3_13" pintype="input"/>
+    </net>
+    <net code="41" name="/IO_DATA_4" class="Default">
+      <node ref="U18" pin="3" pinfunction="B0_3" pintype="input"/>
+    </net>
+    <net code="42" name="/IO_DATA_5" class="Default">
+      <node ref="U18" pin="6" pinfunction="B1_6" pintype="input"/>
+    </net>
+    <net code="43" name="/IO_DATA_6" class="Default">
+      <node ref="U18" pin="10" pinfunction="B2_10" pintype="input"/>
+    </net>
+    <net code="44" name="/IO_DATA_7" class="Default">
+      <node ref="U18" pin="13" pinfunction="B3_13" pintype="input"/>
+    </net>
+    <net code="45" name="/LOW_PAIR_0" class="Default">
+      <node ref="U15" pin="4" pinfunction="Y0_4" pintype="output"/>
+      <node ref="U19" pin="2" pinfunction="A0_2" pintype="input"/>
+    </net>
+    <net code="46" name="/LOW_PAIR_1" class="Default">
+      <node ref="U15" pin="7" pinfunction="Y1_7" pintype="output"/>
+      <node ref="U19" pin="5" pinfunction="A1_5" pintype="input"/>
+    </net>
+    <net code="47" name="/LOW_PAIR_2" class="Default">
+      <node ref="U15" pin="9" pinfunction="Y2_9" pintype="output"/>
+      <node ref="U19" pin="11" pinfunction="A2_11" pintype="input"/>
+    </net>
+    <net code="48" name="/LOW_PAIR_3" class="Default">
+      <node ref="U15" pin="12" pinfunction="Y3_12" pintype="output"/>
+      <node ref="U19" pin="14" pinfunction="A3_14" pintype="input"/>
+    </net>
+    <net code="49" name="/LOW_PAIR_4" class="Default">
+      <node ref="U16" pin="4" pinfunction="Y0_4" pintype="output"/>
+      <node ref="U20" pin="2" pinfunction="A0_2" pintype="input"/>
+    </net>
+    <net code="50" name="/LOW_PAIR_5" class="Default">
+      <node ref="U16" pin="7" pinfunction="Y1_7" pintype="output"/>
+      <node ref="U20" pin="5" pinfunction="A1_5" pintype="input"/>
+    </net>
+    <net code="51" name="/LOW_PAIR_6" class="Default">
+      <node ref="U16" pin="9" pinfunction="Y2_9" pintype="output"/>
+      <node ref="U20" pin="11" pinfunction="A2_11" pintype="input"/>
+    </net>
+    <net code="52" name="/LOW_PAIR_7" class="Default">
+      <node ref="U16" pin="12" pinfunction="Y3_12" pintype="output"/>
+      <node ref="U20" pin="14" pinfunction="A3_14" pintype="input"/>
+    </net>
+    <net code="53" name="/OWNER" class="Default">
+      <node ref="U27" pin="2" pinfunction="A0_2" pintype="input"/>
+      <node ref="U27" pin="5" pinfunction="A1_5" pintype="input"/>
+    </net>
+    <net code="54" name="/POWER_GOOD" class="Default">
+      <node ref="U21" pin="1" pinfunction="A0_1" pintype="input"/>
+    </net>
+    <net code="55" name="/RAM_A_0" class="Default">
+      <node ref="U1" pin="10" pinfunction="A0_10" pintype="input"/>
+    </net>
+    <net code="56" name="/RAM_A_1" class="Default">
+      <node ref="U1" pin="9" pinfunction="A1_9" pintype="input"/>
+    </net>
+    <net code="57" name="/RAM_A_2" class="Default">
+      <node ref="U1" pin="8" pinfunction="A2_8" pintype="input"/>
+    </net>
+    <net code="58" name="/RAM_A_3" class="Default">
+      <node ref="U1" pin="7" pinfunction="A3_7" pintype="input"/>
+    </net>
+    <net code="59" name="/RAM_A_4" class="Default">
+      <node ref="U1" pin="6" pinfunction="A4_6" pintype="input"/>
+    </net>
+    <net code="60" name="/RAM_A_5" class="Default">
+      <node ref="U1" pin="5" pinfunction="A5_5" pintype="input"/>
+    </net>
+    <net code="61" name="/RAM_A_6" class="Default">
+      <node ref="U1" pin="4" pinfunction="A6_4" pintype="input"/>
+    </net>
+    <net code="62" name="/RAM_A_7" class="Default">
+      <node ref="U1" pin="3" pinfunction="A7_3" pintype="input"/>
+    </net>
+    <net code="63" name="/RAM_A_8" class="Default">
+      <node ref="U1" pin="25" pinfunction="A8_25" pintype="input"/>
+    </net>
+    <net code="64" name="/RAM_A_9" class="Default">
+      <node ref="U1" pin="24" pinfunction="A9_24" pintype="input"/>
+    </net>
+    <net code="65" name="/RAM_A_10" class="Default">
+      <node ref="U1" pin="21" pinfunction="A10_21" pintype="input"/>
+    </net>
+    <net code="66" name="/RAM_A_11" class="Default">
+      <node ref="U1" pin="23" pinfunction="A11_23" pintype="input"/>
+    </net>
+    <net code="67" name="/RAM_A_12" class="Default">
+      <node ref="U1" pin="2" pinfunction="A12_2" pintype="input"/>
+    </net>
+    <net code="68" name="/RAM_A_13" class="Default">
+      <node ref="U1" pin="26" pinfunction="A13_26" pintype="input"/>
+    </net>
+    <net code="69" name="/RAM_A_14" class="Default">
+      <node ref="U1" pin="1" pinfunction="A14_1" pintype="input"/>
+    </net>
+    <net code="70" name="/RAM_BUFFER_0" class="Default">
+      <node ref="U12" pin="18" pinfunction="Y0_18" pintype="output"/>
+      <node ref="U15" pin="2" pinfunction="A0_2" pintype="input"/>
+    </net>
+    <net code="71" name="/RAM_BUFFER_1" class="Default">
+      <node ref="U12" pin="16" pinfunction="Y1_16" pintype="output"/>
+      <node ref="U15" pin="5" pinfunction="A1_5" pintype="input"/>
+    </net>
+    <net code="72" name="/RAM_BUFFER_2" class="Default">
+      <node ref="U12" pin="14" pinfunction="Y2_14" pintype="output"/>
+      <node ref="U15" pin="11" pinfunction="A2_11" pintype="input"/>
+    </net>
+    <net code="73" name="/RAM_BUFFER_3" class="Default">
+      <node ref="U12" pin="12" pinfunction="Y3_12" pintype="output"/>
+      <node ref="U15" pin="14" pinfunction="A3_14" pintype="input"/>
+    </net>
+    <net code="74" name="/RAM_BUFFER_4" class="Default">
+      <node ref="U12" pin="9" pinfunction="Y4_9" pintype="output"/>
+      <node ref="U16" pin="2" pinfunction="A0_2" pintype="input"/>
+    </net>
+    <net code="75" name="/RAM_BUFFER_5" class="Default">
+      <node ref="U12" pin="7" pinfunction="Y5_7" pintype="output"/>
+      <node ref="U16" pin="5" pinfunction="A1_5" pintype="input"/>
+    </net>
+    <net code="76" name="/RAM_BUFFER_6" class="Default">
+      <node ref="U12" pin="5" pinfunction="Y6_5" pintype="output"/>
+      <node ref="U16" pin="11" pinfunction="A2_11" pintype="input"/>
+    </net>
+    <net code="77" name="/RAM_BUFFER_7" class="Default">
+      <node ref="U12" pin="3" pinfunction="Y7_3" pintype="output"/>
+      <node ref="U16" pin="14" pinfunction="A3_14" pintype="input"/>
+    </net>
+    <net code="78" name="/RAM_IO_0" class="Default">
+      <node ref="R1" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U1" pin="11" pinfunction="IO0_11" pintype="bidirectional"/>
+      <node ref="U12" pin="2" pinfunction="A0_2" pintype="input"/>
+      <node ref="U8" pin="3" pinfunction="Y0_3" pintype="output"/>
+    </net>
+    <net code="79" name="/RAM_IO_1" class="Default">
+      <node ref="R2" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U1" pin="12" pinfunction="IO1_12" pintype="bidirectional"/>
+      <node ref="U12" pin="4" pinfunction="A1_4" pintype="input"/>
+      <node ref="U8" pin="6" pinfunction="Y1_6" pintype="output"/>
+    </net>
+    <net code="80" name="/RAM_IO_2" class="Default">
+      <node ref="R3" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U1" pin="13" pinfunction="IO2_13" pintype="bidirectional"/>
+      <node ref="U12" pin="6" pinfunction="A2_6" pintype="input"/>
+      <node ref="U8" pin="8" pinfunction="Y2_8" pintype="output"/>
+    </net>
+    <net code="81" name="/RAM_IO_3" class="Default">
+      <node ref="R4" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U1" pin="15" pinfunction="IO3_15" pintype="bidirectional"/>
+      <node ref="U12" pin="8" pinfunction="A3_8" pintype="input"/>
+      <node ref="U8" pin="11" pinfunction="Y3_11" pintype="output"/>
+    </net>
+    <net code="82" name="/RAM_IO_4" class="Default">
+      <node ref="R5" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U1" pin="16" pinfunction="IO4_16" pintype="bidirectional"/>
+      <node ref="U12" pin="11" pinfunction="A4_11" pintype="input"/>
+      <node ref="U9" pin="3" pinfunction="Y0_3" pintype="output"/>
+    </net>
+    <net code="83" name="/RAM_IO_5" class="Default">
+      <node ref="R6" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U1" pin="17" pinfunction="IO5_17" pintype="bidirectional"/>
+      <node ref="U12" pin="13" pinfunction="A5_13" pintype="input"/>
+      <node ref="U9" pin="6" pinfunction="Y1_6" pintype="output"/>
+    </net>
+    <net code="84" name="/RAM_IO_6" class="Default">
+      <node ref="R7" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U1" pin="18" pinfunction="IO6_18" pintype="bidirectional"/>
+      <node ref="U12" pin="15" pinfunction="A6_15" pintype="input"/>
+      <node ref="U9" pin="8" pinfunction="Y2_8" pintype="output"/>
+    </net>
+    <net code="85" name="/RAM_IO_7" class="Default">
+      <node ref="R8" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U1" pin="19" pinfunction="IO7_19" pintype="bidirectional"/>
+      <node ref="U12" pin="17" pinfunction="A7_17" pintype="input"/>
+      <node ref="U9" pin="11" pinfunction="Y3_11" pintype="output"/>
+    </net>
+    <net code="86" name="/RAM_OE_N" class="Default">
+      <node ref="U1" pin="22" pinfunction="OE_N_22" pintype="input"/>
+      <node ref="U23" pin="6" pinfunction="Y1_6" pintype="output"/>
+    </net>
+    <net code="87" name="/RAM_WE_N" class="Default">
+      <node ref="U1" pin="27" pinfunction="WE_N_27" pintype="input"/>
+      <node ref="U23" pin="8" pinfunction="Y2_8" pintype="output"/>
+    </net>
+    <net code="88" name="/READ_DATA_0" class="Default">
+      <node ref="U19" pin="4" pinfunction="Y0_4" pintype="output"/>
+    </net>
+    <net code="89" name="/READ_DATA_1" class="Default">
+      <node ref="U19" pin="7" pinfunction="Y1_7" pintype="output"/>
+    </net>
+    <net code="90" name="/READ_DATA_2" class="Default">
+      <node ref="U19" pin="9" pinfunction="Y2_9" pintype="output"/>
+    </net>
+    <net code="91" name="/READ_DATA_3" class="Default">
+      <node ref="U19" pin="12" pinfunction="Y3_12" pintype="output"/>
+    </net>
+    <net code="92" name="/READ_DATA_4" class="Default">
+      <node ref="U20" pin="4" pinfunction="Y0_4" pintype="output"/>
+    </net>
+    <net code="93" name="/READ_DATA_5" class="Default">
+      <node ref="U20" pin="7" pinfunction="Y1_7" pintype="output"/>
+    </net>
+    <net code="94" name="/READ_DATA_6" class="Default">
+      <node ref="U20" pin="9" pinfunction="Y2_9" pintype="output"/>
+    </net>
+    <net code="95" name="/READ_DATA_7" class="Default">
+      <node ref="U20" pin="12" pinfunction="Y3_12" pintype="output"/>
+    </net>
+    <net code="96" name="/READ_SEL_0" class="Default">
+      <node ref="U15" pin="1" pinfunction="SELECT_1" pintype="input"/>
+      <node ref="U16" pin="1" pinfunction="SELECT_1" pintype="input"/>
+      <node ref="U17" pin="1" pinfunction="SELECT_1" pintype="input"/>
+      <node ref="U18" pin="1" pinfunction="SELECT_1" pintype="input"/>
+      <node ref="U25" pin="6" pinfunction="Y1_6" pintype="output"/>
+    </net>
+    <net code="97" name="/READ_SEL_1" class="Default">
+      <node ref="U19" pin="1" pinfunction="SELECT_1" pintype="input"/>
+      <node ref="U20" pin="1" pinfunction="SELECT_1" pintype="input"/>
+      <node ref="U25" pin="8" pinfunction="Y2_8" pintype="output"/>
+    </net>
+    <net code="98" name="/RESET_N" class="Default">
+      <node ref="U21" pin="2" pinfunction="B0_2" pintype="input"/>
+    </net>
+    <net code="99" name="/ROM_A_0" class="Default">
+      <node ref="U3" pin="10" pinfunction="A0_10" pintype="input"/>
+    </net>
+    <net code="100" name="/ROM_A_1" class="Default">
+      <node ref="U3" pin="9" pinfunction="A1_9" pintype="input"/>
+    </net>
+    <net code="101" name="/ROM_A_2" class="Default">
+      <node ref="U3" pin="8" pinfunction="A2_8" pintype="input"/>
+    </net>
+    <net code="102" name="/ROM_A_3" class="Default">
+      <node ref="U3" pin="7" pinfunction="A3_7" pintype="input"/>
+    </net>
+    <net code="103" name="/ROM_A_4" class="Default">
+      <node ref="U3" pin="6" pinfunction="A4_6" pintype="input"/>
+    </net>
+    <net code="104" name="/ROM_A_5" class="Default">
+      <node ref="U3" pin="5" pinfunction="A5_5" pintype="input"/>
+    </net>
+    <net code="105" name="/ROM_A_6" class="Default">
+      <node ref="U3" pin="4" pinfunction="A6_4" pintype="input"/>
+    </net>
+    <net code="106" name="/ROM_A_7" class="Default">
+      <node ref="U3" pin="3" pinfunction="A7_3" pintype="input"/>
+    </net>
+    <net code="107" name="/ROM_A_8" class="Default">
+      <node ref="U3" pin="25" pinfunction="A8_25" pintype="input"/>
+    </net>
+    <net code="108" name="/ROM_A_9" class="Default">
+      <node ref="U3" pin="24" pinfunction="A9_24" pintype="input"/>
+    </net>
+    <net code="109" name="/ROM_A_10" class="Default">
+      <node ref="U3" pin="21" pinfunction="A10_21" pintype="input"/>
+    </net>
+    <net code="110" name="/ROM_A_11" class="Default">
+      <node ref="U3" pin="23" pinfunction="A11_23" pintype="input"/>
+    </net>
+    <net code="111" name="/ROM_A_12" class="Default">
+      <node ref="U3" pin="2" pinfunction="A12_2" pintype="input"/>
+    </net>
+    <net code="112" name="/ROM_A_13" class="Default">
+      <node ref="U3" pin="26" pinfunction="A13_26" pintype="input"/>
+    </net>
+    <net code="113" name="/ROM_A_14" class="Default">
+      <node ref="U3" pin="1" pinfunction="A14_1" pintype="input"/>
+    </net>
+    <net code="114" name="/ROM_BUFFER_0" class="Default">
+      <node ref="U14" pin="18" pinfunction="Y0_18" pintype="output"/>
+      <node ref="U17" pin="2" pinfunction="A0_2" pintype="input"/>
+    </net>
+    <net code="115" name="/ROM_BUFFER_1" class="Default">
+      <node ref="U14" pin="16" pinfunction="Y1_16" pintype="output"/>
+      <node ref="U17" pin="5" pinfunction="A1_5" pintype="input"/>
+    </net>
+    <net code="116" name="/ROM_BUFFER_2" class="Default">
+      <node ref="U14" pin="14" pinfunction="Y2_14" pintype="output"/>
+      <node ref="U17" pin="11" pinfunction="A2_11" pintype="input"/>
+    </net>
+    <net code="117" name="/ROM_BUFFER_3" class="Default">
+      <node ref="U14" pin="12" pinfunction="Y3_12" pintype="output"/>
+      <node ref="U17" pin="14" pinfunction="A3_14" pintype="input"/>
+    </net>
+    <net code="118" name="/ROM_BUFFER_4" class="Default">
+      <node ref="U14" pin="9" pinfunction="Y4_9" pintype="output"/>
+      <node ref="U18" pin="2" pinfunction="A0_2" pintype="input"/>
+    </net>
+    <net code="119" name="/ROM_BUFFER_5" class="Default">
+      <node ref="U14" pin="7" pinfunction="Y5_7" pintype="output"/>
+      <node ref="U18" pin="5" pinfunction="A1_5" pintype="input"/>
+    </net>
+    <net code="120" name="/ROM_BUFFER_6" class="Default">
+      <node ref="U14" pin="5" pinfunction="Y6_5" pintype="output"/>
+      <node ref="U18" pin="11" pinfunction="A2_11" pintype="input"/>
+    </net>
+    <net code="121" name="/ROM_BUFFER_7" class="Default">
+      <node ref="U14" pin="3" pinfunction="Y7_3" pintype="output"/>
+      <node ref="U18" pin="14" pinfunction="A3_14" pintype="input"/>
+    </net>
+    <net code="122" name="/ROM_IO_0" class="Default">
+      <node ref="R17" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U14" pin="2" pinfunction="A0_2" pintype="input"/>
+      <node ref="U3" pin="11" pinfunction="IO0_11" pintype="bidirectional"/>
+    </net>
+    <net code="123" name="/ROM_IO_1" class="Default">
+      <node ref="R18" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U14" pin="4" pinfunction="A1_4" pintype="input"/>
+      <node ref="U3" pin="12" pinfunction="IO1_12" pintype="bidirectional"/>
+    </net>
+    <net code="124" name="/ROM_IO_2" class="Default">
+      <node ref="R19" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U14" pin="6" pinfunction="A2_6" pintype="input"/>
+      <node ref="U3" pin="13" pinfunction="IO2_13" pintype="bidirectional"/>
+    </net>
+    <net code="125" name="/ROM_IO_3" class="Default">
+      <node ref="R20" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U14" pin="8" pinfunction="A3_8" pintype="input"/>
+      <node ref="U3" pin="15" pinfunction="IO3_15" pintype="bidirectional"/>
+    </net>
+    <net code="126" name="/ROM_IO_4" class="Default">
+      <node ref="R21" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U14" pin="11" pinfunction="A4_11" pintype="input"/>
+      <node ref="U3" pin="16" pinfunction="IO4_16" pintype="bidirectional"/>
+    </net>
+    <net code="127" name="/ROM_IO_5" class="Default">
+      <node ref="R22" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U14" pin="13" pinfunction="A5_13" pintype="input"/>
+      <node ref="U3" pin="17" pinfunction="IO5_17" pintype="bidirectional"/>
+    </net>
+    <net code="128" name="/ROM_IO_6" class="Default">
+      <node ref="R23" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U14" pin="15" pinfunction="A6_15" pintype="input"/>
+      <node ref="U3" pin="18" pinfunction="IO6_18" pintype="bidirectional"/>
+    </net>
+    <net code="129" name="/ROM_IO_7" class="Default">
+      <node ref="R24" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U14" pin="17" pinfunction="A7_17" pintype="input"/>
+      <node ref="U3" pin="19" pinfunction="IO7_19" pintype="bidirectional"/>
+    </net>
+    <net code="130" name="/ROM_OE_N" class="Default">
+      <node ref="U25" pin="3" pinfunction="Y0_3" pintype="output"/>
+      <node ref="U3" pin="22" pinfunction="OE_N_22" pintype="input"/>
+    </net>
+    <net code="131" name="/SAFE" class="Default">
+      <node ref="U21" pin="10" pinfunction="B2_10" pintype="input"/>
+      <node ref="U21" pin="3" pinfunction="Y0_3" pintype="output"/>
+      <node ref="U26" pin="1" pinfunction="A0_1" pintype="input"/>
+    </net>
+    <net code="132" name="/SELECT3_LOCAL" class="Default">
+      <node ref="U25" pin="10" pinfunction="B2_10" pintype="input"/>
+      <node ref="U25" pin="5" pinfunction="B1_5" pintype="input"/>
+      <node ref="U28" pin="8" pinfunction="Y2_8" pintype="output"/>
+    </net>
+    <net code="133" name="/SELECT_1" class="Default">
+      <node ref="U25" pin="4" pinfunction="A1_4" pintype="input"/>
+    </net>
+    <net code="134" name="/SELECT_2" class="Default">
+      <node ref="U25" pin="9" pinfunction="A2_9" pintype="input"/>
+    </net>
+    <net code="135" name="/SELECT_3" class="Default">
+      <node ref="U28" pin="9" pinfunction="A2_9" pintype="input"/>
+    </net>
+    <net code="136" name="/VIDEO_A_0" class="Default">
+      <node ref="U4" pin="2" pinfunction="A0_2" pintype="input"/>
+    </net>
+    <net code="137" name="/VIDEO_A_1" class="Default">
+      <node ref="U4" pin="5" pinfunction="A1_5" pintype="input"/>
+    </net>
+    <net code="138" name="/VIDEO_A_2" class="Default">
+      <node ref="U4" pin="11" pinfunction="A2_11" pintype="input"/>
+    </net>
+    <net code="139" name="/VIDEO_A_3" class="Default">
+      <node ref="U4" pin="14" pinfunction="A3_14" pintype="input"/>
+    </net>
+    <net code="140" name="/VIDEO_A_4" class="Default">
+      <node ref="U5" pin="2" pinfunction="A0_2" pintype="input"/>
+    </net>
+    <net code="141" name="/VIDEO_A_5" class="Default">
+      <node ref="U5" pin="5" pinfunction="A1_5" pintype="input"/>
+    </net>
+    <net code="142" name="/VIDEO_A_6" class="Default">
+      <node ref="U5" pin="11" pinfunction="A2_11" pintype="input"/>
+    </net>
+    <net code="143" name="/VIDEO_A_7" class="Default">
+      <node ref="U5" pin="14" pinfunction="A3_14" pintype="input"/>
+    </net>
+    <net code="144" name="/VIDEO_A_8" class="Default">
+      <node ref="U6" pin="2" pinfunction="A0_2" pintype="input"/>
+    </net>
+    <net code="145" name="/VIDEO_A_9" class="Default">
+      <node ref="U6" pin="5" pinfunction="A1_5" pintype="input"/>
+    </net>
+    <net code="146" name="/VIDEO_A_10" class="Default">
+      <node ref="U6" pin="11" pinfunction="A2_11" pintype="input"/>
+    </net>
+    <net code="147" name="/VIDEO_A_11" class="Default">
+      <node ref="U6" pin="14" pinfunction="A3_14" pintype="input"/>
+    </net>
+    <net code="148" name="/VIDEO_A_12" class="Default">
+      <node ref="U7" pin="2" pinfunction="A0_2" pintype="input"/>
+    </net>
+    <net code="149" name="/VIDEO_A_13" class="Default">
+      <node ref="U7" pin="5" pinfunction="A1_5" pintype="input"/>
+    </net>
+    <net code="150" name="/VIDEO_A_14" class="Default">
+      <node ref="U7" pin="11" pinfunction="A2_11" pintype="input"/>
+    </net>
+    <net code="151" name="/VRAM_A_0" class="Default">
+      <node ref="U4" pin="3" pinfunction="B0_3" pintype="input"/>
+    </net>
+    <net code="152" name="/VRAM_A_1" class="Default">
+      <node ref="U4" pin="6" pinfunction="B1_6" pintype="input"/>
+    </net>
+    <net code="153" name="/VRAM_A_2" class="Default">
+      <node ref="U4" pin="10" pinfunction="B2_10" pintype="input"/>
+    </net>
+    <net code="154" name="/VRAM_A_3" class="Default">
+      <node ref="U4" pin="13" pinfunction="B3_13" pintype="input"/>
+    </net>
+    <net code="155" name="/VRAM_A_4" class="Default">
+      <node ref="U5" pin="3" pinfunction="B0_3" pintype="input"/>
+    </net>
+    <net code="156" name="/VRAM_A_5" class="Default">
+      <node ref="U5" pin="6" pinfunction="B1_6" pintype="input"/>
+    </net>
+    <net code="157" name="/VRAM_A_6" class="Default">
+      <node ref="U5" pin="10" pinfunction="B2_10" pintype="input"/>
+    </net>
+    <net code="158" name="/VRAM_A_7" class="Default">
+      <node ref="U5" pin="13" pinfunction="B3_13" pintype="input"/>
+    </net>
+    <net code="159" name="/VRAM_A_8" class="Default">
+      <node ref="U6" pin="3" pinfunction="B0_3" pintype="input"/>
+    </net>
+    <net code="160" name="/VRAM_A_9" class="Default">
+      <node ref="U6" pin="6" pinfunction="B1_6" pintype="input"/>
+    </net>
+    <net code="161" name="/VRAM_A_10" class="Default">
+      <node ref="U6" pin="10" pinfunction="B2_10" pintype="input"/>
+    </net>
+    <net code="162" name="/VRAM_A_11" class="Default">
+      <node ref="U6" pin="13" pinfunction="B3_13" pintype="input"/>
+    </net>
+    <net code="163" name="/VRAM_A_12" class="Default">
+      <node ref="U7" pin="3" pinfunction="B0_3" pintype="input"/>
+    </net>
+    <net code="164" name="/VRAM_A_13" class="Default">
+      <node ref="U7" pin="6" pinfunction="B1_6" pintype="input"/>
+    </net>
+    <net code="165" name="/VRAM_A_14" class="Default">
+      <node ref="U7" pin="10" pinfunction="B2_10" pintype="input"/>
+    </net>
+    <net code="166" name="/VRAM_BUFFER_0" class="Default">
+      <node ref="U13" pin="18" pinfunction="Y0_18" pintype="output"/>
+      <node ref="U15" pin="3" pinfunction="B0_3" pintype="input"/>
+    </net>
+    <net code="167" name="/VRAM_BUFFER_1" class="Default">
+      <node ref="U13" pin="16" pinfunction="Y1_16" pintype="output"/>
+      <node ref="U15" pin="6" pinfunction="B1_6" pintype="input"/>
+    </net>
+    <net code="168" name="/VRAM_BUFFER_2" class="Default">
+      <node ref="U13" pin="14" pinfunction="Y2_14" pintype="output"/>
+      <node ref="U15" pin="10" pinfunction="B2_10" pintype="input"/>
+    </net>
+    <net code="169" name="/VRAM_BUFFER_3" class="Default">
+      <node ref="U13" pin="12" pinfunction="Y3_12" pintype="output"/>
+      <node ref="U15" pin="13" pinfunction="B3_13" pintype="input"/>
+    </net>
+    <net code="170" name="/VRAM_BUFFER_4" class="Default">
+      <node ref="U13" pin="9" pinfunction="Y4_9" pintype="output"/>
+      <node ref="U16" pin="3" pinfunction="B0_3" pintype="input"/>
+    </net>
+    <net code="171" name="/VRAM_BUFFER_5" class="Default">
+      <node ref="U13" pin="7" pinfunction="Y5_7" pintype="output"/>
+      <node ref="U16" pin="6" pinfunction="B1_6" pintype="input"/>
+    </net>
+    <net code="172" name="/VRAM_BUFFER_6" class="Default">
+      <node ref="U13" pin="5" pinfunction="Y6_5" pintype="output"/>
+      <node ref="U16" pin="10" pinfunction="B2_10" pintype="input"/>
+    </net>
+    <net code="173" name="/VRAM_BUFFER_7" class="Default">
+      <node ref="U13" pin="3" pinfunction="Y7_3" pintype="output"/>
+      <node ref="U16" pin="13" pinfunction="B3_13" pintype="input"/>
+    </net>
+    <net code="174" name="/VRAM_CHIP_A_0" class="Default">
+      <node ref="U2" pin="10" pinfunction="A0_10" pintype="input"/>
+      <node ref="U4" pin="4" pinfunction="Y0_4" pintype="output"/>
+    </net>
+    <net code="175" name="/VRAM_CHIP_A_1" class="Default">
+      <node ref="U2" pin="9" pinfunction="A1_9" pintype="input"/>
+      <node ref="U4" pin="7" pinfunction="Y1_7" pintype="output"/>
+    </net>
+    <net code="176" name="/VRAM_CHIP_A_2" class="Default">
+      <node ref="U2" pin="8" pinfunction="A2_8" pintype="input"/>
+      <node ref="U4" pin="9" pinfunction="Y2_9" pintype="output"/>
+    </net>
+    <net code="177" name="/VRAM_CHIP_A_3" class="Default">
+      <node ref="U2" pin="7" pinfunction="A3_7" pintype="input"/>
+      <node ref="U4" pin="12" pinfunction="Y3_12" pintype="output"/>
+    </net>
+    <net code="178" name="/VRAM_CHIP_A_4" class="Default">
+      <node ref="U2" pin="6" pinfunction="A4_6" pintype="input"/>
+      <node ref="U5" pin="4" pinfunction="Y0_4" pintype="output"/>
+    </net>
+    <net code="179" name="/VRAM_CHIP_A_5" class="Default">
+      <node ref="U2" pin="5" pinfunction="A5_5" pintype="input"/>
+      <node ref="U5" pin="7" pinfunction="Y1_7" pintype="output"/>
+    </net>
+    <net code="180" name="/VRAM_CHIP_A_6" class="Default">
+      <node ref="U2" pin="4" pinfunction="A6_4" pintype="input"/>
+      <node ref="U5" pin="9" pinfunction="Y2_9" pintype="output"/>
+    </net>
+    <net code="181" name="/VRAM_CHIP_A_7" class="Default">
+      <node ref="U2" pin="3" pinfunction="A7_3" pintype="input"/>
+      <node ref="U5" pin="12" pinfunction="Y3_12" pintype="output"/>
+    </net>
+    <net code="182" name="/VRAM_CHIP_A_8" class="Default">
+      <node ref="U2" pin="25" pinfunction="A8_25" pintype="input"/>
+      <node ref="U6" pin="4" pinfunction="Y0_4" pintype="output"/>
+    </net>
+    <net code="183" name="/VRAM_CHIP_A_9" class="Default">
+      <node ref="U2" pin="24" pinfunction="A9_24" pintype="input"/>
+      <node ref="U6" pin="7" pinfunction="Y1_7" pintype="output"/>
+    </net>
+    <net code="184" name="/VRAM_CHIP_A_10" class="Default">
+      <node ref="U2" pin="21" pinfunction="A10_21" pintype="input"/>
+      <node ref="U6" pin="9" pinfunction="Y2_9" pintype="output"/>
+    </net>
+    <net code="185" name="/VRAM_CHIP_A_11" class="Default">
+      <node ref="U2" pin="23" pinfunction="A11_23" pintype="input"/>
+      <node ref="U6" pin="12" pinfunction="Y3_12" pintype="output"/>
+    </net>
+    <net code="186" name="/VRAM_CHIP_A_12" class="Default">
+      <node ref="U2" pin="2" pinfunction="A12_2" pintype="input"/>
+      <node ref="U7" pin="4" pinfunction="Y0_4" pintype="output"/>
+    </net>
+    <net code="187" name="/VRAM_CHIP_A_13" class="Default">
+      <node ref="U2" pin="26" pinfunction="A13_26" pintype="input"/>
+      <node ref="U7" pin="7" pinfunction="Y1_7" pintype="output"/>
+    </net>
+    <net code="188" name="/VRAM_CHIP_A_14" class="Default">
+      <node ref="U2" pin="1" pinfunction="A14_1" pintype="input"/>
+      <node ref="U7" pin="9" pinfunction="Y2_9" pintype="output"/>
+    </net>
+    <net code="189" name="/VRAM_IO_0" class="Default">
+      <node ref="R9" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U10" pin="3" pinfunction="Y0_3" pintype="output"/>
+      <node ref="U13" pin="2" pinfunction="A0_2" pintype="input"/>
+      <node ref="U2" pin="11" pinfunction="IO0_11" pintype="bidirectional"/>
+    </net>
+    <net code="190" name="/VRAM_IO_1" class="Default">
+      <node ref="R10" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U10" pin="6" pinfunction="Y1_6" pintype="output"/>
+      <node ref="U13" pin="4" pinfunction="A1_4" pintype="input"/>
+      <node ref="U2" pin="12" pinfunction="IO1_12" pintype="bidirectional"/>
+    </net>
+    <net code="191" name="/VRAM_IO_2" class="Default">
+      <node ref="R11" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U10" pin="8" pinfunction="Y2_8" pintype="output"/>
+      <node ref="U13" pin="6" pinfunction="A2_6" pintype="input"/>
+      <node ref="U2" pin="13" pinfunction="IO2_13" pintype="bidirectional"/>
+    </net>
+    <net code="192" name="/VRAM_IO_3" class="Default">
+      <node ref="R12" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U10" pin="11" pinfunction="Y3_11" pintype="output"/>
+      <node ref="U13" pin="8" pinfunction="A3_8" pintype="input"/>
+      <node ref="U2" pin="15" pinfunction="IO3_15" pintype="bidirectional"/>
+    </net>
+    <net code="193" name="/VRAM_IO_4" class="Default">
+      <node ref="R13" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U11" pin="3" pinfunction="Y0_3" pintype="output"/>
+      <node ref="U13" pin="11" pinfunction="A4_11" pintype="input"/>
+      <node ref="U2" pin="16" pinfunction="IO4_16" pintype="bidirectional"/>
+    </net>
+    <net code="194" name="/VRAM_IO_5" class="Default">
+      <node ref="R14" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U11" pin="6" pinfunction="Y1_6" pintype="output"/>
+      <node ref="U13" pin="13" pinfunction="A5_13" pintype="input"/>
+      <node ref="U2" pin="17" pinfunction="IO5_17" pintype="bidirectional"/>
+    </net>
+    <net code="195" name="/VRAM_IO_6" class="Default">
+      <node ref="R15" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U11" pin="8" pinfunction="Y2_8" pintype="output"/>
+      <node ref="U13" pin="15" pinfunction="A6_15" pintype="input"/>
+      <node ref="U2" pin="18" pinfunction="IO6_18" pintype="bidirectional"/>
+    </net>
+    <net code="196" name="/VRAM_IO_7" class="Default">
+      <node ref="R16" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U11" pin="11" pinfunction="Y3_11" pintype="output"/>
+      <node ref="U13" pin="17" pinfunction="A7_17" pintype="input"/>
+      <node ref="U2" pin="19" pinfunction="IO7_19" pintype="bidirectional"/>
+    </net>
+    <net code="197" name="/VRAM_OE_N" class="Default">
+      <node ref="U2" pin="22" pinfunction="OE_N_22" pintype="input"/>
+      <node ref="U24" pin="8" pinfunction="Y2_8" pintype="output"/>
+    </net>
+    <net code="198" name="/VRAM_WE_N" class="Default">
+      <node ref="U2" pin="27" pinfunction="WE_N_27" pintype="input"/>
+      <node ref="U24" pin="6" pinfunction="Y1_6" pintype="output"/>
+    </net>
+    <net code="199" name="/WDATA_0" class="Default">
+      <node ref="U10" pin="2" pinfunction="A0_2" pintype="input"/>
+      <node ref="U8" pin="2" pinfunction="A0_2" pintype="input"/>
+    </net>
+    <net code="200" name="/WDATA_1" class="Default">
+      <node ref="U10" pin="5" pinfunction="A1_5" pintype="input"/>
+      <node ref="U8" pin="5" pinfunction="A1_5" pintype="input"/>
+    </net>
+    <net code="201" name="/WDATA_2" class="Default">
+      <node ref="U10" pin="9" pinfunction="A2_9" pintype="input"/>
+      <node ref="U8" pin="9" pinfunction="A2_9" pintype="input"/>
+    </net>
+    <net code="202" name="/WDATA_3" class="Default">
+      <node ref="U10" pin="12" pinfunction="A3_12" pintype="input"/>
+      <node ref="U8" pin="12" pinfunction="A3_12" pintype="input"/>
+    </net>
+    <net code="203" name="/WDATA_4" class="Default">
+      <node ref="U11" pin="2" pinfunction="A0_2" pintype="input"/>
+      <node ref="U9" pin="2" pinfunction="A0_2" pintype="input"/>
+    </net>
+    <net code="204" name="/WDATA_5" class="Default">
+      <node ref="U11" pin="5" pinfunction="A1_5" pintype="input"/>
+      <node ref="U9" pin="5" pinfunction="A1_5" pintype="input"/>
+    </net>
+    <net code="205" name="/WDATA_6" class="Default">
+      <node ref="U11" pin="9" pinfunction="A2_9" pintype="input"/>
+      <node ref="U9" pin="9" pinfunction="A2_9" pintype="input"/>
+    </net>
+    <net code="206" name="/WDATA_7" class="Default">
+      <node ref="U11" pin="12" pinfunction="A3_12" pintype="input"/>
+      <node ref="U9" pin="12" pinfunction="A3_12" pintype="input"/>
+    </net>
+    <net code="207" name="unconnected-(U7-Y3-Pad12)" class="Default">
+      <node ref="U7" pin="12" pinfunction="Y3_12" pintype="output+no_connect"/>
+    </net>
+    <net code="208" name="unconnected-(U22-Y1-Pad6)" class="Default">
+      <node ref="U22" pin="6" pinfunction="Y1_6" pintype="output+no_connect"/>
+    </net>
+    <net code="209" name="unconnected-(U22-Y2-Pad8)" class="Default">
+      <node ref="U22" pin="8" pinfunction="Y2_8" pintype="output+no_connect"/>
+    </net>
+    <net code="210" name="unconnected-(U22-Y3-Pad11)" class="Default">
+      <node ref="U22" pin="11" pinfunction="Y3_11" pintype="output+no_connect"/>
+    </net>
+    <net code="211" name="unconnected-(U25-Y3-Pad11)" class="Default">
+      <node ref="U25" pin="11" pinfunction="Y3_11" pintype="output+no_connect"/>
+    </net>
+    <net code="212" name="unconnected-(U28-Y3-Pad11)" class="Default">
+      <node ref="U28" pin="11" pinfunction="Y3_11" pintype="output+no_connect"/>
+    </net>
+  </nets>
+</export>

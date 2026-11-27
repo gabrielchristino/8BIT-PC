@@ -1,3 +1,22 @@
+## ADR E34 — Construir variante com quatro canais livres para distribuir cargas
+
+26/11/2026, base NET29. Implementar separadamente load_distributed_video,
+keyboard e bus: quatro canais AHC125 existentes dividem WDATA0 do teclado,
+BOOT externo, SELECT3 da memória e H2 externo/U30.A3.15pinos mudam, nenhum
+CI/capacitor novo, máximo quatro entradas na união estrutural. Manter NET26
+intacta para o ensaio longo. A nova variante ainda está em validação.
+
+Alternativas: acrescentar pacotes seria desnecessário enquanto há canais
+livres; assumir Ci real menor ou extrapolar CL50pF não fecha o orçamento.
+Dividir só H2 externo ainda deixaria cinco cargas no contador. A distribuição
+escolhida preserva funções, mas acrescenta atraso e consumo dinâmico; ambos
+precisam entrar nas análises e regressões próprias.
+
+Aceitação: XML/deltas/cargas, CPU ideal/temporizada, cortes nominais/cantos,
+quadros temporizados e boot ideal completo, com fontes congeladas. STA/
+min-delay/glitches/eletricidade global, títulos de revisão/ERC e fabricação
+continuam com gates próprios. Detalhes e checkpoint em NET30.md.
+
 ## ADR E33 — Auditar cargas nas fronteiras antes de aceitar modelos a50pF
 
 26/11/2026, circuito NET26. A união estrutural NET29 confere sete XMLs e

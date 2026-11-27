@@ -1,3 +1,10 @@
+## Continuidade NET-30 em validação
+
+- Leia docs/engineering/NET30.md. Novas folhas load_distributed_video/keyboard/bus reutilizam quatro canais AHC125: WDATA0_LOCAL, BOOT_EXTERNAL, SELECT3_LOCAL e H2_EXTERNAL/U30.A3.15pinos mudam, nenhum CI novo, união7.814pinos conectados e máximo quatro entradas contadas. Não é carga extraída/produção.
+- Ensaios em verification/net30/jobs têm fontes congeladas e limites próprios. Conferir status/PID/boot_id antes de duplicar ou regenerar qualquer modelo/script listado. Jobs memory/ideal/cpu-fault concluíram no checkpoint; timed/early/program/corners/frames têm resultados próprios. Não supor aprovação sem relatórios completos. A NET27 ativa continua sendo circuito NET26.
+- ERC parcial49vídeo/27teclado/172memória sem waivers. Marcadores de título/data de vídeo/teclado herdados precisam de anotação posterior, sem mudar fontes durante ensaios. Não promover NET30 antes de completar/verificar regressões; consumo/STA/glitches/DAC/PCB/protótipo permanecem abertos.
+- Atualização do checkpoint: dois vetores temporizados1062 e quatro cortes adicionais em cantos50ppm passaram. Primeiro job frames falhou por reset frio de1us diante da RC19us; diagnóstico e originais em development/frames-short-reset, sem aprovação. Nova tentativa frames-qualified-start usa RAW baixo50us, mesmos watchdog/monitores, sem alterar hardware. Outros jobs ativos não listavam esses arquivos novos quando a bancada foi corrigida. Não confundir seeded VRAM/VB do ensaio de quadros com boot sem seeds.
+
 ## Continuidade NET-29
 
 - Leia docs/engineering/NET29_LOADS.md. União estrutural confere sete XMLs/982componentes/7.810pinos conectados. WDATA0 retido tem6entradas; SELECT_IO, BOOT e H2 têm5. Contas70/60pF são triagem uniforme, não medidas. Próxima variante pode reutilizar quatro canais AHC125 livres; ainda não foi construída/aprovada.

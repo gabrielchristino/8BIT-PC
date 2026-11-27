@@ -1,0 +1,30 @@
+{
+  "components": 74,
+  "ics": 37,
+  "pins": 606,
+  "no_connects": 34,
+  "max_signal_input_loads": 4,
+  "failures": [],
+  "scope": "Native spare-channel load-distribution candidate; functional/timing/analog/PCB qualification pending.",
+  "date": "2026-11-26",
+  "base_git_commit": "b5a19c7ee72a9b8543060e77f9c26824daf271ca",
+  "production_released": false,
+  "sources": [
+    {
+      "path": "tools/build_distributed_loads.py",
+      "sha256": "d66c4a708231aad059e3e31303cd171b9f1c3b4c51dc45a01c9dcde0145641d8"
+    },
+    {
+      "path": "tools/build_local_phase_reset.py",
+      "sha256": "05b4c7f9a3648b71f3709be47dbced037ae56a01ce991cf600bc7749a24ccb2e"
+    },
+    {
+      "path": "tools/build_memory_bus.py",
+      "sha256": "3836d5019a7dab5f2487b3459fe624f94b094f23568ab3d0354335924715ef0c"
+    },
+    {
+      "path": "hardware/local_phase_video/design.json",
+      "sha256": "13d361cd94015c704421f595b450de5b5e35d1c8db1aa9d6f85163e19997873d"
+    }
+  ]
+}

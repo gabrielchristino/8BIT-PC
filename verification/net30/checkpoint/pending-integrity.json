@@ -1,0 +1,339 @@
+{
+  "net27": {
+    "date": "2026-11-26",
+    "scope": "Read-only integrity checkpoint during a pending full timed run. No final circuit pass asserted.",
+    "run_source_commit": "ba3353f585fff94469d89674a8c1bdfa08ea70f1",
+    "circuit_base_commit": "f1c6c27d60d921286ed8729cd6f47e90e5948a3b",
+    "source_paths_checked": [
+      "tools/run_full_timed_program.py",
+      "tools/tracked_simulation.py",
+      "tools/run_local_phase_program.py",
+      "tools/run_system_cpu.py",
+      "sim/hdl/hc_models.sv",
+      "sim/net02/package_models.sv",
+      "sim/net03/package_models.sv",
+      "sim/net04/package_models.sv",
+      "hardware/cpu_global/cpu_global_netlist.sv",
+      "hardware/memory_decode/memory_decode_netlist.sv",
+      "sim/net19a/package_models.sv",
+      "hardware/common_request/common_request_netlist.sv",
+      "sim/net13/memory_devices.sv",
+      "hardware/memory_bus/memory_bus_netlist.sv",
+      "sim/net14c/package_models_async.sv",
+      "hardware/local_phase_keyboard/local_phase_keyboard_netlist.sv",
+      "hardware/local_phase_reset/local_phase_reset_netlist.sv",
+      "sim/net23/clock_models.sv",
+      "sim/net26/isa1_memory_local_phase.sv",
+      "sim/net22/phase_packages.sv",
+      "sim/net25/warm_packages.sv",
+      "sim/net26/local_video_async.sv"
+    ],
+    "snapshot_count": 27,
+    "snapshot_hashes_match": true,
+    "state_at_read": {
+      "status": "running",
+      "phase": "simulation",
+      "command": [
+        "vvp",
+        "/tmp/isa1-keyboard-cpu-_pbv9afx/bench.vvp"
+      ],
+      "cwd": "/tmp/isa1-keyboard-cpu-_pbv9afx",
+      "boot_id": "e83b5137-128a-4b62-995b-0b9291433040",
+      "started_unix_seconds": 1795745472.4121609,
+      "limits": {
+        "memory_mb": 1024,
+        "cpu_seconds": 72000,
+        "wall_seconds": 86400,
+        "output_mb_per_file": 8
+      },
+      "stdout_path": "/mnt/c/Users/gabri/projetos/isa1/verification/net27/full-timed/attempt-001/simulation.stdout.log",
+      "stderr_path": "/mnt/c/Users/gabri/projetos/isa1/verification/net27/full-timed/attempt-001/simulation.stderr.log",
+      "simulation_passed": false,
+      "pid": 702,
+      "process_group": 702
+    },
+    "last_progress_at_read": "PROGRESS retired=6400 transactions=11750 simulated_ns=1763892000.000 PC=40b3",
+    "simulation_passed": false,
+    "production_released": false,
+    "tool_sha256": "8e1a6c4c39cf09542d05e9645524d8c801f2a6ff8aa4eeb28df95c65fc166276"
+  },
+  "net30_states_at_read": [
+    {
+      "job": "corners",
+      "state_at_read": {
+        "status": "process_finished",
+        "phase": "job",
+        "command": [
+          "/usr/bin/python3",
+          "tools/run_distributed_load_corners.py",
+          "--worker"
+        ],
+        "cwd": "/mnt/c/Users/gabri/projetos/isa1",
+        "boot_id": "e83b5137-128a-4b62-995b-0b9291433040",
+        "started_unix_seconds": 1795747436.4692488,
+        "limits": {
+          "memory_mb": 1024,
+          "cpu_seconds": 3000,
+          "wall_seconds": 3600,
+          "output_mb_per_file": 8
+        },
+        "stdout_path": "/mnt/c/Users/gabri/projetos/isa1/verification/net30/jobs/corners/job.stdout.log",
+        "stderr_path": "/mnt/c/Users/gabri/projetos/isa1/verification/net30/jobs/corners/job.stderr.log",
+        "simulation_passed": false,
+        "pid": 1169,
+        "process_group": 1169,
+        "exit": 0,
+        "wall_timeout": false,
+        "seconds": 186.315,
+        "stdout_sha256": "60cd8a2bb76f5cf45ee00ff33a4698f2b96259dee420ca6bd53eabad7d88f527",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "job": "cpu-fault",
+      "state_at_read": {
+        "status": "process_finished",
+        "phase": "job",
+        "command": [
+          "/usr/bin/python3",
+          "tools/run_distributed_load_cpu_fault.py"
+        ],
+        "cwd": "/mnt/c/Users/gabri/projetos/isa1",
+        "boot_id": "e83b5137-128a-4b62-995b-0b9291433040",
+        "started_unix_seconds": 1795747109.4600055,
+        "limits": {
+          "memory_mb": 1024,
+          "cpu_seconds": 3000,
+          "wall_seconds": 3600,
+          "output_mb_per_file": 8
+        },
+        "stdout_path": "/mnt/c/Users/gabri/projetos/isa1/verification/net30/jobs/cpu-fault/job.stdout.log",
+        "stderr_path": "/mnt/c/Users/gabri/projetos/isa1/verification/net30/jobs/cpu-fault/job.stderr.log",
+        "simulation_passed": false,
+        "pid": 1077,
+        "process_group": 1077,
+        "exit": 0,
+        "wall_timeout": false,
+        "seconds": 192.001,
+        "stdout_sha256": "2d79ccb596ddc28e050d60ce61e40aba8e5d6fd3ac04ae3b29a91937e9553f21",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "job": "early",
+      "state_at_read": {
+        "status": "process_finished",
+        "phase": "job",
+        "command": [
+          "/usr/bin/python3",
+          "tools/run_distributed_load_vectors.py",
+          "--timed",
+          "--quick",
+          "--early"
+        ],
+        "cwd": "/mnt/c/Users/gabri/projetos/isa1",
+        "boot_id": "e83b5137-128a-4b62-995b-0b9291433040",
+        "started_unix_seconds": 1795747108.9692383,
+        "limits": {
+          "memory_mb": 1024,
+          "cpu_seconds": 3000,
+          "wall_seconds": 3600,
+          "output_mb_per_file": 8
+        },
+        "stdout_path": "/mnt/c/Users/gabri/projetos/isa1/verification/net30/jobs/early/job.stdout.log",
+        "stderr_path": "/mnt/c/Users/gabri/projetos/isa1/verification/net30/jobs/early/job.stderr.log",
+        "simulation_passed": false,
+        "pid": 1060,
+        "process_group": 1060,
+        "exit": 0,
+        "wall_timeout": false,
+        "seconds": 664.672,
+        "stdout_sha256": "420f9f19a20b057be69d12d01228033884f1036656a45ca091b7ae94c100690e",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "job": "frames",
+      "state_at_read": {
+        "status": "process_finished",
+        "phase": "job",
+        "command": [
+          "/usr/bin/python3",
+          "tools/run_distributed_load_frames.py",
+          "--worker"
+        ],
+        "cwd": "/mnt/c/Users/gabri/projetos/isa1",
+        "boot_id": "e83b5137-128a-4b62-995b-0b9291433040",
+        "started_unix_seconds": 1795747436.1046712,
+        "limits": {
+          "memory_mb": 1024,
+          "cpu_seconds": 3000,
+          "wall_seconds": 3600,
+          "output_mb_per_file": 8
+        },
+        "stdout_path": "/mnt/c/Users/gabri/projetos/isa1/verification/net30/jobs/frames/job.stdout.log",
+        "stderr_path": "/mnt/c/Users/gabri/projetos/isa1/verification/net30/jobs/frames/job.stderr.log",
+        "simulation_passed": false,
+        "pid": 1164,
+        "process_group": 1164,
+        "exit": 1,
+        "wall_timeout": false,
+        "seconds": 60.499,
+        "stdout_sha256": "5544eab37aa075fc5f95ec67ad38c88522b4afb8dfeb7ed71c6514ff9d861f63",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "job": "frames-qualified-start",
+      "state_at_read": {
+        "status": "process_finished",
+        "phase": "job",
+        "command": [
+          "/usr/bin/python3",
+          "tools/run_distributed_load_frames.py",
+          "--worker"
+        ],
+        "cwd": "/mnt/c/Users/gabri/projetos/isa1",
+        "boot_id": "e83b5137-128a-4b62-995b-0b9291433040",
+        "started_unix_seconds": 1795747741.0672882,
+        "limits": {
+          "memory_mb": 1024,
+          "cpu_seconds": 3000,
+          "wall_seconds": 3600,
+          "output_mb_per_file": 8
+        },
+        "stdout_path": "/mnt/c/Users/gabri/projetos/isa1/verification/net30/jobs/frames-qualified-start/job.stdout.log",
+        "stderr_path": "/mnt/c/Users/gabri/projetos/isa1/verification/net30/jobs/frames-qualified-start/job.stderr.log",
+        "simulation_passed": false,
+        "pid": 1216,
+        "process_group": 1216,
+        "exit": 0,
+        "wall_timeout": false,
+        "seconds": 351.151,
+        "stdout_sha256": "0d01d64e989f5204aa94b79dcf915b64ead88b3c9f9522e753ebb069bc55db90",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "job": "ideal",
+      "state_at_read": {
+        "status": "process_finished",
+        "phase": "job",
+        "command": [
+          "/usr/bin/python3",
+          "tools/run_distributed_load_vectors.py"
+        ],
+        "cwd": "/mnt/c/Users/gabri/projetos/isa1",
+        "boot_id": "e83b5137-128a-4b62-995b-0b9291433040",
+        "started_unix_seconds": 1795747109.3291202,
+        "limits": {
+          "memory_mb": 1024,
+          "cpu_seconds": 3000,
+          "wall_seconds": 3600,
+          "output_mb_per_file": 8
+        },
+        "stdout_path": "/mnt/c/Users/gabri/projetos/isa1/verification/net30/jobs/ideal/job.stdout.log",
+        "stderr_path": "/mnt/c/Users/gabri/projetos/isa1/verification/net30/jobs/ideal/job.stderr.log",
+        "simulation_passed": false,
+        "pid": 1076,
+        "process_group": 1076,
+        "exit": 0,
+        "wall_timeout": false,
+        "seconds": 141.491,
+        "stdout_sha256": "0319d0f2d9e808b50880d6eeb16eef47c22e70ae358e959538566db1d515319f",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "job": "memory",
+      "state_at_read": {
+        "status": "process_finished",
+        "phase": "job",
+        "command": [
+          "/usr/bin/python3",
+          "tools/run_distributed_load_memory.py"
+        ],
+        "cwd": "/mnt/c/Users/gabri/projetos/isa1",
+        "boot_id": "e83b5137-128a-4b62-995b-0b9291433040",
+        "started_unix_seconds": 1795747088.0242574,
+        "limits": {
+          "memory_mb": 1024,
+          "cpu_seconds": 3000,
+          "wall_seconds": 3600,
+          "output_mb_per_file": 8
+        },
+        "stdout_path": "/mnt/c/Users/gabri/projetos/isa1/verification/net30/jobs/memory/job.stdout.log",
+        "stderr_path": "/mnt/c/Users/gabri/projetos/isa1/verification/net30/jobs/memory/job.stderr.log",
+        "simulation_passed": false,
+        "pid": 997,
+        "process_group": 997,
+        "exit": 0,
+        "wall_timeout": false,
+        "seconds": 6.707,
+        "stdout_sha256": "aa994a1bff490e02a89b43e1b0f825fe88bc324a13f7d42b24bf53e24ae15289",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "job": "program",
+      "state_at_read": {
+        "status": "running",
+        "phase": "job",
+        "command": [
+          "/usr/bin/python3",
+          "tools/run_distributed_load_program.py"
+        ],
+        "cwd": "/mnt/c/Users/gabri/projetos/isa1",
+        "boot_id": "e83b5137-128a-4b62-995b-0b9291433040",
+        "started_unix_seconds": 1795747108.9689605,
+        "limits": {
+          "memory_mb": 1024,
+          "cpu_seconds": 3000,
+          "wall_seconds": 3600,
+          "output_mb_per_file": 8
+        },
+        "stdout_path": "/mnt/c/Users/gabri/projetos/isa1/verification/net30/jobs/program/job.stdout.log",
+        "stderr_path": "/mnt/c/Users/gabri/projetos/isa1/verification/net30/jobs/program/job.stderr.log",
+        "simulation_passed": false,
+        "pid": 1059,
+        "process_group": 1059
+      }
+    },
+    {
+      "job": "timed",
+      "state_at_read": {
+        "status": "process_finished",
+        "phase": "job",
+        "command": [
+          "/usr/bin/python3",
+          "tools/run_distributed_load_vectors.py",
+          "--timed",
+          "--quick"
+        ],
+        "cwd": "/mnt/c/Users/gabri/projetos/isa1",
+        "boot_id": "e83b5137-128a-4b62-995b-0b9291433040",
+        "started_unix_seconds": 1795747108.968895,
+        "limits": {
+          "memory_mb": 1024,
+          "cpu_seconds": 3000,
+          "wall_seconds": 3600,
+          "output_mb_per_file": 8
+        },
+        "stdout_path": "/mnt/c/Users/gabri/projetos/isa1/verification/net30/jobs/timed/job.stdout.log",
+        "stderr_path": "/mnt/c/Users/gabri/projetos/isa1/verification/net30/jobs/timed/job.stderr.log",
+        "simulation_passed": false,
+        "pid": 1058,
+        "process_group": 1058,
+        "exit": 0,
+        "wall_timeout": false,
+        "seconds": 667.999,
+        "stdout_sha256": "fa637ce3faecb3ed7582d640677b7eac006b8758e56d94827ad4b44f8606fcaa",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    }
+  ],
+  "active_listed_sources_unchanged": true,
+  "completed_hardware_reports_checked": true,
+  "source_records_checked": 541,
+  "not_a_full_program_pass": true
+}

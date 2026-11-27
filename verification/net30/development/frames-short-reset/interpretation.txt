@@ -1,0 +1,14 @@
+26/11/2026 — interpretação após executar diagnostic.sv, não medida física.
+O diagnóstico a12ms mostrou raw=1 rc=1 phase_init=1 warm_run=1 p0=x arm=x
+bank=x cpu_reset=1 safe=x. A fonte do primeiro ensaio começava raw=1,
+aplicava apenas1us em baixo e voltava a1. A RC tem asserção19us inercial:
+essa sequência fria nunca inicializou o domínio do banco/warm. Warm_run
+eventualmente chegou a1 por shift, mas as fases/pedido de armamento ficaramX.
+Não houve demonstração de falha de pixels; a bancada ficou esperando SAFE.
+
+Preservados bancada/runner/relatório/logs/origens originais nesta pasta e
+em jobs/frames. Nova tentativa usa outra identificação de job e RAW inicialmente
+baixo por50us, além do limiteRC19us. Não alterados hardware, modelos, contagens,
+watchdog90ms ou monitores de dados/reset. Demais ensaios ativos não listavam
+esses dois arquivos novos entre suas fontes congeladas, conferido antes da
+alteração. Isso não aprova POR analógico ou partida com força de reset arbitrária.

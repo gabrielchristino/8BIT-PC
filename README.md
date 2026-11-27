@@ -32,6 +32,8 @@ Projeto de computador pessoal com CPU própria de lógica discreta, endereçamen
 
 ## Começar
 
+**Nova variante NET30 em validação:** [redistribuição de cargas](docs/engineering/NET30.md) com quatro canais já existentes, sem adicionar CIs. Há testes concluídos e outros ativos; ainda não substitui o candidato NET26.
+
 **Auditoria de cargas NET29:** a união estrutural encontrou quatro redes acima do orçamento preliminar de quatro entradas por saída. [Pinos, limites e proposta de redistribuição](docs/engineering/NET29_LOADS.md); correção ainda não implementada, fontes do ensaio NET27 preservadas.
 
 **Lista atual de testes e pendências:** [VALIDATION_STATUS](docs/engineering/VALIDATION_STATUS.md). **Circuito candidato atual:** [NET-26](docs/engineering/NET26.md), com CPU, memória, raster, teclado e reset por pinos. Boot/quadro ideal completo passou; programa completo temporizado usa a preparação NET27 e tem resultado próprio ainda pendente. [Análise de consumo NET28](docs/engineering/NET28_POWER.md) inicia o orçamento sem declarar corrente máxima da placa. Energia, temporização/elétrica globais, DAC, firmware e PCB/protótipo continuam abertos.

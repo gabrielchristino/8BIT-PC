@@ -7,6 +7,11 @@ ensaios sobrepostos nem transferir aprovação entre variantes diferentes.
 
 ## Circuito candidato corrente
 
+A [variante NET30](NET30.md) já redistribui quatro cargas com canais livres,
+mas está em validação: vetores ideal/dois temporizados,48cortes SRAM e oito
+cortes CPU nominais/cantos passaram. Quadros/boot completo têm resultados
+próprios ainda pendentes; o candidato descrito abaixo continua sendo NET26.
+
 CPU `cpu_global`, decoder `memory_decode`, controlador `common_request`,
 barramento `memory_bus`, vídeo `local_phase_video`, teclado
 `local_phase_keyboard` e reset `local_phase_reset`: **460 CIs, dois módulos

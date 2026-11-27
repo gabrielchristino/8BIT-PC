@@ -182,6 +182,13 @@ NET-17 — 26/11/2026: acrescentada variante para alvo condicional de 500 Ω, co
 - Hipótese apenasHDL de reset local emP1 passa156 cenários funcionais; clock frio continua aberto. Estudos de próxima variante não contam como implementação.
 
 
+## 2026-11-26 — NET-30 em validação
+
+- Três variantes nativas com quatro canais AHC125 livres,15pinos alterados, sem CIs novos; união até quatro entradas contadas, sem alegação de carga extraída.
+- Conferidos XMLs/ERC parcial e regressões de instruções/memória/cortes; quadros/boot ideal ainda em validação no checkpoint.
+- Preservado watchdog da primeira bancada de quadros e diagnóstico de reset frio insuficiente; nova tentativa com50us não altera modelos/monitores.
+- Ensaios ativos mantêm fontes congeladas e limites próprios; resultados NET27/NET30 não são intercambiáveis.
+
 ## 2026-11-26 — NET-29 estrutural
 
 - União estrutural por fronteiras HDL, com todos os pinos dos sete XMLs conferidos e quatro negativos do leitor.

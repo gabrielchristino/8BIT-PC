@@ -57,3 +57,6 @@ revisions/** -text
 
 # Exact compiled fixture copied solely as structural boundary evidence.
 /verification/net29/boundary-evidence/*.sv -whitespace
+
+/verification/net30/**/*.sv -whitespace
+/verification/net30/**/*.log -whitespace

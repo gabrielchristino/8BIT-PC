@@ -1,0 +1,655 @@
+{
+  "date": "2026-11-26",
+  "base_git_commit": "b5a19c7ee72a9b8543060e77f9c26824daf271ca",
+  "scope": "NET30 candidate checkpoint only; native/structural and finished partial regressions. Full program and qualified-start frame results deliberately pending.",
+  "python": "3.13.14",
+  "git": "git version 2.51.2.vfs.0.1",
+  "commands": [
+    "WSL: python3 tools/build_distributed_loads.py",
+    "WSL: python3 tools/prepare_distributed_load_checks.py",
+    "python tools/audit_distributed_loads.py",
+    "WSL: python3 tools/check_distributed_native.py",
+    "WSL: python3 tools/run_distributed_load_job.py JOB",
+    "WSL: python3 tools/run_distributed_load_corners.py",
+    "WSL: python3 tools/diagnose_load_frame_startup.py",
+    "WSL: python3 tools/run_distributed_load_frames.py",
+    "python tools/record_net30_checkpoint.py",
+    "python tools/stage_net30_checkpoint.py verification/net30/checkpoint/manifest.json"
+  ],
+  "completed_evidence": {
+    "native_pin_changes": 15,
+    "new_ics": 0,
+    "maximum_counted_inputs": 4,
+    "sram_cuts": 48,
+    "memory_negative_cases": 2,
+    "ideal_instruction_cases": 6886,
+    "timed_cases_each": 1062,
+    "timed_scenarios": 2,
+    "cpu_write_cuts_nominal_and_corners": 8,
+    "cold_frame_fixture_initial_watchdog_preserved": true
+  },
+  "excluded_pending_run_prefix": [
+    "verification/net27/full-timed/attempt-001/",
+    "verification/net30/jobs/",
+    "verification/net30/program/",
+    "verification/net30/native-frame-results.json"
+  ],
+  "excluded_files_at_snapshot": [
+    "verification/net27/full-timed/attempt-001/adapted-program-runner.py",
+    "verification/net27/full-timed/attempt-001/adapted-system-main.py",
+    "verification/net27/full-timed/attempt-001/compile-run.json",
+    "verification/net27/full-timed/attempt-001/compile.stderr.log",
+    "verification/net27/full-timed/attempt-001/compile.stdout.log",
+    "verification/net27/full-timed/attempt-001/compiler-inputs.json",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/generated-bench.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/hardware/common_request/common_request_netlist.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/hardware/cpu_global/cpu_global_netlist.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/hardware/local_phase_keyboard/local_phase_keyboard_netlist.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/hardware/local_phase_reset/local_phase_reset_netlist.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/hardware/memory_bus/memory_bus_netlist.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/hardware/memory_decode/memory_decode_netlist.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/sim/hdl/hc_models.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/sim/net02/package_models.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/sim/net03/package_models.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/sim/net04/package_models.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/sim/net13/memory_devices.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/sim/net14c/package_models_async.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/sim/net19a/package_models.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/sim/net22/phase_packages.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/sim/net23/clock_models.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/sim/net25/warm_packages.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/sim/net26/isa1_memory_local_phase.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/sim/net26/local_video_async.sv",
+    "verification/net27/full-timed/attempt-001/input-images/control_lane0.hex",
+    "verification/net27/full-timed/attempt-001/input-images/control_lane1.hex",
+    "verification/net27/full-timed/attempt-001/input-images/control_lane2.hex",
+    "verification/net27/full-timed/attempt-001/input-images/control_lane3.hex",
+    "verification/net27/full-timed/attempt-001/input-images/program_bus.hex",
+    "verification/net27/full-timed/attempt-001/input-images/program_state.hex",
+    "verification/net27/full-timed/attempt-001/input-images/rom_image.hex",
+    "verification/net27/full-timed/attempt-001/input-images/vectors.hex",
+    "verification/net27/full-timed/attempt-001/run-origin.json",
+    "verification/net27/full-timed/attempt-001/run-state.json",
+    "verification/net27/full-timed/attempt-001/simulation.stderr.log",
+    "verification/net27/full-timed/attempt-001/simulation.stdout.log",
+    "verification/net27/full-timed/attempt-001/system-tb_rtl_program-timed.sv",
+    "verification/net30/jobs/corners/job-run.json",
+    "verification/net30/jobs/corners/job.stderr.log",
+    "verification/net30/jobs/corners/job.stdout.log",
+    "verification/net30/jobs/corners/origin.json",
+    "verification/net30/jobs/corners/process-result.json",
+    "verification/net30/jobs/corners/run-state.json",
+    "verification/net30/jobs/cpu-fault/job-run.json",
+    "verification/net30/jobs/cpu-fault/job.stderr.log",
+    "verification/net30/jobs/cpu-fault/job.stdout.log",
+    "verification/net30/jobs/cpu-fault/origin.json",
+    "verification/net30/jobs/cpu-fault/process-result.json",
+    "verification/net30/jobs/cpu-fault/run-state.json",
+    "verification/net30/jobs/early/job-run.json",
+    "verification/net30/jobs/early/job.stderr.log",
+    "verification/net30/jobs/early/job.stdout.log",
+    "verification/net30/jobs/early/origin.json",
+    "verification/net30/jobs/early/process-result.json",
+    "verification/net30/jobs/early/run-state.json",
+    "verification/net30/jobs/frames-qualified-start/job-run.json",
+    "verification/net30/jobs/frames-qualified-start/job.stderr.log",
+    "verification/net30/jobs/frames-qualified-start/job.stdout.log",
+    "verification/net30/jobs/frames-qualified-start/origin.json",
+    "verification/net30/jobs/frames-qualified-start/process-result.json",
+    "verification/net30/jobs/frames-qualified-start/run-state.json",
+    "verification/net30/jobs/frames/job-run.json",
+    "verification/net30/jobs/frames/job.stderr.log",
+    "verification/net30/jobs/frames/job.stdout.log",
+    "verification/net30/jobs/frames/origin.json",
+    "verification/net30/jobs/frames/process-result.json",
+    "verification/net30/jobs/frames/run-state.json",
+    "verification/net30/jobs/ideal/job-run.json",
+    "verification/net30/jobs/ideal/job.stderr.log",
+    "verification/net30/jobs/ideal/job.stdout.log",
+    "verification/net30/jobs/ideal/origin.json",
+    "verification/net30/jobs/ideal/process-result.json",
+    "verification/net30/jobs/ideal/run-state.json",
+    "verification/net30/jobs/memory/job-run.json",
+    "verification/net30/jobs/memory/job.stderr.log",
+    "verification/net30/jobs/memory/job.stdout.log",
+    "verification/net30/jobs/memory/origin.json",
+    "verification/net30/jobs/memory/process-result.json",
+    "verification/net30/jobs/memory/run-state.json",
+    "verification/net30/jobs/program/job.stderr.log",
+    "verification/net30/jobs/program/job.stdout.log",
+    "verification/net30/jobs/program/origin.json",
+    "verification/net30/jobs/program/run-state.json",
+    "verification/net30/jobs/timed/job-run.json",
+    "verification/net30/jobs/timed/job.stderr.log",
+    "verification/net30/jobs/timed/job.stdout.log",
+    "verification/net30/jobs/timed/origin.json",
+    "verification/net30/jobs/timed/process-result.json",
+    "verification/net30/jobs/timed/run-state.json",
+    "verification/net30/native-frame-results.json",
+    "verification/net30/program/system-tb_rtl_program-ideal.sv"
+  ],
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 2522,
+      "sha256": "ee6e7884e68631049375c8e332ccf424e2b8560b2c8ca778e6a1c88b5d2003f1"
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 37644,
+      "sha256": "53568562e8023fd26f3d443e30e8d7dfee3afd8acbd4a8fc05c7ffe3096c3a5e"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "bytes": 18979,
+      "sha256": "9fb28f4c2c6eca2de66b657ad76e593977721a7fb84c3ee0853769e687e84d79"
+    },
+    {
+      "path": "DECISIONS.md",
+      "bytes": 49716,
+      "sha256": "f245cdac218a86b2f3e0364707e84d037609507186b5bedb33d8ae0c3827bb01"
+    },
+    {
+      "path": "PROVENANCE.md",
+      "bytes": 27283,
+      "sha256": "1554a4b67cf30a3d2b7c712a6b8fb4bc38c52f6b26742536ad1fbf7c340bed3c"
+    },
+    {
+      "path": "README.md",
+      "bytes": 12343,
+      "sha256": "e3fe717042127bd759560f43ee3ef2a7ba4ffec26b5ce28f14820a69677d87ee"
+    },
+    {
+      "path": "ROADMAP.md",
+      "bytes": 21565,
+      "sha256": "8dc5ad61359ece2e76b532c57c9ff1a4be7b2bf8d402c0e494bd1e1cd78f2a58"
+    },
+    {
+      "path": "docs/engineering/NET30.md",
+      "bytes": 5209,
+      "sha256": "ef1cd56403813ab819db429cd9b808173dff3261c2f6c558724589b96dfbf64d"
+    },
+    {
+      "path": "docs/engineering/VALIDATION_STATUS.md",
+      "bytes": 6745,
+      "sha256": "835eb1a30a2ab7e31496c57b0c3871620cf979962945b46f9428b564d685f853"
+    },
+    {
+      "path": "hardware/load_distributed_bus/bus_packages.kicad_sym",
+      "bytes": 26382,
+      "sha256": "2e65b8ffdf344193116e1a07b03690cca06e576211998d31dfef1ee68b837136"
+    },
+    {
+      "path": "hardware/load_distributed_bus/design.json",
+      "bytes": 23919,
+      "sha256": "61fe5d32ccbc41fbe762631a584867b8ce821f5f0c6dc6518cf886313bc0c6a2"
+    },
+    {
+      "path": "hardware/load_distributed_bus/load_distributed_bus.kicad_pro",
+      "bytes": 87,
+      "sha256": "8db6374b3eb2d643c27d36207a82842ae0e8b4aea6168a0c5d6d5b01f60cf10b"
+    },
+    {
+      "path": "hardware/load_distributed_bus/load_distributed_bus.kicad_sch",
+      "bytes": 174600,
+      "sha256": "d2044524d676b3e779676d6607cd86a2bb220c23013641cf5fb3a0da50dc2fd8"
+    },
+    {
+      "path": "hardware/load_distributed_bus/load_distributed_bus_netlist.sv",
+      "bytes": 18253,
+      "sha256": "4189c81362cd0cfa27120be9048e254dd8ad3291998e4cfc7c5d66971ffa9606"
+    },
+    {
+      "path": "hardware/load_distributed_bus/package-functions.json",
+      "bytes": 12837,
+      "sha256": "4f1431e6efbe7bf3267227b623ec36b23a903d749679a7fb6a6a0659f6ed43c2"
+    },
+    {
+      "path": "hardware/load_distributed_bus/pinmap.csv",
+      "bytes": 15814,
+      "sha256": "bc8d30e7b6437129fd0a65642a7720d7bf4067f07f067b2c377f83bdd5a040da"
+    },
+    {
+      "path": "hardware/load_distributed_bus/sym-lib-table",
+      "bytes": 157,
+      "sha256": "96466793e0f92d4d026b300ca7eb9ebc8b84741cf0f6d61038249ae2c978140e"
+    },
+    {
+      "path": "hardware/load_distributed_keyboard/bus_packages.kicad_sym",
+      "bytes": 34739,
+      "sha256": "eec8e907c88b9b760d2300b5001a8c5dfd2bdcfaeecc954db39e847c7a6b1923"
+    },
+    {
+      "path": "hardware/load_distributed_keyboard/design.json",
+      "bytes": 33550,
+      "sha256": "1ff456b25a37d5946e4cfff99f4a69d768fba474b93bca919b677819fbfa80d1"
+    },
+    {
+      "path": "hardware/load_distributed_keyboard/load_distributed_keyboard.kicad_pro",
+      "bytes": 92,
+      "sha256": "f488b0f7cc9e95159273e8fa82057bf69fa9bfee487050ff588ff74bcf42bb29"
+    },
+    {
+      "path": "hardware/load_distributed_keyboard/load_distributed_keyboard.kicad_sch",
+      "bytes": 240434,
+      "sha256": "f24906c3d0d07d1d4daab2aa3dbfc5bcf4e50203f78134451519e51797bbb527"
+    },
+    {
+      "path": "hardware/load_distributed_keyboard/load_distributed_keyboard_netlist.sv",
+      "bytes": 15772,
+      "sha256": "05ace6ea59966f51613a561b74c5424e5a0c6fa87c5c7e97bbb4bf093bd13d80"
+    },
+    {
+      "path": "hardware/load_distributed_keyboard/package-functions.json",
+      "bytes": 16686,
+      "sha256": "554c22fafc109283e9c99e9d0a895ced989440d0d7ccb493fc04b952ac28e5f8"
+    },
+    {
+      "path": "hardware/load_distributed_keyboard/pinmap.csv",
+      "bytes": 21294,
+      "sha256": "0ede63c8fda2bb721a2a8554b8ee534980d3cbe7a2ab93aa3a48398e40da7c78"
+    },
+    {
+      "path": "hardware/load_distributed_keyboard/sym-lib-table",
+      "bytes": 157,
+      "sha256": "ef5604dfeed6efb833c7cf11ea667aa74a68e9946fa0840ab154ff66c8b419af"
+    },
+    {
+      "path": "hardware/load_distributed_video/bus_packages.kicad_sym",
+      "bytes": 22823,
+      "sha256": "3747e41a98e021fd031691dad7847c17b5f9f22226fa77d42c862a18d84c57b3"
+    },
+    {
+      "path": "hardware/load_distributed_video/design.json",
+      "bytes": 22440,
+      "sha256": "7fe52589fa2256c6d0a2b015feb385ff2ed4c414cbb286456f5fea37769491ba"
+    },
+    {
+      "path": "hardware/load_distributed_video/load_distributed_video.kicad_pro",
+      "bytes": 89,
+      "sha256": "81031e8aeebf6ee0a1cb16893eba43ae504d6414710904ffa0c4de039ceba010"
+    },
+    {
+      "path": "hardware/load_distributed_video/load_distributed_video.kicad_sch",
+      "bytes": 171748,
+      "sha256": "7f665540cca41b015448b5327b52a4c6649840986531be9ec47fd43b1284b85e"
+    },
+    {
+      "path": "hardware/load_distributed_video/load_distributed_video_netlist.sv",
+      "bytes": 10981,
+      "sha256": "f05905ee686583d94c6d7ef737ad3650e8b4bc93b4295501c46d35e0b0d3d7df"
+    },
+    {
+      "path": "hardware/load_distributed_video/package-functions.json",
+      "bytes": 10930,
+      "sha256": "d6fcea117a33208088f717a6e554b7fdef50342096bb0c8abcca6f7e6652968c"
+    },
+    {
+      "path": "hardware/load_distributed_video/pinmap.csv",
+      "bytes": 14652,
+      "sha256": "3bf05f58f02dfdca362e49b6df96f2aa5aa652b60be3ab739080e7b135970891"
+    },
+    {
+      "path": "hardware/load_distributed_video/sym-lib-table",
+      "bytes": 157,
+      "sha256": "fc6692c1c01d9d78ff827b9288ac6b3dc4d990c28553a318e03ab9aab705b614"
+    },
+    {
+      "path": "sim/net30/isa1_memory_loads.sv",
+      "bytes": 6808,
+      "sha256": "7be55545bda51728fe8aef0b72b070eb62b205d266d447d6b5108d98e04c415a"
+    },
+    {
+      "path": "sim/net30/load_video_async.sv",
+      "bytes": 11130,
+      "sha256": "4696d3fb2d277e58beba2bb0240fce92ae993cf7b126a4e6b3083c5c7f3ac7f2"
+    },
+    {
+      "path": "sim/net30/tb_load_frames.sv",
+      "bytes": 3537,
+      "sha256": "843b86ff485b23222edf1dd4c57bc5ef6c73606c01165ac5868ca03d790d39c2"
+    },
+    {
+      "path": "sim/net30/tb_load_memory.sv",
+      "bytes": 5002,
+      "sha256": "a9ecf61ae8edb3ef0a97249e8132c13037c33df7e2db7fccd70c0f979dc2313f"
+    },
+    {
+      "path": "tools/audit_distributed_loads.py",
+      "bytes": 2441,
+      "sha256": "45a9cace33660ef0fb0379a2ffa748ebc6a50cf0912f40966c3cc1d24b09103d"
+    },
+    {
+      "path": "tools/build_distributed_loads.py",
+      "bytes": 5796,
+      "sha256": "d66c4a708231aad059e3e31303cd171b9f1c3b4c51dc45a01c9dcde0145641d8"
+    },
+    {
+      "path": "tools/check_distributed_native.py",
+      "bytes": 1851,
+      "sha256": "ac2b38f63a5dbe4b1a194d7202c2d6e0ec49acbeee324b2936995ba55973fc99"
+    },
+    {
+      "path": "tools/diagnose_load_frame_startup.py",
+      "bytes": 2387,
+      "sha256": "c7a6bcec15ef6253db56d3b1ecfd53f32090e3d9f4e2abc3ddc52b7265e32e8a"
+    },
+    {
+      "path": "tools/prepare_distributed_load_checks.py",
+      "bytes": 4752,
+      "sha256": "762b02100200208b6ab280566ef594351ab711a7382f8a415277ffecbf6a1896"
+    },
+    {
+      "path": "tools/record_net30_checkpoint.py",
+      "bytes": 6592,
+      "sha256": "25da9417eb49adb6445082154bf51c8b8e9d3997ff064ddd2dabd792966f6c7a"
+    },
+    {
+      "path": "tools/run_distributed_load_corners.py",
+      "bytes": 1015,
+      "sha256": "a1a7009f5d6af147d17263e9e0f3e2206d940e24e880a60b835b80480db18df0"
+    },
+    {
+      "path": "tools/run_distributed_load_cpu_fault.py",
+      "bytes": 4747,
+      "sha256": "3f7764d0cc444b28ff171103f09b7584c71ef2775243d8c58179301237baad75"
+    },
+    {
+      "path": "tools/run_distributed_load_frames.py",
+      "bytes": 2775,
+      "sha256": "b495525c6db031927cd477edf2e91c3250c89fd274fb9c4bf5e8aad586fe4b53"
+    },
+    {
+      "path": "tools/run_distributed_load_job.py",
+      "bytes": 2616,
+      "sha256": "bad00e253e81db6fdf8b1d3786467f705f50128ea41444bfec5e7a00ce0d1788"
+    },
+    {
+      "path": "tools/run_distributed_load_memory.py",
+      "bytes": 5100,
+      "sha256": "31fd72dd76603dd1d648729d59c2455a230cbc499da8f23116d4fffeb9d0e2b7"
+    },
+    {
+      "path": "tools/run_distributed_load_program.py",
+      "bytes": 4652,
+      "sha256": "29e841e9c96eb7fa6d1de08a06d0097cf005e5c2e18b260484bf20c84d48ccc1"
+    },
+    {
+      "path": "tools/run_distributed_load_vectors.py",
+      "bytes": 5336,
+      "sha256": "d9c20c9affb92117428a2eaf5cae815be5b4c59940241f376a04de04cef6425a"
+    },
+    {
+      "path": "tools/stage_net30_checkpoint.py",
+      "bytes": 856,
+      "sha256": "d040ee9d64d402d279747a6bf181456dc25f115b3c7398ab8cc075a4efdda2d7"
+    },
+    {
+      "path": "verification/net30/actual-cpu-write-reset.json",
+      "bytes": 11296,
+      "sha256": "32002d0b46d916b55fd8d6140e91266f69e17d476139364593185eb178d7e54e"
+    },
+    {
+      "path": "verification/net30/adapter-origin.json",
+      "bytes": 2323,
+      "sha256": "16714a2d3faede9ba25835bc007aff1bddc85f7bfdc1b1a571cf22cb1ef26259"
+    },
+    {
+      "path": "verification/net30/checkpoint/pending-integrity.json",
+      "bytes": 12663,
+      "sha256": "b9109ddd708735fd48f6eac2fcaac5917dfd691620026b75fa5ad4849764467b"
+    },
+    {
+      "path": "verification/net30/development/frames-short-reset/diagnostic-result.json",
+      "bytes": 2917,
+      "sha256": "c6b60e5709c04c354fdedac149df782471155c681ecf09c0a181747a52325a5f"
+    },
+    {
+      "path": "verification/net30/development/frames-short-reset/diagnostic.sv",
+      "bytes": 3593,
+      "sha256": "1df02cd88d8b2036a78727815e56099f5a0d5e349bc44e710e8447ddeccac3f4"
+    },
+    {
+      "path": "verification/net30/development/frames-short-reset/interpretation.txt",
+      "bytes": 1018,
+      "sha256": "bb4cf4147169e3adf39268c6bdf30f3c34b17b90bf73b5b1f1cb1bf87af645a1"
+    },
+    {
+      "path": "verification/net30/development/frames-short-reset/job/job-run.json",
+      "bytes": 922,
+      "sha256": "704ed68385752065d2ba2eb5fe1022e32ea851f9c9e3cf8b518d3c1a67447754"
+    },
+    {
+      "path": "verification/net30/development/frames-short-reset/job/job.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/net30/development/frames-short-reset/job/job.stdout.log",
+      "bytes": 323,
+      "sha256": "5544eab37aa075fc5f95ec67ad38c88522b4afb8dfeb7ed71c6514ff9d861f63"
+    },
+    {
+      "path": "verification/net30/development/frames-short-reset/job/origin.json",
+      "bytes": 28760,
+      "sha256": "30b99dbbe0fdf281c45b1e9f12823bba020c93179c78991214be78feb94f8ce0"
+    },
+    {
+      "path": "verification/net30/development/frames-short-reset/job/process-result.json",
+      "bytes": 670,
+      "sha256": "e3cc39c7983a67ebde147454cd1b6acbff0d75d0a6e89e2b7bff2dce9c42eb74"
+    },
+    {
+      "path": "verification/net30/development/frames-short-reset/job/run-state.json",
+      "bytes": 922,
+      "sha256": "704ed68385752065d2ba2eb5fe1022e32ea851f9c9e3cf8b518d3c1a67447754"
+    },
+    {
+      "path": "verification/net30/development/frames-short-reset/native-frame-results.json",
+      "bytes": 5962,
+      "sha256": "b82df2b8994b10e2aafe7ac59bdfc03e38c2797255eec0755208de64a027d683"
+    },
+    {
+      "path": "verification/net30/development/frames-short-reset/run_distributed_load_frames.py",
+      "bytes": 2692,
+      "sha256": "545b2680f3fec2fb80b77c513712a959fd58979b99b5c346e3bafb590c358c79"
+    },
+    {
+      "path": "verification/net30/development/frames-short-reset/tb_load_frames.sv",
+      "bytes": 3316,
+      "sha256": "60cad1d8815126e905714d287eeb4ec54532e6992307a4a7595dc9df219bedee"
+    },
+    {
+      "path": "verification/net30/development/port-adapter-guard.txt",
+      "bytes": 512,
+      "sha256": "fe89bc737e04bf370dc4977a02e44ddcc299f4fe9e51614134a0e8d6a70b6a72"
+    },
+    {
+      "path": "verification/net30/frequency-corners/actual-cpu-write-reset.json",
+      "bytes": 12878,
+      "sha256": "622fe9520d71e123f101f981e05811f2b8a2fd61bf8f3e3b9c1c5a626fb0ad4a"
+    },
+    {
+      "path": "verification/net30/frequency-corners/compiled-policy0.sv",
+      "bytes": 3488,
+      "sha256": "50bd35762367da83ee3a8f214747cd727c1abdb4d93af46fba0212682a9c8eea"
+    },
+    {
+      "path": "verification/net30/frequency-corners/compiled-policy1.sv",
+      "bytes": 3487,
+      "sha256": "a668e46276a3ecf5853bbbfc0e07c5db046827120220edf1a3b11a2b812e26e5"
+    },
+    {
+      "path": "verification/net30/memory-pin-results.json",
+      "bytes": 20624,
+      "sha256": "71383f9a96b052e11ed22aad03ad93f26963c391b47378072eeb19dbbf033aef"
+    },
+    {
+      "path": "verification/net30/native/bus/convert-adapted.py",
+      "bytes": 6494,
+      "sha256": "257fcdc4747d9ed85893462114d99cc14a83cf4dae2149889b8f291419fbf131"
+    },
+    {
+      "path": "verification/net30/native/bus/emit-adapted.py",
+      "bytes": 2563,
+      "sha256": "d46d94c2d4f80a9d786e166c8da49cfef2d7eb365cec6ea9aed0002344f491af"
+    },
+    {
+      "path": "verification/net30/native/bus/erc-summary.json",
+      "bytes": 1313,
+      "sha256": "0d94c68a2e415fd93a7e45cba063ab3c2da78324d512581ac5dfbc9ee439a25d"
+    },
+    {
+      "path": "verification/net30/native/bus/erc.json",
+      "bytes": 105872,
+      "sha256": "71aa1f8474dbe6875e09bf32d65298f81166166017ff8661e783400d57d4f952"
+    },
+    {
+      "path": "verification/net30/native/bus/export.json",
+      "bytes": 425,
+      "sha256": "74f3ed26d31d7eed9f0b9b5744b0908adbfb05431d65a490dc2ea4289078290f"
+    },
+    {
+      "path": "verification/net30/native/bus/load_distributed_bus.pdf",
+      "bytes": 267545,
+      "sha256": "703f8ac62f5b2fa11878f0a3e48bab1dc1c065557ec08e09815ede770551a0ea"
+    },
+    {
+      "path": "verification/net30/native/bus/load_distributed_bus.xml",
+      "bytes": 130291,
+      "sha256": "fb7768ec8cace93ee25242d04e4d7ad1a62241e9b68e2021606deca785164c91"
+    },
+    {
+      "path": "verification/net30/native/bus/package_symbol-adapted.py",
+      "bytes": 1472,
+      "sha256": "097ed15883e46bec97cf247e22669fffc5e7ad9c22778444bf987a32f675b7ad"
+    },
+    {
+      "path": "verification/net30/native/bus/preview.png",
+      "bytes": 68985,
+      "sha256": "f76ea0eb2d52821fec9a21d4ba09119066ddac9e03d87591502fd28469b5ffd3"
+    },
+    {
+      "path": "verification/net30/native/bus/schematic-check.json",
+      "bytes": 952,
+      "sha256": "07d02413daecfaf1869081fc11efe9b4cf3be2975acbc8c05b19a88b23009574"
+    },
+    {
+      "path": "verification/net30/native/keyboard/adapted-preparation.py",
+      "bytes": 5619,
+      "sha256": "c0febf0e4bda3efaa65b33e76218de13517b3915393b3c2bcce4997477064b72"
+    },
+    {
+      "path": "verification/net30/native/keyboard/erc-summary.json",
+      "bytes": 1347,
+      "sha256": "51ec4445c8b01d6a0157113ee3df2638149e57b9d28650241881dfe5c94b4a4f"
+    },
+    {
+      "path": "verification/net30/native/keyboard/erc.json",
+      "bytes": 17566,
+      "sha256": "7c1db1b446431885f24bac737961f67325cd2ed1b329f3d38f6f7f03ce901aa6"
+    },
+    {
+      "path": "verification/net30/native/keyboard/export.json",
+      "bytes": 445,
+      "sha256": "15a272213232483eb5296207ea8f71d2e7af78b381ec2c3f23fd379dcbc940a4"
+    },
+    {
+      "path": "verification/net30/native/keyboard/load_distributed_keyboard.pdf",
+      "bytes": 344258,
+      "sha256": "48c7befda2a04df5f4f19af48e33454f2d3b91db6d0ec3ad4dd985e76fa8b725"
+    },
+    {
+      "path": "verification/net30/native/keyboard/load_distributed_keyboard.xml",
+      "bytes": 176656,
+      "sha256": "8fa907d89b7b752dffce8bf2923568d46a98bc2e94dc74ea4d66a5c877798967"
+    },
+    {
+      "path": "verification/net30/native/keyboard/preview.png",
+      "bytes": 59740,
+      "sha256": "f100a3f7be5b702b148badacf356aa68690676d05dc065b3236754b77e297fec"
+    },
+    {
+      "path": "verification/net30/native/keyboard/schematic-check.json",
+      "bytes": 964,
+      "sha256": "23222600359a18975c5d4ddcb2ddb858a012551b55ba9c0c4eba1c6e222b9d19"
+    },
+    {
+      "path": "verification/net30/native/video/adapted-preparation.py",
+      "bytes": 5619,
+      "sha256": "c0febf0e4bda3efaa65b33e76218de13517b3915393b3c2bcce4997477064b72"
+    },
+    {
+      "path": "verification/net30/native/video/erc-summary.json",
+      "bytes": 1326,
+      "sha256": "91786a7adf644f82cd37c9e561eabd0a9610879c846231b9add683dbd4964e67"
+    },
+    {
+      "path": "verification/net30/native/video/erc.json",
+      "bytes": 30736,
+      "sha256": "75f9ca00cb46a2674f9e1ea1a20cc2c9d2324d7cf326e1ff84e77196e3e8e812"
+    },
+    {
+      "path": "verification/net30/native/video/export.json",
+      "bytes": 433,
+      "sha256": "4bc2b5c38670a86a998caa9546093068a69e01e63264781dbf69beb467cf158a"
+    },
+    {
+      "path": "verification/net30/native/video/load_distributed_video.pdf",
+      "bytes": 265962,
+      "sha256": "f6599c4880f97f0e0bcf71c6e60b2638d68095177a36906c4cf95f370b0acf81"
+    },
+    {
+      "path": "verification/net30/native/video/load_distributed_video.xml",
+      "bytes": 127362,
+      "sha256": "c9285484914779a874b39c7e239de1fac037914cb81ce7d56917b2b9776769c7"
+    },
+    {
+      "path": "verification/net30/native/video/preview.png",
+      "bytes": 49817,
+      "sha256": "cf92920cc3fa1880a5cfccc1143783709c36b9c24880b38fbcf33c21db5e0b0e"
+    },
+    {
+      "path": "verification/net30/native/video/schematic-check.json",
+      "bytes": 960,
+      "sha256": "f35df49ff3d14348d091ce304afa4ac76de633b2ee16659bed5f11b7d8beba8a"
+    },
+    {
+      "path": "verification/net30/system-pin-loads.json",
+      "bytes": 2402862,
+      "sha256": "4fff9b80fa821db2edd89b1af4a3fda5c011a80d28ccace3113e303089349f1d"
+    },
+    {
+      "path": "verification/net30/vectors/verified-cpu-early-timed-quick.json",
+      "bytes": 15657,
+      "sha256": "c176e6532df5acea404fef7422431dfae939ee2b2d398cf9da7052ceaf6d8f4c"
+    },
+    {
+      "path": "verification/net30/vectors/verified-cpu-ideal.json",
+      "bytes": 15633,
+      "sha256": "3c003a5165d2115eb333a21229c9f0097a41d12a9561c81eccdb111a2ad9daad"
+    },
+    {
+      "path": "verification/net30/vectors/verified-cpu-timed-quick.json",
+      "bytes": 15657,
+      "sha256": "4daf46c51e91bf22650bba1068434fbee091959f3b42fe147d4bb1ce371283aa"
+    },
+    {
+      "path": "verification/net30/vectors/verified-tb_rtl_cpu-early-timed.sv",
+      "bytes": 5753,
+      "sha256": "2d9efc50ae453a8472163c2420df70f4fd720a89ee424e18838f0dc10a681f49"
+    },
+    {
+      "path": "verification/net30/vectors/verified-tb_rtl_cpu-ideal.sv",
+      "bytes": 5732,
+      "sha256": "e66a3d6438822e58e2769e603f830e4c82182803ff9fbfae5d684ca835594035"
+    },
+    {
+      "path": "verification/net30/vectors/verified-tb_rtl_cpu-timed.sv",
+      "bytes": 5753,
+      "sha256": "2d9efc50ae453a8472163c2420df70f4fd720a89ee424e18838f0dc10a681f49"
+    }
+  ],
+  "candidate_promoted": false,
+  "production_released": false
+}

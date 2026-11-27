@@ -1,0 +1,261 @@
+{
+  "date": "2026-11-26",
+  "scope": "Actual CPU write interrupted at0/40ns after SRAM WE, binary reset policies0/1, SRAM not seeded, same memory epoch retained across fault. Restarted CPU produces eight result bytes by firmware. Native configured oscillators and common-clock video; qualified oscillator VDD kept valid, RAW/RC and selected delays. Not analog supervisor/oscillator/jitter/POR/PVT/physical approval.",
+  "sources": [
+    {
+      "path": "sim/hdl/hc_models.sv",
+      "sha256": "f305ff38b7e58701e9f97528de68ea8c5518a628d38bd5a8ac9e847fa87c8680"
+    },
+    {
+      "path": "sim/net02/package_models.sv",
+      "sha256": "de2fd5315a3809a89ba90b8f09a96a25d06d3e00b8568a8f82387b92a624199f"
+    },
+    {
+      "path": "sim/net03/package_models.sv",
+      "sha256": "53712265aa1d4312866135c59e73d7543069c7a3281635d43d66825790716258"
+    },
+    {
+      "path": "sim/net04/package_models.sv",
+      "sha256": "85b00a3b6b0307d68b53e4ea1ae97ba5cbf83c20685544bb12fde333efa07d63"
+    },
+    {
+      "path": "hardware/cpu_global/cpu_global_netlist.sv",
+      "sha256": "70f251891939357d16b942eee168b836df5ae801f082ef70de787600758ebe7a"
+    },
+    {
+      "path": "hardware/memory_decode/memory_decode_netlist.sv",
+      "sha256": "ea33aea0e9d2977fb9fe683e11526e183bc4c3edac465e221b135d873860f0a4"
+    },
+    {
+      "path": "sim/net19a/package_models.sv",
+      "sha256": "dc71d5b1f5bcefcf7e20dc9a930de79c4ebc7fec145961dcbabd79a4766ac957"
+    },
+    {
+      "path": "hardware/common_request/common_request_netlist.sv",
+      "sha256": "c8f529730b8fcc110af6dcf4d54c29f2bc57b589319f1126b17b7043521cc3a9"
+    },
+    {
+      "path": "sim/net13/memory_devices.sv",
+      "sha256": "cf166183d3ffc7a94fd722ad6e6b2ea00c9fa02f3f8405efe4600f37427a4af1"
+    },
+    {
+      "path": "hardware/load_distributed_bus/load_distributed_bus_netlist.sv",
+      "sha256": "4189c81362cd0cfa27120be9048e254dd8ad3291998e4cfc7c5d66971ffa9606"
+    },
+    {
+      "path": "sim/net14c/package_models_async.sv",
+      "sha256": "7b45346f5e25bb73deb33ba9fb02d50e2b020ab527f75fed1244e173300ccfcb"
+    },
+    {
+      "path": "hardware/load_distributed_keyboard/load_distributed_keyboard_netlist.sv",
+      "sha256": "05ace6ea59966f51613a561b74c5424e5a0c6fa87c5c7e97bbb4bf093bd13d80"
+    },
+    {
+      "path": "hardware/local_phase_reset/local_phase_reset_netlist.sv",
+      "sha256": "297baf75c91813a90bb2966d6fa0a99c67a3e569416690f383772cc9eb5f32ab"
+    },
+    {
+      "path": "sim/net23/clock_models.sv",
+      "sha256": "9bdf1c41d5698a46cc3e7fb5c3f9e9b3b16c6f8476ea364226790fed625c0af6"
+    },
+    {
+      "path": "sim/net30/isa1_memory_loads.sv",
+      "sha256": "7be55545bda51728fe8aef0b72b070eb62b205d266d447d6b5108d98e04c415a"
+    },
+    {
+      "path": "sim/net22/phase_packages.sv",
+      "sha256": "f4c9fd1d3c6a936df6e024a32b9a53e53e79cfcf1e094c1d7731e5a857cf2059"
+    },
+    {
+      "path": "sim/net25/warm_packages.sv",
+      "sha256": "b6ff85ba2c3ffeb0de54608c10e4afae3aaed2abb051498a39bdc000259c7d7b"
+    },
+    {
+      "path": "sim/net30/load_video_async.sv",
+      "sha256": "4696d3fb2d277e58beba2bb0240fce92ae993cf7b126a4e6b3083c5c7f3ac7f2"
+    },
+    {
+      "path": "sim/net23/tb_clocked_cpu_fault.sv",
+      "sha256": "12c9068161910302324164309966bb59950526401663dd5d85620fb7850f0c03"
+    },
+    {
+      "path": "tools/run_distributed_load_cpu_fault.py",
+      "sha256": "3f7764d0cc444b28ff171103f09b7584c71ef2775243d8c58179301237baad75"
+    },
+    {
+      "path": "tools/build_distributed_loads.py",
+      "sha256": "d66c4a708231aad059e3e31303cd171b9f1c3b4c51dc45a01c9dcde0145641d8"
+    },
+    {
+      "path": "tools/prepare_distributed_load_checks.py",
+      "sha256": "762b02100200208b6ab280566ef594351ab711a7382f8a415277ffecbf6a1896"
+    },
+    {
+      "path": "hardware/load_distributed_video/design.json",
+      "sha256": "7fe52589fa2256c6d0a2b015feb385ff2ed4c414cbb286456f5fea37769491ba"
+    },
+    {
+      "path": "hardware/load_distributed_keyboard/design.json",
+      "sha256": "1ff456b25a37d5946e4cfff99f4a69d768fba474b93bca919b677819fbfa80d1"
+    },
+    {
+      "path": "hardware/load_distributed_bus/design.json",
+      "sha256": "61fe5d32ccbc41fbe762631a584867b8ce821f5f0c6dc6518cf886313bc0c6a2"
+    },
+    {
+      "path": "verification/net30/native/bus/load_distributed_bus.xml",
+      "sha256": "fb7768ec8cace93ee25242d04e4d7ad1a62241e9b68e2021606deca785164c91"
+    },
+    {
+      "path": "tools/build_local_phase_reset.py",
+      "sha256": "05b4c7f9a3648b71f3709be47dbced037ae56a01ce991cf600bc7749a24ccb2e"
+    },
+    {
+      "path": "tools/build_common_request.py",
+      "sha256": "fad453adce792d27ac51f6713ce5f76471abe3c41b96f74240eb47a44f7669bd"
+    },
+    {
+      "path": "verification/net24/native/common_request.xml",
+      "sha256": "86b635cf0e82d58b6d2f7b4d75ac2713446c640103eb22c2b7e05f6d734c2798"
+    },
+    {
+      "path": "tools/prepare_local_phase_checks.py",
+      "sha256": "77e2a687f8486557ed603abc93531efd745ad4e6447a30d3c9fa3daf1a8763c3"
+    },
+    {
+      "path": "firmware/net19a/keyboard_scan.asm",
+      "sha256": "da2569d1c68eb00bc97ab8067afe3f1259c3d00bd5930440aef2146a58357896"
+    },
+    {
+      "path": "verification/net26/native/reset/local_phase_reset.xml",
+      "sha256": "b26820f75c302e1103686b69632a0648d730638d147f985cf917bf2dd406f836"
+    },
+    {
+      "path": "verification/net30/native/video/load_distributed_video.xml",
+      "sha256": "c9285484914779a874b39c7e239de1fac037914cb81ce7d56917b2b9776769c7"
+    },
+    {
+      "path": "verification/net30/native/keyboard/load_distributed_keyboard.xml",
+      "sha256": "8fa907d89b7b752dffce8bf2923568d46a98bc2e94dc74ea4d66a5c877798967"
+    },
+    {
+      "path": "revisions/rev983/control_lane0.bin",
+      "sha256": "d8e4a90ed70b376c12cda278f659b32decb14e0b588bda475932124dc5c576f2"
+    },
+    {
+      "path": "revisions/rev983/control_lane1.bin",
+      "sha256": "e403962ad102f2018347fbc1f9c8ba01b7ad71c23d29824eee33248ee29f2da6"
+    },
+    {
+      "path": "revisions/rev983/control_lane2.bin",
+      "sha256": "1cb7101341d7b4e13bb615695d4e5bbeb55b4de5132ad8e408033c8effceefe6"
+    },
+    {
+      "path": "revisions/rev983/control_lane3.bin",
+      "sha256": "20cca3fa9b9106e433062a0fd4001f8d3575200708c5b1e2ff3758f3ed962461"
+    }
+  ],
+  "runs": [
+    {
+      "policy": 0,
+      "compile": {
+        "command": [
+          "iverilog",
+          "-g2012",
+          "-Wall",
+          "-s",
+          "tb_schmitt_cpu_fault",
+          "-Ptb_schmitt_cpu_fault.POLICY=0",
+          "-o",
+          "/tmp/isa1-cpu-write-reset-pskjt3n2/test.vvp",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/hdl/hc_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net02/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net03/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net04/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/cpu_global/cpu_global_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/memory_decode/memory_decode_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net19a/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/common_request/common_request_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net13/memory_devices.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/load_distributed_bus/load_distributed_bus_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net14c/package_models_async.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/load_distributed_keyboard/load_distributed_keyboard_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/local_phase_reset/local_phase_reset_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net23/clock_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net30/isa1_memory_loads.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net22/phase_packages.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net25/warm_packages.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net30/load_video_async.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net23/tb_clocked_cpu_fault.sv"
+        ],
+        "exit": 0,
+        "stdout": "",
+        "stderr": "",
+        "seconds": 0.164
+      },
+      "execution": {
+        "command": [
+          "vvp",
+          "/tmp/isa1-cpu-write-reset-pskjt3n2/test.vvp"
+        ],
+        "exit": 0,
+        "stdout": "RESULT policy=0 actual_cpu_write_cuts=2 restarted_scans=2 max_we_inhibit_ns=84.000 fixture_defaults=0 failures=0\n/mnt/c/Users/gabri/projetos/isa1/sim/net23/tb_clocked_cpu_fault.sv:62: $finish called at 61466000000 (1ps)\n",
+        "stderr": "",
+        "seconds": 96.422
+      },
+      "passed": true
+    },
+    {
+      "policy": 1,
+      "compile": {
+        "command": [
+          "iverilog",
+          "-g2012",
+          "-Wall",
+          "-s",
+          "tb_schmitt_cpu_fault",
+          "-Ptb_schmitt_cpu_fault.POLICY=1",
+          "-o",
+          "/tmp/isa1-cpu-write-reset-pskjt3n2/test.vvp",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/hdl/hc_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net02/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net03/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net04/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/cpu_global/cpu_global_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/memory_decode/memory_decode_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net19a/package_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/common_request/common_request_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net13/memory_devices.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/load_distributed_bus/load_distributed_bus_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net14c/package_models_async.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/load_distributed_keyboard/load_distributed_keyboard_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/hardware/local_phase_reset/local_phase_reset_netlist.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net23/clock_models.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net30/isa1_memory_loads.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net22/phase_packages.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net25/warm_packages.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net30/load_video_async.sv",
+          "/mnt/c/Users/gabri/projetos/isa1/sim/net23/tb_clocked_cpu_fault.sv"
+        ],
+        "exit": 0,
+        "stdout": "",
+        "stderr": "",
+        "seconds": 0.165
+      },
+      "execution": {
+        "command": [
+          "vvp",
+          "/tmp/isa1-cpu-write-reset-pskjt3n2/test.vvp"
+        ],
+        "exit": 0,
+        "stdout": "RESULT policy=1 actual_cpu_write_cuts=2 restarted_scans=2 max_we_inhibit_ns=84.000 fixture_defaults=0 failures=0\n/mnt/c/Users/gabri/projetos/isa1/sim/net23/tb_clocked_cpu_fault.sv:62: $finish called at 61466000000 (1ps)\n",
+        "stderr": "",
+        "seconds": 94.658
+      },
+      "passed": true
+    }
+  ],
+  "failures": [],
+  "production_released": false,
+  "eeprom_image_sha256": "eb21c2f51a6202292a2cc7c1f10842f28304fe5b1daab7cb5fa46eae48e5fde2"
+}

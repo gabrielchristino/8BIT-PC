@@ -1,0 +1,40 @@
+{
+  "date": "2026-11-26",
+  "command": [
+    "/home/gabri/.local/opt/isa1-kicad-10.0.8/squashfs-root/usr/bin/kicad-cli",
+    "sch",
+    "erc",
+    "--format",
+    "json",
+    "--severity-all",
+    "--exit-code-violations",
+    "-o",
+    "/mnt/c/Users/gabri/projetos/isa1/verification/net30/native/keyboard/erc.json",
+    "/mnt/c/Users/gabri/projetos/isa1/hardware/load_distributed_keyboard/load_distributed_keyboard.kicad_sch"
+  ],
+  "exit": 5,
+  "stdout": "Found 27 violations\nSaved ERC Report to /mnt/c/Users/gabri/projetos/isa1/verification/net30/native/keyboard/erc.json\n",
+  "stderr": "",
+  "counts": {
+    "pin_not_driven": 12,
+    "power_pin_not_driven": 2,
+    "isolated_pin_label": 13
+  },
+  "erc_passed": false,
+  "production_released": false,
+  "scope": "Unwaived partial native candidate ERC, not global board approval.",
+  "sources": [
+    {
+      "path": "tools/check_distributed_native.py",
+      "sha256": "ac2b38f63a5dbe4b1a194d7202c2d6e0ec49acbeee324b2936995ba55973fc99"
+    },
+    {
+      "path": "hardware/load_distributed_keyboard/load_distributed_keyboard.kicad_sch",
+      "sha256": "f24906c3d0d07d1d4daab2aa3dbfc5bcf4e50203f78134451519e51797bbb527"
+    },
+    {
+      "path": "hardware/load_distributed_keyboard/design.json",
+      "sha256": "1ff456b25a37d5946e4cfff99f4a69d768fba474b93bca919b677819fbfa80d1"
+    }
+  ]
+}

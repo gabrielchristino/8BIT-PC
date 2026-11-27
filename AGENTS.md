@@ -1,3 +1,9 @@
+## Continuidade NET-27/28
+
+- Preparação NET27 publicada em ba3353f585fff94469d89674a8c1bdfa08ea70f1. Execução longa: tools/run_full_timed_program.py; conferir run-state.json/logs em verification/net27/full-timed/attempt-NNN antes de iniciar outra. Não duplicar processo vivo, não declarar resultado por progresso/compilação. Fontes e snapshots da tentativa ativa ficam congelados; processo morto não tem checkpoint HDL retomável.
+- Leia NET27_PLAN.md e NET28_POWER.md em docs/engineering. NET28 é análise documental de consumo, sem circuito novo. Soma473,516mA reúne condições distintas dos datasheets, não é consumo máximo da placa; Delta-ICC, dinâmica/cargas e componentes de fonte/DAC continuam abertos. Não transformar CPD típico em máximo ou1,5A em consumo calculado.
+- VALIDATION_STATUS.md foi conciliado com NET26; versões/relatórios anteriores permanecem no Git. REV33/REV76 recuperadas, diagnostic.asm original ainda ausente. Não alterar runners históricos para republicar esta análise.
+
 ## Continuidade NET-26
 
 - Leia docs/engineering/NET26.md. Novas folhas local_phase_video/reset/keyboard; predecessores preservados. Vídeo37CIs, U37 AHC74 reset local clockP1 através de U24.3 ANDbuffer; warm U8 AHC164 e U9 clearVDD permanecem.

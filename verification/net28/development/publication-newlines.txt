@@ -1,0 +1,9 @@
+26/11/2026 — Registro do resultado observado da primeira tentativa de staging.
+python tools/stage_with_pending_timed_run.py verification/net28/manifest.json
+rejeitou o hash do blob de verification/net28/pending-run-integrity.json.
+Git avisou que CRLF seria convertido em LF. O Python do Windows gravara esses
+dois JSONs com tradução de fim de linha. A guarda detectou a diferença; nenhum
+commit NET28 havia sido feito. Corrigidos os escritores novos para newline=LF,
+sem mudar fontes do ensaio ativo, critérios ou dados de consumo. Manifesto e
+checkpoint regenerados; exigir nova conferência dos bytes reais do índice.
+É falha de preparação da publicação, não falha ou aprovação do circuito.

@@ -1,0 +1,121 @@
+HALF SIZE DIP LOW VOLTAGE
+               5.0V CRYSTAL CLOCK OSCILLATOR
+ ACH Series           ESD Sensitive Pb RoHS/RoHS II Compliant
+                                                                                                                           12.7 x 12.7 x 5.6mm
+
+Moisture Sensitivity Level (MSL) – This product is Hermetically Sealed and not Moisture Sensitive - MSL = N/A: Not Applicable
+
+FEATURES:                                                            APPLICATIONS:
+• Wide frequency range.                                              • Microprocessors.
+• HCMOS and TTL compatible.                                          • Digital circuit.
+• Tight symmetry option.
+• Tri-state Enable / Disable function.
+STANDARD SPECIFICATIONS:
+              Parameters                       Minimum                Typical             Maximum           Units         Notes
+ Frequency Range                               0.032768                                    200.000          MHz
+ Operating Temperature                             0                                         +70             °C        See options
+ Storage Temperature                              -55                                       +125             °C
+ Overall Frequency Stability                     -100                                       +100            ppm        See options
+ Supply Voltage (Vdd)                             4 .5                   5 .0                5 .5            V
+                      32.768kHz ~ 23.999MHz                                                  30
+                      24.000MHz ~ 49.999MHz                                                  45
+ Input Current                                                                                              mA
+                      50.000MHz ~ 79.999MHz                                                  70
+                     80.000MHz ~ 200.999MHz                                                  85
+ Symmetry             32.768kHz ~ 49.999MHz          45                                      55
+                                                                                                             %         See options
+ (@ 1/2Vdd)          50.000MHz ~ 200.000MHz          40                                      60
+                       32.768kHz ~ 1.999MHz                                                  40
+ Rise and Fall
+                      2.000MHz ~ 24.000MHz                                                   10              ns
+ Time (Tr/Tf)
+                     24.001MHz ~ 200.000MHz                                                   5
+                                                                                             15              pF
+                       32.768kHz ~ 79.999MHz
+                                                                                             10             TTL
+ Output Load                                                                                                           See options
+                                                                                             15              pF
+                     80.000MHz ~ 200.000MHz
+                                                                                              5             TTL
+                                     VOH       0.9*Vdd                                                       V
+ Output Voltage
+                                     VOL                                                    0.1*Vdd          V
+                                                                                                                       "1" or Open:
+                                     VIH             2.2                                                     V
+                                                                                                                        Oscillation
+ Tri-state Function
+                                                                                                                    "0": Output disable
+                                     VIL                                                        0.8          V
+                                                                                                                          (Hi Z)
+ Output Enable time                                                                              4           ms      For option A only
+ Output Disable time                                                                            100          ns      For option A only
+ Start-up Time                                                             1                     10          ms
+
+* Overall frequency stability includes initial tolerance and temperature stability.
+
+
+
+
+                                                                                                                          REVISED: 11.15.2016
+                                                           5101 Hidden Creek Lane Spicewood TX 78669                         ABRACON IS
+                                                           Phone: 512-371-6159 | Fax: 512-351-8858
+                                                                                                                             ISO9001-2008
+                                               LLC         For terms and conditions of sale please visit:
+                                                           www.abracon.com                                                    CERTIFIED
+      HALF SIZE DIP LOW VOLTAGE
+                     5.0V CRYSTAL CLOCK OSCILLATOR
+       ACH Series                      Pb RoHS/RoHS II Compliant
+                                                                                                                                                              12.7 x 12.7 x 5.6mm
+
+        OPTIONS & PART IDENTIFICATION:
+          (Left blank if standard)
+                                                   ACH-                              MHz-                -       -         -        -       -         -
+
+                                                                                                                                                             Packaging
+                        Frequency in MHz
+                                                                                                                                                            Blank: Tube
+                       e.g. 24.576MHz
+                                                                                                                                                            TY: Tray
+                            14.31818MHz
+                            26.000MHz
+
+
+
+
+                     Operating Temp.            Freq. Stability               Symmetry                       Tri-state              Output Load               Pin form
+                     D: -10°C ~ +60°C           Y*: ± 10 ppm           S: 45/55% @1/2Vdd                A: Tri-state on pin 1           50: 50pF            G: Gull Wing
+                     E: -20°C ~ +70°C           J**: ± 20 ppm          T: 47.5/52.5% @1/2Vdd                                                               Q25: 0.25” (6.35)
+                     F: -30°C ~ +70°C            R: ± 25 ppm                                                                                               Q20: 0.20” (5.08)
+                     N: -30°C ~ +85°C            K: ± 30 ppm
+                                                                                                                                                           Q15: 0.15” (3.81)
+                     L: -40°C ~ +85°C            H: ± 35 ppm             Note:
+                                                 C: ± 50 ppm             *: Temp option D only
+                                                                         **: Temp option D, E and 0-70oC only
+
+
+       OUTLINE DIMENSION:
+
+
+                                                                                                                                                Pin         Function
+                                                                                                                                                 1        Tri-State/NC
+                                                                                                                                                 4         Case GND
+                                                                                                                                                 5           Output
+                                                                                                                                                 8            Vdd
+
+
+
+
+                                                                                                                                            Dimensions: inches (mm)
+      Packaging: 40pcs /tube
+ATTENTION: Abracon products are COTS – Commercial-Off-The-Shelf products; suitable for Commercial, Industrial and, where designated, Automotive Applications.
+   Abracon’s products are not specifically designed for Military, Aviation, Aerospace, Life-dependant Medical applications or any application requiring high reliability where
+component failure could result in loss of life and/or property. For applications requiring high reliability and/or presenting an extreme operating environment, written consent and
+authorization from Abracon is required. Please contact Abracon for more information.
+
+                                                                                                                                                              REVISED: 11.15.2016
+                                                                                   5101 Hidden Creek Lane Spicewood TX 78669                                      ABRACON IS
+                                                                                   Phone: 512-371-6159 | Fax: 512-351-8858
+                                                                                                                                                                  ISO9001-2008
+                                                                       LLC         For terms and conditions of sale please visit:
+                                                                                   www.abracon.com                                                                 CERTIFIED
+

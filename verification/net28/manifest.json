@@ -1,0 +1,327 @@
+{
+  "date": "2026-11-26",
+  "base_git_commit": "ba3353f585fff94469d89674a8c1bdfa08ea70f1",
+  "scope": "NET28 documentary current ledger and reconciled current status only; pending NET27 outputs deliberately unpublished.",
+  "verification": {
+    "datasheet_families": 34,
+    "candidate_ics": 460,
+    "configured_oscillators": 2,
+    "pdf_and_extraction_hashes_match": true,
+    "pending_compiler_snapshots_checked": 27,
+    "pending_input_hashes_match": true,
+    "power_budget_closed": false,
+    "new_circuit_simulation_pass_claimed": false
+  },
+  "commands": [
+    "WSL Ubuntu: python3 tools/extract_power_evidence.py",
+    "WSL Ubuntu: python3 tools/record_power_allowances.py",
+    "Windows: python tools/record_net28_manifest.py",
+    "Windows: python tools/stage_with_pending_timed_run.py verification/net28/manifest.json"
+  ],
+  "manifest_python": "3.13.14",
+  "git_version": "git version 2.51.2.vfs.0.1",
+  "excluded_pending_run_prefix": "verification/net27/full-timed/attempt-001/",
+  "excluded_files_at_snapshot": [
+    "verification/net27/full-timed/attempt-001/adapted-program-runner.py",
+    "verification/net27/full-timed/attempt-001/adapted-system-main.py",
+    "verification/net27/full-timed/attempt-001/compile-run.json",
+    "verification/net27/full-timed/attempt-001/compile.stderr.log",
+    "verification/net27/full-timed/attempt-001/compile.stdout.log",
+    "verification/net27/full-timed/attempt-001/compiler-inputs.json",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/generated-bench.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/hardware/common_request/common_request_netlist.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/hardware/cpu_global/cpu_global_netlist.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/hardware/local_phase_keyboard/local_phase_keyboard_netlist.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/hardware/local_phase_reset/local_phase_reset_netlist.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/hardware/memory_bus/memory_bus_netlist.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/hardware/memory_decode/memory_decode_netlist.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/sim/hdl/hc_models.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/sim/net02/package_models.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/sim/net03/package_models.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/sim/net04/package_models.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/sim/net13/memory_devices.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/sim/net14c/package_models_async.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/sim/net19a/package_models.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/sim/net22/phase_packages.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/sim/net23/clock_models.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/sim/net25/warm_packages.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/sim/net26/isa1_memory_local_phase.sv",
+    "verification/net27/full-timed/attempt-001/compiler-inputs/sim/net26/local_video_async.sv",
+    "verification/net27/full-timed/attempt-001/input-images/control_lane0.hex",
+    "verification/net27/full-timed/attempt-001/input-images/control_lane1.hex",
+    "verification/net27/full-timed/attempt-001/input-images/control_lane2.hex",
+    "verification/net27/full-timed/attempt-001/input-images/control_lane3.hex",
+    "verification/net27/full-timed/attempt-001/input-images/program_bus.hex",
+    "verification/net27/full-timed/attempt-001/input-images/program_state.hex",
+    "verification/net27/full-timed/attempt-001/input-images/rom_image.hex",
+    "verification/net27/full-timed/attempt-001/input-images/vectors.hex",
+    "verification/net27/full-timed/attempt-001/run-origin.json",
+    "verification/net27/full-timed/attempt-001/run-state.json",
+    "verification/net27/full-timed/attempt-001/simulation.stderr.log",
+    "verification/net27/full-timed/attempt-001/simulation.stdout.log",
+    "verification/net27/full-timed/attempt-001/system-tb_rtl_program-timed.sv"
+  ],
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 2312,
+      "sha256": "6e245994f70244cc106dfff7f5cd58eb8c3b9c3e16c9f8b49db99db5c2a8bc95"
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 35438,
+      "sha256": "d0c574fef5220d638322f780b90bcec3804457c31b9a41692a29437c84092794"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "bytes": 17950,
+      "sha256": "90692d4548d9dd45c1da6ae472a32274af57b9b19e3b27d32b1d993c0fbfdbfa"
+    },
+    {
+      "path": "DECISIONS.md",
+      "bytes": 47686,
+      "sha256": "a4a20acff7242921be9ca711ec5273590916ad23e0d81f5831630980f24a8b4b"
+    },
+    {
+      "path": "PROVENANCE.md",
+      "bytes": 26255,
+      "sha256": "042d596f385a0b35a5ce4c9221a9e497d53b921b03e7ab0795202fa2621a4eb9"
+    },
+    {
+      "path": "README.md",
+      "bytes": 11822,
+      "sha256": "d0c9040aed58083650d6ffa3518f400b98599e06ce0a64ffd62e39a69241bd67"
+    },
+    {
+      "path": "ROADMAP.md",
+      "bytes": 20932,
+      "sha256": "8b0372bf0290f63112a533d0a07c709ad1a6dc9ee7a0fdc6cf5019977f26876a"
+    },
+    {
+      "path": "docs/engineering/NET28_POWER.md",
+      "bytes": 4239,
+      "sha256": "34c526e884eadea5ae8b722d8b505fcb297f9a3e5230c82bc512767889715683"
+    },
+    {
+      "path": "docs/engineering/VALIDATION_STATUS.md",
+      "bytes": 6324,
+      "sha256": "267666ac119fef349e01ab37f864cb09de212219b07af0c9e693ed5042eb7111"
+    },
+    {
+      "path": "tools/audit_pending_timed_run.py",
+      "bytes": 2230,
+      "sha256": "8e1a6c4c39cf09542d05e9645524d8c801f2a6ff8aa4eeb28df95c65fc166276"
+    },
+    {
+      "path": "tools/extract_power_evidence.py",
+      "bytes": 2620,
+      "sha256": "b35ac4cbc847e0362f0a5634b2b2df431400107a1dd695ea77799025143b82ae"
+    },
+    {
+      "path": "tools/record_net28_manifest.py",
+      "bytes": 3692,
+      "sha256": "5f9ca326ef89a815893ecdc29746a9c7d2ccf3365e3ee720185372d3082e4140"
+    },
+    {
+      "path": "tools/record_power_allowances.py",
+      "bytes": 6326,
+      "sha256": "09a4f935717470b2979004d19f16224f24972e55635c893d07c72866b3066a12"
+    },
+    {
+      "path": "tools/stage_with_pending_timed_run.py",
+      "bytes": 2851,
+      "sha256": "e7520c19c86c0e10cdd4717311b04bc16333bd6d83f5b7cd51198b9740011302"
+    },
+    {
+      "path": "verification/net28/development/publication-newlines.txt",
+      "bytes": 708,
+      "sha256": "1df5e160dfc575b140e5f87fce9b9ffb687b5bec5786df68c956c6b4d27ba822"
+    },
+    {
+      "path": "verification/net28/pending-run-integrity.json",
+      "bytes": 2291,
+      "sha256": "77b927762eb362d5fcf40aabb5d299d40a2429e386cccdfde2afd048e266f69d"
+    },
+    {
+      "path": "verification/net28/power-allowances.json",
+      "bytes": 143237,
+      "sha256": "ceeb0c2342eb7cc87b32e6d2ab289dafd12dc874bea0ab828e3e088357ecfe11"
+    },
+    {
+      "path": "verification/net28/power-evidence/ach_cpu_config.txt",
+      "bytes": 10592,
+      "sha256": "6d3139dd175e9929e0de2d588a95188068e1b547dfb69c61106fff1c7516f976"
+    },
+    {
+      "path": "verification/net28/power-evidence/ach_master_config.txt",
+      "bytes": 10592,
+      "sha256": "6d3139dd175e9929e0de2d588a95188068e1b547dfb69c61106fff1c7516f976"
+    },
+    {
+      "path": "verification/net28/power-evidence/as7c256a_28soj.txt",
+      "bytes": 34041,
+      "sha256": "520a9216a23799a97962400b137695f934c0da6aba2152c65fdcbe07a883bb9d"
+    },
+    {
+      "path": "verification/net28/power-evidence/at28c256_28pdip.txt",
+      "bytes": 86092,
+      "sha256": "1304fa93968e2a5189e5578d317fc433eca366d1aa47276137836fb88037fb4d"
+    },
+    {
+      "path": "verification/net28/power-evidence/at28hc64b.txt",
+      "bytes": 53984,
+      "sha256": "96d29a8a67e81df490cb272e376ab31caa184972eecade07c472485dcd38a8d6"
+    },
+    {
+      "path": "verification/net28/power-evidence/cd74hc283.txt",
+      "bytes": 51185,
+      "sha256": "135c243c7dd1d053b96b90b1434fcb741ed6ea11ed497aed630a79f1b29b3c14"
+    },
+    {
+      "path": "verification/net28/power-evidence/extractions.json",
+      "bytes": 22013,
+      "sha256": "7adbeb9692f8cf03ce2f26b22ba6adfad30ef41b27c0ed2e28849e1da697e546"
+    },
+    {
+      "path": "verification/net28/power-evidence/sn74ahc04.txt",
+      "bytes": 103318,
+      "sha256": "4a353d85d172a164c62ace1b5cfdd1ba1ac8a730c478256ad8347c589cb35f0b"
+    },
+    {
+      "path": "verification/net28/power-evidence/sn74ahc08.txt",
+      "bytes": 108211,
+      "sha256": "a8883282562e1b7366860a20e389044cc3a9d5cfdfb24df7f08fc15edf7e490f"
+    },
+    {
+      "path": "verification/net28/power-evidence/sn74ahc125.txt",
+      "bytes": 132671,
+      "sha256": "a11ba71cbe445c73425f72fc750e0bb884022e6cad07f9126b54eea844c4eae9"
+    },
+    {
+      "path": "verification/net28/power-evidence/sn74ahc14.txt",
+      "bytes": 132656,
+      "sha256": "aa865be1e64c429eaa209a5472564b5badb7f102e1a877de81e8f1f9d52a2cf5"
+    },
+    {
+      "path": "verification/net28/power-evidence/sn74ahc164.txt",
+      "bytes": 89307,
+      "sha256": "b2a52d732d83665031a58dfba56bee28f6570c8e2ab7da03a15622664f7d6f0f"
+    },
+    {
+      "path": "verification/net28/power-evidence/sn74ahc174.txt",
+      "bytes": 75211,
+      "sha256": "57bb68fa1fc5ca34470e519363e6f578f951815320c2872f360715ff6cd888c1"
+    },
+    {
+      "path": "verification/net28/power-evidence/sn74ahc32.txt",
+      "bytes": 118399,
+      "sha256": "903271965f44274a83f94c0203a1dbb3ccfc5d94fe1d8e294e11cd4b52265436"
+    },
+    {
+      "path": "verification/net28/power-evidence/sn74ahc574.txt",
+      "bytes": 132978,
+      "sha256": "90302684a7a8ff67c414bb75703d2bdd3efc33892a4a3c6e218e5264e22bd8f6"
+    },
+    {
+      "path": "verification/net28/power-evidence/sn74ahc74.txt",
+      "bytes": 130491,
+      "sha256": "ada9ca495a27e2f75c1115463a482ae5f1dd04d54cf015e1c89e8686b187c4e7"
+    },
+    {
+      "path": "verification/net28/power-evidence/sn74ahct157.txt",
+      "bytes": 75428,
+      "sha256": "efacfdba2ed2f80ba9f2952be7e33ca9083d79f91fe8b762b231e5bb209bc223"
+    },
+    {
+      "path": "verification/net28/power-evidence/sn74hc04.txt",
+      "bytes": 120729,
+      "sha256": "ccc2e4d91e672d6b993da2c7eda3d19be9bd1456d2c11c6d334353ba31d1385c"
+    },
+    {
+      "path": "verification/net28/power-evidence/sn74hc08.txt",
+      "bytes": 118147,
+      "sha256": "bcf3e554ae715a5851b0fe0bdbe9fa51d37b050d64151b88f852a1678a235eee"
+    },
+    {
+      "path": "verification/net28/power-evidence/sn74hc125.txt",
+      "bytes": 116791,
+      "sha256": "29b11c7175ce3ba5208fe26521995428cd5e4285bc57329defd1815273ecd055"
+    },
+    {
+      "path": "verification/net28/power-evidence/sn74hc138.txt",
+      "bytes": 106246,
+      "sha256": "d590c0eeb943bbe209484359fd1e7f4b4108c905efb06e7acee1ec6d373586c1"
+    },
+    {
+      "path": "verification/net28/power-evidence/sn74hc139.txt",
+      "bytes": 76812,
+      "sha256": "2e2d002fa52332569c726522b93030e2f1a2a0f929a52f4479bb0d6a713b8769"
+    },
+    {
+      "path": "verification/net28/power-evidence/sn74hc157.txt",
+      "bytes": 97309,
+      "sha256": "c3c80fcefe6eb38ae385c69543fd877ce13d647a7695f1b104497a462d2b0d1b"
+    },
+    {
+      "path": "verification/net28/power-evidence/sn74hc161.txt",
+      "bytes": 88668,
+      "sha256": "ad3dc78c883eb95d740849608170fbc0825f2fa5684d2c6d6aaab0176f342e7f"
+    },
+    {
+      "path": "verification/net28/power-evidence/sn74hc174.txt",
+      "bytes": 79283,
+      "sha256": "df2f374479e4c4335a090dddd3d55f46054d8222a2a790fd289a29eb14faac71"
+    },
+    {
+      "path": "verification/net28/power-evidence/sn74hc273.txt",
+      "bytes": 113264,
+      "sha256": "bcf00d4a50bbd99a91072d0a5b14f68642e2d7f363ab233db34a0d2a634ddf21"
+    },
+    {
+      "path": "verification/net28/power-evidence/sn74hc32.txt",
+      "bytes": 121032,
+      "sha256": "d5b57cc0d470b1b2e2ea7bd571598e8f2b2f0542197ff201f9a4d9a4e1ef30d7"
+    },
+    {
+      "path": "verification/net28/power-evidence/sn74hc377.txt",
+      "bytes": 62039,
+      "sha256": "6632818d4e677565e848408d48b3a3838effef643ba9b32d853a7bbb55d1eb16"
+    },
+    {
+      "path": "verification/net28/power-evidence/sn74hc74.txt",
+      "bytes": 134921,
+      "sha256": "d940f8f8cf3eb79854e21b74e1d1fa9df82812aa296ed23ee7cf942828677d16"
+    },
+    {
+      "path": "verification/net28/power-evidence/sn74hc86.txt",
+      "bytes": 111383,
+      "sha256": "a052fcd61c8c9c94ffe0eadb23999bfd0a4abe137f0b852dcb72f1a071bdd0ab"
+    },
+    {
+      "path": "verification/net28/power-evidence/sn74hct244.txt",
+      "bytes": 116949,
+      "sha256": "725c9210d4813e224355e9ba9438bdf21a8bff73f4087195ab8ac421b282930c"
+    },
+    {
+      "path": "verification/net28/power-evidence/sn74hct377.txt",
+      "bytes": 51592,
+      "sha256": "c8152ee2c5c41be3a5a84c610b890bdeffd11c10682f227429dce6cbac5d611d"
+    },
+    {
+      "path": "verification/net28/power-evidence/sn74lv161a.txt",
+      "bytes": 101053,
+      "sha256": "7d921090aadc5652ad3beb2d50cbc638ccb74a5328ef6c415dbc0006e3dd4d6b"
+    },
+    {
+      "path": "verification/net28/power-evidence/sn74lvc1g27.txt",
+      "bytes": 142266,
+      "sha256": "b8928613acff47b69d1b02b6728dfb9f950f6b0d3af23bb967ac59433f924b9a"
+    },
+    {
+      "path": "verification/net28/power-evidence/tps3808g01dbvr.txt",
+      "bytes": 140046,
+      "sha256": "83c5abf50b0621254884bb658654e3d00467810c2e19c3ac46a24141101a5dfb"
+    }
+  ],
+  "production_released": false
+}

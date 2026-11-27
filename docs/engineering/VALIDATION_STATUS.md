@@ -1,70 +1,75 @@
-NET-26:156 cenários estritos com teclado e128 combinações selecionadas passaram, com três reversões negativas;48 cortes SRAM e oito CPU.6.886 vetores ideais, dois1.062 temporizados e132.197 instruções/76.800pixels do boot ideal concluídos. Três folhas nativas têm ERC49/13/25 violações sem waivers. Não é temporização/elétrica/POR/MTBF global nem aprovação física. Ver NET26.md.
+# Testes, pendências e revisões do ISA-1
 
-NET-25:32 cortes selecionados passam na drenagem, mas há falhas abertas de partida sob CLR0 e recovery de reset breve50ns/offset39ns. Não considerar o experimento uma correção global aprovada. Projeção diagnóstica só observa contenção durante reset conhecido; OPEN_RESET_CLOCK permanece não qualificado. Hipótese localP1 passou156 cenários funcionais e ainda não tem esquema próprio. Resultados completos e escopos em NET25.md.
+Atualizado em 26/11/2026, após NET26 e a análise documental NET28.
+**Placa não liberada para fabricação.** Esta lista mostra o estado corrente;
+relatórios NET e versões Git preservam os estados anteriores. Não somar
+ensaios sobrepostos nem transferir aprovação entre variantes diferentes.
 
-Atualização NET-24 (26/11/2026): dois pinos agrupam o sincronizador de pedidos no mesmo clock, mantendo31CIs. 32 cenários selecionados, 6.886 casos ideais, dois temporizados de1.062, oito cortes da CPU e boot/quadro passaram. Permanece uma rejeição reproduzida: quatro resets com perfil assimétrico geram pulso7,722ns contra20ns no modelo HC74; não são aprovações. Escopos e evidências em [NET24](NET24.md); o boot novo foi ideal com SRAM desconhecida, programa completo temporizado segue pendente.
+## Circuito candidato corrente
 
-Atualização NET-23 (26/11/2026): dois osciladores ACH candidatos no esquema e recepção da CPU por duas Schmitt livres, sem CI adicional de lógica. Partida/falta de clock, pinos SRAM, oito cortes de escrita da CPU e6.886 casos ideais/dois cenários temporizados de1.062 passaram. Carga15pF exige trilhas até5pF e código completo/BOM, jitter/POR e temporização global continuam abertos. Os números e resultados de instruções são conferidos em [NET23](NET23.md), sem herdar boot NET22 como nova execução.
+CPU `cpu_global`, decoder `memory_decode`, controlador `common_request`,
+barramento `memory_bus`, vídeo `local_phase_video`, teclado
+`local_phase_keyboard` e reset `local_phase_reset`: **460 CIs, dois módulos
+ACH e 464 capacitores**, ainda em folhas separadas. Fonte, USB-C, isolação e
+DAC não integram essa contagem.
 
-Atualização NET-22 (26/11/2026): variante de vídeo corrige sensibilidade do anel de fases a atrasos distintos de buffers. Shift AHC164/NOR LVC1G27 e carry de linha registrado; 36 CIs, um a mais. 384 combinações de atrasos e256 de assimetria de pulsos, 6.886 casos ideais da CPU, dois cenários temporizados de1.062, boot/quadro completo e cortes de reset passaram; osciladores físicos e fechamento global continuam pendentes. Evidências e escopos em [NET22](NET22.md); resultados integrados em verification/net22. Não somar coberturas sobrepostas.
+NET25 permanece experimento não promovido. NET26 corrigiu as rejeições de
+pulso frio/recovery nos cenários documentados. Elas não continuam como
+defeitos demonstrados do circuito NET26; temporização global continua aberta.
 
-Atualização NET-21A, 26/11/2026: [supervisor/Schmitt candidato](NET21.md) acomoda orçamento de 20 pF contra CL=50 pF especificado, preservando oito CIs. 48 cortes ativos, quatro com CPU real, scan temporizado em políticas 0/1 e SPICE condicional passaram. A janela DC proposta de 5,392 V tem margens pequenas; consumo, regulador/isolamento/POR e circuito físico não qualificados. Próximo: fontes de clock e fechamento global de energia/DAC/cargas, firmware de eventos, ERC/PCB/protótipo.
+## Evidências concluídas, com escopo
 
-Atualização NET-20A, 26/11/2026: [reset integrado](NET20.md) por pinos, CPU rápida e bancos atrasados; 48 cortes ativos, dois negativos e raw scan ideal/com atrasos, com parada de clocks. WE bloqueado em até 80 ns nos cenários executados. A condição CL=10 pF do supervisor não comporta Ci máximo do AHC125 mais trilhas; hold-up permanece condicional. ERC parcial: 12 violações. Energia analógica, clock/skew/PVT global, DAC, firmware de eventos, PCB/protótipo abertos.
-
-Atualização NET-19A, 26/11/2026: [CPU/MMIO/teclado integrados por pinos](NET19A.md), com vetores ideais completos, dois cenários reduzidos temporizados e boot/quadro ideal. Raw scan executado na CPU, inclusive relógio parado e leitura cancelada. Três AHC174 corrigem setup do controlador; ERC parcial continua com 135 violações. Reset NET18, distribuição/cargas globais, clock/DAC, firmware de eventos e placa permanecem pendentes.
-
-Recuperação histórica, 26/11/2026: REV33/REV76 agora têm fontes completas e reprodução simbólica em cópias temporárias, com saídas idênticas. Não alteram a aprovação da CPU atual nem os bloqueios de energia/PCB. Fontes posteriores de prefetch/DAC são exploratórias; ver ../EXPORT_RECOVERY_2026-11-26.md.
-
-Atualização NET-18, 26/11/2026: [supervisor/energia condicional](NET18.md), seis CIs/100 pinos, 64 cenários de reserva e regressões digitais passaram; ERC parcial tem cinco violações. O modelo oficial do regulador não completou. Consumo real, conversão/USB-C/isolamento/POR, integração global, PVT/MTBF e PCB/protótipo continuam abertos.
-
-# Lista consolidada de testes, itens e revisões
-
-Atualizada em 26/11/2026, após NET-21 de supervisor/Schmitt e NET-20 de domínios digitais integrados à CPU/MMIO/memórias. Esta lista substitui a leitura dos checkboxes antigos como estado atual; eles permanecem no ROADMAP como registros das respectivas etapas. Não há percentual de placa pronta: uma aprovação de modelo não equivale a aprovação elétrica ou física.
-
-## Evidências aprovadas no escopo de modelo
-
-| Item | Evidência atual | Revisão ainda necessária |
+| Item | Evidência aceita | Limite da conclusão |
 |---|---|---|
-| CPU, ISA e datapath | NET-20: 6.886 casos ideais e 1.062 temporizados reduzidos, 26 instruções, com domínios de reset ligados | Temporização global, cargas e circuito completo; regressão correspondente a cada nova variante |
-| Pilha e guardas | 524.288 casos na integração ideal; SP vazio 8000h, dois bytes de CALL/RET verificados antes do acesso | Margens temporais e ensaio físico |
-| WAIT, COMMIT e handshake | NET-19/20/21: payload retido, efeitos únicos, ACK prolongado, pausa de CPU e cortes nos pinos SRAM; quatro cortes de escrita da CPU real na NET21 | CDC/MTBF, mínimos/skew e reset elétrico; escopos de cortes preservados separadamente |
-| Microcódigo e registradores | ROMs históricas preservadas; sequenciador/ALU/PC/X/flags mapeados em etapas anteriores | União de fontes, cargas, clocks e alimentação |
-| Mapa de memória e bancos | NET-11: 4.194.305 combinações por modo ideal/temporizado | Ligação global a MMIO e periféricos físicos |
-| Memórias e barramento | NET-13: todos os endereços; 131.072 escritas, 164.096 leituras e 65.536 leituras de vídeo por configuração isolada | Cargas reais, PVT e encapsulamentos/footprints homologados |
-| Troca de drivers | NET-13: intervalo registrado; cenário adversarial passa, controlador antigo é rejeitado | Tempos mínimos, capacitância e integridade de sinal da placa |
-| Boot e quadro | NET-20: 132.197 instruções, 232.576 transações, 76.800 pixels idênticos com resets ligados e SRAM inicialmente desconhecida | Repetir nas variantes seguintes; programa completo temporizado e depois boot em protótipo |
-| Detecção de falhas | Negativos de pinagem, WE, disputa, fases e monitores temporais registrados | Ampliar conforme cada circuito físico é acrescentado |
+| CPU/ISA/WAIT/COMMIT | NET26: 6.886 casos ideais/13.406 transações; dois cenários temporizados de 1.062 casos/1.821 transações cada | Vetores semeiam estado; não são boot completo ou todo PVT |
+| Boot e quadro | NET26 ideal: 132.197 instruções, 232.576 transações, 32.771 transações VRAM, 76.800 pixels idênticos | SRAM desconhecida; períodos/startup escalados |
+| Reset/clocks locais | NET26: 156 cenários estritos com teclado, 128 combinações e três negativos | Sem exceção CLR0; não qualifica jitter, trilhas, slew ou metastabilidade analógica |
+| Cortes de escrita | NET26: 48 cortes SRAM, WE até94ns; oito cortes CPU/scans, WE até84ns | Cenários específicos, sem rollback; byte interrompido pode ficar desconhecido |
+| Pilha/flags/X/microcódigo | SP vazio8000h, push emSP−1 e atualização após COMMIT; ROMs preservadas | Contagens antigas não são novas execuções NET26 |
+| Memória/VGA/teclado por pinos | Esquemas KiCad e projeções por pinos nas regressões correspondentes | Modelo digital difere de simulação elétrica e ensaio físico |
+| Executor longo | NET27: cinco testes reais de limites de processo e identificação vivo/encerrado | Verifica executor, não circuito; boot completo temporizado sem resultado final aceito |
+| Consumo documental | NET28: 34 famílias/configurações, parcelas/condições dos PDFs e hashes | Soma de referências não é máximo da placa; orçamento aberto |
 
-Evidências: [NET13](NET13.md), [integração ideal](../../verification/net13/cpu/results-ideal.json), [integração temporizada reduzida](../../verification/net13/cpu/results-timed.json), [barramento](../../verification/net13/bus-results.json). Os números têm escopos diferentes e não devem ser somados como uma contagem única de testes. Não foi executado programa/quadro completo com atrasos na NET-13.
+Evidências: [NET26](NET26.md), [plano NET27](NET27_PLAN.md) e
+[consumo NET28](NET28_POWER.md). A execução NET27 grava estado em
+`verification/net27/full-timed/attempt-NNN/run-state.json` e progresso em
+`simulation.stdout.log`. Exigir relatório final íntegro, contagens, asserções,
+quadro idêntico e `simulation_passed=true`. Processo vivo ou compilação zero
+não bastam. Interrupção exige nova tentativa; não há checkpoint HDL.
 
-## Itens em desenvolvimento ou ainda pendentes
+## Trabalho restante
 
-| Prioridade / item | Estado atual | Critério para fechar |
+| Prioridade | Estado atual | Critério de fechamento |
 |---|---|---|
-| 1. Relógio, raster e captura de vídeo | NET22/23 integrados; NET24 confirma backend50% em regime, porém quatro resets com assimetria de bordas violam20ns no modelo | Corrigir/qualificar pulsos de reset e os demais caminhos, cargas extraídas, jitter/slew/MTBF/PVT e programa/quadro temporizado completo |
-| 2. Concessão física da VRAM | SLOT por pinos, 32 posições exercitadas e integração com CPU/quadro ideal | Fechar cargas/min/max/clock globais e validar placa |
-| 3. MMIO e teclado por pinos | NET-21: raw scan na CPU com domínios digitais, pausa/reset e escrita interrompida retomada; alvo NET17 de 500 Ω/16.384 ciclos e política host preservados | Implementar debounce/fila/cancelamento na CPU, fechar MTBF/proteções/cargas e medir unidades |
-| 4. Alimentação e reset | NET-20/21: domínios digitais ligados, WE/bancos observados nos pinos, oito CIs. TPS3808/Schmitt acomoda orçamento20pF/CL50pF e exige proposta5,392V. Hold-up/DC condicionais; regulador oficial não completou | Qualificar fonte/consumo/isolamento/POR/transientes e cargas extraídas, min/max/MTBF e rampas/cortes físicos; byte interrompido continua desconhecido |
-| 5. Saída VGA e DAC RGB332 | Dados digitais disponíveis; DAC e conector não fechados | Níveis/correntes/impedância, cargas do monitor, sincronismos, proteção, simulação e medição |
-| 6. Temporização global | NET24 agrupa dois clocks REQ,32 cenários locais e regressões passam; pulso de7,722ns permanece rejeitado em4 casos de reset | Fechar rejeição ativa sem waiver, todos os mínimos/máximos, demais grupos/skew/hold/setup/recovery, jitter/PVT/MTBF e circuito elétrico correspondente |
-| 7. Elétrica e cargas | TTL/CMOS estudados; NET21 conta16 redes selecionadas, até4 entradas/saída; RC e reservas condicionais | Fanout/capacitância global extraída, SRAM acesso30pF/Hi-Z5pF, ruído/overshoot, consumo/Delta-ICC e temperatura; budgets não são medidas |
-| 8. Esquema global e ERC | Folha common_request NET24 tem31CIs/526pinos e135 violações; fonte/reset e vídeo continuam parciais | União real de blocos/pinos/alimentações, resolver ERC e conferir footprints; não somar folhas parciais nem mascarar entrada sem fonte |
-| 9. BOM e footprints | Configurações candidatas e PDFs por família; ACH L/C/T/A15pF tem código completo aberto e exige até5pF de trilhas na entrada | Conferir códigos reais, pinagem, encapsulamento/faixa/carga/consumo e footprint de cada componente; não tratar típico como limite |
-| 10. Entrada USB-C e distribuição | Requisito de 5 V; circuito completo pendente | Orçamento de corrente, CC/proteção, queda de tensão, desacoplamento/retornos e comportamento ao conectar/desconectar |
-| 11. PCB e DRC | Pendente | Posicionamento/roteamento, retornos, clock, memória, VGA, mecânica e DRC revisados |
-| 12. Revisão e pacote de fabricação | Pendente | Revisão independente de esquema/BOM/layout; Gerbers, furos, posições e montagem coerentes com a revisão aprovada |
-| 13. Firmware de produto | Diagnóstico novo exportado para EEPROM, hash igual ao boot aceito | Monitor/boot definitivo, diagnóstico de bancada e procedimentos de gravação/teste; não confundir com firmware histórico ausente |
-| 14. Protótipo e teste de produção | Nenhum ensaio físico de placa realizado | Boot, margens, RAM/VRAM, VGA, membranas, consumo/reset/energia e repetibilidade medidos; corrigir e repetir antes de liberar |
+| 1. Boot inteiro temporizado | Runner NET27 iniciado; resultado final pendente |132.197 instruções, transações/quadro completos, sem erros/aborts e fontes verificadas |
+| 2. Temporização global | Rejeições locais selecionadas corrigidas; pulsos22,72/7,72ns condicionais | Todos os caminhos min/max, muxes, setup/hold/recovery, skew/jitter, cargas extraídas, slew, PVT e CDC/MTBF |
+| 3. Energia/consumo/POR | Ordem WE/bancos digital, TPS3808/Schmitt; trilho proposto5,392V com margens pequenas; ledger NET28 | Fonte/proteção reais, consumo por estado, partida/inrush, reverso, regulação/transientes/POR e térmica |
+| 4. USB-C | Requisito5V, entrada ainda não fechada | CC/corrente anunciada, proteção/quedas e carga controlada da reserva; não presumir1,5A disponível |
+| 5. VGA analógico | Raster/dados digitais disponíveis; DAC/conector pendentes | RGB em75ohm, níveis/correntes, sincronismos/latência, proteção, simulação e medidas |
+| 6. Firmware de teclado | Raw scan na CPU; debounce/fila/cancelamento no host | Implementar na CPU; até duas teclas estáticas e ambiguidades conservadoras, sem diodos/NKRO |
+| 7. Elétrica global | Cargas condicionais por grupos, não extração | TTL/CMOS, Delta-ICC, memória/Hi-Z, ruído/overshoot, retorno e temperatura |
+| 8. União/ERC | Folhas separadas; ERC parcial vídeo49/reset13/teclado25/controlador135, sem waivers | Unir pinos/alimentações/portas, resolver erros e justificar exceções; não somar ERCs parciais |
+| 9. BOM/footprints | Famílias candidatas, código completo ACH aberto | Códigos reais, pinagens/encapsulamentos/faixas/cargas/consumo e footprints |
+| 10. Firmware de produto | Diagnóstico novo e imagem EEPROM disponíveis | Boot/monitor definitivo, gravação e diagnóstico de bancada/produção |
+| 11. PCB/DRC | Layout não concluído | Mecânica, desacoplamento, retorno, clock/memória/VGA, posicionamento/roteamento e DRC revisados |
+| 12. Fabricação | Não liberada | Revisão de esquema/BOM/layout, Gerbers, furos e posições coerentes |
+| 13. Protótipo | Nenhuma placa ensaiada | Boot/RAM/VRAM/VGA/membranas, consumo/energia/reset, margens/repetibilidade medidos; corrigir e repetir |
 
-O ERC atual das folhas NET-13 tem 171 e 129 violações, sem aprovação. Isso não é a soma de erros de uma placa unida. O RC de 50 pF não aprova acesso de SRAM nessa carga. Produção permanece bloqueada pelos [critérios completos](PRODUCTION_GATES.md).
+CVC não foi adotado; erros/testes unitários são pesquisa, não aprovação do
+circuito. Fronteiras binárias de warm/reset não garantem duração analógica de
+metastabilidade. SPICE de reserva/teclado é condicional; o modelo oficial
+TPS63070 ainda não concluiu. 1,5A é hipótese de hold-up, não consumo calculado.
 
-## Lacunas históricas separadas da engenharia nova
+## Lacunas históricas e dados físicos
 
-- `diagnostic.asm` original continua ausente e a bancada recuperada do montador continua com falha conhecida. O diagnóstico novo não resolve essa ausência histórica.
-- Conversas completas, revisões intermediárias, REV33 e JSON completo REV76 não foram recuperados integralmente. Ver [LACUNAS](../LACUNAS.md).
-- As imagens das membranas são referência de pinagem, não medição de continuidade/resistência/capacitância/bounce das quatro unidades.
+- `diagnostic.asm` original continua ausente; `verify_recovered.py` mantém a
+  falha conhecida. Diagnóstico novo não substitui esse original.
+- REV33/REV76 foram recuperadas e reproduzidas em26/11. Permanecem33 conteúdos
+  sem bytes e72 IDs de origem ausentes. Ver [lacunas](../LACUNAS.md).
+- Imagens são referência de pinagem das membranas; resistência/capacitância e
+  bounce das quatro unidades não foram medidos. O usuário ainda não consegue
+  medir; avançar com envelopes condicionais sem repetir a solicitação.
 
-## Rotina de revisão
-
-Cada bloco deve registrar entradas/hashes, versões/comandos, bancadas pertinentes, negativos, falhas intermediárias e limites. Repetir regressões afetadas; ampliar a rodada apenas quando nova mudança ou risco justificar. Auditar manifestos históricos nos próprios commits, conferir os bytes publicados e manter originais intactos. Quando houver esquema unido, repetir ERC e análise de cargas globais; quando houver placa, acrescentar DRC e revisão de fabricação; depois validar o protótipo. Nenhuma dessas revisões pode ser antecipada como aprovada.
+Critérios físicos: [PRODUCTION_GATES](PRODUCTION_GATES.md). Registrar comandos,
+versões, entradas/hashes, falhas e limites. Congelar fontes de ensaios ativos;
+trabalho independente usa variantes novas.

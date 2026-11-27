@@ -12,6 +12,8 @@ Atualização NET-20A, 26/11/2026: variante nova de hardware/power_reset e adapt
 
 NET-15 (25/11/2026), base c1eac2581f8c08b92aff576c700a6465e16056d2: novos hardware/mmio_keyboard, hardware/keyboard_access, sim/net15 e ferramentas/relatórios próprios; antecessores preservados. Esquemas nativos geram XML e modelos por pinos. Três PDFs oficiais TI são arquivados byte a byte, com origem/status/hash em references/keyboard-candidates-2026-11-25.json. Cópias tardias de duas fontes intermediárias são identificadas como tais; versões anteriores reconstruídas têm transformação e hashes comparados aos ensaios. Novos ensaios não são materiais históricos recuperados nem medições das membranas.
 
+NET-28, 26/11/2026: análise documental nova sobre as sete folhas NET26, sem alterar circuito/modelos. tools/extract_power_evidence.py transforma PDFs primários locais em texto Poppler, registra fonte/extratos/hashes/comando; tools/record_power_allowances.py mantém valores tabulares selecionados e condições, sem fabricar máximo dinâmico/global. Documentação corrente conciliada com NET26; estados anteriores preservados no Git. Resultados mutáveis da execução NET27 ficam fora da publicação NET28, com fontes/snapshots conferidos separadamente.
+
 # Origem e integridade dos materiais
 
 Recuperação realizada em **24/11/2026**, com data local de São Paulo. Conteúdo do projeto pertence ao histórico fornecido pelo usuário e às respostas do ChatGPT; a migração não presume autoria exclusivamente humana nem escolhe uma licença.

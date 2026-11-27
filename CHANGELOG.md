@@ -182,6 +182,13 @@ NET-17 — 26/11/2026: acrescentada variante para alvo condicional de 500 Ω, co
 - Hipótese apenasHDL de reset local emP1 passa156 cenários funcionais; clock frio continua aberto. Estudos de próxima variante não contam como implementação.
 
 
+## 2026-11-26 — NET-27 preparação e NET-28 documental
+
+- Executor completo temporizado com logs, snapshots e limites de recursos; cinco verificações reais do executor passaram, sem alegação de boot completo temporizado aprovado.
+- Ledger de34 famílias/configurações, fontes primárias/hashes, parcelas estáticas/ativas e resistivas condicionais; consumo global permanece aberto.
+- Lista corrente de testes conciliada com NET26, incluindo recuperação REV33/REV76 e falha histórica diagnostic.asm preservada.
+- Publicação documental independente dos arquivos mutáveis da tentativa NET27 ativa; fontes do ensaio não foram alteradas.
+
 ## 2026-11-26 — NET-26
 
 - Novas folhas de reset localP1, clock direto do controlador e AHC174 no teclado, com +1CI local e predecessores preservados.

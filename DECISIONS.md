@@ -1,3 +1,21 @@
+## ADR E32 — Consumo por parcelas, sem promover uma soma de referências a limite
+
+26/11/2026, base NET26. O ledger NET28 cobre32 tipos de CIs e dois osciladores
+usando PDFs primários arquivados, com condições e hashes. Manter referências
+estáticas/ativas, cargas resistivas condicionais, Delta-ICC e comutação
+separadas. Soma473,516mA não é máximo da placa; limite global permanece aberto.
+Nenhuma família, pinagem, ISA ou hipótese de hold-up foi alterada.
+
+Alternativas rejeitadas: dimensionar a fonte só pelo ICC estático, adotar CPD
+típico como máximo ou tratar1,5A do envelope de falha como corrente calculada.
+As tabelas usam condições distintas e não cobrem automaticamente entradas
+TTL reais, saída carregada, transientes, fonte/DAC ou perdas de conversão.
+
+Evidência: verification/net28/power-allowances.json e NET28_POWER.md.
+Critério de aceitação da fonte: consumo por estado e limites/margens
+auditáveis, componentes reais, análise de partida/regulação/reverso/USB-C,
+simulação correspondente e medidas do protótipo. Este ADR não fecha esse gate.
+
 ## ADR E29 — Agrupar os dois estágios de pedidos sem mudar a lógica
 
 26/11/2026. Base NET23. Mover U4CLK0/CLK1 de BUF_3_3/BUF_3_4 para BUF_4_1

@@ -51,3 +51,6 @@ revisions/** -text
 
 /verification/net26/**/*.sv -whitespace
 /verification/net26/**/*.log -whitespace
+
+# Verbatim Poppler extraction of primary power datasheets.
+/verification/net28/power-evidence/*.txt -whitespace

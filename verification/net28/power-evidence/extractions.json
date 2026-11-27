@@ -1,0 +1,554 @@
+{
+  "date": "2026-11-26",
+  "scope": "Primary archived datasheet evidence for current NET26 union; no new hardware or dynamic current qualification.",
+  "inventory_sha256": "139f611ab99921c3c9728ddff524d405752d162241773161dd8c7e95fe4b583f",
+  "rows": [
+    {
+      "family": "SN74HC273",
+      "count": 10,
+      "pdf": "references/ti/sn74hc273.pdf",
+      "pdf_sha256": "8649dfa0c70096e06d579499278e668c1ee99fb9bc6057e82b0465f253e388d9",
+      "extraction": "verification/net28/power-evidence/sn74hc273.txt",
+      "extraction_sha256": "bcf00d4a50bbd99a91072d0a5b14f68642e2d7f363ab233db34a0d2a634ddf21",
+      "command": [
+        "pdftotext",
+        "-layout",
+        "/mnt/c/Users/gabri/projetos/isa1/references/ti/sn74hc273.pdf",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net28/power-evidence/sn74hc273.txt"
+      ],
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "family": "SN74HC157",
+      "count": 66,
+      "pdf": "references/ti/sn74hc157.pdf",
+      "pdf_sha256": "b538506b021f7c25c9a5f76e014b69ac9ff9fcb9a8a031ba989d8a8989e40fe3",
+      "extraction": "verification/net28/power-evidence/sn74hc157.txt",
+      "extraction_sha256": "c3c80fcefe6eb38ae385c69543fd877ce13d647a7695f1b104497a462d2b0d1b",
+      "command": [
+        "pdftotext",
+        "-layout",
+        "/mnt/c/Users/gabri/projetos/isa1/references/ti/sn74hc157.pdf",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net28/power-evidence/sn74hc157.txt"
+      ],
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "family": "CD74HC283",
+      "count": 14,
+      "pdf": "references/ti/cd74hc283.pdf",
+      "pdf_sha256": "137f6fd57ee15a143e00176ef03744be30215c8c178b421f34d036580f36b25d",
+      "extraction": "verification/net28/power-evidence/cd74hc283.txt",
+      "extraction_sha256": "135c243c7dd1d053b96b90b1434fcb741ed6ea11ed497aed630a79f1b29b3c14",
+      "command": [
+        "pdftotext",
+        "-layout",
+        "/mnt/c/Users/gabri/projetos/isa1/references/ti/cd74hc283.pdf",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net28/power-evidence/cd74hc283.txt"
+      ],
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "family": "SN74HC04",
+      "count": 19,
+      "pdf": "references/ti/sn74hc04.pdf",
+      "pdf_sha256": "a48266c5ce3f22a87a30cd78b0fdb80e99820220534b215a11a9b67a35f41101",
+      "extraction": "verification/net28/power-evidence/sn74hc04.txt",
+      "extraction_sha256": "ccc2e4d91e672d6b993da2c7eda3d19be9bd1456d2c11c6d334353ba31d1385c",
+      "command": [
+        "pdftotext",
+        "-layout",
+        "/mnt/c/Users/gabri/projetos/isa1/references/ti/sn74hc04.pdf",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net28/power-evidence/sn74hc04.txt"
+      ],
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "family": "SN74HC125",
+      "count": 65,
+      "pdf": "references/ti/sn74hc125.pdf",
+      "pdf_sha256": "45e8c22d66d6c1eaeda3f2c007e868f9a156e200ff09532fa6f7e19574c352fc",
+      "extraction": "verification/net28/power-evidence/sn74hc125.txt",
+      "extraction_sha256": "29b11c7175ce3ba5208fe26521995428cd5e4285bc57329defd1815273ecd055",
+      "command": [
+        "pdftotext",
+        "-layout",
+        "/mnt/c/Users/gabri/projetos/isa1/references/ti/sn74hc125.pdf",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net28/power-evidence/sn74hc125.txt"
+      ],
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "family": "SN74HC174",
+      "count": 3,
+      "pdf": "references/ti/sn74hc174.pdf",
+      "pdf_sha256": "4e3f867472d030acb75fab58378eb09c998d0a2e1cf5cb21f88f2951f63f593b",
+      "extraction": "verification/net28/power-evidence/sn74hc174.txt",
+      "extraction_sha256": "df2f374479e4c4335a090dddd3d55f46054d8222a2a790fd289a29eb14faac71",
+      "command": [
+        "pdftotext",
+        "-layout",
+        "/mnt/c/Users/gabri/projetos/isa1/references/ti/sn74hc174.pdf",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net28/power-evidence/sn74hc174.txt"
+      ],
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "family": "SN74HC74",
+      "count": 5,
+      "pdf": "references/ti/sn74hc74.pdf",
+      "pdf_sha256": "a4043d37d693a2997900a0542dd226b9b61285794f3c1a541adb99cc7dcb1ae2",
+      "extraction": "verification/net28/power-evidence/sn74hc74.txt",
+      "extraction_sha256": "d940f8f8cf3eb79854e21b74e1d1fa9df82812aa296ed23ee7cf942828677d16",
+      "command": [
+        "pdftotext",
+        "-layout",
+        "/mnt/c/Users/gabri/projetos/isa1/references/ti/sn74hc74.pdf",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net28/power-evidence/sn74hc74.txt"
+      ],
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "family": "SN74HC377",
+      "count": 9,
+      "pdf": "references/ti/sn74hc377.pdf",
+      "pdf_sha256": "b22acd7e22c3c90494921cb7c8e98cb53570d57e0612d01ad6d3f29ad70a2d53",
+      "extraction": "verification/net28/power-evidence/sn74hc377.txt",
+      "extraction_sha256": "6632818d4e677565e848408d48b3a3838effef643ba9b32d853a7bbb55d1eb16",
+      "command": [
+        "pdftotext",
+        "-layout",
+        "/mnt/c/Users/gabri/projetos/isa1/references/ti/sn74hc377.pdf",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net28/power-evidence/sn74hc377.txt"
+      ],
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "family": "SN74HC08",
+      "count": 63,
+      "pdf": "references/ti/sn74hc08.pdf",
+      "pdf_sha256": "0d125beb415972726a34eb93fbb7ce093909319f4252593fab37a7e77541e363",
+      "extraction": "verification/net28/power-evidence/sn74hc08.txt",
+      "extraction_sha256": "bcf3e554ae715a5851b0fe0bdbe9fa51d37b050d64151b88f852a1678a235eee",
+      "command": [
+        "pdftotext",
+        "-layout",
+        "/mnt/c/Users/gabri/projetos/isa1/references/ti/sn74hc08.pdf",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net28/power-evidence/sn74hc08.txt"
+      ],
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "family": "SN74HC32",
+      "count": 41,
+      "pdf": "references/ti/sn74hc32.pdf",
+      "pdf_sha256": "18adcf7e59d693f9857a32200c28faf72bc84ac64f619411001bececd4fa96f0",
+      "extraction": "verification/net28/power-evidence/sn74hc32.txt",
+      "extraction_sha256": "d5b57cc0d470b1b2e2ea7bd571598e8f2b2f0542197ff201f9a4d9a4e1ef30d7",
+      "command": [
+        "pdftotext",
+        "-layout",
+        "/mnt/c/Users/gabri/projetos/isa1/references/ti/sn74hc32.pdf",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net28/power-evidence/sn74hc32.txt"
+      ],
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "family": "SN74HC161",
+      "count": 1,
+      "pdf": "references/ti/sn74hc161.pdf",
+      "pdf_sha256": "8d7d98ecbbcaed7cd0e488436c1ae3b45baadd58362766e61edffc4cf7b6f7fc",
+      "extraction": "verification/net28/power-evidence/sn74hc161.txt",
+      "extraction_sha256": "ad3dc78c883eb95d740849608170fbc0825f2fa5684d2c6d6aaab0176f342e7f",
+      "command": [
+        "pdftotext",
+        "-layout",
+        "/mnt/c/Users/gabri/projetos/isa1/references/ti/sn74hc161.pdf",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net28/power-evidence/sn74hc161.txt"
+      ],
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "family": "SN74HCT377",
+      "count": 5,
+      "pdf": "references/ti/sn74hct377.pdf",
+      "pdf_sha256": "baa4637a18ffb5f90221ac7a10a1669d2c7402da328162559bb3bb1310535945",
+      "extraction": "verification/net28/power-evidence/sn74hct377.txt",
+      "extraction_sha256": "c8152ee2c5c41be3a5a84c610b890bdeffd11c10682f227429dce6cbac5d611d",
+      "command": [
+        "pdftotext",
+        "-layout",
+        "/mnt/c/Users/gabri/projetos/isa1/references/ti/sn74hct377.pdf",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net28/power-evidence/sn74hct377.txt"
+      ],
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "family": "AT28HC64B",
+      "count": 4,
+      "pdf": "references/microchip/at28hc64b.pdf",
+      "pdf_sha256": "4d1c81d44d8fce71ef9435e201b0b59576a91050a44570b8615be7e87eb56b82",
+      "extraction": "verification/net28/power-evidence/at28hc64b.txt",
+      "extraction_sha256": "96d29a8a67e81df490cb272e376ab31caa184972eecade07c472485dcd38a8d6",
+      "command": [
+        "pdftotext",
+        "-layout",
+        "/mnt/c/Users/gabri/projetos/isa1/references/microchip/at28hc64b.pdf",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net28/power-evidence/at28hc64b.txt"
+      ],
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "family": "SN74HC138",
+      "count": 8,
+      "pdf": "references/ti/sn74hc138.pdf",
+      "pdf_sha256": "795ac76468c240b976a632b6107738765800f7f672ad5b58925fbfb5f5064938",
+      "extraction": "verification/net28/power-evidence/sn74hc138.txt",
+      "extraction_sha256": "d590c0eeb943bbe209484359fd1e7f4b4108c905efb06e7acee1ec6d373586c1",
+      "command": [
+        "pdftotext",
+        "-layout",
+        "/mnt/c/Users/gabri/projetos/isa1/references/ti/sn74hc138.pdf",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net28/power-evidence/sn74hc138.txt"
+      ],
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "family": "SN74HC139",
+      "count": 3,
+      "pdf": "references/ti/sn74hc139.pdf",
+      "pdf_sha256": "2cd8d95edab7d19b65f907dd3e9f45ae8df3f9a878e3b149e8dfd5c82c44cd3f",
+      "extraction": "verification/net28/power-evidence/sn74hc139.txt",
+      "extraction_sha256": "2e2d002fa52332569c726522b93030e2f1a2a0f929a52f4479bb0d6a713b8769",
+      "command": [
+        "pdftotext",
+        "-layout",
+        "/mnt/c/Users/gabri/projetos/isa1/references/ti/sn74hc139.pdf",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net28/power-evidence/sn74hc139.txt"
+      ],
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "family": "SN74HC86",
+      "count": 5,
+      "pdf": "references/ti/sn74hc86.pdf",
+      "pdf_sha256": "695a554fd72f6e9aaed4650af27c6ba419c6635bb241587f486c70fe564a3906",
+      "extraction": "verification/net28/power-evidence/sn74hc86.txt",
+      "extraction_sha256": "a052fcd61c8c9c94ffe0eadb23999bfd0a4abe137f0b852dcb72f1a071bdd0ab",
+      "command": [
+        "pdftotext",
+        "-layout",
+        "/mnt/c/Users/gabri/projetos/isa1/references/ti/sn74hc86.pdf",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net28/power-evidence/sn74hc86.txt"
+      ],
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "family": "SN74AHC174",
+      "count": 4,
+      "pdf": "references/ti/sn74ahc174.pdf",
+      "pdf_sha256": "75de6d4176cc6ed67d3e4bd75c14240e54e7061c0f2aad62f1e974a66b6bf8a7",
+      "extraction": "verification/net28/power-evidence/sn74ahc174.txt",
+      "extraction_sha256": "57bb68fa1fc5ca34470e519363e6f578f951815320c2872f360715ff6cd888c1",
+      "command": [
+        "pdftotext",
+        "-layout",
+        "/mnt/c/Users/gabri/projetos/isa1/references/ti/sn74ahc174.pdf",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net28/power-evidence/sn74ahc174.txt"
+      ],
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "family": "SN74AHC125",
+      "count": 20,
+      "pdf": "references/ti/sn74ahc125.pdf",
+      "pdf_sha256": "c2ca226688e5704e94755fb20907c970ba7e2bac3a18fd6b2c28ce73295d0a3f",
+      "extraction": "verification/net28/power-evidence/sn74ahc125.txt",
+      "extraction_sha256": "a11ba71cbe445c73425f72fc750e0bb884022e6cad07f9126b54eea844c4eae9",
+      "command": [
+        "pdftotext",
+        "-layout",
+        "/mnt/c/Users/gabri/projetos/isa1/references/ti/sn74ahc125.pdf",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net28/power-evidence/sn74ahc125.txt"
+      ],
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "family": "SN74AHC08",
+      "count": 27,
+      "pdf": "references/ti/sn74ahc08.pdf",
+      "pdf_sha256": "5b2bcbcf6b40a36fe9ddccda528bd5bb5ab7516356f540d879129a7d5c3f9036",
+      "extraction": "verification/net28/power-evidence/sn74ahc08.txt",
+      "extraction_sha256": "a8883282562e1b7366860a20e389044cc3a9d5cfdfb24df7f08fc15edf7e490f",
+      "command": [
+        "pdftotext",
+        "-layout",
+        "/mnt/c/Users/gabri/projetos/isa1/references/ti/sn74ahc08.pdf",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net28/power-evidence/sn74ahc08.txt"
+      ],
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "family": "SN74AHC32",
+      "count": 13,
+      "pdf": "references/ti/sn74ahc32.pdf",
+      "pdf_sha256": "8c1e2f6b2999874ca37e228dee0dad8f20a8cb58969c764fb63feee684c16e41",
+      "extraction": "verification/net28/power-evidence/sn74ahc32.txt",
+      "extraction_sha256": "903271965f44274a83f94c0203a1dbb3ccfc5d94fe1d8e294e11cd4b52265436",
+      "command": [
+        "pdftotext",
+        "-layout",
+        "/mnt/c/Users/gabri/projetos/isa1/references/ti/sn74ahc32.pdf",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net28/power-evidence/sn74ahc32.txt"
+      ],
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "family": "SN74AHC04",
+      "count": 12,
+      "pdf": "references/ti/sn74ahc04.pdf",
+      "pdf_sha256": "da1e18e887be71dfe3b2f69341cd7ab969b75a7a1929aec4346fdc32e2c24962",
+      "extraction": "verification/net28/power-evidence/sn74ahc04.txt",
+      "extraction_sha256": "4a353d85d172a164c62ace1b5cfdd1ba1ac8a730c478256ad8347c589cb35f0b",
+      "command": [
+        "pdftotext",
+        "-layout",
+        "/mnt/c/Users/gabri/projetos/isa1/references/ti/sn74ahc04.pdf",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net28/power-evidence/sn74ahc04.txt"
+      ],
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "family": "AS7C256A_28SOJ",
+      "count": 2,
+      "pdf": "references/alliance/as7c256a.pdf",
+      "pdf_sha256": "435dc7cb96520090252688ceead67f550be8fd223c3eafab21af2eea0a24c3c8",
+      "extraction": "verification/net28/power-evidence/as7c256a_28soj.txt",
+      "extraction_sha256": "520a9216a23799a97962400b137695f934c0da6aba2152c65fdcbe07a883bb9d",
+      "command": [
+        "pdftotext",
+        "-layout",
+        "/mnt/c/Users/gabri/projetos/isa1/references/alliance/as7c256a.pdf",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net28/power-evidence/as7c256a_28soj.txt"
+      ],
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "family": "AT28C256_28PDIP",
+      "count": 1,
+      "pdf": "references/microchip/at28c256-industrial.pdf",
+      "pdf_sha256": "fbad827166a0867cc82c149438a489e49670cb92fa505b9d4502962040815db7",
+      "extraction": "verification/net28/power-evidence/at28c256_28pdip.txt",
+      "extraction_sha256": "1304fa93968e2a5189e5578d317fc433eca366d1aa47276137836fb88037fb4d",
+      "command": [
+        "pdftotext",
+        "-layout",
+        "/mnt/c/Users/gabri/projetos/isa1/references/microchip/at28c256-industrial.pdf",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net28/power-evidence/at28c256_28pdip.txt"
+      ],
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "family": "SN74AHCT157",
+      "count": 27,
+      "pdf": "references/ti/sn74ahct157.pdf",
+      "pdf_sha256": "253c4ef1919a5088feaffd2fe3c481d49705ddedea70da88ed1f92156f9054a5",
+      "extraction": "verification/net28/power-evidence/sn74ahct157.txt",
+      "extraction_sha256": "efacfdba2ed2f80ba9f2952be7e33ca9083d79f91fe8b762b231e5bb209bc223",
+      "command": [
+        "pdftotext",
+        "-layout",
+        "/mnt/c/Users/gabri/projetos/isa1/references/ti/sn74ahct157.pdf",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net28/power-evidence/sn74ahct157.txt"
+      ],
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "family": "SN74HCT244",
+      "count": 3,
+      "pdf": "references/ti/sn74hct244.pdf",
+      "pdf_sha256": "b56f89788b6de9b76361cd55fba37afbaf69ae06e12ef09be5054f019c0eca30",
+      "extraction": "verification/net28/power-evidence/sn74hct244.txt",
+      "extraction_sha256": "725c9210d4813e224355e9ba9438bdf21a8bff73f4087195ab8ac421b282930c",
+      "command": [
+        "pdftotext",
+        "-layout",
+        "/mnt/c/Users/gabri/projetos/isa1/references/ti/sn74hct244.pdf",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net28/power-evidence/sn74hct244.txt"
+      ],
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "family": "SN74LV161A",
+      "count": 9,
+      "pdf": "references/ti/sn74lv161a.pdf",
+      "pdf_sha256": "80d50ee4c3745eb8a94f7ea3aa2a8ae0d95a70a638933406d8e2cb35033f5182",
+      "extraction": "verification/net28/power-evidence/sn74lv161a.txt",
+      "extraction_sha256": "7d921090aadc5652ad3beb2d50cbc638ccb74a5328ef6c415dbc0006e3dd4d6b",
+      "command": [
+        "pdftotext",
+        "-layout",
+        "/mnt/c/Users/gabri/projetos/isa1/references/ti/sn74lv161a.pdf",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net28/power-evidence/sn74lv161a.txt"
+      ],
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "family": "SN74AHC574",
+      "count": 6,
+      "pdf": "references/ti/sn74ahc574.pdf",
+      "pdf_sha256": "09fb610064c36dbe5f952bb9e95a4b3b8bf1a43d4e55d65fb1f8987f5c39479b",
+      "extraction": "verification/net28/power-evidence/sn74ahc574.txt",
+      "extraction_sha256": "90302684a7a8ff67c414bb75703d2bdd3efc33892a4a3c6e218e5264e22bd8f6",
+      "command": [
+        "pdftotext",
+        "-layout",
+        "/mnt/c/Users/gabri/projetos/isa1/references/ti/sn74ahc574.pdf",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net28/power-evidence/sn74ahc574.txt"
+      ],
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "family": "SN74AHC164",
+      "count": 2,
+      "pdf": "references/net22/sn74ahc164.pdf",
+      "pdf_sha256": "e05c6fd9d8a61a9141bc427586a7cf3a2e2109fe9ed2ba2e3378333a4a690cc4",
+      "extraction": "verification/net28/power-evidence/sn74ahc164.txt",
+      "extraction_sha256": "b2a52d732d83665031a58dfba56bee28f6570c8e2ab7da03a15622664f7d6f0f",
+      "command": [
+        "pdftotext",
+        "-layout",
+        "/mnt/c/Users/gabri/projetos/isa1/references/net22/sn74ahc164.pdf",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net28/power-evidence/sn74ahc164.txt"
+      ],
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "family": "SN74LVC1G27",
+      "count": 1,
+      "pdf": "references/net22/sn74lvc1g27.pdf",
+      "pdf_sha256": "a569fc21b4fa29cbcf909d803fb5b5ea6fbb08f3983492aebe28669e5911626d",
+      "extraction": "verification/net28/power-evidence/sn74lvc1g27.txt",
+      "extraction_sha256": "b8928613acff47b69d1b02b6728dfb9f950f6b0d3af23bb967ac59433f924b9a",
+      "command": [
+        "pdftotext",
+        "-layout",
+        "/mnt/c/Users/gabri/projetos/isa1/references/net22/sn74lvc1g27.pdf",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net28/power-evidence/sn74lvc1g27.txt"
+      ],
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "family": "SN74AHC74",
+      "count": 7,
+      "pdf": "references/ti/sn74ahc74.pdf",
+      "pdf_sha256": "48edcc29fc5a6fa517a0d54a5f4459c0a784fc3342cb01ce100c75b4befb8db4",
+      "extraction": "verification/net28/power-evidence/sn74ahc74.txt",
+      "extraction_sha256": "ada9ca495a27e2f75c1115463a482ae5f1dd04d54cf015e1c89e8686b187c4e7",
+      "command": [
+        "pdftotext",
+        "-layout",
+        "/mnt/c/Users/gabri/projetos/isa1/references/ti/sn74ahc74.pdf",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net28/power-evidence/sn74ahc74.txt"
+      ],
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "family": "SN74AHC14",
+      "count": 4,
+      "pdf": "references/ti/sn74ahc14.pdf",
+      "pdf_sha256": "4ef53e806a952722b71c3ba94590f0b41099f86022ed5bd5fb37bc4a704bebe7",
+      "extraction": "verification/net28/power-evidence/sn74ahc14.txt",
+      "extraction_sha256": "aa865be1e64c429eaa209a5472564b5badb7f102e1a877de81e8f1f9d52a2cf5",
+      "command": [
+        "pdftotext",
+        "-layout",
+        "/mnt/c/Users/gabri/projetos/isa1/references/ti/sn74ahc14.pdf",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net28/power-evidence/sn74ahc14.txt"
+      ],
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "family": "TPS3808G01DBVR",
+      "count": 1,
+      "pdf": "references/net20/tps3808.pdf",
+      "pdf_sha256": "b25476cfb25be6ec75733b5a468123cc01a57996e4d75981cef11523876b0c83",
+      "extraction": "verification/net28/power-evidence/tps3808g01dbvr.txt",
+      "extraction_sha256": "83c5abf50b0621254884bb658654e3d00467810c2e19c3ac46a24141101a5dfb",
+      "command": [
+        "pdftotext",
+        "-layout",
+        "/mnt/c/Users/gabri/projetos/isa1/references/net20/tps3808.pdf",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net28/power-evidence/tps3808g01dbvr.txt"
+      ],
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "family": "ACH_CPU_CONFIG",
+      "count": 1,
+      "pdf": "references/net22/abracon-ach.pdf",
+      "pdf_sha256": "2f4606e8cee9cc822e4e0a551dda82ae3fd24c31855b039a84646f26b443da86",
+      "extraction": "verification/net28/power-evidence/ach_cpu_config.txt",
+      "extraction_sha256": "6d3139dd175e9929e0de2d588a95188068e1b547dfb69c61106fff1c7516f976",
+      "command": [
+        "pdftotext",
+        "-layout",
+        "/mnt/c/Users/gabri/projetos/isa1/references/net22/abracon-ach.pdf",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net28/power-evidence/ach_cpu_config.txt"
+      ],
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "family": "ACH_MASTER_CONFIG",
+      "count": 1,
+      "pdf": "references/net22/abracon-ach.pdf",
+      "pdf_sha256": "2f4606e8cee9cc822e4e0a551dda82ae3fd24c31855b039a84646f26b443da86",
+      "extraction": "verification/net28/power-evidence/ach_master_config.txt",
+      "extraction_sha256": "6d3139dd175e9929e0de2d588a95188068e1b547dfb69c61106fff1c7516f976",
+      "command": [
+        "pdftotext",
+        "-layout",
+        "/mnt/c/Users/gabri/projetos/isa1/references/net22/abracon-ach.pdf",
+        "/mnt/c/Users/gabri/projetos/isa1/verification/net28/power-evidence/ach_master_config.txt"
+      ],
+      "exit": 0,
+      "stderr": ""
+    }
+  ],
+  "pdftotext": "pdftotext version 24.02.0\nCopyright 2005-2024 The Poppler Developers - http://poppler.freedesktop.org\nCopyright 1996-2011, 2022 Glyph & Cog, LLC\n",
+  "tool_sha256": "b35ac4cbc847e0362f0a5634b2b2df431400107a1dd695ea77799025143b82ae",
+  "production_released": false
+}

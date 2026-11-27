@@ -1,3 +1,8 @@
+## Continuidade NET-29
+
+- Leia docs/engineering/NET29_LOADS.md. União estrutural confere sete XMLs/982componentes/7.810pinos conectados. WDATA0 retido tem6entradas; SELECT_IO, BOOT e H2 têm5. Contas70/60pF são triagem uniforme, não medidas. Próxima variante pode reutilizar quatro canais AHC125 livres; ainda não foi construída/aprovada.
+- tools/audit_system_pin_loads.py é leitor estrutural restrito, não elaborador genérico/ERC/extração. Não unir resistores820ohm ou contatos como cobre, nem contar observadores como carga. Quatro negativos e igualdade das fronteiras ideal/temporizada foram conferidos. Preservar fontes NET27 ativas.
+
 ## Continuidade NET-27/28
 
 - Preparação NET27 publicada em ba3353f585fff94469d89674a8c1bdfa08ea70f1. Execução longa: tools/run_full_timed_program.py; conferir run-state.json/logs em verification/net27/full-timed/attempt-NNN antes de iniciar outra. Não duplicar processo vivo, não declarar resultado por progresso/compilação. Fontes e snapshots da tentativa ativa ficam congelados; processo morto não tem checkpoint HDL retomável.

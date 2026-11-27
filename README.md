@@ -32,6 +32,8 @@ Projeto de computador pessoal com CPU própria de lógica discreta, endereçamen
 
 ## Começar
 
+**Auditoria de cargas NET29:** a união estrutural encontrou quatro redes acima do orçamento preliminar de quatro entradas por saída. [Pinos, limites e proposta de redistribuição](docs/engineering/NET29_LOADS.md); correção ainda não implementada, fontes do ensaio NET27 preservadas.
+
 **Lista atual de testes e pendências:** [VALIDATION_STATUS](docs/engineering/VALIDATION_STATUS.md). **Circuito candidato atual:** [NET-26](docs/engineering/NET26.md), com CPU, memória, raster, teclado e reset por pinos. Boot/quadro ideal completo passou; programa completo temporizado usa a preparação NET27 e tem resultado próprio ainda pendente. [Análise de consumo NET28](docs/engineering/NET28_POWER.md) inicia o orçamento sem declarar corrente máxima da placa. Energia, temporização/elétrica globais, DAC, firmware e PCB/protótipo continuam abertos.
 
 **Desenvolvimento atual:** [NET-13 — chips de memória e barramento](docs/engineering/NET13.md), com SRAM/EEPROM, buffers TTL, muxes e troca de drivers a partir dos pinos KiCad. A variante do controlador desliga o driver antes de devolver VRAM ao vídeo. Testes cobrem todos os endereços, cenários de atraso e boot/quadro completo com SRAM inicialmente indefinida. Imagem EEPROM do diagnóstico em `firmware/net13`. Cargas reais, reset/alimentação, raster/relógios/DAC, MMIO/teclado por pinos, footprints e PCB continuam pendentes; não há liberação de fabricação.

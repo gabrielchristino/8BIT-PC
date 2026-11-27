@@ -1,3 +1,19 @@
+## ADR E33 — Auditar cargas nas fronteiras antes de aceitar modelos a50pF
+
+26/11/2026, circuito NET26. A união estrutural NET29 confere sete XMLs e
+7.810pinos conectados. Quatro redes têm cinco/seis entradas; orçamento
+uniforme10pF por entrada+10pF de trilhas resulta60/70pF. É triagem, não
+extração ou medição de falha. Aprovação funcional não fecha essa margem.
+
+Não extrapolar atrasos CL50pF, retirar cargas ou chamar bidirecionais/Hi-Z
+de capacitância zero. Alternativas: comprovar cargas reais menores ou
+distribuir ramos com canais existentes. Preferir investigar AHC125 livres
+preservando funções; proposta em NET29_LOADS.md não é circuito aprovado.
+
+Aceitar após pinagem/XML da nova variante, equivalência, tempos/cargas
+correspondentes e regressões afetadas. Fontes NET27 ficam congeladas; seu
+resultado pertencerá ao circuito NET26. ISA/pilha/flags/CPU/vídeo intactos.
+
 ## ADR E32 — Consumo por parcelas, sem promover uma soma de referências a limite
 
 26/11/2026, base NET26. O ledger NET28 cobre32 tipos de CIs e dois osciladores

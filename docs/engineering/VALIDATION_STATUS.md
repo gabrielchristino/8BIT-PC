@@ -1,6 +1,6 @@
 # Testes, pendências e revisões do ISA-1
 
-Atualizado em 26/11/2026, após NET26 e a análise documental NET28.
+Atualizado em 26/11/2026, após NET26 e as auditorias NET28/29.
 **Placa não liberada para fabricação.** Esta lista mostra o estado corrente;
 relatórios NET e versões Git preservam os estados anteriores. Não somar
 ensaios sobrepostos nem transferir aprovação entre variantes diferentes.
@@ -47,7 +47,7 @@ não bastam. Interrupção exige nova tentativa; não há checkpoint HDL.
 | 4. USB-C | Requisito5V, entrada ainda não fechada | CC/corrente anunciada, proteção/quedas e carga controlada da reserva; não presumir1,5A disponível |
 | 5. VGA analógico | Raster/dados digitais disponíveis; DAC/conector pendentes | RGB em75ohm, níveis/correntes, sincronismos/latência, proteção, simulação e medidas |
 | 6. Firmware de teclado | Raw scan na CPU; debounce/fila/cancelamento no host | Implementar na CPU; até duas teclas estáticas e ambiguidades conservadoras, sem diodos/NKRO |
-| 7. Elétrica global | Cargas condicionais por grupos, não extração | TTL/CMOS, Delta-ICC, memória/Hi-Z, ruído/overshoot, retorno e temperatura |
+| 7. Elétrica global | NET29 encontra quatro redes acima de quatro entradas: WDATA0 retido, SELECT_IO, BOOT e H2; não é medida de falha | Redistribuir/qualificar cargas em nova variante, TTL/CMOS, Delta-ICC, memória/Hi-Z, ruído/overshoot, retorno e temperatura |
 | 8. União/ERC | Folhas separadas; ERC parcial vídeo49/reset13/teclado25/controlador135, sem waivers | Unir pinos/alimentações/portas, resolver erros e justificar exceções; não somar ERCs parciais |
 | 9. BOM/footprints | Famílias candidatas, código completo ACH aberto | Códigos reais, pinagens/encapsulamentos/faixas/cargas/consumo e footprints |
 | 10. Firmware de produto | Diagnóstico novo e imagem EEPROM disponíveis | Boot/monitor definitivo, gravação e diagnóstico de bancada/produção |

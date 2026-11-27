@@ -1,0 +1,6 @@
+26/11/2026 — primeira execução do auditor estrutural novo.
+O coletor chegou à asserção final de quantidade total de componentes e
+rejeitou a constante manual1008. O total dos sete JSONs e do inventário é982:
+460CIs+2osciladores+464capacitores+52resistores+4conectores.
+Corrigida somente essa expectativa do auditor. Nenhum arquivo de circuito,
+modelo ou teste em execução foi alterado. O erro não era falha da CPU.

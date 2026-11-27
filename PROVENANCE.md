@@ -16,6 +16,8 @@ NET-28, 26/11/2026: análise documental nova sobre as sete folhas NET26, sem alt
 
 # Origem e integridade dos materiais
 
+NET29,26/11/2026: auditoria estrutural nova dos sete JSONs/XMLs e modelos publicados NET26; leitura de portos/aliases, sem alterar circuito. Todos os pinos XML conferidos, quatro negativos do leitor e comparação das fronteiras ideal/temporizada. Cópia byte a byte da bancada compilada NET27 em verification/net29/boundary-evidence é somente evidência de conectividade, não execução aprovada. Fontes, comandos e hashes no manifesto NET29; resultado mutável NET27 segue separado.
+
 Recuperação realizada em **24/11/2026**, com data local de São Paulo. Conteúdo do projeto pertence ao histórico fornecido pelo usuário e às respostas do ChatGPT; a migração não presume autoria exclusivamente humana nem escolhe uma licença.
 
 ## Fontes

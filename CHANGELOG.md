@@ -182,6 +182,12 @@ NET-17 — 26/11/2026: acrescentada variante para alvo condicional de 500 Ω, co
 - Hipótese apenasHDL de reset local emP1 passa156 cenários funcionais; clock frio continua aberto. Estudos de próxima variante não contam como implementação.
 
 
+## 2026-11-26 — NET-29 estrutural
+
+- União estrutural por fronteiras HDL, com todos os pinos dos sete XMLs conferidos e quatro negativos do leitor.
+- Quatro redes acima do orçamento preliminar: WDATA0 com6entradas; SELECT_IO/BOOT/H2 com5. Proposta com canais AHC125 livres ainda não implementada.
+- Fontes da execução NET27 preservadas; nenhum novo resultado completo temporizado ou circuito corrigido foi declarado.
+
 ## 2026-11-26 — NET-27 preparação e NET-28 documental
 
 - Executor completo temporizado com logs, snapshots e limites de recursos; cinco verificações reais do executor passaram, sem alegação de boot completo temporizado aprovado.

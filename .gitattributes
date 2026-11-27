@@ -54,3 +54,6 @@ revisions/** -text
 
 # Verbatim Poppler extraction of primary power datasheets.
 /verification/net28/power-evidence/*.txt -whitespace
+
+# Exact compiled fixture copied solely as structural boundary evidence.
+/verification/net29/boundary-evidence/*.sv -whitespace

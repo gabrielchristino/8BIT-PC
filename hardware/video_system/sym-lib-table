@@ -1,1 +1,0 @@
-(sym_lib_table (version 7) (lib (name "NET14C") (type "KiCad") (uri "${KIPRJMOD}/bus_packages.kicad_sym") (options "") (descr "ISA-1 memory package pins")))

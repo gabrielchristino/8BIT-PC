@@ -1,1 +1,0 @@
-{"policy": 0, "early": 0, "passed": false, "execution": {"command": ["vvp", "/tmp/isa1-load-frames-wc_icsr7/test.vvp"], "exit": 1, "stdout": "FATAL: /mnt/c/Users/gabri/projetos/isa1/sim/net30/tb_load_frames.sv:58: native frame watchdog\n       Time: 90000000000  Scope: tb_load_frames\n", "stderr": "", "seconds": 60.007}}

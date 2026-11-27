@@ -1,7 +1,0 @@
-{
-  "matched_single_instruction_cases": 1770,
-  "abstract_memory_microcycles": 3496,
-  "seed": 42,
-  "scope": "subset of rev07 ISA; no gates or timing",
-  "pcb_ready": false
-}

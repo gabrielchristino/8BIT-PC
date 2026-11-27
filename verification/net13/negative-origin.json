@@ -1,9 +1,0 @@
-{
-  "date": "2026-11-25",
-  "case": "NET-12 controller without registered driver dead interval",
-  "base_git_commit": "ce19e78eeb865e7787b5f913dd5a6aa6e3914547",
-  "path": "hardware/memory_access/memory_access_netlist.sv",
-  "sha256": "d19babac52f68cb4c547d17a1352a9d92a3c6a23fd8899911602299bd3be459a",
-  "unchanged_from_base": true,
-  "expected_result": "SRAM output and write buffer overlap VRAM"
-}

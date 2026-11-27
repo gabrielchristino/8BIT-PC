@@ -1,5 +1,0 @@
-{
-  "exit": 1,
-  "error": "FileNotFoundError: bus_packages.kicad_sym",
-  "cause": "ERC report source inventory used memory-bus library name instead of controller access_packages; native ERC already ran, summary/export had not completed"
-}

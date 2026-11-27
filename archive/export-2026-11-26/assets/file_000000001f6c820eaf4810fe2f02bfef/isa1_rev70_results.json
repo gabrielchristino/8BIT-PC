@@ -1,8 +1,0 @@
-{
-  "map_cases": 1048576,
-  "physical_address_roundtrips": 65536,
-  "raster_ticks": 105000,
-  "fetches": 76800,
-  "slots": 4725,
-  "scope": "Behavioral mapping and counter model; no electrical or CDC validation"
-}

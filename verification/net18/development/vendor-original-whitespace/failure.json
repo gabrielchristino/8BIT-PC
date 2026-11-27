@@ -1,5 +1,0 @@
-{
-  "exit": 2,
-  "cause": "Byte-preserved original vendor CRLF/trailing whitespace triggers Git formatting check; originals must not be rewritten",
-  "resolution": "Scope whitespace formatting exemption to references/vendor originals, retaining exact ZIP entry checks. No ERC or simulation waiver."
-}

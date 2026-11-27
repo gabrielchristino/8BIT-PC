@@ -1,7 +1,0 @@
-{
-  "source": "sim/net08/isa1_cpu_execution.sv",
-  "source_sha256": "12c94b4c6540e44b264b2163910779b877d60759ec240a65fe7af878f6392593",
-  "output": "sim/net09/isa1_cpu_pins.sv",
-  "output_sha256": "724f44404e8c2f257b963d0cb5ab48a030c2aacf2988954c6b133d78e83b40e2",
-  "transformation": "Replace main X RTL register/arithmetic with synchronous pin-connected bank and expose native execution-accept/write-mode gates; USE_HC191=1 remains separate reference alternative, not main board BOM"
-}

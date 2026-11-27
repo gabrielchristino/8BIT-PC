@@ -1,1 +1,0 @@
-(sym_lib_table (version 7) (lib (name "NET11") (type "KiCad") (uri "${KIPRJMOD}/memory_packages.kicad_sym") (options "") (descr "ISA-1 memory decode package pins")))

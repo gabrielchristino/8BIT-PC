@@ -1,7 +1,0 @@
-26/11/2026 — primeira preparação do builder novo NET30.
-once() rejeitou a âncora ports=keyboard.ports if kind=='keyboard' else ports:
-ela aparecia no parâmetro do ambiente e na nova variável old_ports.
-Nenhum emit/convert tinha sido chamado. A substituição foi restringida ao
-contexto VERIFY=verify,ports=... e passou a ser única. Em seguida os três
-XMLs foram gerados/conferidos e os testes começaram com fontes congeladas.
-Não foi defeito simulado da CPU nem alteração de um gerador histórico.

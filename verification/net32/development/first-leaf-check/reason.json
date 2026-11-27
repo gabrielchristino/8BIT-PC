@@ -1,4 +1,0 @@
-{
-  "date": "2026-11-27",
-  "scope": "First six pin negatives and original check preserved before strengthening symbol-pin metadata and unknown-pin checks. Case unused_output_floats actually rerouted IOUTB to R_ANALOG; new run renames it to match the injected defect."
-}

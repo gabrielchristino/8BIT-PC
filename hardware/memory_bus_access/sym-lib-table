@@ -1,1 +1,0 @@
-(sym_lib_table (version 7) (lib (name "NET13A") (type "KiCad") (uri "${KIPRJMOD}/access_packages.kicad_sym") (options "") (descr "ISA-1 memory access pins")))

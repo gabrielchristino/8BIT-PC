@@ -1,0 +1,46 @@
+{
+  "files": [
+    {
+      "revision": null,
+      "transformation": "none",
+      "path": "references/gigatron/bom-original.xlsx",
+      "captured_utc": "2026-11-27T18:42:46.9789124Z",
+      "url": "https://gigatronttl.eu/bom",
+      "sha256": "a543b143fbe722c22d0d34849f19bf144dde651383f659447063d737c21e98c4",
+      "bytes": 26677,
+      "role": "Official BOM original bytes; not modified or approved as our BOM"
+    },
+    {
+      "revision": "ec6495f374042b7f938da518502009d7052738d9",
+      "transformation": "none",
+      "path": "references/gigatron/gtemu.c",
+      "captured_utc": "2026-11-27T18:42:47.2636659Z",
+      "url": "https://raw.githubusercontent.com/kervinck/gigatron-rom/ec6495f374042b7f938da518502009d7052738d9/Docs/gtemu.c",
+      "sha256": "13f09c44b08c9eae4f3989179c6be3bff0fff85b92b3c119bcd4d524c195e14a",
+      "bytes": 3909,
+      "role": "Original native CPU software emulator"
+    },
+    {
+      "revision": "ec6495f374042b7f938da518502009d7052738d9",
+      "transformation": "none",
+      "path": "references/gigatron/ROMv6.rom",
+      "captured_utc": "2026-11-27T18:42:47.7678952Z",
+      "url": "https://raw.githubusercontent.com/kervinck/gigatron-rom/ec6495f374042b7f938da518502009d7052738d9/ROMv6.rom",
+      "sha256": "9c60e39dda5f5afe19dd5e409b66a2d58e13cb3705a640700077bcb011d50333",
+      "bytes": 131072,
+      "role": "Original reference ROM"
+    },
+    {
+      "revision": "ec6495f374042b7f938da518502009d7052738d9",
+      "transformation": "none",
+      "path": "references/gigatron/LICENSE-software",
+      "captured_utc": "2026-11-27T18:42:47.5037430Z",
+      "url": "https://raw.githubusercontent.com/kervinck/gigatron-rom/ec6495f374042b7f938da518502009d7052738d9/LICENSE",
+      "sha256": "9d91cfd9978b453e1b57275033c94116601c7730d0d803258a0e1e11e113d565",
+      "bytes": 1334,
+      "role": "Original upstream software license; no change to project license"
+    }
+  ],
+  "upstream_commit": "ec6495f374042b7f938da518502009d7052738d9",
+  "date": "2026-11-27"
+}

@@ -1,7 +1,0 @@
-{
-  "date": "2026-11-26",
-  "observation": "The repeated baseline and common-request probes initially ran concurrently; baseline regenerates request_probe_model.sv which common-request reads",
-  "result": "Both returned success and the regenerated model bytes are identical, but that execution order is not used as final acceptance",
-  "preserved": "common-request-parallel.json",
-  "correction": "After both processes completed, repeat common-request probe sequentially with all model inputs frozen. Full CPU/boot runs did not use the probe model and are unaffected."
-}

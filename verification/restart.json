@@ -1,0 +1,32 @@
+{
+  "preparation_failures": [
+    "Initial test incorrectly required every output line complete; failed assertion.",
+    "Second test assumed periodic video inside first1000000cycles and mismatched padded line numbers; actual output showed startup only."
+  ],
+  "git_bundle_sha256": "5b0c07949b84c1d6516edf6f2da336e2ebf04bd1340d2a36b746bc6a55082cab",
+  "new_baseline": "Gigatron references; no new hardware",
+  "legacy_commit": "c419967561777011440170692f5f2d7a49a0b0eb",
+  "preparation_sources": [
+    {
+      "sha256": "7178ec942d0a15d7bf806e70577c4649c89840c8087bb211581e0a0c52bad266",
+      "file": "check_baseline_initial.py"
+    },
+    {
+      "sha256": "8c3f6be9168438b5459bd1b7f8181dc9ec19251a3687ea33f0b49fff2a07ab17",
+      "file": "check_baseline_second.py"
+    }
+  ],
+  "previous_published_commit": "c5a39ba43a81aa195c707072b813831a0b1620c6",
+  "net30_accepted": true,
+  "final_check": "1024 HSYNC messages including startup; bounded100000000cycles; no modified hardware approval",
+  "date": "2026-11-27",
+  "net27_accepted": true,
+  "private_account_export_published": false,
+  "remote_archive_branch": "archive/isa1-legacy-2026-11-27",
+  "local_archive": "C:\\Users\\gabri\\projetos\\isa1-historico-2026-11-27\\project",
+  "source_commit": "ec6495f374042b7f938da518502009d7052738d9",
+  "production_released": false,
+  "all_moved_file_hashes_match": true,
+  "preserved_local_files": 8445,
+  "force_push_used": false
+}

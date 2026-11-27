@@ -1,4 +1,0 @@
-{
-  "date": "2026-11-27",
-  "scope": "Initial arithmetic was correct for a hypothetical voltage source but allowed arbitrary5.5V receiver bias into an active high output. Ioff only specifies powered-off behavior, so that receiver profile was rejected on review. New profile constrains current direction per logic state; old analysis is not compatibility or power qualification."
-}

@@ -1,8 +1,0 @@
-{
-  "date": "2026-11-25",
-  "components": 566,
-  "digital_inputs": 2431,
-  "drivers": 1337,
-  "scope": "Exact exported pin graph with external CPU boundary drivers; no peripheral electrical or PVT signoff",
-  "failures": []
-}

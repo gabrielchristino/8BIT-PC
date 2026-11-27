@@ -1,7 +1,0 @@
-{
-  "source": "sim/net02/isa1_cpu_stack.sv",
-  "source_sha256": "7d75e8deb1a1116004189917e8fdab97f42df595e4db6fa76d83c54d787e5432",
-  "output": "sim/net03/isa1_cpu_bus.sv",
-  "output_sha256": "d0dbe9984de317b513e1f3592b9d7a2c4dbbbe8645469a063ca53c6dc9426b7b",
-  "transformation": "Replace bus payload, write descriptor, MDR and transaction sequencing by KiCad pin netlist; keep SP, ROM, ISA and stack guards"
-}

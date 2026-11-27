@@ -1,9 +1,0 @@
-{
-  "date": "2026-11-25",
-  "local_head": "ea529d0b7acac89abbbf07b42632f93006fd63af",
-  "remote_main": "ea529d0b7acac89abbbf07b42632f93006fd63af",
-  "remote_tree_paths": 729,
-  "remote_tree_sha256": "ceee752cfca3fa81b30f2a1e5713bd800dc99c5c73a599fd77676360e4ec049e",
-  "protected_sources_unchanged": true,
-  "force_push": false
-}

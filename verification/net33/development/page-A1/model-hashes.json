@@ -1,4 +1,0 @@
-{
-  "hardware/dac_packet_video/dac_packet_video_async.sv": "96f36ef77deabe0566bdae2c6480c47c6f9422dc09b523ad1d61ab83d298aa61",
-  "hardware/vga_dac_rgb332/dac_rgb332_digital.sv": "d94bdbfd9d3cf395ec5f1179d256d2a702ab80f34ac61a47adb0c8b58e2dd2c2"
-}

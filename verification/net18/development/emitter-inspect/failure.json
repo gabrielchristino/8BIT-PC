@@ -1,7 +1,0 @@
-{
-  "command": "python3 tools/build_power_reset.py",
-  "exit": 1,
-  "error": "OSError: could not get source code",
-  "cause": "inspect.getsource cannot recover dynamically exec-created base.emit; use base.emitter source string",
-  "sha256": "08a6c3d6eb87368b3a187add88d2b7fec15a409a1f68c622a076697533f8cf12"
-}

@@ -1,7 +1,0 @@
-{
-  "reason": "Preserve passed delayed instructions; interrupt remaining monolithic safety process and run all opcode cuts in bounded independent batches, no cases omitted",
-  "interrupted_vvp": "/tmp/isa1-global-3nulnuhd/bench.vvp",
-  "pid": 856,
-  "instruction_cases_passed": 1062,
-  "full_safety_claimed": false
-}

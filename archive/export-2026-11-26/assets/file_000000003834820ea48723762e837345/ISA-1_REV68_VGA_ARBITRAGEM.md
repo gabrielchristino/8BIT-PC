@@ -1,9 +1,0 @@
-# ISA-1 — revisão 6.8
-## Proposta
-Clock lógico 6,29375 MHz; H 0–199, V 0–524. HSYNC ativo baixo H 164–187; VSYNC ativo baixo V 490–491. Visível H 0–159 e V 0–479. Contadores síncronos: 2 HC163 horizontais e 3 verticais; V habilitado no fim de linha, sem clock derivado de decodificação. Reset síncrono de cada cadeia; decodificação e registro dos sinais ainda por projetar. Endereço de vídeo = (V >> 2)*256 + H. Quatro HC157 selecionam 15 bits de endereço CPU/vídeo. Registrador RGB332 com apagamento explícito (não deixar DAC flutuante). Acesso de CPU à VRAM exige handshake e espera; RAM principal independente.
-## Arbitragem conservadora
-Somente H 162–197, nove transações de quatro ticks por linha, incluindo linhas verticais apagadas. Fases conceituais: selecionar endereço, acessar, liberar, repousar. Guardas H 160–161 e 198–199. Nenhuma transação cruza o início da próxima linha. CPU precisa manter pedido e dados até confirmação; sincronização entre clocks e pulsos /WE, /OE ainda não implementados. Primeiro pixel precisa de pré-leitura antes de H=0; reservar guarda final para isso, sujeito a análise temporal. Não é prova de que dois ticks bastem. O modelo verifica janelas, não simula SRAM ou sinais elétricos.
-## Alimentação
-Retirar boost 12 V e seleção correspondente. Arzopa com fonte própria, conversor ativo com 5 V conforme especificação. Terra comum de sinais, evitar retorno de alimentação pelo VGA/HDMI. USB-C sink com Rd em CC1/CC2, corrente limitada à anunciada pela fonte; dimensionamento, proteção e desacoplamento pendentes. Não assumir 33 W disponíveis a 5 V.
-## Pendências
-Selecionar SRAM e oscilador, calcular caminho contador/mux/SRAM/latch com máximos de datasheet, registrar sincronismo e blank alinhados ao pixel, verificar DAC sob carga, implementar handshake e mapa de VRAM paginada. Validar conversor e monitor em bancada. Sem ERC ou simulação elétrica nesta revisão.

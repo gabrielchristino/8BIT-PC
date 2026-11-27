@@ -1,6 +1,0 @@
-{
-  "date": "2026-11-26",
-  "failure": "Ideal elaboration retained isa1_memory because its instance lacks #parameters; timed instance replacement matches correctly",
-  "preserved": ["prepare_clocked_vectors.py", "run_clocked_vectors.py", "results.json", "bench.sv"],
-  "correction": "Separate ideal runner replaces the module identifier plus space, covering both forms. Freeze timed runner and helper while its execution is running. No hardware/model timing requirement changed."
-}

@@ -1,7 +1,0 @@
-{
-  "cases": 168400,
-  "assertions": 28099352,
-  "completed": 108288,
-  "aborted": 60112,
-  "model": "abstract synchronous; fault at slot boundary; no analog or CDC validation"
-}

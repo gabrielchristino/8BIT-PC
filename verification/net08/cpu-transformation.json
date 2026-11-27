@@ -1,7 +1,0 @@
-{
-  "source": "sim/net07/isa1_cpu_address.sv",
-  "source_sha256": "20a9f9ae40870d242debed8514f0b32c016d7d282159f3ac434cccc6c39d5f26",
-  "output": "sim/net08/isa1_cpu_execution.sv",
-  "output_sha256": "12c94b4c6540e44b264b2163910779b877d60759ec240a65fe7af878f6392593",
-  "transformation": "Replace execution FSM, bus/X load requests, guards, fault and retire by pin-connected HC174/gates; X alternative still reference RTL"
-}

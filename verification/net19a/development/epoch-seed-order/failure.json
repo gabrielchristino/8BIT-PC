@@ -1,4 +1,0 @@
-{
-  "status": "Rejected fixture ordering: bank staging introduced time after generation change and before memory array seeding; first opcode read reused cached patterned value 71h in case1",
-  "resolution": "Move bank stage before epoch update, keeping memory epoch and array seeding atomic in original delta cycle"
-}

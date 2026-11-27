@@ -1,7 +1,0 @@
-{
-  "source": "sim/net05/isa1_cpu_alu.sv",
-  "source_sha256": "9a563464cb666de1f5a50ec848c9b16bf7c1b05a9e1609a22de467fb9c21e641",
-  "output": "sim/net06/isa1_cpu_registers.sv",
-  "output_sha256": "1ebb18921f8c9604b0b0502c285cf54d6135610b242f2cc2f50c4f34fdbe5db0",
-  "transformation": "Replace A/B/EA/Z/C storage and source mux by pin-connected bank; reuse NET-04 decoded DST/FLAGS; preserve PC/address selection and execution RTL"
-}

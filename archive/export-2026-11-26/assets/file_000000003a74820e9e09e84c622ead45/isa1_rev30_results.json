@@ -1,9 +1,0 @@
-{
-  "status": "PASS: static owner-model only",
-  "control_cases": 640,
-  "pin_entries": 68,
-  "negative_contention_tests": 2,
-  "region_bytes": 32768,
-  "physical_timing_validated": false,
-  "hardware_write_protection_implemented": false
-}

@@ -1,9 +1,0 @@
-{
-  "date": "2026-11-25",
-  "local_head": "5020e30394303971c4c0c1852a81d635365b4fee",
-  "remote_main": "5020e30394303971c4c0c1852a81d635365b4fee",
-  "remote_tree": "84f04e6c7e2ac3f455fe621e22e67a4eb0c4cf00",
-  "remote_paths": 471,
-  "protected_sources_changed": [],
-  "publication": "Fast-forward only; preserve existing history, no force push"
-}

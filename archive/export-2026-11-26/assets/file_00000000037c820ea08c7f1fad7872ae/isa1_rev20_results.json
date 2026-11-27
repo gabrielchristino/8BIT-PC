@@ -1,8 +1,0 @@
-{
-  "pins_checked": 68,
-  "unique_ram_addresses": 32768,
-  "legal_states": 6,
-  "checked_data_mode_cases": 1024,
-  "turnaround_paths": 2,
-  "limitations": "Static state model; no propagation delay, slew, setup/hold or actual SPICE."
-}

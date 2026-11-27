@@ -1,0 +1,44 @@
+{
+  "date": "2026-11-27",
+  "base_git_commit": "793d391819712b85bae46fd2d6e9f9d9092b21c7",
+  "source_records_checked": 32,
+  "historical_source_resolutions": [
+    {
+      "path": "tools/build_dac_leaf.py",
+      "sha256": "35e2e750246ab87314a74504753ad47636a8616b62db5fda2ce059314a34ea32",
+      "preserved_source": "verification/net32/development/initial-native/build_dac_leaf.py"
+    },
+    {
+      "path": "tools/build_dac_leaf.py",
+      "sha256": "bbd28586cb93f0f6733b00d13c61d4d7376db225639e987338ce67c72a69563f",
+      "preserved_source": "verification/net32/development/first-leaf-check/build_dac_leaf.py"
+    },
+    {
+      "path": "tools/build_dac_leaf.py",
+      "sha256": "bbd28586cb93f0f6733b00d13c61d4d7376db225639e987338ce67c72a69563f",
+      "preserved_source": "verification/net32/development/first-leaf-check/build_dac_leaf.py"
+    },
+    {
+      "path": "tools/check_dac_leaf.py",
+      "sha256": "e3f46509ced061f3b0747b3bd09b078a6dfd045778a34a7c8b180b0867ff6c2e",
+      "preserved_source": "verification/net32/development/first-leaf-check/check_dac_leaf.py"
+    },
+    {
+      "path": "verification/net32/native/vga_dac_experiment.xml",
+      "sha256": "a5c9d09cfd0c0772c5004186254347c076d909cd4d6521d0920b412833e7b407",
+      "preserved_source": "verification/net32/development/first-leaf-check/native/vga_dac_experiment.xml"
+    }
+  ],
+  "initial_and_final_electrical_graph_equal": true,
+  "erc_unwaived": {
+    "pin_not_driven": 31,
+    "power_pin_not_driven": 2,
+    "pin_to_pin": 2,
+    "isolated_pin_label": 30
+  },
+  "erc_approved": false,
+  "production_released": false,
+  "native_leaf_integrated_into_net30": false,
+  "original_adi_pdf_available": false,
+  "visual_review": "Exported preview inspected: three channels, all NC markers and passive groups visible; diagnostic/not-production title present."
+}

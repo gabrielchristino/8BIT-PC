@@ -5,6 +5,17 @@ Atualizado em27/11/2026, após as regressões próprias da NET30.
 relatórios NET e versões Git preservam os estados anteriores. Não somar
 ensaios sobrepostos nem transferir aprovação entre variantes diferentes.
 
+## Folha experimental NET32
+
+Tres DACs em folha KiCad separada: 24 componentes,126pinos,15NC conferidos.
+Passaram1024codigos por canal,oito negativos de XML,12288avaliacoes
+condicionais e tres varreduras de carga com corrente ideal. Sem modelo
+analogico vendor, sem integracao ao raster NET30. RSET de diagnostico nao
+atende ao branco final; ganho/calibracao,protecao,partida/niveis,H/V e cargas
+continuam abertos. ERC65itens sem aprovacao e footprints nao atribuidos.
+[Detalhes e limites NET32](NET32_DAC_LEAF.md). A contagem candidata NET30
+continua460CIs; dois boots completos temporizados seguem pendentes.
+
 ## Estudo VGA NET31
 
 Contrato candidato e proposta funcional separados: 256 cores, 16 cantos

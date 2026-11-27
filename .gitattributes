@@ -63,3 +63,11 @@ revisions/** -text
 
 # Exact NET31 primary-source downloads, extraction and acquisition records.
 /references/net31/** -text -whitespace
+
+# Byte-exact native SPICE tables and DAC simulation sources.
+/verification/net32/**/values.dat -text -whitespace
+/verification/net32/**/*.sv -whitespace
+
+# Preserve original KiCad SVG formatting as generated evidence.
+/verification/net32/**/*.svg -text -whitespace
+/verification/net32/development/stage-generated-svg/check.txt -text -whitespace

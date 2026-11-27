@@ -1,3 +1,13 @@
+## ADR E36 - Separar DAC experimental de VGA integrado e protecao
+
+27/11/2026, base793d391/NET31. Status: folha experimental construida e verificada estruturalmente, nao promovida ao candidato NET30.
+
+Decisao: construir tres AD9760 com pinos reais, desacoplamentos/referencia/COMP1/COMP2 e IOUTB aterrado conforme aplicacao. Entradas RGB10 e clock permanecem externas; RSET2,32k e apenas diagnostico, branco nominal0,620084V. Preservar CPU/ISA/X/SP/flags/VGA NET30; nao atribuir a ela os novos testes nem somar os tres CIs sem integracao.
+
+Evidencia:126pinos,1024codigos por canal,oito negativos,12288avaliacoes condicionais e tres varreduras ngspice de fontes ideais passaram. Um unico resistor nao fecha branco0,7V/20mA/compliance sem monitor: limites58,928571ohm e65,745383ohm sao incompativeis. Compliance e limite absoluto nao sao a mesma condicao; KCL pressupoe corrente limitada e nao prova protecao. Alternativas clamp/buffer seguem investigacao, sem nomes de CIs homologados.
+
+Aceitacao restante: ganho/calibracao/temperatura, monitor ausente e protecao/hotplug/ESD, niveis/alimentacao/partida/SLEEP, expansao RGB332 com cargas,clock e H/V nativos,regressao integrada; ERC65itens sem excecoes, footprints/PCB/DRC e prototipo continuam abertos. Detalhes e falhas intermediarias preservadas em docs/engineering/NET32_DAC_LEAF.md.
+
 ## ADR E35 - Investigar DAC com contrato explicito antes de integra-lo
 
 27/11/2026, base NET30/4b74c8c. Status: proposta em investigacao, sem BOM ou esquema adotado.

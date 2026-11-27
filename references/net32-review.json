@@ -1,0 +1,32 @@
+{
+  "date": "2026-11-27",
+  "kind": "Primary-source web review and identified reused sources, not original downloaded documents",
+  "base_git_commit": "793d391819712b85bae46fd2d6e9f9d9092b21c7",
+  "sources": [
+    {
+      "url": "https://www.analog.com/media/en/technical-documentation/data-sheets/AD9760.pdf",
+      "printed_revision": "B",
+      "original_local_bytes": false,
+      "facts_rechecked": "Printed p4 distinguishes absolute IOUTA/IOUTB limits from operating compliance; p5 has package pin functions and COMP1/COMP2/reference decoupling; pp16-17 permit grounding the unused current output",
+      "transformation": "Reuse NET31 transcribed pin map, add separate experimental native leaf and conditional KCL analysis"
+    },
+    {
+      "url": "https://www.ti.com/product/LM4041-N",
+      "use": "Precision shunt option considered, not adopted; no transient/capacitance/ESD qualification claimed"
+    },
+    {
+      "url": "https://www.ti.com/lit/ds/symlink/tlv431.pdf",
+      "use": "Low-voltage shunt alternative researched, not adopted or locally downloaded in NET32"
+    },
+    {
+      "url": "https://www.ti.com/product/OPA4354",
+      "use": "Buffered-output option considered; no rail/headroom/current/settling qualification or native implementation"
+    }
+  ],
+  "reuse": [
+    "engineering/net31/dac_contract.json: pin functions and conditional aggregate gain model",
+    "sim/net31/dac_packet_contract.sv: digital latch only, selected typical output delay",
+    "tools/limited_process.py: bounded compiler/simulator/export process helper"
+  ],
+  "physical_validation": false
+}

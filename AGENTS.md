@@ -1,3 +1,10 @@
+## Continuidade NET32 - folha experimental DAC
+
+- Leia docs/engineering/NET32_DAC_LEAF.md. hardware/vga_dac_experiment e folha separada:3DACs/15C/6R,126pinos/15NC. XML confere funcoes/tipos/pinos/valores; projeccao digital testa1024codigos por canal, oito negativos. Nao e raster integrado nem modelo eletrico vendor.
+- RSET2,32k e diagnostico nao calibrado: branco nominal0,620084V, ganho agregado condicional5V. Nao substituir os0,7V finais nem adotar como BOM. Alterar apenas resistor local nao satisfaz ao mesmo tempo branco0,7V/20mA/compliance sem monitor. Limite KCL1,515V pressupoe fonte<=20mA; IFS operacional nao e protecao. Nao declarar hotplug/ESD/alimentacao invalida seguros.
+- Tres proxies ngspice so varrem fontes de corrente ideais e carga. ERC65itens sem waivers;31entradas,2alimentacao,30labels isolados,2conflitos IOUTB aterrado conforme aplicacao. Nao silenciar conflitos para alegar ERC global. Footprints,clock/RGB332/HV/conector/protecao/inibicao na partida continuam abertos; SLEEP desta folha e GND.
+- Primeira geracao fora de grade e primeira rodada de seis negativos estao preservadas em development. Rodada final tem oito negativos e tipos/pinos extras verificados. NET30 e fontes dos dois boots temporizados permanecem intactos; consultar PID/boot_id antes de duplicar qualquer execucao.
+
 ## Continuidade NET31 - contrato DAC, sem circuito novo
 
 - Leia docs/engineering/NET31_DAC.md. engineering/net31/dac_contract.json separa fatos e hipoteses. AD9760 e candidato para investigar, nao BOM; pinagem transcrita nao e netlist. Os PDFs ADI nao foram baixados; fatos vieram da leitura web e seis PDFs TI tem bytes/hashes preservados.

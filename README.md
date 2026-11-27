@@ -1,3 +1,5 @@
+NET32 (27/11/2026): [folha experimental dos DACs](docs/engineering/NET32_DAC_LEAF.md) com 24 componentes/126pinos conferidos,1.024codigos por canal,oito negativos e tres redes ngspice de carga ideal. RSET de diagnostico nao entrega branco final; ERC65itens sem aprovacao, sem footprints ou integracao NET30. Dois boots temporizados completos seguem pendentes.
+
 NET31 (27/11/2026): [contrato candidato da saida VGA](docs/engineering/NET31_DAC.md), com 256 cores, 16 cantos de calibracao e um quadro sintetico com quatro negativos. Estudo funcional/documental; nenhum DAC ou CI novo adotado. Ganho, saida sem monitor, protecao e integracao nativa continuam abertos. NET30 permanece candidato digital; os dois boots temporizados completos continuam pendentes.
 
 Preparação NET-27 (26/11/2026): [ensaio completo temporizado](docs/engineering/NET27_PLAN.md) com progresso persistente e limites de recursos. Executor verificado; resultado do circuito completo ainda pendente.

@@ -1,0 +1,33 @@
+{
+  "date": "2026-11-27",
+  "base_git_commit": "793d391819712b85bae46fd2d6e9f9d9092b21c7",
+  "components": 24,
+  "dac_packages": 3,
+  "pins": 126,
+  "no_connects": 15,
+  "all_component_values_and_pins_equal_xml": true,
+  "erc_unwaived_count": 65,
+  "erc_approved": false,
+  "footprints_assigned": false,
+  "native_integrated_into_net30": false,
+  "sources": [
+    {
+      "path": "tools/build_dac_leaf.py",
+      "sha256": "b86f69adde2255b791d863b37ae6c74981eac29286ac92df4378fb0d615c9598"
+    },
+    {
+      "path": "tools/build_cpu_global.py",
+      "sha256": "6f1437acaa79c78820e65151467f245a89c7177aef18836374d08098ec4dec92"
+    },
+    {
+      "path": "tools/limited_process.py",
+      "sha256": "c19d8efcf4dffa5fbff513360a40f27f200b98c459050ad40662192039ee3ffa"
+    },
+    {
+      "path": "engineering/net31/dac_contract.json",
+      "sha256": "bec2c337f0a1217cf0f59f62d61e5262daf209f31ab238d0bc1a044e4e641a15"
+    }
+  ],
+  "failures": [],
+  "production_released": false
+}

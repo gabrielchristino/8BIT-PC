@@ -1,0 +1,373 @@
+{
+  "date": "2026-11-27",
+  "base_git_commit": "793d391819712b85bae46fd2d6e9f9d9092b21c7",
+  "status": "standalone diagnostic experiment, not integrated or calibrated",
+  "parts": [
+    {
+      "reference": "U1",
+      "part": "AD9760ARUZ",
+      "value": "AD9760ARUZ",
+      "nets": {
+        "1": "R_DB_9",
+        "2": "R_DB_8",
+        "3": "R_DB_7",
+        "4": "R_DB_6",
+        "5": "R_DB_5",
+        "6": "R_DB_4",
+        "7": "R_DB_3",
+        "8": "R_DB_2",
+        "9": "R_DB_1",
+        "10": "R_DB_0",
+        "11": null,
+        "12": null,
+        "13": null,
+        "14": null,
+        "15": "GND",
+        "16": "GND",
+        "17": "R_REFIO",
+        "18": "R_FSADJ",
+        "19": "R_COMP1",
+        "20": "GND",
+        "21": "GND",
+        "22": "R_ANALOG",
+        "23": "R_COMP2",
+        "24": "DAC_VDD",
+        "25": null,
+        "26": "GND",
+        "27": "DAC_VDD",
+        "28": "DAC_CLOCK"
+      },
+      "x": 60,
+      "y": 65,
+      "role": "experimental channel R"
+    },
+    {
+      "reference": "C1",
+      "part": "C",
+      "value": "100nF",
+      "nets": {
+        "1": "DAC_VDD",
+        "2": "GND"
+      },
+      "x": 30,
+      "y": 120,
+      "role": "digital supply"
+    },
+    {
+      "reference": "C2",
+      "part": "C",
+      "value": "100nF",
+      "nets": {
+        "1": "DAC_VDD",
+        "2": "GND"
+      },
+      "x": 60,
+      "y": 120,
+      "role": "analog supply"
+    },
+    {
+      "reference": "C3",
+      "part": "C",
+      "value": "100nF",
+      "nets": {
+        "1": "R_REFIO",
+        "2": "GND"
+      },
+      "x": 90,
+      "y": 120,
+      "role": "internal reference"
+    },
+    {
+      "reference": "C4",
+      "part": "C",
+      "value": "100nF",
+      "nets": {
+        "1": "R_COMP1",
+        "2": "DAC_VDD"
+      },
+      "x": 30,
+      "y": 140,
+      "role": "COMP1 to AVDD"
+    },
+    {
+      "reference": "C5",
+      "part": "C",
+      "value": "100nF",
+      "nets": {
+        "1": "R_COMP2",
+        "2": "GND"
+      },
+      "x": 60,
+      "y": 140,
+      "role": "COMP2 to ACOM"
+    },
+    {
+      "reference": "R1",
+      "part": "R",
+      "value": "2.32k",
+      "nets": {
+        "1": "R_FSADJ",
+        "2": "GND"
+      },
+      "x": 40,
+      "y": 175,
+      "role": "0.1 percent diagnostic RSET; deliberately not calibrated final white"
+    },
+    {
+      "reference": "R2",
+      "part": "R",
+      "value": "75",
+      "nets": {
+        "1": "R_ANALOG",
+        "2": "GND"
+      },
+      "x": 80,
+      "y": 175,
+      "role": "1 percent local shunt; monitor external; not series termination"
+    },
+    {
+      "reference": "U2",
+      "part": "AD9760ARUZ",
+      "value": "AD9760ARUZ",
+      "nets": {
+        "1": "G_DB_9",
+        "2": "G_DB_8",
+        "3": "G_DB_7",
+        "4": "G_DB_6",
+        "5": "G_DB_5",
+        "6": "G_DB_4",
+        "7": "G_DB_3",
+        "8": "G_DB_2",
+        "9": "G_DB_1",
+        "10": "G_DB_0",
+        "11": null,
+        "12": null,
+        "13": null,
+        "14": null,
+        "15": "GND",
+        "16": "GND",
+        "17": "G_REFIO",
+        "18": "G_FSADJ",
+        "19": "G_COMP1",
+        "20": "GND",
+        "21": "GND",
+        "22": "G_ANALOG",
+        "23": "G_COMP2",
+        "24": "DAC_VDD",
+        "25": null,
+        "26": "GND",
+        "27": "DAC_VDD",
+        "28": "DAC_CLOCK"
+      },
+      "x": 190,
+      "y": 65,
+      "role": "experimental channel G"
+    },
+    {
+      "reference": "C6",
+      "part": "C",
+      "value": "100nF",
+      "nets": {
+        "1": "DAC_VDD",
+        "2": "GND"
+      },
+      "x": 160,
+      "y": 120,
+      "role": "digital supply"
+    },
+    {
+      "reference": "C7",
+      "part": "C",
+      "value": "100nF",
+      "nets": {
+        "1": "DAC_VDD",
+        "2": "GND"
+      },
+      "x": 190,
+      "y": 120,
+      "role": "analog supply"
+    },
+    {
+      "reference": "C8",
+      "part": "C",
+      "value": "100nF",
+      "nets": {
+        "1": "G_REFIO",
+        "2": "GND"
+      },
+      "x": 220,
+      "y": 120,
+      "role": "internal reference"
+    },
+    {
+      "reference": "C9",
+      "part": "C",
+      "value": "100nF",
+      "nets": {
+        "1": "G_COMP1",
+        "2": "DAC_VDD"
+      },
+      "x": 160,
+      "y": 140,
+      "role": "COMP1 to AVDD"
+    },
+    {
+      "reference": "C10",
+      "part": "C",
+      "value": "100nF",
+      "nets": {
+        "1": "G_COMP2",
+        "2": "GND"
+      },
+      "x": 190,
+      "y": 140,
+      "role": "COMP2 to ACOM"
+    },
+    {
+      "reference": "R3",
+      "part": "R",
+      "value": "2.32k",
+      "nets": {
+        "1": "G_FSADJ",
+        "2": "GND"
+      },
+      "x": 170,
+      "y": 175,
+      "role": "0.1 percent diagnostic RSET; deliberately not calibrated final white"
+    },
+    {
+      "reference": "R4",
+      "part": "R",
+      "value": "75",
+      "nets": {
+        "1": "G_ANALOG",
+        "2": "GND"
+      },
+      "x": 210,
+      "y": 175,
+      "role": "1 percent local shunt; monitor external; not series termination"
+    },
+    {
+      "reference": "U3",
+      "part": "AD9760ARUZ",
+      "value": "AD9760ARUZ",
+      "nets": {
+        "1": "B_DB_9",
+        "2": "B_DB_8",
+        "3": "B_DB_7",
+        "4": "B_DB_6",
+        "5": "B_DB_5",
+        "6": "B_DB_4",
+        "7": "B_DB_3",
+        "8": "B_DB_2",
+        "9": "B_DB_1",
+        "10": "B_DB_0",
+        "11": null,
+        "12": null,
+        "13": null,
+        "14": null,
+        "15": "GND",
+        "16": "GND",
+        "17": "B_REFIO",
+        "18": "B_FSADJ",
+        "19": "B_COMP1",
+        "20": "GND",
+        "21": "GND",
+        "22": "B_ANALOG",
+        "23": "B_COMP2",
+        "24": "DAC_VDD",
+        "25": null,
+        "26": "GND",
+        "27": "DAC_VDD",
+        "28": "DAC_CLOCK"
+      },
+      "x": 320,
+      "y": 65,
+      "role": "experimental channel B"
+    },
+    {
+      "reference": "C11",
+      "part": "C",
+      "value": "100nF",
+      "nets": {
+        "1": "DAC_VDD",
+        "2": "GND"
+      },
+      "x": 290,
+      "y": 120,
+      "role": "digital supply"
+    },
+    {
+      "reference": "C12",
+      "part": "C",
+      "value": "100nF",
+      "nets": {
+        "1": "DAC_VDD",
+        "2": "GND"
+      },
+      "x": 320,
+      "y": 120,
+      "role": "analog supply"
+    },
+    {
+      "reference": "C13",
+      "part": "C",
+      "value": "100nF",
+      "nets": {
+        "1": "B_REFIO",
+        "2": "GND"
+      },
+      "x": 350,
+      "y": 120,
+      "role": "internal reference"
+    },
+    {
+      "reference": "C14",
+      "part": "C",
+      "value": "100nF",
+      "nets": {
+        "1": "B_COMP1",
+        "2": "DAC_VDD"
+      },
+      "x": 290,
+      "y": 140,
+      "role": "COMP1 to AVDD"
+    },
+    {
+      "reference": "C15",
+      "part": "C",
+      "value": "100nF",
+      "nets": {
+        "1": "B_COMP2",
+        "2": "GND"
+      },
+      "x": 320,
+      "y": 140,
+      "role": "COMP2 to ACOM"
+    },
+    {
+      "reference": "R5",
+      "part": "R",
+      "value": "2.32k",
+      "nets": {
+        "1": "B_FSADJ",
+        "2": "GND"
+      },
+      "x": 300,
+      "y": 175,
+      "role": "0.1 percent diagnostic RSET; deliberately not calibrated final white"
+    },
+    {
+      "reference": "R6",
+      "part": "R",
+      "value": "75",
+      "nets": {
+        "1": "B_ANALOG",
+        "2": "GND"
+      },
+      "x": 340,
+      "y": 175,
+      "role": "1 percent local shunt; monitor external; not series termination"
+    }
+  ]
+}

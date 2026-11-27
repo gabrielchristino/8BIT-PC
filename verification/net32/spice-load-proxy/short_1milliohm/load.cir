@@ -1,0 +1,19 @@
+NET32 ideal current-source KCL proxy only, not AD9760 model
+Vcode code 0 0
+BR 0 R_ANALOG I=0.016551724137931035*v(code)/1024
+R2 R_ANALOG 0 75
+RMR R_ANALOG 0 0.001
+BG 0 G_ANALOG I=0.016551724137931035*v(code)/1024
+R4 G_ANALOG 0 75
+RMG G_ANALOG 0 0.001
+BB 0 B_ANALOG I=0.016551724137931035*v(code)/1024
+R6 B_ANALOG 0 75
+RMB B_ANALOG 0 0.001
+.control
+set wr_singlescale
+set wr_vecnames
+dc Vcode 0 1023 1
+wrdata values.dat v(R_ANALOG) v(G_ANALOG) v(B_ANALOG)
+quit
+.endc
+.end

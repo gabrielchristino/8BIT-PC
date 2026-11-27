@@ -1,0 +1,194 @@
+{
+  "date": "2026-11-27",
+  "base_git_commit": "793d391819712b85bae46fd2d6e9f9d9092b21c7",
+  "scope": "Standalone native pin projection; conditional DC arithmetic and ideal current-source load proxy. Not complete DAC electrical model, NET30 integration or physical qualification.",
+  "pin_negatives": [
+    {
+      "case": "data_swapped",
+      "rejected": true,
+      "reason": "('U1', '1', 'R_DB_9', 'R_DB_0')",
+      "path": "verification/net32/pin-negatives/data_swapped.xml"
+    },
+    {
+      "case": "complement_output_miswired",
+      "rejected": true,
+      "reason": "('U1', '21', 'GND', 'R_ANALOG')",
+      "path": "verification/net32/pin-negatives/complement_output_miswired.xml"
+    },
+    {
+      "case": "comp1_wrong_rail",
+      "rejected": true,
+      "reason": "('C4', '2', 'DAC_VDD', 'GND')",
+      "path": "verification/net32/pin-negatives/comp1_wrong_rail.xml"
+    },
+    {
+      "case": "local_shunt_missing",
+      "rejected": true,
+      "reason": "",
+      "path": "verification/net32/pin-negatives/local_shunt_missing.xml"
+    },
+    {
+      "case": "sleep_high",
+      "rejected": true,
+      "reason": "('U1', '15', 'GND', 'DAC_VDD')",
+      "path": "verification/net32/pin-negatives/sleep_high.xml"
+    },
+    {
+      "case": "nc_connected",
+      "rejected": true,
+      "reason": "",
+      "path": "verification/net32/pin-negatives/nc_connected.xml"
+    },
+    {
+      "case": "symbol_function_changed",
+      "rejected": true,
+      "reason": "('symbol pin functions/types', 'AD9760ARUZ')",
+      "path": "verification/net32/pin-negatives/symbol_function_changed.xml"
+    },
+    {
+      "case": "unexpected_pin",
+      "rejected": true,
+      "reason": "Unexpected physical pin in XML",
+      "path": "verification/net32/pin-negatives/unexpected_pin.xml"
+    }
+  ],
+  "digital": {
+    "compile": {
+      "command": [
+        "iverilog",
+        "-g2012",
+        "-s",
+        "tb_dac_leaf",
+        "-o",
+        "bench.vvp",
+        "/mnt/c/Users/gabri/projetos/isa1/hardware/vga_dac_experiment/vga_dac_experiment_digital.sv",
+        "/mnt/c/Users/gabri/projetos/isa1/sim/net31/dac_packet_contract.sv",
+        "/mnt/c/Users/gabri/projetos/isa1/sim/net32/tb_dac_leaf.sv"
+      ],
+      "exit": 0,
+      "wall_timeout": false,
+      "seconds": 0.037,
+      "limits": {
+        "memory_mb": 256,
+        "cpu_seconds": 10,
+        "output_mb_per_file": 2,
+        "wall_seconds": 20
+      },
+      "stdout": "",
+      "stderr": ""
+    },
+    "execution": {
+      "command": [
+        "vvp",
+        "bench.vvp"
+      ],
+      "exit": 0,
+      "wall_timeout": false,
+      "seconds": 0.036,
+      "limits": {
+        "memory_mb": 256,
+        "cpu_seconds": 10,
+        "output_mb_per_file": 2,
+        "wall_seconds": 20
+      },
+      "stdout": "RESULT native_dac_only=1 samples=1024 distinct_codes_each_channel=1024 analog_model=0 failures=0\n/mnt/c/Users/gabri/projetos/isa1/sim/net32/tb_dac_leaf.sv:19: $finish called at 162721312 (1ps)\n",
+      "stderr": ""
+    }
+  },
+  "dc_arithmetic": {
+    "conditional_voltage_evaluations": 12288,
+    "diagnostic_white_nominal_v": 0.6200835129310345,
+    "diagnostic_loaded_white_range_v": [
+      0.5405622104910287,
+      0.7029927228293326
+    ],
+    "diagnostic_fullscale_current_max_ma": 18.225121673397535,
+    "diagnostic_open_linear_extrapolation_max_v": 1.379204770503262,
+    "passive_shunt_max_ohm_for_open_compliance": 58.92857142857143,
+    "passive_shunt_min_ohm_for_20ma_and_loaded_white": 65.74538339244222,
+    "minimum_required_white_current_ma_with_open_compliance": 21.21212121212121,
+    "no_passive_single_shunt_solution": true,
+    "independent_20ma_hypothesis_open_kcl_bound_v": 1.515,
+    "assumed_vdd_min_plus_0_3v": 5.52076,
+    "diagnostic_white_is_not_final_target": true,
+    "dc_kcl_is_not_esd_hotplug_power_sequence_or_safety_approval": true
+  },
+  "spice_kcl_proxy": [
+    {
+      "case": "loaded",
+      "samples": 1024,
+      "channels": 3,
+      "maximum_kcl_comparison_error_v": 4.827587218869667e-10,
+      "source": "verification/net32/spice-load-proxy/loaded/load.cir",
+      "execution": "verification/net32/spice-load-proxy/loaded/execution.json",
+      "note": "Open-case predictions above compliance are out of model validity for DAC transfer; no real voltage/safety claim."
+    },
+    {
+      "case": "open_1teraohm",
+      "samples": 1024,
+      "channels": 3,
+      "maximum_kcl_comparison_error_v": 4.918962126509996e-09,
+      "source": "verification/net32/spice-load-proxy/open_1teraohm/load.cir",
+      "execution": "verification/net32/spice-load-proxy/open_1teraohm/execution.json",
+      "note": "Open-case predictions above compliance are out of model validity for DAC transfer; no real voltage/safety claim."
+    },
+    {
+      "case": "short_1milliohm",
+      "samples": 1024,
+      "channels": 3,
+      "maximum_kcl_comparison_error_v": 4.9781634028781344e-14,
+      "source": "verification/net32/spice-load-proxy/short_1milliohm/load.cir",
+      "execution": "verification/net32/spice-load-proxy/short_1milliohm/execution.json",
+      "note": "Open-case predictions above compliance are out of model validity for DAC transfer; no real voltage/safety claim."
+    }
+  ],
+  "versions": {
+    "iverilog": "Icarus Verilog version 12.0 (stable) ()\n\nCopyright (c) 2000-2021 Stephen Williams (steve@icarus.com)\n\n  This program is free software; you can redistribute it and/or modify\n  it under the terms of the GNU General Public License as published by\n  the Free Software Foundation; either version 2 of the License, or\n  (at your option) any later version.\n\n  This program is distributed in the hope that it will be useful,\n  but WITHOUT ANY WARRANTY; without even the implied warranty of\n  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n  GNU General Public License for more details.\n\n  You should have received a copy of the GNU General Public License along\n  with this program; if not, write to the Free Software Foundation, Inc.,\n  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.\n\nIcarus Verilog Preprocessor version 12.0 (stable) ()\n\nCopyright (c) 1999-2021 Stephen Williams (steve@icarus.com)\n\n  This program is free software; you can redistribute it and/or modify\n  it under the terms of the GNU General Public License as published by\n  the Free Software Foundation; either version 2 of the License, or\n  (at your option) any later version.\n\n  This program is distributed in the hope that it will be useful,\n  but WITHOUT ANY WARRANTY; without even the implied warranty of\n  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n  GNU General Public License for more details.\n\n  You should have received a copy of the GNU General Public License along\n  with this program; if not, write to the Free Software Foundation, Inc.,\n  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.\n\nIcarus Verilog Parser/Elaborator version 12.0 (stable) ()\n\nCopyright (c) 1998-2021 Stephen Williams (steve@icarus.com)\n\n  This program is free software; you can redistribute it and/or modify\n  it under the terms of the GNU General Public License as published by\n  the Free Software Foundation; either version 2 of the License, or\n  (at your option) any later version.\n\n  This program is distributed in the hope that it will be useful,\n  but WITHOUT ANY WARRANTY; without even the implied warranty of\n  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n  GNU General Public License for more details.\n\n  You should have received a copy of the GNU General Public License along\n  with this program; if not, write to the Free Software Foundation, Inc.,\n  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.\n\n FLAGS DLL vvp.tgt\nvvp.tgt: Icarus Verilog VVP Code Generator 12.0 (stable) ()\n\nCopyright (c) 2001-2021 Stephen Williams (steve@icarus.com)\n\n  This program is free software; you can redistribute it and/or modify\n  it under the terms of the GNU General Public License as published by\n  the Free Software Foundation; either version 2 of the License, or\n  (at your option) any later version.\n\n  This program is distributed in the hope that it will be useful,\n  but WITHOUT ANY WARRANTY; without even the implied warranty of\n  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n  GNU General Public License for more details.\n\n  You should have received a copy of the GNU General Public License along\n  with this program; if not, write to the Free Software Foundation, Inc.,\n  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.\n\n",
+    "ngspice": "******\n** ngspice-42 : Circuit level simulation program\n** Compiled with KLU Direct Linear Solver\n** The U. C. Berkeley CAD Group\n** Copyright 1985-1994, Regents of the University of California.\n** Copyright 2001-2023, The ngspice team.\n** Please get your ngspice manual from https://ngspice.sourceforge.io/docs.html\n** Please file your bug-reports at http://ngspice.sourceforge.net/bugrep.html\n** Creation Date: Sun Mar 31 20:15:14 UTC 2024\n******\n",
+    "kicad": "10.0.8\n"
+  },
+  "sources": [
+    {
+      "path": "hardware/vga_dac_experiment/vga_dac_experiment_digital.sv",
+      "sha256": "57c1e01cdae43f254b082670a9bb5bdcddbc9f1faf4f3009d2dabaf16f6f6767"
+    },
+    {
+      "path": "sim/net31/dac_packet_contract.sv",
+      "sha256": "1ca9dce1d98d338f52524060319db773cd918cf988bd876c5bed4a65b631c370"
+    },
+    {
+      "path": "sim/net32/tb_dac_leaf.sv",
+      "sha256": "2a07f044650a9870b5da46dadf1ee3b95ebdc9d8795a9d227985b01200b9a592"
+    },
+    {
+      "path": "tools/build_dac_leaf.py",
+      "sha256": "b86f69adde2255b791d863b37ae6c74981eac29286ac92df4378fb0d615c9598"
+    },
+    {
+      "path": "tools/check_dac_leaf.py",
+      "sha256": "d79d5f1b6ea6f4b7bb9ee4f77aafb0ccf4b84554cb0c1c4c434da7ca10c1de88"
+    },
+    {
+      "path": "tools/limited_process.py",
+      "sha256": "c19d8efcf4dffa5fbff513360a40f27f200b98c459050ad40662192039ee3ffa"
+    },
+    {
+      "path": "hardware/vga_dac_experiment/design.json",
+      "sha256": "8d04ee7b4427b92b91ecdd68218c4253c237d50ba741fd05a7012c3b9dff4dd6"
+    },
+    {
+      "path": "hardware/vga_dac_experiment/package-functions.json",
+      "sha256": "30048e811ac28f1026895d4b1ca3f255d5be2b313e2db2f48087e35ba13a4b17"
+    },
+    {
+      "path": "verification/net32/native/vga_dac_experiment.xml",
+      "sha256": "8b239f75ae7b8730706d92801f0d984298a6ebdc0395cca82c375c56e546a2c3"
+    },
+    {
+      "path": "engineering/net31/dac_contract.json",
+      "sha256": "bec2c337f0a1217cf0f59f62d61e5262daf209f31ab238d0bc1a044e4e641a15"
+    }
+  ],
+  "failures": [],
+  "production_released": false
+}
